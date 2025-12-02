@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon.png</file>
+
+        <file>icon/logo_black.svg</file>
+        <file>icon/logo_white.svg</file>
+        <file>icon/splash_black.svg</file>
+        <file>icon/splash_white.svg</file>
+        
+        <file>icon/help_black.svg</file>
+        <file>icon/help_white.svg</file>
+        <file>icon/option_black.svg</file>
+        <file>icon/option_white.svg</file>
+
+        <file>icon/language_black.svg</file>
+        <file>icon/language_white.svg</file>
+        <file>icon/font_black.svg</file>
+        <file>icon/font_white.svg</file>
+        <file>icon/theme_black.svg</file>
+        <file>icon/theme_white.svg</file>
+        <file>icon/color_black.svg</file>
+        <file>icon/color_white.svg</file>
+        <file>icon/zoom_black.svg</file>
+        <file>icon/zoom_white.svg</file>
+
+        <file>icon/rom_black.svg</file>
+        <file>icon/rom_white.svg</file>
+
+        <file>i18n/zh_CN.qm</file>
+        <file>i18n/zh_TW.qm</file>
+        <file>i18n/ja_JP.qm</file>
+    </qresource>
+</RCC>

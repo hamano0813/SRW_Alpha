@@ -8,6 +8,7 @@ dependencies = [
     "fonttools>=4.61.0",
     "pyside6-fluent-widgets[full]>=1.9.2",
     "pyside6-stubs>=6.7.3.0",
+    "setuptools>=83.0.0",
 ]
 
 [[tool.uv.index]]

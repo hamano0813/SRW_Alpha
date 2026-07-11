@@ -20,6 +20,7 @@ class CustomIcon(FluentIconBase, Enum):
     SPLASH = "icon/splash"  # 启动画面图标
 
     # 通用功能图标
+    HOME = "icon/home"  # 首页/主页图标
     HELP = "icon/help"  # 帮助图标
     OPTION = "icon/option"  # 选项/设置图标
 

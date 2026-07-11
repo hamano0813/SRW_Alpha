@@ -4,12 +4,12 @@
 <context>
     <name>CleanSettingCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="93"/>
+        <location filename="../../src/gui/option/rom_card.py" line="91"/>
         <source>Auto clear cache</source>
         <translation>自动清理缓存</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="94"/>
+        <location filename="../../src/gui/option/rom_card.py" line="92"/>
         <source>Clear cache after ROM is saved</source>
         <translation>ROM保存以后自动清理缓存（下次修改需重新载入ROM）</translation>
     </message>
@@ -1407,13 +1407,13 @@
 <context>
     <name>FileSettingCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="46"/>
-        <location filename="../../src/gui/option/rom_card.py" line="77"/>
+        <location filename="../../src/gui/option/rom_card.py" line="44"/>
+        <location filename="../../src/gui/option/rom_card.py" line="75"/>
         <source>Select File</source>
         <translation>选择文件</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="76"/>
+        <location filename="../../src/gui/option/rom_card.py" line="74"/>
         <source>Browse</source>
         <translation>选择</translation>
     </message>
@@ -1421,27 +1421,47 @@
 <context>
     <name>FontCard</name>
     <message>
-        <location filename="../../src/gui/option/font_card.py" line="165"/>
-        <location filename="../../src/gui/option/font_card.py" line="212"/>
+        <location filename="../../src/gui/option/font_card.py" line="169"/>
+        <location filename="../../src/gui/option/font_card.py" line="216"/>
         <source>Font Settings</source>
         <translation>字体设置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/font_card.py" line="165"/>
-        <location filename="../../src/gui/option/font_card.py" line="213"/>
+        <location filename="../../src/gui/option/font_card.py" line="169"/>
+        <location filename="../../src/gui/option/font_card.py" line="217"/>
         <source>Configure the font settings</source>
         <translation>配置不同语言的默认字体</translation>
+    </message>
+</context>
+<context>
+    <name>HomeFrame</name>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="24"/>
+        <location filename="../../src/gui/home/home_frame.py" line="62"/>
+        <source>Load ROM</source>
+        <translation>加载ROM</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="25"/>
+        <location filename="../../src/gui/home/home_frame.py" line="63"/>
+        <source>Save ROM</source>
+        <translation>保存ROM</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../../src/gui/main_window.py" line="58"/>
+        <source>Home</source>
+        <translation>概览</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/main_window.py" line="62"/>
         <source>Options</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="116"/>
+        <location filename="../../src/gui/main_window.py" line="121"/>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>超级机器人大战α 静态修改器</translation>
     </message>
@@ -2337,6 +2357,49 @@
     </message>
 </context>
 <context>
+    <name>RequireFileTable</name>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="29"/>
+        <source>File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="30"/>
+        <source>Unit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="31"/>
+        <source>Pilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="32"/>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="33"/>
+        <source>Scenario</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="34"/>
+        <source>Intermission</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="35"/>
+        <source>Character</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="36"/>
+        <source>Other</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>RomCard</name>
     <message>
         <source>Rom Files</source>
@@ -2347,20 +2410,20 @@
         <translation type="vanished">配置ROM文件路径</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="111"/>
-        <location filename="../../src/gui/option/rom_card.py" line="123"/>
+        <location filename="../../src/gui/option/rom_card.py" line="109"/>
+        <location filename="../../src/gui/option/rom_card.py" line="121"/>
         <source>Load ROM</source>
         <translation>加载ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="112"/>
-        <location filename="../../src/gui/option/rom_card.py" line="124"/>
+        <location filename="../../src/gui/option/rom_card.py" line="110"/>
+        <location filename="../../src/gui/option/rom_card.py" line="122"/>
         <source>Save ROM</source>
         <translation>保存ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="109"/>
-        <location filename="../../src/gui/option/rom_card.py" line="121"/>
+        <location filename="../../src/gui/option/rom_card.py" line="107"/>
+        <location filename="../../src/gui/option/rom_card.py" line="119"/>
         <source>ROM Settings</source>
         <translation>ROM设置</translation>
     </message>
@@ -2369,8 +2432,8 @@
         <translation type="vanished">ROM设置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="109"/>
-        <location filename="../../src/gui/option/rom_card.py" line="122"/>
+        <location filename="../../src/gui/option/rom_card.py" line="107"/>
+        <location filename="../../src/gui/option/rom_card.py" line="120"/>
         <source>Configure the ROM settings</source>
         <translation>配置ROM设置</translation>
     </message>

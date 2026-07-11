@@ -17,7 +17,7 @@ from qfluentwidgets import (
 )
 
 import config
-from gui import OptionFrame
+from gui import HomeFrame, OptionFrame
 
 from .custom import CustomIcon
 
@@ -52,6 +52,10 @@ class MainWindow(FluentWindow):
         # 配置导航栏样式
         self.navigationInterface.setExpandWidth(150)  # 设置侧边栏展开宽度
         self.navigationInterface.setReturnButtonVisible(False)  # 隐藏返回按钮
+
+        # 创建主页并添加到导航栏
+        self.home_frame = HomeFrame(self)
+        self.addSubInterface(self.home_frame, CustomIcon.HOME, self.tr("Home"))
 
         # 创建选项设置页面并添加到导航栏底部
         self.option_frame = OptionFrame(self)
@@ -93,6 +97,7 @@ class MainWindow(FluentWindow):
                 style.polish(widget)  # 应用新样式
 
         self.navigationInterface
+        self.home_frame.resetUI()
         self.option_frame.resetUI()
 
         # 更新导航栏所有项目的字体
@@ -114,7 +119,9 @@ class MainWindow(FluentWindow):
 
         # 更新窗口标题和界面文本
         self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.1.0")
+        self.translate_frame("EditorFrame", "Home")
         self.translate_frame("OptionFrame", "Options")
+        self.home_frame.translateUI()
         self.option_frame.translateUI()
 
     def translate_frame(self, frame: str, title: str):

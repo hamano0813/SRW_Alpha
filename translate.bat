@@ -1,5 +1,7 @@
 uv run pyside6-lupdate ^
     src/gui/main_window.py ^
+    src/gui/home/home_frame.py ^
+    src/gui/home/file_table.py ^
     src/gui/option/option_frame.py ^
     src/gui/option/color_card.py ^
     src/gui/option/rom_card.py ^

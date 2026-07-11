@@ -28,18 +28,16 @@ class LanguageCombo(ComboBox):
         super()._showComboMenu()
         if self.dropMenu:
             # 创建各语言字体对象
-            en_font, zh_font, tw_font, jp_font = getFont(), getFont(), getFont(), getFont()
+            en_font, zh_font, jp_font = getFont(), getFont(), getFont()
             # 设置各语言的字体系列
             en_font.setFamily(config.option.get(config.option.en_font))  # 英文字体
             zh_font.setFamily(config.option.get(config.option.cn_font))  # 简体中文字体
-            tw_font.setFamily(config.option.get(config.option.tw_font))  # 繁体中文字体
             jp_font.setFamily(config.option.get(config.option.jp_font))  # 日文字体
 
             # 为下拉菜单项应用对应字体（按固定顺序：英文、简中、繁中、日文）
             self.dropMenu.view.item(0).setFont(en_font)
             self.dropMenu.view.item(1).setFont(zh_font)
-            self.dropMenu.view.item(2).setFont(tw_font)
-            self.dropMenu.view.item(3).setFont(jp_font)
+            self.dropMenu.view.item(2).setFont(jp_font)
 
 
 class LanguageCard(ComboBoxSettingCard):

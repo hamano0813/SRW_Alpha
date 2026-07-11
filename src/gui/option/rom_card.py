@@ -5,11 +5,15 @@ ROM文件配置卡片模块
 包含单个ROM文件设置卡片和ROM文件组设置卡片。
 """
 
+from typing import Union
+
 from PySide6.QtCore import Signal
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QFileDialog
 from qfluentwidgets import (
     ConfigItem,
     ExpandGroupSettingCard,
+    FluentIconBase,
     PushSettingCard,
     setCustomStyleSheet,
 )
@@ -61,8 +65,8 @@ class RomSettingCard(PushSettingCard):
 class RomCard(ExpandGroupSettingCard):
     """ROM文件组设置卡片 - 可展开的设置组"""
 
-    def __init__(self, parent=None):
-        super().__init__(CustomIcon.ROM.icon(), self.tr("Rom Files"), self.tr("Configure the ROM file paths"), parent)
+    def __init__(self, icon: Union[str, QIcon, FluentIconBase], parent=None):
+        super().__init__(icon, self.tr("Rom Files"), self.tr("Configure the ROM file paths"), parent)  # type: ignore
 
         # 添加所有ROM文件配置项
         self.addRom(config.option.robot_raf)  # 机体数据

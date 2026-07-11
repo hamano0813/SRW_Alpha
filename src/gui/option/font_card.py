@@ -5,14 +5,15 @@
 包含字体组合框、单个字体设置卡片和字体设置组等组件。
 """
 
-from typing import cast
+from typing import Union, cast
 
 from PySide6.QtCore import Qt, QThread, Signal
-from PySide6.QtGui import QFont, QFontDatabase
+from PySide6.QtGui import QFont, QFontDatabase, QIcon
 from qfluentwidgets import (
     ComboBox,
     ConfigItem,
     ExpandGroupSettingCard,
+    FluentIconBase,
     SettingCard,
     fontStyleSheet,
     getFont,
@@ -31,7 +32,6 @@ class FamilyCombo(ComboBox):
     # 书写系统对应的语言ID映射
     WS = {
         QFontDatabase.WritingSystem.SimplifiedChinese: 0x804,
-        QFontDatabase.WritingSystem.TraditionalChinese: 0x404,
         QFontDatabase.WritingSystem.Japanese: 0x411,
     }
 
@@ -161,8 +161,8 @@ class FontCard(ExpandGroupSettingCard):
 
     familyChanged = Signal()  # 任何字体改变时发出的信号
 
-    def __init__(self, parent=None):
-        super().__init__(CustomIcon.FONT.icon(), self.tr("Font Settings"), self.tr("Configure the font settings"), parent)
+    def __init__(self, icon: Union[str, QIcon, FluentIconBase], parent=None):
+        super().__init__(icon, self.tr("Font Settings"), self.tr("Configure the font settings"), parent)  # type: ignore
 
         self.font_mapping = {}
         # 启动后台线程加载字体映射
@@ -180,7 +180,6 @@ class FontCard(ExpandGroupSettingCard):
         # 添加各语言字体配置
         self.addFont(config.option.en_font)  # 英文字体
         self.addFont(config.option.cn_font)  # 简体中文字体
-        self.addFont(config.option.tw_font)  # 繁体中文字体
         self.addFont(config.option.jp_font)  # 日文字体
 
     def addFont(self, font_config: ConfigItem):
@@ -189,7 +188,6 @@ class FontCard(ExpandGroupSettingCard):
         mapping = {
             "ENFont": ["Super Robot Wars α", QFontDatabase.WritingSystem.Any],
             "CNFont": ["超级机器人大战 α", QFontDatabase.WritingSystem.SimplifiedChinese],
-            "TWFont": ["超級機器人大戰 α", QFontDatabase.WritingSystem.TraditionalChinese],
             "JPFont": ["スーパーロボット大戦 α", QFontDatabase.WritingSystem.Japanese],
         }
         title, writing_system = mapping.get(font_config.name, ["English", QFontDatabase.WritingSystem.Any])

@@ -47,10 +47,10 @@ class OptionFrame(QFrame):
             CustomIcon.LANGUAGE,
             self.tr("Interface Language"),
             self.tr("Change the language of the interface"),
-            ["English", "简体中文", "繁體中文", "日本語"],
+            ["English", "简体中文", "日本語"],
         )
 
-        self.ffont = FontCard()  # 字体设置卡片
+        self.ffont = FontCard(CustomIcon.FONT)  # 字体设置卡片
         self.theme = OptionsSettingCard(
             config.option.themeMode,
             CustomIcon.THEME,
@@ -72,7 +72,7 @@ class OptionFrame(QFrame):
         self.ui_group = self.create_group(self.tr("Interface Settings"), [self.language, self.ffont, self.theme, self.color, self.dpi])
 
         # 创建ROM设置组
-        self.rom_card = RomCard()
+        self.rom_card = RomCard(CustomIcon.ROM)
         self.rom_group = self.create_group(self.tr("Rom Settings"), [self.rom_card])
 
         # 设置子框架布局

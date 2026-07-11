@@ -27,12 +27,11 @@ class Option(QConfig):
     dpi = OptionsConfigItem(
         "QFluentWidgets", "DPI", 1, OptionsValidator([1, 1.25, 1.5, 1.75, 2]), restart=True
     )  # DPI缩放比例，需要重启生效
-    language = OptionsConfigItem("QFluentWidgets", "Language", "en_US", OptionsValidator(["en_US", "zh_CN", "zh_TW", "ja_JP"]))  # 界面语言
+    language = OptionsConfigItem("QFluentWidgets", "Language", "en_US", OptionsValidator(["en_US", "zh_CN", "ja_JP"]))  # 界面语言
 
     # 各语言字体设置
     en_font = ConfigItem("QFluentWidgets", "ENFont", "Segoe UI")  # 英文字体
     cn_font = ConfigItem("QFluentWidgets", "CNFont", "Microsoft YaHei UI")  # 简体中文字体
-    tw_font = ConfigItem("QFluentWidgets", "TWFont", "Microsoft JhengHei UI")  # 繁体中文字体
     jp_font = ConfigItem("QFluentWidgets", "JPFont", "Yu Gothic UI")  # 日文字体
 
     # ROM文件路径配置
@@ -59,15 +58,12 @@ def reset_language():
     current_language = qconfig.get(option.language)
     # 获取各语言字体配置
     zh_cn = qconfig.get(option.cn_font)
-    zh_tw = qconfig.get(option.tw_font)
     ja_jp = qconfig.get(option.jp_font)
     en_us = qconfig.get(option.en_font)
 
     # 根据当前语言设置字体优先级顺序
     if current_language == "zh_CN":
         families = [zh_cn, ja_jp, en_us]  # 简中优先，日文次之，英文兜底
-    elif current_language == "zh_TW":
-        families = [zh_tw, ja_jp, en_us]  # 繁中优先，日文次之，英文兜底
     elif current_language == "ja_JP":
         families = [ja_jp, zh_cn, en_us]  # 日文优先，简中次之，英文兜底
     else:

@@ -8,7 +8,9 @@
 import os
 
 from qfluentwidgets import (
+    BoolValidator,
     ConfigItem,
+    FolderValidator,
     OptionsConfigItem,
     OptionsValidator,
     QConfig,
@@ -35,14 +37,20 @@ class Option(QConfig):
     jp_font = ConfigItem("QFluentWidgets", "JPFont", "Yu Gothic UI")  # 日文字体
 
     # ROM文件路径配置
-    robot_raf = ConfigItem("Rom", "ROBOT.RAF", "")  # 机体数据文件
-    pilot_bin = ConfigItem("Rom", "PILOT.BIN", "")  # 驾驶员数据文件
-    snmsg_bin = ConfigItem("Rom", "SNMSG.BIN", "")  # 剧情文本文件
-    sndata_bin = ConfigItem("Rom", "SNDATA.BIN", "")  # 剧情数据文件
-    enlist_bin = ConfigItem("Rom", "ENLIST.BIN", "")  # 敌方单位列表文件
-    aiunp_bin = ConfigItem("Rom", "AIUNP.BIN", "")  # AI数据文件
-    script_bin = ConfigItem("Rom", "SCRIPT.BIN", "")  # 剧本数据文件
-    prm_grp_bin = ConfigItem("Rom", "PRM_GRP.BIN", "")  # 参数组文件
+    load_path = ConfigItem("Rom", "LoadPath", "")  # ROM读取路径
+    save_path = ConfigItem("Rom", "SavePath", "")  # ROM写入路径
+    cache_dir = ConfigItem("Rom", "CacheDir", "cache", FolderValidator())  # 缓存名称
+    auto_clean = ConfigItem("Rom", "AutoClean", False, BoolValidator())  # 自动清理缓存
+
+    # 以下为具体的ROM文件路径配置，当前版本已将文件统一采用cache目录管理，注释掉了
+    # robot_raf = ConfigItem("Rom", "ROBOT.RAF", "")  # 机体数据文件
+    # pilot_bin = ConfigItem("Rom", "PILOT.BIN", "")  # 驾驶员数据文件
+    # snmsg_bin = ConfigItem("Rom", "SNMSG.BIN", "")  # 剧情文本文件
+    # sndata_bin = ConfigItem("Rom", "SNDATA.BIN", "")  # 剧情数据文件
+    # enlist_bin = ConfigItem("Rom", "ENLIST.BIN", "")  # 敌方单位列表文件
+    # aiunp_bin = ConfigItem("Rom", "AIUNP.BIN", "")  # AI数据文件
+    # script_bin = ConfigItem("Rom", "SCRIPT.BIN", "")  # 剧本数据文件
+    # prm_grp_bin = ConfigItem("Rom", "PRM_GRP.BIN", "")  # 参数组文件
 
 
 option = Option()

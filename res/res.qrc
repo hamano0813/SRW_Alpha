@@ -27,7 +27,6 @@
         <file>icon/rom_white.svg</file>
 
         <file>i18n/zh_CN.qm</file>
-        <file>i18n/zh_TW.qm</file>
         <file>i18n/ja_JP.qm</file>
     </qresource>
 </RCC>

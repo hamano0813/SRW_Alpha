@@ -2,19 +2,40 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
+    <name>CleanSettingCard</name>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="93"/>
+        <source>Auto clear cache</source>
+        <translation>自动清理缓存</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="94"/>
+        <source>Clear cache after ROM is saved</source>
+        <translation>ROM保存以后自动清理缓存（下次修改需重新载入ROM）</translation>
+    </message>
+    <message>
+        <source>Clear cache after ROM saved</source>
+        <translation type="vanished">ROM保存以后自动清理缓存（下次修改需重新载入ROM）</translation>
+    </message>
+</context>
+<context>
     <name>ColorCard</name>
+    <message>
+        <source>Choose color</source>
+        <translation type="vanished">选择颜色</translation>
+    </message>
     <message>
         <location filename="../../src/gui/option/color_card.py" line="17"/>
         <location filename="../../src/gui/option/color_card.py" line="52"/>
         <location filename="../../src/gui/option/color_card.py" line="65"/>
-        <source>Choose color</source>
+        <source>Choose Color</source>
         <translation>选择颜色</translation>
     </message>
     <message>
         <location filename="../../src/gui/option/color_card.py" line="18"/>
         <location filename="../../src/gui/option/color_card.py" line="53"/>
         <source>OK</source>
-        <translation>确认</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location filename="../../src/gui/option/color_card.py" line="19"/>
@@ -1384,6 +1405,20 @@
     </message>
 </context>
 <context>
+    <name>FileSettingCard</name>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="46"/>
+        <location filename="../../src/gui/option/rom_card.py" line="77"/>
+        <source>Select File</source>
+        <translation>选择文件</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="76"/>
+        <source>Browse</source>
+        <translation>选择</translation>
+    </message>
+</context>
+<context>
     <name>FontCard</name>
     <message>
         <location filename="../../src/gui/option/font_card.py" line="165"/>
@@ -1407,8 +1442,12 @@
     </message>
     <message>
         <location filename="../../src/gui/main_window.py" line="116"/>
-        <source>Super Robot Wars α Rom Editor</source>
+        <source>Super Robot Wars α ROM Editor</source>
         <translation>超级机器人大战α 静态修改器</translation>
+    </message>
+    <message>
+        <source>Super Robot Wars α Rom Editor</source>
+        <translation type="vanished">超级机器人大战α 静态修改器</translation>
     </message>
 </context>
 <context>
@@ -2265,8 +2304,12 @@
     <message>
         <location filename="../../src/gui/option/option_frame.py" line="76"/>
         <location filename="../../src/gui/option/option_frame.py" line="158"/>
-        <source>Rom Settings</source>
+        <source>ROM Settings</source>
         <translation>ROM设置</translation>
+    </message>
+    <message>
+        <source>Rom Settings</source>
+        <translation type="vanished">ROM设置</translation>
     </message>
     <message>
         <location filename="../../src/gui/option/option_frame.py" line="36"/>
@@ -2290,36 +2333,57 @@
         <location filename="../../src/gui/option/option_frame.py" line="39"/>
         <location filename="../../src/gui/option/option_frame.py" line="181"/>
         <source>Restart Later</source>
-        <translation>暂不重启</translation>
+        <translation>稍后重启</translation>
     </message>
 </context>
 <context>
     <name>RomCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="69"/>
-        <location filename="../../src/gui/option/rom_card.py" line="88"/>
         <source>Rom Files</source>
-        <translation>ROM文件</translation>
+        <translation type="vanished">ROM文件</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="69"/>
-        <location filename="../../src/gui/option/rom_card.py" line="89"/>
         <source>Configure the ROM file paths</source>
-        <translation>配置ROM文件路径</translation>
+        <translation type="vanished">配置ROM文件路径</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="111"/>
+        <location filename="../../src/gui/option/rom_card.py" line="123"/>
+        <source>Load ROM</source>
+        <translation>加载ROM</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="112"/>
+        <location filename="../../src/gui/option/rom_card.py" line="124"/>
+        <source>Save ROM</source>
+        <translation>保存ROM</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="109"/>
+        <location filename="../../src/gui/option/rom_card.py" line="121"/>
+        <source>ROM Settings</source>
+        <translation>ROM设置</translation>
+    </message>
+    <message>
+        <source>Rom Settings</source>
+        <translation type="vanished">ROM设置</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="109"/>
+        <location filename="../../src/gui/option/rom_card.py" line="122"/>
+        <source>Configure the ROM settings</source>
+        <translation>配置ROM设置</translation>
     </message>
 </context>
 <context>
     <name>RomSettingCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="32"/>
-        <location filename="../../src/gui/option/rom_card.py" line="58"/>
         <source>Select File</source>
-        <translation>选择文件</translation>
+        <translation type="vanished">选择文件</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="57"/>
         <source>Browse</source>
-        <translation>选择</translation>
+        <translation type="vanished">选择</translation>
     </message>
 </context>
 </TS>

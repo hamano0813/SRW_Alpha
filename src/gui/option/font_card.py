@@ -144,6 +144,10 @@ class FontFamilyCard(SettingCard):
         self.titleLabel.setStyleSheet(fontStyleSheet(font))  # 标题使用选定字体显示
         self.familyCombo.resetUI()
 
+    def paintEvent(self, e):
+        """重写绘制事件 - 禁用默认绘制"""
+        pass
+
 
 class FontLoadThread(QThread):
     """字体映射加载线程 - 在后台加载字体文件映射信息"""

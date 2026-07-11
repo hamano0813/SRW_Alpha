@@ -113,7 +113,7 @@ class MainWindow(FluentWindow):
             QApplication.instance().removeTranslator(QTranslator())  # type: ignore
 
         # 更新窗口标题和界面文本
-        self.setWindowTitle(self.tr("Super Robot Wars α Rom Editor") + " - v0.1.0")
+        self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.1.0")
         self.translate_frame("OptionFrame", "Options")
         self.option_frame.translateUI()
 

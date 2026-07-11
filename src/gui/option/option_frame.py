@@ -73,7 +73,7 @@ class OptionFrame(QFrame):
 
         # 创建ROM设置组
         self.rom_card = RomCard(CustomIcon.ROM)
-        self.rom_group = self.create_group(self.tr("Rom Settings"), [self.rom_card])
+        self.rom_group = self.create_group(self.tr("ROM Settings"), [self.rom_card])
 
         # 设置子框架布局
         sub_layout = QVBoxLayout()
@@ -155,7 +155,7 @@ class OptionFrame(QFrame):
     def translateUI(self):
         """更新所有界面文本的翻译"""
         # 更新设置组标题
-        self.rom_group.titleLabel.setText(self.tr("Rom Settings"))
+        self.rom_group.titleLabel.setText(self.tr("ROM Settings"))
         self.ui_group.titleLabel.setText(self.tr("Interface Settings"))
 
         # 更新各个设置卡片的翻译

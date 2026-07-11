@@ -1,5 +1,5 @@
 """
-Super Robot Wars α Rom Editor 主程序入口
+Super Robot Wars α ROM Editor 主程序入口
 """
 
 import os

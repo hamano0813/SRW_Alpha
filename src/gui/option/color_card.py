@@ -14,7 +14,7 @@ class ColorCard(CustomColorSettingCard):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # 初始化颜色对话框中的各种文本标签
-        self._choose_color = self.tr("Choose color")
+        self._choose_color = self.tr("Choose Color")
         self._ok = self.tr("OK")
         self._cancel = self.tr("Cancel")
         self._edit_color = self.tr("Edit Color")
@@ -49,7 +49,7 @@ class ColorCard(CustomColorSettingCard):
     def translateUI(self):
         """更新所有界面文本的翻译"""
         # 更新颜色对话框相关文本
-        self._choose_color = self.tr("Choose color")
+        self._choose_color = self.tr("Choose Color")
         self._ok = self.tr("OK")
         self._cancel = self.tr("Cancel")
         self._edit_color = self.tr("Edit Color")
@@ -62,7 +62,7 @@ class ColorCard(CustomColorSettingCard):
         self.defaultRadioButton.setText(self.tr("Default color"))  # 默认颜色单选按钮
         self.customRadioButton.setText(self.tr("Custom color"))  # 自定义颜色单选按钮
         self.customLabel.setText(self.tr("Custom color"))  # 自定义颜色标签
-        self.chooseColorButton.setText(self.tr("Choose color"))  # 选择颜色按钮
+        self.chooseColorButton.setText(self.tr("Choose Color"))  # 选择颜色按钮
         self.choiceLabel.setText(self.buttonGroup.checkedButton().text())  # 当前选择的显示标签
 
         # 更新卡片标题和描述

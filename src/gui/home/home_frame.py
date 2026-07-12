@@ -8,27 +8,26 @@ import os
 import shutil
 
 from PySide6.QtWidgets import QFrame, QHBoxLayout, QVBoxLayout
-from qfluentwidgets import MessageBox, PrimaryPushButton, ScrollArea, qconfig
+from qfluentwidgets import MessageBox, PrimaryPushButton, ScrollArea
 
 import config
 
-from .file_table import RequireFileTable
-from .rom_progress import RomProgressDialog
+from .file_table import FileTable
+from .progress_dialog import ProgressDialog
 
-# 外部工具路径
+# 外部工具路径常量
 DUMPSXISO = os.path.join(config.current_path, "tools", "dumpsxiso.exe")
 MKPSXISO = os.path.join(config.current_path, "tools", "mkpsxiso.exe")
-from .rom_progress import RomProgressDialog
 
 
 class HomeFrame(QFrame):
-    """主页框架 - ROM编辑器首页"""
+    """概览框架 - ROM 编辑器首页"""
 
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setObjectName("EditorFrame")
 
-        # 创建子框架容器
+        # 子框架容器，用于滚动
         self.sub_frame = QFrame()
 
         # ========== Load / Save 按钮（右对齐） ==========
@@ -47,7 +46,7 @@ class HomeFrame(QFrame):
         btn_layout.addWidget(self.save_button)
 
         # ========== 编辑项目表格 ==========
-        self.table = RequireFileTable(self)
+        self.table = FileTable(self)
 
         # ========== 子框架布局 ==========
         sub_layout = QVBoxLayout()
@@ -68,6 +67,25 @@ class HomeFrame(QFrame):
         layout.addWidget(self.scroll_area)
         layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(layout)
+
+    # ---- Cache 路径辅助 ----
+
+    def _cache_paths(self) -> tuple[str, str]:
+        """
+        从配置获取缓存目录和对应的 XML 项目文件路径。
+
+        Returns:
+            (cache_path, xml_path)
+        """
+        cache_name = config.option.cache_dir.value
+        cache_path = os.path.join(config.current_path, cache_name)
+        xml_path = os.path.join(
+            os.path.dirname(cache_path),
+            os.path.basename(cache_path) + ".xml",
+        )
+        return cache_path, xml_path
+
+    # ---- Load ROM ----
 
     def _on_load_rom(self):
         """加载 ROM —— 调用 dumpsxiso 解包到缓存目录"""
@@ -92,22 +110,16 @@ class HomeFrame(QFrame):
             w.exec()
             return
 
-        cache_name = config.option.cache_dir.value
-        cache_path = os.path.join(config.current_path, cache_name)
-
-        # 确保缓存目录存在
+        cache_path, xml_path = self._cache_paths()
         os.makedirs(cache_path, exist_ok=True)
 
-        xml_path = os.path.join(
-            os.path.dirname(cache_path),
-            os.path.basename(cache_path) + ".xml",
-        )
-
-        dialog = RomProgressDialog(self.window())
+        dialog = ProgressDialog(self.window())
         dialog.start(DUMPSXISO, ["-x", cache_path, "-s", xml_path, rom_path])
         if dialog.exec():
-            # TODO
+            # TODO: 加载完成后刷新表格等操作
             pass
+
+    # ---- Save ROM ----
 
     def _on_save_rom(self):
         """保存 ROM —— 调用 mkpsxiso 从缓存目录重建镜像"""
@@ -121,14 +133,7 @@ class HomeFrame(QFrame):
             w.exec()
             return
 
-        cache_name = config.option.cache_dir.value
-        cache_path = os.path.join(config.current_path, cache_name)
-
-        # 检查缓存 XML 是否存在
-        xml_path = os.path.join(
-            os.path.dirname(cache_path),
-            os.path.basename(cache_path) + ".xml",
-        )
+        cache_path, xml_path = self._cache_paths()
         if not os.path.isfile(xml_path):
             w = MessageBox(
                 self.tr("File Not Found"),
@@ -156,13 +161,14 @@ class HomeFrame(QFrame):
             if not w.exec():
                 return
 
-        dialog = RomProgressDialog(self.window())
-
+        dialog = ProgressDialog(self.window())
         dialog.start(MKPSXISO, ["-y", "-o", output_bin, "-c", output_cue, xml_path])
         if dialog.exec():
             os.startfile(os.path.dirname(output_bin))
             if config.option.auto_clean.value and os.path.isdir(cache_path):
                 shutil.rmtree(cache_path, ignore_errors=True)
+
+    # ---- i18n / Reset ----
 
     def translateUI(self):
         """更新界面文本翻译"""

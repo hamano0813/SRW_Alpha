@@ -1447,49 +1447,6 @@
     </message>
 </context>
 <context>
-    <name>FileTable</name>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="29"/>
-        <source>File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="30"/>
-        <source>Unit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="31"/>
-        <source>Pilot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="32"/>
-        <source>Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="33"/>
-        <source>Scenario</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="34"/>
-        <source>Intermission</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="35"/>
-        <source>Character</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="36"/>
-        <source>Other</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>FontCard</name>
     <message>
         <location filename="../../src/gui/option/font_card.py" line="160"/>
@@ -1507,136 +1464,136 @@
 <context>
     <name>HomeFrame</name>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="38"/>
-        <location filename="../../src/gui/home/home_frame.py" line="249"/>
+        <location filename="../../src/gui/home/home_frame.py" line="44"/>
+        <location filename="../../src/gui/home/home_frame.py" line="288"/>
         <source>Extract ROM</source>
         <translation>解包ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="39"/>
-        <location filename="../../src/gui/home/home_frame.py" line="250"/>
+        <location filename="../../src/gui/home/home_frame.py" line="45"/>
+        <location filename="../../src/gui/home/home_frame.py" line="289"/>
         <source>Rebuild ROM</source>
         <translation>重建ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="44"/>
-        <location filename="../../src/gui/home/home_frame.py" line="255"/>
+        <location filename="../../src/gui/home/home_frame.py" line="50"/>
+        <location filename="../../src/gui/home/home_frame.py" line="294"/>
         <source>ROM Path Not Configured</source>
         <translation>ROM路径未配置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="45"/>
-        <location filename="../../src/gui/home/home_frame.py" line="256"/>
+        <location filename="../../src/gui/home/home_frame.py" line="51"/>
+        <location filename="../../src/gui/home/home_frame.py" line="295"/>
         <source>Please configure the ROM file path in Settings first.</source>
         <translation>请先在设置中配置ROM文件路径。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="46"/>
-        <location filename="../../src/gui/home/home_frame.py" line="257"/>
+        <location filename="../../src/gui/home/home_frame.py" line="52"/>
+        <location filename="../../src/gui/home/home_frame.py" line="296"/>
         <source>File Not Found</source>
         <translation>文件未找到</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="47"/>
-        <location filename="../../src/gui/home/home_frame.py" line="258"/>
+        <location filename="../../src/gui/home/home_frame.py" line="53"/>
+        <location filename="../../src/gui/home/home_frame.py" line="297"/>
         <source>ROM file does not exist:
 {}</source>
         <translation>ROM文件不存在:
 {}</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="48"/>
-        <location filename="../../src/gui/home/home_frame.py" line="259"/>
+        <location filename="../../src/gui/home/home_frame.py" line="54"/>
+        <location filename="../../src/gui/home/home_frame.py" line="298"/>
         <source>OK</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="37"/>
-        <location filename="../../src/gui/home/home_frame.py" line="253"/>
+        <location filename="../../src/gui/home/home_frame.py" line="43"/>
+        <location filename="../../src/gui/home/home_frame.py" line="292"/>
         <source>Close</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="40"/>
-        <location filename="../../src/gui/home/home_frame.py" line="251"/>
+        <location filename="../../src/gui/home/home_frame.py" line="46"/>
+        <location filename="../../src/gui/home/home_frame.py" line="290"/>
         <source>Read Cache</source>
         <translation>读取缓存</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="41"/>
-        <location filename="../../src/gui/home/home_frame.py" line="252"/>
+        <location filename="../../src/gui/home/home_frame.py" line="47"/>
+        <location filename="../../src/gui/home/home_frame.py" line="291"/>
         <source>Write Cache</source>
         <translation>写入缓存</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="49"/>
-        <location filename="../../src/gui/home/home_frame.py" line="260"/>
+        <location filename="../../src/gui/home/home_frame.py" line="55"/>
+        <location filename="../../src/gui/home/home_frame.py" line="299"/>
         <source>Save Path Not Configured</source>
         <translation>保存路径未配置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="50"/>
-        <location filename="../../src/gui/home/home_frame.py" line="261"/>
+        <location filename="../../src/gui/home/home_frame.py" line="56"/>
+        <location filename="../../src/gui/home/home_frame.py" line="300"/>
         <source>Please configure the ROM save path in Settings first.</source>
         <translation>请先在设置中配置ROM保存路径。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="51"/>
-        <location filename="../../src/gui/home/home_frame.py" line="262"/>
+        <location filename="../../src/gui/home/home_frame.py" line="57"/>
+        <location filename="../../src/gui/home/home_frame.py" line="301"/>
         <source>Cache project file not found. Please load a ROM first.</source>
         <translation>未找到缓存项目文件，请先加载ROM。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="52"/>
-        <location filename="../../src/gui/home/home_frame.py" line="263"/>
+        <location filename="../../src/gui/home/home_frame.py" line="58"/>
+        <location filename="../../src/gui/home/home_frame.py" line="302"/>
         <source>Cache directory not found. Please load a ROM first.</source>
         <translation>缓存目录未找到，请先加载ROM。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="53"/>
-        <location filename="../../src/gui/home/home_frame.py" line="264"/>
+        <location filename="../../src/gui/home/home_frame.py" line="59"/>
+        <location filename="../../src/gui/home/home_frame.py" line="303"/>
         <source>Cache already exists. Overwrite?</source>
         <translation>缓存已存在，是否覆盖？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="54"/>
-        <location filename="../../src/gui/home/home_frame.py" line="265"/>
+        <location filename="../../src/gui/home/home_frame.py" line="60"/>
+        <location filename="../../src/gui/home/home_frame.py" line="304"/>
         <source>The cache directory already exists. Do you want to overwrite it?</source>
         <translation>缓存目录已存在，是否覆盖？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="55"/>
-        <location filename="../../src/gui/home/home_frame.py" line="266"/>
+        <location filename="../../src/gui/home/home_frame.py" line="61"/>
+        <location filename="../../src/gui/home/home_frame.py" line="305"/>
         <source>Overwrite</source>
         <translation>覆盖</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="56"/>
-        <location filename="../../src/gui/home/home_frame.py" line="267"/>
+        <location filename="../../src/gui/home/home_frame.py" line="62"/>
+        <location filename="../../src/gui/home/home_frame.py" line="306"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="57"/>
-        <location filename="../../src/gui/home/home_frame.py" line="268"/>
+        <location filename="../../src/gui/home/home_frame.py" line="63"/>
+        <location filename="../../src/gui/home/home_frame.py" line="307"/>
         <source>Serialize Data</source>
         <translation>序列化数据</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="58"/>
-        <location filename="../../src/gui/home/home_frame.py" line="269"/>
+        <location filename="../../src/gui/home/home_frame.py" line="64"/>
+        <location filename="../../src/gui/home/home_frame.py" line="308"/>
         <source>Are you sure you want to serialize modified data to cache files?</source>
         <translation>确认将修改的数据序列化到缓存文件？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="59"/>
-        <location filename="../../src/gui/home/home_frame.py" line="270"/>
+        <location filename="../../src/gui/home/home_frame.py" line="65"/>
+        <location filename="../../src/gui/home/home_frame.py" line="309"/>
         <source>File Already Exists</source>
         <translation>文件已存在</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="60"/>
-        <location filename="../../src/gui/home/home_frame.py" line="271"/>
+        <location filename="../../src/gui/home/home_frame.py" line="66"/>
+        <location filename="../../src/gui/home/home_frame.py" line="310"/>
         <source>The output file already exists:
 {}
 
@@ -1647,16 +1604,51 @@ Do you want to overwrite it?</source>
 是否覆盖？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="61"/>
-        <location filename="../../src/gui/home/home_frame.py" line="272"/>
+        <location filename="../../src/gui/home/home_frame.py" line="67"/>
+        <location filename="../../src/gui/home/home_frame.py" line="311"/>
         <source>Yes</source>
         <translation>是</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="62"/>
-        <location filename="../../src/gui/home/home_frame.py" line="273"/>
+        <location filename="../../src/gui/home/home_frame.py" line="68"/>
+        <location filename="../../src/gui/home/home_frame.py" line="312"/>
         <source>No</source>
         <translation>否</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="94"/>
+        <source>File</source>
+        <translation>文件</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="95"/>
+        <location filename="../../src/gui/home/home_frame.py" line="102"/>
+        <source>Robot</source>
+        <translation>机体</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="96"/>
+        <location filename="../../src/gui/home/home_frame.py" line="105"/>
+        <source>Pilot</source>
+        <translation>机师</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="97"/>
+        <location filename="../../src/gui/home/home_frame.py" line="108"/>
+        <source>Message</source>
+        <translation>文本</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="98"/>
+        <location filename="../../src/gui/home/home_frame.py" line="111"/>
+        <source>Scenario</source>
+        <translation>场景</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="99"/>
+        <location filename="../../src/gui/home/home_frame.py" line="119"/>
+        <source>Intermission</source>
+        <translation>幕间</translation>
     </message>
 </context>
 <context>

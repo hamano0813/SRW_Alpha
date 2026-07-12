@@ -63,6 +63,7 @@ class MainWindow(FluentWindow):
         self.addSubInterface(self.option_frame, CustomIcon.OPTION, self.tr("Options"), position=NavigationItemPosition.BOTTOM)
 
         self.translateUI()
+        self.resetUI()
 
         loop.exec()
 

@@ -1,7 +1,7 @@
 """
 概览框架模块
 
-提供 ROM 编辑器的首页界面，包含加载/保存 ROM 按钮和编辑项目表格。
+提供 ROM 编辑器的首页界面，包含加载/保存 ROM 按钮和 XML 项目树。
 使用 dumpsxiso / mkpsxiso 工具进行 ROM 的解包和重建。
 
 Classes:
@@ -12,12 +12,18 @@ import os
 import shutil
 
 from PySide6.QtWidgets import QFrame, QHBoxLayout, QVBoxLayout
-from qfluentwidgets import MessageBox, PrimaryPushButton, PushButton, ScrollArea
+from qfluentwidgets import (
+    MessageBox,
+    PrimaryPushButton,
+    PushButton,
+    ScrollArea,
+    setFont,
+)
 
 import config
 
-from .file_table import FileTable
 from .progress_dialog import ProgressDialog
+from .xml_tree import XmlTreeView
 
 DUMPSXISO = os.path.join(config.current_path, "tools", "dumpsxiso.exe")
 MKPSXISO = os.path.join(config.current_path, "tools", "mkpsxiso.exe")
@@ -27,7 +33,7 @@ class HomeFrame(QFrame):
     """概览框架 - ROM 编辑器首页"""
 
     def __init__(self, parent=None):
-        """初始化首页布局：按钮栏、编辑项目表格和滚动区域"""
+        """初始化首页布局：按钮栏、XML 项目树和滚动区域"""
         super().__init__(parent)
         self.setObjectName("EditorFrame")
 
@@ -84,13 +90,42 @@ class HomeFrame(QFrame):
         btn_layout.addWidget(self.parse_button)
         btn_layout.addWidget(self.serialize_button)
 
-        self.table = FileTable(self)
+        self._headers = [
+            self.tr("File"),
+            self.tr("Robot"),
+            self.tr("Pilot"),
+            self.tr("Message"),
+            self.tr("Scenario"),
+            self.tr("Intermission"),
+        ]
+        self._datas = {
+            self.tr("Robot"): [
+                "ROBOT.RAF",
+            ],
+            self.tr("Pilot"): [
+                "PILOT.BIN",
+            ],
+            self.tr("Message"): ["SNMSG.BIN"],
+            self.tr("Scenario"): [
+                "ROBOT.RAF",
+                "PILOT.BIN",
+                "SNMSG.BIN",
+                "SNDATA.BIN",
+                "ENLIST.BIN",
+                "AIUNP.BIN",
+            ],
+            self.tr("Intermission"): [
+                "SCRIPT.BIN",
+            ],
+        }
+
+        self.tree = XmlTreeView(self._headers, self._datas, self)
 
         sub_layout = QVBoxLayout()
         sub_layout.setSpacing(12)
         sub_layout.setContentsMargins(16, 12, 16, 12)
         sub_layout.addLayout(btn_layout)
-        sub_layout.addWidget(self.table)
+        sub_layout.addWidget(self.tree)
         self.sub_frame.setLayout(sub_layout)
 
         self.scroll_area = ScrollArea(self)
@@ -168,8 +203,8 @@ class HomeFrame(QFrame):
             self._on_parse_cache()
 
     def _on_parse_cache(self):
-        """解析缓存目录中的 ROM 数据并刷新表格"""
-        cache_path, _ = self._cache_paths()
+        """解析 cache.xml 并在树形视图中展示文件系统层级"""
+        cache_path, xml_path = self._cache_paths()
         if not os.path.isdir(cache_path):
             w = MessageBox(
                 self._msg_file_not_found,
@@ -180,6 +215,8 @@ class HomeFrame(QFrame):
             w.cancelButton.hide()
             w.exec()
             return
+
+        self.tree.load_xml(xml_path)
 
     def _on_serialize(self):
         """序列化修改的数据到缓存文件"""
@@ -276,8 +313,38 @@ class HomeFrame(QFrame):
         self.save_button.setText(self._rebuild_rom_text)
         self.parse_button.setText(self._parse_cache_text)
         self.serialize_button.setText(self._serialize_text)
-        self.table.translateUI()
+
+        # 刷新树表头与分类映射（self.tr() 值随语言切换变化）
+        self._headers = [
+            self.tr("File"),
+            self.tr("Robot"),
+            self.tr("Pilot"),
+            self.tr("Message"),
+            self.tr("Scenario"),
+            self.tr("Intermission"),
+        ]
+        self._datas = {
+            self.tr("Robot"): ["ROBOT.RAF"],
+            self.tr("Pilot"): ["PILOT.BIN"],
+            self.tr("Message"): ["SNMSG.BIN"],
+            self.tr("Scenario"): [
+                "ROBOT.RAF",
+                "PILOT.BIN",
+                "SNMSG.BIN",
+                "SNDATA.BIN",
+                "ENLIST.BIN",
+                "AIUNP.BIN",
+            ],
+            self.tr("Intermission"): [
+                "SCRIPT.BIN",
+            ],
+        }
+        self.tree.setHeaderLabels(self._headers)
 
     def resetUI(self):
         """重置界面字体"""
-        pass
+        setFont(self.load_button, 18)
+        setFont(self.save_button, 18)
+        setFont(self.parse_button, 18)
+        setFont(self.serialize_button, 18)
+        self.tree.resetUI()

@@ -1,3 +1,10 @@
 __pycache__/
 .VSCodeCounter/
 config.json
+cache/
+cache.xml
+
+# Python C extension build artifacts
+build/
+*.pyd
+*.pyc

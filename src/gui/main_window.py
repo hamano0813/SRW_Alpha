@@ -91,7 +91,6 @@ class MainWindow(FluentWindow):
                 style.unpolish(widget)
                 style.polish(widget)
 
-        self.navigationInterface
         self.home_frame.resetUI()
         self.option_frame.resetUI()
 

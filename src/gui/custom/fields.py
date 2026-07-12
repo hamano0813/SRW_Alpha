@@ -264,17 +264,3 @@ class MappingType(QObject):
             self.tr("unknown50"): "unk50",
         }
         return mapping
-
-
-if __name__ == "__main__":
-    mapping = MappingType()
-    import sys
-
-    from PySide6.QtCore import QCoreApplication, QTranslator
-
-    app = QCoreApplication(sys.argv)
-    translator = QTranslator()
-    translator.load(r"C:\iCode\SRW_Alpha\res\i18n\zh_CN.qm")
-    app.installTranslator(translator)
-    print(mapping._mapping)
-    app.exec()

@@ -1,11 +1,15 @@
 <RCC>
     <qresource prefix="/">
         <file>icon.png</file>
+        <file>logo.png</file>
+
+        <file>splash/splash1.png</file>
+        <file>splash/splash2.png</file>
+        <file>splash/splash3.png</file>
+        <file>splash/splash4.png</file>
 
         <file>icon/logo_black.svg</file>
         <file>icon/logo_white.svg</file>
-        <file>icon/splash_black.svg</file>
-        <file>icon/splash_white.svg</file>
         
         <file>icon/home_black.svg</file>
         <file>icon/home_white.svg</file>

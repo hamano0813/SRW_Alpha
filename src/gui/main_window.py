@@ -8,12 +8,14 @@ Classes:
     MainWindow: 主窗口类，继承自 FluentWindow
 """
 
+import random
 from typing import cast
 
-from PySide6.QtCore import QEventLoop, QSize, QTimer, QTranslator
-from PySide6.QtGui import QIcon
+from PySide6.QtCore import QEventLoop, QSize, Qt, QTimer, QTranslator
+from PySide6.QtGui import QIcon, QPixmap
 from PySide6.QtWidgets import QApplication
 from qfluentwidgets import (
+    FluentTitleBar,
     FluentWindow,
     NavigationItemPosition,
     SplashScreen,
@@ -33,8 +35,10 @@ class MainWindow(FluentWindow):
 
     def __init__(self, parent=None):
         super().__init__(parent)
-
-        self.splash = SplashScreen(CustomIcon.SPLASH.icon(), self)
+        splash_idx = random.randrange(1, 5)
+        self.splash = SplashScreen(
+            QIcon(QPixmap(f":/splash/splash{splash_idx}.png").scaled(960, 720, mode=Qt.TransformationMode.SmoothTransformation)), self
+        )
         self.splash.setIconSize(QSize(960, 720))
 
         self.init_ui()
@@ -70,9 +74,10 @@ class MainWindow(FluentWindow):
     def init_icon(self):
         """设置窗口图标和标题栏样式"""
         self.setWindowIcon(QIcon(":/icon.png"))
-        self.titleBar.iconLabel.setFixedSize(108, 36)  # type: ignore
-        self.titleBar.iconLabel.setPixmap(CustomIcon.LOGO.icon().pixmap(108, 36))  # type: ignore
-        self.titleBar.titleLabel.setStyleSheet("QLabel{font-size: 16px; font-weight: bold;}")  # type: ignore
+        titleBar = cast(FluentTitleBar, self.titleBar)
+        titleBar.iconLabel.setFixedSize(100, 36)
+        titleBar.iconLabel.setPixmap(QPixmap(":/logo.png").scaled(100, 36, mode=Qt.TransformationMode.SmoothTransformation))
+        titleBar.titleLabel.setStyleSheet("QLabel{font-size: 16px; font-weight: bold;}")
 
     def init_pos(self):
         """初始化窗口位置为屏幕居中"""

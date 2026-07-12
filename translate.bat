@@ -2,7 +2,6 @@ uv run pyside6-lupdate ^
     src/gui/main_window.py ^
     src/gui/home/home_frame.py ^
     src/gui/home/file_table.py ^
-    src/gui/home/progress_dialog.py ^
     src/gui/option/option_frame.py ^
     src/gui/option/color_card.py ^
     src/gui/option/rom_card.py ^
@@ -18,3 +17,5 @@ uv run pyside6-lrelease res/i18n/zh_CN.ts -qm res/i18n/zh_CN.qm
 
 uv run pyside6-linguist res/i18n/ja_JP.ts
 uv run pyside6-lrelease res/i18n/ja_JP.ts -qm res/i18n/ja_JP.qm
+
+uv run pyside6-rcc  .\res\res.qrc -o .\src\res.py

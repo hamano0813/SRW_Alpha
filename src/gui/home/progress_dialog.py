@@ -24,7 +24,7 @@ class ProgressDialog(QDialog):
         self._log.setReadOnly(True)
         self._log.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
 
-        self._button = PrimaryPushButton(self.tr("Close"))
+        self._button = PrimaryPushButton()
         self._button.setEnabled(False)
         self._button.setFixedHeight(40)
 
@@ -52,7 +52,7 @@ class ProgressDialog(QDialog):
     def _on_output(self):
         """将进程输出追加到日志文本框，合并 \r 跨块数据"""
         self._buffer += self._process.readAllStandardOutput().data().decode("utf-8", errors="replace")  # type: ignore
-        self._buffer = self._buffer.replace("\r", "")
+        self._buffer = self._buffer.replace("\r", "").replace("\\", "/")
 
         while "\n" in self._buffer:
             line, self._buffer = self._buffer.split("\n", 1)
@@ -70,3 +70,6 @@ class ProgressDialog(QDialog):
 
     def showEvent(self, a0):
         self.resetUI()
+
+    def set_button_text(self, text: str):
+        self._button.setText(text)

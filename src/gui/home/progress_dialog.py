@@ -17,10 +17,10 @@ class ProgressDialog(QDialog):
         super().__init__(parent, f=Qt.WindowType.Dialog | Qt.WindowType.FramelessWindowHint)
         self.setFixedSize(680, 400)
 
-        # 日志文本框
+        # 日志文本框（禁用右键菜单）
         self._log = TextEdit(self)
         self._log.setReadOnly(True)
-        self._log.setMinimumHeight(200)
+        self._log.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
 
         # 关闭按钮（进程结束后启用）
         self._button = PrimaryPushButton(self.tr("Close"))

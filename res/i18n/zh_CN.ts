@@ -4,12 +4,14 @@
 <context>
     <name>CleanSettingCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="91"/>
+        <location filename="../../src/gui/option/rom_card.py" line="129"/>
+        <location filename="../../src/gui/option/rom_card.py" line="134"/>
         <source>Auto clear cache</source>
         <translation>自动清理缓存</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="92"/>
+        <location filename="../../src/gui/option/rom_card.py" line="130"/>
+        <location filename="../../src/gui/option/rom_card.py" line="135"/>
         <source>Clear cache after ROM is saved</source>
         <translation>ROM保存以后自动清理缓存（下次修改需重新载入ROM）</translation>
     </message>
@@ -1407,15 +1409,45 @@
 <context>
     <name>FileSettingCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="44"/>
-        <location filename="../../src/gui/option/rom_card.py" line="75"/>
+        <location filename="../../src/gui/option/rom_card.py" line="46"/>
+        <location filename="../../src/gui/option/rom_card.py" line="109"/>
         <source>Select File</source>
         <translation>选择文件</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="74"/>
+        <location filename="../../src/gui/option/rom_card.py" line="108"/>
         <source>Browse</source>
         <translation>选择</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="53"/>
+        <location filename="../../src/gui/option/rom_card.py" line="113"/>
+        <source>Non-ASCII Path</source>
+        <translation>非ASCII路径</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="54"/>
+        <location filename="../../src/gui/option/rom_card.py" line="114"/>
+        <source>ROM path and filename cannot contain non-ASCII characters.</source>
+        <translation>ROM路径和文件名不能有非ASCII字符。</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="57"/>
+        <location filename="../../src/gui/option/rom_card.py" line="117"/>
+        <source>OK</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="55"/>
+        <location filename="../../src/gui/option/rom_card.py" line="115"/>
+        <source>Path Conflict</source>
+        <translation>路径冲突</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="56"/>
+        <location filename="../../src/gui/option/rom_card.py" line="116"/>
+        <source>The save path is the same as the load path. This would overwrite the original ROM file.</source>
+        <translation>保存路径与加载路径相同，这将覆盖原始ROM文件。</translation>
     </message>
 </context>
 <context>
@@ -2488,20 +2520,20 @@ Do you want to overwrite it?</source>
         <translation type="vanished">配置ROM文件路径</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="109"/>
-        <location filename="../../src/gui/option/rom_card.py" line="121"/>
+        <location filename="../../src/gui/option/rom_card.py" line="153"/>
+        <location filename="../../src/gui/option/rom_card.py" line="178"/>
         <source>Load ROM</source>
         <translation>加载ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="110"/>
-        <location filename="../../src/gui/option/rom_card.py" line="122"/>
+        <location filename="../../src/gui/option/rom_card.py" line="154"/>
+        <location filename="../../src/gui/option/rom_card.py" line="179"/>
         <source>Save ROM</source>
         <translation>保存ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="107"/>
-        <location filename="../../src/gui/option/rom_card.py" line="119"/>
+        <location filename="../../src/gui/option/rom_card.py" line="151"/>
+        <location filename="../../src/gui/option/rom_card.py" line="176"/>
         <source>ROM Settings</source>
         <translation>ROM设置</translation>
     </message>
@@ -2510,21 +2542,10 @@ Do you want to overwrite it?</source>
         <translation type="vanished">ROM设置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="107"/>
-        <location filename="../../src/gui/option/rom_card.py" line="120"/>
+        <location filename="../../src/gui/option/rom_card.py" line="151"/>
+        <location filename="../../src/gui/option/rom_card.py" line="177"/>
         <source>Configure the ROM settings</source>
         <translation>配置ROM设置</translation>
-    </message>
-</context>
-<context>
-    <name>RomSettingCard</name>
-    <message>
-        <source>Select File</source>
-        <translation type="vanished">选择文件</translation>
-    </message>
-    <message>
-        <source>Browse</source>
-        <translation type="vanished">选择</translation>
     </message>
 </context>
 </TS>

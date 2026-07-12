@@ -5,6 +5,7 @@ ROM文件配置卡片模块
 包含ROM文件读写的路径选择功能和缓存清理设置卡片。
 """
 
+import os
 from enum import Enum
 from typing import Union
 
@@ -15,6 +16,7 @@ from qfluentwidgets import (
     ConfigItem,
     ExpandGroupSettingCard,
     FluentIconBase,
+    MessageBox,
     PushSettingCard,
     SwitchSettingCard,
     qconfig,
@@ -46,6 +48,12 @@ class FileSettingCard(PushSettingCard, CustomCard):
         self._path = path
         self._title = title
         self._ctype = ctype
+
+        # MessageBox 文本（translateUI 中会更新）
+        self._non_ascii_title = self.tr("Non-ASCII Path")
+        self._non_ascii_msg = self.tr("ROM path and filename cannot contain non-ASCII characters.")
+        self._ok = self.tr("OK")
+
         self.titleLabel.setText(title)
         self.contentLabel.setText(path.value)  # 显示当前文件路径
         self.contentLabel.setHidden(False)  # 确保路径标签可见
@@ -62,8 +70,20 @@ class FileSettingCard(PushSettingCard, CustomCard):
             file_path, _ = QFileDialog.getOpenFileName(self, self._select_file, "", "ROM Files (*.bin *.cue)")
         else:
             """打开文件选择对话框选择保存文件路径"""
-            file_path, _ = QFileDialog.getSaveFileName(self, self._select_file, "", "ROM Files (*.bin *.cue)")
+            file_path, _ = QFileDialog.getSaveFileName(self, self._select_file, config.option.get(self._path), "ROM Files (*.bin *.cue)")
         if file_path:
+            # 检查路径是否仅含 ASCII 字符（LOAD / SAVE 均检查）
+            if not file_path.isascii():
+                w = MessageBox(
+                    self._non_ascii_title,
+                    self._non_ascii_msg,
+                    self.window(),
+                )
+                w.yesButton.setText(self._ok)
+                w.cancelButton.hide()
+                w.exec()
+                return
+
             # 保存选择的文件路径到配置
             config.option.set(self._path, file_path)
             self.contentLabel.setText(file_path)  # 更新显示的路径
@@ -75,6 +95,11 @@ class FileSettingCard(PushSettingCard, CustomCard):
         self._select_file = self.tr("Select File")
         self.titleLabel.setText(self._title)
 
+        # 更新 MessageBox 文本（参考 option_frame 的翻译模式）
+        self._non_ascii_title = self.tr("Non-ASCII Path")
+        self._non_ascii_msg = self.tr("ROM path and filename cannot contain non-ASCII characters.")
+        self._ok = self.tr("OK")
+
     def paintEvent(self, e):
         """重写绘制事件 - 禁用默认绘制"""
         pass
@@ -85,6 +110,8 @@ class CleanSettingCard(SwitchSettingCard, CustomCard):
         super().__init__("", "", "", configItem, parent)
         self.switchButton.setOnText("")
         self.switchButton.setOffText("")
+        self.titleLabel.setText(self.tr("Auto clear cache"))
+        self.contentLabel.setText(self.tr("Clear cache after ROM is saved"))
         self.contentLabel.setHidden(False)  # 确保提示标签可见
 
     def translateUI(self):
@@ -100,6 +127,7 @@ class CleanSettingCard(SwitchSettingCard, CustomCard):
         """重写绘制事件 - 禁用默认绘制"""
         pass
 
+
 class RomCard(ExpandGroupSettingCard):
     """ROM文件组设置卡片 - 可展开的设置组"""
 
@@ -113,6 +141,19 @@ class RomCard(ExpandGroupSettingCard):
         self.addGroupWidget(self._load_card)
         self.addGroupWidget(self._save_card)
         self.addGroupWidget(self._clean_card)
+
+        # LOAD 路径变化时自动同步 SAVE 路径（加 _TEMP 后缀）
+        self._load_card.pathChanged.connect(self._on_load_path_changed)
+
+    def _on_load_path_changed(self):
+        """LOAD 路径更新后，自动设置 SAVE 路径为 LOAD 文件名 + _TEMP"""
+        load_path = config.option.load_path.value
+        if not load_path:
+            return
+        base, ext = os.path.splitext(load_path)
+        save_path = base + "_TEMP" + ext
+        config.option.set(config.option.save_path, save_path)
+        self._save_card.contentLabel.setText(save_path)
 
     def translateUI(self):
         """更新组卡片和所有子卡片的界面翻译"""

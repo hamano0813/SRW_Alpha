@@ -1419,6 +1419,49 @@
     </message>
 </context>
 <context>
+    <name>FileTable</name>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="29"/>
+        <source>File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="30"/>
+        <source>Unit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="31"/>
+        <source>Pilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="32"/>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="33"/>
+        <source>Scenario</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="34"/>
+        <source>Intermission</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="35"/>
+        <source>Character</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/file_table.py" line="36"/>
+        <source>Other</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FontCard</name>
     <message>
         <location filename="../../src/gui/option/font_card.py" line="169"/>
@@ -1436,16 +1479,86 @@
 <context>
     <name>HomeFrame</name>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="24"/>
-        <location filename="../../src/gui/home/home_frame.py" line="62"/>
+        <location filename="../../src/gui/home/home_frame.py" line="34"/>
+        <location filename="../../src/gui/home/home_frame.py" line="175"/>
         <source>Load ROM</source>
         <translation>ROMを読み込む</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="25"/>
-        <location filename="../../src/gui/home/home_frame.py" line="63"/>
+        <location filename="../../src/gui/home/home_frame.py" line="35"/>
+        <location filename="../../src/gui/home/home_frame.py" line="176"/>
         <source>Save ROM</source>
         <translation>ROMを保存</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="95"/>
+        <source>ROM Path Not Configured</source>
+        <translation>ROMパスが設定されていません</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="96"/>
+        <source>Please configure the ROM file path in Settings first.</source>
+        <translation>先に設定画面でROMファイルのパスを設定してください。</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="104"/>
+        <location filename="../../src/gui/home/home_frame.py" line="139"/>
+        <source>File Not Found</source>
+        <translation>ファイルが見つかりません</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="105"/>
+        <source>ROM file does not exist:
+{}</source>
+        <translation>ROMファイルが存在しません:
+{}</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="108"/>
+        <location filename="../../src/gui/home/home_frame.py" line="143"/>
+        <source>OK</source>
+        <translation>確認</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="129"/>
+        <source>Save Path Not Configured</source>
+        <translation>保存パスが設定されていません</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="130"/>
+        <source>Please configure the ROM save path in Settings first.</source>
+        <translation>先に設定画面でROMの保存パスを設定してください。</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="140"/>
+        <source>Cache project file not found. Please load a ROM first.</source>
+        <translation>キャッシュプロジェクトファイルが見つかりません。先にROMを読み込んでください。</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="155"/>
+        <source>File Already Exists</source>
+        <translation>ファイルは既に存在します</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="156"/>
+        <source>The output file already exists:
+{}
+
+Do you want to overwrite it?</source>
+        <translation>出力ファイルは既に存在します:
+{}
+
+上書きしますか？</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="159"/>
+        <source>Yes</source>
+        <translation>はい</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="160"/>
+        <source>No</source>
+        <translation>いいえ</translation>
     </message>
 </context>
 <context>
@@ -2357,46 +2470,11 @@
     </message>
 </context>
 <context>
-    <name>RequireFileTable</name>
+    <name>ProgressDialog</name>
     <message>
-        <location filename="../../src/gui/home/file_table.py" line="29"/>
-        <source>File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="30"/>
-        <source>Unit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="31"/>
-        <source>Pilot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="32"/>
-        <source>Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="33"/>
-        <source>Scenario</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="34"/>
-        <source>Intermission</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="35"/>
-        <source>Character</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/file_table.py" line="36"/>
-        <source>Other</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../src/gui/home/progress_dialog.py" line="26"/>
+        <source>Close</source>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>

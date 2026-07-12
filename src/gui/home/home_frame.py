@@ -2,6 +2,10 @@
 概览框架模块
 
 提供 ROM 编辑器的首页界面，包含加载/保存 ROM 按钮和编辑项目表格。
+使用 dumpsxiso / mkpsxiso 工具进行 ROM 的解包和重建。
+
+Classes:
+    HomeFrame: 概览框架 - ROM 编辑器首页
 """
 
 import os
@@ -15,7 +19,6 @@ import config
 from .file_table import FileTable
 from .progress_dialog import ProgressDialog
 
-# 外部工具路径常量
 DUMPSXISO = os.path.join(config.current_path, "tools", "dumpsxiso.exe")
 MKPSXISO = os.path.join(config.current_path, "tools", "mkpsxiso.exe")
 
@@ -27,10 +30,9 @@ class HomeFrame(QFrame):
         super().__init__(parent)
         self.setObjectName("EditorFrame")
 
-        # 子框架容器，用于滚动
         self.sub_frame = QFrame()
 
-        # ========== Load / Save 按钮（右对齐） ==========
+        # Load / Save 按钮（右对齐）
         self.load_button = PrimaryPushButton(self.tr("Load ROM"), self)
         self.save_button = PrimaryPushButton(self.tr("Save ROM"), self)
         self.load_button.setFixedSize(180, 40)
@@ -45,10 +47,8 @@ class HomeFrame(QFrame):
         btn_layout.addWidget(self.load_button)
         btn_layout.addWidget(self.save_button)
 
-        # ========== 编辑项目表格 ==========
         self.table = FileTable(self)
 
-        # ========== 子框架布局 ==========
         sub_layout = QVBoxLayout()
         sub_layout.setSpacing(16)
         sub_layout.setContentsMargins(40, 20, 40, 20)
@@ -56,19 +56,17 @@ class HomeFrame(QFrame):
         sub_layout.addWidget(self.table)
         self.sub_frame.setLayout(sub_layout)
 
-        # ========== 滚动区域 ==========
         self.scroll_area = ScrollArea(self)
         self.scroll_area.setWidget(self.sub_frame)
         self.scroll_area.setWidgetResizable(True)
         self.scroll_area.enableTransparentBackground()
 
-        # ========== 主布局 ==========
         layout = QVBoxLayout(self)
         layout.addWidget(self.scroll_area)
         layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(layout)
 
-    # ---- Cache 路径辅助 ----
+    # ========== 缓存路径辅助 ==========
 
     def _cache_paths(self) -> tuple[str, str]:
         """
@@ -85,7 +83,7 @@ class HomeFrame(QFrame):
         )
         return cache_path, xml_path
 
-    # ---- Load ROM ----
+    # ========== Load ROM ==========
 
     def _on_load_rom(self):
         """加载 ROM —— 调用 dumpsxiso 解包到缓存目录"""
@@ -119,7 +117,7 @@ class HomeFrame(QFrame):
             # TODO: 加载完成后刷新表格等操作
             pass
 
-    # ---- Save ROM ----
+    # ========== Save ROM ==========
 
     def _on_save_rom(self):
         """保存 ROM —— 调用 mkpsxiso 从缓存目录重建镜像"""
@@ -145,11 +143,9 @@ class HomeFrame(QFrame):
             w.exec()
             return
 
-        # 从 .bin 路径推导对应的 .cue 路径
         output_bin = save_path
         output_cue = os.path.splitext(output_bin)[0] + ".cue"
 
-        # 检查输出文件是否已存在
         if os.path.exists(output_bin):
             w = MessageBox(
                 self.tr("File Already Exists"),
@@ -168,7 +164,7 @@ class HomeFrame(QFrame):
             if config.option.auto_clean.value and os.path.isdir(cache_path):
                 shutil.rmtree(cache_path, ignore_errors=True)
 
-    # ---- i18n / Reset ----
+    # ========== i18n / Reset ==========
 
     def translateUI(self):
         """更新界面文本翻译"""

@@ -1,5 +1,11 @@
 """
-主窗口模块 - 基于FluentWindow的现代化UI界面
+主窗口模块
+
+基于 FluentWindow 的现代化主界面，管理导航栏、主页和设置页的切换。
+提供启动画面、界面语言切换、全局样式刷新等功能。
+
+Classes:
+    MainWindow: 主窗口类，继承自 FluentWindow
 """
 
 from typing import cast
@@ -23,12 +29,11 @@ from .custom import CustomIcon
 
 
 class MainWindow(FluentWindow):
-    """主窗口类 - 继承自FluentWindow"""
+    """主窗口类 - 集成导航栏、启动画面和界面刷新"""
 
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        # 创建启动画面
         self.splash = SplashScreen(CustomIcon.SPLASH.icon(), self)
         self.splash.setIconSize(QSize(960, 720))
 
@@ -38,86 +43,72 @@ class MainWindow(FluentWindow):
         self.setResizeEnabled(True)
 
     def init_ui(self):
-        """初始化用户界面"""
-        # 创建事件循环控制启动画面显示时间
+        """初始化界面：启动画面 → 注册导航页 → 加载语言"""
         loop = QEventLoop(self)
-        QTimer.singleShot(3000, loop.quit)  # 3秒后自动关闭
+        QTimer.singleShot(3000, loop.quit)
 
         self.resize(960, 720)
-        self.setResizeEnabled(False)  # 初始化阶段禁用窗口大小调整
+        self.setResizeEnabled(False)
         self.init_icon()
         self.init_pos()
         self.show()
 
-        # 配置导航栏样式
-        self.navigationInterface.setExpandWidth(150)  # 设置侧边栏展开宽度
-        self.navigationInterface.setReturnButtonVisible(False)  # 隐藏返回按钮
+        self.navigationInterface.setExpandWidth(150)
+        self.navigationInterface.setReturnButtonVisible(False)
 
-        # 创建主页并添加到导航栏
         self.home_frame = HomeFrame(self)
         self.addSubInterface(self.home_frame, CustomIcon.HOME, self.tr("Home"))
 
-        # 创建选项设置页面并添加到导航栏底部
         self.option_frame = OptionFrame(self)
         self.addSubInterface(self.option_frame, CustomIcon.OPTION, self.tr("Options"), position=NavigationItemPosition.BOTTOM)
 
         self.translateUI()
 
-        # 执行事件循环，保持启动画面显示直到定时器结束
         loop.exec()
 
     def init_icon(self):
-        """初始化窗口图标和标题栏"""
-        self.setWindowIcon(QIcon(":/icon.png"))  # 设置任务栏和窗口图标
-        # 自定义标题栏Logo显示
+        """设置窗口图标和标题栏样式"""
+        self.setWindowIcon(QIcon(":/icon.png"))
         self.titleBar.iconLabel.setFixedSize(108, 36)  # type: ignore
         self.titleBar.iconLabel.setPixmap(CustomIcon.LOGO.icon().pixmap(108, 36))  # type: ignore
-        # 设置标题栏文字样式
         self.titleBar.titleLabel.setStyleSheet("QLabel{font-size: 16px; font-weight: bold;}")  # type: ignore
 
     def init_pos(self):
-        """初始化窗口位置 - 居中显示"""
+        """初始化窗口位置为屏幕居中"""
         desktop = QApplication.primaryScreen().size()
         w, h = desktop.width(), desktop.height()
-        # 计算屏幕中心位置并移动窗口
         self.move(w // 2 - self.width() // 2, h // 2 - self.height() // 2)
 
     def resetUI(self):
-        """重置用户界面 - 更新语言和样式"""
+        """重置界面：切换语言后刷新所有组件的字体和样式"""
         config.reset_language()
 
-        # 获取应用实例并刷新所有组件样式
         if app := QApplication.instance():
             app = cast(QApplication, app)
             style = app.style()
-            # 遍历所有组件重新应用字体样式
             for widget in app.allWidgets():
                 setCustomStyleSheet(widget, fontStyleSheet(getFont()), fontStyleSheet(getFont()))
-                style.unpolish(widget)  # 移除旧样式
-                style.polish(widget)  # 应用新样式
+                style.unpolish(widget)
+                style.polish(widget)
 
         self.navigationInterface
         self.home_frame.resetUI()
         self.option_frame.resetUI()
 
-        # 更新导航栏所有项目的字体
         for panel_item in self.navigationInterface.panel.items.values():
             panel_item.widget.itemWidget.setFont(getFont())  # type: ignore
 
     def translateUI(self):
-        """翻译用户界面 - 加载语言文件"""
+        """刷新界面语言：加载 .qm 翻译文件并更新所有导航文本"""
         lang = config.option.get(config.option.language)
 
-        # 根据语言设置加载对应的翻译文件
         if lang != "en_US":
             translater = QTranslator()
-            translater.load(f":/i18n/{lang}.qm")  # 从资源文件加载翻译
+            translater.load(f":/i18n/{lang}.qm")
             QApplication.instance().installTranslator(translater)  # type: ignore
         else:
-            # 英语环境直接移除翻译器
             QApplication.instance().removeTranslator(QTranslator())  # type: ignore
 
-        # 更新窗口标题和界面文本
         self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.1.0")
         self.translate_frame("EditorFrame", "Home")
         self.translate_frame("OptionFrame", "Options")
@@ -125,6 +116,5 @@ class MainWindow(FluentWindow):
         self.option_frame.translateUI()
 
     def translate_frame(self, frame: str, title: str):
-        """翻译导航栏框架标题"""
-        # 通过框架名称找到对应的导航项并更新文本
+        """更新导航栏中指定框架的显示标题"""
         self.navigationInterface.panel.items[frame].widget.itemWidget.setText(self.tr(title))  # type: ignore

@@ -1,7 +1,19 @@
+"""
+ROM 数据结构映射模块
+
+定义各 ROM 文件的二进制字段与编辑字段名之间的映射关系。
+支持机器人、武器、驾驶员、技能、消息、脚本等数据类型的映射。
+
+Classes:
+    MappingType: 数据结构映射，提供字段名转换字典
+"""
+
 from PySide6.QtCore import QObject
 
 
 class MappingType(QObject):
+    """ROM 数据结构字段映射"""
+
     def __init__(self):
         super().__init__()
         self._mapping = {}
@@ -256,8 +268,10 @@ class MappingType(QObject):
 
 if __name__ == "__main__":
     mapping = MappingType()
-    from PySide6.QtCore import QCoreApplication, QTranslator
     import sys
+
+    from PySide6.QtCore import QCoreApplication, QTranslator
+
     app = QCoreApplication(sys.argv)
     translator = QTranslator()
     translator.load(r"C:\iCode\SRW_Alpha\res\i18n\zh_CN.qm")

@@ -3,6 +3,9 @@ ROM 文件与编辑项目对应表
 
 展示各 ROM 文件与编辑项目（机体、驾驶员、文本等）之间的对应关系。
 继承 qfluentwidgets 的 TableWidget，自带 Fluent Design 样式。
+
+Classes:
+    FileTable: ROM 文件 × 编辑项目 对应表
 """
 
 from PySide6.QtCore import Qt
@@ -17,14 +20,11 @@ class FileTable(TableWidget):
         super().__init__(parent)
         self._build_table()
 
-        # 单选模式
         self.setSelectionMode(TableWidget.SelectionMode.SingleSelection)
-
-        # 双击行 -> 打开文件所在文件夹（暂为打印占位）
         self.cellDoubleClicked.connect(self._on_double_clicked)
 
     def _build_table(self):
-        """构建表格结构与数据"""
+        """构建表格结构：表头 → 行数据 → 列宽策略"""
         headers = [
             self.tr("File"),
             self.tr("Unit"),
@@ -38,7 +38,6 @@ class FileTable(TableWidget):
         self.setColumnCount(len(headers))
         self.setHorizontalHeaderLabels(headers)
 
-        # 行数据：(文件名, 各编辑项目勾选标记)
         rows = [
             ("ROBOT.RAF",          ["✓", "",  "",  "✓", "",  "",  ""]),
             ("PILOT.RAF",          ["",  "✓", "",  "✓", "",  "",  ""]),
@@ -63,7 +62,6 @@ class FileTable(TableWidget):
                 item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEditable)
                 self.setItem(row_idx, col_idx + 1, item)
 
-        # 表格外观
         self.horizontalHeader().setStretchLastSection(False)
         self.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
         for col in range(1, len(headers)):

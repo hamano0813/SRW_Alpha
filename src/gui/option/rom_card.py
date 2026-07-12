@@ -1,8 +1,14 @@
 """
-ROM文件配置卡片模块
+ROM 文件配置卡片模块
 
-提供ROM文件路径选择和配置的用户界面组件。
-包含ROM文件读写的路径选择功能和缓存清理设置卡片。
+提供 ROM 文件路径选择和配置的用户界面组件。
+包含 ROM 文件读写的路径选择功能和缓存清理设置卡片。
+
+Classes:
+    CardType: 卡片类型枚举（LOAD / SAVE）
+    FileSettingCard: 文件路径设置卡片
+    CleanSettingCard: 缓存清理设置卡片
+    RomCard: ROM 文件组设置卡片
 """
 
 import os
@@ -39,7 +45,7 @@ class CustomCard:
 class FileSettingCard(PushSettingCard, CustomCard):
     """文件路径设置卡片"""
 
-    pathChanged = Signal()  # ROM文件路径改变时发出的信号
+    pathChanged = Signal()
 
     def __init__(self, path: ConfigItem, title: str, ctype: CardType, parent=None):
         super().__init__("", "", "", "", parent)
@@ -49,15 +55,13 @@ class FileSettingCard(PushSettingCard, CustomCard):
         self._title = title
         self._ctype = ctype
 
-        # MessageBox 文本（translateUI 中会更新）
         self._non_ascii_title = self.tr("Non-ASCII Path")
         self._non_ascii_msg = self.tr("ROM path and filename cannot contain non-ASCII characters.")
         self._ok = self.tr("OK")
 
         self.titleLabel.setText(title)
-        self.contentLabel.setText(path.value)  # 显示当前文件路径
-        self.contentLabel.setHidden(False)  # 确保路径标签可见
-        # 移除边框样式，与主题保持一致
+        self.contentLabel.setText(path.value)
+        self.contentLabel.setHidden(False)
         setCustomStyleSheet(self, "QFrame {border: none;}", "QFrame {border: none;}")
 
         self.button.clicked.connect(self.select_file)
@@ -65,14 +69,12 @@ class FileSettingCard(PushSettingCard, CustomCard):
         self.translateUI()
 
     def select_file(self):
+        """打开文件选择对话框，选择 ROM 文件路径后保存并检查 ASCII 合规"""
         if self._ctype is CardType.LOAD:
-            """打开文件选择对话框选择读取文件路径"""
             file_path, _ = QFileDialog.getOpenFileName(self, self._select_file, "", "ROM Files (*.bin *.cue)")
         else:
-            """打开文件选择对话框选择保存文件路径"""
             file_path, _ = QFileDialog.getSaveFileName(self, self._select_file, config.option.get(self._path), "ROM Files (*.bin *.cue)")
         if file_path:
-            # 检查路径是否仅含 ASCII 字符（LOAD / SAVE 均检查）
             if not file_path.isascii():
                 w = MessageBox(
                     self._non_ascii_title,
@@ -84,10 +86,9 @@ class FileSettingCard(PushSettingCard, CustomCard):
                 w.exec()
                 return
 
-            # 保存选择的文件路径到配置
             config.option.set(self._path, file_path)
-            self.contentLabel.setText(file_path)  # 更新显示的路径
-            self.pathChanged.emit()  # 发出文件改变信号
+            self.contentLabel.setText(file_path)
+            self.pathChanged.emit()
 
     def translateUI(self):
         """更新界面文本翻译"""
@@ -95,13 +96,11 @@ class FileSettingCard(PushSettingCard, CustomCard):
         self._select_file = self.tr("Select File")
         self.titleLabel.setText(self._title)
 
-        # 更新 MessageBox 文本（参考 option_frame 的翻译模式）
         self._non_ascii_title = self.tr("Non-ASCII Path")
         self._non_ascii_msg = self.tr("ROM path and filename cannot contain non-ASCII characters.")
         self._ok = self.tr("OK")
 
     def paintEvent(self, e):
-        """重写绘制事件 - 禁用默认绘制"""
         pass
 
 
@@ -112,7 +111,7 @@ class CleanSettingCard(SwitchSettingCard, CustomCard):
         self.switchButton.setOffText("")
         self.titleLabel.setText(self.tr("Auto clear cache"))
         self.contentLabel.setText(self.tr("Clear cache after ROM is saved"))
-        self.contentLabel.setHidden(False)  # 确保提示标签可见
+        self.contentLabel.setHidden(False)
 
     def translateUI(self):
         self.titleLabel.setText(self.tr("Auto clear cache"))
@@ -124,12 +123,11 @@ class CleanSettingCard(SwitchSettingCard, CustomCard):
         self.switchButton.setChecked(isChecked)
 
     def paintEvent(self, e):
-        """重写绘制事件 - 禁用默认绘制"""
         pass
 
 
 class RomCard(ExpandGroupSettingCard):
-    """ROM文件组设置卡片 - 可展开的设置组"""
+    """ROM 文件组设置卡片 - 可展开的设置组"""
 
     def __init__(self, icon: Union[str, QIcon, FluentIconBase], parent=None):
         super().__init__(icon, self.tr("ROM Settings"), self.tr("Configure the ROM settings"), parent)  # type: ignore
@@ -142,7 +140,6 @@ class RomCard(ExpandGroupSettingCard):
         self.addGroupWidget(self._save_card)
         self.addGroupWidget(self._clean_card)
 
-        # LOAD 路径变化时自动同步 SAVE 路径（加 _TEMP 后缀）
         self._load_card.pathChanged.connect(self._on_load_path_changed)
 
     def _on_load_path_changed(self):
@@ -161,7 +158,6 @@ class RomCard(ExpandGroupSettingCard):
         self.card.contentLabel.setText(self.tr("Configure the ROM settings"))
         self._load_card._title = self.tr("Load ROM")
         self._save_card._title = self.tr("Save ROM")
-        # 遍历所有子组件更新翻译
         for widget in self.widgets:
             if isinstance(widget, CustomCard):
                 widget.translateUI()

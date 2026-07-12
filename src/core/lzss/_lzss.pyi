@@ -4,7 +4,6 @@ LZSS compression / decompression (native C extension)
 
 from typing import Optional
 
-
 def compress(raw_data: bytearray, pack: int = 1) -> bytearray:
     """Compress raw data using LZSS.
 
@@ -19,7 +18,6 @@ def compress(raw_data: bytearray, pack: int = 1) -> bytearray:
         RuntimeError: If compression fails.
     """
     ...
-
 
 def decompress(comp_data: bytearray) -> bytearray:
     """Decompress LZSS data.

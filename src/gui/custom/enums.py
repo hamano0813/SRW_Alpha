@@ -1,9 +1,19 @@
-from typing import Any
+"""
+场景数据枚举模块
+
+存储《超级机器人大战α》所有关卡的基础信息，
+包含关卡编号、路线分类、话数和标题（多语言支持）。
+
+Classes:
+    EnumData: 场景枚举数据，提供关卡信息的字典查询
+"""
 
 from PySide6.QtCore import QObject
 
 
 class EnumData(QObject):
+    """关卡枚举数据，按关卡 ID 索引"""
+
     def __init__(self) -> None:
         super().__init__(parent=None)
         self.SCENARIO = {

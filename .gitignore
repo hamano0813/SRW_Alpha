@@ -4,6 +4,7 @@ __pycache__/
 config.json
 cache/
 cache.xml
+CLAUDE.md
 
 # Python C extension build artifacts
 build/

@@ -59,9 +59,9 @@ def _build_extension(src_dir: str, module_prefix: str) -> bool:
         if os.path.exists(dst_pyd):
             os.remove(dst_pyd)
         os.rename(src_pyd, dst_pyd)
-        print(f"[OK] Compiled: {module_prefix}.pyd")
+        print(f"[INFO] Compiled: {module_prefix}.pyd")
     else:
-        print(f"[OK] Compiled: {os.path.basename(src_pyd)}")
+        print(f"[INFO] Compiled: {os.path.basename(src_pyd)}")
 
     build_dir = os.path.join(src_dir, "build")
     if os.path.isdir(build_dir):
@@ -75,7 +75,7 @@ def _build_extension(src_dir: str, module_prefix: str) -> bool:
             elif os.path.isdir(found):
                 shutil.rmtree(found)
 
-    print(f"[OK] Deployed to {src_dir}/")
+    print(f"[INFO] Deployed to {src_dir}/")
     return True
 
 
@@ -96,6 +96,16 @@ def build_robot_raf():
     return _build_extension(
         src_dir=os.path.join(PROJECT_ROOT, "src", "core", "robot_raf"),
         module_prefix="_robot_raf",
+    )
+
+
+def build_codec():
+    print("=" * 60)
+    print("  Building codec native extension...")
+    print("=" * 60)
+    return _build_extension(
+        src_dir=os.path.join(PROJECT_ROOT, "src", "core", "codec"),
+        module_prefix="_codec",
     )
 
 
@@ -121,6 +131,14 @@ def main():
     else:
         print("[FAILED] ROBOT.RAF native extension")
         all_ok = False
+
+    print()
+    ok = build_codec()
+    if ok:
+        print("[DONE]   codec native extension")
+    else:
+        print("[FAILED] codec native extension")
+        all_ok = False
     print()
 
     if all_ok:
@@ -131,6 +149,7 @@ def main():
         print("  Available imports:")
         print("    from core.lzss import compress, decompress")
         print("    from core.robot_raf import parse, build")
+        print("    from core.codec import decode, encode, encode_var")
         print()
         return 0
     else:

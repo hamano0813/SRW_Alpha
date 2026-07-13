@@ -5,8 +5,10 @@ module = Extension(
     sources=[
         "robot_raf.c",
         "../lzss/lzss.c",
+        "../codec/codec.c",
     ],
     include_dirs=[".."],
+    define_macros=[("CODEC_AS_SUBMODULE", None)],
 )
 
 setup(

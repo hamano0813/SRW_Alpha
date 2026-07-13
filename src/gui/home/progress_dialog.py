@@ -41,6 +41,7 @@ class ProgressDialog(QDialog):
         self._process.setProcessChannelMode(QProcess.ProcessChannelMode.MergedChannels)
         self._process.readyReadStandardOutput.connect(self._on_output)
         self._process.finished.connect(lambda: self._button.setEnabled(True))
+        self._process.errorOccurred.connect(lambda: self._button.setEnabled(True))
 
         self._button.clicked.connect(self.accept)
 

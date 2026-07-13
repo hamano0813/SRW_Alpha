@@ -34,6 +34,14 @@ class XmlTreeView(TreeWidget):
             header.setSectionResizeMode(i, QHeaderView.ResizeMode.Fixed)
             self.setColumnWidth(i, 200 if i == 0 else 100)
 
+        self.itemDoubleClicked.connect(self._on_item_double_clicked)
+
+    def _on_item_double_clicked(self, item: QTreeWidgetItem, column: int):
+        """双击项目时的临时调试输出，后续可替换为编辑功能"""
+        tag = item.data(0, Qt.ItemDataRole.UserRole) or "unknown"
+        name = item.text(0) or "(unnamed)"
+        print(f"[XmlTreeView] double-clicked: tag={tag}, name={name}, column={column}")
+
     def load_xml(self, xml_path: str) -> bool:
         """加载 cache.xml 并展开 directory_tree 子树
 

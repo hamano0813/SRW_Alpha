@@ -54,6 +54,7 @@ _FILE_SPECS = {
 
 # ── 解析 ──────────────────────────────────────────────────────────
 
+
 def parse_blocks(data: bytes, fmt: str) -> list[bytes]:
     """
     从文件数据中提取所有 LZSS 压缩块。
@@ -69,25 +70,17 @@ def parse_blocks(data: bytes, fmt: str) -> list[bytes]:
 
     if fmt == "raf":
         block_count = count
-        pointers = [
-            struct.unpack_from("<I", data, 4 + i * 4)[0]
-            for i in range(block_count)
-        ]
+        pointers = [struct.unpack_from("<I", data, 4 + i * 4)[0] for i in range(block_count)]
         data_start = 4 + block_count * 4
         return [
-            data[data_start + pointers[i] : data_start + pointers[i + 1]]
-            if i + 1 < block_count
-            else data[data_start + pointers[i] :]
+            data[data_start + pointers[i] : data_start + pointers[i + 1]] if i + 1 < block_count else data[data_start + pointers[i] :]
             for i in range(block_count)
         ]
     else:
         ptr_table_size = count
         num_pointers = ptr_table_size // 4
         num_blocks = num_pointers - 2  # 最后两个：文件大小哨兵 + 未初始化垃圾
-        pointers = [
-            struct.unpack_from("<I", data, 4 + i * 4)[0]
-            for i in range(num_pointers)
-        ]
+        pointers = [struct.unpack_from("<I", data, 4 + i * 4)[0] for i in range(num_pointers)]
         return [data[pointers[i] : pointers[i + 1]] for i in range(num_blocks)]
 
 
@@ -126,7 +119,7 @@ def rebuild_file(blocks: list[bytes], fmt: str) -> bytes:
             offsets.append(cur)
             cur += len(b)
         offsets.append(cur)  # 文件大小哨兵
-        offsets.append(0)    # 最后一个指针未初始化，写 0 占位
+        offsets.append(0)  # 最后一个指针未初始化，写 0 占位
 
         header = struct.pack("<I", ptr_table_size)
         for off in offsets:
@@ -135,6 +128,7 @@ def rebuild_file(blocks: list[bytes], fmt: str) -> bytes:
 
 
 # ── 测试 ──────────────────────────────────────────────────────────
+
 
 def test_file(name: str, spec: dict) -> bool:
     """测试单个文件，返回是否全部通过。"""
@@ -180,8 +174,7 @@ def test_file(name: str, spec: dict) -> bool:
     if ok:
         orig_total = sum(len(c) for c in orig_chunks)
         comp_total = sum(len(c) for c in recomp_chunks)
-        print(f"  │  └── 全部 {len(blocks)} 块通过  "
-              f"(解压 {orig_total}B → 重压缩 {comp_total}B, {comp_total/orig_total:.2%})")
+        print(f"  │  └── 全部 {len(blocks)} 块通过  " f"(解压 {orig_total}B → 重压缩 {comp_total}B, {comp_total/orig_total:.2%})")
 
     # 3. 文件级整链
     print(f"  └─ 文件: 重建 → 重新解析 → 整链对比")
@@ -198,8 +191,7 @@ def test_file(name: str, spec: dict) -> bool:
         if orig_all == final_all:
             print(f"     └── PASS  ({len(orig_all)} bytes identical)")
         else:
-            print(f"     └── [FAIL] 数据不一致: "
-                  f"原始{len(orig_all)}B vs 重建{len(final_all)}B")
+            print(f"     └── [FAIL] 数据不一致: " f"原始{len(orig_all)}B vs 重建{len(final_all)}B")
             ok = False
     except Exception as e:
         print(f"     └── [FAIL] 文件级测试异常: {e}")

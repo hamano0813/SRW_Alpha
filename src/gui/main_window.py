@@ -33,7 +33,7 @@ from .custom import CustomIcon
 class MainWindow(FluentWindow):
     """主窗口类 - 集成导航栏、启动画面和界面刷新"""
 
-    _SIZE = (1280, 960)
+    _SIZE = (960, 720)
 
     def __init__(self, parent=None):
         super().__init__(parent)

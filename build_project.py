@@ -89,6 +89,16 @@ def build_lzss():
     )
 
 
+def build_robot_raf():
+    print("=" * 60)
+    print("  Building ROBOT.RAF native extension...")
+    print("=" * 60)
+    return _build_extension(
+        src_dir=os.path.join(PROJECT_ROOT, "src", "core", "robot_raf"),
+        module_prefix="_robot_raf",
+    )
+
+
 def main():
     print()
     print("  Super Robot Wars Alpha ROM Editor - Build Script")
@@ -103,6 +113,14 @@ def main():
     else:
         print("[FAILED] LZSS native extension")
         all_ok = False
+
+    print()
+    ok = build_robot_raf()
+    if ok:
+        print("[DONE]   ROBOT.RAF native extension")
+    else:
+        print("[FAILED] ROBOT.RAF native extension")
+        all_ok = False
     print()
 
     if all_ok:
@@ -112,6 +130,7 @@ def main():
         print()
         print("  Available imports:")
         print("    from core.lzss import compress, decompress")
+        print("    from core.robot_raf import parse, build")
         print()
         return 0
     else:

@@ -33,13 +33,15 @@ from .custom import CustomIcon
 class MainWindow(FluentWindow):
     """主窗口类 - 集成导航栏、启动画面和界面刷新"""
 
+    _SIZE = (1280, 960)
+
     def __init__(self, parent=None):
         super().__init__(parent)
         splash_idx = random.randrange(1, 5)
         self.splash = SplashScreen(
-            QIcon(QPixmap(f":/splash/splash{splash_idx}.png").scaled(960, 720, mode=Qt.TransformationMode.SmoothTransformation)), self
+            QIcon(QPixmap(f":/splash/splash{splash_idx}.png").scaled(*self._SIZE, mode=Qt.TransformationMode.SmoothTransformation)), self
         )
-        self.splash.setIconSize(QSize(960, 720))
+        self.splash.setIconSize(QSize(*self._SIZE))
 
         self.init_ui()
 
@@ -51,7 +53,7 @@ class MainWindow(FluentWindow):
         loop = QEventLoop(self)
         QTimer.singleShot(3000, loop.quit)
 
-        self.resize(960, 720)
+        self.resize(*self._SIZE)
         self.setResizeEnabled(False)
         self.init_icon()
         self.init_pos()

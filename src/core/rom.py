@@ -109,8 +109,11 @@ class Rom:
 
     # ========== ROBOT.RAF 单文件读写 ==========
 
-    def load_robots(self) -> dict:
+    def load_robots(self, extra: dict | None = None) -> dict:
         """从缓存目录加载并解析 ROBOT.RAF
+
+        Args:
+            extra: 文本映射字典（如 HALF_TEXT_EXTRA），传给 codec 解码
 
         Returns:
             解析后的机体数据 dict
@@ -126,12 +129,15 @@ class Rom:
         with open(path, "rb") as f:
             raw = f.read()
 
-        data = robot_raf.parse(raw)
+        data = robot_raf.parse(raw, extra=extra)
         self._data["robots"] = data
         return data
 
-    def save_robots(self) -> None:
+    def save_robots(self, extra: dict | None = None) -> None:
         """将机体数据构建并写回缓存目录下的 ROBOT.RAF
+
+        Args:
+            extra: 文本映射字典（如 HALF_TEXT_EXTRA），传给 codec 编码
 
         Raises:
             KeyError: 尚未加载机体数据
@@ -141,7 +147,7 @@ class Rom:
         if data is None:
             raise KeyError("No robot data loaded. Call load_robots() first.")
 
-        raw = robot_raf.build(data)
+        raw = robot_raf.build(data, extra=extra)
 
         path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
         with open(path, "wb") as f:

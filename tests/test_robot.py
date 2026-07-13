@@ -77,7 +77,7 @@ def main():
     print()
 
     if not os.path.isfile(ROBOT_RAF_PATH):
-        print(f"  [SKIP] 文件不存在: {ROBOT_RAF_PATH}")
+        print(f"  [WARN] 文件不存在: {ROBOT_RAF_PATH}")
         print()
         print("  请将 ROBOT.RAF 放入 res/bin/ 目录后重试。")
         return 0
@@ -97,7 +97,7 @@ def main():
     robots1 = data1["robots"]
     print(f"  机体数: {count}")
     assert count == len(robots1)
-    print("  [PASS]")
+    print("  [INFO]")
     print()
 
     # 2. 打印前 5 条
@@ -113,7 +113,7 @@ def main():
     data2 = parse(rebuilt, extra=HALF_TEXT_EXTRA)
     robots2 = data2["robots"]
     assert data2["count"] == count
-    print("  [PASS]")
+    print("  [INFO]")
     print()
 
     # 4. 逐条深度对比
@@ -121,35 +121,35 @@ def main():
     all_ok = True
     for i in range(count):
         if not _robots_equal(robots1[i], robots2[i]):
-            print(f"  [FAIL] 条目 {i} 不一致")
+            print(f"  [ERROR] 条目 {i} 不一致")
             all_ok = False
             break
 
     if not all_ok:
         return 1
 
-    print(f"  [PASS] 全部 {count} 条机体数据一致 " f"(含 16 件武器)")
+    print(f"  [INFO] 全部 {count} 条机体数据一致 " f"(含 16 件武器)")
     print()
 
     # 5. 逐字节对比（仅当大小一致时执行）
     print("  ── 逐字节对比 ──")
     if len(original) == len(rebuilt):
         if original == bytes(rebuilt):
-            print("  [PASS] 完全相同")
+            print("  [INFO] 完全相同")
         else:
             for i in range(len(original)):
                 if original[i] != rebuilt[i]:
-                    print(f"  [FAIL] 首处差异在字节 {i}: " f"原始 0x{original[i]:02X} vs 重建 0x{rebuilt[i]:02X}")
+                    print(f"  [ERROR] 首处差异在字节 {i}: " f"原始 0x{original[i]:02X} vs 重建 0x{rebuilt[i]:02X}")
                     return 1
     else:
-        print("  [SKIP] 大小不一致，跳过逐字节对比")
+        print("  [WARN] 大小不一致，跳过逐字节对比")
 
     # 6. 验证 extra 映射已生效
     print()
     print("  ── extra 映射验证 ──")
     r0_name = robots1[0]["rname"]
     if "ｶ" not in r0_name and "ガ" in r0_name:
-        print(f"  [PASS] 文本已映射（{r0_name}）")
+        print(f"  [INFO] 文本已映射（{r0_name}）")
     else:
         print(f"  [WARN] 文本可能未映射（{r0_name}）")
     print()

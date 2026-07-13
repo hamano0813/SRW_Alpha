@@ -137,7 +137,7 @@ def test_file(name: str, spec: dict) -> bool:
     expect = spec["expect_blocks"]
 
     if not os.path.isfile(path):
-        print(f"  [SKIP] 文件不存在: {path}")
+        print(f"  [WARN] 文件不存在: {path}")
         return True
 
     fsize = os.path.getsize(path)
@@ -168,7 +168,7 @@ def test_file(name: str, spec: dict) -> bool:
             orig_chunks.append(bytes(d1))
             recomp_chunks.append(bytes(rc))
         except Exception as e:
-            print(f"  │  └── [FAIL] 块 {i}: {e}")
+            print(f"  │  └── [ERROR] 块 {i}: {e}")
             ok = False
 
     if ok:
@@ -191,10 +191,10 @@ def test_file(name: str, spec: dict) -> bool:
         if orig_all == final_all:
             print(f"     └── PASS  ({len(orig_all)} bytes identical)")
         else:
-            print(f"     └── [FAIL] 数据不一致: " f"原始{len(orig_all)}B vs 重建{len(final_all)}B")
+            print(f"     └── [ERROR] 数据不一致: " f"原始{len(orig_all)}B vs 重建{len(final_all)}B")
             ok = False
     except Exception as e:
-        print(f"     └── [FAIL] 文件级测试异常: {e}")
+        print(f"     └── [ERROR] 文件级测试异常: {e}")
         ok = False
 
     return ok

@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import config
 
-from . import dc_bin, pilot_bin, robot_raf, snmsg_bin
+from . import dc_bin, dr_bin, pilot_bin, robot_raf, snmsg_bin
 
 
 class Rom:
@@ -26,6 +26,7 @@ class Rom:
         "pilots": "UNITPRAM/PILOT.BIN",
         "snmsgs": "UNITPRAM/SNMSG.BIN",
         "dc": "UNITPRAM/DC.BIN",
+        "dr": "UNITPRAM/DR.BIN",
     }
 
     # 文件 key → 对应的方法名（read_cache / write_cache 通过此表分发）
@@ -34,12 +35,14 @@ class Rom:
         "pilots": "load_pilots",
         "snmsgs": "load_snmsgs",
         "dc": "load_dc",
+        "dr": "load_dr",
     }
     _SAVE_DISPATCH: dict[str, str] = {
         "robots": "save_robots",
         "pilots": "save_pilots",
         "snmsgs": "save_snmsgs",
         "dc": "save_dc",
+        "dr": "save_dr",
     }
 
     def __init__(self):
@@ -269,6 +272,52 @@ class Rom:
         raw = dc_bin.build(data, extra=extra)
 
         path = os.path.join(self.cache_dir, self._FILE_PATHS["dc"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== DR.BIN 单文件读写 ==========
+
+    def load_dr(self, extra=None):
+        """从缓存目录加载并解析 DR.BIN
+
+        Args:
+            extra: 文本映射字典，传给 codec 解码
+
+        Returns:
+            解析后的机体图鉴数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+            RuntimeError: 解析/解压失败
+        """
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["dr"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError("DR.BIN not found: " + path)
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = dr_bin.parse(raw, extra=extra)
+        self._data["dr"] = data
+        return data
+
+    def save_dr(self, extra=None):
+        """将机体图鉴数据构建并写回缓存目录下的 DR.BIN
+
+        Args:
+            extra: 文本映射字典，传给 codec 编码
+
+        Raises:
+            KeyError: 尚未加载机体图鉴数据
+            RuntimeError: 构建/压缩失败
+        """
+        data = self._data.get("dr")
+        if data is None:
+            raise KeyError("No DR data loaded. Call load_dr() first.")
+
+        raw = dr_bin.build(data, extra=extra)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["dr"])
         with open(path, "wb") as f:
             f.write(raw)
 

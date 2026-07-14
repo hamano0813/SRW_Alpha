@@ -29,6 +29,8 @@ class MappingType(QObject):
             self._init_skill(),
             # DC_BIN
             self._init_character(),
+            # DR_BIN
+            self._init_robot(),
             # SNMSG_BIN
             self._init_snmsg(),
             # SNDATA_BIN
@@ -144,6 +146,17 @@ class MappingType(QObject):
             self.tr("pet name"): "pname",
             self.tr("appearance"): "appr",
             self.tr("voice actor"): "voice",
+            self.tr("flags"): "flags",
+            self.tr("description"): "desc",
+        }
+        return mapping
+
+    def _init_robot(self):
+        mapping = {
+            self.tr("name"): "name",
+            self.tr("height"): "height",
+            self.tr("weight"): "weight",
+            self.tr("appearance"): "appr",
             self.tr("flags"): "flags",
             self.tr("description"): "desc",
         }

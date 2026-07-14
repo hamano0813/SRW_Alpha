@@ -6,6 +6,7 @@
   2. PILOT.BIN 解析/构建时间
   3. SNMSG.BIN 解析/构建时间
   4. DC.BIN 解析/构建时间
+  5. DR.BIN 解析/构建时间
 """
 
 import os
@@ -15,7 +16,7 @@ import time
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 
-from core import dc_bin, pilot_bin, robot_raf, snmsg_bin
+from core import dc_bin, dr_bin, pilot_bin, robot_raf, snmsg_bin
 from core.codec.extra import HALF_TEXT_EXTRA, SNMSG_TEXT_EXTRA
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
@@ -24,6 +25,7 @@ ROBOT_PATH = os.path.join(RES_BIN, "ROBOT.RAF")
 PILOT_PATH = os.path.join(RES_BIN, "PILOT.BIN")
 SNMSG_PATH = os.path.join(RES_BIN, "SNMSG.BIN")
 DC_PATH = os.path.join(RES_BIN, "DC.BIN")
+DR_PATH = os.path.join(RES_BIN, "DR.BIN")
 
 
 def _load(path: str) -> bytes:
@@ -121,6 +123,7 @@ def main() -> int:
         ("PILOT.BIN", PILOT_PATH, pilot_bin, HALF_TEXT_EXTRA),
         ("SNMSG.BIN", SNMSG_PATH, snmsg_bin, SNMSG_TEXT_EXTRA),
         ("DC.BIN", DC_PATH, dc_bin, None),
+        ("DR.BIN", DR_PATH, dr_bin, HALF_TEXT_EXTRA),
     ]
 
     for name, path, mod, extra in files:

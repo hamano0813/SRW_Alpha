@@ -105,6 +105,7 @@ HALF_TEXT_EXTRA = {
     'Rー': 'R-',
     'YFー': 'YF-',
     'TYPEー': 'TYPE-',
+    'τυ': 'ＭＫ-',
 }
 
 SNMSG_TEXT_EXTRA = {
@@ -120,7 +121,7 @@ SNMSG_TEXT_EXTRA = {
 SCRIPT_TEXT_EXTRA = {
     '$n': '【主人公】',
     '$l': '【恋人】',
-    'τυ': 'MK-',
+    'τυ': 'ＭＫ-',
     'ρ': '!!',
     'σ': '!?',
     'χ': '暒',

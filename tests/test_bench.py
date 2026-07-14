@@ -112,7 +112,7 @@ def main() -> int:
     """执行各模块 parse/build 性能基准测试"""
     print()
     print("  ╔═══════════════════════════════════════════╗")
-    print("  ║      C 扩展模块性能基准测试                ║")
+    print("  ║      C 扩展模块性能基准测试               ║")
     print("  ╚═══════════════════════════════════════════╝")
     print()
 
@@ -131,7 +131,7 @@ def main() -> int:
         _run_bench(name, path, mod, extra)
 
     print("  ═══════════════════════════════════════════")
-    print("   ALL TESTS PASSED" if all_ok else "   TESTS FAILED")
+    print(f"   [INFO] {'ALL TESTS PASSED' if all_ok else 'TESTS FAILED'}")
     print("  ═══════════════════════════════════════════")
     return 0 if all_ok else 1
 

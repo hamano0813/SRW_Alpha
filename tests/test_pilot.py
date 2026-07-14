@@ -81,8 +81,8 @@ def main():
         return 0
 
     fsize = os.path.getsize(PILOT_BIN_PATH)
-    print(f"  文件: {PILOT_BIN_PATH}")
-    print(f"  大小: {fsize} bytes (0x{fsize:X})")
+    print(f"  [INFO] 文件: {PILOT_BIN_PATH}")
+    print(f"  [INFO] 大小: {fsize} bytes (0x{fsize:X})")
     print()
 
     with open(PILOT_BIN_PATH, "rb") as f:
@@ -93,7 +93,7 @@ def main():
     data1 = parse(bytearray(original), extra=HALF_TEXT_EXTRA)
     count = data1["count"]
     pilots1 = data1["pilots"]
-    print(f"  驾驶员数: {count}")
+    print(f"  [INFO] 驾驶员数: {count}")
     assert count == len(pilots1)
     print("  [INFO]")
     print()
@@ -107,7 +107,7 @@ def main():
     # 3. 重建并重新解析（带 extra 映射）
     print("  ── 重建 → 第 2 次解析（extra 映射）──")
     rebuilt = build(data1, extra=HALF_TEXT_EXTRA)
-    print(f"  重建大小: {len(rebuilt)} bytes (原始 {fsize} bytes)")
+    print(f"  [INFO] 重建大小: {len(rebuilt)} bytes (原始 {fsize} bytes)")
     data2 = parse(rebuilt, extra=HALF_TEXT_EXTRA)
     pilots2 = data2["pilots"]
     assert data2["count"] == count
@@ -153,7 +153,7 @@ def main():
         print(f"  [WARN] 文本可能未映射（{p0_fname}）")
     print()
     print("  ═══════════════════════════════════════════")
-    print("   ALL TESTS PASSED")
+    print("   [INFO] ALL TESTS PASSED")
     print("  ═══════════════════════════════════════════")
     return 0
 

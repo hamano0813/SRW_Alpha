@@ -141,16 +141,16 @@ def test_file(name: str, spec: dict) -> bool:
         return True
 
     fsize = os.path.getsize(path)
-    print(f"  大小: {fsize} bytes (0x{fsize:X})")
+    print(f"  [INFO] 文件大小: {fsize} bytes (0x{fsize:X})")
 
     with open(path, "rb") as f:
         file_data = f.read()
 
     # 1. 解析
     blocks = parse_blocks(file_data, fmt)
-    print(f"  解析到 {len(blocks)} 个 LZSS 块", end="")
+    print(f"  [INFO] LZSS 块数: {len(blocks)}", end="")
     if len(blocks) != expect:
-        print(f"  ← 预期 {expect}，请注意", end="")
+        print(f"  [WARN] 预期 {expect}，请注意", end="")
     print()
 
     # 2. 逐块往返
@@ -174,7 +174,7 @@ def test_file(name: str, spec: dict) -> bool:
     if ok:
         orig_total = sum(len(c) for c in orig_chunks)
         comp_total = sum(len(c) for c in recomp_chunks)
-        print(f"  │  └── 全部 {len(blocks)} 块通过  " f"(解压 {orig_total}B → 重压缩 {comp_total}B, {comp_total/orig_total:.2%})")
+        print(f"  │  └── [INFO] 全部 {len(blocks)} 块通过  " f"(解压 {orig_total}B → 重压缩 {comp_total}B, {comp_total/orig_total:.2%})")
 
     # 3. 文件级整链
     print(f"  └─ 文件: 重建 → 重新解析 → 整链对比")
@@ -189,7 +189,7 @@ def test_file(name: str, spec: dict) -> bool:
         final_all = b"".join(final_chunks)
 
         if orig_all == final_all:
-            print(f"     └── PASS  ({len(orig_all)} bytes identical)")
+            print(f"     └── [INFO] PASS  ({len(orig_all)} bytes identical)")
         else:
             print(f"     └── [ERROR] 数据不一致: " f"原始{len(orig_all)}B vs 重建{len(final_all)}B")
             ok = False
@@ -215,7 +215,7 @@ def main():
         print()
 
     print("════════════════════════════════════════════════════════")
-    print(f"  {'ALL TESTS PASSED' if all_ok else 'SOME TESTS FAILED'}")
+    print(f"  [INFO] {'ALL TESTS PASSED' if all_ok else 'SOME TESTS FAILED'}")
     print("════════════════════════════════════════════════════════")
     return 0 if all_ok else 1
 

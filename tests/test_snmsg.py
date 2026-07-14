@@ -37,9 +37,9 @@ def main() -> int:
         return 0
 
     fsize = os.path.getsize(SNMSG_BIN_PATH)
-    print(f"  文件: {SNMSG_BIN_PATH}")
-    print(f"  大小: {fsize} bytes (0x{fsize:X})")
-    print(f"  条目: {fsize // 0x100}")
+    print(f"  [INFO] 文件: {SNMSG_BIN_PATH}")
+    print(f"  [INFO] 大小: {fsize} bytes (0x{fsize:X})")
+    print(f"  [INFO] 条目: {fsize // 0x100}")
     print()
 
     with open(SNMSG_BIN_PATH, "rb") as f:
@@ -50,7 +50,7 @@ def main() -> int:
     data1 = parse(bytearray(original), extra=SNMSG_TEXT_EXTRA)
     count = data1["count"]
     msgs1 = data1["snmsgs"]
-    print(f"  消息数: {count}")
+    print(f"  [INFO] 消息数: {count}")
     assert count == len(msgs1)
     print("  [INFO]")
     print()
@@ -67,7 +67,7 @@ def main() -> int:
     # 3. 重建并重新解析（带 extra 映射）
     print("  ── 重建 → 第 2 次解析（extra 映射）──")
     rebuilt = build(data1, extra=SNMSG_TEXT_EXTRA)
-    print(f"  重建大小: {len(rebuilt)} bytes (原始 {fsize} bytes)")
+    print(f"  [INFO] 重建大小: {len(rebuilt)} bytes (原始 {fsize} bytes)")
     data2 = parse(rebuilt, extra=SNMSG_TEXT_EXTRA)
     msgs2 = data2["snmsgs"]
     assert data2["count"] == count
@@ -100,7 +100,7 @@ def main() -> int:
         print(f"  [WARN] 原始 {len(original)} bytes, 重建 {len(rebuilt)} bytes")
     print()
     print("  ═══════════════════════════════════════════")
-    print("   ALL TESTS PASSED")
+    print("   [INFO] ALL TESTS PASSED")
     print("  ═══════════════════════════════════════════")
     return 0
 

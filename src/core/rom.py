@@ -10,6 +10,7 @@ Classes:
 """
 
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import config
 
@@ -89,18 +90,35 @@ class Rom:
     # ========== 缓存批量读写（供 UI 槽函数调用） ==========
 
     def read_cache(self) -> None:
-        """读取并解析缓存目录下所有已注册的数据文件
+        """并行读取并解析缓存目录下所有已注册的数据文件
 
-        遍历 _LOAD_DISPATCH 并逐一调用对应的 load_* 方法。
+        通过 ThreadPoolExecutor 并行调度 _LOAD_DISPATCH 中各 load_* 方法，
+        总耗时 ≈ 最慢的那个文件。各 load_* 在 C 扩展层释放 GIL，可安全并发。
 
         Raises:
             FileNotFoundError: 缓存目录不存在
+            RuntimeError: 部分文件加载失败（汇总所有错误后抛出）
         """
         if not os.path.isdir(self.cache_dir):
             raise FileNotFoundError(f"Cache directory not found: {self.cache_dir}")
 
-        for method_name in self._LOAD_DISPATCH.values():
-            getattr(self, method_name)()
+        errors: dict[str, Exception] = {}
+
+        with ThreadPoolExecutor(max_workers=len(self._LOAD_DISPATCH)) as pool:
+            future_to_key = {
+                pool.submit(getattr(self, method)): key
+                for key, method in self._LOAD_DISPATCH.items()
+            }
+            for future in as_completed(future_to_key):
+                key = future_to_key[future]
+                try:
+                    future.result()
+                except Exception as exc:
+                    errors[key] = exc
+
+        if errors:
+            details = "; ".join(f"{k}: {v}" for k, v in errors.items())
+            raise RuntimeError(f"Failed to load files: {details}")
 
     def write_cache(self) -> None:
         """将所有已修改的数据构建并写回缓存目录

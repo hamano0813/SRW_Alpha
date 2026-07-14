@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import config
 
-from . import dc_bin, dr_bin, pilot_bin, robot_raf, snmsg_bin
+from . import dc_bin, dr_bin, pilot_bin, robot_raf, sndata_bin, snmsg_bin
 
 
 class Rom:
@@ -25,6 +25,7 @@ class Rom:
         "robots": "UNITPRAM/ROBOT.RAF",
         "pilots": "UNITPRAM/PILOT.BIN",
         "snmsgs": "SNMAP/SNMSG.BIN",
+        "sndata": "SNMAP/SNDATA.BIN",
         "dc": "OPTION/DC.BIN",
         "dr": "OPTION/DR.BIN",
     }
@@ -34,6 +35,7 @@ class Rom:
         "robots": "load_robots",
         "pilots": "load_pilots",
         "snmsgs": "load_snmsgs",
+        "sndata": "load_sndata",
         "dc": "load_dc",
         "dr": "load_dr",
     }
@@ -41,6 +43,7 @@ class Rom:
         "robots": "save_robots",
         "pilots": "save_pilots",
         "snmsgs": "save_snmsgs",
+        "sndata": "save_sndata",
         "dc": "save_dc",
         "dr": "save_dr",
     }
@@ -182,6 +185,44 @@ class Rom:
         raw = robot_raf.build(data, extra=extra)
 
         path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== SNDATA.BIN 单文件读写 ==========
+
+    def load_sndata(self) -> dict:
+        """从缓存目录加载并解析 SNDATA.BIN
+
+        Returns:
+            解析后的场景数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+        """
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["sndata"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"SNDATA.BIN not found: {path}")
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = sndata_bin.parse(raw)
+        self._data["sndata"] = data
+        return data
+
+    def save_sndata(self) -> None:
+        """将场景数据构建并写回缓存目录下的 SNDATA.BIN
+
+        Raises:
+            KeyError: 尚未加载场景数据
+        """
+        data = self._data.get("sndata")
+        if data is None:
+            raise KeyError("No SNDATA data loaded. Call load_sndata() first.")
+
+        raw = sndata_bin.build(data)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["sndata"])
         with open(path, "wb") as f:
             f.write(raw)
 
@@ -365,8 +406,8 @@ class Rom:
             if key not in self._data:
                 continue
             data = self._data[key]
-            basename = os.path.splitext(self._FILE_PATHS[key])[0]
-            fname = basename.replace("/", "_") + ".txt"
+            basename = os.path.splitext(os.path.basename(self._FILE_PATHS[key]))[0]
+            fname = basename + ".txt"
             path = os.path.join(output_dir, fname)
 
             with open(path, "w", encoding="utf-8") as f:
@@ -379,6 +420,8 @@ class Rom:
                     self._dump_pilots(f, data)
                 elif key == "snmsgs":
                     self._dump_snmsgs(f, data)
+                elif key == "sndata":
+                    self._dump_sndata(f, data)
                 elif key == "dc":
                     self._dump_dc(f, data)
                 elif key == "dr":
@@ -429,6 +472,20 @@ class Rom:
         msgs = data.get("snmsgs", [])
         for i, msg in enumerate(msgs):
             f.write(f"[{i:05d}] {msg}\n")
+
+    @staticmethod
+    def _dump_sndata(f, data):
+        scenarios = data.get("scenarios", [])
+        for i, sc in enumerate(scenarios):
+            cmds = sc.get("commands", [])
+            f.write(f"[{i}] {len(cmds)} 条指令\n")
+            for j, cmd in enumerate(cmds):
+                code = cmd.get("code", 0)
+                cnt = cmd.get("count", 1)
+                params = cmd.get("params", [])
+                pstr = " ".join(f"{p & 0xFFFF:04X}" for p in params)
+                f.write(f"    [{j:4d}] <{code:02X} {cnt:02X}> {pstr}\n")
+            f.write("\n")
 
     @staticmethod
     def _dump_dc(f, data):

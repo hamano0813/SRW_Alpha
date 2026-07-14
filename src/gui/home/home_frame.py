@@ -203,7 +203,7 @@ class HomeFrame(QFrame):
             self._on_parse_cache()
 
     def _on_parse_cache(self):
-        """解析 cache.xml 并在树形视图中展示文件系统层级"""
+        """解析缓存：加载 XML 目录树 + 解析所有二进制数据"""
         cache_path, xml_path = self._cache_paths()
         if not os.path.isdir(cache_path):
             w = MessageBox(
@@ -217,6 +217,22 @@ class HomeFrame(QFrame):
             return
 
         self.tree.load_xml(xml_path)
+
+        # 解析二进制数据并导出调试文本
+        try:
+            from core.rom import Rom
+
+            rom = Rom()
+            rom.read_cache()
+        except Exception as e:
+            w = MessageBox(
+                self._msg_file_not_found,
+                f"部分文件加载失败: {e}",
+                self.window(),
+            )
+            w.yesButton.setText(self._msg_ok)
+            w.cancelButton.hide()
+            w.exec()
 
     def _on_serialize(self):
         """序列化修改的数据到缓存文件"""

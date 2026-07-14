@@ -3,7 +3,7 @@
 
 # ===== 半角片假名 → 全角片假名映射（仅显示用，不可用于编码反向）=----
 # 包含所有半角片假名及其浊音/半浊音组合
-HALF_KANA_MAP = {
+HALF_TEXT_EXTRA = {
     'ｶﾞ': 'ガ',
     'ｷﾞ': 'ギ',
     'ｸﾞ': 'グ',
@@ -88,10 +88,8 @@ HALF_KANA_MAP = {
     '･': '·',
 }
 
-# ===== 特殊文字替换（可双向使用 =====
-# 游戏内码中出现的特殊半角标记序列 → 可读文本
-# 编码时使用此映射，避免半角片假名反向映射产生的 0xCD 冲突
-HALF_SPECIAL_MAP = {
+# ===== 特殊标记替换（可双向使用，避免半角片假名反向的 0xCD 冲突）=----
+SPECIAL_TEXT_EXTRA = {
     'ﾔﾟﾕﾟ': 'MK-',
     'ﾚﾟ': 'II',
     'ﾛﾟ': 'III',
@@ -115,9 +113,6 @@ HALF_SPECIAL_MAP = {
     'TYPEー': 'TYPE-',
     'τυ': 'ＭＫ-',
 }
-
-# ===== 合并版 HALF_TEXT_EXTRA（向下兼容，推荐用于 decode）=====
-HALF_TEXT_EXTRA = {**HALF_KANA_MAP, **HALF_SPECIAL_MAP}
 
 SNMSG_TEXT_EXTRA = {
     'ﾔﾟﾕﾟ': 'MK-',

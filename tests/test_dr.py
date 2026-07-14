@@ -14,7 +14,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 from core.dr_bin import build, parse
-from core.codec.extra import HALF_TEXT_EXTRA
+from core.codec.extra import SPECIAL_TEXT_EXTRA
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
 DR_PATH = os.path.join(RES_BIN, "DR.BIN")
@@ -34,8 +34,8 @@ def main() -> int:
     with open(DR_PATH, "rb") as f:
         original = f.read()
 
-    # ===== Parse with HALF_TEXT_EXTRA (for proper text display) =====
-    data1 = parse(original, extra=HALF_TEXT_EXTRA)
+    # ===== Parse with SPECIAL_TEXT_EXTRA（ﾔﾟﾕﾟ→MK- 等特殊映射）=====
+    data1 = parse(original, extra=SPECIAL_TEXT_EXTRA)
     roster = data1["roster"]
     dr_list = data1["dr"]
     count = data1["count"]
@@ -58,8 +58,7 @@ def main() -> int:
     assert len(r0["desc"]) > 0
     print("  [INFO] robot[0] fields OK")
 
-    # ===== Build without extra（避免 HALF_TEXT_EXTRA 映射损失）=----
-    # 用无 extra 的原始数据做往返，确保数据一致性
+    # ===== Build without extra（避免半角片假名反向映射产生的 0xCD 冲突）=====
     data_raw = parse(original)
     rebuilt = build(data_raw)
     print(f"  [INFO] rebuilt {len(rebuilt)} / original {fsize} bytes")

@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 
 from core import dc_bin, dr_bin, pilot_bin, robot_raf, snmsg_bin
-from core.codec.extra import HALF_TEXT_EXTRA, SNMSG_TEXT_EXTRA
+from core.codec.extra import HALF_TEXT_EXTRA, SNMSG_TEXT_EXTRA, SPECIAL_TEXT_EXTRA
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
 
@@ -119,11 +119,11 @@ def main() -> int:
 
     all_ok = True
     files = [
-        ("ROBOT.RAF", ROBOT_PATH, robot_raf, HALF_TEXT_EXTRA),
-        ("PILOT.BIN", PILOT_PATH, pilot_bin, HALF_TEXT_EXTRA),
+        ("ROBOT.RAF", ROBOT_PATH, robot_raf, {**HALF_TEXT_EXTRA, **SPECIAL_TEXT_EXTRA}),
+        ("PILOT.BIN", PILOT_PATH, pilot_bin, {**HALF_TEXT_EXTRA, **SPECIAL_TEXT_EXTRA}),
         ("SNMSG.BIN", SNMSG_PATH, snmsg_bin, SNMSG_TEXT_EXTRA),
         ("DC.BIN", DC_PATH, dc_bin, None),
-        ("DR.BIN", DR_PATH, dr_bin, HALF_TEXT_EXTRA),
+        ("DR.BIN", DR_PATH, dr_bin, SPECIAL_TEXT_EXTRA),
     ]
 
     for name, path, mod, extra in files:

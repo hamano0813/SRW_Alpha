@@ -24,9 +24,9 @@ class Rom:
     _FILE_PATHS: dict[str, str] = {
         "robots": "UNITPRAM/ROBOT.RAF",
         "pilots": "UNITPRAM/PILOT.BIN",
-        "snmsgs": "UNITPRAM/SNMSG.BIN",
-        "dc": "UNITPRAM/DC.BIN",
-        "dr": "UNITPRAM/DR.BIN",
+        "snmsgs": "SNMAP/SNMSG.BIN",
+        "dc": "OPTION/DC.BIN",
+        "dr": "OPTION/DR.BIN",
     }
 
     # 文件 key → 对应的方法名（read_cache / write_cache 通过此表分发）
@@ -125,6 +125,8 @@ class Rom:
         if errors:
             details = "; ".join(f"{k}: {v}" for k, v in errors.items())
             raise RuntimeError(f"Failed to load files: {details}")
+
+        self.dump_to_txt()
 
     def write_cache(self) -> None:
         """将所有已修改的数据构建并写回缓存目录
@@ -346,6 +348,119 @@ class Rom:
         data = pilot_bin.parse(raw, extra=extra)
         self._data["pilots"] = data
         return data
+
+    # ========== 测试用数据导出 ==========
+
+    def dump_to_txt(self, output_dir: str = "_test_cache") -> None:
+        """将全部已加载数据分文件导出为 TXT（测试/调试用）
+
+        每个模块一个文件，按条目逐字段可读打印。
+
+        Args:
+            output_dir: 输出目录路径，默认为项目根下的 _test_cache
+        """
+        os.makedirs(output_dir, exist_ok=True)
+
+        for key in self._FILE_PATHS:
+            if key not in self._data:
+                continue
+            data = self._data[key]
+            basename = os.path.splitext(self._FILE_PATHS[key])[0]
+            fname = basename.replace("/", "_") + ".txt"
+            path = os.path.join(output_dir, fname)
+
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(f"# {self._FILE_PATHS[key]}\n")
+                f.write(f"# 条目数: {data.get('count', '?')}\n\n")
+
+                if key == "robots":
+                    self._dump_robots(f, data)
+                elif key == "pilots":
+                    self._dump_pilots(f, data)
+                elif key == "snmsgs":
+                    self._dump_snmsgs(f, data)
+                elif key == "dc":
+                    self._dump_dc(f, data)
+                elif key == "dr":
+                    self._dump_dr(f, data)
+
+            print(f"  [INFO] {fname} 已导出")
+
+    # ----- 各模块格式化导出 -----
+
+    @staticmethod
+    def _dump_robots(f, data):
+        robots = data.get("robots", [])
+        for i, r in enumerate(robots):
+            f.write(f"[{i}] {r.get('rname', '')}\n")
+            for k, v in r.items():
+                if k == "rname" or k.startswith("_"):
+                    continue
+                if isinstance(v, list):
+                    f.write(f"    {k}:\n")
+                    for j, item in enumerate(v):
+                        if isinstance(item, dict):
+                            f.write(f"      [{j}] {item}\n")
+                        else:
+                            f.write(f"      [{j}] {item}\n")
+                else:
+                    f.write(f"    {k}: {v}\n")
+            f.write("\n")
+
+    @staticmethod
+    def _dump_pilots(f, data):
+        pilots = data.get("pilots", [])
+        for i, p in enumerate(pilots):
+            fname = p.get("fname", "") or p.get("nname", "")
+            f.write(f"[{i}] {fname}\n")
+            for k, v in p.items():
+                if k == "sklu" and isinstance(v, list):
+                    f.write(f"    sklu ({len(v)} 条):\n")
+                    for si, sk in enumerate(v):
+                        f.write(f"      S{si}: {sk}\n")
+                elif isinstance(v, list):
+                    f.write(f"    {k}: {v}\n")
+                else:
+                    f.write(f"    {k}: {v}\n")
+            f.write("\n")
+
+    @staticmethod
+    def _dump_snmsgs(f, data):
+        msgs = data.get("snmsgs", [])
+        for i, msg in enumerate(msgs):
+            f.write(f"[{i:05d}] {msg}\n")
+
+    @staticmethod
+    def _dump_dc(f, data):
+        roster = data.get("roster", [])
+        dc_list = data.get("dc", [])
+        for i, (name, entry) in enumerate(zip(roster, dc_list)):
+            f.write(f"[{i}] {name}\n")
+            for k, v in entry.items():
+                if k.startswith("_"):
+                    continue
+                if isinstance(v, list):
+                    f.write(f"    {k}: {v}\n")
+                else:
+                    f.write(f"    {k}: {v}\n")
+            f.write("\n")
+
+    @staticmethod
+    def _dump_dr(f, data):
+        roster = data.get("roster", [])
+        dr_list = data.get("dr", [])
+        for i, (name, entry) in enumerate(zip(roster, dr_list)):
+            f.write(f"[{i}] {name}\n")
+            for k, v in entry.items():
+                if k.startswith("_"):
+                    continue
+                if k == "desc" and isinstance(v, str):
+                    f.write(f"    desc:\n")
+                    for line in v.split("\n"):
+                        f.write(f"      |{line}\n")
+                else:
+                    f.write(f"    {k}: {v}\n")
+            f.write("\n")
 
     def save_pilots(self, extra: dict | None = None) -> None:
         """将驾驶员数据构建并写回缓存目录下的 PILOT.BIN

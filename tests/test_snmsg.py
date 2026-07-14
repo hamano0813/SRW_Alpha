@@ -92,10 +92,38 @@ def main() -> int:
     print(f"  [INFO] 全部 {count} 条消息数据一致")
     print()
 
-    # 5. 大小对比
+    # 5. 逐字节对比（严格模式）
+    print("  ── 逐字节对比 ──")
+    slot_size = 0x100
+    total_slots = len(original) // slot_size
+    byte_diff_slots = []
+    for s in range(total_slots):
+        o_start = s * slot_size
+        r_start = s * slot_size
+        orig_slot = original[o_start : o_start + slot_size]
+        rebuilt_slot = rebuilt[r_start : r_start + slot_size]
+        if orig_slot != bytes(rebuilt_slot):
+            byte_diff_slots.append(s)
+
+    if byte_diff_slots:
+        print(f"  [ERROR] 逐字节不一致的 slot: {len(byte_diff_slots)} / {total_slots}")
+        for s in byte_diff_slots[:20]:
+            o_size = len(original[s * slot_size : (s + 1) * slot_size])
+            r_size = len(rebuilt[s * slot_size : (s + 1) * slot_size])
+            note = f" (大小: {o_size}→{r_size})" if o_size != r_size else " (内容不同)"
+            print(f"    [{s:3d}]{note}")
+        if len(byte_diff_slots) > 20:
+            print(f"    ... 及 {len(byte_diff_slots) - 20} 个")
+        print()
+        return 1
+
+    print(f"  [INFO] 全部 {total_slots} 个 slot 逐字节完全相同")
+    print()
+
+    # 6. 文件大小对比
     print("  ── 文件大小对比 ──")
     if len(original) == len(rebuilt):
-        print("  [INFO] 大小一致")
+        print(f"  [INFO] 大小一致 ({len(original)} bytes)")
     else:
         print(f"  [WARN] 原始 {len(original)} bytes, 重建 {len(rebuilt)} bytes")
     print()

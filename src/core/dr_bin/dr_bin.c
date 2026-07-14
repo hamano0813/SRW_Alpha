@@ -481,18 +481,23 @@ static int _build_description(
         num_lines++;
     }
 
-    /* 编码所有行，计算总数据大小 */
-    /* 格式: line1_sjis + 00 00 + line2_sjis + 00 00 + ... + 00 00 */
-    PyObject *enc_objs[MAX_LINES];
-    const char *enc_datas[MAX_LINES];
-    Py_ssize_t enc_sizes[MAX_LINES];
-    Py_ssize_t enc_count = 0;
-    size_t total_data = 0;
+    /* 找最后一条非空行的索引 */
+    Py_ssize_t last_line_idx = -1;
+    for (Py_ssize_t i = num_lines - 1; i >= 0; i--)
+    {
+        if (line_lengths[i] > 0) { last_line_idx = i; break; }
+    }
 
-    for (Py_ssize_t i = 0; i < num_lines && enc_count < MAX_LINES; i++)
+    /* 逐行编码并写入，每行独立 48B cell 掩码 */
+    /* 非末行: text + 00 00 + CD     末行: text + term + CD  */
+    /* 末行终止符根据 dsize % 48 选择: 0 → 无, 47 → 单 00, 否则 → 00 00 */
+    size_t off = 0;
+    for (Py_ssize_t i = 0; i < num_lines; i++)
     {
         if (line_lengths[i] == 0)
             continue;
+
+        int is_last = (i == last_line_idx);
 
         PyObject *line_str = PyUnicode_DecodeUTF8(
             line_starts[i], line_lengths[i], NULL);
@@ -512,50 +517,67 @@ static int _build_description(
             continue;
         }
 
-        /* Keep the object alive (incref so it survives) */
-        Py_INCREF(encoded);
-        enc_objs[enc_count] = encoded;
-        enc_datas[enc_count] = data;
-        enc_sizes[enc_count] = dsize;
-        total_data += (size_t)dsize + 2; /* text + 00 00 */
-        enc_count++;
+        /* 确定终止符长度 */
+        int term_len;
+        if (!is_last)
+        {
+            term_len = 2; /* 非末行固定 00 00 */
+        }
+        else if (dsize % 48 == 0 && dsize > 0)
+        {
+            term_len = 0; /* 末行恰好满 cell，可省略终止符 */
+        }
+        else if (dsize % 48 == 47)
+        {
+            term_len = 1; /* 末行 00 00 放不下，退化为单 00 */
+        }
+        else
+        {
+            term_len = 2; /* 末行正常 00 00 */
+        }
+
+        size_t cell_total = (size_t)dsize + (size_t)term_len;
+        size_t rem = cell_total % DR_DESC_CELL_SIZE;
+        if (rem > 0)
+            cell_total += DR_DESC_CELL_SIZE - rem;
+
+        if (off + cell_total > buf_size)
+        {
+            Py_DECREF(encoded);
+            return -1;
+        }
+
+        size_t cell_start = off;
+        memcpy(buf + off, data, (size_t)dsize);
+        off += (size_t)dsize;
+        if (term_len >= 1)
+            buf[off++] = 0x00;
+        if (term_len >= 2)
+            buf[off++] = 0x00;
+
+        /* CD 填到 cell 尾部 */
+        size_t cell_end = cell_start + cell_total;
+        while (off < cell_end)
+            buf[off++] = 0xCD;
+
+        Py_DECREF(encoded);
     }
 
     Py_DECREF(utf8);
-    /* 上面的 encoded 用 Py_INCREF 保持了引用，但还欠一个 DECREF */
 
-    /* 总大小 = 文本数据（每行已含 00 00 分隔符/尾随）*/
-
-    /* CD 填充到 48 的整数倍 */
-    size_t total_size = total_data;
-    size_t remainder = total_size % DR_DESC_CELL_SIZE;
-    if (remainder > 0)
-        total_size += DR_DESC_CELL_SIZE - remainder;
-
-    if (total_size > buf_size)
+    /* 无文本时写一个空 cell */
+    if (off == 0)
     {
-        for (Py_ssize_t i = 0; i < enc_count; i++)
-            Py_DECREF(enc_objs[i]);
-        return -1;
+        if (buf_size < DR_DESC_CELL_SIZE)
+            return -1;
+        memset(buf, 0xCD, DR_DESC_CELL_SIZE);
+        buf[0] = 0x00;
+        buf[1] = 0x00;
+        *out_total = DR_DESC_CELL_SIZE;
+        return 0;
     }
 
-    /* 写入数据 */
-    size_t off = 0;
-    for (Py_ssize_t i = 0; i < enc_count; i++)
-    {
-        /* 每行后跟 00 00（既是行分隔符，最末行也是尾随标记） */
-        memcpy(buf + off, enc_datas[i], (size_t)enc_sizes[i]);
-        off += (size_t)enc_sizes[i];
-        buf[off++] = 0x00;
-        buf[off++] = 0x00;
-        Py_DECREF(enc_objs[i]);
-    }
-
-    /* CD 填充到 total_size */
-    while (off < total_size && off < buf_size)
-        buf[off++] = 0xCD;
-
-    *out_total = total_size;
+    *out_total = off;
     return 0;
 }
 
@@ -602,6 +624,35 @@ static unsigned char *_build_roster(
         {
             memcpy(decomp + slot_off, enc_data, (size_t)enc_len);
             decomp[slot_off + enc_len] = 0x00;
+
+            /* 统计首个双字节字符之后的半角 ASCII 数（排除机型前缀和半角假名）
+             * 规则同 DC：只计 ASCII 非字母字符（排除 A-Z a-z）
+             * 末尾追加 N 个 00，N = 该数目 */
+            size_t trail = 0;
+            int seen_double = 0;
+            {
+                Py_ssize_t k = 0;
+                while (k < enc_len) {
+                    unsigned char b = (unsigned char)enc_data[k];
+                    if (b < 0x80) {
+                        if (seen_double && b >= 0x21 && b <= 0x7E) {
+                            int is_letter = (b >= 0x41 && b <= 0x5A)
+                                         || (b >= 0x61 && b <= 0x7A);
+                            if (!is_letter) trail++;
+                        }
+                        k++;
+                    } else if (b >= 0xA1 && b <= 0xDF) {
+                        k++; /* 半角假名不计入 */
+                    } else {
+                        seen_double = 1;
+                        k += 2; /* 双字节字符 */
+                    }
+                }
+            }
+
+            size_t end = slot_off + DR_ROSTER_SLOT_SIZE;
+            for (size_t t = 0; t < trail && t < DR_ROSTER_SLOT_SIZE; t++)
+                decomp[end - 1 - t] = 0x00;
         }
 
         Py_DECREF(encoded);

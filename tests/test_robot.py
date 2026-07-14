@@ -131,18 +131,20 @@ def main():
     print(f"  [INFO] 全部 {count} 条机体数据一致 " f"(含 16 件武器)")
     print()
 
-    # 5. 逐字节对比（仅当大小一致时执行）
+    # 5. 逐字节对比
     print("  ── 逐字节对比 ──")
-    if len(original) == len(rebuilt):
-        if original == bytes(rebuilt):
-            print("  [INFO] 完全相同")
-        else:
-            for i in range(len(original)):
-                if original[i] != rebuilt[i]:
-                    print(f"  [ERROR] 首处差异在字节 {i}: " f"原始 0x{original[i]:02X} vs 重建 0x{rebuilt[i]:02X}")
-                    return 1
+    if original == bytes(rebuilt):
+        print("  [INFO] 逐字节完全相同")
     else:
-        print("  [WARN] 大小不一致，跳过逐字节对比")
+        if len(original) != len(rebuilt):
+            print(
+                f"  [ERROR] 大小不一致: 原始 {len(original)} vs 重建 {len(rebuilt)} "
+                f"({'+' if len(rebuilt) >= len(original) else ''}{len(rebuilt) - len(original)} bytes)"
+            )
+        for i in range(min(len(original), len(rebuilt))):
+            if original[i] != rebuilt[i]:
+                print(f"  [ERROR] 首处差异在字节 {i}: " f"原始 0x{original[i]:02X} vs 重建 0x{rebuilt[i]:02X}")
+                return 1
 
     # 6. 验证 extra 映射已生效
     print()

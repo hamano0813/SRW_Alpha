@@ -48,22 +48,22 @@ def print_pilot(pilot: dict, index: int):
     print(f"       nname:    {pilot['nname']}")
     print(f"       code:     {pilot['code']}")
     print(f"       series:   {pilot['series']}  (unknown1={pilot['unknown1']})")
-    print(f"       cqb/rng/evd/hit/rxn/skl: "
-          f"{pilot['cqb']}/{pilot['rng']}/{pilot['evd']}/"
-          f"{pilot['hit']}/{pilot['rxn']}/{pilot['skl']}")
-    print(f"       sp: {pilot['sp']}  daction: {pilot['daction']}  "
-          f"skls: {pilot['skls']}  (0b{pilot['skls']:016b})")
+    print(
+        f"       cqb/rng/evd/hit/rxn/skl: " f"{pilot['cqb']}/{pilot['rng']}/{pilot['evd']}/" f"{pilot['hit']}/{pilot['rxn']}/{pilot['skl']}"
+    )
+    print(f"       sp: {pilot['sp']}  daction: {pilot['daction']}  " f"skls: {pilot['skls']}  (0b{pilot['skls']:016b})")
     print(f"       nature: {pilot['nature']}  fsg: {pilot['fsg']}")
-    print(f"       air/grd/wtr/spc: "
-          f"{pilot['air']}/{pilot['grd']}/{pilot['wtr']}/{pilot['spc']}")
+    print(f"       air/grd/wtr/spc: " f"{pilot['air']}/{pilot['grd']}/{pilot['wtr']}/{pilot['spc']}")
     print(f"       spi: {pilot['spi']}")
     print(f"       spl: {pilot['spl']}")
     print(f"       sklu ({len(pilot['sklu'])} 条):")
     for si, sk in enumerate(pilot["sklu"]):
-        print(f"         S{si}: sname={sk['sname']}  "
-              f"l1={sk['l1']} l2={sk['l2']} l3={sk['l3']} "
-              f"l4={sk['l4']} l5={sk['l5']} l6={sk['l6']} "
-              f"l7={sk['l7']} l8={sk['l8']} l9={sk['l9']}")
+        print(
+            f"         S{si}: sname={sk['sname']}  "
+            f"l1={sk['l1']} l2={sk['l2']} l3={sk['l3']} "
+            f"l4={sk['l4']} l5={sk['l5']} l6={sk['l6']} "
+            f"l7={sk['l7']} l8={sk['l8']} l9={sk['l9']}"
+        )
 
 
 def main():
@@ -131,17 +131,18 @@ def main():
 
     # 5. 逐字节对比
     print("  ── 逐字节对比 ──")
-    if len(original) == len(rebuilt):
-        if original == bytes(rebuilt):
-            print("  [INFO] 完全相同")
-        else:
-            for i in range(min(len(original), len(rebuilt))):
-                if original[i] != rebuilt[i]:
-                    print(f"  [ERROR] 首处差异在字节 {i}: "
-                          f"原始 0x{original[i]:02X} vs 重建 0x{rebuilt[i]:02X}")
-                    return 1
+    if original == bytes(rebuilt):
+        print("  [INFO] 逐字节完全相同")
     else:
-        print("  [WARN] 大小不一致，跳过逐字节对比")
+        if len(original) != len(rebuilt):
+            print(
+                f"  [ERROR] 大小不一致: 原始 {len(original)} vs 重建 {len(rebuilt)} "
+                f"({'+' if len(rebuilt) >= len(original) else ''}{len(rebuilt) - len(original)} bytes)"
+            )
+        for i in range(min(len(original), len(rebuilt))):
+            if original[i] != rebuilt[i]:
+                print(f"  [ERROR] 首处差异在字节 {i}: " f"原始 0x{original[i]:02X} vs 重建 0x{rebuilt[i]:02X}")
+                return 1
 
     # 6. 验证 extra 映射已生效
     print()

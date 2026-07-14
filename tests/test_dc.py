@@ -11,8 +11,8 @@ DC.BIN 解析/构建 往返测试
 """
 
 import os
-import sys
 import struct
+import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
@@ -89,10 +89,7 @@ def main() -> int:
 
     # 验证块 2（スレッガー＝ロウ）描述完整性
     desc2 = dc_list[2].get("desc", "")
-    known_phrases = [
-        "ホワイトベース", "ジャブロー", "階級は中尉",
-        "粗野な印象", "婚約者", "捨て身の攻撃"
-    ]
+    known_phrases = ["ホワイトベース", "ジャブロー", "階級は中尉", "粗野な印象", "婚約者", "捨て身の攻撃"]
     for phrase in known_phrases:
         if phrase not in desc2:
             print(f"  [WARN] 描述验证: '{phrase}' 缺失")
@@ -135,15 +132,15 @@ def main() -> int:
 
     # 5. 逐字节对比（跳过块0和块214）
     print("  ── 逐字节对比 ──")
-    orig_ptrs = [struct.unpack_from('<I', original, i * 4)[0] for i in range(351)]
-    rebuilt_ptrs = [struct.unpack_from('<I', rebuilt, i * 4)[0] for i in range(351)]
+    orig_ptrs = [struct.unpack_from("<I", original, i * 4)[0] for i in range(351)]
+    rebuilt_ptrs = [struct.unpack_from("<I", rebuilt, i * 4)[0] for i in range(351)]
 
     skip_blocks = {0, 214}
     for blk in range(1, 350):
         if blk in skip_blocks:
             continue
-        orig_blk = original[orig_ptrs[blk]:orig_ptrs[blk + 1]]
-        rebuilt_blk = rebuilt[rebuilt_ptrs[blk]:rebuilt_ptrs[blk + 1]]
+        orig_blk = original[orig_ptrs[blk] : orig_ptrs[blk + 1]]
+        rebuilt_blk = rebuilt[rebuilt_ptrs[blk] : rebuilt_ptrs[blk + 1]]
         if orig_blk != bytes(rebuilt_blk):
             print(f"  [ERROR] 块{blk}: 原始 {len(orig_blk)} vs 重建 {len(rebuilt_blk)}")
             return 1
@@ -152,8 +149,10 @@ def main() -> int:
     # 6. 压缩大小统计
     print()
     print("  ── 压缩大小对比 ──")
-    print(f"  [INFO] 总文件: 原始 {len(original)} vs 重建 {len(rebuilt)} "
-          f"({'+' if len(rebuilt) >= len(original) else ''}{len(rebuilt) - len(original)} bytes)")
+    print(
+        f"  [INFO] 总文件: 原始 {len(original)} vs 重建 {len(rebuilt)} "
+        f"({'+' if len(rebuilt) >= len(original) else ''}{len(rebuilt) - len(original)} bytes)"
+    )
 
     size_diffs = []
     for blk in range(0, 350):
@@ -171,8 +170,7 @@ def main() -> int:
                 note = " ← 名册，规则2未实现"
             elif blk == 214:
                 note = " ← 官方空cell"
-            print(f"    [{blk:3d}] 原始 {o:5d} → 重建 {r:5d}  "
-                  f"({d:+d}){note}")
+            print(f"    [{blk:3d}] 原始 {o:5d} → 重建 {r:5d}  " f"({d:+d}){note}")
     else:
         print(f"  [INFO] 全部 350 块压缩大小完全一致")
     print()

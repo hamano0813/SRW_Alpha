@@ -33,6 +33,8 @@ def _build_extension(src_dir: str, module_prefix: str) -> bool:
         cwd=src_dir,
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="replace",
     )
 
     if result.returncode != 0:
@@ -129,6 +131,16 @@ def build_dc_bin():
     )
 
 
+def build_dr_bin():
+    print("=" * 60)
+    print("  Building DR.BIN native extension...")
+    print("=" * 60)
+    return _build_extension(
+        src_dir=os.path.join(PROJECT_ROOT, "src", "core", "dr_bin"),
+        module_prefix="_dr_bin",
+    )
+
+
 def build_codec():
     print("=" * 60)
     print("  Building codec native extension...")
@@ -149,49 +161,57 @@ def main():
     print()
     ok = build_lzss()
     if ok:
-        print("[DONE]   LZSS native extension")
+        print("[INFO]   LZSS native extension")
     else:
-        print("[FAILED] LZSS native extension")
+        print("[ERROR] LZSS native extension")
         all_ok = False
 
     print()
     ok = build_robot_raf()
     if ok:
-        print("[DONE]   ROBOT.RAF native extension")
+        print("[INFO]   ROBOT.RAF native extension")
     else:
-        print("[FAILED] ROBOT.RAF native extension")
+        print("[ERROR] ROBOT.RAF native extension")
         all_ok = False
 
     print()
     ok = build_pilot_bin()
     if ok:
-        print("[DONE]   PILOT.BIN native extension")
+        print("[INFO]   PILOT.BIN native extension")
     else:
-        print("[FAILED] PILOT.BIN native extension")
+        print("[ERROR] PILOT.BIN native extension")
         all_ok = False
 
     print()
     ok = build_snmsg_bin()
     if ok:
-        print("[DONE]   SNMSG.BIN native extension")
+        print("[INFO]   SNMSG.BIN native extension")
     else:
-        print("[FAILED] SNMSG.BIN native extension")
+        print("[ERROR] SNMSG.BIN native extension")
         all_ok = False
 
     print()
     ok = build_dc_bin()
     if ok:
-        print("[DONE]   DC.BIN native extension")
+        print("[INFO]   DC.BIN native extension")
     else:
-        print("[FAILED] DC.BIN native extension")
+        print("[ERROR] DC.BIN native extension")
+        all_ok = False
+
+    print()
+    ok = build_dr_bin()
+    if ok:
+        print("[INFO]   DR.BIN native extension")
+    else:
+        print("[ERROR] DR.BIN native extension")
         all_ok = False
 
     print()
     ok = build_codec()
     if ok:
-        print("[DONE]   codec native extension")
+        print("[INFO]   codec native extension")
     else:
-        print("[FAILED] codec native extension")
+        print("[ERROR] codec native extension")
         all_ok = False
     print()
 

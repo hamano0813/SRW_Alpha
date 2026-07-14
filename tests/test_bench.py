@@ -2,12 +2,10 @@
 各模块 parse/build 性能基准测试
 
 测试内容：
-  1. ROBOT.RAF 解析时间
-  2. ROBOT.RAF 构建时间
-  3. PILOT.BIN 解析时间
-  4. PILOT.BIN 构建时间
-  5. SNMSG.BIN 解析时间
-  6. SNMSG.BIN 构建时间
+  1. ROBOT.RAF 解析/构建时间
+  2. PILOT.BIN 解析/构建时间
+  3. SNMSG.BIN 解析/构建时间
+  4. DC.BIN 解析/构建时间
 """
 
 import os
@@ -17,7 +15,7 @@ import time
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 
-from core import pilot_bin, robot_raf, snmsg_bin
+from core import dc_bin, pilot_bin, robot_raf, snmsg_bin
 from core.codec.extra import HALF_TEXT_EXTRA, SNMSG_TEXT_EXTRA
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
@@ -25,6 +23,7 @@ RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
 ROBOT_PATH = os.path.join(RES_BIN, "ROBOT.RAF")
 PILOT_PATH = os.path.join(RES_BIN, "PILOT.BIN")
 SNMSG_PATH = os.path.join(RES_BIN, "SNMSG.BIN")
+DC_PATH = os.path.join(RES_BIN, "DC.BIN")
 
 
 def _load(path: str) -> bytes:
@@ -121,6 +120,7 @@ def main() -> int:
         ("ROBOT.RAF", ROBOT_PATH, robot_raf, HALF_TEXT_EXTRA),
         ("PILOT.BIN", PILOT_PATH, pilot_bin, HALF_TEXT_EXTRA),
         ("SNMSG.BIN", SNMSG_PATH, snmsg_bin, SNMSG_TEXT_EXTRA),
+        ("DC.BIN", DC_PATH, dc_bin, None),
     ]
 
     for name, path, mod, extra in files:

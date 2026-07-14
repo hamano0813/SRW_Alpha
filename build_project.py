@@ -119,6 +119,16 @@ def build_snmsg_bin():
     )
 
 
+def build_dc_bin():
+    print("=" * 60)
+    print("  Building DC.BIN native extension...")
+    print("=" * 60)
+    return _build_extension(
+        src_dir=os.path.join(PROJECT_ROOT, "src", "core", "dc_bin"),
+        module_prefix="_dc_bin",
+    )
+
+
 def build_codec():
     print("=" * 60)
     print("  Building codec native extension...")
@@ -166,6 +176,14 @@ def main():
         print("[DONE]   SNMSG.BIN native extension")
     else:
         print("[FAILED] SNMSG.BIN native extension")
+        all_ok = False
+
+    print()
+    ok = build_dc_bin()
+    if ok:
+        print("[DONE]   DC.BIN native extension")
+    else:
+        print("[FAILED] DC.BIN native extension")
         all_ok = False
 
     print()

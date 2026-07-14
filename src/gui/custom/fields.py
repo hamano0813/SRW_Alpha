@@ -27,6 +27,8 @@ class MappingType(QObject):
             # PILOT_BIN
             self._init_pilot(),
             self._init_skill(),
+            # DC_BIN
+            self._init_character(),
             # SNMSG_BIN
             self._init_snmsg(),
             # SNDATA_BIN
@@ -133,6 +135,17 @@ class MappingType(QObject):
             self.tr("ground"): "grd",
             self.tr("water"): "wtr",
             self.tr("space"): "spc",
+        }
+        return mapping
+
+    def _init_character(self):
+        mapping = {
+            self.tr("full name"): "fname",
+            self.tr("pet name"): "pname",
+            self.tr("appearance"): "appr",
+            self.tr("voice actor"): "voice",
+            self.tr("flags"): "flags",
+            self.tr("description"): "desc",
         }
         return mapping
 

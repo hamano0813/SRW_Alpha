@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import config
 
-from . import pilot_bin, robot_raf, snmsg_bin
+from . import dc_bin, pilot_bin, robot_raf, snmsg_bin
 
 
 class Rom:
@@ -25,6 +25,7 @@ class Rom:
         "robots": "UNITPRAM/ROBOT.RAF",
         "pilots": "UNITPRAM/PILOT.BIN",
         "snmsgs": "UNITPRAM/SNMSG.BIN",
+        "dc": "UNITPRAM/DC.BIN",
     }
 
     # 文件 key → 对应的方法名（read_cache / write_cache 通过此表分发）
@@ -32,11 +33,13 @@ class Rom:
         "robots": "load_robots",
         "pilots": "load_pilots",
         "snmsgs": "load_snmsgs",
+        "dc": "load_dc",
     }
     _SAVE_DISPATCH: dict[str, str] = {
         "robots": "save_robots",
         "pilots": "save_pilots",
         "snmsgs": "save_snmsgs",
+        "dc": "save_dc",
     }
 
     def __init__(self):
@@ -218,6 +221,54 @@ class Rom:
         raw = snmsg_bin.build(data, extra=extra)
 
         path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== DC.BIN 单文件读写 ==========
+
+    def load_dc(self, extra: dict | None = None) -> dict:
+        """从缓存目录加载并解析 DC.BIN
+
+        Args:
+            extra: 文本映射字典，传给 codec 解码
+
+        Returns:
+            解析后的角色图鉴数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+            RuntimeError: 解析/解压失败
+        """
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["dc"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"DC.BIN not found: {path}")
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = dc_bin.parse(raw, extra=extra)
+        self._data["dc"] = data
+        return data
+
+    def save_dc(self, extra: dict | None = None) -> None:
+        """将角色图鉴数据构建并写回缓存目录下的 DC.BIN
+
+        Args:
+            extra: 文本映射字典，传给 codec 编码
+
+        Raises:
+            KeyError: 尚未加载角色图鉴数据
+            RuntimeError: 构建/压缩失败
+        """
+        data = self._data.get("dc")
+        if data is None:
+            raise KeyError(
+                "No DC data loaded. Call load_dc() first."
+            )
+
+        raw = dc_bin.build(data, extra=extra)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["dc"])
         with open(path, "wb") as f:
             f.write(raw)
 

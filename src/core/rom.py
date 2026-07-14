@@ -13,7 +13,7 @@ import os
 
 import config
 
-from . import robot_raf
+from . import pilot_bin, robot_raf
 
 
 class Rom:
@@ -22,14 +22,17 @@ class Rom:
     # 各文件在缓存目录下的相对路径（因游戏 ISO 结构固定而写死）
     _FILE_PATHS: dict[str, str] = {
         "robots": "UNITPRAM/ROBOT.RAF",
+        "pilots": "UNITPRAM/PILOT.BIN",
     }
 
     # 文件 key → 对应的方法名（read_cache / write_cache 通过此表分发）
     _LOAD_DISPATCH: dict[str, str] = {
         "robots": "load_robots",
+        "pilots": "load_pilots",
     }
     _SAVE_DISPATCH: dict[str, str] = {
         "robots": "save_robots",
+        "pilots": "save_pilots",
     }
 
     def __init__(self):
@@ -150,5 +153,51 @@ class Rom:
         raw = robot_raf.build(data, extra=extra)
 
         path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== PILOT.BIN 单文件读写 ==========
+
+    def load_pilots(self, extra: dict | None = None) -> dict:
+        """从缓存目录加载并解析 PILOT.BIN
+
+        Args:
+            extra: 文本映射字典（如 HALF_TEXT_EXTRA），传给 codec 解码
+
+        Returns:
+            解析后的驾驶员数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+            RuntimeError: 解析/解压失败
+        """
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["pilots"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"PILOT.BIN not found: {path}")
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = pilot_bin.parse(raw, extra=extra)
+        self._data["pilots"] = data
+        return data
+
+    def save_pilots(self, extra: dict | None = None) -> None:
+        """将驾驶员数据构建并写回缓存目录下的 PILOT.BIN
+
+        Args:
+            extra: 文本映射字典（如 HALF_TEXT_EXTRA），传给 codec 编码
+
+        Raises:
+            KeyError: 尚未加载驾驶员数据
+            RuntimeError: 构建/压缩失败
+        """
+        data = self._data.get("pilots")
+        if data is None:
+            raise KeyError("No pilot data loaded. Call load_pilots() first.")
+
+        raw = pilot_bin.build(data, extra=extra)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["pilots"])
         with open(path, "wb") as f:
             f.write(raw)

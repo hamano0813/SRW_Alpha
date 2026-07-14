@@ -124,8 +124,6 @@ class MappingType(QObject):
             self.tr("spirit commands"): "spi",
             self.tr("spirit level"): "spl",
             self.tr("upgraded skills"): "sklu",
-            self.tr("upgraded level"): "upl",
-            self.tr("fixed skills"): "sklf",
             self.tr("SP"): "sp",
             self.tr("double action"): "daction",
             self.tr("special skills"): "skls",

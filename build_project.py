@@ -99,6 +99,16 @@ def build_robot_raf():
     )
 
 
+def build_pilot_bin():
+    print("=" * 60)
+    print("  Building PILOT.BIN native extension...")
+    print("=" * 60)
+    return _build_extension(
+        src_dir=os.path.join(PROJECT_ROOT, "src", "core", "pilot_bin"),
+        module_prefix="_pilot_bin",
+    )
+
+
 def build_codec():
     print("=" * 60)
     print("  Building codec native extension...")
@@ -133,6 +143,14 @@ def main():
         all_ok = False
 
     print()
+    ok = build_pilot_bin()
+    if ok:
+        print("[DONE]   PILOT.BIN native extension")
+    else:
+        print("[FAILED] PILOT.BIN native extension")
+        all_ok = False
+
+    print()
     ok = build_codec()
     if ok:
         print("[DONE]   codec native extension")
@@ -149,6 +167,7 @@ def main():
         print("  Available imports:")
         print("    from core.lzss import compress, decompress")
         print("    from core.robot_raf import parse, build")
+        print("    from core.pilot_bin import parse, build")
         print("    from core.codec import decode, encode, encode_var")
         print()
         return 0

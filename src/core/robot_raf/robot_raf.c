@@ -35,71 +35,71 @@
 
 typedef struct
 {
-    uint8_t code : 4;
-    uint8_t newtype : 2;
-    uint8_t aura : 2;
-    uint8_t morale;
-    uint8_t custom : 2;
-    uint8_t rngs : 2;
-    uint8_t rngl : 4;
-    uint8_t mcls : 2;
-    uint8_t radius : 3;
+    uint8_t code : 4;            /* 0x00 武器代码 */
+    uint8_t newtype : 2;         /* ニュータイプ等级 */
+    uint8_t aura : 2;            /* オーラ等级 */
+    uint8_t morale;              /* 0x01 必要气力 */
+    uint8_t custom : 2;          /* 0x02 改造区分 */
+    uint8_t rngs : 2;            /* 最小射程 */
+    uint8_t rngl : 4;            /* 最大射程 */
+    uint8_t mcls : 2;            /* 0x03 マップ武器类别 */
+    uint8_t radius : 3;          /* マップ半径 */
     uint8_t unknown1 : 3;
-    uint16_t damage;
-    uint8_t wclass : 1;
-    uint8_t attr : 7;
-    uint8_t unknown2 : 4;
-    uint8_t bonus : 4;
-    char wname[WNAME_SIZE];
-    uint8_t mrng;
-    uint8_t mshow;
-    uint8_t encost;
-    int8_t hitrate;
-    int8_t crt;
-    uint8_t ammod;
-    uint8_t ammom;
-    uint8_t air;
-    uint8_t grd;
-    uint8_t wtr;
-    uint8_t spc;
+    uint16_t damage;             /* 0x04 攻击力 */
+    uint8_t wclass : 1;          /* 0x06 武器等级 */
+    uint8_t attr : 7;            /* 属性 */
+    uint8_t unknown2 : 4;        /* 0x07 */
+    uint8_t bonus : 4;           /* 改造ボーナス */
+    char wname[WNAME_SIZE];      /* 0x08 武器名 */
+    uint8_t mrng;                /* 0x1D マップ射程 */
+    uint8_t mshow;               /* 0x1E マップ演出 */
+    uint8_t encost;              /* 0x1F EN 消费 */
+    int8_t hitrate;              /* 0x20 命中 */
+    int8_t crt;                  /* 0x21 CT */
+    uint8_t ammod;               /* 0x22 初期弹数 */
+    uint8_t ammom;               /* 0x23 最大弹数 */
+    uint8_t air;                 /* 0x24 空适应 */
+    uint8_t grd;                 /* 0x25 陆适应 */
+    uint8_t wtr;                 /* 0x26 海适应 */
+    uint8_t spc;                 /* 0x27 宇适应 */
 } WEAPON;
 
 typedef struct
 {
-    char rname[RNAME_SIZE];
-    uint16_t code;
-    uint8_t type : 4;
+    char rname[RNAME_SIZE];      /* 0x000 机体名 */
+    uint16_t code;               /* 0x01A 代码 */
+    uint8_t type : 4;            /* 0x01C 移动类型 */
     uint8_t unknown1 : 4;
-    uint8_t move;
-    uint16_t hp;
-    uint16_t en;
-    uint16_t mobility;
-    uint16_t armor;
-    uint16_t limit;
-    uint8_t size;
-    uint8_t slot;
-    uint16_t series : 10;
+    uint8_t move;                /* 0x01D 移动力 */
+    uint16_t hp;                 /* 0x01E HP */
+    uint16_t en;                 /* 0x020 EN */
+    uint16_t mobility;           /* 0x022 运动性 */
+    uint16_t armor;              /* 0x024 装甲 */
+    uint16_t limit;              /* 0x026 限界 */
+    uint8_t size;                /* 0x028 サイズ */
+    uint8_t slot;                /* 0x029 チップ数 */
+    uint16_t series : 10;        /* 0x02A 换乘系 */
     uint16_t unknown2 : 6;
-    uint32_t abi : 31;
+    uint32_t abi : 31;           /* 0x02C 特性 */
     uint32_t unknown3 : 1;
-    uint16_t rep;
-    uint16_t cost;
-    uint8_t tgrp;
-    uint8_t tsn;
-    uint8_t cgrp;
-    uint8_t csn;
-    uint16_t core;
-    uint8_t count;
-    uint8_t option;
-    uint8_t bgm;
-    uint8_t unknown4;
-    uint8_t unknown5;
-    uint8_t unknown6;
-    uint8_t air;
-    uint8_t grd;
-    uint8_t wtr;
-    uint8_t spc;
-    WEAPON weapons[WEAPON_COUNT];
+    uint16_t rep;                /* 0x030 修理费 */
+    uint16_t cost;               /* 0x032 资金 */
+    uint8_t tgrp;                /* 0x034 变形组番号 */
+    uint8_t tsn;                 /* 0x035 变形连续番号 */
+    uint8_t cgrp;                /* 0x036 合体组番号 */
+    uint8_t csn;                 /* 0x037 合体连续番号 */
+    uint16_t core;               /* 0x038 コアロボ */
+    uint8_t count;               /* 0x03A 合体数 */
+    uint8_t option;              /* 0x03B 换装システム */
+    uint8_t bgm;                 /* 0x03C BGM */
+    uint8_t unknown4;            /* 0x03D */
+    uint8_t unknown5;            /* 0x03E */
+    uint8_t unknown6;            /* 0x03F */
+    uint8_t air;                 /* 0x040 空适应 */
+    uint8_t grd;                 /* 0x041 陆适应 */
+    uint8_t wtr;                 /* 0x042 海适应 */
+    uint8_t spc;                 /* 0x043 宇适应 */
+    WEAPON weapons[WEAPON_COUNT]; /* 0x044 武器列表 */
 } ROBOT;
 
 #pragma pack()
@@ -322,32 +322,8 @@ static const unsigned char WNAME_DEFAULT_MASKS[WEAPON_COUNT][WNAME_SIZE] = {
 };
 
 static const unsigned char RNAME_DEFAULT_MASK[RNAME_SIZE] = {
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0x20,
-    0xA0,
-    0xA1,
-    0xA2,
-    0xA3,
-    0xA4,
-    0xA5,
-    0xA6,
-    0xA7,
-    0xA8,
-    0xA9,
-    0xAA,
-    0xAB,
-    0xAC,
-    0xAD,
+    0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20,
+    0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xAB, 0xAC, 0xAD,
 };
 
 /* ===================================================================

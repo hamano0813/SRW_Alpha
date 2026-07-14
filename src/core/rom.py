@@ -15,6 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import config
 
 from . import dc_bin, dr_bin, pilot_bin, robot_raf, sndata_bin, snmsg_bin
+from .codec.extra import SPECIAL_TEXT_EXTRA
 
 
 class Rom:
@@ -276,7 +277,7 @@ class Rom:
         """从缓存目录加载并解析 DC.BIN
 
         Args:
-            extra: 文本映射字典，传给 codec 解码
+            extra: 文本映射字典（默认 SPECIAL_TEXT_EXTRA），传给 codec 解码
 
         Returns:
             解析后的角色图鉴数据 dict
@@ -285,6 +286,8 @@ class Rom:
             FileNotFoundError: 文件不存在
             RuntimeError: 解析/解压失败
         """
+        if extra is None:
+            extra = SPECIAL_TEXT_EXTRA
         path = os.path.join(self.cache_dir, self._FILE_PATHS["dc"])
         if not os.path.isfile(path):
             raise FileNotFoundError(f"DC.BIN not found: {path}")
@@ -300,12 +303,14 @@ class Rom:
         """将角色图鉴数据构建并写回缓存目录下的 DC.BIN
 
         Args:
-            extra: 文本映射字典，传给 codec 编码
+            extra: 文本映射字典（默认 SPECIAL_TEXT_EXTRA），传给 codec 编码
 
         Raises:
             KeyError: 尚未加载角色图鉴数据
             RuntimeError: 构建/压缩失败
         """
+        if extra is None:
+            extra = SPECIAL_TEXT_EXTRA
         data = self._data.get("dc")
         if data is None:
             raise KeyError(

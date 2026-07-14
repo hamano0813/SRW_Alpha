@@ -13,7 +13,7 @@ import os
 
 import config
 
-from . import pilot_bin, robot_raf
+from . import pilot_bin, robot_raf, snmsg_bin
 
 
 class Rom:
@@ -23,16 +23,19 @@ class Rom:
     _FILE_PATHS: dict[str, str] = {
         "robots": "UNITPRAM/ROBOT.RAF",
         "pilots": "UNITPRAM/PILOT.BIN",
+        "snmsgs": "UNITPRAM/SNMSG.BIN",
     }
 
     # 文件 key → 对应的方法名（read_cache / write_cache 通过此表分发）
     _LOAD_DISPATCH: dict[str, str] = {
         "robots": "load_robots",
         "pilots": "load_pilots",
+        "snmsgs": "load_snmsgs",
     }
     _SAVE_DISPATCH: dict[str, str] = {
         "robots": "save_robots",
         "pilots": "save_pilots",
+        "snmsgs": "save_snmsgs",
     }
 
     def __init__(self):
@@ -153,6 +156,50 @@ class Rom:
         raw = robot_raf.build(data, extra=extra)
 
         path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== SNMSG.BIN 单文件读写 ==========
+
+    def load_snmsgs(self, extra: dict | None = None) -> dict:
+        """从缓存目录加载并解析 SNMSG.BIN
+
+        Args:
+            extra: 文本映射字典（如 SNMSG_TEXT_EXTRA），传给 codec 解码
+
+        Returns:
+            解析后的消息数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+        """
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"SNMSG.BIN not found: {path}")
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = snmsg_bin.parse(bytearray(raw), extra=extra)
+        self._data["snmsgs"] = data
+        return data
+
+    def save_snmsgs(self, extra: dict | None = None) -> None:
+        """将消息数据构建并写回缓存目录下的 SNMSG.BIN
+
+        Args:
+            extra: 文本映射字典（如 SNMSG_TEXT_EXTRA），传给 codec 编码
+
+        Raises:
+            KeyError: 尚未加载消息数据
+        """
+        data = self._data.get("snmsgs")
+        if data is None:
+            raise KeyError("No SNMSG data loaded. Call load_snmsgs() first.")
+
+        raw = snmsg_bin.build(data, extra=extra)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
         with open(path, "wb") as f:
             f.write(raw)
 

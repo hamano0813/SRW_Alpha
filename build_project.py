@@ -109,6 +109,16 @@ def build_pilot_bin():
     )
 
 
+def build_snmsg_bin():
+    print("=" * 60)
+    print("  Building SNMSG.BIN native extension...")
+    print("=" * 60)
+    return _build_extension(
+        src_dir=os.path.join(PROJECT_ROOT, "src", "core", "snmsg_bin"),
+        module_prefix="_snmsg_bin",
+    )
+
+
 def build_codec():
     print("=" * 60)
     print("  Building codec native extension...")
@@ -151,6 +161,14 @@ def main():
         all_ok = False
 
     print()
+    ok = build_snmsg_bin()
+    if ok:
+        print("[DONE]   SNMSG.BIN native extension")
+    else:
+        print("[FAILED] SNMSG.BIN native extension")
+        all_ok = False
+
+    print()
     ok = build_codec()
     if ok:
         print("[DONE]   codec native extension")
@@ -168,6 +186,7 @@ def main():
         print("    from core.lzss import compress, decompress")
         print("    from core.robot_raf import parse, build")
         print("    from core.pilot_bin import parse, build")
+        print("    from core.snmsg_bin import parse, build")
         print("    from core.codec import decode, encode, encode_var")
         print()
         return 0

@@ -141,6 +141,16 @@ def build_dr_bin():
     )
 
 
+def build_sndata():
+    print("=" * 60)
+    print("  Building SNDATA.BIN native extension...")
+    print("=" * 60)
+    return _build_extension(
+        src_dir=os.path.join(PROJECT_ROOT, "src", "core", "sndata_bin"),
+        module_prefix="_sndata",
+    )
+
+
 def build_codec():
     print("=" * 60)
     print("  Building codec native extension...")
@@ -204,6 +214,14 @@ def main():
         print("[INFO]   DR.BIN native extension")
     else:
         print("[ERROR] DR.BIN native extension")
+        all_ok = False
+
+    print()
+    ok = build_sndata()
+    if ok:
+        print("[INFO]   SNDATA.BIN native extension")
+    else:
+        print("[ERROR] SNDATA.BIN native extension")
         all_ok = False
 
     print()

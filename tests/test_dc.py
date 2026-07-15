@@ -17,6 +17,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 from core.dc_bin import build, parse
+from core.codec.extra import DC_TEXT_EXTRA
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
 DC_PATH = os.path.join(RES_BIN, "DC.BIN")
@@ -62,7 +63,7 @@ def main() -> int:
 
     # 1. 第一次解析
     print("  ── 第 1 次解析 ──")
-    data1 = parse(original)
+    data1 = parse(original, extra=DC_TEXT_EXTRA)
     roster = data1["roster"]
     dc_list = data1["dc"]
     count = data1["count"]
@@ -79,7 +80,7 @@ def main() -> int:
     expected_names = [
         "イルムガルト=カザハラ",
         "リン=マオ",
-        "スレッガ-=ロウ",
+        "スレッガー=ロウ",
     ]
     for i, expected in enumerate(expected_names):
         if roster[i] != expected:
@@ -108,9 +109,9 @@ def main() -> int:
 
     # 3. 重建并重新解析
     print("  ── 重建 → 第 2 次解析 ──")
-    rebuilt = build(data1)
+    rebuilt = build(data1, extra=DC_TEXT_EXTRA)
     print(f"  [INFO] 重建大小: {len(rebuilt)} bytes (原始 {fsize} bytes)")
-    data2 = parse(rebuilt)
+    data2 = parse(rebuilt, extra=DC_TEXT_EXTRA)
     assert data2["count"] == count
     print()
 

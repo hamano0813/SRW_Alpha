@@ -20,7 +20,7 @@ def parse(
             "scenarios": [
                 {
                     "block_pointers": list[int],  # 16 个区块指针值
-                    "commands": list[dict],        # 指令列表
+                    "commands": list[dict],        # 指令列表，每条含 code/count/params + explain（空字符串预留）
                 },
             ]
         }

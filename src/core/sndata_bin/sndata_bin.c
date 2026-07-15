@@ -121,6 +121,7 @@ parse_commands(const unsigned char *data, Py_ssize_t off, Py_ssize_t max_off)
         }
 
         PyDict_SetItemString(cmd_dict, "params", param_list);
+        PyDict_SetItemString(cmd_dict, "explain", PyUnicode_FromString(""));
         Py_DECREF(param_list);
 
         PyList_Append(cmd_list, cmd_dict);

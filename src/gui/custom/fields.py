@@ -5,21 +5,31 @@ ROM 数据结构映射模块
 支持机器人、武器、驾驶员、技能、消息、脚本等数据类型的映射。
 
 Classes:
-    MappingType: 数据结构映射，提供字段名转换字典
+    FieldMapping: 字段映射类，提供字段名转换字典
 """
 
 from PySide6.QtCore import QObject
 
 
-class MappingType(QObject):
-    """ROM 数据结构字段映射"""
+class FieldMapping(QObject):
+    """ROM 数据结构字段映射
+
+    构造时自动合并各 _init_* 方法返回的映射表，冲突键抛出 ValueError。
+    可在运行期重复调用 update_mapping() 刷新。
+    """
 
     def __init__(self):
+        """初始化字段映射，合并各数据类型的字段定义"""
         super().__init__()
-        self._mapping = {}
         self.update_mapping()
 
     def update_mapping(self):
+        """重建映射表，合并所有 _init_* 方法返回的字段定义
+
+        冲突键（同 key 不同 value）抛出 ValueError。
+        可在运行期重复调用以刷新翻译。
+        """
+        self._mapping = {}
         for mapping in [
             # ROBOT_RAF
             self._init_robot(),
@@ -28,9 +38,9 @@ class MappingType(QObject):
             self._init_pilot(),
             self._init_skill(),
             # DC_BIN
-            self._init_character(),
+            self._init_dc(),
             # DR_BIN
-            self._init_robot(),
+            self._init_dr(),
             # SNMSG_BIN
             self._init_snmsg(),
             # SNDATA_BIN
@@ -50,7 +60,10 @@ class MappingType(QObject):
                 elif self._mapping[key] != value:
                     raise ValueError(f"Duplicate key with different values: {key}")
 
+    # ========== 各类数据字段定义 ==========
+
     def _init_robot(self):
+        """ROBOT.RAF 机体数据结构字段"""
         mapping = {
             self.tr("robot name"): "rname",
             self.tr("code"): "code",
@@ -84,6 +97,7 @@ class MappingType(QObject):
         return mapping
 
     def _init_weapon(self):
+        """ROBOT.RAF 武器数据结构字段"""
         mapping = {
             self.tr("code"): "code",
             self.tr("required newtype level"): "newtype",
@@ -114,6 +128,7 @@ class MappingType(QObject):
         return mapping
 
     def _init_pilot(self):
+        """PILOT.BIN 驾驶员数据结构字段"""
         mapping = {
             self.tr("code"): "code",
             self.tr("series"): "series",
@@ -140,7 +155,8 @@ class MappingType(QObject):
         }
         return mapping
 
-    def _init_character(self):
+    def _init_dc(self):
+        """DC.BIN 人物图鉴数据结构字段"""
         mapping = {
             self.tr("full name"): "fname",
             self.tr("pet name"): "pname",
@@ -151,7 +167,8 @@ class MappingType(QObject):
         }
         return mapping
 
-    def _init_robot(self):
+    def _init_dr(self):
+        """DR.BIN 机体图鉴数据结构字段"""
         mapping = {
             self.tr("name"): "name",
             self.tr("height"): "height",
@@ -163,6 +180,7 @@ class MappingType(QObject):
         return mapping
 
     def _init_skill(self):
+        """PILOT.BIN 特殊技能数据结构字段"""
         mapping = {
             self.tr("skill name"): "sname",
             self.tr("skill level1"): "l1",
@@ -178,6 +196,7 @@ class MappingType(QObject):
         return mapping
 
     def _init_sndata(self):
+        """SNDATA.BIN 场景索引数据结构字段"""
         mapping = {
             self.tr("scenario pointer"): "sptr",
             self.tr("scenario data"): "sndata",
@@ -185,6 +204,7 @@ class MappingType(QObject):
         return mapping
 
     def _init_scenario(self):
+        """SNDATA.BIN 关卡指令块数据结构字段"""
         mapping = {
             self.tr("block count"): "bcount",
             self.tr("block length"): "blen",
@@ -194,20 +214,24 @@ class MappingType(QObject):
         return mapping
 
     def _init_command(self):
+        """SNDATA.BIN 单条指令数据结构字段"""
         mapping = {
             self.tr("command code"): "ccode",
             self.tr("command count"): "ccount",
             self.tr("command params"): "cparams",
+            self.tr("command explain"): "explain",
         }
         return mapping
 
     def _init_snmsg(self):
+        """SNMSG.BIN 消息数据结构字段"""
         mapping = {
             self.tr("message"): "msg",
         }
         return mapping
 
     def _init_script(self):
+        """SCRIPT.BIN 脚本文本数据结构字段"""
         mapping = {
             self.tr("script command"): "scmd",
             self.tr("script params1"): "sparams1",
@@ -217,6 +241,7 @@ class MappingType(QObject):
         return mapping
 
     def _init_aiunp(self):
+        """AIUNP.BIN AI 数据结构字段"""
         mapping = {
             self.tr("ai pointers"): "aiptrs",
             self.tr("ai data"): "aidata",
@@ -235,6 +260,7 @@ class MappingType(QObject):
         return mapping
 
     def _init_unknown(self):
+        """未知数据结构字段（占位）"""
         mapping = {
             self.tr("unknown01"): "unk01",
             self.tr("unknown02"): "unk02",
@@ -288,3 +314,46 @@ class MappingType(QObject):
             self.tr("unknown50"): "unk50",
         }
         return mapping
+
+    # ========== 公开查询接口 ==========
+
+    def get_field(self, display_name: str) -> str:
+        """根据翻译后表头获取数据 key
+
+        Args:
+            display_name: 字段显示名（已通过 tr() 翻译）
+
+        Returns:
+            对应的数据 key
+
+        Raises:
+            KeyError: 未定义的字段名
+        """
+        if display_name in self._mapping:
+            return self._mapping[display_name]
+        raise KeyError(f"未定义名称[{display_name}]")
+
+    def get_display(self, field_name: str) -> str:
+        """根据数据 key 反向获取翻译后表头
+
+        Args:
+            field_name: 数据 key（如 "rname"）
+
+        Returns:
+            翻译后的表头文字
+
+        Raises:
+            KeyError: 未找到对应的显示名
+        """
+        reversed_mapping = {value: key for key, value in self._mapping.items()}
+        if field_name in reversed_mapping:
+            return reversed_mapping[field_name]
+        raise KeyError(f"未找到字段[{field_name}]")
+
+    def translateUI(self) -> None:
+        """刷新映射表（语言切换后调用）
+
+        语言变化时 self.tr() 的返回值改变，
+        调用此方法重建 _mapping 以匹配新语言。
+        """
+        self.update_mapping()

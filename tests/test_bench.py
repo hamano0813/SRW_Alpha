@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 
 from core import dc_bin, dr_bin, pilot_bin, robot_raf, sndata_bin, snmsg_bin
-from core.codec.extra import HALF_TEXT_EXTRA, SNMSG_TEXT_EXTRA, SPECIAL_TEXT_EXTRA
+from core.codec.extra import DC_TEXT_EXTRA, DR_TEXT_EXTRA, PILOT_EXTRA, ROBOT_EXTRA, SNMSG_TEXT_EXTRA
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
 
@@ -53,7 +53,7 @@ def _fmt_size(size: int) -> str:
     return f"{size / 1024 / 1024:.2f} MB"
 
 
-def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 3):
+def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 5):
     """对单个模块执行 parse + build 基准测试
 
     Args:
@@ -62,6 +62,9 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 3):
         mod:   模块对象（含 parse/build）
         extra: 可选的 extra 映射字典
         iterations: 每项测试运行次数，取平均值
+
+    Returns:
+        (parse_avg, build_avg, total_avg) 秒数三元组
     """
     print(f"  [{name}]")
     data = _load(path)
@@ -79,7 +82,8 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 3):
         t1 = time.perf_counter()
         parse_times.append(t1 - t0)
     parse_avg = sum(parse_times) / iterations
-    print(f"    parse:         {_fmt_time(sum(parse_times), 1)}  " f"(avg {_fmt_time(parse_avg)} ×{iterations})")
+    print(f"    parse:         {_fmt_time(sum(parse_times), 1)}  "
+          f"(avg {_fmt_time(parse_avg)} ×{iterations})")
 
     # ---- build 基准 ----
     build_times = []
@@ -90,7 +94,8 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 3):
         t1 = time.perf_counter()
         build_times.append(t1 - t0)
     build_avg = sum(build_times) / iterations
-    print(f"    build:         {_fmt_time(sum(build_times), 1)}  " f"(avg {_fmt_time(build_avg)} ×{iterations})")
+    print(f"    build:         {_fmt_time(sum(build_times), 1)}  "
+          f"(avg {_fmt_time(build_avg)} ×{iterations})")
 
     # ---- 总往返 ----
     total_avg = parse_avg + build_avg
@@ -109,6 +114,7 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 3):
         print(f"    条目数: {len(parsed['robots'])}")
 
     print()
+    return parse_avg, build_avg, total_avg
 
 
 def main() -> int:
@@ -121,20 +127,32 @@ def main() -> int:
 
     all_ok = True
     files = [
-        ("ROBOT.RAF", ROBOT_PATH, robot_raf, {**HALF_TEXT_EXTRA, **SPECIAL_TEXT_EXTRA}),
-        ("PILOT.BIN", PILOT_PATH, pilot_bin, {**HALF_TEXT_EXTRA, **SPECIAL_TEXT_EXTRA}),
+        ("ROBOT.RAF", ROBOT_PATH, robot_raf, ROBOT_EXTRA),
+        ("PILOT.BIN", PILOT_PATH, pilot_bin, PILOT_EXTRA),
         ("SNMSG.BIN", SNMSG_PATH, snmsg_bin, SNMSG_TEXT_EXTRA),
         ("SNDATA.BIN", SNDATA_PATH, sndata_bin, None),
-        ("DC.BIN", DC_PATH, dc_bin, None),
-        ("DR.BIN", DR_PATH, dr_bin, SPECIAL_TEXT_EXTRA),
+        ("DC.BIN", DC_PATH, dc_bin, DC_TEXT_EXTRA),
+        ("DR.BIN", DR_PATH, dr_bin, DR_TEXT_EXTRA),
     ]
 
+    results = []
     for name, path, mod, extra in files:
         if not os.path.isfile(path):
             print(f"  [WARN] {path} 不存在，跳过")
             print()
             continue
-        _run_bench(name, path, mod, extra)
+        p, b, t = _run_bench(name, path, mod, extra)
+        results.append((name, p, b, t))
+
+    # ========== 横向对比表 ==========
+    print("  -- Performance Comparison --")
+    print()
+    header = f"  {'Module':<14} {'parse':>10} {'build':>10} {'total':>10}"
+    print(header)
+    print(f"  {'-'*14} {'-'*10} {'-'*10} {'-'*10}")
+    for name, p, b, t in results:
+        print(f"  {name:<14} {_fmt_time(p):>10} {_fmt_time(b):>10} {_fmt_time(t):>10}")
+    print()
 
     print("  ═══════════════════════════════════════════")
     print(f"   [INFO] {'ALL TESTS PASSED' if all_ok else 'TESTS FAILED'}")

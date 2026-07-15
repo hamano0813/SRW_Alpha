@@ -83,12 +83,11 @@ def main() -> int:
     print(f"  [INFO] 块1(ヒュッケバインMK-II) 字段验证通过")
     print()
 
-    # 3. 重建（无 extra，保证编码对称性）
+    # 3. 重建并重新解析（带 DR_TEXT_EXTRA，验证编码对称性）
     print("  ── 重建 → 第 2 次解析 ──")
-    data_raw = parse(original)
-    rebuilt = build(data_raw)
+    rebuilt = build(data1, extra=DR_TEXT_EXTRA)
     print(f"  [INFO] 重建大小: {len(rebuilt)} bytes (原始 {fsize} bytes)")
-    data2 = parse(rebuilt)
+    data2 = parse(rebuilt, extra=DR_TEXT_EXTRA)
     assert data2["count"] == count
     print()
 
@@ -97,11 +96,11 @@ def main() -> int:
     all_ok = True
     for i in range(count):
         for key in ("name", "height", "weight", "appr", "flags", "desc"):
-            if data_raw["dr"][i][key] != data2["dr"][i][key]:
+            if data1["dr"][i][key] != data2["dr"][i][key]:
                 print(f"  [ERROR] dr[{i}].{key} 不一致")
                 all_ok = False
     for i in range(len(roster1)):
-        if data_raw["roster"][i] != data2["roster"][i]:
+        if data1["roster"][i] != data2["roster"][i]:
             print(f"  [ERROR] 名册[{i}] 不一致")
             all_ok = False
     if all_ok:

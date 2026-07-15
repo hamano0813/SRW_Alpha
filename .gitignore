@@ -1,6 +1,7 @@
 __pycache__/
 .vscode/
 .VSCodeCounter/
+_test_cache/
 config.json
 cache/
 cache.xml

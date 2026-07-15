@@ -15,7 +15,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 
-from core.codec.extra import HALF_TEXT_EXTRA, SPECIAL_TEXT_EXTRA
+from core.codec.extra import ROBOT_EXTRA
 from core.robot_raf import build, parse
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
@@ -90,9 +90,9 @@ def main():
     with open(ROBOT_RAF_PATH, "rb") as f:
         original = f.read()
 
-    # 1. 第一次解析（带 extra 映射）
-    print("  ── 第 1 次解析（extra 映射）──")
-    data1 = parse(bytearray(original), extra={**HALF_TEXT_EXTRA, **SPECIAL_TEXT_EXTRA})
+    # 1. 第一次解析（带 ROBOT_EXTRA 映射）
+    print("  ── 第 1 次解析（ROBOT_EXTRA 映射）──")
+    data1 = parse(bytearray(original), extra=ROBOT_EXTRA)
     count = data1["count"]
     robots1 = data1["robots"]
     print(f"  [INFO] 机体数: {count}")
@@ -106,11 +106,11 @@ def main():
         print_robot(robots1[i], i)
     print()
 
-    # 3. 重建并重新解析（带 extra 映射）
-    print("  ── 重建 → 第 2 次解析（extra 映射）──")
-    rebuilt = build(data1, extra={**HALF_TEXT_EXTRA, **SPECIAL_TEXT_EXTRA})
+    # 3. 重建并重新解析（带 ROBOT_EXTRA 映射）
+    print("  ── 重建 → 第 2 次解析（ROBOT_EXTRA 映射）──")
+    rebuilt = build(data1, extra=ROBOT_EXTRA)
     print(f"  [INFO] 重建大小: {len(rebuilt)} bytes (原始 {fsize} bytes)")
-    data2 = parse(rebuilt, extra={**HALF_TEXT_EXTRA, **SPECIAL_TEXT_EXTRA})
+    data2 = parse(rebuilt, extra=ROBOT_EXTRA)
     robots2 = data2["robots"]
     assert data2["count"] == count
     print("  [INFO]")

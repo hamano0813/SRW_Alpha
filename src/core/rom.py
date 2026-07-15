@@ -15,7 +15,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import config
 
 from . import dc_bin, dr_bin, pilot_bin, robot_raf, sndata_bin, snmsg_bin
-from .codec.extra import DC_TEXT_EXTRA, DR_TEXT_EXTRA, PILOT_EXTRA, ROBOT_EXTRA, SNMSG_TEXT_EXTRA
+from .codec.extra import (
+    DC_TEXT_EXTRA,
+    DR_TEXT_EXTRA,
+    PILOT_EXTRA,
+    ROBOT_EXTRA,
+    SNMSG_TEXT_EXTRA,
+)
 
 
 class Rom:
@@ -115,10 +121,7 @@ class Rom:
         errors: dict[str, Exception] = {}
 
         with ThreadPoolExecutor(max_workers=len(self._LOAD_DISPATCH)) as pool:
-            future_to_key = {
-                pool.submit(getattr(self, method)): key
-                for key, method in self._LOAD_DISPATCH.items()
-            }
+            future_to_key = {pool.submit(getattr(self, method)): key for key, method in self._LOAD_DISPATCH.items()}
             for future in as_completed(future_to_key):
                 key = future_to_key[future]
                 try:
@@ -143,143 +146,7 @@ class Rom:
                 continue
             getattr(self, method_name)()
 
-    # ========== ROBOT.RAF 单文件读写 ==========
-
-    def load_robots(self, extra: dict | None = None) -> dict:
-        """从缓存目录加载并解析 ROBOT.RAF
-
-        Args:
-            extra: 文本映射字典（默认 ROBOT_EXTRA），传给 codec 解码
-
-        Returns:
-            解析后的机体数据 dict
-
-        Raises:
-            FileNotFoundError: 文件不存在
-            RuntimeError: 解析/解压失败
-        """
-        if extra is None:
-            extra = ROBOT_EXTRA
-        path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
-        if not os.path.isfile(path):
-            raise FileNotFoundError(f"ROBOT.RAF not found: {path}")
-
-        with open(path, "rb") as f:
-            raw = f.read()
-
-        data = robot_raf.parse(raw, extra=extra)
-        self._data["robots"] = data
-        return data
-
-    def save_robots(self, extra: dict | None = None) -> None:
-        """将机体数据构建并写回缓存目录下的 ROBOT.RAF
-
-        Args:
-            extra: 文本映射字典（默认 ROBOT_EXTRA），传给 codec 编码
-
-        Raises:
-            KeyError: 尚未加载机体数据
-            RuntimeError: 构建/压缩失败
-        """
-        if extra is None:
-            extra = ROBOT_EXTRA
-        data = self._data.get("robots")
-        if data is None:
-            raise KeyError("No robot data loaded. Call load_robots() first.")
-
-        raw = robot_raf.build(data, extra=extra)
-
-        path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
-        with open(path, "wb") as f:
-            f.write(raw)
-
-    # ========== SNDATA.BIN 单文件读写 ==========
-
-    def load_sndata(self) -> dict:
-        """从缓存目录加载并解析 SNDATA.BIN
-
-        Returns:
-            解析后的场景数据 dict
-
-        Raises:
-            FileNotFoundError: 文件不存在
-        """
-        path = os.path.join(self.cache_dir, self._FILE_PATHS["sndata"])
-        if not os.path.isfile(path):
-            raise FileNotFoundError(f"SNDATA.BIN not found: {path}")
-
-        with open(path, "rb") as f:
-            raw = f.read()
-
-        data = sndata_bin.parse(raw)
-        self._data["sndata"] = data
-        return data
-
-    def save_sndata(self) -> None:
-        """将场景数据构建并写回缓存目录下的 SNDATA.BIN
-
-        Raises:
-            KeyError: 尚未加载场景数据
-        """
-        data = self._data.get("sndata")
-        if data is None:
-            raise KeyError("No SNDATA data loaded. Call load_sndata() first.")
-
-        raw = sndata_bin.build(data)
-
-        path = os.path.join(self.cache_dir, self._FILE_PATHS["sndata"])
-        with open(path, "wb") as f:
-            f.write(raw)
-
-    # ========== SNMSG.BIN 单文件读写 ==========
-
-    def load_snmsgs(self, extra: dict | None = None) -> dict:
-        """从缓存目录加载并解析 SNMSG.BIN
-
-        Args:
-            extra: 文本映射字典（默认 SNMSG_TEXT_EXTRA），传给 codec 解码
-
-        Returns:
-            解析后的消息数据 dict
-
-        Raises:
-            FileNotFoundError: 文件不存在
-        """
-        if extra is None:
-            extra = SNMSG_TEXT_EXTRA
-        path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
-        if not os.path.isfile(path):
-            raise FileNotFoundError(f"SNMSG.BIN not found: {path}")
-
-        with open(path, "rb") as f:
-            raw = f.read()
-
-        data = snmsg_bin.parse(bytearray(raw), extra=extra)
-        self._data["snmsgs"] = data
-        return data
-
-    def save_snmsgs(self, extra: dict | None = None) -> None:
-        """将消息数据构建并写回缓存目录下的 SNMSG.BIN
-
-        Args:
-            extra: 文本映射字典（默认 SNMSG_TEXT_EXTRA），传给 codec 编码
-
-        Raises:
-            KeyError: 尚未加载消息数据
-        """
-        if extra is None:
-            extra = SNMSG_TEXT_EXTRA
-        data = self._data.get("snmsgs")
-        if data is None:
-            raise KeyError("No SNMSG data loaded. Call load_snmsgs() first.")
-
-        raw = snmsg_bin.build(data, extra=extra)
-
-        path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
-        with open(path, "wb") as f:
-            f.write(raw)
-
-    # ========== DC.BIN 单文件读写 ==========
+    # ========== 单文件读写：DC.BIN ==========
 
     def load_dc(self, extra: dict | None = None) -> dict:
         """从缓存目录加载并解析 DC.BIN
@@ -321,9 +188,7 @@ class Rom:
             extra = DC_TEXT_EXTRA
         data = self._data.get("dc")
         if data is None:
-            raise KeyError(
-                "No DC data loaded. Call load_dc() first."
-            )
+            raise KeyError("No DC data loaded. Call load_dc() first.")
 
         raw = dc_bin.build(data, extra=extra)
 
@@ -331,7 +196,7 @@ class Rom:
         with open(path, "wb") as f:
             f.write(raw)
 
-    # ========== DR.BIN 单文件读写 ==========
+    # ========== 单文件读写：DR.BIN ==========
 
     def load_dr(self, extra: dict | None = None) -> dict:
         """从缓存目录加载并解析 DR.BIN
@@ -381,7 +246,7 @@ class Rom:
         with open(path, "wb") as f:
             f.write(raw)
 
-    # ========== PILOT.BIN 单文件读写 ==========
+    # ========== 单文件读写：PILOT.BIN ==========
 
     def load_pilots(self, extra: dict | None = None) -> dict:
         """从缓存目录加载并解析 PILOT.BIN
@@ -408,6 +273,164 @@ class Rom:
         data = pilot_bin.parse(raw, extra=extra)
         self._data["pilots"] = data
         return data
+
+    def save_pilots(self, extra: dict | None = None) -> None:
+        """将驾驶员数据构建并写回缓存目录下的 PILOT.BIN
+
+        Args:
+            extra: 文本映射字典（默认 PILOT_EXTRA），传给 codec 编码
+
+        Raises:
+            KeyError: 尚未加载驾驶员数据
+            RuntimeError: 构建/压缩失败
+        """
+        if extra is None:
+            extra = PILOT_EXTRA
+        data = self._data.get("pilots")
+        if data is None:
+            raise KeyError("No pilot data loaded. Call load_pilots() first.")
+
+        raw = pilot_bin.build(data, extra=extra)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["pilots"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== 单文件读写：ROBOT.RAF ==========
+
+    def load_robots(self, extra: dict | None = None) -> dict:
+        """从缓存目录加载并解析 ROBOT.RAF
+
+        Args:
+            extra: 文本映射字典（默认 ROBOT_EXTRA），传给 codec 解码
+
+        Returns:
+            解析后的机体数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+            RuntimeError: 解析/解压失败
+        """
+        if extra is None:
+            extra = ROBOT_EXTRA
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"ROBOT.RAF not found: {path}")
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = robot_raf.parse(raw, extra=extra)
+        self._data["robots"] = data
+        return data
+
+    def save_robots(self, extra: dict | None = None) -> None:
+        """将机体数据构建并写回缓存目录下的 ROBOT.RAF
+
+        Args:
+            extra: 文本映射字典（默认 ROBOT_EXTRA），传给 codec 编码
+
+        Raises:
+            KeyError: 尚未加载机体数据
+            RuntimeError: 构建/压缩失败
+        """
+        if extra is None:
+            extra = ROBOT_EXTRA
+        data = self._data.get("robots")
+        if data is None:
+            raise KeyError("No robot data loaded. Call load_robots() first.")
+
+        raw = robot_raf.build(data, extra=extra)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["robots"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== 单文件读写：SNDATA.BIN ==========
+
+    def load_sndata(self) -> dict:
+        """从缓存目录加载并解析 SNDATA.BIN
+
+        Returns:
+            解析后的场景数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+        """
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["sndata"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"SNDATA.BIN not found: {path}")
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = sndata_bin.parse(raw)
+        self._data["sndata"] = data
+        return data
+
+    def save_sndata(self) -> None:
+        """将场景数据构建并写回缓存目录下的 SNDATA.BIN
+
+        Raises:
+            KeyError: 尚未加载场景数据
+        """
+        data = self._data.get("sndata")
+        if data is None:
+            raise KeyError("No SNDATA data loaded. Call load_sndata() first.")
+
+        raw = sndata_bin.build(data)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["sndata"])
+        with open(path, "wb") as f:
+            f.write(raw)
+
+    # ========== 单文件读写：SNMSG.BIN ==========
+
+    def load_snmsgs(self, extra: dict | None = None) -> dict:
+        """从缓存目录加载并解析 SNMSG.BIN
+
+        Args:
+            extra: 文本映射字典（默认 SNMSG_TEXT_EXTRA），传给 codec 解码
+
+        Returns:
+            解析后的消息数据 dict
+
+        Raises:
+            FileNotFoundError: 文件不存在
+        """
+        if extra is None:
+            extra = SNMSG_TEXT_EXTRA
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"SNMSG.BIN not found: {path}")
+
+        with open(path, "rb") as f:
+            raw = f.read()
+
+        data = snmsg_bin.parse(bytearray(raw), extra=extra)
+        self._data["snmsgs"] = data
+        return data
+
+    def save_snmsgs(self, extra: dict | None = None) -> None:
+        """将消息数据构建并写回缓存目录下的 SNMSG.BIN
+
+        Args:
+            extra: 文本映射字典（默认 SNMSG_TEXT_EXTRA），传给 codec 编码
+
+        Raises:
+            KeyError: 尚未加载消息数据
+        """
+        if extra is None:
+            extra = SNMSG_TEXT_EXTRA
+        data = self._data.get("snmsgs")
+        if data is None:
+            raise KeyError("No SNMSG data loaded. Call load_snmsgs() first.")
+
+        raw = snmsg_bin.build(data, extra=extra)
+
+        path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
+        with open(path, "wb") as f:
+            f.write(raw)
 
     # ========== 测试用数据导出 ==========
 
@@ -437,25 +460,3 @@ class Rom:
                 f.write("\n")
 
             print(f"  [INFO] {fname} 已导出")
-
-    def save_pilots(self, extra: dict | None = None) -> None:
-        """将驾驶员数据构建并写回缓存目录下的 PILOT.BIN
-
-        Args:
-            extra: 文本映射字典（默认 PILOT_EXTRA），传给 codec 编码
-
-        Raises:
-            KeyError: 尚未加载驾驶员数据
-            RuntimeError: 构建/压缩失败
-        """
-        if extra is None:
-            extra = PILOT_EXTRA
-        data = self._data.get("pilots")
-        if data is None:
-            raise KeyError("No pilot data loaded. Call load_pilots() first.")
-
-        raw = pilot_bin.build(data, extra=extra)
-
-        path = os.path.join(self.cache_dir, self._FILE_PATHS["pilots"])
-        with open(path, "wb") as f:
-            f.write(raw)

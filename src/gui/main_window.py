@@ -25,8 +25,9 @@ from qfluentwidgets import (
 )
 
 import config
-from gui import HomeFrame, OptionFrame
-
+from gui import HomeFrame, OptionFrame, RobotFrame
+from gui.custom.fields import FieldMapping
+from core.rom import Rom
 from .custom import CustomIcon
 
 
@@ -42,8 +43,13 @@ class MainWindow(FluentWindow):
             QIcon(QPixmap(f":/splash/splash{splash_idx}.png").scaled(*self._SIZE, mode=Qt.TransformationMode.SmoothTransformation)), self
         )
         self.splash.setIconSize(QSize(*self._SIZE))
+        self._rom =Rom()
+        self._field = FieldMapping()
 
         self.init_ui()
+
+        self.home_frame.parseClicked.connect(self.load_data)
+        self.home_frame.serializeClicked.connect(self.save_data)
 
         self.splash.finish()
         self.setResizeEnabled(True)
@@ -64,6 +70,9 @@ class MainWindow(FluentWindow):
 
         self.home_frame = HomeFrame(self)
         self.addSubInterface(self.home_frame, CustomIcon.HOME, self.tr("Home"))
+
+        self.robot_frame = RobotFrame(self._field, self)
+        self.addSubInterface(self.robot_frame, CustomIcon.HELP, self.tr("Robot"))
 
         self.option_frame = OptionFrame(self)
         self.addSubInterface(self.option_frame, CustomIcon.OPTION, self.tr("Options"), position=NavigationItemPosition.BOTTOM)
@@ -100,7 +109,9 @@ class MainWindow(FluentWindow):
                 style.polish(widget)
 
         self.home_frame.resetUI()
+        self.robot_frame.resetUI()
         self.option_frame.resetUI()
+        
 
         for panel_item in self.navigationInterface.panel.items.values():
             panel_item.widget.itemWidget.setFont(getFont())  # type: ignore
@@ -116,12 +127,24 @@ class MainWindow(FluentWindow):
         else:
             QApplication.instance().removeTranslator(QTranslator())  # type: ignore
 
+        self._field.translateUI()
+
         self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.1.0")
         self.translate_frame("EditorFrame", "Home")
+        self.translate_frame("RobotFrame", "Robot")
         self.translate_frame("OptionFrame", "Options")
         self.home_frame.translateUI()
+        self.robot_frame.translateUI()
         self.option_frame.translateUI()
+
 
     def translate_frame(self, frame: str, title: str):
         """更新导航栏中指定框架的显示标题"""
         self.navigationInterface.panel.items[frame].widget.itemWidget.setText(self.tr(title))  # type: ignore
+
+    def load_data(self):
+        self._rom.read_cache()
+        self.robot_frame.set_rom_data(self._rom.data)
+
+    def save_data(self):
+        pass

@@ -11,6 +11,7 @@ Classes:
 import os
 import shutil
 
+from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QFrame, QHBoxLayout, QVBoxLayout
 from qfluentwidgets import (
     MessageBox,
@@ -31,6 +32,8 @@ MKPSXISO = os.path.join(config.current_path, "tools", "mkpsxiso.exe")
 
 class HomeFrame(QFrame):
     """概览框架 - ROM 编辑器首页"""
+    parseClicked = Signal()
+    serializeClicked = Signal()
 
     def __init__(self, parent=None):
         """初始化首页布局：按钮栏、XML 项目树和滚动区域"""
@@ -79,7 +82,7 @@ class HomeFrame(QFrame):
 
         self.load_button.clicked.connect(self._on_load_rom)
         self.save_button.clicked.connect(self._on_save_rom)
-        self.parse_button.clicked.connect(self._on_parse_cache)
+        self.parse_button.clicked.connect(self._on_parse)
         self.serialize_button.clicked.connect(self._on_serialize)
 
         btn_layout = QHBoxLayout()
@@ -155,7 +158,7 @@ class HomeFrame(QFrame):
         )
         return cache_path, xml_path
 
-    # ========== Load ROM ==========
+    # ========== 加载 ROM ==========
 
     def _on_load_rom(self):
         """加载 ROM —— 调用 dumpsxiso 解包到缓存目录"""
@@ -200,9 +203,9 @@ class HomeFrame(QFrame):
         dialog.set_button_text(self._close_text)
         dialog.start(DUMPSXISO, ["-x", cache_path, "-s", xml_path, rom_path])
         if dialog.exec():
-            self._on_parse_cache()
+            self._on_parse()
 
-    def _on_parse_cache(self):
+    def _on_parse(self):
         """解析缓存：加载 XML 目录树 + 解析所有二进制数据"""
         cache_path, xml_path = self._cache_paths()
         if not os.path.isdir(cache_path):
@@ -217,22 +220,7 @@ class HomeFrame(QFrame):
             return
 
         self.tree.load_xml(xml_path)
-
-        # 解析二进制数据并导出调试文本
-        try:
-            from core.rom import Rom
-
-            rom = Rom()
-            rom.read_cache()
-        except Exception as e:
-            w = MessageBox(
-                self._msg_file_not_found,
-                f"部分文件加载失败: {e}",
-                self.window(),
-            )
-            w.yesButton.setText(self._msg_ok)
-            w.cancelButton.hide()
-            w.exec()
+        self.parseClicked.emit()
 
     def _on_serialize(self):
         """序列化修改的数据到缓存文件"""
@@ -244,10 +232,9 @@ class HomeFrame(QFrame):
         w.yesButton.setText(self._msg_ok)
         w.cancelButton.setText(self._msg_cancel)
         if w.exec():
-            # TODO: 序列化逻辑
-            pass
+            self.serializeClicked.emit()
 
-    # ========== Save ROM ==========
+    # ========== 保存 ROM ==========
 
     def _on_save_rom(self):
         """保存 ROM —— 调用 mkpsxiso 从缓存目录重建镜像"""
@@ -295,7 +282,7 @@ class HomeFrame(QFrame):
             if config.option.auto_clean.value and os.path.isdir(cache_path):
                 shutil.rmtree(cache_path, ignore_errors=True)
 
-    # ========== i18n / Reset ==========
+    # ========== 国际化 / 重置 ==========
 
     def translateUI(self):
         """更新界面文本翻译"""

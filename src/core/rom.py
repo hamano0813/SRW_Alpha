@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import config
 
 from . import dc_bin, dr_bin, pilot_bin, robot_raf, sndata_bin, snmsg_bin
-from .codec.extra import DC_TEXT_EXTRA, DR_TEXT_EXTRA, PILOT_EXTRA, ROBOT_EXTRA
+from .codec.extra import DC_TEXT_EXTRA, DR_TEXT_EXTRA, PILOT_EXTRA, ROBOT_EXTRA, SNMSG_TEXT_EXTRA
 
 
 class Rom:
@@ -237,7 +237,7 @@ class Rom:
         """从缓存目录加载并解析 SNMSG.BIN
 
         Args:
-            extra: 文本映射字典（如 SNMSG_TEXT_EXTRA），传给 codec 解码
+            extra: 文本映射字典（默认 SNMSG_TEXT_EXTRA），传给 codec 解码
 
         Returns:
             解析后的消息数据 dict
@@ -245,6 +245,8 @@ class Rom:
         Raises:
             FileNotFoundError: 文件不存在
         """
+        if extra is None:
+            extra = SNMSG_TEXT_EXTRA
         path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
         if not os.path.isfile(path):
             raise FileNotFoundError(f"SNMSG.BIN not found: {path}")
@@ -260,11 +262,13 @@ class Rom:
         """将消息数据构建并写回缓存目录下的 SNMSG.BIN
 
         Args:
-            extra: 文本映射字典（如 SNMSG_TEXT_EXTRA），传给 codec 编码
+            extra: 文本映射字典（默认 SNMSG_TEXT_EXTRA），传给 codec 编码
 
         Raises:
             KeyError: 尚未加载消息数据
         """
+        if extra is None:
+            extra = SNMSG_TEXT_EXTRA
         data = self._data.get("snmsgs")
         if data is None:
             raise KeyError("No SNMSG data loaded. Call load_snmsgs() first.")

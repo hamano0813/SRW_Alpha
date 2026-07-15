@@ -16,7 +16,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from core.codec.extra import SPECIAL_TEXT_EXTRA
+from core.codec.extra import DR_TEXT_EXTRA
 from core.dr_bin import build, parse
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
@@ -27,7 +27,7 @@ def main() -> int:
     """执行往返测试"""
     print()
     print("  ╔═══════════════════════════════════════════╗")
-    print("  ║      DR.BIN 往返一致性测试                  ║")
+    print("  ║      DR.BIN 往返一致性测试                ║")
     print("  ╚═══════════════════════════════════════════╝")
     print()
 
@@ -47,7 +47,7 @@ def main() -> int:
 
     # 1. 第一次解析（带 SPECIAL_TEXT_EXTRA 验证字段）
     print("  ── 第 1 次解析 ──")
-    data1 = parse(original, extra=SPECIAL_TEXT_EXTRA)
+    data1 = parse(original, extra=DR_TEXT_EXTRA)
     roster1 = data1["roster"]
     dr_list1 = data1["dr"]
     count = data1["count"]
@@ -64,7 +64,7 @@ def main() -> int:
     expected_names = [
         "ヒュッケバインMK-II",
         "ヒュッケバインMK-III",
-        "ヒュッケバインボクサ-",
+        "ヒュッケバインボクサー",
     ]
     for i, expected in enumerate(expected_names):
         if roster1[i] != expected:

@@ -16,8 +16,8 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from core.dc_bin import build, parse
 from core.codec.extra import DC_TEXT_EXTRA
+from core.dc_bin import build, parse
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
 DC_PATH = os.path.join(RES_BIN, "DC.BIN")
@@ -43,7 +43,7 @@ def main() -> int:
     """执行往返测试"""
     print()
     print("  ╔═══════════════════════════════════════════╗")
-    print("  ║      DC.BIN 往返一致性测试                  ║")
+    print("  ║      DC.BIN 往返一致性测试                ║")
     print("  ╚═══════════════════════════════════════════╝")
     print()
 

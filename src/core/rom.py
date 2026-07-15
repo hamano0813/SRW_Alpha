@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import config
 
 from . import dc_bin, dr_bin, pilot_bin, robot_raf, sndata_bin, snmsg_bin
-from .codec.extra import DC_TEXT_EXTRA
+from .codec.extra import DC_TEXT_EXTRA, DR_TEXT_EXTRA
 
 
 class Rom:
@@ -325,11 +325,11 @@ class Rom:
 
     # ========== DR.BIN 单文件读写 ==========
 
-    def load_dr(self, extra=None):
+    def load_dr(self, extra: dict | None = None) -> dict:
         """从缓存目录加载并解析 DR.BIN
 
         Args:
-            extra: 文本映射字典，传给 codec 解码
+            extra: 文本映射字典（默认 DR_TEXT_EXTRA），传给 codec 解码
 
         Returns:
             解析后的机体图鉴数据 dict
@@ -338,6 +338,8 @@ class Rom:
             FileNotFoundError: 文件不存在
             RuntimeError: 解析/解压失败
         """
+        if extra is None:
+            extra = DR_TEXT_EXTRA
         path = os.path.join(self.cache_dir, self._FILE_PATHS["dr"])
         if not os.path.isfile(path):
             raise FileNotFoundError("DR.BIN not found: " + path)
@@ -349,16 +351,18 @@ class Rom:
         self._data["dr"] = data
         return data
 
-    def save_dr(self, extra=None):
+    def save_dr(self, extra: dict | None = None) -> None:
         """将机体图鉴数据构建并写回缓存目录下的 DR.BIN
 
         Args:
-            extra: 文本映射字典，传给 codec 编码
+            extra: 文本映射字典（默认 DR_TEXT_EXTRA），传给 codec 编码
 
         Raises:
             KeyError: 尚未加载机体图鉴数据
             RuntimeError: 构建/压缩失败
         """
+        if extra is None:
+            extra = DR_TEXT_EXTRA
         data = self._data.get("dr")
         if data is None:
             raise KeyError("No DR data loaded. Call load_dr() first.")

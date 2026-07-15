@@ -399,6 +399,26 @@ static PyObject *_parse_robot(
 }
 
 /* ===================================================================
+ * 名册专用 extra：在原有 extra 基础上添加 { "-": "ー" } 映射
+ * =================================================================== */
+
+static PyObject *_make_roster_extra(PyObject *extra)
+{
+    PyObject *roster_extra;
+    if (extra && extra != Py_None)
+        roster_extra = PyDict_Copy(extra);
+    else
+        roster_extra = PyDict_New();
+    if (!roster_extra) return NULL;
+
+    PyObject *k = PyUnicode_FromString("-");
+    PyObject *v = PyUnicode_FromString("ー");
+    if (k && v) PyDict_SetItem(roster_extra, k, v);
+    Py_XDECREF(k); Py_XDECREF(v);
+    return roster_extra;
+}
+
+/* ===================================================================
  * 解析块 0（机体名册）→ Python list of str
  * =================================================================== */
 
@@ -411,23 +431,33 @@ static PyObject *_parse_roster(
 
     size_t count = size / DR_ROSTER_SLOT_SIZE;
 
+    PyObject *roster_extra = _make_roster_extra(extra);
+    if (!roster_extra)
+        return NULL;
+
     PyObject *roster = PyList_New((Py_ssize_t)count);
     if (!roster)
+    {
+        Py_DECREF(roster_extra);
         return NULL;
+    }
 
     for (size_t i = 0; i < count; i++)
     {
         size_t offset = i * DR_ROSTER_SLOT_SIZE;
         PyObject *name = _read_text_field(data, size, offset,
-                                           DR_ROSTER_SLOT_SIZE, extra, trans);
+                                           DR_ROSTER_SLOT_SIZE,
+                                           roster_extra, trans);
         if (!name)
         {
+            Py_DECREF(roster_extra);
             Py_DECREF(roster);
             return NULL;
         }
         PyList_SET_ITEM(roster, (Py_ssize_t)i, name);
     }
 
+    Py_DECREF(roster_extra);
     return roster;
 }
 
@@ -590,10 +620,17 @@ static unsigned char *_build_roster(
     PyObject *extra, PyObject *trans,
     size_t *out_comp_size)
 {
+    PyObject *roster_extra = _make_roster_extra(extra);
+    if (!roster_extra)
+        return NULL;
+
     size_t decomp_size = record_count * DR_ROSTER_SLOT_SIZE;
     unsigned char *decomp = (unsigned char *)malloc(decomp_size);
     if (!decomp)
+    {
+        Py_DECREF(roster_extra);
         return NULL;
+    }
     memset(decomp, 0xCD, decomp_size);
 
     for (size_t i = 0; i < record_count; i++)
@@ -604,7 +641,7 @@ static unsigned char *_build_roster(
 
         size_t slot_off = i * DR_ROSTER_SLOT_SIZE;
 
-        PyObject *encoded = codec_encode(name, extra, trans);
+        PyObject *encoded = codec_encode(name, roster_extra, trans);
         if (!encoded)
             continue;
 
@@ -658,6 +695,7 @@ static unsigned char *_build_roster(
         Py_DECREF(encoded);
     }
 
+    Py_DECREF(roster_extra);
     unsigned char *comp = _compress_block(decomp, decomp_size, out_comp_size);
     free(decomp);
     return comp;

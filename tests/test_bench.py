@@ -85,7 +85,7 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 5):
     print(f"    parse:         {_fmt_time(sum(parse_times), 1)}  "
           f"(avg {_fmt_time(parse_avg)} ×{iterations})")
 
-    # ---- build 基准 ----
+    # ---- build 基准（传 extra，模拟真实使用）----
     build_times = []
     rebuilt = None
     for _ in range(iterations):
@@ -101,11 +101,13 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 5):
     total_avg = parse_avg + build_avg
     print(f"    合计 (parse+build): {_fmt_time(total_avg)}")
 
-    # ---- 大小验证 ----
-    if len(rebuilt) == raw_len:
+    # ---- 大小验证（无 extra 往返，保证对称性）----
+    clean = mod.parse(bytearray(data))
+    check = mod.build(clean)
+    if len(check) == raw_len:
         print(f"    [INFO] 重建大小一致")
     else:
-        print(f"    [WARN] 重建 {len(rebuilt)} vs 原始 {raw_len}")
+        print(f"    [WARN] 重建 {len(check)} vs 原始 {raw_len}")
 
     # ---- 条目数 ----
     if "count" in parsed:

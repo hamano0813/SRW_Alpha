@@ -57,7 +57,7 @@ class Rom:
 
     def __init__(self):
         """初始化数据存储字典"""
-        self._data: dict[str, dict] = {}
+        self.data: dict[str, dict] = {}
 
     # ========== 路径管理 ==========
 
@@ -81,27 +81,27 @@ class Rom:
 
     def __getitem__(self, key: str) -> dict:
         """按 key 获取已解析的数据"""
-        return self._data[key]
+        return self.data[key]
 
     def __setitem__(self, key: str, value: dict):
         """设置指定 key 的解析数据"""
-        self._data[key] = value
+        self.data[key] = value
 
     def __contains__(self, key: str) -> bool:
         """判断指定 key 是否已加载"""
-        return key in self._data
+        return key in self.data
 
     def get(self, key: str, default=None):
         """获取已解析的数据，不存在时返回 default"""
-        return self._data.get(key, default)
+        return self.data.get(key, default)
 
     def keys(self):
         """返回所有已加载的数据 key 视图"""
-        return self._data.keys()
+        return self.data.keys()
 
     def clear(self):
         """清空所有已解析的数据"""
-        self._data.clear()
+        self.data.clear()
 
     # ========== 缓存批量读写（供 UI 槽函数调用） ==========
 
@@ -133,14 +133,13 @@ class Rom:
             details = "; ".join(f"{k}: {v}" for k, v in errors.items())
             raise RuntimeError(f"Failed to load files: {details}")
 
-        self.dump_to_txt()
 
     def write_cache(self) -> None:
         """将所有已修改的数据构建并写回缓存目录
 
         遍历 _data 中已存在的 key，通过 _SAVE_DISPATCH 分发到 save_* 方法。
         """
-        for key in self._data:
+        for key in self.data:
             method_name = self._SAVE_DISPATCH.get(key)
             if method_name is None:
                 continue
@@ -171,7 +170,7 @@ class Rom:
             raw = f.read()
 
         data = dc_bin.parse(raw, extra=extra)
-        self._data["dc"] = data
+        self.data["dc"] = data
         return data
 
     def save_dc(self, extra: dict | None = None) -> None:
@@ -186,7 +185,7 @@ class Rom:
         """
         if extra is None:
             extra = DC_TEXT_EXTRA
-        data = self._data.get("dc")
+        data = self.data.get("dc")
         if data is None:
             raise KeyError("No DC data loaded. Call load_dc() first.")
 
@@ -221,7 +220,7 @@ class Rom:
             raw = f.read()
 
         data = dr_bin.parse(raw, extra=extra)
-        self._data["dr"] = data
+        self.data["dr"] = data
         return data
 
     def save_dr(self, extra: dict | None = None) -> None:
@@ -236,7 +235,7 @@ class Rom:
         """
         if extra is None:
             extra = DR_TEXT_EXTRA
-        data = self._data.get("dr")
+        data = self.data.get("dr")
         if data is None:
             raise KeyError("No DR data loaded. Call load_dr() first.")
 
@@ -271,7 +270,7 @@ class Rom:
             raw = f.read()
 
         data = pilot_bin.parse(raw, extra=extra)
-        self._data["pilots"] = data
+        self.data["pilots"] = data
         return data
 
     def save_pilots(self, extra: dict | None = None) -> None:
@@ -286,7 +285,7 @@ class Rom:
         """
         if extra is None:
             extra = PILOT_EXTRA
-        data = self._data.get("pilots")
+        data = self.data.get("pilots")
         if data is None:
             raise KeyError("No pilot data loaded. Call load_pilots() first.")
 
@@ -321,7 +320,7 @@ class Rom:
             raw = f.read()
 
         data = robot_raf.parse(raw, extra=extra)
-        self._data["robots"] = data
+        self.data["robots"] = data
         return data
 
     def save_robots(self, extra: dict | None = None) -> None:
@@ -336,7 +335,7 @@ class Rom:
         """
         if extra is None:
             extra = ROBOT_EXTRA
-        data = self._data.get("robots")
+        data = self.data.get("robots")
         if data is None:
             raise KeyError("No robot data loaded. Call load_robots() first.")
 
@@ -365,7 +364,7 @@ class Rom:
             raw = f.read()
 
         data = sndata_bin.parse(raw)
-        self._data["sndata"] = data
+        self.data["sndata"] = data
         return data
 
     def save_sndata(self) -> None:
@@ -374,7 +373,7 @@ class Rom:
         Raises:
             KeyError: 尚未加载场景数据
         """
-        data = self._data.get("sndata")
+        data = self.data.get("sndata")
         if data is None:
             raise KeyError("No SNDATA data loaded. Call load_sndata() first.")
 
@@ -408,7 +407,7 @@ class Rom:
             raw = f.read()
 
         data = snmsg_bin.parse(bytearray(raw), extra=extra)
-        self._data["snmsgs"] = data
+        self.data["snmsgs"] = data
         return data
 
     def save_snmsgs(self, extra: dict | None = None) -> None:
@@ -422,7 +421,7 @@ class Rom:
         """
         if extra is None:
             extra = SNMSG_TEXT_EXTRA
-        data = self._data.get("snmsgs")
+        data = self.data.get("snmsgs")
         if data is None:
             raise KeyError("No SNMSG data loaded. Call load_snmsgs() first.")
 
@@ -432,31 +431,3 @@ class Rom:
         with open(path, "wb") as f:
             f.write(raw)
 
-    # ========== 测试用数据导出 ==========
-
-    def dump_to_txt(self, output_dir: str = "_test_cache") -> None:
-        """将全部已加载数据导出为 TXT（测试/调试用）
-
-        遍历 _data 中所有条目，以 pprint 格式逐文件写入 output_dir，
-        文件名取 _FILE_PATHS 对应的基名。
-
-        Args:
-            output_dir: 输出目录路径，默认为项目根下的 _test_cache
-        """
-        import pprint
-
-        os.makedirs(output_dir, exist_ok=True)
-
-        for key in self._data:
-            data = self._data[key]
-            basename = os.path.splitext(os.path.basename(self._FILE_PATHS[key]))[0]
-            fname = basename + ".txt"
-            path = os.path.join(output_dir, fname)
-
-            with open(path, "w", encoding="utf-8") as f:
-                f.write(f"# {self._FILE_PATHS[key]}\n")
-                f.write(f"# 条目数: {data.get('count', '?')}\n\n")
-                f.write(pprint.pformat(data, indent=2, width=120, sort_dicts=False))
-                f.write("\n")
-
-            print(f"  [INFO] {fname} 已导出")

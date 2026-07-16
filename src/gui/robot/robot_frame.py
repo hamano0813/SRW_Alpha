@@ -10,8 +10,8 @@ Classes:
 
 from PySide6.QtWidgets import QFrame, QVBoxLayout
 
-from gui.models.fixed_model import FixedTableModel
-from gui.views.fixed_view import FixedTableView
+from gui.custom.models.fixed_model import FixedTableModel
+from gui.custom.views.fixed_view import FixedTableView
 from gui.custom import fonts
 
 

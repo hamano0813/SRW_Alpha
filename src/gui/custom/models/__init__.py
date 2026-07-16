@@ -1,5 +1,5 @@
 """
-models 包 - 表格模型导出
+gui.custom.models - 表格模型导出
 
 提供 BaseTableModel、FixedTableModel、MutableTableModel 供 GUI 层使用。
 """

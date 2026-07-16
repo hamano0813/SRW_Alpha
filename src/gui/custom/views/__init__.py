@@ -1,5 +1,5 @@
 """
-views 包 - 表格视图导出
+gui.custom.views - 表格视图导出
 
 提供 BaseTableView、FixedTableView 供各模块使用。
 """

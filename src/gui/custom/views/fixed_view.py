@@ -11,7 +11,7 @@ Classes:
 from PySide6.QtCore import QModelIndex
 from PySide6.QtWidgets import QAbstractItemView
 
-from gui.models.fixed_model import FixedTableModel
+from gui.custom.models.fixed_model import FixedTableModel
 
 from .base_view import BaseTableView
 

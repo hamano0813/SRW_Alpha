@@ -15,7 +15,7 @@ from PySide6.QtCore import QSortFilterProxyModel, Signal
 from qfluentwidgets import TableView
 
 from gui.custom.fields import FieldMapping
-from gui.models.base_model import BaseTableModel
+from gui.custom.models.base_model import BaseTableModel
 
 
 class BaseTableView(TableView):

@@ -22,7 +22,7 @@ from qfluentwidgets import (
 )
 
 import config
-from core import utils
+import utils
 from gui.custom import CustomIcon
 
 from . import ColorCard, FontCard, LanguageCard, RomCard

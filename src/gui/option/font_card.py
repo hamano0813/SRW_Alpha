@@ -26,7 +26,7 @@ from qfluentwidgets import (
 )
 
 import config
-from core import utils
+import utils
 
 
 class FamilyCombo(ComboBox):

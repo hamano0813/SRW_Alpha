@@ -10,9 +10,9 @@ Classes:
 
 from PySide6.QtWidgets import QFrame, QVBoxLayout
 
+from gui.custom import fonts
 from gui.custom.models.fixed_model import FixedTableModel
 from gui.custom.views.fixed_view import FixedTableView
-from gui.custom import fonts
 
 
 class RobotFrame(QFrame):
@@ -50,6 +50,10 @@ class RobotFrame(QFrame):
 
         self.setLayout(layout)
 
+        from pprint import pprint
+
+        self._robot_view.sClicked.connect(lambda x, y: pprint(y, depth=1))  # [TODO]
+
     # ========== 数据解析 ==========
 
     def set_rom_data(self, data: dict) -> None:
@@ -68,11 +72,14 @@ class RobotFrame(QFrame):
         self._robot_model.set_title(
             {
                 self.tr("robot name"): lambda x: x,
-                self.tr("code"): lambda x: x,
+                self.tr("hit points"): lambda x: x,
+                self.tr("energy"): lambda x: x,
+                self.tr("mobility"): lambda x: x,
+                self.tr("armor"): lambda x: x,
+                self.tr("limit"): lambda x: x,
             }
         )
 
     def resetUI(self):
         """重置界面字体"""
-        # [TODO]
-        pass
+        self._robot_view.resetUI()

@@ -2,10 +2,10 @@
 ROM 文件配置卡片模块
 
 提供 ROM 文件路径选择和配置的用户界面组件。
-包含 ROM 文件读写的路径选择功能和缓存清理设置卡片。
+包含源/目标 ROM 路径选择功能和缓存清理设置卡片。
 
 Classes:
-    CardType: 卡片类型枚举（LOAD / SAVE）
+    CardType: 卡片类型枚举（SOURCE / TARGET）
     FileSettingCard: 文件路径设置卡片
     CleanSettingCard: 缓存清理设置卡片
     RomCard: ROM 文件组设置卡片
@@ -33,8 +33,8 @@ import config
 
 
 class CardType(Enum):
-    LOAD = 0
-    SAVE = 1
+    SOURCE = 0
+    TARGET = 1
 
 
 class CustomCard:
@@ -70,7 +70,7 @@ class FileSettingCard(PushSettingCard, CustomCard):
 
     def select_file(self):
         """打开文件选择对话框，选择 ROM 文件路径后保存并检查 ASCII 合规"""
-        if self._ctype is CardType.LOAD:
+        if self._ctype is CardType.SOURCE:
             file_path, _ = QFileDialog.getOpenFileName(self, self._select_file, "", "ROM Files (*.bin *.cue)")
         else:
             file_path, _ = QFileDialog.getSaveFileName(self, self._select_file, config.option.get(self._path), "ROM Files (*.bin *.cue)")
@@ -110,12 +110,12 @@ class CleanSettingCard(SwitchSettingCard, CustomCard):
         self.switchButton.setOnText("")
         self.switchButton.setOffText("")
         self.titleLabel.setText(self.tr("Auto clear cache"))
-        self.contentLabel.setText(self.tr("Clear cache after ROM is saved"))
+        self.contentLabel.setText(self.tr("Clear cache after ROM is rebuilt"))
         self.contentLabel.setHidden(False)
 
     def translateUI(self):
         self.titleLabel.setText(self.tr("Auto clear cache"))
-        self.contentLabel.setText(self.tr("Clear cache after ROM is saved"))
+        self.contentLabel.setText(self.tr("Clear cache after ROM is rebuilt"))
 
     def setValue(self, isChecked: bool):
         if self.configItem:
@@ -132,32 +132,32 @@ class RomCard(ExpandGroupSettingCard):
     def __init__(self, icon: Union[str, QIcon, FluentIconBase], parent=None):
         super().__init__(icon, self.tr("ROM Settings"), self.tr("Configure the ROM settings"), parent)  # type: ignore
 
-        self._load_card = FileSettingCard(config.option.load_path, self.tr("Load ROM"), CardType.LOAD, self)
-        self._save_card = FileSettingCard(config.option.save_path, self.tr("Save ROM"), CardType.SAVE, self)
+        self._source_card = FileSettingCard(config.option.source_rom, self.tr("Source ROM"), CardType.SOURCE, self)
+        self._target_card = FileSettingCard(config.option.target_rom, self.tr("Target ROM"), CardType.TARGET, self)
         self._clean_card = CleanSettingCard(config.option.auto_clean, self)
 
-        self.addGroupWidget(self._load_card)
-        self.addGroupWidget(self._save_card)
+        self.addGroupWidget(self._source_card)
+        self.addGroupWidget(self._target_card)
         self.addGroupWidget(self._clean_card)
 
-        self._load_card.pathChanged.connect(self._on_load_path_changed)
+        self._source_card.pathChanged.connect(self._on_source_rom_changed)
 
-    def _on_load_path_changed(self):
-        """LOAD 路径更新后，自动设置 SAVE 路径为 LOAD 文件名 + _TEMP"""
-        load_path = config.option.load_path.value
-        if not load_path:
+    def _on_source_rom_changed(self):
+        """SOURCE ROM 路径更新后，自动设置 TARGET ROM 路径为 SOURCE 文件名 + _TEMP"""
+        source_rom = config.option.source_rom.value
+        if not source_rom:
             return
-        base, ext = os.path.splitext(load_path)
-        save_path = base + "_TEMP" + ext
-        config.option.set(config.option.save_path, save_path)
-        self._save_card.contentLabel.setText(save_path)
+        base, ext = os.path.splitext(source_rom)
+        target_rom = base + "_TEMP" + ext
+        config.option.set(config.option.target_rom, target_rom)
+        self._target_card.contentLabel.setText(target_rom)
 
     def translateUI(self):
         """更新组卡片和所有子卡片的界面翻译"""
         self.card.titleLabel.setText(self.tr("ROM Settings"))
         self.card.contentLabel.setText(self.tr("Configure the ROM settings"))
-        self._load_card._title = self.tr("Load ROM")
-        self._save_card._title = self.tr("Save ROM")
+        self._source_card._title = self.tr("Source ROM")
+        self._target_card._title = self.tr("Target ROM")
         for widget in self.widgets:
             if isinstance(widget, CustomCard):
                 widget.translateUI()

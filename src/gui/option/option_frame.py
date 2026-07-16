@@ -8,6 +8,7 @@ Classes:
     OptionFrame: 选项设置框架 - 管理所有应用程序设置
 """
 
+from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QFrame, QLayoutItem, QSpacerItem, QVBoxLayout, QWidget
 from qfluentwidgets import (
     ComboBoxSettingCard,
@@ -30,6 +31,8 @@ from . import ColorCard, FontCard, LanguageCard, RomCard
 
 class OptionFrame(QFrame):
     """选项设置框架 - 管理所有应用程序设置"""
+
+    themeChanged = Signal()
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -114,6 +117,7 @@ class OptionFrame(QFrame):
     def theme_changed(self, theme: Theme):
         """主题模式改变时更新全局主题"""
         setTheme(theme)
+        self.themeChanged.emit()
 
     def dpi_changed(self, dpi: float):
         """DPI 缩放改变时显示重启提示对话框"""

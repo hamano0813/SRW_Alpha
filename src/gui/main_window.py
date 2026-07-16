@@ -25,9 +25,10 @@ from qfluentwidgets import (
 )
 
 import config
+from core.rom import Rom
 from gui import HomeFrame, OptionFrame, RobotFrame
 from gui.custom.fields import FieldMapping
-from core.rom import Rom
+
 from .custom import CustomIcon
 
 
@@ -54,7 +55,7 @@ class MainWindow(FluentWindow):
         self.setResizeEnabled(True)
 
     def init_core(self):
-        self._rom =Rom()
+        self._rom = Rom()
         self._field = FieldMapping()
 
     def init_ui(self):
@@ -79,6 +80,8 @@ class MainWindow(FluentWindow):
 
         self.option_frame = OptionFrame(self)
         self.addSubInterface(self.option_frame, CustomIcon.OPTION, self.tr("Options"), position=NavigationItemPosition.BOTTOM)
+
+        self.option_frame.themeChanged.connect(self.resetUI)
 
         self.translateUI()
         self.resetUI()
@@ -114,7 +117,6 @@ class MainWindow(FluentWindow):
         self.home_frame.resetUI()
         self.robot_frame.resetUI()
         self.option_frame.resetUI()
-        
 
         for panel_item in self.navigationInterface.panel.items.values():
             panel_item.widget.itemWidget.setFont(getFont())  # type: ignore
@@ -139,7 +141,6 @@ class MainWindow(FluentWindow):
         self.home_frame.translateUI()
         self.robot_frame.translateUI()
         self.option_frame.translateUI()
-
 
     def translate_frame(self, frame: str, title: str):
         """更新导航栏中指定框架的显示标题"""

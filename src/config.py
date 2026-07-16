@@ -37,8 +37,8 @@ class Option(QConfig):
     jp_font = ConfigItem("QFluentWidgets", "JPFont", "Yu Gothic UI")
 
     # ROM 文件配置
-    load_path = ConfigItem("Rom", "LoadPath", "")
-    save_path = ConfigItem("Rom", "SavePath", "")
+    source_rom = ConfigItem("Rom", "SourceRom", "")
+    target_rom = ConfigItem("Rom", "TargetRom", "")
     cache_dir = ConfigItem("Rom", "CacheDir", "cache", FolderValidator())
     auto_clean = ConfigItem("Rom", "AutoClean", False, BoolValidator())
 

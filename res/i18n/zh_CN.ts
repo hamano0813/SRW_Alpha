@@ -12,12 +12,12 @@
     <message>
         <location filename="../../src/gui/option/rom_card.py" line="113"/>
         <location filename="../../src/gui/option/rom_card.py" line="118"/>
-        <source>Clear cache after ROM is saved</source>
-        <translation>ROM保存以后自动清理缓存（下次修改需重新载入ROM）</translation>
+        <source>Clear cache after ROM is rebuilt</source>
+        <translation>ROM 重建后自动清理缓存（下次修改需重新解包）</translation>
     </message>
     <message>
-        <source>Clear cache after ROM saved</source>
-        <translation type="vanished">ROM保存以后自动清理缓存（下次修改需重新载入ROM）</translation>
+        <source>Clear cache after ROM rebuilt</source>
+        <translation type="vanished">ROM 重建后自动清理缓存（下次修改需重新解包）</translation>
     </message>
 </context>
 <context>
@@ -1407,6 +1407,828 @@
     </message>
 </context>
 <context>
+    <name>FieldMapping</name>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="68"/>
+        <source>robot name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="69"/>
+        <location filename="../../src/gui/custom/fields.py" line="102"/>
+        <location filename="../../src/gui/custom/fields.py" line="133"/>
+        <source>code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="70"/>
+        <source>movement type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="71"/>
+        <source>movement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="72"/>
+        <source>hit points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="73"/>
+        <source>energy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="74"/>
+        <source>mobility</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="75"/>
+        <source>armor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="76"/>
+        <source>limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="77"/>
+        <source>size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="78"/>
+        <source>parts slot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="79"/>
+        <location filename="../../src/gui/custom/fields.py" line="134"/>
+        <source>series</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="80"/>
+        <source>abilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="81"/>
+        <source>repair cost</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="82"/>
+        <source>cost</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="83"/>
+        <source>transform group number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="84"/>
+        <source>transform sequence number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="85"/>
+        <source>combine group number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="86"/>
+        <source>combine sequence number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="87"/>
+        <source>core robot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="88"/>
+        <source>combine count</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="89"/>
+        <source>option parts system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="90"/>
+        <source>background music</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="91"/>
+        <location filename="../../src/gui/custom/fields.py" line="123"/>
+        <location filename="../../src/gui/custom/fields.py" line="151"/>
+        <source>air</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="92"/>
+        <location filename="../../src/gui/custom/fields.py" line="124"/>
+        <location filename="../../src/gui/custom/fields.py" line="152"/>
+        <source>ground</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="93"/>
+        <location filename="../../src/gui/custom/fields.py" line="125"/>
+        <location filename="../../src/gui/custom/fields.py" line="153"/>
+        <source>water</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="94"/>
+        <location filename="../../src/gui/custom/fields.py" line="126"/>
+        <location filename="../../src/gui/custom/fields.py" line="154"/>
+        <source>space</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="95"/>
+        <source>weapons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="103"/>
+        <source>required newtype level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="104"/>
+        <source>required aura level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="105"/>
+        <source>required morale value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="106"/>
+        <source>custom type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="107"/>
+        <source>short range</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="108"/>
+        <source>long range</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="109"/>
+        <source>map weapon class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="110"/>
+        <source>map weapon radius</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="111"/>
+        <source>damage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="112"/>
+        <source>weapon class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="113"/>
+        <source>attribute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="114"/>
+        <source>custom bonus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="115"/>
+        <source>weapon name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="116"/>
+        <source>map weapon range</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="117"/>
+        <source>map weapon show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="118"/>
+        <source>energy cost</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="119"/>
+        <source>hit rate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="120"/>
+        <source>critical rate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="121"/>
+        <source>default ammo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="122"/>
+        <source>maximum ammo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="135"/>
+        <source>fullname</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="136"/>
+        <source>nickname</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="137"/>
+        <source>combat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="138"/>
+        <source>ranged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="139"/>
+        <source>evasion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="140"/>
+        <source>accuracy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="141"/>
+        <source>reaction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="142"/>
+        <source>skill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="143"/>
+        <source>spirit commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="144"/>
+        <source>spirit level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="145"/>
+        <source>upgraded skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="146"/>
+        <source>SP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="147"/>
+        <source>double action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="148"/>
+        <source>special skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="149"/>
+        <source>nature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="150"/>
+        <source>friendship group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="161"/>
+        <source>full name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="162"/>
+        <source>pet name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="163"/>
+        <location filename="../../src/gui/custom/fields.py" line="176"/>
+        <source>appearance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="164"/>
+        <source>voice actor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="165"/>
+        <location filename="../../src/gui/custom/fields.py" line="177"/>
+        <source>flags</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="166"/>
+        <location filename="../../src/gui/custom/fields.py" line="178"/>
+        <source>description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="173"/>
+        <source>name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="174"/>
+        <source>height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="175"/>
+        <source>weight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="185"/>
+        <source>skill name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="186"/>
+        <source>skill level1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="187"/>
+        <source>skill level2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="188"/>
+        <source>skill level3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="189"/>
+        <source>skill level4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="190"/>
+        <source>skill level5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="191"/>
+        <source>skill level6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="192"/>
+        <source>skill level7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="193"/>
+        <source>skill level8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="194"/>
+        <source>skill level9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="201"/>
+        <source>scenario pointer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="202"/>
+        <source>scenario data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="209"/>
+        <source>block count</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="210"/>
+        <source>block length</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="211"/>
+        <source>block pointers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="212"/>
+        <source>command data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="219"/>
+        <source>command code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="220"/>
+        <source>command count</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="221"/>
+        <source>command params</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="222"/>
+        <source>command explain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="229"/>
+        <source>message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="236"/>
+        <source>script command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="237"/>
+        <source>script params1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="238"/>
+        <source>script params2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="239"/>
+        <source>script expand</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="246"/>
+        <source>ai pointers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="247"/>
+        <source>ai data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="248"/>
+        <source>ai count</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="249"/>
+        <source>ai length</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="250"/>
+        <source>ai list</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="251"/>
+        <source>AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="252"/>
+        <source>valid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="253"/>
+        <source>move round</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="254"/>
+        <source>own move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="255"/>
+        <source>own attack</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="256"/>
+        <source>target pilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="257"/>
+        <source>target x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="258"/>
+        <source>target y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="265"/>
+        <source>unknown01</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="266"/>
+        <source>unknown02</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="267"/>
+        <source>unknown03</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="268"/>
+        <source>unknown04</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="269"/>
+        <source>unknown05</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="270"/>
+        <source>unknown06</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="271"/>
+        <source>unknown07</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="272"/>
+        <source>unknown08</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="273"/>
+        <source>unknown09</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="274"/>
+        <source>unknown10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="275"/>
+        <source>unknown11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="276"/>
+        <source>unknown12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="277"/>
+        <source>unknown13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="278"/>
+        <source>unknown14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="279"/>
+        <source>unknown15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="280"/>
+        <source>unknown16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="281"/>
+        <source>unknown17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="282"/>
+        <source>unknown18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="283"/>
+        <source>unknown19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="284"/>
+        <source>unknown20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="285"/>
+        <source>unknown21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="286"/>
+        <source>unknown22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="287"/>
+        <source>unknown23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="288"/>
+        <source>unknown24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="289"/>
+        <source>unknown25</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="290"/>
+        <source>unknown26</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="291"/>
+        <source>unknown27</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="292"/>
+        <source>unknown28</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="293"/>
+        <source>unknown29</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="294"/>
+        <source>unknown30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="295"/>
+        <source>unknown31</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="296"/>
+        <source>unknown32</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="297"/>
+        <source>unknown33</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="298"/>
+        <source>unknown34</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="299"/>
+        <source>unknown35</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="300"/>
+        <source>unknown36</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="301"/>
+        <source>unknown37</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="302"/>
+        <source>unknown38</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="303"/>
+        <source>unknown39</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="304"/>
+        <source>unknown40</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="305"/>
+        <source>unknown41</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="306"/>
+        <source>unknown42</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="307"/>
+        <source>unknown43</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="308"/>
+        <source>unknown44</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="309"/>
+        <source>unknown45</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="310"/>
+        <source>unknown46</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="311"/>
+        <source>unknown47</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="312"/>
+        <source>unknown48</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="313"/>
+        <source>unknown49</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/fields.py" line="314"/>
+        <source>unknown50</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FileSettingCard</name>
     <message>
         <location filename="../../src/gui/option/rom_card.py" line="52"/>
@@ -1464,136 +2286,132 @@
 <context>
     <name>HomeFrame</name>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="44"/>
-        <location filename="../../src/gui/home/home_frame.py" line="288"/>
+        <location filename="../../src/gui/home/home_frame.py" line="47"/>
+        <location filename="../../src/gui/home/home_frame.py" line="291"/>
         <source>Extract ROM</source>
         <translation>解包ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="45"/>
-        <location filename="../../src/gui/home/home_frame.py" line="289"/>
+        <location filename="../../src/gui/home/home_frame.py" line="48"/>
+        <location filename="../../src/gui/home/home_frame.py" line="292"/>
         <source>Rebuild ROM</source>
         <translation>重建ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="50"/>
-        <location filename="../../src/gui/home/home_frame.py" line="294"/>
+        <location filename="../../src/gui/home/home_frame.py" line="53"/>
+        <location filename="../../src/gui/home/home_frame.py" line="297"/>
         <source>ROM Path Not Configured</source>
         <translation>ROM路径未配置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="51"/>
-        <location filename="../../src/gui/home/home_frame.py" line="295"/>
+        <location filename="../../src/gui/home/home_frame.py" line="54"/>
+        <location filename="../../src/gui/home/home_frame.py" line="298"/>
         <source>Please configure the ROM file path in Settings first.</source>
         <translation>请先在设置中配置ROM文件路径。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="52"/>
-        <location filename="../../src/gui/home/home_frame.py" line="296"/>
+        <location filename="../../src/gui/home/home_frame.py" line="55"/>
+        <location filename="../../src/gui/home/home_frame.py" line="299"/>
         <source>File Not Found</source>
         <translation>文件未找到</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="53"/>
-        <location filename="../../src/gui/home/home_frame.py" line="297"/>
+        <location filename="../../src/gui/home/home_frame.py" line="56"/>
+        <location filename="../../src/gui/home/home_frame.py" line="300"/>
         <source>ROM file does not exist:
 {}</source>
         <translation>ROM文件不存在:
 {}</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="54"/>
-        <location filename="../../src/gui/home/home_frame.py" line="298"/>
+        <location filename="../../src/gui/home/home_frame.py" line="57"/>
+        <location filename="../../src/gui/home/home_frame.py" line="301"/>
         <source>OK</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="43"/>
-        <location filename="../../src/gui/home/home_frame.py" line="292"/>
+        <location filename="../../src/gui/home/home_frame.py" line="46"/>
+        <location filename="../../src/gui/home/home_frame.py" line="295"/>
         <source>Close</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="46"/>
-        <location filename="../../src/gui/home/home_frame.py" line="290"/>
-        <source>Read Cache</source>
-        <translation>读取缓存</translation>
+        <location filename="../../src/gui/home/home_frame.py" line="49"/>
+        <location filename="../../src/gui/home/home_frame.py" line="293"/>
+        <source>Parse Cache</source>
+        <translation>解析缓存</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="47"/>
-        <location filename="../../src/gui/home/home_frame.py" line="291"/>
-        <source>Write Cache</source>
-        <translation>写入缓存</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/home_frame.py" line="55"/>
-        <location filename="../../src/gui/home/home_frame.py" line="299"/>
-        <source>Save Path Not Configured</source>
-        <translation>保存路径未配置</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/home_frame.py" line="56"/>
-        <location filename="../../src/gui/home/home_frame.py" line="300"/>
-        <source>Please configure the ROM save path in Settings first.</source>
-        <translation>请先在设置中配置ROM保存路径。</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/home/home_frame.py" line="57"/>
-        <location filename="../../src/gui/home/home_frame.py" line="301"/>
-        <source>Cache project file not found. Please load a ROM first.</source>
-        <translation>未找到缓存项目文件，请先加载ROM。</translation>
+        <location filename="../../src/gui/home/home_frame.py" line="50"/>
+        <location filename="../../src/gui/home/home_frame.py" line="66"/>
+        <location filename="../../src/gui/home/home_frame.py" line="294"/>
+        <location filename="../../src/gui/home/home_frame.py" line="310"/>
+        <source>Build Cache</source>
+        <translation>构建缓存</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="58"/>
         <location filename="../../src/gui/home/home_frame.py" line="302"/>
-        <source>Cache directory not found. Please load a ROM first.</source>
-        <translation>缓存目录未找到，请先加载ROM。</translation>
+        <source>Target ROM Not Configured</source>
+        <translation>目标 ROM 未配置</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="59"/>
         <location filename="../../src/gui/home/home_frame.py" line="303"/>
-        <source>Cache already exists. Overwrite?</source>
-        <translation>缓存已存在，是否覆盖？</translation>
+        <source>Please configure the target ROM path in Settings first.</source>
+        <translation>请先在设置中配置目标 ROM 路径。</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="60"/>
         <location filename="../../src/gui/home/home_frame.py" line="304"/>
-        <source>The cache directory already exists. Do you want to overwrite it?</source>
-        <translation>缓存目录已存在，是否覆盖？</translation>
+        <source>Cache project file not found. Please extract a ROM first.</source>
+        <translation>未找到缓存项目文件，请先解包 ROM。</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="61"/>
         <location filename="../../src/gui/home/home_frame.py" line="305"/>
-        <source>Overwrite</source>
-        <translation>覆盖</translation>
+        <source>Cache directory not found. Please extract a ROM first.</source>
+        <translation>缓存目录未找到，请先解包 ROM。</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="62"/>
         <location filename="../../src/gui/home/home_frame.py" line="306"/>
-        <source>Cancel</source>
-        <translation>取消</translation>
+        <source>Cache already exists. Overwrite?</source>
+        <translation>缓存已存在，是否覆盖？</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="63"/>
         <location filename="../../src/gui/home/home_frame.py" line="307"/>
-        <source>Serialize Data</source>
-        <translation>序列化数据</translation>
+        <source>The cache directory already exists. Do you want to overwrite it?</source>
+        <translation>缓存目录已存在，是否覆盖？</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="64"/>
         <location filename="../../src/gui/home/home_frame.py" line="308"/>
-        <source>Are you sure you want to serialize modified data to cache files?</source>
-        <translation>确认将修改的数据序列化到缓存文件？</translation>
+        <source>Overwrite</source>
+        <translation>覆盖</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="65"/>
         <location filename="../../src/gui/home/home_frame.py" line="309"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="67"/>
+        <location filename="../../src/gui/home/home_frame.py" line="311"/>
+        <source>Are you sure you want to build modified data to cache files?</source>
+        <translation>确认将修改的数据构建到缓存文件？</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="68"/>
+        <location filename="../../src/gui/home/home_frame.py" line="312"/>
         <source>File Already Exists</source>
         <translation>文件已存在</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="66"/>
-        <location filename="../../src/gui/home/home_frame.py" line="310"/>
+        <location filename="../../src/gui/home/home_frame.py" line="69"/>
+        <location filename="../../src/gui/home/home_frame.py" line="313"/>
         <source>The output file already exists:
 {}
 
@@ -1604,49 +2422,60 @@ Do you want to overwrite it?</source>
 是否覆盖？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="67"/>
-        <location filename="../../src/gui/home/home_frame.py" line="311"/>
+        <location filename="../../src/gui/home/home_frame.py" line="70"/>
+        <location filename="../../src/gui/home/home_frame.py" line="314"/>
         <source>Yes</source>
         <translation>是</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="68"/>
-        <location filename="../../src/gui/home/home_frame.py" line="312"/>
+        <location filename="../../src/gui/home/home_frame.py" line="71"/>
+        <location filename="../../src/gui/home/home_frame.py" line="315"/>
         <source>No</source>
         <translation>否</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="94"/>
+        <location filename="../../src/gui/home/home_frame.py" line="97"/>
+        <location filename="../../src/gui/home/home_frame.py" line="324"/>
         <source>File</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="95"/>
-        <location filename="../../src/gui/home/home_frame.py" line="102"/>
+        <location filename="../../src/gui/home/home_frame.py" line="98"/>
+        <location filename="../../src/gui/home/home_frame.py" line="105"/>
+        <location filename="../../src/gui/home/home_frame.py" line="325"/>
+        <location filename="../../src/gui/home/home_frame.py" line="332"/>
         <source>Robot</source>
         <translation>机体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="96"/>
-        <location filename="../../src/gui/home/home_frame.py" line="105"/>
+        <location filename="../../src/gui/home/home_frame.py" line="99"/>
+        <location filename="../../src/gui/home/home_frame.py" line="108"/>
+        <location filename="../../src/gui/home/home_frame.py" line="326"/>
+        <location filename="../../src/gui/home/home_frame.py" line="333"/>
         <source>Pilot</source>
         <translation>机师</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="97"/>
-        <location filename="../../src/gui/home/home_frame.py" line="108"/>
+        <location filename="../../src/gui/home/home_frame.py" line="100"/>
+        <location filename="../../src/gui/home/home_frame.py" line="111"/>
+        <location filename="../../src/gui/home/home_frame.py" line="327"/>
+        <location filename="../../src/gui/home/home_frame.py" line="334"/>
         <source>Message</source>
         <translation>文本</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="98"/>
-        <location filename="../../src/gui/home/home_frame.py" line="111"/>
+        <location filename="../../src/gui/home/home_frame.py" line="101"/>
+        <location filename="../../src/gui/home/home_frame.py" line="112"/>
+        <location filename="../../src/gui/home/home_frame.py" line="328"/>
+        <location filename="../../src/gui/home/home_frame.py" line="335"/>
         <source>Scenario</source>
         <translation>场景</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="99"/>
-        <location filename="../../src/gui/home/home_frame.py" line="119"/>
+        <location filename="../../src/gui/home/home_frame.py" line="102"/>
+        <location filename="../../src/gui/home/home_frame.py" line="120"/>
+        <location filename="../../src/gui/home/home_frame.py" line="329"/>
+        <location filename="../../src/gui/home/home_frame.py" line="343"/>
         <source>Intermission</source>
         <translation>幕间</translation>
     </message>
@@ -1654,802 +2483,28 @@ Do you want to overwrite it?</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../src/gui/main_window.py" line="60"/>
+        <location filename="../../src/gui/main_window.py" line="75"/>
         <source>Home</source>
         <translation>概览</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="63"/>
+        <location filename="../../src/gui/main_window.py" line="78"/>
+        <source>Robot</source>
+        <translation>机体</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/main_window.py" line="81"/>
         <source>Options</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="111"/>
+        <location filename="../../src/gui/main_window.py" line="135"/>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>超级机器人大战α 静态修改器</translation>
     </message>
     <message>
         <source>Super Robot Wars α Rom Editor</source>
         <translation type="vanished">超级机器人大战α 静态修改器</translation>
-    </message>
-</context>
-<context>
-    <name>MappingType</name>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="51"/>
-        <source>robot name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="52"/>
-        <location filename="../../src/gui/custom/fields.py" line="84"/>
-        <location filename="../../src/gui/custom/fields.py" line="114"/>
-        <source>code</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="53"/>
-        <source>movement type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="54"/>
-        <source>movement</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="55"/>
-        <source>hit points</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="56"/>
-        <source>energy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="57"/>
-        <source>mobility</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="58"/>
-        <source>armor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="59"/>
-        <source>limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="60"/>
-        <source>size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="61"/>
-        <source>parts slot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="62"/>
-        <location filename="../../src/gui/custom/fields.py" line="115"/>
-        <source>series</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="63"/>
-        <source>abilities</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="64"/>
-        <source>repair cost</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="65"/>
-        <source>cost</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="66"/>
-        <source>transform group number</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="67"/>
-        <source>transform sequence number</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="68"/>
-        <source>combine group number</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="69"/>
-        <source>combine sequence number</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="70"/>
-        <source>core robot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="71"/>
-        <source>combine count</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="72"/>
-        <source>option parts system</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="73"/>
-        <source>background music</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="74"/>
-        <location filename="../../src/gui/custom/fields.py" line="105"/>
-        <location filename="../../src/gui/custom/fields.py" line="134"/>
-        <source>air</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="75"/>
-        <location filename="../../src/gui/custom/fields.py" line="106"/>
-        <location filename="../../src/gui/custom/fields.py" line="135"/>
-        <source>ground</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="76"/>
-        <location filename="../../src/gui/custom/fields.py" line="107"/>
-        <location filename="../../src/gui/custom/fields.py" line="136"/>
-        <source>water</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="77"/>
-        <location filename="../../src/gui/custom/fields.py" line="108"/>
-        <location filename="../../src/gui/custom/fields.py" line="137"/>
-        <source>space</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="78"/>
-        <source>weapons</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="85"/>
-        <source>required newtype level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="86"/>
-        <source>required aura level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="87"/>
-        <source>required morale value</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="88"/>
-        <source>custom type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="89"/>
-        <source>short range</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="90"/>
-        <source>long range</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="91"/>
-        <source>map weapon class</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="92"/>
-        <source>map weapon radius</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="93"/>
-        <source>damage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="94"/>
-        <source>weapon class</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="95"/>
-        <source>attribute</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="96"/>
-        <source>custom bonus</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="97"/>
-        <source>weapon name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="98"/>
-        <source>map weapon range</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="99"/>
-        <source>map weapon show</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="100"/>
-        <source>energy cost</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="101"/>
-        <source>hit rate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="102"/>
-        <source>critical rate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="103"/>
-        <source>default ammo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="104"/>
-        <source>maximum ammo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="116"/>
-        <source>fullname</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="117"/>
-        <source>nickname</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="118"/>
-        <source>combat</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="119"/>
-        <source>ranged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="120"/>
-        <source>evasion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="121"/>
-        <source>accuracy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="122"/>
-        <source>reaction</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="123"/>
-        <source>skill</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="124"/>
-        <source>spirit commands</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="125"/>
-        <source>spirit level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="126"/>
-        <source>upgraded skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="127"/>
-        <source>upgraded level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="128"/>
-        <source>fixed skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="129"/>
-        <source>SP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="130"/>
-        <source>double action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="131"/>
-        <source>special skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="132"/>
-        <source>nature</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="133"/>
-        <source>friendship group</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="143"/>
-        <source>skill name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="144"/>
-        <source>skill level1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="145"/>
-        <source>skill level2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="146"/>
-        <source>skill level3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="147"/>
-        <source>skill level4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="148"/>
-        <source>skill level5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="149"/>
-        <source>skill level6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="150"/>
-        <source>skill level7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="151"/>
-        <source>skill level8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="152"/>
-        <source>skill level9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="158"/>
-        <source>scenario pointer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="159"/>
-        <source>scenario data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="165"/>
-        <source>block count</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="166"/>
-        <source>block length</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="167"/>
-        <source>block pointers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="168"/>
-        <source>command data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="174"/>
-        <source>command code</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="175"/>
-        <source>command count</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="176"/>
-        <source>command params</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="182"/>
-        <source>message</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="188"/>
-        <source>script command</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="189"/>
-        <source>script params1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="190"/>
-        <source>script params2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="191"/>
-        <source>script expand</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="197"/>
-        <source>ai pointers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="198"/>
-        <source>ai data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="199"/>
-        <source>ai count</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="200"/>
-        <source>ai length</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="201"/>
-        <source>ai list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="202"/>
-        <source>AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="203"/>
-        <source>valid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="204"/>
-        <source>move round</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="205"/>
-        <source>own move</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="206"/>
-        <source>own attack</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="207"/>
-        <source>target pilot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="208"/>
-        <source>target x</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="209"/>
-        <source>target y</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="215"/>
-        <source>unknown01</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="216"/>
-        <source>unknown02</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="217"/>
-        <source>unknown03</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="218"/>
-        <source>unknown04</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="219"/>
-        <source>unknown05</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="220"/>
-        <source>unknown06</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="221"/>
-        <source>unknown07</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="222"/>
-        <source>unknown08</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="223"/>
-        <source>unknown09</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="224"/>
-        <source>unknown10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="225"/>
-        <source>unknown11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="226"/>
-        <source>unknown12</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="227"/>
-        <source>unknown13</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="228"/>
-        <source>unknown14</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="229"/>
-        <source>unknown15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="230"/>
-        <source>unknown16</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="231"/>
-        <source>unknown17</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="232"/>
-        <source>unknown18</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="233"/>
-        <source>unknown19</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="234"/>
-        <source>unknown20</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="235"/>
-        <source>unknown21</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="236"/>
-        <source>unknown22</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="237"/>
-        <source>unknown23</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="238"/>
-        <source>unknown24</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="239"/>
-        <source>unknown25</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="240"/>
-        <source>unknown26</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="241"/>
-        <source>unknown27</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="242"/>
-        <source>unknown28</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="243"/>
-        <source>unknown29</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="244"/>
-        <source>unknown30</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="245"/>
-        <source>unknown31</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="246"/>
-        <source>unknown32</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="247"/>
-        <source>unknown33</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="248"/>
-        <source>unknown34</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="249"/>
-        <source>unknown35</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="250"/>
-        <source>unknown36</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="251"/>
-        <source>unknown37</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="252"/>
-        <source>unknown38</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="253"/>
-        <source>unknown39</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="254"/>
-        <source>unknown40</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="255"/>
-        <source>unknown41</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="256"/>
-        <source>unknown42</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="257"/>
-        <source>unknown43</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="258"/>
-        <source>unknown44</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="259"/>
-        <source>unknown45</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="260"/>
-        <source>unknown46</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="261"/>
-        <source>unknown47</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="262"/>
-        <source>unknown48</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="263"/>
-        <source>unknown49</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/custom/fields.py" line="264"/>
-        <source>unknown50</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2577,22 +2632,30 @@ Do you want to overwrite it?</source>
         <translation type="vanished">配置ROM文件路径</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="135"/>
-        <location filename="../../src/gui/option/rom_card.py" line="159"/>
         <source>Load ROM</source>
-        <translation>加载ROM</translation>
+        <translation type="vanished">加载ROM</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="136"/>
-        <location filename="../../src/gui/option/rom_card.py" line="160"/>
         <source>Save ROM</source>
-        <translation>保存ROM</translation>
+        <translation type="vanished">保存ROM</translation>
     </message>
     <message>
         <location filename="../../src/gui/option/rom_card.py" line="133"/>
         <location filename="../../src/gui/option/rom_card.py" line="157"/>
         <source>ROM Settings</source>
         <translation>ROM设置</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="135"/>
+        <location filename="../../src/gui/option/rom_card.py" line="159"/>
+        <source>Source ROM</source>
+        <translation>源 ROM 文件</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/option/rom_card.py" line="136"/>
+        <location filename="../../src/gui/option/rom_card.py" line="160"/>
+        <source>Target ROM</source>
+        <translation>输出 ROM 文件</translation>
     </message>
     <message>
         <source>Rom Settings</source>

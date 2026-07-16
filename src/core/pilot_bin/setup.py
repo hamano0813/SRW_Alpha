@@ -1,7 +1,7 @@
 """
-pilot_bin C 扩展构建配置
+PILOT.BIN C 扩展构建配置
 
-编译 _pilot_bin.pyd，静态链接 codec 子模块。
+编译 _pilot_bin C 扩展，静态链接 codec 模块。
 """
 
 from setuptools import Extension, setup

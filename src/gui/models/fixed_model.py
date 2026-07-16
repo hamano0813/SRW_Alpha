@@ -20,9 +20,7 @@ class FixedTableModel(BaseTableModel):
 
     # ========== Qt 模型接口重写 ==========
 
-    def data(
-        self, index: QModelIndex, role: int = Qt.ItemDataRole.DisplayRole
-    ) -> Any:
+    def data(self, index: QModelIndex, role: int = Qt.ItemDataRole.DisplayRole) -> Any:
         """按链路 列索引 → 表头 → key → row dict 取值
 
         Args:
@@ -41,6 +39,10 @@ class FixedTableModel(BaseTableModel):
         value = self._data[index.row()].get(key)
         if role in (Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole):
             return value
+
+        if role == Qt.ItemDataRole.FontRole:
+            return self._get_font(index.column())
+
         return None
 
     def setData(
@@ -67,9 +69,7 @@ class FixedTableModel(BaseTableModel):
         header = self._headers[index.column()]
         key = self._fields.get_field(header)
         self._data[index.row()][key] = value
-        self.dataChanged.emit(
-            index, index, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole]
-        )
+        self.dataChanged.emit(index, index, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
         return True
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlag:
@@ -83,8 +83,4 @@ class FixedTableModel(BaseTableModel):
         """
         if not index.isValid():
             return Qt.ItemFlag.NoItemFlags
-        return (
-            Qt.ItemFlag.ItemIsEnabled
-            | Qt.ItemFlag.ItemIsSelectable
-            | Qt.ItemFlag.ItemIsEditable
-        )
+        return Qt.ItemFlag.ItemIsEnabled | Qt.ItemFlag.ItemIsSelectable | Qt.ItemFlag.ItemIsEditable

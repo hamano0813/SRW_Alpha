@@ -1,5 +1,7 @@
 """
 SNDATA.BIN C 扩展构建配置
+
+编译 _sndata C 扩展，无外部依赖（纯二进制，无文本编码）。
 """
 
 from setuptools import Extension, setup

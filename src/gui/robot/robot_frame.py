@@ -8,12 +8,11 @@ Classes:
     RobotFrame: 机体编辑框架
 """
 
-from typing import Callable
-
 from PySide6.QtWidgets import QFrame, QVBoxLayout
 
 from gui.models.fixed_model import FixedTableModel
 from gui.views.fixed_view import FixedTableView
+from gui.custom import fonts
 
 
 class RobotFrame(QFrame):
@@ -34,6 +33,7 @@ class RobotFrame(QFrame):
         self.setObjectName("RobotFrame")
 
         self._robot_model = FixedTableModel()
+        self._robot_model.set_font({0: fonts.TEXT_FONT})
 
         self._rom_data: dict | None = None
 

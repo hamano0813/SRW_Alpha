@@ -1,7 +1,7 @@
 """
 DR.BIN C 扩展构建配置
 
-编译 _dr_bin.pyd，静态链接 lzss 和 codec 子模块。
+编译 _dr_bin C 扩展，静态链接 lzss 和 codec 模块。
 """
 
 from setuptools import Extension, setup

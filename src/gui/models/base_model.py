@@ -12,6 +12,7 @@ Classes:
 from typing import Any, Callable
 
 from PySide6.QtCore import QAbstractTableModel, QModelIndex, Qt
+from PySide6.QtGui import QFont
 
 from gui.custom.fields import FieldMapping
 
@@ -41,6 +42,7 @@ class BaseTableModel(QAbstractTableModel):
         self._headers: list[str] = []  # 有序表头列表（列索引 → 表头）
         self._index = BaseTableModel.IndexMode.HEX
         self._width: int = 0
+        self._fonts: dict = {}  # 自定义字体
 
     # ========== 公开接口 ==========
 
@@ -78,6 +80,14 @@ class BaseTableModel(QAbstractTableModel):
         self._titles = titles
         self._headers = list(titles.keys())
         self.endResetModel()
+
+    def set_font(self, fonts: dict) -> None:
+        """设置列字体映射
+
+        Args:
+            fonts: {列号: font_dict}，-1 表示全局默认
+        """
+        self._fonts = fonts
 
     # ========== Qt 模型接口 ==========
 
@@ -170,3 +180,30 @@ class BaseTableModel(QAbstractTableModel):
             该行的数据 dict
         """
         return self._data[row]
+
+    def _get_font(self, column: int) -> QFont | None:
+        """按列号查询字体配置，无配置时返回 None
+
+        优先查 column 指定列，回退到 -1（全局默认）。
+
+        Args:
+            column: 列号
+
+        Returns:
+            构造好的 QFont，或 None
+        """
+        font_dict = self._fonts.get(column) or self._fonts.get(-1)
+        if font_dict is None:
+            return None
+        family = font_dict.get("family")
+        size = font_dict.get("size")
+        weight = font_dict.get("weight")
+        italic = font_dict.get("italic")
+        font = QFont(family)
+        if size:
+            font.setPixelSize(size)
+        if weight:
+            font.setWeight(weight)
+        if italic:
+            font.setItalic(italic)
+        return font

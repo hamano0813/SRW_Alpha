@@ -134,7 +134,7 @@ class MainWindow(FluentWindow):
 
         self._field.translateUI()
 
-        self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.1.0")
+        self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.2.0")
         self.translate_frame("EditorFrame", "Home")
         self.translate_frame("RobotFrame", "Robot")
         self.translate_frame("OptionFrame", "Options")

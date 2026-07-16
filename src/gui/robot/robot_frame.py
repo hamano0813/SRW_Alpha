@@ -8,7 +8,8 @@ Classes:
     RobotFrame: 机体编辑框架
 """
 
-from PySide6.QtWidgets import QFrame, QVBoxLayout
+from PySide6.QtWidgets import QFrame, QHBoxLayout, QVBoxLayout
+from qfluentwidgets import FlowLayout
 
 from gui.custom import fonts
 from gui.custom.models.fixed_model import FixedTableModel
@@ -44,11 +45,17 @@ class RobotFrame(QFrame):
 
         # ========== 布局 ==========
 
-        layout = QVBoxLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._robot_view)
+        main_layout = QHBoxLayout(self)
+        right_layout = QVBoxLayout()
+        right_top_layout = FlowLayout()
+        right_bottom_layout = QHBoxLayout()
+        right_layout.addLayout(right_top_layout)
+        right_layout.addLayout(right_bottom_layout)
+        main_layout.setContentsMargins(0, 0, 0, 0)
+        main_layout.addWidget(self._robot_view)
+        main_layout.addLayout(right_layout)
 
-        self.setLayout(layout)
+        self.setLayout(main_layout)
 
         from pprint import pprint
 
@@ -69,7 +76,7 @@ class RobotFrame(QFrame):
 
     def translateUI(self):
         """刷新界面翻译"""
-        self._robot_model.set_title(
+        self._robot_view.set_title(
             {
                 self.tr("robot name"): lambda x: x,
                 self.tr("hit points"): lambda x: x,

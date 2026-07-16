@@ -9,10 +9,11 @@ Classes:
     BaseTableView: 基础表格视图
 """
 
-from typing import Any, Callable
+from typing import Any, Callable, cast
 
 from PySide6.QtCore import QSortFilterProxyModel, Signal
-from qfluentwidgets import TableView
+from PySide6.QtWidgets import QAbstractButton, QPushButton, QVBoxLayout
+from qfluentwidgets import TableView, isDarkTheme, setFont
 
 from gui.custom.fields import FieldMapping
 from gui.custom.models.base_model import BaseTableModel
@@ -28,6 +29,10 @@ class BaseTableView(TableView):
 
     sClicked = Signal(int, dict)  # 单击某行 (视图行号, 行数据)
     dClicked = Signal(int, dict)  # 双击某行 (视图行号, 行数据)
+
+    HEADER_QSS = "QHeaderView::section { border: none; font-size: 16px; font-weight: 800; }"
+    CORNER_QSS = "QTableView QTableCornerButton::section { background-color: transparent; border: none; }"
+    BUTTON_QSS = "QPushButton {{color: {color}; background-color: transparent; border: none; font-size: 24px; font-weight: 800;}}"
 
     def __init__(self, model: BaseTableModel, parent=None):
         """初始化表格视图，绑定模型并创建代理
@@ -47,6 +52,44 @@ class BaseTableView(TableView):
 
         self.setSortingEnabled(False)
 
+        # ========== 表头去边框 ==========
+        self.verticalHeader().setStyleSheet(self.HEADER_QSS)
+        self.horizontalHeader().setStyleSheet(self.HEADER_QSS)
+
+        # ========== 角落折叠按钮 ==========
+
+        self._corner_button = QPushButton("")
+        self.setCornerButton(self._corner_button)
+        self._corner_button.clicked.connect(self.hide_columns)
+
+    # ========== 列折叠切换 ==========
+
+    def hide_columns(self):
+        """切换第 1 列之后所有列的显示/隐藏，并更新按钮文字"""
+        if self._model.columnCount() <= 1:
+            return
+
+        for col_idx in range(1, self._model.columnCount()):
+            hidden = self.isColumnHidden(col_idx)
+            self.setColumnHidden(col_idx, not hidden)
+
+        if not hidden:
+            self._corner_button.setText("»")
+        else:
+            self._corner_button.setText("«")
+
+    def setCornerButton(self, corner: QAbstractButton):
+        """将按钮嵌入内置 corner widget 中
+
+        Args:
+            corner: 要嵌入的 QAbstractButton
+        """
+        corner = cast(QAbstractButton, self.findChild(QAbstractButton, "qt_tableview_cornerbutton"))
+        corner.setStyleSheet(self.CORNER_QSS)
+        layout = QVBoxLayout(corner)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.addWidget(self._corner_button)
+
     # ========== 模型绑定 ==========
 
     def set_model(self, model: BaseTableModel) -> None:
@@ -62,7 +105,7 @@ class BaseTableView(TableView):
         if old_sel is not None:
             try:
                 old_sel.selectionChanged.disconnect()
-            except (TypeError, RuntimeError):
+            except TypeError, RuntimeError:
                 pass
 
         self._model = model
@@ -105,6 +148,8 @@ class BaseTableView(TableView):
             data: 行数据列表，每项为 dict
         """
         self._model.set_data(data)
+        if self._model.columnCount() > 1:
+            self._corner_button.setText("«")
 
     def set_title(self, titles: dict[str, Callable | None]) -> None:
         """设置列标题与格式化函数
@@ -121,3 +166,10 @@ class BaseTableView(TableView):
             fields: FieldMapping 实例
         """
         self._model.set_field(fields)
+
+    def resetUI(self):
+        """根据当前主题刷新角落按钮颜色"""
+        if isDarkTheme():
+            self._corner_button.setStyleSheet(self.BUTTON_QSS.format(color="#CBCBCB"))
+        else:
+            self._corner_button.setStyleSheet(self.BUTTON_QSS.format(color="#606060"))

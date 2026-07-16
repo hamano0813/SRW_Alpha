@@ -18,15 +18,15 @@
 
 ```cmd
 ┌─────────────────────────────────────────────────────┐
-│                Python 层（__init__.py）               │
-│  纯 re-export: from ._codec import decode/encode     │
+│                Python 层（__init__.py）             │
+│  纯 re-export: from ._codec import decode/encode    │
 ├─────────────────────────────────────────────────────┤
-│                C 扩展层（_codec.pyd）                 │
+│                C 扩展层（_codec.pyd）               │
 │  decode() / encode() / encode_var()                 │
-│  Shift-JIS x0213 转换 + 扫描式文本替换               │
+│  Shift-JIS x0213 转换 + 扫描式文本替换              │
 ├─────────────────────────────────────────────────────┤
-│            C 内部 API（codec_decode / codec_encode）  │
-│           供 robot_raf.c 等子模块链接调用             │
+│          C 内部 API（codec_decode / codec_encode）  │
+│           供 robot_raf.c 等子模块链接调用           │
 └─────────────────────────────────────────────────────┘
 ```
 

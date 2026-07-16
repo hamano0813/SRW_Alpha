@@ -34,6 +34,9 @@ class MutableTableModel(BaseTableModel):
         Returns:
             是否成功
         """
+        if self._fields is None:
+            raise RuntimeError("未设定全局字段映射")
+
         if row < 0 or row > len(self._data):
             return False
         if data is None:
@@ -72,9 +75,7 @@ class MutableTableModel(BaseTableModel):
 
     # ========== Qt 模型接口重写 ==========
 
-    def data(
-        self, index: QModelIndex, role: int = Qt.ItemDataRole.DisplayRole
-    ) -> Any:
+    def data(self, index: QModelIndex, role: int = Qt.ItemDataRole.DisplayRole) -> Any:
         """按链路 列索引 → 表头 → key → row dict 取值
 
         Args:

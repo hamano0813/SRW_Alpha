@@ -54,7 +54,7 @@ typedef struct
     uint8_t mrng;                /* 0x1D マップ射程 */
     uint8_t mshow;               /* 0x1E マップ演出 */
     uint8_t encost;              /* 0x1F EN 消费 */
-    int8_t hitrate;              /* 0x20 命中 */
+    int8_t hit;                  /* 0x20 命中 */
     int8_t crt;                  /* 0x21 CT */
     uint8_t ammod;               /* 0x22 初期弹数 */
     uint8_t ammom;               /* 0x23 最大弹数 */
@@ -552,7 +552,7 @@ robot_raf_parse(PyObject *self, PyObject *args, PyObject *kwargs)
             PyDict_SetItemString(wd, "mrng", PyLong_FromLong(w->mrng));
             PyDict_SetItemString(wd, "mshow", PyLong_FromLong(w->mshow));
             PyDict_SetItemString(wd, "encost", PyLong_FromLong(w->encost));
-            PyDict_SetItemString(wd, "hitrate", PyLong_FromLong(w->hitrate));
+            PyDict_SetItemString(wd, "hit", PyLong_FromLong(w->hit));
             PyDict_SetItemString(wd, "crt", PyLong_FromLong(w->crt));
             PyDict_SetItemString(wd, "ammod", PyLong_FromLong(w->ammod));
             PyDict_SetItemString(wd, "ammom", PyLong_FromLong(w->ammom));
@@ -904,9 +904,9 @@ robot_raf_build(PyObject *self, PyObject *args, PyObject *kwargs)
                 wv = PyDict_GetItemString(pw, "encost");
                 if (wv)
                     w->encost = (uint8_t)PyLong_AsLong(wv);
-                wv = PyDict_GetItemString(pw, "hitrate");
+                wv = PyDict_GetItemString(pw, "hit");
                 if (wv)
-                    w->hitrate = (int8_t)PyLong_AsLong(wv);
+                    w->hit = (int8_t)PyLong_AsLong(wv);
                 wv = PyDict_GetItemString(pw, "crt");
                 if (wv)
                     w->crt = (int8_t)PyLong_AsLong(wv);

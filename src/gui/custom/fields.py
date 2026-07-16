@@ -116,8 +116,8 @@ class FieldMapping(QObject):
             self.tr("map weapon range"): "mrng",  # 方向指定型范围 / 方向指定型範囲
             self.tr("map weapon show"): "mshow",  # 地图武器演出 / マップ兵器演出
             self.tr("energy cost"): "encost",  # 消耗EN / 消費EN
-            self.tr("hit rate"): "hitrate",  # 命中 / 命中
-            self.tr("critical rate"): "crt",  # 会心补正 / クリティカル補正
+            self.tr("accuracy"): "hit",  # 命中 / 命中
+            self.tr("critical"): "crt",  # 会心补正 / クリティカル補正
             self.tr("default ammo"): "ammod",  # 初始弹药 / 初期弾数
             self.tr("maximum ammo"): "ammom",  # 最大弹药 / 最大弾数
             self.tr("air"): "air",  # 空 / 空

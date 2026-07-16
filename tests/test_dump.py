@@ -24,7 +24,7 @@ def main() -> int:
     rom = Rom()
 
     print(f"[INFO] 缓存目录: {rom.cache_dir}")
-    rom.read_cache()
+    rom.parse_cache()
 
     # ========== 导出为 TXT ==========
 

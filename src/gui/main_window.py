@@ -43,16 +43,19 @@ class MainWindow(FluentWindow):
             QIcon(QPixmap(f":/splash/splash{splash_idx}.png").scaled(*self._SIZE, mode=Qt.TransformationMode.SmoothTransformation)), self
         )
         self.splash.setIconSize(QSize(*self._SIZE))
-        self._rom =Rom()
-        self._field = FieldMapping()
 
+        self.init_core()
         self.init_ui()
 
-        self.home_frame.parseClicked.connect(self.load_data)
-        self.home_frame.serializeClicked.connect(self.save_data)
+        self.home_frame.parseClicked.connect(self.parse_data)
+        self.home_frame.buildClicked.connect(self.build_data)
 
         self.splash.finish()
         self.setResizeEnabled(True)
+
+    def init_core(self):
+        self._rom =Rom()
+        self._field = FieldMapping()
 
     def init_ui(self):
         """初始化界面：启动画面 → 注册导航页 → 加载语言"""
@@ -142,9 +145,9 @@ class MainWindow(FluentWindow):
         """更新导航栏中指定框架的显示标题"""
         self.navigationInterface.panel.items[frame].widget.itemWidget.setText(self.tr(title))  # type: ignore
 
-    def load_data(self):
-        self._rom.read_cache()
+    def parse_data(self):
+        self._rom.parse_cache()
         self.robot_frame.set_rom_data(self._rom.data)
 
-    def save_data(self):
+    def build_data(self):
         pass

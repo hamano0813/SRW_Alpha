@@ -50,13 +50,13 @@ class RobotFrame(QFrame):
 
         self.setLayout(layout)
 
-    # ========== 数据加载 ==========
+    # ========== 数据解析 ==========
 
     def set_rom_data(self, data: dict) -> None:
         """装入 ROM 的机体数据
 
         Args:
-            data: Rom().load_robots() 返回的 dict，
+            data: Rom().parse_robots() 返回的 dict，
                   包含 "robots" 列表
         """
         self._rom_data = data

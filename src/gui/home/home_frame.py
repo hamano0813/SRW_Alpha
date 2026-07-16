@@ -1,7 +1,7 @@
 """
 概览框架模块
 
-提供 ROM 编辑器的首页界面，包含加载/保存 ROM 按钮和 XML 项目树。
+提供 ROM 编辑器的首页界面，包含解包/重建 ROM 按钮和 XML 项目树。
 使用 dumpsxiso / mkpsxiso 工具进行 ROM 的解包和重建。
 
 Classes:
@@ -33,7 +33,7 @@ MKPSXISO = os.path.join(config.current_path, "tools", "mkpsxiso.exe")
 class HomeFrame(QFrame):
     """概览框架 - ROM 编辑器首页"""
     parseClicked = Signal()
-    serializeClicked = Signal()
+    buildClicked = Signal()
 
     def __init__(self, parent=None):
         """初始化首页布局：按钮栏、XML 项目树和滚动区域"""
@@ -44,10 +44,10 @@ class HomeFrame(QFrame):
 
         # 翻译关键字
         self._close_text = self.tr("Close")
-        self._reload_cache_text = self.tr("Extract ROM")
+        self._extract_rom_text = self.tr("Extract ROM")
         self._rebuild_rom_text = self.tr("Rebuild ROM")
-        self._parse_cache_text = self.tr("Read Cache")
-        self._serialize_text = self.tr("Write Cache")
+        self._parse_cache_text = self.tr("Parse Cache")
+        self._build_cache_text = self.tr("Build Cache")
 
         # MessageBox 翻译关键字
         self._msg_rom_path_not_set = self.tr("ROM Path Not Configured")
@@ -55,43 +55,43 @@ class HomeFrame(QFrame):
         self._msg_file_not_found = self.tr("File Not Found")
         self._msg_rom_not_exist = self.tr("ROM file does not exist:\n{}")
         self._msg_ok = self.tr("OK")
-        self._msg_save_path_not_set = self.tr("Save Path Not Configured")
-        self._msg_config_save_path = self.tr("Please configure the ROM save path in Settings first.")
-        self._msg_cache_not_found = self.tr("Cache project file not found. Please load a ROM first.")
-        self._msg_cache_dir_not_found = self.tr("Cache directory not found. Please load a ROM first.")
+        self._msg_target_rom_not_set = self.tr("Target ROM Not Configured")
+        self._msg_config_target_rom = self.tr("Please configure the target ROM path in Settings first.")
+        self._msg_cache_not_found = self.tr("Cache project file not found. Please extract a ROM first.")
+        self._msg_cache_dir_not_found = self.tr("Cache directory not found. Please extract a ROM first.")
         self._msg_cache_exists = self.tr("Cache already exists. Overwrite?")
         self._msg_cache_overwrite = self.tr("The cache directory already exists. Do you want to overwrite it?")
         self._msg_overwrite = self.tr("Overwrite")
         self._msg_cancel = self.tr("Cancel")
-        self._msg_serialize_title = self.tr("Serialize Data")
-        self._msg_serialize_confirm = self.tr("Are you sure you want to serialize modified data to cache files?")
+        self._msg_build_title = self.tr("Build Cache")
+        self._msg_build_confirm = self.tr("Are you sure you want to build modified data to cache files?")
         self._msg_file_exists = self.tr("File Already Exists")
         self._msg_overwrite_prompt = self.tr("The output file already exists:\n{}\n\nDo you want to overwrite it?")
         self._msg_yes = self.tr("Yes")
         self._msg_no = self.tr("No")
 
         # 按钮区域（右对齐）
-        self.load_button = PushButton(self._reload_cache_text, self)
-        self.save_button = PushButton(self._rebuild_rom_text, self)
+        self.extract_button = PushButton(self._extract_rom_text, self)
+        self.rebuild_button = PushButton(self._rebuild_rom_text, self)
         self.parse_button = PrimaryPushButton(self._parse_cache_text, self)
-        self.serialize_button = PrimaryPushButton(self._serialize_text, self)
-        self.load_button.setFixedSize(180, 40)
-        self.save_button.setFixedSize(180, 40)
+        self.build_button = PrimaryPushButton(self._build_cache_text, self)
+        self.extract_button.setFixedSize(180, 40)
+        self.rebuild_button.setFixedSize(180, 40)
         self.parse_button.setFixedSize(180, 40)
-        self.serialize_button.setFixedSize(180, 40)
+        self.build_button.setFixedSize(180, 40)
 
-        self.load_button.clicked.connect(self._on_load_rom)
-        self.save_button.clicked.connect(self._on_save_rom)
+        self.extract_button.clicked.connect(self._on_extract_rom)
+        self.rebuild_button.clicked.connect(self._on_rebuild_rom)
         self.parse_button.clicked.connect(self._on_parse)
-        self.serialize_button.clicked.connect(self._on_serialize)
+        self.build_button.clicked.connect(self._on_build)
 
         btn_layout = QHBoxLayout()
         btn_layout.setSpacing(16)
         btn_layout.addStretch()
-        btn_layout.addWidget(self.load_button)
-        btn_layout.addWidget(self.save_button)
+        btn_layout.addWidget(self.extract_button)
+        btn_layout.addWidget(self.rebuild_button)
         btn_layout.addWidget(self.parse_button)
-        btn_layout.addWidget(self.serialize_button)
+        btn_layout.addWidget(self.build_button)
 
         self._headers = [
             self.tr("File"),
@@ -158,11 +158,11 @@ class HomeFrame(QFrame):
         )
         return cache_path, xml_path
 
-    # ========== 加载 ROM ==========
+    # ========== 解包 ROM ==========
 
-    def _on_load_rom(self):
-        """加载 ROM —— 调用 dumpsxiso 解包到缓存目录"""
-        rom_path = config.option.load_path.value
+    def _on_extract_rom(self):
+        """解包 ROM —— 调用 dumpsxiso 解包到缓存目录"""
+        rom_path = config.option.source_rom.value
         if not rom_path:
             w = MessageBox(
                 self._msg_rom_path_not_set,
@@ -205,8 +205,10 @@ class HomeFrame(QFrame):
         if dialog.exec():
             self._on_parse()
 
+    # ========== 解析/构建缓存 ==========
+
     def _on_parse(self):
-        """解析缓存：加载 XML 目录树 + 解析所有二进制数据"""
+        """解析缓存：读取 XML 目录树 + 解析所有二进制数据"""
         cache_path, xml_path = self._cache_paths()
         if not os.path.isdir(cache_path):
             w = MessageBox(
@@ -222,27 +224,27 @@ class HomeFrame(QFrame):
         self.tree.load_xml(xml_path)
         self.parseClicked.emit()
 
-    def _on_serialize(self):
-        """序列化修改的数据到缓存文件"""
+    def _on_build(self):
+        """构建修改的数据到缓存文件"""
         w = MessageBox(
-            self._msg_serialize_title,
-            self._msg_serialize_confirm,
+            self._msg_build_title,
+            self._msg_build_confirm,
             self.window(),
         )
         w.yesButton.setText(self._msg_ok)
         w.cancelButton.setText(self._msg_cancel)
         if w.exec():
-            self.serializeClicked.emit()
+            self.buildClicked.emit()
 
-    # ========== 保存 ROM ==========
+    # ========== 重建 ROM ==========
 
-    def _on_save_rom(self):
-        """保存 ROM —— 调用 mkpsxiso 从缓存目录重建镜像"""
-        save_path = config.option.save_path.value
-        if not save_path:
+    def _on_rebuild_rom(self):
+        """重建 ROM —— 调用 mkpsxiso 从缓存目录重建镜像"""
+        target_rom = config.option.target_rom.value
+        if not target_rom:
             w = MessageBox(
-                self._msg_save_path_not_set,
-                self._msg_config_save_path,
+                self._msg_target_rom_not_set,
+                self._msg_config_target_rom,
                 self.window(),
             )
             w.exec()
@@ -260,7 +262,7 @@ class HomeFrame(QFrame):
             w.exec()
             return
 
-        output_bin = save_path
+        output_bin = target_rom
         output_cue = os.path.splitext(output_bin)[0] + ".cue"
 
         if os.path.exists(output_bin):
@@ -286,10 +288,10 @@ class HomeFrame(QFrame):
 
     def translateUI(self):
         """更新界面文本翻译"""
-        self._reload_cache_text = self.tr("Extract ROM")
+        self._extract_rom_text = self.tr("Extract ROM")
         self._rebuild_rom_text = self.tr("Rebuild ROM")
-        self._parse_cache_text = self.tr("Read Cache")
-        self._serialize_text = self.tr("Write Cache")
+        self._parse_cache_text = self.tr("Parse Cache")
+        self._build_cache_text = self.tr("Build Cache")
         self._close_text = self.tr("Close")
 
         self._msg_rom_path_not_set = self.tr("ROM Path Not Configured")
@@ -297,25 +299,25 @@ class HomeFrame(QFrame):
         self._msg_file_not_found = self.tr("File Not Found")
         self._msg_rom_not_exist = self.tr("ROM file does not exist:\n{}")
         self._msg_ok = self.tr("OK")
-        self._msg_save_path_not_set = self.tr("Save Path Not Configured")
-        self._msg_config_save_path = self.tr("Please configure the ROM save path in Settings first.")
-        self._msg_cache_not_found = self.tr("Cache project file not found. Please load a ROM first.")
-        self._msg_cache_dir_not_found = self.tr("Cache directory not found. Please load a ROM first.")
+        self._msg_target_rom_not_set = self.tr("Target ROM Not Configured")
+        self._msg_config_target_rom = self.tr("Please configure the target ROM path in Settings first.")
+        self._msg_cache_not_found = self.tr("Cache project file not found. Please extract a ROM first.")
+        self._msg_cache_dir_not_found = self.tr("Cache directory not found. Please extract a ROM first.")
         self._msg_cache_exists = self.tr("Cache already exists. Overwrite?")
         self._msg_cache_overwrite = self.tr("The cache directory already exists. Do you want to overwrite it?")
         self._msg_overwrite = self.tr("Overwrite")
         self._msg_cancel = self.tr("Cancel")
-        self._msg_serialize_title = self.tr("Serialize Data")
-        self._msg_serialize_confirm = self.tr("Are you sure you want to serialize modified data to cache files?")
+        self._msg_build_title = self.tr("Build Cache")
+        self._msg_build_confirm = self.tr("Are you sure you want to build modified data to cache files?")
         self._msg_file_exists = self.tr("File Already Exists")
         self._msg_overwrite_prompt = self.tr("The output file already exists:\n{}\n\nDo you want to overwrite it?")
         self._msg_yes = self.tr("Yes")
         self._msg_no = self.tr("No")
 
-        self.load_button.setText(self._reload_cache_text)
-        self.save_button.setText(self._rebuild_rom_text)
+        self.extract_button.setText(self._extract_rom_text)
+        self.rebuild_button.setText(self._rebuild_rom_text)
         self.parse_button.setText(self._parse_cache_text)
-        self.serialize_button.setText(self._serialize_text)
+        self.build_button.setText(self._build_cache_text)
 
         # 刷新树表头与分类映射（self.tr() 值随语言切换变化）
         self._headers = [
@@ -346,8 +348,8 @@ class HomeFrame(QFrame):
 
     def resetUI(self):
         """重置界面字体"""
-        setFont(self.load_button, 18)
-        setFont(self.save_button, 18)
+        setFont(self.extract_button, 18)
+        setFont(self.rebuild_button, 18)
         setFont(self.parse_button, 18)
-        setFont(self.serialize_button, 18)
+        setFont(self.build_button, 18)
         self.tree.resetUI()

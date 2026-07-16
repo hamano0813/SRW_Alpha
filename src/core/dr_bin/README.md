@@ -2,10 +2,13 @@
 
 ## 概述
 
+本模块提供 `DR.BIN` 文件的解析与构建功能。
 `DR.BIN` 是《超级机器人大战α》ROM 中的机体图鉴数据文件，
 由 449 个 LZSS 压缩块组成（1 个名册 + 448 条机体详情）。
 
-## 文件结构
+## 数据结构
+
+### 文件结构
 
 ```code
 0x0000~0x0707  指针表（450 × uint32 LE）
@@ -40,6 +43,24 @@
 描述文本以 `00 00` 作为行分隔符，文本末尾固定有 `00 00`
 尾随标记，最后以 `CD` 填充对齐到 48 的整数倍。
 
+## 实现架构
+
+```table
+┌─────────────────────────────────────────────────────────────┐
+│  第一层（LZSS）                                              │
+│  _entries_decompress() / _entries_compress()                 │
+│  原始 DR.BIN ↔ 解压后的连续块缓冲区                           │
+├─────────────────────────────────────────────────────────────┤
+│  第二层（字段映射）                                          │
+│  _destruct_dr() / _structure_dr()                           │
+│  codec.h 内部 API                                            │
+├─────────────────────────────────────────────────────────────┤
+│  codec 子模块（独立编译链接）                                  │
+│  codec_decode() — shift_jisx0213 → str + extra/trans        │
+│  codec_encode() — str + extra/trans → shift_jisx0213 bytes  │
+└─────────────────────────────────────────────────────────────┘
+```
+
 ## Python API
 
 ### `parse(data, extra=None, trans=None) -> dict`
@@ -73,6 +94,13 @@ from core.dr_bin import build
 raw = build(data)                                    # 往返重建
 raw = build(data, extra=HALF_TEXT_EXTRA)             # 带映射重建
 ```
+
+### 文本字段类型
+
+| 版本             | parse 返回 | build 接受              |
+| ---------------- | ---------- | ----------------------- |
+| 旧版（无 codec） | `bytes`    | `bytes`                 |
+| 新版（有 codec） | `str`      | `str`（推荐）或 `bytes` |
 
 ## 标识 (flags)
 

@@ -20,8 +20,8 @@
  * 区块指针[0x0B~0x0F] 未使用 → 0xFFFFFFFF
  *
  * Python API (via _sndata.pyd):
- *   parse(data: bytearray | bytes, extra=None) -> dict
- *   build(data: dict, extra=None) -> bytearray
+ *   parse(data: bytearray | bytes) -> dict
+ *   build(data: dict) -> bytearray
  */
 
 #define PY_SSIZE_T_CLEAN
@@ -136,7 +136,7 @@ parse_commands(const unsigned char *data, Py_ssize_t off, Py_ssize_t max_off)
 /* ===================================================================
  * Python API: parse
  *
- *   parse(data, extra=None) -> dict
+ *   parse(data) -> dict
  *
  * 返回:
  *   { "scenarios": [ { "block_pointers": [...], "commands": [...] }, ... ] }
@@ -145,12 +145,11 @@ parse_commands(const unsigned char *data, Py_ssize_t off, Py_ssize_t max_off)
 static PyObject *
 sndata_parse(PyObject *self, PyObject *args, PyObject *kwargs)
 {
-    static const char *kwlist[] = {"data", "extra", NULL};
+    static const char *kwlist[] = {"data", NULL};
     Py_buffer view;
-    PyObject *extra = Py_None;
 
-    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "y*|O", (char **)kwlist,
-                                     &view, &extra))
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "y*", (char **)kwlist,
+                                     &view))
         return NULL;
 
     /* 检查文件大小 */
@@ -365,7 +364,7 @@ write_commands(PyObject *cmd_list, unsigned char *buf,
 /* ===================================================================
  * Python API: build
  *
- *   build(data, extra=None) -> bytearray
+ *   build(data) -> bytearray
  *
  * 从 Python dict 重建 SNDATA.BIN 二进制。
  * 区块指针由指令列表动态生成，不依赖原始数据（无缓存/作弊）。
@@ -375,12 +374,11 @@ write_commands(PyObject *cmd_list, unsigned char *buf,
 static PyObject *
 sndata_build(PyObject *self, PyObject *args, PyObject *kwargs)
 {
-    static const char *kwlist[] = {"data", "extra", NULL};
+    static const char *kwlist[] = {"data", NULL};
     PyObject *py_dict;
-    PyObject *extra = Py_None;
 
-    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O!|O", (char **)kwlist,
-                                     &PyDict_Type, &py_dict, &extra))
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O!", (char **)kwlist,
+                                     &PyDict_Type, &py_dict))
         return NULL;
 
     /* 取 scenarios 列表 */

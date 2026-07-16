@@ -2,10 +2,13 @@
 
 ## 概述
 
+本模块提供 `DC.BIN` 文件的解析与构建功能。
 `DC.BIN` 是《超级机器人大战α》ROM 中的角色图鉴数据文件，
 由 350 个 LZSS 压缩块组成（1 个名册 + 349 条角色详情）。
 
-## 文件结构
+## 数据结构
+
+### 文件结构
 
 ```code
 0x0000~0x057B  指针表（351 × uint32 LE）
@@ -62,6 +65,24 @@
 > 0x30 槽（`00 00 CD CD...`），为游戏原始数据的冗余。
 > 重建时不会生成此空槽，文件功能不受影响。
 
+## 实现架构
+
+```table
+┌─────────────────────────────────────────────────────────────┐
+│  第一层（LZSS）                                              │
+│  _entries_decompress() / _entries_compress()                 │
+│  原始 DC.BIN ↔ 解压后的连续块缓冲区                           │
+├─────────────────────────────────────────────────────────────┤
+│  第二层（字段映射）                                          │
+│  _destruct_dc() / _structure_dc()                           │
+│  codec.h 内部 API                                            │
+├─────────────────────────────────────────────────────────────┤
+│  codec 子模块（独立编译链接）                                  │
+│  codec_decode() — shift_jisx0213 → str + extra/trans        │
+│  codec_encode() — str + extra/trans → shift_jisx0213 bytes  │
+└─────────────────────────────────────────────────────────────┘
+```
+
 ## Python API
 
 ### `parse(data, extra=None, trans=None) -> dict`
@@ -95,6 +116,13 @@ from core.dc_bin import build
 raw = build(data)                        # 往返重建
 raw = build(data, extra=HALF_TEXT_EXTRA) # 带映射重建
 ```
+
+### 文本字段类型
+
+| 版本             | parse 返回 | build 接受              |
+| ---------------- | ---------- | ----------------------- |
+| 旧版（无 codec） | `bytes`    | `bytes`                 |
+| 新版（有 codec） | `str`      | `str`（推荐）或 `bytes` |
 
 ## 标识字节 (flags)
 

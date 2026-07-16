@@ -26,6 +26,20 @@
 |------|------|------|------|
 | text | 0x00 | 0x100 | Shift-JIS x0213 编码文本，00 截断 |
 
+## 实现架构
+
+```table
+┌─────────────────────────────────────────────────────────────┐
+│  第一层（无压缩，直接 memcpy）                                  │
+│  parse / build 内联 memcpy                                   │
+│  原始 SNMSG.BIN ↔ 中间态 0x100 字节文本数组                    │
+├─────────────────────────────────────────────────────────────┤
+│  codec 子模块（独立编译链接）                                  │
+│  codec_decode() — shift_jisx0213 → str + extra/trans        │
+│  codec_encode() — str + extra/trans → shift_jisx0213 bytes  │
+└─────────────────────────────────────────────────────────────┘
+```
+
 ## Python API
 
 ### `parse(data, extra=None, trans=None) -> dict`
@@ -67,6 +81,13 @@ from core.snmsg_bin import build
 raw = build(data)                              # 往返重建
 raw = build(data, extra=SNMSG_TEXT_EXTRA)      # 带映射重建
 ```
+
+### 文本字段类型
+
+| 版本             | parse 返回 | build 接受              |
+| ---------------- | ---------- | ----------------------- |
+| 旧版（无 codec） | `bytes`    | `bytes`                 |
+| 新版（有 codec） | `str`      | `str`（推荐）或 `bytes` |
 
 ## 构建
 

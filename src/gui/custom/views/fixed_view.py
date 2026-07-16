@@ -30,10 +30,11 @@ class FixedTableView(BaseTableView):
 
         # ========== 三态排序 ==========
 
-        self.horizontalHeader().setSortIndicatorShown(True)
         self.horizontalHeader().sectionClicked.connect(self._on_header_clicked)
         self._sort_section = -1
         self._sort_order = Qt.SortOrder.AscendingOrder
+        self.horizontalHeader().setSortIndicatorShown(True)
+        self.horizontalHeader().setSortIndicator(-1, Qt.SortOrder.AscendingOrder)
 
         # ========== 行选择 ==========
 
@@ -60,7 +61,7 @@ class FixedTableView(BaseTableView):
         else:
             # 同一列第三次点击：清除排序
             self._proxy.sort(-1)
-            self.horizontalHeader().setSortIndicator(-1)
+            self.horizontalHeader().setSortIndicator(-1, Qt.SortOrder.AscendingOrder)
             self._sort_section = -1
             self._sort_order = Qt.SortOrder.AscendingOrder
 

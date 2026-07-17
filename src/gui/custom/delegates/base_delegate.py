@@ -8,12 +8,13 @@ Classes:
     DataWidgetDelegate: 单元格委托基类
 """
 
-from typing import Any
+from typing import Any, cast
 
-from PySide6.QtCore import Qt, QModelIndex
+from PySide6.QtCore import QModelIndex, Qt
 from PySide6.QtGui import QFont, QPainter
 from PySide6.QtWidgets import QStyledItemDelegate, QStyleOptionViewItem, QWidget
 
+from gui.custom.views.base_view import BaseTableView
 from gui.custom.widgets import DataWidget
 
 
@@ -82,11 +83,9 @@ class DataWidgetDelegate(QStyledItemDelegate):
 
     # ========== 绘制（委托给 View 默认的 TableItemDelegate） ==========
 
-    def paint(
-        self, painter: QPainter, option: QStyleOptionViewItem, index: QModelIndex
-    ) -> None:
+    def paint(self, painter: QPainter, option: QStyleOptionViewItem, index: QModelIndex) -> None:
         """委托 TableItemDelegate 绘制背景/高亮/选中和文字"""
-        view = self.parent()
+        view = cast(BaseTableView, self.parent())
         if view is not None and hasattr(view, "delegate") and view.delegate is not None:
             view.delegate.paint(painter, option, index)
         else:
@@ -94,9 +93,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
 
     # ========== Delegate 接口 ==========
 
-    def createEditor(
-        self, parent: QWidget, option, index: QModelIndex
-    ) -> QWidget | None:
+    def createEditor(self, parent: QWidget, option, index: QModelIndex) -> QWidget | None:
         """创建编辑器实例
 
         依据 widget_class 创建对应的 DataWidget。

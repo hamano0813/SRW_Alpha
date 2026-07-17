@@ -9,6 +9,7 @@ Classes:
     BaseTableView: 基础表格视图
 """
 
+from tkinter import VERTICAL
 from typing import Any, Callable, cast
 
 from PySide6.QtCore import QSortFilterProxyModel, Signal
@@ -31,7 +32,10 @@ class BaseTableView(TableView):
     dClicked = Signal(int, dict)  # 双击某行 (视图行号, 行数据)
     widthChanged = Signal(int, int)
 
-    HEADER_QSS = "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
+    HORIZONTAL_QSS = (
+        "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
+    )
+    VERTICAL_QSS = "QHeaderView::section { border: none; font-size: 13px; }"
     CORNER_QSS = "QTableView QTableCornerButton::section { background-color: transparent; border: none; }"
     BUTTON_QSS = "QPushButton {{color: {color}; background-color: transparent; border: none; font-size: 20px; font-weight: 800;}}"
 
@@ -54,8 +58,8 @@ class BaseTableView(TableView):
         self.setSortingEnabled(False)
 
         # ========== 表头去边框 ==========
-        self.verticalHeader().setStyleSheet(self.HEADER_QSS)
-        self.horizontalHeader().setStyleSheet(self.HEADER_QSS)
+        self.verticalHeader().setStyleSheet(self.VERTICAL_QSS)
+        self.horizontalHeader().setStyleSheet(self.HORIZONTAL_QSS)
 
         # ========== 角落折叠按钮 ==========
 
@@ -97,7 +101,10 @@ class BaseTableView(TableView):
         Args:
             corner: 要嵌入的 QAbstractButton
         """
-        corner = cast(QAbstractButton, self.findChild(QAbstractButton, "qt_tableview_cornerbutton"))
+        corner = cast(
+            QAbstractButton,
+            self.findChild(QAbstractButton, "qt_tableview_cornerbutton"),
+        )
         corner.setContentsMargins(0, 0, 0, 0)
         corner.setStyleSheet(self.CORNER_QSS)
         layout = QVBoxLayout(corner)

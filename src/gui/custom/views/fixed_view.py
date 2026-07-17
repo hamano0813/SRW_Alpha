@@ -30,7 +30,7 @@ class FixedTableView(BaseTableView):
             parent: 父 QWidget
         """
         model = FixedTableModel()
-        model.set_font({0: fonts.TEXT_FONT})
+        model.set_font({0: fonts.JP_FONT})
         super().__init__(model, parent)
 
         # ========== 三态排序 ==========

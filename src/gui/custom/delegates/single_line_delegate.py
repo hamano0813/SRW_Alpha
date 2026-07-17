@@ -9,7 +9,9 @@ Classes:
 
 from typing import Any
 
+from PySide6.QtCore import QModelIndex
 from PySide6.QtGui import QFont
+from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 
 from gui.custom.widgets import SingleLineEdit
 
@@ -29,6 +31,20 @@ class SingleLineDelegate(DataWidgetDelegate):
             parent: 父对象
         """
         super().__init__(parent=parent, font=font)
+
+    # ========== 编辑器几何 ==========
+
+    def updateEditorGeometry(self, editor: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> None:
+        """将编辑器位置设为单元格区域，上下各缩 1px 并锁定高度
+
+        Args:
+            editor: SingleLineEdit 实例
+            option: 样式选项
+            index: 单元格索引
+        """
+        rect = option.rect.adjusted(3, 2, 0, -2)
+        editor.setGeometry(rect)
+        editor.setFixedHeight(rect.height())
 
     # ========== 格式化 ==========
 

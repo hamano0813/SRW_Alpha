@@ -242,19 +242,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
         self._editing_index = None  # 编辑取消/关闭，恢复文字绘制
         super().destroyEditor(editor, index)
 
-    def updateEditorGeometry(self, editor: QWidget, option, index: QModelIndex) -> None:
-        """将编辑器位置设为单元格区域，上下各缩 1px 并锁定高度
-
-        Args:
-            editor: DataWidget 实例
-            option: 样式选项
-            index: 单元格索引
-        """
-        rect = option.rect.adjusted(3, 2, 0, -2)
-        editor.setGeometry(rect)
-        editor.setFixedHeight(rect.height())
-
-    # ========== 格式化（子类覆盖实现 ==========
+    # ========== 编辑器几何（子类覆盖实现 ==========
 
     # ========== 角色扩展点 ==========
 

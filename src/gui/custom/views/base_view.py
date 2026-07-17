@@ -29,6 +29,7 @@ class BaseTableView(TableView):
 
     sClicked = Signal(int, dict)  # 单击某行 (视图行号, 行数据)
     dClicked = Signal(int, dict)  # 双击某行 (视图行号, 行数据)
+    widthChanged = Signal(int, int)
 
     HEADER_QSS = "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
     CORNER_QSS = "QTableView QTableCornerButton::section { background-color: transparent; border: none; }"
@@ -77,6 +78,18 @@ class BaseTableView(TableView):
             self._corner_button.setText("»")
         else:
             self._corner_button.setText("«")
+        self.changed_hidden(hidden)
+
+    def changed_hidden(self, hidden: bool):
+        vh_width = self.verticalHeader().width()
+        cols_width = self.columnWidth(0)
+        if hidden:
+            for col_idx in range(1, self._model.columnCount()):
+                cols_width += self.columnWidth(col_idx)
+        bd_width = 5
+        target_width = vh_width + cols_width + bd_width
+        source_width = self.width()
+        self.widthChanged.emit(source_width, target_width)
 
     def setCornerButton(self, corner: QAbstractButton):
         """将按钮嵌入内置 corner widget 中

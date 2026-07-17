@@ -48,9 +48,9 @@ class UnitFrame(ProxyFrame):
         self._name_delegate = SingleLineDelegate(font=fonts.JP_FONT, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(0, self._name_delegate)
 
-        # 数值列（uint16_t 范围 0~65535）
+        # 数值列（uint16_t 范围 0~65535，纯输入无按钮）
         self._num_delegates = [
-            NumberSpinDelegate(value_range=(0, 65535), font=fonts.EN_FONT, parent=self._robot_view)
+            NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
             for _ in range(5)
         ]
         for col, delg in enumerate(self._num_delegates, start=1):

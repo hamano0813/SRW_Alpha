@@ -94,10 +94,10 @@ class NumberSpinBox(QSpinBox, DataWidget):
         self.setFixedHeight(28)
         self.setRange(self._min, self._max)
 
-        # ========== 行编辑：透明 + 右对齐 + 只读 ==========
+        # ========== 行编辑：透明 + 右对齐 ==========
 
         le = self.lineEdit()
-        le.setReadOnly(True)
+        le.setReadOnly(not self._show_buttons)  # 有按钮时禁止输入，无按钮时可键盘输入
         le.setFrame(False)
         le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         le.setStyleSheet("background: transparent; border: none; padding-right: 4px;")

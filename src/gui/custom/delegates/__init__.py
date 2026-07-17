@@ -6,12 +6,16 @@
 
 Classes:
     DataWidgetDelegate: 委托基类
+    LineTextDelegate: 首列单行文本委托
+    LineTextLastDelegate: 末列单行文本委托
 """
 
 from .base_delegate import DataWidgetDelegate
+from .last_text_delegate import LineTextLastDelegate
 from .line_text_delegate import LineTextDelegate
 
 __all__ = [
     "DataWidgetDelegate",
     "LineTextDelegate",
+    "LineTextLastDelegate",
 ]

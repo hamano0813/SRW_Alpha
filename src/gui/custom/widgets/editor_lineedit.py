@@ -1,36 +1,52 @@
 """
-表格编辑器专用 QLineEdit — 纯文字绘制，无边框/无焦点横线
+表格编辑器 — 继承 QLineEdit + DataWidget，自绘透明背景
 
-继承链：
-    EditorLineEdit     — 基类（透明背景 + 四角圆角）
-    FirstColLineEdit   — 首列（左圆右直）
-    MidColLineEdit     — 中间列（四角直角）
-    LastColLineEdit    — 末列（左直右圆）
+集 QLineEdit 的文本编辑与 DataWidget 的数据协议于一身，
+不再需要额外的 LineTextWidget 包装层。
+适用于表格任意列（形状由表格 delegate 的背景圆角决定）。
 
 Classes:
-    EditorLineEdit: 表格编辑器基类
-    FirstColLineEdit: 首列专用编辑器
-    MidColLineEdit: 中间列专用编辑器
-    LastColLineEdit: 末列专用编辑器
+    EditorLineEdit: 表格编辑器
 """
 
+from typing import Any
+
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QColor
+from PySide6.QtGui import QColor, QFont
 from PySide6.QtWidgets import QLineEdit
 from qfluentwidgets import isDarkTheme
 
+from .data_widget import DataWidget
 
-class EditorLineEdit(QLineEdit):
-    """表格编辑器基类 — 透明背景 + 纯文字绘制
+
+class EditorLineEdit(QLineEdit, DataWidget):
+    """表格编辑器 — 透明背景 + 纯文字绘制 + DataWidget 数据协议
 
     无边框、无焦点指示线，仅通过 palette 控制文字颜色。
+    获得焦点时光标自动定位到末尾。
     """
 
     def __init__(self, parent=None):
-        super().__init__(parent)
+        """初始化表格编辑器
+
+        Args:
+            parent: 父 QWidget
+        """
+        QLineEdit.__init__(self, parent)
+        DataWidget.__init__(self, parent)
 
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
+        self.setStyleSheet(
+            "QLineEdit { padding-left: 14px; padding-top: 1px; padding-bottom: 1px; background: transparent; }"
+        )
+
+        self.textChanged.connect(self._on_text_changed)
+
+    def focusInEvent(self, e):
+        """获得焦点时光标定位到末尾，不选中全文"""
+        super().focusInEvent(e)
+        self.setCursorPosition(len(self.text()))
 
     # ========== 主题色 ==========
 
@@ -47,50 +63,46 @@ class EditorLineEdit(QLineEdit):
         self.setPalette(palette)
         QLineEdit.paintEvent(self, e)
 
+    # ========== DataWidget 数据协议 ==========
 
-class FirstColLineEdit(EditorLineEdit):
-    """首列编辑器 — 左圆右直"""
+    def set_value(self, value) -> None:
+        """存入文本值并刷新显示
 
-    def focusInEvent(self, e):
-        """获得焦点时光标定位到末尾，不选中全文"""
-        super().focusInEvent(e)
+        Args:
+            value: 字符串文本
+        """
+        DataWidget.set_value(self, value)
+
+    def get_value(self) -> str:
+        """返回当前文本值"""
+        return self._value if self._value is not None else ""
+
+    def format_value(self) -> None:
+        """将 _value 同步到显示，光标定位到末尾"""
+        self.blockSignals(True)
+        self.setText(str(self._value) if self._value is not None else "")
         self.setCursorPosition(len(self.text()))
+        self.blockSignals(False)
 
-    def paintEvent(self, e):
-        """仅设置文字颜色，形状由表格 delegate 的背景圆角决定"""
-        palette = self.palette()
-        palette.setColor(palette.ColorRole.Text, self._text_color())
-        self.setPalette(palette)
-        QLineEdit.paintEvent(self, e)
+    def apply_font(self, font: QFont) -> None:
+        """将字体应用到编辑器
 
+        Args:
+            font: 要应用的 QFont
+        """
+        self.setFont(font)
 
-class LastColLineEdit(EditorLineEdit):
-    """末列编辑器 — 左直右圆"""
+    def validate(self, value) -> bool:
+        """校验值是否为字符串类型"""
+        return isinstance(value, str)
 
-    def focusInEvent(self, e):
-        """获得焦点时光标定位到末尾，不选中全文"""
-        super().focusInEvent(e)
-        self.setCursorPosition(len(self.text()))
+    def format_display(self, value) -> str:
+        """将值格式化为显示文本"""
+        return str(value) if value is not None else ""
 
-    def paintEvent(self, e):
-        """仅设置文字颜色，形状由表格 delegate 的背景圆角决定"""
-        palette = self.palette()
-        palette.setColor(palette.ColorRole.Text, self._text_color())
-        self.setPalette(palette)
-        QLineEdit.paintEvent(self, e)
+    # ========== 内部槽 ==========
 
-
-class MidColLineEdit(EditorLineEdit):
-    """中间列编辑器 — 四角直角"""
-
-    def focusInEvent(self, e):
-        """获得焦点时光标定位到末尾，不选中全文"""
-        super().focusInEvent(e)
-        self.setCursorPosition(len(self.text()))
-
-    def paintEvent(self, e):
-        """仅设置文字颜色，形状由表格 delegate 的背景圆角决定"""
-        palette = self.palette()
-        palette.setColor(palette.ColorRole.Text, self._text_color())
-        self.setPalette(palette)
-        QLineEdit.paintEvent(self, e)
+    def _on_text_changed(self, text: str) -> None:
+        """用户输入时同步 _value 并发射 dataChanged"""
+        self._value = text
+        self.dataChanged.emit(self._value)

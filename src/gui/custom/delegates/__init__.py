@@ -6,22 +6,16 @@
 
 Classes:
     DataWidgetDelegate: 委托基类
-    LineTextFirstDelegate: 首列单行文本委托
-    LineTextMidDelegate: 中间列单行文本委托
-    LineTextLastDelegate: 末列单行文本委托
+    LineTextDelegate: 单行文本列委托
     MapSpinDelegate: 数值微调列委托
 """
 
 from .base_delegate import DataWidgetDelegate
-from .last_text_delegate import LineTextLastDelegate
-from .line_text_delegate import LineTextFirstDelegate
-from .line_text_mid_delegate import LineTextMidDelegate
+from .line_text_delegate import LineTextDelegate
 from .map_spin_delegate import MapSpinDelegate
 
 __all__ = [
     "DataWidgetDelegate",
-    "LineTextFirstDelegate",
-    "LineTextMidDelegate",
-    "LineTextLastDelegate",
+    "LineTextDelegate",
     "MapSpinDelegate",
 ]

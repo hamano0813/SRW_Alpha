@@ -5,23 +5,19 @@
 
 Classes:
     DataWidget: 数据编辑器基类
-    LineTextFirstWidget: 首列单行文本编辑器
-    LineTextMidWidget: 中间列单行文本编辑器
-    LineTextLastWidget: 末列单行文本编辑器
+    EditorLineEdit: 表格编辑器（QLineEdit + DataWidget 多重继承）
     MapSpinWidget: 数值微调编辑器
     MappingSpinBox: 映射微调框
 """
 
 from .data_widget import DataWidget
-from .linetext_widget import LineTextFirstWidget, LineTextMidWidget, LineTextLastWidget
+from .editor_lineedit import EditorLineEdit
 from .mapping_spinbox import MappingSpinBox
 from .value_widget import MapSpinWidget
 
 __all__ = [
     "DataWidget",
-    "LineTextFirstWidget",
-    "LineTextMidWidget",
-    "LineTextLastWidget",
+    "EditorLineEdit",
     "MapSpinWidget",
     "MappingSpinBox",
 ]

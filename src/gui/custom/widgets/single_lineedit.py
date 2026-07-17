@@ -37,27 +37,33 @@ class SingleLineEdit(QLineEdit, DataWidget):
 
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
-        self.setStyleSheet(
-            "QLineEdit { padding-left: 14px; padding-top: 1px; padding-bottom: 1px; background: transparent; }"
-        )
+        self.setStyleSheet("background: transparent;")
 
         self.textChanged.connect(self._on_text_changed)
 
     def focusInEvent(self, e):
-        """获得焦点时光标定位到末尾，不选中全文"""
+        """获得焦点时光标定位到末尾，不选中全文
+
+        Args:
+            e: 焦点事件
+        """
         super().focusInEvent(e)
         self.setCursorPosition(len(self.text()))
 
     # ========== 主题色 ==========
 
     def _text_color(self) -> QColor:
-        """文字颜色"""
+        """根据当前主题返回对应的文字颜色"""
         return QColor(255, 255, 255) if isDarkTheme() else QColor(0, 0, 0)
 
     # ========== 绘制 ==========
 
     def paintEvent(self, e):
-        """仅设置文字颜色，由 QLineEdit 完成透明背景绘制"""
+        """仅设置文字颜色，由 QLineEdit 完成透明背景绘制
+
+        Args:
+            e: 绘制事件
+        """
         palette = self.palette()
         palette.setColor(palette.ColorRole.Text, self._text_color())
         self.setPalette(palette)
@@ -93,11 +99,25 @@ class SingleLineEdit(QLineEdit, DataWidget):
         self.setFont(font)
 
     def is_valid(self, value) -> bool:
-        """校验值是否为字符串类型"""
+        """校验值是否为字符串类型
+
+        Args:
+            value: 待校验的值
+
+        Returns:
+            True 为字符串类型
+        """
         return isinstance(value, str)
 
     def format_display(self, value) -> str:
-        """将值格式化为显示文本"""
+        """将值格式化为显示文本
+
+        Args:
+            value: 原始值
+
+        Returns:
+            显示文本
+        """
         return str(value) if value is not None else ""
 
     # ========== 内部槽 ==========

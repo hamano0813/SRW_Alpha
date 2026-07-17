@@ -65,7 +65,13 @@ class MappingSpinDelegate(DataWidgetDelegate):
         return 0
 
     def updateEditorGeometry(self, editor, option, index) -> None:
-        """微调编辑器几何，右扩 1px 使文字视觉居中"""
+        """微调编辑器几何，右扩 1px 使文字视觉居中
+
+        Args:
+            editor: MappingSpinBox 实例
+            option: 样式选项
+            index: 单元格索引
+        """
         rect = option.rect.adjusted(1, 0, 0, 0)
         editor.setGeometry(rect)
         editor.setFixedHeight(rect.height())

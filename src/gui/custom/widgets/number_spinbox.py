@@ -28,12 +28,22 @@ class _ArrowButton(QToolButton):
         self.setCursor(Qt.CursorShape.PointingHandCursor)
 
     def mousePressEvent(self, e):
+        """根据按钮方向调用 stepUp 或 stepDown
+
+        Args:
+            e: 鼠标事件
+        """
         if self._right:
             self.parent().stepUp()
         else:
             self.parent().stepDown()
 
     def paintEvent(self, e):
+        """自绘三角形箭头
+
+        Args:
+            e: 绘制事件
+        """
         painter = QPainter(self)
         painter.setRenderHints(QPainter.RenderHint.Antialiasing)
         painter.setPen(Qt.PenStyle.NoPen)
@@ -105,7 +115,7 @@ class NumberSpinBox(QSpinBox, DataWidget):
             le.setAlignment(Qt.AlignmentFlag.AlignCenter)
         else:
             le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-        le.setStyleSheet("background: transparent; border: none; padding-right: 4px;")
+        le.setStyleSheet("background: transparent; border: none; ")
         if self._show_buttons:
             # 按钮模式（只读）：禁止文字选中
             le.selectionChanged.connect(lambda: le.setSelection(0, 0))
@@ -122,7 +132,11 @@ class NumberSpinBox(QSpinBox, DataWidget):
     # ========== 焦点 ==========
 
     def focusInEvent(self, e):
-        """获得焦点：按钮模式走默认，键盘模式光标移到末尾"""
+        """获得焦点：按钮模式走默认，键盘模式光标移到末尾
+
+        Args:
+            e: 焦点事件
+        """
         super().focusInEvent(e)
         if not self._show_buttons:
             self.lineEdit().setCursorPosition(len(self.lineEdit().text()))
@@ -130,7 +144,11 @@ class NumberSpinBox(QSpinBox, DataWidget):
     # ========== 布局 ==========
 
     def resizeEvent(self, e):
-        """手动定位左右按钮"""
+        """手动定位左右按钮
+
+        Args:
+            e: 调整大小事件
+        """
         super().resizeEvent(e)
         if self._btn_left and self._btn_right:
             bw = self._btn_left.width()
@@ -168,7 +186,14 @@ class NumberSpinBox(QSpinBox, DataWidget):
         self.setFont(font)
 
     def is_valid(self, value) -> bool:
-        """校验值是否为整数且在范围内"""
+        """校验值是否为整数且在范围内
+
+        Args:
+            value: 待校验的值
+
+        Returns:
+            True 为合法整数且在 [_min, _max] 内
+        """
         if value is None:
             return False
         try:
@@ -181,6 +206,12 @@ class NumberSpinBox(QSpinBox, DataWidget):
         """将值格式化为显示文本
 
         当 show_sign=True 时，正值显示 "+N" 格式。
+
+        Args:
+            value: 原始值
+
+        Returns:
+            显示文本
         """
         if value is None:
             return ""

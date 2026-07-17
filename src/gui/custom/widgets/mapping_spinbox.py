@@ -29,12 +29,22 @@ class _ArrowButton(QToolButton):
         self.setCursor(Qt.CursorShape.PointingHandCursor)
 
     def mousePressEvent(self, e):
+        """根据按钮方向调用 stepUp 或 stepDown
+
+        Args:
+            e: 鼠标事件
+        """
         if self._right:
             self.parent().stepUp()
         else:
             self.parent().stepDown()
 
     def paintEvent(self, e):
+        """自绘三角形箭头
+
+        Args:
+            e: 绘制事件
+        """
         painter = QPainter(self)
         painter.setRenderHints(QPainter.RenderHint.Antialiasing)
         painter.setPen(Qt.PenStyle.NoPen)
@@ -111,7 +121,11 @@ class MappingSpinBox(QSpinBox, DataWidget):
         self.valueChanged.connect(self._on_value_changed)
 
     def resizeEvent(self, e):
-        """手动定位左右按钮"""
+        """手动定位左右按钮
+
+        Args:
+            e: 调整大小事件
+        """
         super().resizeEvent(e)
         bw = self._btn_left.width()
         y = (self.height() - self._btn_left.height()) // 2
@@ -121,26 +135,57 @@ class MappingSpinBox(QSpinBox, DataWidget):
     # ========== 映射接口 ==========
 
     def set_mapping(self, mapping: dict[int, str]) -> None:
+        """更新映射表并调整范围
+
+        Args:
+            mapping: {数值: 显示文本} 字典
+        """
         self._mapping = mapping
         self._sorted_keys = sorted(self._mapping.keys())
         if self._sorted_keys:
             self.setRange(self._sorted_keys[0], self._sorted_keys[-1])
 
     def mapping(self) -> dict[int, str]:
+        """获取当前映射表
+
+        Returns:
+            {数值: 显示文本} 字典
+        """
         return self._mapping
 
     # ========== 值 ↔ 文本转换 ==========
 
     def textFromValue(self, value: int) -> str:
+        """数值 → 显示文本
+
+        Args:
+            value: 数值
+
+        Returns:
+            对应的显示文本
+        """
         return self._mapping.get(value, str(value))
 
     def valueFromText(self, text: str) -> int:
+        """显示文本 → 数值
+
+        Args:
+            text: 显示文本
+
+        Returns:
+            对应的数值
+        """
         for k, v in self._mapping.items():
             if v == text:
                 return k
         return self.value()
 
     def stepBy(self, steps: int) -> None:
+        """沿 mapping 的 key 顺序步进，不超出边界
+
+        Args:
+            steps: 步数（正向/负向）
+        """
         if not self._sorted_keys:
             super().stepBy(steps)
             return
@@ -153,6 +198,11 @@ class MappingSpinBox(QSpinBox, DataWidget):
         self.setValue(self._sorted_keys[new_idx])
 
     def stepEnabled(self):
+        """允许步进方向 — 在边界处禁用对应方向
+
+        Returns:
+            StepEnabledFlag 组合
+        """
         if not self._sorted_keys:
             return super().stepEnabled()
         current = self.value()
@@ -197,7 +247,14 @@ class MappingSpinBox(QSpinBox, DataWidget):
         self.setFont(font)
 
     def is_valid(self, value) -> bool:
-        """校验值是否为整数或可转为整数"""
+        """校验值是否为整数或可转为整数
+
+        Args:
+            value: 待校验的值
+
+        Returns:
+            True 为可转为整数
+        """
         try:
             int(value)
             return True
@@ -205,7 +262,14 @@ class MappingSpinBox(QSpinBox, DataWidget):
             return False
 
     def format_display(self, value) -> str:
-        """将数值格式化为显示文本"""
+        """将数值格式化为显示文本
+
+        Args:
+            value: 原始值
+
+        Returns:
+            映射后的显示文本
+        """
         if value is None:
             return ""
         try:
@@ -214,7 +278,14 @@ class MappingSpinBox(QSpinBox, DataWidget):
             return str(value)
 
     def parse_display(self, text: str) -> Any:
-        """将显示文本解析为数值"""
+        """将显示文本解析为数值
+
+        Args:
+            text: 显示文本
+
+        Returns:
+            对应的数值
+        """
         return self.valueFromText(text)
 
     # ========== 内部槽 ==========

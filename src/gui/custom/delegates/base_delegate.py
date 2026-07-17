@@ -242,7 +242,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
         self._editing_index = None  # 编辑取消/关闭，恢复文字绘制
         super().destroyEditor(editor, index)
 
-    # ========== 编辑器几何（子类覆盖实现 ==========
+    # ========== 编辑器几何（子类覆盖实现） ==========
 
     # ========== 角色扩展点 ==========
 

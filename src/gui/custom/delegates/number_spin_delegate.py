@@ -58,8 +58,19 @@ class NumberSpinDelegate(DataWidgetDelegate):
     # ========== 编辑器几何 ==========
 
     def updateEditorGeometry(self, editor: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> None:
-        """将编辑器位置设为单元格区域，上下清零"""
-        rect = option.rect.adjusted(3, 0, 0, 0)
+        """将编辑器位置设为单元格区域，上下清零
+
+        有按钮时留出左侧间隙，无按钮时扩大编辑区域。
+
+        Args:
+            editor: NumberSpinBox 实例
+            option: 样式选项
+            index: 单元格索引
+        """
+        if self._show_buttons:
+            rect = option.rect.adjusted(2, 0, 0, 0)
+        else:
+            rect = option.rect.adjusted(0, 0, -15, 0)
         editor.setGeometry(rect)
         editor.setFixedHeight(rect.height())
 

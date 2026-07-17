@@ -25,6 +25,7 @@ from qfluentwidgets import (
 )
 
 import config
+import utils
 from core.rom import Rom
 from gui import HomeFrame, OptionFrame, RobotFrame
 from gui.custom.fields import FieldMapping
@@ -35,7 +36,7 @@ from .custom import CustomIcon
 class MainWindow(FluentWindow):
     """主窗口类 - 集成导航栏、启动画面和界面刷新"""
 
-    _SIZE = (1280, 960)
+    _SIZE = utils.best_resolution()
 
     def __init__(self, parent=None):
         super().__init__(parent)

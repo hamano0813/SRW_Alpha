@@ -53,6 +53,16 @@ class LanguageCard(ComboBoxSettingCard):
         texts: list | None = None,
         parent=None,
     ):
+        """初始化语言设置卡片，用自定义 LanguageCombo 替换默认组合框
+
+        Args:
+            configItem: 语言配置项
+            icon: 卡片图标
+            title: 卡片标题
+            content: 副标题文本
+            texts: 语言选项文本列表
+            parent: 父 QWidget
+        """
         super().__init__(configItem, icon, title, content, texts, parent)
 
         self.comboBox.currentIndexChanged.disconnect(self._onCurrentIndexChanged)

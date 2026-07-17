@@ -207,6 +207,8 @@ class HomeFrame(QFrame):
 
     # ========== 解析/构建缓存 ==========
 
+    # ========== 解析缓存 ==========
+
     def _on_parse(self):
         """解析缓存：读取 XML 目录树 + 解析所有二进制数据"""
         cache_path, xml_path = self._cache_paths()
@@ -224,6 +226,8 @@ class HomeFrame(QFrame):
         self.tree.load_xml(xml_path)
         self.parseClicked.emit()
 
+    # ========== 构建缓存 ==========
+
     def _on_build(self):
         """构建修改的数据到缓存文件"""
         w = MessageBox(
@@ -239,7 +243,9 @@ class HomeFrame(QFrame):
     # ========== 重建 ROM ==========
 
     def _on_rebuild_rom(self):
-        """重建 ROM —— 调用 mkpsxiso 从缓存目录重建镜像"""
+        """重建 ROM —— 调用 mkpsxiso 从缓存目录重建镜像
+        """
+
         target_rom = config.option.target_rom.value
         if not target_rom:
             w = MessageBox(

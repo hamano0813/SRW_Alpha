@@ -56,6 +56,7 @@ class MainWindow(FluentWindow):
         self.setResizeEnabled(True)
 
     def init_core(self):
+        """初始化核心数据：ROM 实例和字段映射"""
         self._rom = Rom()
         self._field = FieldMapping()
 
@@ -148,8 +149,10 @@ class MainWindow(FluentWindow):
         self.navigationInterface.panel.items[frame].widget.itemWidget.setText(self.tr(title))  # type: ignore
 
     def parse_data(self):
+        """解析缓存数据并设置到机器人编辑器"""
         self._rom.parse_cache()
         self.robot_frame.set_rom_data(self._rom.data)
 
     def build_data(self):
+        """构建缓存数据（暂未实现）"""
         pass

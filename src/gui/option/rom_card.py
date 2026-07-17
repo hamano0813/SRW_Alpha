@@ -33,11 +33,13 @@ import config
 
 
 class CardType(Enum):
+    """卡片类型枚举 — SOURCE（源 ROM）/ TARGET（目标 ROM）"""
     SOURCE = 0
     TARGET = 1
 
 
 class CustomCard:
+    """自定义卡片基类 - 提供 translateUI 空实现供子类覆盖"""
     def translateUI(self):
         pass
 
@@ -48,6 +50,14 @@ class FileSettingCard(PushSettingCard, CustomCard):
     pathChanged = Signal()
 
     def __init__(self, path: ConfigItem, title: str, ctype: CardType, parent=None):
+        """初始化文件路径设置卡片
+
+        Args:
+            path: 路径配置项
+            title: 卡片标题
+            ctype: 卡片类型（源/目标）
+            parent: 父 QWidget
+        """
         super().__init__("", "", "", "", parent)
         self._select_file = self.tr("Select File")
 
@@ -105,7 +115,15 @@ class FileSettingCard(PushSettingCard, CustomCard):
 
 
 class CleanSettingCard(SwitchSettingCard, CustomCard):
+    """缓存清理设置卡片 - 重建 ROM 后自动清理缓存的开关"""
+
     def __init__(self, configItem: ConfigItem, parent=None):
+        """初始化缓存清理设置卡片
+
+        Args:
+            configItem: 自动清理配置项
+            parent: 父 QWidget
+        """
         super().__init__("", "", "", configItem, parent)
         self.switchButton.setOnText("")
         self.switchButton.setOffText("")
@@ -114,15 +132,22 @@ class CleanSettingCard(SwitchSettingCard, CustomCard):
         self.contentLabel.setHidden(False)
 
     def translateUI(self):
+        """更新界面文本翻译"""
         self.titleLabel.setText(self.tr("Auto clear cache"))
         self.contentLabel.setText(self.tr("Clear cache after ROM is rebuilt"))
 
     def setValue(self, isChecked: bool):
+        """设置开关值并保存到配置
+
+        Args:
+            isChecked: 是否开启自动清理
+        """
         if self.configItem:
             qconfig.set(self.configItem, isChecked)
         self.switchButton.setChecked(isChecked)
 
     def paintEvent(self, e):
+        """覆盖父类绘制事件 - 无额外绘制"""
         pass
 
 
@@ -130,6 +155,12 @@ class RomCard(ExpandGroupSettingCard):
     """ROM 文件组设置卡片 - 可展开的设置组"""
 
     def __init__(self, icon: Union[str, QIcon, FluentIconBase], parent=None):
+        """初始化 ROM 文件组设置卡片
+
+        Args:
+            icon: 卡片图标
+            parent: 父 QWidget
+        """
         super().__init__(icon, self.tr("ROM Settings"), self.tr("Configure the ROM settings"), parent)  # type: ignore
 
         self._source_card = FileSettingCard(config.option.source_rom, self.tr("Source ROM"), CardType.SOURCE, self)

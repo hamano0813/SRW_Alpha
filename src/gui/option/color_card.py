@@ -15,6 +15,12 @@ class ColorCard(CustomColorSettingCard):
     """主题颜色设置卡片 - 支持国际化的颜色选择器"""
 
     def __init__(self, *args, **kwargs):
+        """初始化主题颜色设置卡片
+
+        Args:
+            *args: 透传父类参数
+            **kwargs: 透传父类关键字参数
+        """
         super().__init__(*args, **kwargs)
         self._choose_color = self.tr("Choose Color")
         self._ok = self.tr("OK")

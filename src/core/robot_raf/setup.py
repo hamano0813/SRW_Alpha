@@ -1,3 +1,9 @@
+"""
+ROBOT.RAF C 扩展构建配置
+
+编译 _robot_raf.pyd，静态链接 lzss 和 codec 子模块。
+"""
+
 from setuptools import Extension, setup
 
 module = Extension(

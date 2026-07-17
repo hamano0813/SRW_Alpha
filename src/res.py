@@ -1,3 +1,12 @@
+"""
+Qt 资源编译代码（自动生成）
+
+由 The Resource Compiler for Qt 6.11.1 自动生成，
+存放嵌入的图标、启动画面等资源二进制数据。
+
+WARNING: 此文件由 Qt 资源编译器自动生成，手动修改将会丢失。
+"""
+
 # Resource object code (Python 3)
 # Created by: object code
 # Created by: The Resource Compiler for Qt version 6.11.1

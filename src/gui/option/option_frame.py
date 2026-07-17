@@ -35,6 +35,11 @@ class OptionFrame(QFrame):
     themeChanged = Signal()
 
     def __init__(self, parent=None):
+        """初始化选项设置框架
+
+        Args:
+            parent: 父 QWidget
+        """
         super().__init__(parent)
         self.setObjectName("OptionFrame")
 

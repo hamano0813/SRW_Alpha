@@ -23,7 +23,7 @@ from core.lzss import compress, decompress
 
 RES_BIN = os.path.join(os.path.dirname(__file__), "..", "res", "bin")
 
-# ── 文件格式定义 ──────────────────────────────────────────────────
+# ========== 文件格式定义 ==========
 
 # "raf"  = ROBOT.RAF：count=块数，指针相对数据区偏移
 # "bin"  = .BIN文件  ：count=指针表字节数，指针为文件绝对偏移
@@ -52,7 +52,7 @@ _FILE_SPECS = {
 }
 
 
-# ── 解析 ──────────────────────────────────────────────────────────
+# ========== 解析 ==========
 
 
 def parse_blocks(data: bytes, fmt: str) -> list[bytes]:
@@ -127,7 +127,7 @@ def rebuild_file(blocks: list[bytes], fmt: str) -> bytes:
         return header + b"".join(blocks)
 
 
-# ── 测试 ──────────────────────────────────────────────────────────
+# ========== 测试 ==========
 
 
 def test_file(name: str, spec: dict) -> bool:

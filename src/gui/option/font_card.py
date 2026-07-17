@@ -40,6 +40,13 @@ class FamilyCombo(ComboBox):
     }
 
     def __init__(self, font_mapping: dict[str, str], writing_system: QFontDatabase.WritingSystem, parent=None):
+        """初始化字体系列选择组合框
+
+        Args:
+            font_mapping: 字体显示名→实际名字典
+            writing_system: 书写系统（中文/日文等）
+            parent: 父 QWidget
+        """
         super().__init__(parent)
         self.db = QFontDatabase()
         self.writing_system = writing_system
@@ -114,6 +121,15 @@ class FontFamilyCard(SettingCard):
         writing_system: QFontDatabase.WritingSystem,
         parent=None,
     ):
+        """初始化字体系列设置卡片
+
+        Args:
+            font_config: 字体配置项
+            title: 卡片标题
+            font_mapping: 字体显示名→实际名字典
+            writing_system: 书写系统
+            parent: 父 QWidget
+        """
         super().__init__("", title, parent=parent)
         self.font_config = font_config
         self.familyCombo = FamilyCombo(font_mapping, writing_system, self)
@@ -138,6 +154,7 @@ class FontFamilyCard(SettingCard):
         self.familyCombo.resetUI()
 
     def paintEvent(self, e):
+        """覆盖父类绘制事件 - 无额外绘制"""
         pass
 
 
@@ -157,6 +174,12 @@ class FontCard(ExpandGroupSettingCard):
     familyChanged = Signal()
 
     def __init__(self, icon: Union[str, QIcon, FluentIconBase], parent=None):
+        """初始化字体设置组卡片
+
+        Args:
+            icon: 卡片图标
+            parent: 父 QWidget
+        """
         super().__init__(icon, self.tr("Font Settings"), self.tr("Configure the font settings"), parent)  # type: ignore
 
         self.font_mapping = {}

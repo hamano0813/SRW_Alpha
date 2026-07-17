@@ -1,3 +1,9 @@
+"""
+Codec C 扩展构建配置
+
+编译 _codec.pyd，Shift-JIS X0213 编解码器，无外部依赖。
+"""
+
 from setuptools import Extension, setup
 
 module = Extension(

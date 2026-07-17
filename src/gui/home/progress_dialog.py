@@ -17,6 +17,11 @@ class ProgressDialog(QDialog):
     """显示 ROM 工具执行日志的进度对话框"""
 
     def __init__(self, parent=None):
+        """初始化进度对话框
+
+        Args:
+            parent: 父 QWidget
+        """
         super().__init__(parent, f=Qt.WindowType.Dialog | Qt.WindowType.FramelessWindowHint)
         self.setFixedSize(680, 400)
 
@@ -70,6 +75,7 @@ class ProgressDialog(QDialog):
             self.setStyleSheet("""QDialog{background:white;}""")
 
     def showEvent(self, a0):
+        """显示时刷新主题背景色"""
         self.resetUI()
 
     def set_button_text(self, text: str):

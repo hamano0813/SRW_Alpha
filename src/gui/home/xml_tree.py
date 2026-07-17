@@ -21,6 +21,13 @@ class XmlTreeView(TreeWidget):
     """XML 目录树视图 - 展示 cache.xml 中 directory_tree 下的文件层级"""
 
     def __init__(self, headers: list, datas: dict, parent=None):
+        """初始化 XML 目录树视图
+
+        Args:
+            headers: 表头标签列表
+            datas: 文件名→分类映射字典
+            parent: 父 QWidget
+        """
         super().__init__(parent)
         self._headers = headers
         self._datas = datas
@@ -73,7 +80,12 @@ class XmlTreeView(TreeWidget):
             return False
 
     def _build_children(self, element: ET.Element, parent_item: QTreeWidgetItem | None):
-        """遍历 XML 子节点并逐一构建树项"""
+        """遍历 XML 子节点并逐一构建树项
+
+        Args:
+            element: XML 父元素
+            parent_item: 父树项，None 时为顶层
+        """
         for child in element:
             self._build_tree(child, parent_item)
 

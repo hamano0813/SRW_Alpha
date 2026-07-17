@@ -172,11 +172,11 @@ class BaseTableView(TableView):
         if self._model.columnCount() > 1:
             self._corner_button.setText("«")
 
-    def set_title(self, titles: dict[str, Callable | None]) -> None:
+    def set_title(self, titles: dict[str, list[Callable | None]]) -> None:
         """设置列标题与格式化函数
 
         Args:
-            titles: {翻译后表头: 格式化函数或 None, ...}
+            titles: {翻译后表头: [格式化函数, 反解析函数], ...}
         """
         self._model.set_title(titles)
 

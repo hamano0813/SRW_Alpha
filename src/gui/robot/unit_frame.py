@@ -91,16 +91,16 @@ class UnitFrame(ProxyFrame):
         """刷新列标题与格式化函数"""
         self._robot_view.set_title(
             {
-                self.tr("robot name"): self._name_delegate.format_display,
-                self.tr("hit points"): lambda x: x,
-                self.tr("energy"): lambda x: x,
-                self.tr("mobility"): lambda x: x,
-                self.tr("armor"): lambda x: x,
-                self.tr("limit"): lambda x: x,
-                self.tr("size"): lambda x: x,
-                self.tr("parts slot"): lambda x: x,
-                self.tr("movement"): lambda x: x,
-                self.tr("movement type"): lambda x: x,
+                self.tr("robot name"): [self._name_delegate.format_display, self._name_delegate.parse_display],
+                self.tr("hit points"): [lambda x: x, lambda x: x],
+                self.tr("energy"): [lambda x: x, lambda x: x],
+                self.tr("mobility"): [lambda x: x, lambda x: x],
+                self.tr("armor"): [lambda x: x, lambda x: x],
+                self.tr("limit"): [lambda x: x, lambda x: x],
+                self.tr("size"): [lambda x: x, lambda x: x],
+                self.tr("parts slot"): [lambda x: x, lambda x: x],
+                self.tr("movement"): [lambda x: x, lambda x: x],
+                self.tr("movement type"): [lambda x: x, lambda x: x],
             }
         )
         if self._robot_view._widths:
@@ -124,14 +124,14 @@ class UnitFrame(ProxyFrame):
         """
         self._robot_view.set_data(data)
 
-    def set_title(self, titles: dict[str, Callable | None]) -> None:
+    def set_title(self, titles: dict[str, list[Callable | None]]) -> None:
         """设置列标题与格式化函数，代理至内部表格视图
 
         set_title 会重置模型，导致列宽恢复默认，
         所以设完标题后重新应用预设列宽。
 
         Args:
-            titles: {翻译后表头: 格式化函数或 None, ...}
+            titles: {翻译后表头: [格式化函数, 反解析函数], ...}
         """
         self._robot_view.set_title(titles)
         if self._robot_view._widths:

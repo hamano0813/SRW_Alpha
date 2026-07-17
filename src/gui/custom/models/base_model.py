@@ -38,7 +38,7 @@ class BaseTableModel(QAbstractTableModel):
         super().__init__(parent)
         self._data: list[dict[str, Any]] = []  # 行数据列表
         self._fields: FieldMapping | None = None  # 列名映射查询器
-        self._titles: dict[str, Callable | None] = {}  # {tr(表头): 数据格式化显示函数}
+        self._titles: dict[str, list[Callable | None]] = {}  # {tr(表头): [格式化函数, 反解析函数]}
         self._headers: list[str] = []  # 有序表头列表（列索引 → 表头）
         self._index = BaseTableModel.IndexMode.HEX
         self._width: int = 0
@@ -69,12 +69,14 @@ class BaseTableModel(QAbstractTableModel):
             self._width = len(f"{len(data):0X}")
         self.endResetModel()
 
-    def set_title(self, titles: dict[str, Callable | None]) -> None:
+    def set_title(self, titles: dict[str, list[Callable | None]]) -> None:
         """设置列标题与字段映射
 
         Args:
-            fields: {tr(表头文字): 数据 key, ...}
-                    key/value 均已通过 self.tr() 翻译完成，_fields 直接存储
+            titles: {tr(表头文字): [格式化函数, 反解析函数], ...}
+                    key 已通过 self.tr() 翻译完成，_fields 直接存储
+                    value[0] = display 函数（原始值 → 显示文本），EditRole 仍然返回原始值
+                    value[1] = parse 函数（显示文本 → 原始值），供批量粘贴等场景
         """
         self.beginResetModel()
         self._titles = titles

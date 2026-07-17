@@ -80,18 +80,25 @@ class MutableTableModel(BaseTableModel):
 
         Args:
             index: 数据索引
-            role: DisplayRole/EditRole 返回原始值，其余返回 None
+            role: DisplayRole 经格式化函数转换后返回，
+                  EditRole 返回原始值，其余返回 None
 
         Returns:
-            单元格显示或编辑用的原始数据
+            单元格显示或编辑用的数据
         """
         if not index.isValid():
             return None
         header = self._headers[index.column()]
         key = self._fields.get_field(header)
         value = self._data[index.row()].get(key)
-        if role in (Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole):
+
+        if role == Qt.ItemDataRole.DisplayRole:
+            display_fn = self._titles[header][0] if header in self._titles else None
+            return display_fn(value) if display_fn else value
+
+        if role == Qt.ItemDataRole.EditRole:
             return value
+
         return None
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlag:

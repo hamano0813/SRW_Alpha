@@ -13,7 +13,7 @@ Classes:
     DataWidgetDelegate: 单元格委托基类
 """
 
-from typing import Any, cast
+from typing import cast
 
 from PySide6.QtCore import QModelIndex, Qt
 from PySide6.QtGui import QColor, QFont, QPainter
@@ -254,36 +254,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
         editor.setGeometry(rect)
         editor.setFixedHeight(rect.height())
 
-    # ========== 格式化代理（委托给 prototype） ==========
-
-    def format_display(self, value) -> str:
-        """将原始值格式化为显示文本
-
-        子类可覆盖以提供自定义格式化逻辑。
-        默认直接返回字符串形式。
-
-        Args:
-            value: 原始值
-
-        Returns:
-            显示文本
-        """
-        return str(value) if value is not None else ""
-
-    def parse_display(self, text: str) -> Any:
-        """将显示文本解析为原始值
-
-        子类需覆盖以支持批量粘贴，默认不支持。
-
-        Args:
-            text: 显示文本
-
-        Raises:
-            NotImplementedError: 子类未实现
-        """
-        raise NotImplementedError(
-            f"{type(self).__name__} does not implement parse_display"
-        )
+    # ========== 格式化（子类覆盖实现 ==========
 
     # ========== 角色扩展点 ==========
 

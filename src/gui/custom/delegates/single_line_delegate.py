@@ -7,6 +7,8 @@ Classes:
     SingleLineDelegate: 单行文本列委托
 """
 
+from typing import Any
+
 from PySide6.QtGui import QFont
 
 from gui.custom.widgets import SingleLineEdit
@@ -27,3 +29,29 @@ class SingleLineDelegate(DataWidgetDelegate):
             parent: 父对象
         """
         super().__init__(parent=parent, font=font)
+
+    # ========== 格式化 ==========
+
+    def format_display(self, value) -> str:
+        """将原始值格式化为显示文本
+
+        Args:
+            value: 原始值
+
+        Returns:
+            显示文本
+        """
+        return str(value) if value is not None else ""
+
+    def parse_display(self, text: str) -> Any:
+        """将显示文本解析为原始值
+
+        Args:
+            text: 显示文本
+
+        Raises:
+            NotImplementedError: 单行文本不支持反解析
+        """
+        raise NotImplementedError(
+            f"{type(self).__name__} does not implement parse_display"
+        )

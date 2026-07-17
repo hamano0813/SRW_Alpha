@@ -1,27 +1,18 @@
 """
-通用工具函数模块
+字体工具函数模块
 
-提供应用程序重启、字体信息提取、系统字体映射等实用功能。
+提供字体信息提取、系统字体映射等实用功能。
 支持 TTF、OTF、TTC 等多种字体格式的处理。
 
 Functions:
-    restart: 重启当前应用程序
     get_font_info: 提取字体的系列名称
     get_font_mapping: 获取系统字体映射
 """
 
 import os
-import sys
 from concurrent.futures import ThreadPoolExecutor
 
 from fontTools.ttLib import TTCollection, TTFont
-
-
-def restart():
-    """重启当前应用程序"""
-    exe = sys.executable
-    argv = [exe] + sys.argv
-    os.execv(exe, argv)
 
 
 def get_font_info(font_obj: TTFont | str, langID=1033) -> str:

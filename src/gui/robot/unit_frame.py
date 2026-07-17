@@ -48,13 +48,28 @@ class UnitFrame(ProxyFrame):
         self._name_delegate = SingleLineDelegate(font=fonts.JP_FONT, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(0, self._name_delegate)
 
-        # 数值列（uint16_t 范围 0~65535，纯输入无按钮）
-        self._num_delegates = [
-            NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
-            for _ in range(5)
-        ]
-        for col, delg in enumerate(self._num_delegates, start=1):
-            self._robot_view.setItemDelegateForColumn(col, delg)
+        # ========== 数值列：纯键盘输入，无按钮 ==========
+
+        self._hp_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(1, self._hp_delegate)
+
+        self._en_delegate = NumberSpinDelegate(value_range=(50, 400), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(2, self._en_delegate)
+
+        self._mobility_delegate = NumberSpinDelegate(value_range=(40, 200), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(3, self._mobility_delegate)
+
+        self._armor_delegate = NumberSpinDelegate(value_range=(100, 4000), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(4, self._armor_delegate)
+
+        self._limit_delegate = NumberSpinDelegate(value_range=(200, 999), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(5, self._limit_delegate)
+
+        # 步进列：有按钮，键盘只读
+        self._slot_delegate = NumberSpinDelegate(value_range=(1, 4), show_buttons=True, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(7, self._slot_delegate)
+        self._move_delegate = NumberSpinDelegate(value_range=(3, 9), show_buttons=True, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(8, self._move_delegate)
 
         _enum = EnumData()
         self._size_delegate = MappingSpinDelegate(mapping=_enum.ROBOT["SIZE"], font=fonts.EN_FONT, parent=self._robot_view)
@@ -105,14 +120,14 @@ class UnitFrame(ProxyFrame):
         self._robot_view.set_title(
             {
                 self.tr("robot name"): [self._name_delegate.format_display, self._name_delegate.parse_display],
-                self.tr("hit points"): [self._num_delegates[0].format_display, self._num_delegates[0].parse_display],
-                self.tr("energy"): [self._num_delegates[1].format_display, self._num_delegates[1].parse_display],
-                self.tr("mobility"): [self._num_delegates[2].format_display, self._num_delegates[2].parse_display],
-                self.tr("armor"): [self._num_delegates[3].format_display, self._num_delegates[3].parse_display],
-                self.tr("limit"): [self._num_delegates[4].format_display, self._num_delegates[4].parse_display],
+                self.tr("hit points"): [self._hp_delegate.format_display, self._hp_delegate.parse_display],
+                self.tr("energy"): [self._en_delegate.format_display, self._en_delegate.parse_display],
+                self.tr("mobility"): [self._mobility_delegate.format_display, self._mobility_delegate.parse_display],
+                self.tr("armor"): [self._armor_delegate.format_display, self._armor_delegate.parse_display],
+                self.tr("limit"): [self._limit_delegate.format_display, self._limit_delegate.parse_display],
                 self.tr("size"): [self._size_delegate.format_display, self._size_delegate.parse_display],
-                self.tr("parts slot"): [lambda x: x, lambda x: x],
-                self.tr("movement"): [lambda x: x, lambda x: x],
+                self.tr("parts slot"): [self._slot_delegate.format_display, self._slot_delegate.parse_display],
+                self.tr("movement"): [self._move_delegate.format_display, self._move_delegate.parse_display],
                 self.tr("movement type"): [lambda x: x, lambda x: x],
             }
         )

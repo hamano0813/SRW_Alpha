@@ -82,6 +82,7 @@ class NumberSpinBox(QSpinBox, DataWidget):
             self._min, self._max = value_range
 
         self._show_sign = show_sign
+        self._show_buttons = show_buttons
 
         QSpinBox.__init__(self, parent)
         DataWidget.__init__(self, parent)
@@ -94,24 +95,39 @@ class NumberSpinBox(QSpinBox, DataWidget):
         self.setFixedHeight(28)
         self.setRange(self._min, self._max)
 
-        # ========== 行编辑：透明 + 右对齐 ==========
+        # ========== 行编辑：透明 ==========
 
         le = self.lineEdit()
-        le.setReadOnly(not self._show_buttons)  # 有按钮时禁止输入，无按钮时可键盘输入
+        le.setReadOnly(self._show_buttons)  # 有按钮时只读（仅按钮步进），无按钮时可键盘输入
         le.setFrame(False)
-        le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        # 有按钮时居中（与左右按钮对称），无按钮时右对齐
+        if self._show_buttons:
+            le.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        else:
+            le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         le.setStyleSheet("background: transparent; border: none; padding-right: 4px;")
-        le.selectionChanged.connect(lambda: le.setSelection(0, 0))
+        if self._show_buttons:
+            # 按钮模式（只读）：禁止文字选中
+            le.selectionChanged.connect(lambda: le.setSelection(0, 0))
 
         # ========== 左右按钮（手动定位） ==========
 
-        self._show_buttons = show_buttons
-        self._btn_left = _ArrowButton(False, self) if show_buttons else None
-        self._btn_right = _ArrowButton(True, self) if show_buttons else None
+        self._btn_left = _ArrowButton(False, self) if self._show_buttons else None
+        self._btn_right = _ArrowButton(True, self) if self._show_buttons else None
 
         # ========== 信号 ==========
 
         self.valueChanged.connect(self._on_value_changed)
+
+    # ========== 焦点 ==========
+
+    def focusInEvent(self, e):
+        """获得焦点：按钮模式走默认，键盘模式光标移到末尾"""
+        super().focusInEvent(e)
+        if not self._show_buttons:
+            self.lineEdit().setCursorPosition(len(self.lineEdit().text()))
+
+    # ========== 布局 ==========
 
     def resizeEvent(self, e):
         """手动定位左右按钮"""

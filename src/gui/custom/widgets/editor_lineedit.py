@@ -4,11 +4,13 @@
 继承链：
     EditorLineEdit     — V1：表格通用编辑器（四角圆角）
     FirstColLineEdit   — V2：首列专用（左圆右直 + 焦点横线左圆右直）
-    LastColLineEdit    — V3：末列专用（左直右圆 + 焦点横线左直右圆）
+    MidColLineEdit     — V3：中间列专用（四角直角 + 焦点横线水平直线）
+    LastColLineEdit    — V4：末列专用（左直右圆 + 焦点横线左直右圆）
 
 Classes:
     EditorLineEdit: 表格编辑器基类
     FirstColLineEdit: 首列专用编辑器
+    MidColLineEdit: 中间列专用编辑器
     LastColLineEdit: 末列专用编辑器
 """
 
@@ -226,4 +228,38 @@ class LastColLineEdit(EditorLineEdit):
         painter.setRenderHints(QPainter.Antialiasing)
         painter.setPen(Qt.PenStyle.NoPen)
         painter.fillPath(bar, self._focus_border_color())
+        painter.end()
+
+
+class MidColLineEdit(EditorLineEdit):
+    """中间列编辑器 — 四角直角
+
+    框体四角均为直角，无圆角。
+    焦点指示线为水平直线。
+    """
+
+    def focusInEvent(self, e):
+        """获得焦点时光标定位到末尾，不选中全文"""
+        super().focusInEvent(e)
+        self.setCursorPosition(len(self.text()))
+
+    def paintEvent(self, e):
+        """透明背景文字 + 水平直线焦点横线"""
+        palette = self.palette()
+        palette.setColor(palette.ColorRole.Text, self._text_color())
+        self.setPalette(palette)
+        QLineEdit.paintEvent(self, e)
+
+        if self.hasFocus():
+            self._draw_focus_bar_mid_col()
+
+    def _draw_focus_bar_mid_col(self):
+        """绘制底部焦点指示横线（水平直线）"""
+        bw = self._border_width
+        w = self.width()
+        h = self.height()
+
+        painter = QPainter(self)
+        painter.setPen(Qt.PenStyle.NoPen)
+        painter.fillRect(QRectF(0, h - bw - 2, w, 2), self._focus_border_color())
         painter.end()

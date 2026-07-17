@@ -5,15 +5,17 @@
 
 Classes:
     DataWidget: 数据编辑器基类
-    LineTextWidget: 首列单行文本编辑器
+    LineTextFirstWidget: 首列单行文本编辑器
+    LineTextMidWidget: 中间列单行文本编辑器
     LineTextLastWidget: 末列单行文本编辑器
 """
 
 from .data_widget import DataWidget
-from .linetext_widget import LineTextLastWidget, LineTextWidget
+from .linetext_widget import LineTextFirstWidget, LineTextMidWidget, LineTextLastWidget
 
 __all__ = [
     "DataWidget",
-    "LineTextWidget",
+    "LineTextFirstWidget",
+    "LineTextMidWidget",
     "LineTextLastWidget",
 ]

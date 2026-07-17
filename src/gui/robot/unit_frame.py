@@ -14,7 +14,7 @@ from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Signal
 from PySide6.QtWidgets import QVBoxLayout
 
 from gui.custom import fonts
-from gui.custom.delegates import LineTextDelegate
+from gui.custom.delegates import LineTextFirstDelegate
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.views.fixed_view import FixedTableView
 
@@ -42,9 +42,9 @@ class UnitFrame(ProxyFrame):
         self._robot_view = FixedTableView()
         self._robot_view.sClicked.connect(self.sClicked.emit)
 
-        # ========== 第一列委托编辑器 ==========
+        # ========== 委托编辑器 ==========
 
-        self._name_delegate = LineTextDelegate(font=fonts.JP_FONT, parent=self._robot_view)
+        self._name_delegate = LineTextFirstDelegate(font=fonts.JP_FONT, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(0, self._name_delegate)
 
         # ========== 宽度折叠动画 ==========
@@ -97,7 +97,7 @@ class UnitFrame(ProxyFrame):
                 self.tr("mobility"): [lambda x: x, lambda x: x],
                 self.tr("armor"): [lambda x: x, lambda x: x],
                 self.tr("limit"): [lambda x: x, lambda x: x],
-                self.tr("size"): [lambda x: x, lambda x: x],
+                self.tr("size"): [self._size_delegate.format_display, self._size_delegate.parse_display],
                 self.tr("parts slot"): [lambda x: x, lambda x: x],
                 self.tr("movement"): [lambda x: x, lambda x: x],
                 self.tr("movement type"): [lambda x: x, lambda x: x],

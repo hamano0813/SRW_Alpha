@@ -85,11 +85,6 @@ class DataWidgetDelegate(QStyledItemDelegate):
         # 正在编辑的单元格索引，用于 paint() 跳过文字绘制
         self._editing_index: QModelIndex | None = None
 
-        # prototype 实例：不挂父节点、不显示，仅用作 format_display / parse_display
-        self._prototype: DataWidget | None = None
-        if self.widget_class is not None:
-            self._prototype = self.widget_class()
-
     # ========== 绘制（委托给 View 默认的 TableItemDelegate） ==========
 
     def paint(self, painter: QPainter, option: QStyleOptionViewItem, index: QModelIndex) -> None:
@@ -262,16 +257,33 @@ class DataWidgetDelegate(QStyledItemDelegate):
     # ========== 格式化代理（委托给 prototype） ==========
 
     def format_display(self, value) -> str:
-        """代理 prototype.format_display，供表格 DisplayRole 使用"""
-        if self._prototype is None:
-            return str(value)
-        return self._prototype.format_display(value)
+        """将原始值格式化为显示文本
+
+        子类可覆盖以提供自定义格式化逻辑。
+        默认直接返回字符串形式。
+
+        Args:
+            value: 原始值
+
+        Returns:
+            显示文本
+        """
+        return str(value) if value is not None else ""
 
     def parse_display(self, text: str) -> Any:
-        """代理 prototype.parse_display，供批量粘贴使用"""
-        if self._prototype is None:
-            raise NotImplementedError("no prototype")
-        return self._prototype.parse_display(text)
+        """将显示文本解析为原始值
+
+        子类需覆盖以支持批量粘贴，默认不支持。
+
+        Args:
+            text: 显示文本
+
+        Raises:
+            NotImplementedError: 子类未实现
+        """
+        raise NotImplementedError(
+            f"{type(self).__name__} does not implement parse_display"
+        )
 
     # ========== 角色扩展点 ==========
 

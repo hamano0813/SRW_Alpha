@@ -5,19 +5,16 @@
 
 Classes:
     DataWidget: 数据编辑器基类
-    EditorLineEdit: 表格编辑器（QLineEdit + DataWidget 多重继承）
-    MapSpinWidget: 数值微调编辑器
-    MappingSpinBox: 映射微调框
+    SingleLineEdit: 表格编辑器（QLineEdit + DataWidget 多重继承）
+    MappingSpinBox: 映射微调框（QSpinBox + DataWidget 多重继承）
 """
 
 from .data_widget import DataWidget
-from .editor_lineedit import EditorLineEdit
 from .mapping_spinbox import MappingSpinBox
-from .value_widget import MapSpinWidget
+from .single_line_edit import SingleLineEdit
 
 __all__ = [
     "DataWidget",
-    "EditorLineEdit",
-    "MapSpinWidget",
+    "SingleLineEdit",
     "MappingSpinBox",
 ]

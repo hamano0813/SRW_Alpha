@@ -1,5 +1,5 @@
 """
-映射微调框 — 透明背景 QSpinBox，左减右加按钮布局
+映射微调框 — 继承 QSpinBox + DataWidget，透明背景，左减右加按钮布局
 
 通过 mapping 字典实现 数字 ↔ 显示文本 的转换。
 步进时仅在 mapping 的有效 key 范围内循环。
@@ -9,22 +9,20 @@ Classes:
     MappingSpinBox: 映射微调框
 """
 
+from typing import Any
+
 from PySide6.QtCore import Qt, QPointF
-from PySide6.QtGui import QColor, QPainter, QPainterPath
+from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
+
+from .data_widget import DataWidget
 
 
 class _ArrowButton(QToolButton):
     """单方向箭头按钮 — 左箭头（步进-）或右箭头（步进+）"""
 
     def __init__(self, right: bool, parent=None):
-        """初始化箭头按钮
-
-        Args:
-            right: True 为右箭头（步进+），False 为左箭头（步进-）
-            parent: 父 QWidget
-        """
         super().__init__(parent)
         self._right = right
         self.setFixedSize(24, 26)
@@ -49,13 +47,11 @@ class _ArrowButton(QToolButton):
         cy = self.height() / 2
 
         if self._right:
-            # 右三角：顶点朝右
             path = QPainterPath()
             path.moveTo(QPointF(cx + s, cy))
             path.lineTo(QPointF(cx - s, cy - s))
             path.lineTo(QPointF(cx - s, cy + s))
         else:
-            # 左三角：顶点朝左
             path = QPainterPath()
             path.moveTo(QPointF(cx - s, cy))
             path.lineTo(QPointF(cx + s, cy - s))
@@ -65,16 +61,12 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class MappingSpinBox(QSpinBox):
+class MappingSpinBox(QSpinBox, DataWidget):
     """映射微调框 — 透明背景，左右按钮，数值居中
 
-    左侧步进-（向下箭头）、中间数值（居中）、右侧步进+（向上箭头）。
+    左侧步进-（左三角）、中间数值（居中）、右侧步进+（右三角）。
     禁止键盘手动输入，仅由按钮步进。
     步进仅在 mapping 的有效 key 范围内循环。
-
-    使用示例：
-        spin = MappingSpinBox({0: "None", 1: "A", 2: "B"})
-        spin.setValue(1)  # 显示 "A"，值为 1
     """
 
     def __init__(self, mapping: dict[int, str] | None = None, parent=None):
@@ -87,7 +79,8 @@ class MappingSpinBox(QSpinBox):
         self._mapping: dict[int, str] = mapping or {}
         self._sorted_keys: list[int] = sorted(self._mapping.keys())
 
-        super().__init__(parent)
+        QSpinBox.__init__(self, parent)
+        DataWidget.__init__(self, parent)
 
         # ========== 基础样式 ==========
 
@@ -106,12 +99,16 @@ class MappingSpinBox(QSpinBox):
         le.setFrame(False)
         le.setAlignment(Qt.AlignmentFlag.AlignCenter)
         le.setStyleSheet("background: transparent; border: none;")
-        le.selectionChanged.connect(le.deselect)
+        le.selectionChanged.connect(lambda: le.setSelection(0, 0))
 
         # ========== 左右按钮（手动定位） ==========
 
-        self._btn_left = _ArrowButton(False, self)   # 左三角 → 步进-
-        self._btn_right = _ArrowButton(True, self)   # 右三角 → 步进+
+        self._btn_left = _ArrowButton(False, self)
+        self._btn_right = _ArrowButton(True, self)
+
+        # ========== 信号 ==========
+
+        self.valueChanged.connect(self._on_value_changed)
 
     def resizeEvent(self, e):
         """手动定位左右按钮"""
@@ -169,3 +166,60 @@ class MappingSpinBox(QSpinBox):
         if idx < len(self._sorted_keys) - 1:
             flags |= QSpinBox.StepEnabledFlag.StepUpEnabled
         return flags
+
+    # ========== DataWidget 数据协议 ==========
+
+    def set_value(self, value) -> None:
+        """存入数值并刷新显示
+
+        Args:
+            value: 整数数值
+        """
+        DataWidget.set_value(self, value)
+
+    def get_value(self) -> int:
+        """返回当前数值"""
+        return self._value if self._value is not None else 0
+
+    def format_value(self) -> None:
+        """将 _value 同步到微调框"""
+        self.blockSignals(True)
+        if self._value is not None:
+            self.setValue(int(self._value))
+        self.blockSignals(False)
+
+    def apply_font(self, font: QFont) -> None:
+        """将字体应用到编辑器
+
+        Args:
+            font: 要应用的 QFont
+        """
+        self.setFont(font)
+
+    def is_valid(self, value) -> bool:
+        """校验值是否为整数或可转为整数"""
+        try:
+            int(value)
+            return True
+        except (TypeError, ValueError):
+            return False
+
+    def format_display(self, value) -> str:
+        """将数值格式化为显示文本"""
+        if value is None:
+            return ""
+        try:
+            return self.textFromValue(int(value))
+        except Exception:
+            return str(value)
+
+    def parse_display(self, text: str) -> Any:
+        """将显示文本解析为数值"""
+        return self.valueFromText(text)
+
+    # ========== 内部槽 ==========
+
+    def _on_value_changed(self, value: int) -> None:
+        """值改变时同步 _value 并发射 dataChanged"""
+        self._value = value
+        self.dataChanged.emit(self._value)

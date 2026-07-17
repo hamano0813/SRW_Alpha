@@ -1,5 +1,5 @@
 """
-数值微调列委托 - 配合 MapSpinWidget 使用
+数值微调列委托 - 配合 MappingSpinBox 使用
 
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 
@@ -11,15 +11,15 @@ from typing import Any
 
 from PySide6.QtGui import QFont
 
-from gui.custom.widgets import MapSpinWidget
+from gui.custom.widgets import MappingSpinBox
 
 from .base_delegate import DataWidgetDelegate
 
 
 class MapSpinDelegate(DataWidgetDelegate):
-    """数值微调列委托 - 编辑器为 MapSpinWidget"""
+    """数值微调列委托 - 编辑器为 MappingSpinBox"""
 
-    widget_class = MapSpinWidget
+    widget_class = MappingSpinBox
 
     def __init__(self, mapping: dict[int, str] | None = None, font: QFont | dict | None = None, parent=None):
         """初始化数值微调列委托
@@ -71,7 +71,7 @@ class MapSpinDelegate(DataWidgetDelegate):
         editor.setFixedHeight(rect.height())
 
     def createEditor(self, parent, option, index) -> Any:
-        """创建 MapSpinWidget 并注入映射表
+        """创建 MappingSpinBox 并注入映射表
 
         Args:
             parent: 编辑器父控件
@@ -79,9 +79,9 @@ class MapSpinDelegate(DataWidgetDelegate):
             index: 单元格索引
 
         Returns:
-            MapSpinWidget 实例
+            MappingSpinBox 实例
         """
-        editor = MapSpinWidget(self._value_mapping, parent)
+        editor = MappingSpinBox(self._value_mapping, parent)
         if self._font is not None:
             editor.apply_font(self._font)
         return editor

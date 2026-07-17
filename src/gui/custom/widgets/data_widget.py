@@ -20,7 +20,7 @@ class DataWidget(QWidget):
 
     set_value 存入原始值后自动调 format_value() 刷新控件显示，
     get_value 返回原始值供 Delegate 写回 model。
-    validate 由子类重写，用于拒绝不可接受的值。
+    is_valid 由子类重写，用于拒绝不可接受的值。
     format_display / parse_display 供表格 DisplayRole 和批量粘贴使用。
 
     Signals:
@@ -35,7 +35,8 @@ class DataWidget(QWidget):
         Args:
             parent: 父 QWidget
         """
-        super().__init__(parent)
+        # 注意：不调 super().__init__，当与 QLineEdit/QSpinBox 等
+        # 多重继承时，另一侧父类已初始化 QWidget，重复调用会崩溃。
         self._value: Any = None
 
     # ========== 数据读写 ==========
@@ -82,7 +83,7 @@ class DataWidget(QWidget):
         """
         self.setFont(font)
 
-    def validate(self, value) -> bool:
+    def is_valid(self, value) -> bool:
         """校验值是否可接受
 
         子类重写，返回 False 表示值不合法应拒绝写回。

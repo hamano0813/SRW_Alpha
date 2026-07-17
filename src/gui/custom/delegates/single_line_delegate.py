@@ -4,7 +4,7 @@
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 
 Classes:
-    LineTextDelegate: 单行文本列委托
+    SingleLineDelegate: 单行文本列委托
 """
 
 from PySide6.QtGui import QFont
@@ -14,7 +14,7 @@ from gui.custom.widgets import SingleLineEdit
 from .base_delegate import DataWidgetDelegate
 
 
-class LineTextDelegate(DataWidgetDelegate):
+class SingleLineDelegate(DataWidgetDelegate):
     """单行文本列委托 - 编辑器为 SingleLineEdit"""
 
     widget_class = SingleLineEdit

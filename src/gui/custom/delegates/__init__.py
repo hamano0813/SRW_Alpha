@@ -6,16 +6,16 @@
 
 Classes:
     DataWidgetDelegate: 委托基类
-    LineTextDelegate: 单行文本列委托
-    MapSpinDelegate: 数值微调列委托
+    SingleLineDelegate: 单行文本列委托
+    MappingSpinDelegate: 数值微调列委托
 """
 
 from .base_delegate import DataWidgetDelegate
-from .line_text_delegate import LineTextDelegate
-from .map_spin_delegate import MapSpinDelegate
+from .mapping_spin_delegate import MappingSpinDelegate
+from .single_line_delegate import SingleLineDelegate
 
 __all__ = [
     "DataWidgetDelegate",
-    "LineTextDelegate",
-    "MapSpinDelegate",
+    "SingleLineDelegate",
+    "MappingSpinDelegate",
 ]

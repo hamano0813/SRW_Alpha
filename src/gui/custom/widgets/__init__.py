@@ -11,7 +11,7 @@ Classes:
 
 from .data_widget import DataWidget
 from .mapping_spinbox import MappingSpinBox
-from .single_line_edit import SingleLineEdit
+from .single_lineedit import SingleLineEdit
 
 __all__ = [
     "DataWidget",

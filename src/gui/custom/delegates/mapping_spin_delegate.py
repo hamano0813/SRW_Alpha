@@ -4,7 +4,7 @@
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 
 Classes:
-    MapSpinDelegate: 数值微调列委托
+    MappingSpinDelegate: 数值微调列委托
 """
 
 from typing import Any
@@ -16,7 +16,7 @@ from gui.custom.widgets import MappingSpinBox
 from .base_delegate import DataWidgetDelegate
 
 
-class MapSpinDelegate(DataWidgetDelegate):
+class MappingSpinDelegate(DataWidgetDelegate):
     """数值微调列委托 - 编辑器为 MappingSpinBox"""
 
     widget_class = MappingSpinBox

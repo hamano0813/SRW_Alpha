@@ -1,7 +1,7 @@
 uv run pyside6-lupdate ^
     src/gui/main_window.py ^
     src/gui/home/home_frame.py ^
-    src/gui/robot/robot_frame.py ^
+    src/gui/robot/unit_frame.py ^
     src/gui/option/option_frame.py ^
     src/gui/option/color_card.py ^
     src/gui/option/rom_card.py ^

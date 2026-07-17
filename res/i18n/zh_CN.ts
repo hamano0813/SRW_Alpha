@@ -2487,22 +2487,22 @@ Do you want to overwrite it?</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../src/gui/main_window.py" line="76"/>
+        <location filename="../../src/gui/main_window.py" line="77"/>
         <source>Home</source>
         <translation>概览</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="79"/>
+        <location filename="../../src/gui/main_window.py" line="80"/>
         <source>Robot</source>
         <translation>机体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="82"/>
+        <location filename="../../src/gui/main_window.py" line="83"/>
         <source>Options</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="137"/>
+        <location filename="../../src/gui/main_window.py" line="138"/>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>超级机器人大战α 静态修改器</translation>
     </message>
@@ -2628,54 +2628,44 @@ Do you want to overwrite it?</source>
 <context>
     <name>RobotFrame</name>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="81"/>
         <source>robot name</source>
-        <translation>机体</translation>
+        <translation type="vanished">机体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="82"/>
         <source>hit points</source>
-        <translation>HP</translation>
+        <translation type="vanished">HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="83"/>
         <source>energy</source>
-        <translation>EN</translation>
+        <translation type="vanished">EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="84"/>
         <source>movement type</source>
-        <translation>移动类型</translation>
+        <translation type="vanished">移动类型</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="85"/>
         <source>movement</source>
-        <translation>移动力</translation>
+        <translation type="vanished">移动力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="86"/>
         <source>mobility</source>
-        <translation>运动性</translation>
+        <translation type="vanished">运动性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="87"/>
         <source>armor</source>
-        <translation>装甲</translation>
+        <translation type="vanished">装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="88"/>
         <source>limit</source>
-        <translation>限界</translation>
+        <translation type="vanished">限界</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="89"/>
         <source>size</source>
-        <translation>体积</translation>
+        <translation type="vanished">体积</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="90"/>
         <source>parts slot</source>
-        <translation>零件插槽</translation>
+        <translation type="vanished">零件插槽</translation>
     </message>
 </context>
 <context>
@@ -2723,6 +2713,59 @@ Do you want to overwrite it?</source>
         <location filename="../../src/gui/option/rom_card.py" line="158"/>
         <source>Configure the ROM settings</source>
         <translation>配置ROM设置</translation>
+    </message>
+</context>
+<context>
+    <name>UnitFrame</name>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="94"/>
+        <source>robot name</source>
+        <translation>机体</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="95"/>
+        <source>hit points</source>
+        <translation>HP</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="96"/>
+        <source>energy</source>
+        <translation>EN</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="97"/>
+        <source>mobility</source>
+        <translation>运动性</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="98"/>
+        <source>armor</source>
+        <translation>装甲</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="99"/>
+        <source>limit</source>
+        <translation>限界</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="100"/>
+        <source>size</source>
+        <translation>体积</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="101"/>
+        <source>parts slot</source>
+        <translation>零件插槽</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="102"/>
+        <source>movement</source>
+        <translation>移动力</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/unit_frame.py" line="103"/>
+        <source>movement type</source>
+        <translation>移动类型</translation>
     </message>
 </context>
 </TS>

@@ -4,7 +4,7 @@
 右对齐、仅输入整数、透明背景，与 SingleLineEdit 风格一致。
 
 Classes:
-    NumberLine: 数值编辑器
+    NumberLineEdit: 数值编辑器
 """
 
 from typing import Any
@@ -17,7 +17,7 @@ from qfluentwidgets import isDarkTheme
 from .data_widget import DataWidget
 
 
-class NumberLine(QLineEdit, DataWidget):
+class NumberLineEdit(QLineEdit, DataWidget):
     """数值编辑器 — 透明背景 + 右对齐 + 仅数值输入
 
     无边框、无焦点指示线，仅通过 palette 控制文字颜色。

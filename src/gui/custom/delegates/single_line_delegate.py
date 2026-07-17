@@ -42,7 +42,7 @@ class SingleLineDelegate(DataWidgetDelegate):
             option: 样式选项
             index: 单元格索引
         """
-        rect = option.rect.adjusted(3, 2, 0, -2)
+        rect = option.rect.adjusted(3, 0, 0, 0)
         editor.setGeometry(rect)
         editor.setFixedHeight(rect.height())
 

@@ -1,11 +1,11 @@
 """
-数值列委托 - 配合 NumberLine 使用
+数值列委托 - 配合 NumberLineEdit 使用
 
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 与 SingleLineDelegate 类似，但编辑器仅接受数值输入并右对齐。
 
 Classes:
-    NumberLineDelegate: 数值列委托
+    NumberLineEditDelegate: 数值列委托
 """
 
 from typing import Any
@@ -14,15 +14,15 @@ from PySide6.QtCore import QModelIndex
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 
-from gui.custom.widgets import NumberLine
+from gui.custom.widgets import NumberLineEdit
 
 from .base_delegate import DataWidgetDelegate
 
 
-class NumberLineDelegate(DataWidgetDelegate):
-    """数值列委托 - 编辑器为 NumberLine"""
+class NumberLineEditDelegate(DataWidgetDelegate):
+    """数值列委托 - 编辑器为 NumberLineEdit"""
 
-    widget_class = NumberLine
+    widget_class = NumberLineEdit
 
     def __init__(self, font: QFont | dict | None = None, parent=None):
         """初始化数值列委托

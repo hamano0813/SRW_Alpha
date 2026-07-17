@@ -38,7 +38,7 @@ class LineTextWidget(DataWidget):
         self._line_edit.setSizePolicy(
             QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding
         )
-        # 微调文本位置 + 透明背景（QSS 优先级高于 palette）
+        # 微调文本位置 + 透明背景（背景由 delegate 层绘制，编辑器不额外遮挡）
         self._line_edit.setStyleSheet(
             "QLineEdit { padding-left: 14px; padding-top: 1px; padding-bottom: 1px; background: transparent; }"
         )

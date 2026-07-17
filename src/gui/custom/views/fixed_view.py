@@ -30,7 +30,7 @@ class FixedTableView(BaseTableView):
             parent: 父 QWidget
         """
         model = FixedTableModel()
-        model.set_font({0: fonts.JP_FONT, 6: fonts.EN_FONT})
+        model.set_font({0: fonts.JP_FONT, 1: fonts.EN_FONT, 2: fonts.EN_FONT, 3: fonts.EN_FONT, 4: fonts.EN_FONT, 5: fonts.EN_FONT, 6: fonts.EN_FONT})
         model.set_alignments({6: Qt.AlignmentFlag.AlignCenter})
         super().__init__(model, parent)
 

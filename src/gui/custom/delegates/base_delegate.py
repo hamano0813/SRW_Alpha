@@ -5,7 +5,7 @@
 不涉及按列号分发——每列使用独立的 Delegate 实例。
 
 编辑期间透明背景处理：
-  EditorLineEdit 设为 background: transparent，让表格行背景效果
+  SingleLineEdit 设为 background: transparent，让表格行背景效果
   （交替行、悬浮、选中、明暗主题）自然透出。为避免底层单元格文字
   也透出，编辑期间 paint() 跳过文字绘制，只画背景。
 

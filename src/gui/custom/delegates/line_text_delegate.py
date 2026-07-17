@@ -1,5 +1,5 @@
 """
-单行文本列委托 - 配合 EditorLineEdit 使用
+单行文本列委托 - 配合 SingleLineEdit 使用
 
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 
@@ -9,15 +9,15 @@ Classes:
 
 from PySide6.QtGui import QFont
 
-from gui.custom.widgets import EditorLineEdit
+from gui.custom.widgets import SingleLineEdit
 
 from .base_delegate import DataWidgetDelegate
 
 
 class LineTextDelegate(DataWidgetDelegate):
-    """单行文本列委托 - 编辑器为 EditorLineEdit"""
+    """单行文本列委托 - 编辑器为 SingleLineEdit"""
 
-    widget_class = EditorLineEdit
+    widget_class = SingleLineEdit
 
     def __init__(self, font: QFont | dict | None = None, parent=None):
         """初始化单行文本列委托

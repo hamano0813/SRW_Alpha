@@ -13,6 +13,8 @@ from typing import Any, Callable
 from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Signal
 from PySide6.QtWidgets import QVBoxLayout
 
+from gui.custom import fonts
+from gui.custom.delegates import LineTextDelegate
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.views.fixed_view import FixedTableView
 
@@ -39,6 +41,11 @@ class UnitFrame(ProxyFrame):
 
         self._robot_view = FixedTableView()
         self._robot_view.sClicked.connect(self.sClicked.emit)
+
+        # ========== 第一列委托编辑器 ==========
+
+        self._name_delegate = LineTextDelegate(font=fonts.JP_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(0, self._name_delegate)
 
         # ========== 宽度折叠动画 ==========
 
@@ -77,6 +84,27 @@ class UnitFrame(ProxyFrame):
         self._width_anim.setStartValue(self.width())
         self._width_anim.setEndValue(target)
         self._width_anim.start()
+
+    # ========== 翻译 ==========
+
+    def translateUI(self):
+        """刷新列标题与格式化函数"""
+        self._robot_view.set_title(
+            {
+                self.tr("robot name"): self._name_delegate.format_display,
+                self.tr("hit points"): lambda x: x,
+                self.tr("energy"): lambda x: x,
+                self.tr("mobility"): lambda x: x,
+                self.tr("armor"): lambda x: x,
+                self.tr("limit"): lambda x: x,
+                self.tr("size"): lambda x: x,
+                self.tr("parts slot"): lambda x: x,
+                self.tr("movement"): lambda x: x,
+                self.tr("movement type"): lambda x: x,
+            }
+        )
+        if self._robot_view._widths:
+            self._robot_view.set_column_width(self._robot_view._widths)
 
     # ========== 代理方法 ==========
 

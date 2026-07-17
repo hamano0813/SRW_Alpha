@@ -4,14 +4,14 @@
 <context>
     <name>CleanSettingCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="112"/>
-        <location filename="../../src/gui/option/rom_card.py" line="117"/>
+        <location filename="../../src/gui/option/rom_card.py" line="130"/>
+        <location filename="../../src/gui/option/rom_card.py" line="136"/>
         <source>Auto clear cache</source>
         <translation>キャッシュを自動クリア</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="113"/>
-        <location filename="../../src/gui/option/rom_card.py" line="118"/>
+        <location filename="../../src/gui/option/rom_card.py" line="131"/>
+        <location filename="../../src/gui/option/rom_card.py" line="137"/>
         <source>Clear cache after ROM is rebuilt</source>
         <translation>ROM 再構築後にキャッシュを自動クリア（次回変更時は再展開が必要）</translation>
     </message>
@@ -27,72 +27,72 @@
         <translation type="vanished">色を選択</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="19"/>
-        <location filename="../../src/gui/option/color_card.py" line="50"/>
-        <location filename="../../src/gui/option/color_card.py" line="62"/>
+        <location filename="../../src/gui/option/color_card.py" line="25"/>
+        <location filename="../../src/gui/option/color_card.py" line="56"/>
+        <location filename="../../src/gui/option/color_card.py" line="68"/>
         <source>Choose Color</source>
         <translation>色を選択</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="20"/>
-        <location filename="../../src/gui/option/color_card.py" line="51"/>
+        <location filename="../../src/gui/option/color_card.py" line="26"/>
+        <location filename="../../src/gui/option/color_card.py" line="57"/>
         <source>OK</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="21"/>
-        <location filename="../../src/gui/option/color_card.py" line="52"/>
+        <location filename="../../src/gui/option/color_card.py" line="27"/>
+        <location filename="../../src/gui/option/color_card.py" line="58"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="22"/>
-        <location filename="../../src/gui/option/color_card.py" line="53"/>
+        <location filename="../../src/gui/option/color_card.py" line="28"/>
+        <location filename="../../src/gui/option/color_card.py" line="59"/>
         <source>Edit Color</source>
         <translation>カラー編集</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="23"/>
-        <location filename="../../src/gui/option/color_card.py" line="54"/>
+        <location filename="../../src/gui/option/color_card.py" line="29"/>
+        <location filename="../../src/gui/option/color_card.py" line="60"/>
         <source>Red</source>
         <translation>赤</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="24"/>
-        <location filename="../../src/gui/option/color_card.py" line="55"/>
+        <location filename="../../src/gui/option/color_card.py" line="30"/>
+        <location filename="../../src/gui/option/color_card.py" line="61"/>
         <source>Blue</source>
         <translation>青</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="25"/>
-        <location filename="../../src/gui/option/color_card.py" line="56"/>
+        <location filename="../../src/gui/option/color_card.py" line="31"/>
+        <location filename="../../src/gui/option/color_card.py" line="62"/>
         <source>Green</source>
         <translation>緑</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="26"/>
-        <location filename="../../src/gui/option/color_card.py" line="57"/>
+        <location filename="../../src/gui/option/color_card.py" line="32"/>
+        <location filename="../../src/gui/option/color_card.py" line="63"/>
         <source>Opacity</source>
         <translation>透明度</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="59"/>
+        <location filename="../../src/gui/option/color_card.py" line="65"/>
         <source>Default color</source>
         <translation>デフォルトカラー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="60"/>
-        <location filename="../../src/gui/option/color_card.py" line="61"/>
+        <location filename="../../src/gui/option/color_card.py" line="66"/>
+        <location filename="../../src/gui/option/color_card.py" line="67"/>
         <source>Custom color</source>
         <translation>カスタムカラー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="65"/>
+        <location filename="../../src/gui/option/color_card.py" line="71"/>
         <source>Theme Color</source>
         <translation>テーマカラー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/color_card.py" line="66"/>
+        <location filename="../../src/gui/option/color_card.py" line="72"/>
         <source>Change the theme color of the interface</source>
         <translation>インタフェース表示のテーマカラーを変更</translation>
     </message>
@@ -2235,26 +2235,26 @@
 <context>
     <name>FileSettingCard</name>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="52"/>
-        <location filename="../../src/gui/option/rom_card.py" line="96"/>
+        <location filename="../../src/gui/option/rom_card.py" line="62"/>
+        <location filename="../../src/gui/option/rom_card.py" line="106"/>
         <source>Select File</source>
         <translation>ファイルを選択</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="58"/>
-        <location filename="../../src/gui/option/rom_card.py" line="99"/>
+        <location filename="../../src/gui/option/rom_card.py" line="68"/>
+        <location filename="../../src/gui/option/rom_card.py" line="109"/>
         <source>Non-ASCII Path</source>
         <translation>非ASCIIパス</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="59"/>
-        <location filename="../../src/gui/option/rom_card.py" line="100"/>
+        <location filename="../../src/gui/option/rom_card.py" line="69"/>
+        <location filename="../../src/gui/option/rom_card.py" line="110"/>
         <source>ROM path and filename cannot contain non-ASCII characters.</source>
         <translation>ROMパスとファイル名に非ASCII文字を含めることはできません。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="60"/>
-        <location filename="../../src/gui/option/rom_card.py" line="101"/>
+        <location filename="../../src/gui/option/rom_card.py" line="70"/>
+        <location filename="../../src/gui/option/rom_card.py" line="111"/>
         <source>OK</source>
         <translation>確認</translation>
     </message>
@@ -2267,7 +2267,7 @@
         <translation type="vanished">保存パスと読み込みパスが同じです。元のROMファイルが上書きされます。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="95"/>
+        <location filename="../../src/gui/option/rom_card.py" line="105"/>
         <source>Browse</source>
         <translation>参照</translation>
     </message>
@@ -2275,14 +2275,14 @@
 <context>
     <name>FontCard</name>
     <message>
-        <location filename="../../src/gui/option/font_card.py" line="160"/>
-        <location filename="../../src/gui/option/font_card.py" line="202"/>
+        <location filename="../../src/gui/option/font_card.py" line="183"/>
+        <location filename="../../src/gui/option/font_card.py" line="225"/>
         <source>Font Settings</source>
         <translation>フォント設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/font_card.py" line="160"/>
-        <location filename="../../src/gui/option/font_card.py" line="203"/>
+        <location filename="../../src/gui/option/font_card.py" line="183"/>
+        <location filename="../../src/gui/option/font_card.py" line="226"/>
         <source>Configure the font settings</source>
         <translation>各言語のデフォルトフォントを設定</translation>
     </message>
@@ -2291,37 +2291,37 @@
     <name>HomeFrame</name>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="47"/>
-        <location filename="../../src/gui/home/home_frame.py" line="291"/>
+        <location filename="../../src/gui/home/home_frame.py" line="297"/>
         <source>Extract ROM</source>
         <translation>ROMを展開</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="48"/>
-        <location filename="../../src/gui/home/home_frame.py" line="292"/>
+        <location filename="../../src/gui/home/home_frame.py" line="298"/>
         <source>Rebuild ROM</source>
         <translation>ROMを再構築</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="53"/>
-        <location filename="../../src/gui/home/home_frame.py" line="297"/>
+        <location filename="../../src/gui/home/home_frame.py" line="303"/>
         <source>ROM Path Not Configured</source>
         <translation>ROMパスが設定されていません</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="54"/>
-        <location filename="../../src/gui/home/home_frame.py" line="298"/>
+        <location filename="../../src/gui/home/home_frame.py" line="304"/>
         <source>Please configure the ROM file path in Settings first.</source>
         <translation>先に設定画面でROMファイルのパスを設定してください。</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="55"/>
-        <location filename="../../src/gui/home/home_frame.py" line="299"/>
+        <location filename="../../src/gui/home/home_frame.py" line="305"/>
         <source>File Not Found</source>
         <translation>ファイルが見つかりません</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="56"/>
-        <location filename="../../src/gui/home/home_frame.py" line="300"/>
+        <location filename="../../src/gui/home/home_frame.py" line="306"/>
         <source>ROM file does not exist:
 {}</source>
         <translation>ROMファイルが存在しません:
@@ -2329,93 +2329,93 @@
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="57"/>
-        <location filename="../../src/gui/home/home_frame.py" line="301"/>
+        <location filename="../../src/gui/home/home_frame.py" line="307"/>
         <source>OK</source>
         <translation>確認</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="46"/>
-        <location filename="../../src/gui/home/home_frame.py" line="295"/>
+        <location filename="../../src/gui/home/home_frame.py" line="301"/>
         <source>Close</source>
         <translation>閉じる</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="49"/>
-        <location filename="../../src/gui/home/home_frame.py" line="293"/>
+        <location filename="../../src/gui/home/home_frame.py" line="299"/>
         <source>Parse Cache</source>
         <translation>キャッシュを解析</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="50"/>
         <location filename="../../src/gui/home/home_frame.py" line="66"/>
-        <location filename="../../src/gui/home/home_frame.py" line="294"/>
-        <location filename="../../src/gui/home/home_frame.py" line="310"/>
+        <location filename="../../src/gui/home/home_frame.py" line="300"/>
+        <location filename="../../src/gui/home/home_frame.py" line="316"/>
         <source>Build Cache</source>
         <translation>キャッシュを構築</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="58"/>
-        <location filename="../../src/gui/home/home_frame.py" line="302"/>
+        <location filename="../../src/gui/home/home_frame.py" line="308"/>
         <source>Target ROM Not Configured</source>
         <translation>出力先 ROM が設定されていません</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="59"/>
-        <location filename="../../src/gui/home/home_frame.py" line="303"/>
+        <location filename="../../src/gui/home/home_frame.py" line="309"/>
         <source>Please configure the target ROM path in Settings first.</source>
         <translation>先に設定画面で出力先 ROM パスを設定してください。</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="60"/>
-        <location filename="../../src/gui/home/home_frame.py" line="304"/>
+        <location filename="../../src/gui/home/home_frame.py" line="310"/>
         <source>Cache project file not found. Please extract a ROM first.</source>
         <translation>キャッシュプロジェクトファイルが見つかりません。先に ROM を展開してください。</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="61"/>
-        <location filename="../../src/gui/home/home_frame.py" line="305"/>
+        <location filename="../../src/gui/home/home_frame.py" line="311"/>
         <source>Cache directory not found. Please extract a ROM first.</source>
         <translation>キャッシュがありません。先に ROM を展開してください。</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="62"/>
-        <location filename="../../src/gui/home/home_frame.py" line="306"/>
+        <location filename="../../src/gui/home/home_frame.py" line="312"/>
         <source>Cache already exists. Overwrite?</source>
         <translation>キャッシュは既に存在します。上書きしますか？</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="63"/>
-        <location filename="../../src/gui/home/home_frame.py" line="307"/>
+        <location filename="../../src/gui/home/home_frame.py" line="313"/>
         <source>The cache directory already exists. Do you want to overwrite it?</source>
         <translation>キャッシュディレクトリは既に存在します。上書きしますか？</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="64"/>
-        <location filename="../../src/gui/home/home_frame.py" line="308"/>
+        <location filename="../../src/gui/home/home_frame.py" line="314"/>
         <source>Overwrite</source>
         <translation>上書き</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="65"/>
-        <location filename="../../src/gui/home/home_frame.py" line="309"/>
+        <location filename="../../src/gui/home/home_frame.py" line="315"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="67"/>
-        <location filename="../../src/gui/home/home_frame.py" line="311"/>
+        <location filename="../../src/gui/home/home_frame.py" line="317"/>
         <source>Are you sure you want to build modified data to cache files?</source>
         <translation>変更データをキャッシュファイルに構築しますか？</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="68"/>
-        <location filename="../../src/gui/home/home_frame.py" line="312"/>
+        <location filename="../../src/gui/home/home_frame.py" line="318"/>
         <source>File Already Exists</source>
         <translation>ファイルは既に存在します</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="69"/>
-        <location filename="../../src/gui/home/home_frame.py" line="313"/>
+        <location filename="../../src/gui/home/home_frame.py" line="319"/>
         <source>The output file already exists:
 {}
 
@@ -2427,59 +2427,59 @@ Do you want to overwrite it?</source>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="70"/>
-        <location filename="../../src/gui/home/home_frame.py" line="314"/>
+        <location filename="../../src/gui/home/home_frame.py" line="320"/>
         <source>Yes</source>
         <translation>はい</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="71"/>
-        <location filename="../../src/gui/home/home_frame.py" line="315"/>
+        <location filename="../../src/gui/home/home_frame.py" line="321"/>
         <source>No</source>
         <translation>いいえ</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="97"/>
-        <location filename="../../src/gui/home/home_frame.py" line="324"/>
+        <location filename="../../src/gui/home/home_frame.py" line="330"/>
         <source>File</source>
         <translation>ファイル</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="98"/>
         <location filename="../../src/gui/home/home_frame.py" line="105"/>
-        <location filename="../../src/gui/home/home_frame.py" line="325"/>
-        <location filename="../../src/gui/home/home_frame.py" line="332"/>
+        <location filename="../../src/gui/home/home_frame.py" line="331"/>
+        <location filename="../../src/gui/home/home_frame.py" line="338"/>
         <source>Robot</source>
         <translation>ロボット</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="99"/>
         <location filename="../../src/gui/home/home_frame.py" line="108"/>
-        <location filename="../../src/gui/home/home_frame.py" line="326"/>
-        <location filename="../../src/gui/home/home_frame.py" line="333"/>
+        <location filename="../../src/gui/home/home_frame.py" line="332"/>
+        <location filename="../../src/gui/home/home_frame.py" line="339"/>
         <source>Pilot</source>
         <translation>パイロット</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="100"/>
         <location filename="../../src/gui/home/home_frame.py" line="111"/>
-        <location filename="../../src/gui/home/home_frame.py" line="327"/>
-        <location filename="../../src/gui/home/home_frame.py" line="334"/>
+        <location filename="../../src/gui/home/home_frame.py" line="333"/>
+        <location filename="../../src/gui/home/home_frame.py" line="340"/>
         <source>Message</source>
         <translation>テキスト</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="101"/>
         <location filename="../../src/gui/home/home_frame.py" line="112"/>
-        <location filename="../../src/gui/home/home_frame.py" line="328"/>
-        <location filename="../../src/gui/home/home_frame.py" line="335"/>
+        <location filename="../../src/gui/home/home_frame.py" line="334"/>
+        <location filename="../../src/gui/home/home_frame.py" line="341"/>
         <source>Scenario</source>
         <translation>シナリオ</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="102"/>
         <location filename="../../src/gui/home/home_frame.py" line="120"/>
-        <location filename="../../src/gui/home/home_frame.py" line="329"/>
-        <location filename="../../src/gui/home/home_frame.py" line="343"/>
+        <location filename="../../src/gui/home/home_frame.py" line="335"/>
+        <location filename="../../src/gui/home/home_frame.py" line="349"/>
         <source>Intermission</source>
         <translation>インターミッション</translation>
     </message>
@@ -2491,22 +2491,22 @@ Do you want to overwrite it?</source>
         <translation type="vanished">スーパーロボット大戦α ROMエディター</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="77"/>
+        <location filename="../../src/gui/main_window.py" line="78"/>
         <source>Home</source>
         <translation>概要</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="80"/>
+        <location filename="../../src/gui/main_window.py" line="81"/>
         <source>Robot</source>
-        <translation>ロボット</translation>
+        <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="83"/>
+        <location filename="../../src/gui/main_window.py" line="84"/>
         <source>Options</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="138"/>
+        <location filename="../../src/gui/main_window.py" line="139"/>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>スーパーロボット大戦α ROMエディター</translation>
     </message>
@@ -2514,78 +2514,78 @@ Do you want to overwrite it?</source>
 <context>
     <name>OptionFrame</name>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="51"/>
-        <location filename="../../src/gui/option/option_frame.py" line="154"/>
+        <location filename="../../src/gui/option/option_frame.py" line="56"/>
+        <location filename="../../src/gui/option/option_frame.py" line="159"/>
         <source>Interface Language</source>
         <translation>インタフェース言語</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="52"/>
-        <location filename="../../src/gui/option/option_frame.py" line="155"/>
+        <location filename="../../src/gui/option/option_frame.py" line="57"/>
+        <location filename="../../src/gui/option/option_frame.py" line="160"/>
         <source>Change the language of the interface</source>
         <translation>インタフェース言語を変更</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="60"/>
-        <location filename="../../src/gui/option/option_frame.py" line="156"/>
+        <location filename="../../src/gui/option/option_frame.py" line="65"/>
+        <location filename="../../src/gui/option/option_frame.py" line="161"/>
         <source>Theme Mode</source>
         <translation>テーマ設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="61"/>
-        <location filename="../../src/gui/option/option_frame.py" line="157"/>
+        <location filename="../../src/gui/option/option_frame.py" line="66"/>
+        <location filename="../../src/gui/option/option_frame.py" line="162"/>
         <source>Change the theme mode of the interface</source>
         <translation>インタフェーステーマを変更</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="62"/>
-        <location filename="../../src/gui/option/option_frame.py" line="159"/>
+        <location filename="../../src/gui/option/option_frame.py" line="67"/>
+        <location filename="../../src/gui/option/option_frame.py" line="164"/>
         <source>Light</source>
         <translation>明色</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="62"/>
-        <location filename="../../src/gui/option/option_frame.py" line="160"/>
+        <location filename="../../src/gui/option/option_frame.py" line="67"/>
+        <location filename="../../src/gui/option/option_frame.py" line="165"/>
         <source>Dark</source>
         <translation>暗色</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="62"/>
-        <location filename="../../src/gui/option/option_frame.py" line="161"/>
+        <location filename="../../src/gui/option/option_frame.py" line="67"/>
+        <location filename="../../src/gui/option/option_frame.py" line="166"/>
         <source>Follow System</source>
         <translation>システム設定に従う</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="65"/>
+        <location filename="../../src/gui/option/option_frame.py" line="70"/>
         <source>Theme Color</source>
         <translation>テーマカラー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="65"/>
+        <location filename="../../src/gui/option/option_frame.py" line="70"/>
         <source>Change the theme color of the interface</source>
         <translation>インタフェース表示のテーマカラーを変更</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="70"/>
-        <location filename="../../src/gui/option/option_frame.py" line="164"/>
+        <location filename="../../src/gui/option/option_frame.py" line="75"/>
+        <location filename="../../src/gui/option/option_frame.py" line="169"/>
         <source>Interface Scaling</source>
         <translation>インタフェーススケーリング</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="71"/>
-        <location filename="../../src/gui/option/option_frame.py" line="165"/>
+        <location filename="../../src/gui/option/option_frame.py" line="76"/>
+        <location filename="../../src/gui/option/option_frame.py" line="170"/>
         <source>Change the scaling ratio of the interface</source>
         <translation>インタフェース表示のスケーリング比率を変更</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="74"/>
-        <location filename="../../src/gui/option/option_frame.py" line="152"/>
+        <location filename="../../src/gui/option/option_frame.py" line="79"/>
+        <location filename="../../src/gui/option/option_frame.py" line="157"/>
         <source>Interface Settings</source>
         <translation>インタフェース設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="77"/>
-        <location filename="../../src/gui/option/option_frame.py" line="151"/>
+        <location filename="../../src/gui/option/option_frame.py" line="82"/>
+        <location filename="../../src/gui/option/option_frame.py" line="156"/>
         <source>ROM Settings</source>
         <translation>ROM設定</translation>
     </message>
@@ -2594,26 +2594,26 @@ Do you want to overwrite it?</source>
         <translation type="vanished">ROM設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="41"/>
-        <location filename="../../src/gui/option/option_frame.py" line="167"/>
+        <location filename="../../src/gui/option/option_frame.py" line="46"/>
+        <location filename="../../src/gui/option/option_frame.py" line="172"/>
         <source>Interface scaling adjusted to</source>
         <translation>インタフェーススケーリングを</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="42"/>
-        <location filename="../../src/gui/option/option_frame.py" line="168"/>
+        <location filename="../../src/gui/option/option_frame.py" line="47"/>
+        <location filename="../../src/gui/option/option_frame.py" line="173"/>
         <source>Scaling will take effect after restarting the interface</source>
         <translation>スケーリングはインタフェースを再起動後に有効になります</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="43"/>
-        <location filename="../../src/gui/option/option_frame.py" line="169"/>
+        <location filename="../../src/gui/option/option_frame.py" line="48"/>
+        <location filename="../../src/gui/option/option_frame.py" line="174"/>
         <source>Restart Now</source>
         <translation>今すぐ再起動</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/option_frame.py" line="44"/>
-        <location filename="../../src/gui/option/option_frame.py" line="170"/>
+        <location filename="../../src/gui/option/option_frame.py" line="49"/>
+        <location filename="../../src/gui/option/option_frame.py" line="175"/>
         <source>Restart Later</source>
         <translation>後で再起動</translation>
     </message>
@@ -2687,20 +2687,20 @@ Do you want to overwrite it?</source>
         <translation type="vanished">ROMを保存</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="133"/>
-        <location filename="../../src/gui/option/rom_card.py" line="157"/>
+        <location filename="../../src/gui/option/rom_card.py" line="164"/>
+        <location filename="../../src/gui/option/rom_card.py" line="188"/>
         <source>ROM Settings</source>
         <translation>ROM設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="135"/>
-        <location filename="../../src/gui/option/rom_card.py" line="159"/>
+        <location filename="../../src/gui/option/rom_card.py" line="166"/>
+        <location filename="../../src/gui/option/rom_card.py" line="190"/>
         <source>Source ROM</source>
         <translation>元 ROM ファイル</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="136"/>
-        <location filename="../../src/gui/option/rom_card.py" line="160"/>
+        <location filename="../../src/gui/option/rom_card.py" line="167"/>
+        <location filename="../../src/gui/option/rom_card.py" line="191"/>
         <source>Target ROM</source>
         <translation>出力 ROM ファイル</translation>
     </message>
@@ -2709,8 +2709,8 @@ Do you want to overwrite it?</source>
         <translation type="vanished">ROM設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/option/rom_card.py" line="133"/>
-        <location filename="../../src/gui/option/rom_card.py" line="158"/>
+        <location filename="../../src/gui/option/rom_card.py" line="164"/>
+        <location filename="../../src/gui/option/rom_card.py" line="189"/>
         <source>Configure the ROM settings</source>
         <translation>ROM設定</translation>
     </message>

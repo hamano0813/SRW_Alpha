@@ -59,6 +59,7 @@ class BaseTableView(TableView):
 
         # ========== 表头去边框 ==========
         self.verticalHeader().setStyleSheet(self.VERTICAL_QSS)
+        self.verticalHeader().setMinimumSectionSize(28)
         self.horizontalHeader().setStyleSheet(self.HORIZONTAL_QSS)
 
         # ========== 角落折叠按钮 ==========

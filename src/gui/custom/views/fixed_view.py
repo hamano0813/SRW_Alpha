@@ -11,21 +11,26 @@ Classes:
 from PySide6.QtCore import QModelIndex, Qt
 from PySide6.QtWidgets import QAbstractItemView
 
+from gui.custom import fonts
 from gui.custom.models.fixed_model import FixedTableModel
 
 from .base_view import BaseTableView
 
 
 class FixedTableView(BaseTableView):
-    """固定行数表格视图 - 三态排序 + 单选行"""
+    """固定行数表格视图 - 三态排序 + 单选行
 
-    def __init__(self, model: FixedTableModel, parent=None):
-        """初始化固定表格视图
+    内部持有 FixedTableModel 实例，UI 层通过本视图间接操作模型。
+    """
+
+    def __init__(self, parent=None):
+        """初始化固定表格视图，自动创建内部模型
 
         Args:
-            model: FixedTableModel 实例
             parent: 父 QWidget
         """
+        model = FixedTableModel()
+        model.set_font({0: fonts.TEXT_FONT})
         super().__init__(model, parent)
 
         # ========== 三态排序 ==========
@@ -40,6 +45,22 @@ class FixedTableView(BaseTableView):
 
         self.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
         self.clicked.connect(self._single_click)
+
+        # ========== 列宽配置 ==========
+
+        self._widths: list[int] = []
+
+    # ========== 列宽设置 ==========
+
+    def set_column_width(self, widths: list[int]) -> None:
+        """批量设置列宽，按顺序依次设定各列
+
+        Args:
+            widths: 每列的宽度值列表
+        """
+        self._widths = widths
+        for col, width in enumerate(widths):
+            self.setColumnWidth(col, width)
 
     # ========== 三态排序 ==========
 

@@ -8,15 +8,14 @@ Classes:
     RobotFrame: 机体编辑框架
 """
 
-from PySide6.QtWidgets import QFrame, QHBoxLayout, QVBoxLayout
+from PySide6.QtWidgets import QHBoxLayout, QVBoxLayout
 from qfluentwidgets import FlowLayout
 
-from gui.custom import fonts
-from gui.custom.models.fixed_model import FixedTableModel
-from gui.custom.views.fixed_view import FixedTableView
+from gui.custom.proxy_frame import ProxyFrame
+from gui.robot.unit_frame import UnitFrame
 
 
-class RobotFrame(QFrame):
+class RobotFrame(ProxyFrame):
     """机体编辑框架 - 机体主列表 + 武器子列表联动"""
 
     def __init__(
@@ -33,15 +32,12 @@ class RobotFrame(QFrame):
         super().__init__(parent)
         self.setObjectName("RobotFrame")
 
-        self._robot_model = FixedTableModel()
-        self._robot_model.set_font({0: fonts.TEXT_FONT})
-
         self._rom_data: dict | None = None
 
         # ========== 机体主表 ==========
 
-        self._robot_view = FixedTableView(self._robot_model)
-        self._robot_view.set_field(fields)
+        self._unit_frame = UnitFrame()
+        self._unit_frame.set_field(fields)
 
         # ========== 布局 ==========
 
@@ -52,14 +48,15 @@ class RobotFrame(QFrame):
         right_layout.addLayout(right_top_layout)
         right_layout.addLayout(right_bottom_layout)
         main_layout.setContentsMargins(0, 0, 0, 0)
-        main_layout.addWidget(self._robot_view)
-        main_layout.addLayout(right_layout)
+        main_layout.addWidget(self._unit_frame)
+        main_layout.addLayout(right_layout, 1)
+        main_layout.addStretch()  # [TODO] 当右侧面板有控件时拆除
 
         self.setLayout(main_layout)
 
         from pprint import pprint
 
-        self._robot_view.sClicked.connect(lambda x, y: pprint(y, depth=1))  # [TODO]
+        self._unit_frame.sClicked.connect(lambda x, y: pprint(y, depth=1))  # [TODO]
 
     # ========== 数据解析 ==========
 
@@ -72,11 +69,11 @@ class RobotFrame(QFrame):
         """
         self._rom_data = data
         robots = data.get("robots", [])
-        self._robot_view.set_data(robots["robots"])
+        self._unit_frame.set_data(robots["robots"])
 
     def translateUI(self):
         """刷新界面翻译"""
-        self._robot_view.set_title(
+        self._unit_frame.set_title(
             {
                 self.tr("robot name"): lambda x: x,
                 self.tr("hit points"): lambda x: x,
@@ -90,7 +87,3 @@ class RobotFrame(QFrame):
                 self.tr("movement type"): lambda x: x,
             }
         )
-
-    def resetUI(self):
-        """重置界面字体"""
-        self._robot_view.resetUI()

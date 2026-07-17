@@ -31,7 +31,7 @@ class FixedTableView(BaseTableView):
         """
         model = FixedTableModel()
         model.set_font({0: fonts.JP_FONT, 1: fonts.EN_FONT, 2: fonts.EN_FONT, 3: fonts.EN_FONT, 4: fonts.EN_FONT, 5: fonts.EN_FONT, 6: fonts.EN_FONT})
-        model.set_alignments({6: Qt.AlignmentFlag.AlignCenter})
+        model.set_alignments({1: Qt.AlignmentFlag.AlignRight, 2: Qt.AlignmentFlag.AlignRight, 3: Qt.AlignmentFlag.AlignRight, 4: Qt.AlignmentFlag.AlignRight, 5: Qt.AlignmentFlag.AlignRight, 6: Qt.AlignmentFlag.AlignCenter})
         super().__init__(model, parent)
 
         # ========== 三态排序 ==========

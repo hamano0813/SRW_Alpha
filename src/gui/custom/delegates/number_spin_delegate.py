@@ -24,16 +24,20 @@ class NumberSpinDelegate(DataWidgetDelegate):
 
     widget_class = NumberSpinBox
 
-    def __init__(self, value_range: tuple[int, int] | None = None, font: QFont | dict | None = None, parent=None):
+    def __init__(self, value_range: tuple[int, int] | None = None, show_sign: bool = False, show_buttons: bool = True, font: QFont | dict | None = None, parent=None):
         """初始化数值列委托
 
         Args:
             value_range: (最小值, 最大值)，None 表示无限制
+            show_sign: 是否强制显示正号
+            show_buttons: 是否显示左右微调按钮
             font: 编辑器字体，QFont 实例或字体属性字典
             parent: 父对象
         """
         super().__init__(parent=parent, font=font)
         self._value_range: tuple[int, int] | None = value_range
+        self._show_sign = show_sign
+        self._show_buttons = show_buttons
 
     def createEditor(self, parent, option, index) -> Any:
         """创建 NumberSpinBox 并注入取值范围
@@ -46,7 +50,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
         Returns:
             NumberSpinBox 实例
         """
-        editor = NumberSpinBox(self._value_range, parent)
+        editor = NumberSpinBox(self._value_range, self._show_sign, self._show_buttons, parent)
         if self._font is not None:
             editor.apply_font(self._font)
         return editor
@@ -68,12 +72,22 @@ class NumberSpinDelegate(DataWidgetDelegate):
             value: 原始值
 
         Returns:
-            数值字符串
+            数值字符串（show_sign 时正值带 "+" 前缀）
         """
-        return str(value) if value is not None else ""
+        if value is None:
+            return ""
+        try:
+            v = int(value)
+            if self._show_sign and v >= 0:
+                return f"+{v}"
+            return str(v)
+        except (ValueError, TypeError):
+            return str(value)
 
     def parse_display(self, text: str) -> Any:
         """将显示文本解析为数值
+
+        自动去除 "+" 前缀。
 
         Args:
             text: 数字字符串
@@ -82,6 +96,6 @@ class NumberSpinDelegate(DataWidgetDelegate):
             整数值
         """
         try:
-            return int(text)
+            return int(text.lstrip("+"))
         except (ValueError, TypeError):
             return 0

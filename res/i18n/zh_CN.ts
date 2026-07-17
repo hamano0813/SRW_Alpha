@@ -2628,39 +2628,54 @@ Do you want to overwrite it?</source>
 <context>
     <name>RobotFrame</name>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="74"/>
+        <location filename="../../src/gui/robot/robot_frame.py" line="81"/>
         <source>robot name</source>
         <translation>机体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="75"/>
+        <location filename="../../src/gui/robot/robot_frame.py" line="82"/>
         <source>hit points</source>
         <translation>HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="76"/>
+        <location filename="../../src/gui/robot/robot_frame.py" line="83"/>
         <source>energy</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="77"/>
+        <location filename="../../src/gui/robot/robot_frame.py" line="84"/>
+        <source>movement type</source>
+        <translation>移动类型</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/robot_frame.py" line="85"/>
         <source>movement</source>
         <translation>移动力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="78"/>
+        <location filename="../../src/gui/robot/robot_frame.py" line="86"/>
         <source>mobility</source>
         <translation>运动性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="79"/>
+        <location filename="../../src/gui/robot/robot_frame.py" line="87"/>
         <source>armor</source>
         <translation>装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/robot_frame.py" line="80"/>
+        <location filename="../../src/gui/robot/robot_frame.py" line="88"/>
         <source>limit</source>
         <translation>限界</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/robot_frame.py" line="89"/>
+        <source>size</source>
+        <translation>体积</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/robot/robot_frame.py" line="90"/>
+        <source>parts slot</source>
+        <translation>零件插槽</translation>
     </message>
 </context>
 <context>

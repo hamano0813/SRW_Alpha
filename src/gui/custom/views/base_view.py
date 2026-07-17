@@ -13,7 +13,7 @@ from typing import Any, Callable, cast
 
 from PySide6.QtCore import QSortFilterProxyModel, Signal
 from PySide6.QtWidgets import QAbstractButton, QPushButton, QVBoxLayout
-from qfluentwidgets import TableView, isDarkTheme, setFont
+from qfluentwidgets import TableView, isDarkTheme
 
 from gui.custom.fields import FieldMapping
 from gui.custom.models.base_model import BaseTableModel
@@ -32,7 +32,7 @@ class BaseTableView(TableView):
 
     HEADER_QSS = "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
     CORNER_QSS = "QTableView QTableCornerButton::section { background-color: transparent; border: none; }"
-    BUTTON_QSS = "QPushButton {{color: {color}; background-color: transparent; border: none; font-size: 24px; font-weight: 800;}}"
+    BUTTON_QSS = "QPushButton {{color: {color}; background-color: transparent; border: none; font-size: 20px; font-weight: 800;}}"
 
     def __init__(self, model: BaseTableModel, parent=None):
         """初始化表格视图，绑定模型并创建代理
@@ -85,6 +85,7 @@ class BaseTableView(TableView):
             corner: 要嵌入的 QAbstractButton
         """
         corner = cast(QAbstractButton, self.findChild(QAbstractButton, "qt_tableview_cornerbutton"))
+        corner.setContentsMargins(0, 0, 0, 0)
         corner.setStyleSheet(self.CORNER_QSS)
         layout = QVBoxLayout(corner)
         layout.setContentsMargins(0, 0, 0, 0)
@@ -105,7 +106,7 @@ class BaseTableView(TableView):
         if old_sel is not None:
             try:
                 old_sel.selectionChanged.disconnect()
-            except (TypeError, RuntimeError):
+            except TypeError, RuntimeError:
                 pass
 
         self._model = model

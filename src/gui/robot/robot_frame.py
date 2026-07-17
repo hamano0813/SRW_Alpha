@@ -81,10 +81,13 @@ class RobotFrame(QFrame):
                 self.tr("robot name"): lambda x: x,
                 self.tr("hit points"): lambda x: x,
                 self.tr("energy"): lambda x: x,
-                self.tr("movement"): lambda x: x,
                 self.tr("mobility"): lambda x: x,
                 self.tr("armor"): lambda x: x,
                 self.tr("limit"): lambda x: x,
+                self.tr("size"): lambda x: x,
+                self.tr("parts slot"): lambda x: x,
+                self.tr("movement"): lambda x: x,
+                self.tr("movement type"): lambda x: x,
             }
         )
 

@@ -49,6 +49,9 @@ class FixedTableModel(BaseTableModel):
         if role == Qt.ItemDataRole.FontRole:
             return self._get_font(index.column())
 
+        if role == Qt.ItemDataRole.TextAlignmentRole:
+            return self._alignments.get(index.column())
+
         return None
 
     def setData(

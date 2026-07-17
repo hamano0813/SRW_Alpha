@@ -14,7 +14,8 @@ from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Signal
 from PySide6.QtWidgets import QVBoxLayout
 
 from gui.custom import fonts
-from gui.custom.delegates import LineTextFirstDelegate
+from gui.custom.delegates import LineTextFirstDelegate, MapSpinDelegate
+from gui.custom.enums import EnumData
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.views.fixed_view import FixedTableView
 
@@ -46,6 +47,10 @@ class UnitFrame(ProxyFrame):
 
         self._name_delegate = LineTextFirstDelegate(font=fonts.JP_FONT, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(0, self._name_delegate)
+
+        _enum = EnumData()
+        self._size_delegate = MapSpinDelegate(mapping=_enum.ROBOT["SIZE"], font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(6, self._size_delegate)
 
         # ========== 宽度折叠动画 ==========
 

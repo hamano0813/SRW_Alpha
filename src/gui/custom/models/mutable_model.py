@@ -99,6 +99,9 @@ class MutableTableModel(BaseTableModel):
         if role == Qt.ItemDataRole.EditRole:
             return value
 
+        if role == Qt.ItemDataRole.TextAlignmentRole:
+            return self._alignments.get(index.column())
+
         return None
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlag:

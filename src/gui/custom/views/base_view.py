@@ -189,6 +189,14 @@ class BaseTableView(TableView):
         """
         self._model.set_field(fields)
 
+    def set_alignments(self, alignments: dict[int, int]) -> None:
+        """设置列文本对齐方式
+
+        Args:
+            alignments: {列号: Qt.AlignmentFlag, ...}
+        """
+        self._model.set_alignments(alignments)
+
     def resetUI(self):
         """根据当前主题刷新角落按钮颜色"""
         if isDarkTheme():

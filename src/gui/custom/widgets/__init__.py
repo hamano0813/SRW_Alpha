@@ -8,14 +8,20 @@ Classes:
     LineTextFirstWidget: 首列单行文本编辑器
     LineTextMidWidget: 中间列单行文本编辑器
     LineTextLastWidget: 末列单行文本编辑器
+    MapSpinWidget: 数值微调编辑器
+    MappingSpinBox: 映射微调框
 """
 
 from .data_widget import DataWidget
 from .linetext_widget import LineTextFirstWidget, LineTextMidWidget, LineTextLastWidget
+from .mapping_spinbox import MappingSpinBox
+from .value_widget import MapSpinWidget
 
 __all__ = [
     "DataWidget",
     "LineTextFirstWidget",
     "LineTextMidWidget",
     "LineTextLastWidget",
+    "MapSpinWidget",
+    "MappingSpinBox",
 ]

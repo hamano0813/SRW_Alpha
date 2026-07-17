@@ -1,21 +1,25 @@
 """
-场景数据枚举模块
+游戏数据枚举模块
 
-存储《超级机器人大战α》所有关卡的基础信息，
-包含关卡编号、路线分类、话数和标题（多语言支持）。
+存储关卡基础信息和机体相关映射表。
+关卡包含编号、路线分类、话数和标题（多语言支持）。
+机体映射包括 SIZE 等字段的数值 ↔ 显示文本转换。
 
 Classes:
-    EnumData: 场景枚举数据，提供关卡信息的字典查询
+    EnumData: 游戏数据枚举，提供关卡信息和机体映射的字典查询
 """
 
 from PySide6.QtCore import QObject
 
 
 class EnumData(QObject):
-    """关卡枚举数据，按关卡 ID 索引"""
+    """游戏枚举数据 — SCENARIO 按关卡 ID 索引，ROBOT 按字段名索引"""
 
     def __init__(self) -> None:
         super().__init__(parent=None)
+        self.ROBOT = {
+            "SIZE": {0x0: "SS", 0x1: "S", 0x2: "M", 0x3: "L", 0x4: "LL"},
+        }
         self.SCENARIO = {
             0x00: ("[00]", self.tr("Unified"), self.tr("Stage 0"), self.tr("Prologue")),  # '共通', '第０話', 'プロローグ'),
             0x01: ("[01]", self.tr("Super"), self.tr("Stage 1"), self.tr("Cockpit of Steel")),  # 'スーパー系', '第１話', '鋼鉄のコクピット'),

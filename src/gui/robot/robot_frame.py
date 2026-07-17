@@ -50,7 +50,7 @@ class RobotFrame(ProxyFrame):
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.addWidget(self._unit_frame)
         main_layout.addLayout(right_layout, 1)
-        main_layout.addStretch()  # [TODO] 当右侧面板有控件时拆除
+        # main_layout.addStretch()  # [TODO] 当右侧面板有控件时拆除
 
         self.setLayout(main_layout)
 

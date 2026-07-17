@@ -43,6 +43,7 @@ class BaseTableModel(QAbstractTableModel):
         self._index = BaseTableModel.IndexMode.HEX
         self._width: int = 0
         self._fonts: dict = {}  # 自定义字体
+        self._alignments: dict[int, int] = {}  # {列号: Qt.AlignmentFlag}
 
     # ========== 公开接口 ==========
 
@@ -90,6 +91,15 @@ class BaseTableModel(QAbstractTableModel):
             fonts: {列号: font_dict}，-1 表示全局默认
         """
         self._fonts = fonts
+
+    def set_alignments(self, alignments: dict[int, int]) -> None:
+        """设置列文本对齐方式
+
+        Args:
+            alignments: {列号: Qt.AlignmentFlag, ...}，
+                       省略的列使用默认左对齐
+        """
+        self._alignments = alignments
 
     # ========== Qt 模型接口 ==========
 

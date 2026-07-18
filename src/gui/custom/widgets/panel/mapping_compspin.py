@@ -84,12 +84,27 @@ class MappingCompSpin(PanelEditor):
             self._spin.setValue(int(self._value))
         self._spin.blockSignals(False)
 
-    def apply_font(self, font: QFont) -> None:
+    def apply_font(self, font: QFont | dict) -> None:
         """设置编辑器字体
 
         Args:
-            font: 要应用的 QFont
+            font: QFont 实例或字体属性字典
         """
+        if isinstance(font, dict):
+            qfont = QFont()
+            family = font.get("family")
+            size = font.get("size")
+            weight = font.get("weight")
+            italic = font.get("italic")
+            if family:
+                qfont.setFamily(family)
+            if size:
+                qfont.setPixelSize(size)
+            if weight:
+                qfont.setWeight(weight)
+            if italic:
+                qfont.setItalic(italic)
+            font = qfont
         self._spin.setFont(font)
 
     # ========== 内部槽 ==========

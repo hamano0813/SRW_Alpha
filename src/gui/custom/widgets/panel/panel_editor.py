@@ -98,12 +98,27 @@ class PanelEditor(QWidget):
 
     # ========== 字体 ==========
 
-    def apply_font(self, font: QFont) -> None:
+    def apply_font(self, font: QFont | dict) -> None:
         """设置编辑器字体
 
         基类调用 setFont，子类如有内嵌控件需重写以确保字体生效。
 
         Args:
-            font: 要应用的 QFont
+            font: QFont 实例或字体属性字典（含 family/size/weight/italic 键）
         """
+        if isinstance(font, dict):
+            qfont = QFont()
+            family = font.get("family")
+            size = font.get("size")
+            weight = font.get("weight")
+            italic = font.get("italic")
+            if family:
+                qfont.setFamily(family)
+            if size:
+                qfont.setPixelSize(size)
+            if weight:
+                qfont.setWeight(weight)
+            if italic:
+                qfont.setItalic(italic)
+            font = qfont
         self.setFont(font)

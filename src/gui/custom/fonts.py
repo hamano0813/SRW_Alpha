@@ -32,6 +32,9 @@ _jp_qfont.setWeight(JP_FONT["weight"])
 _jp_qfont.setItalic(JP_FONT["italic"])
 JP_FONT_STYLESHEET = fontStyleSheet(_jp_qfont)
 
+# QFont 实例（供 apply_font 等处直接使用）
+JP_QFONT = _jp_qfont
+
 # ========== 西文字体 ==========
 
 EN_FONT = {
@@ -46,3 +49,6 @@ _en_qfont.setPixelSize(EN_FONT["size"])
 _en_qfont.setWeight(EN_FONT["weight"])
 _en_qfont.setItalic(EN_FONT["italic"])
 EN_FONT_STYLESHEET = fontStyleSheet(_en_qfont)
+
+# QFont 实例
+EN_QFONT = _en_qfont

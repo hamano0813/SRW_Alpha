@@ -214,3 +214,8 @@ class BitComboBox(PanelEditor):
             font: 要应用的 QFont
         """
         self._button.setFont(font)
+
+    def translateUI(self):
+        """从全局配置刷新字体"""
+        from PySide6.QtWidgets import QApplication
+        self._button.setFont(QApplication.font())

@@ -94,11 +94,12 @@ class UnitPanel(ProxyFrame):
     # ========== 翻译 ==========
 
     def translateUI(self):
-        """刷新卡片标题、标签文本及下拉选项"""
+        """刷新卡片标题、标签文本、下拉选项及字体"""
         self._terrain_card.setTitle(self.tr("Terrain"))
         # EnumData 在构造时缓存了 tr() 结果，每次刷新重新创建以获取新翻译
         _enum = EnumData()
         self._move_combo.set_values(_enum.ROBOT["MOVETYPE"])
+        self._move_combo.translateUI()
         for field, (lbl, spin) in self._adapt_spins.items():
             spin.set_mapping(_enum.ROBOT["ADAPT"])
 

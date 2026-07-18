@@ -1,24 +1,21 @@
 """
-表格编辑器控件包
+编辑器控件包
 
-导出 DataWidget 基类和具体的编辑器子类。
+按用途拆分为两个子包：
+  - table/    表格内的编辑器控件（TableEditor 子类，供 delegates 使用）
+  - panel/    面板上的搜索/过滤/定位控件（待填充）
 
-Classes:
-    DataWidget: 数据编辑器基类
-    SingleLineEdit: 单行文本编辑器
-    MultiLineEdit: 多行文本编辑器
-    NumberSpinBox: 数值微调框（左右按钮步进）
-    MappingSpinBox: 映射微调框
+顶层 re-export table 子包的所有导出，保持已有 imports 向后兼容。
+
+Subpackages:
+    table: 表格编辑器控件
+    panel: 面板控件（待实现）
 """
 
-from .data_widget import DataWidget
-from .mapping_spinbox import MappingSpinBox
-from .multiline_edit import MultiLineEdit
-from .number_spinbox import NumberSpinBox
-from .single_lineedit import SingleLineEdit
+from .table import MappingSpinBox, MultiLineEdit, NumberSpinBox, SingleLineEdit, TableEditor
 
 __all__ = [
-    "DataWidget",
+    "TableEditor",
     "SingleLineEdit",
     "MultiLineEdit",
     "NumberSpinBox",

@@ -10,7 +10,7 @@ Classes:
 
 from typing import Any, Callable
 
-from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Signal
+from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation, Signal
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
 from gui.custom import fonts
@@ -42,6 +42,29 @@ class UnitFrame(ProxyFrame):
 
         self._robot_view = FixedTableView()
         self._robot_view.sClicked.connect(self.sClicked.emit)
+
+        # ========== 模型字体与对齐 ==========
+
+        _model = self._robot_view.source_model()
+        _model.set_font({
+            0: fonts.JP_FONT,
+            1: fonts.EN_FONT, 2: fonts.EN_FONT, 3: fonts.EN_FONT,
+            4: fonts.EN_FONT, 5: fonts.EN_FONT, 6: fonts.EN_FONT,
+            7: fonts.EN_FONT, 8: fonts.EN_FONT,
+            9: fonts.EN_FONT, 10: fonts.EN_FONT,
+        })
+        _model.set_alignments({
+            1: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            2: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            3: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            4: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            5: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            6: Qt.AlignmentFlag.AlignCenter,
+            7: Qt.AlignmentFlag.AlignCenter,
+            8: Qt.AlignmentFlag.AlignCenter,
+            9: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            10: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+        })
 
         # ========== 委托编辑器 ==========
 
@@ -75,6 +98,14 @@ class UnitFrame(ProxyFrame):
         self._size_delegate = MappingSpinDelegate(mapping=_enum.ROBOT["SIZE"], font=fonts.EN_FONT, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(6, self._size_delegate)
 
+        # ========== 资金列：无按钮 ==========
+
+        self._rep_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(9, self._rep_delegate)
+
+        self._cost_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._robot_view.setItemDelegateForColumn(10, self._cost_delegate)
+
         # ========== 宽度折叠动画 ==========
 
         self._width_anim = QPropertyAnimation(self, b"maximumWidth")
@@ -84,7 +115,7 @@ class UnitFrame(ProxyFrame):
 
         # ========== 默认列宽 ==========
 
-        self._robot_view.set_column_width([200] + [80] * 5 + [84] * 3)
+        self._robot_view.set_column_width([200] + [96] * 10)
         self._robot_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
 
         # ========== 布局 ==========
@@ -129,6 +160,8 @@ class UnitFrame(ProxyFrame):
                 self.tr("size"): [self._size_delegate.format_display, self._size_delegate.parse_display],
                 self.tr("parts slot"): [self._slot_delegate.format_display, self._slot_delegate.parse_display],
                 self.tr("movement"): [self._move_delegate.format_display, self._move_delegate.parse_display],
+                self.tr("repair cost"): [self._rep_delegate.format_display, self._rep_delegate.parse_display],
+                self.tr("cost"): [self._cost_delegate.format_display, self._cost_delegate.parse_display],
             }
         )
         if self._robot_view._widths:

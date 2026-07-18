@@ -164,9 +164,8 @@ class FixedTableView(BaseTableView):
         sort_header.style().polish(sort_header)
         sort_header.sortChanged.connect(self._on_sort_changed)
 
-        # ========== 行选择 ==========
+        # ========== 行交互 ==========
 
-        self.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
         self.clicked.connect(self._single_click)
 
         # ========== 列宽配置 ==========
@@ -184,6 +183,31 @@ class FixedTableView(BaseTableView):
         self._widths = widths
         for col, width in enumerate(widths):
             self.setColumnWidth(col, width)
+
+    # ========== 行定位 ==========
+
+    def select_source_row(self, source_row: int) -> bool:
+        """选中并滚动到指定的源行号（自动经代理模型转换）
+
+        过滤状态下源行可能被隐藏，此时返回 False。
+
+        Args:
+            source_row: 源模型行号
+
+        Returns:
+            选中成功返回 True，行被过滤隐藏返回 False
+        """
+        if source_row < 0 or source_row >= self._model.rowCount():
+            return False
+
+        source_index = self._model.index(source_row, 0)
+        proxy_index = self._proxy.mapFromSource(source_index)
+        if not proxy_index.isValid():
+            return False
+
+        self.scrollTo(proxy_index)
+        self.selectRow(proxy_index.row())
+        return True
 
     # ========== 排序 ==========
 

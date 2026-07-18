@@ -7,6 +7,7 @@
  *
  * Python API (via _snmsg_bin.pyd):
  *   parse(data: bytearray | bytes, extra=None, trans=None) -> dict
+ *       {'snmsgs': [{'snmsgs': str}, ...], 'count': int, 'name': str}
  *   build(data: dict, extra=None, trans=None) -> bytearray
  */
 
@@ -26,7 +27,8 @@
  *
  *   parse(data, extra=None, trans=None) -> dict
  *
- * 解析 SNMSG.BIN，每条消息解码为 str。
+ * 解析 SNMSG.BIN，每条消息解码为 {"snmsgs": str}。
+ * 返回格式：{'snmsgs': [{'snmsgs': str}, ...], 'count': int, 'name': str}
  * =================================================================== */
 
 static PyObject *
@@ -82,7 +84,20 @@ snmsg_bin_parse(PyObject *self, PyObject *args, PyObject *kwargs)
             PyBuffer_Release(&view);
             return NULL;
         }
-        PyList_SetItem(msgs_list, (Py_ssize_t)i, decoded);
+
+        /* 每条消息包装为 {"snmsgs": text} */
+        PyObject *item = PyDict_New();
+        if (!item)
+        {
+            Py_DECREF(decoded);
+            Py_DECREF(result);
+            PyBuffer_Release(&view);
+            return NULL;
+        }
+        PyDict_SetItemString(item, "snmsgs", decoded);
+        Py_DECREF(decoded);
+
+        PyList_SetItem(msgs_list, (Py_ssize_t)i, item);
         ptr += SNMSG_SZ;
     }
 
@@ -154,15 +169,29 @@ snmsg_bin_build(PyObject *self, PyObject *args, PyObject *kwargs)
             return NULL;
         }
 
-        if (PyUnicode_Check(item))
+        /* 从 {"snmsgs": text} 中提取文本 */
+        PyObject *text = item;
+        if (PyDict_Check(item))
         {
-            if (PyUnicode_GET_LENGTH(item) == 0)
+            text = PyDict_GetItemString(item, "snmsgs");
+            if (!text)
+            {
+                free(raw);
+                PyErr_SetString(PyExc_KeyError,
+                                "Each item must have a 'snmsgs' key");
+                return NULL;
+            }
+        }
+
+        if (PyUnicode_Check(text))
+        {
+            if (PyUnicode_GET_LENGTH(text) == 0)
             {
                 ptr += SNMSG_SZ;
                 continue;
             }
 
-            PyObject *enc = codec_encode(item, extra, trans);
+            PyObject *enc = codec_encode(text, extra, trans);
             if (!enc)
             {
                 free(raw);
@@ -183,11 +212,11 @@ snmsg_bin_build(PyObject *self, PyObject *args, PyObject *kwargs)
             memcpy(ptr, buf, (size_t)copy_len);
             Py_DECREF(enc);
         }
-        else if (PyBytes_Check(item))
+        else if (PyBytes_Check(text))
         {
             char *buf;
             Py_ssize_t len;
-            if (PyBytes_AsStringAndSize(item, &buf, &len) == -1)
+            if (PyBytes_AsStringAndSize(text, &buf, &len) == -1)
             {
                 free(raw);
                 return NULL;

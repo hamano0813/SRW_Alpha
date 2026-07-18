@@ -57,7 +57,7 @@ class RobotFrame(ProxyFrame):
 
         # ========== 列折叠 ↔ 面板联动 ==========
 
-        self._unit_frame._robot_view.foldToggled.connect(self._on_fold_toggled)
+        self._unit_frame.robot_view.foldToggled.connect(self._on_fold_toggled)
 
     # ========== 行点击 ==========
 
@@ -68,7 +68,7 @@ class RobotFrame(ProxyFrame):
             row:  视图行号（转为源行号存储，供 model dataChanged 使用）
             data: 该行的数据字典
         """
-        proxy = self._unit_frame._robot_view.proxy_model()
+        proxy = self._unit_frame.robot_view.proxy_model()
         self._current_source_row = proxy.mapToSource(proxy.index(row, 0)).row()
         self._robot_panel.set_row_data(data)
 
@@ -80,7 +80,7 @@ class RobotFrame(ProxyFrame):
         Args:
             field: 被修改的字段名
         """
-        model = self._unit_frame._robot_view.source_model()
+        model = self._unit_frame.robot_view.source_model()
         for col, header in enumerate(model._headers):
             if model._fields.get_field(header) == field:
                 idx = model.index(self._current_source_row, col)
@@ -116,5 +116,5 @@ class RobotFrame(ProxyFrame):
 
         # 默认选中第一行
         if robots["robots"]:
-            self._unit_frame._robot_view.selectRow(0)
+            self._unit_frame.robot_view.selectRow(0)
             self._on_row_clicked(0, robots["robots"][0])

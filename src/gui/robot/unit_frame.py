@@ -145,6 +145,17 @@ class UnitFrame(ProxyFrame):
         self._width_anim.setEndValue(target)
         self._width_anim.start()
 
+    # ========== 公开接口 ==========
+
+    @property
+    def robot_view(self) -> FixedTableView:
+        """获取内部表格视图
+
+        Returns:
+            FixedTableView 实例
+        """
+        return self._robot_view
+
     # ========== 翻译 ==========
 
     def translateUI(self):
@@ -164,8 +175,8 @@ class UnitFrame(ProxyFrame):
                 self.tr("cost"): [self._cost_delegate.format_display, self._cost_delegate.parse_display],
             }
         )
-        if self._robot_view._widths:
-            self._robot_view.set_column_width(self._robot_view._widths)
+        if self._robot_view.column_widths:
+            self._robot_view.set_column_width(self._robot_view.column_widths)
 
     # ========== 代理方法 ==========
 
@@ -195,5 +206,5 @@ class UnitFrame(ProxyFrame):
             titles: {翻译后表头: [格式化函数, 反解析函数], ...}
         """
         self._robot_view.set_title(titles)
-        if self._robot_view._widths:
-            self._robot_view.set_column_width(self._robot_view._widths)
+        if self._robot_view.column_widths:
+            self._robot_view.set_column_width(self._robot_view.column_widths)

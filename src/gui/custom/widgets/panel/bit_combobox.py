@@ -11,8 +11,6 @@ Classes:
     BitComboBox: Bit 位多选下拉框
 """
 
-from typing import Any
-
 from PySide6.QtCore import Qt, QPoint, Signal
 from PySide6.QtGui import QAction, QFont
 from PySide6.QtWidgets import QVBoxLayout
@@ -67,8 +65,6 @@ class BitComboBox(PanelEditor):
     Signals:
         dataChanged: 编辑确认后发射，携带当前数据字典
     """
-
-    dataChanged = Signal(object)
 
     def __init__(self, field: str, values: list[str] | None = None,
                  sep: str = "", parent=None):

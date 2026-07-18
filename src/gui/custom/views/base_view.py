@@ -10,11 +10,11 @@ Classes:
 """
 
 from tkinter import VERTICAL
-from typing import Any, Callable, cast
+from typing import Any, Callable
 
 from PySide6.QtCore import QSortFilterProxyModel, Signal, Qt
-from PySide6.QtWidgets import QAbstractButton, QAbstractItemView, QPushButton, QVBoxLayout
-from qfluentwidgets import TableView, isDarkTheme
+from PySide6.QtWidgets import QAbstractItemView
+from qfluentwidgets import TableView
 
 from gui.custom.fields import FieldMapping
 from gui.custom.models.base_model import BaseTableModel
@@ -30,15 +30,11 @@ class BaseTableView(TableView):
 
     sClicked = Signal(int, dict)  # 单击某行 (视图行号, 行数据)
     dClicked = Signal(int, dict)  # 双击某行 (视图行号, 行数据)
-    widthChanged = Signal(int, int)
-    foldToggled = Signal(bool, int)  # (列已折叠?, 释放的像素宽度)
 
     HORIZONTAL_QSS = (
         "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
     )
     VERTICAL_QSS = "QHeaderView::section { border: none; font-size: 13px; }"
-    CORNER_QSS = "QTableView QTableCornerButton::section { background-color: transparent; border: none; }"
-    BUTTON_QSS = "QPushButton {{color: {color}; background-color: transparent; border: none; font-size: 20px; font-weight: 800;}}"
 
     def __init__(self, model: BaseTableModel, parent=None):
         """初始化表格视图，绑定模型并创建代理
@@ -64,67 +60,6 @@ class BaseTableView(TableView):
         self.verticalHeader().setStyleSheet(self.VERTICAL_QSS)
         self.verticalHeader().setMinimumSectionSize(28)
         self.horizontalHeader().setStyleSheet(self.HORIZONTAL_QSS)
-
-        # ========== 角落折叠按钮 ==========
-
-        self._corner_button = QPushButton("")
-        self.setCornerButton(self._corner_button)
-        self._corner_button.clicked.connect(self.hide_columns)
-
-    # ========== 列折叠切换 ==========
-
-    def hide_columns(self):
-        """切换第 1 列之后所有列的显示/隐藏，并更新按钮文字"""
-        if self._model.columnCount() <= 1:
-            return
-
-        for col_idx in range(1, self._model.columnCount()):
-            hidden = self.isColumnHidden(col_idx)
-            self.setColumnHidden(col_idx, not hidden)
-
-        # hidden 是切换前的状态，取反得到当前状态
-        folded = not hidden
-        self._corner_button.setText("«" if folded else "»")
-        self.changed_hidden(folded)
-
-    def changed_hidden(self, folded: bool):
-        """列折叠状态变更 — 计算折叠后宽度及释放空间
-
-        Args:
-            folded: True=列已折叠（仅显示第 0 列），False=全部展开
-        """
-        vh_width = self.verticalHeader().width()
-        # 折叠后只保留第 0 列
-        cols_width = self.columnWidth(0)
-        bd_width = 10
-        if not folded:
-            # 展开状态：累加所有列
-            for col_idx in range(1, self._model.columnCount()):
-                cols_width += self.columnWidth(col_idx)
-            bd_width = 5
-        target_width = vh_width + cols_width + bd_width
-        source_width = self.width()
-        freed_width = source_width - target_width
-        self.widthChanged.emit(source_width, target_width)
-        self.foldToggled.emit(folded, freed_width)
-        source_width = self.width()
-        self.widthChanged.emit(source_width, target_width)
-
-    def setCornerButton(self, corner: QAbstractButton):
-        """将按钮嵌入内置 corner widget 中
-
-        Args:
-            corner: 要嵌入的 QAbstractButton
-        """
-        corner = cast(
-            QAbstractButton,
-            self.findChild(QAbstractButton, "qt_tableview_cornerbutton"),
-        )
-        corner.setContentsMargins(0, 0, 0, 0)
-        corner.setStyleSheet(self.CORNER_QSS)
-        layout = QVBoxLayout(corner)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._corner_button)
 
     # ========== 模型绑定 ==========
 
@@ -184,8 +119,6 @@ class BaseTableView(TableView):
             data: 行数据列表，每项为 dict
         """
         self._model.set_data(data)
-        if self._model.columnCount() > 1:
-            self._corner_button.setText("«")
 
     def set_title(self, titles: dict[str, list[Callable | None]]) -> None:
         """设置列标题与格式化函数
@@ -210,10 +143,3 @@ class BaseTableView(TableView):
             alignments: {列号: Qt.AlignmentFlag, ...}
         """
         self._model.set_alignments(alignments)
-
-    def resetUI(self):
-        """根据当前主题刷新角落按钮颜色"""
-        if isDarkTheme():
-            self._corner_button.setStyleSheet(self.BUTTON_QSS.format(color="#CBCBCB"))
-        else:
-            self._corner_button.setStyleSheet(self.BUTTON_QSS.format(color="#606060"))

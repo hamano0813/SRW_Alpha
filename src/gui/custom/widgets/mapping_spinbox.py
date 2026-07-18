@@ -96,6 +96,7 @@ class MappingSpinBox(QSpinBox, DataWidget):
 
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
+        self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self.setButtonSymbols(QSpinBox.ButtonSymbols.NoButtons)
         self.setFixedHeight(28)
 
@@ -107,6 +108,7 @@ class MappingSpinBox(QSpinBox, DataWidget):
         le = self.lineEdit()
         le.setReadOnly(True)
         le.setFrame(False)
+        le.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         le.setAlignment(Qt.AlignmentFlag.AlignCenter)
         le.setStyleSheet("background: transparent; border: none;")
         le.selectionChanged.connect(lambda: le.setSelection(0, 0))

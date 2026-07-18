@@ -8,7 +8,7 @@ Classes:
     NumberSpinBox: 数值编辑器
 """
 
-from typing import Any
+from typing import Any, cast
 
 from PySide6.QtCore import Qt, QPointF
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
@@ -33,10 +33,11 @@ class _ArrowButton(QToolButton):
         Args:
             e: 鼠标事件
         """
+        parent = cast(NumberSpinBox, self.parent())
         if self._right:
-            self.parent().stepUp()
+            parent.stepUp()
         else:
-            self.parent().stepDown()
+            parent.stepDown()
 
     def paintEvent(self, e):
         """自绘三角形箭头
@@ -101,6 +102,7 @@ class NumberSpinBox(QSpinBox, DataWidget):
 
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
+        self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self.setButtonSymbols(QSpinBox.ButtonSymbols.NoButtons)
         self.setFixedHeight(28)
         self.setRange(self._min, self._max)
@@ -110,6 +112,7 @@ class NumberSpinBox(QSpinBox, DataWidget):
         le = self.lineEdit()
         le.setReadOnly(self._show_buttons)  # 有按钮时只读（仅按钮步进），无按钮时可键盘输入
         le.setFrame(False)
+        le.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         # 有按钮时居中（与左右按钮对称），无按钮时右对齐
         if self._show_buttons:
             le.setAlignment(Qt.AlignmentFlag.AlignCenter)

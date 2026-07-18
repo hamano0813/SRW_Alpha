@@ -37,6 +37,7 @@ class SingleLineEdit(QLineEdit, DataWidget):
 
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
+        self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self.setStyleSheet("background: transparent;")
 
         self.textChanged.connect(self._on_text_changed)

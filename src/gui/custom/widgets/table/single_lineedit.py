@@ -16,7 +16,7 @@ from PySide6.QtGui import QColor, QFont
 from PySide6.QtWidgets import QLineEdit
 from qfluentwidgets import isDarkTheme
 
-from .tableeditor import TableEditor
+from .table_editor import TableEditor
 
 
 class SingleLineEdit(QLineEdit, TableEditor):

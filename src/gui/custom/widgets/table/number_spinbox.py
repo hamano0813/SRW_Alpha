@@ -15,7 +15,7 @@ from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
 
-from .tableeditor import TableEditor
+from .table_editor import TableEditor
 
 
 class _ArrowButton(QToolButton):

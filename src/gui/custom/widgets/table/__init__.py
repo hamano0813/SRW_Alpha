@@ -16,7 +16,7 @@ from .mapping_spinbox import MappingSpinBox
 from .multiline_edit import MultiLineEdit
 from .number_spinbox import NumberSpinBox
 from .single_lineedit import SingleLineEdit
-from .tableeditor import TableEditor
+from .table_editor import TableEditor
 
 __all__ = [
     "TableEditor",

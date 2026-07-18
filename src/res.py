@@ -42376,10 +42376,10 @@ X\x00\xc0\xc0\xc0\xc0\xc0\xc0\xb0\x02\xc1\x02\x00\x06\x06\x06\
 \xc0\x90\x00\x00\xc0\x90\x00\x00\xc0\x90\x00\x00\xc0\x90\x00\x00\
 \xc0\x90\x00\x00\xc0P\xe78\x11\xcb\x22\x08\xc9-\x00\x00\
 \x00\x00IEND\xaeB`\x82\
-\x00\x00s\x94\
+\x00\x00u\xf2\
 <\
 \xb8d\x18\xca\xef\x9c\x95\xcd!\x1c\xbf`\xa1\xbd\xdd\xa7\
-\x00\x00\x00\x05zh_CNB\x00\x00\x0e\xd8\x00\x00\
+\x00\x00\x00\x05zh_CNB\x00\x00\x0f \x00\x00\
 \x04Y\x00\x003\xb1\x00\x00\x05;\x00\x00\x02K\x00\x00\
 \x05;\x00\x00S\x85\x00\x00\x05;\x00\x00Xr\x00\x00\
 \x05O\x00\x00XP\x00\x00\x05\x80\x00\x003\xd8\x00\x00\
@@ -42395,9 +42395,10 @@ y\xb1\x00\x003l\x00\x01\x98A\x00\x00\x14\xab\x00\x02\
 \xa1\x05\x00\x00C\xa4\x00\x07\xa1\x05\x00\x00dr\x00\x07\
 \xd8,\x00\x003\x8e\x00\x0c\xc0\x0e\x00\x00U\xed\x00\x0f\
 |{\x00\x00\x05\xf4\x00 \x82\xe1\x00\x00.L\x000\
-\xc8S\x00\x003\xff\x00>`$\x00\x00@\xd9\x00J\
-6\x95\x00\x00W\x08\x00JB\x15\x00\x00/\x06\x00K\
-\xc4I\x00\x00\x0b\xac\x00N\x8b\xbe\x00\x00\x02&\x00R\
+\xc8S\x00\x003\xff\x006\xfb3\x00\x00fw\x00>\
+`$\x00\x00@\xd9\x00J6\x95\x00\x00W\x08\x00J\
+B\x15\x00\x00/\x06\x00K\xc4I\x00\x00\x0b\xac\x00N\
+\x17\xaf\x00\x00e\x92\x00N\x8b\xbe\x00\x00\x02&\x00R\
 \xfd\xf4\x00\x00`h\x00W\x03d\x00\x00X\xf2\x00Y\
 Yd\x00\x00Z\xce\x00YYd\x00\x00\x5c\xd8\x00Z\
 T\x97\x00\x00]\x00\x00Z\xc6\xc2\x00\x00&\x08\x00h\
@@ -42463,11 +42464,12 @@ X\x83\x00\x00\x03#\x01\xf0\xfa\xa3\x00\x00\x03_\x02\x08\
 \xd0\x01\x00\x00$\x9a\x03:\xd0\x02\x00\x00$\xd5\x03:\
 \xd0\x03\x00\x00%\x10\x03D\xaa\x83\x00\x00\x02\xee\x03T\
 \x9c\x7f\x00\x00\x15\xec\x03r\xabe\x00\x00a\xd3\x03\x81\
-)\xc1\x00\x00(\xe2\x03\xc2\x13\xd3\x00\x001z\x03\xc4\
-\xcct\x00\x00\x00A\x03\xca\x97\x85\x00\x00X'\x03\xca\
-\x97\xa5\x00\x00>\x05\x03\xca\x97\xa5\x00\x00]\x81\x03\xd1\
-\x22r\x00\x00B-\x03\xd7E\xf2\x00\x00\x01]\x04\x03\
-R\xb2\x00\x00)%\x04\x04'\xa2\x00\x00\x04\xd1\x04^\
+)\xc1\x00\x00(\xe2\x03\xac>\x0e\x00\x00e\x0f\x03\xc2\
+\x13\xd3\x00\x001z\x03\xc4\xcct\x00\x00\x00A\x03\xca\
+\x97\x85\x00\x00X'\x03\xca\x97\xa5\x00\x00>\x05\x03\xca\
+\x97\xa5\x00\x00]\x81\x03\xd1\x22r\x00\x00B-\x03\xd7\
+E\xf2\x00\x00\x01]\x04\x03R\xb2\x00\x00)%\x04\x04\
+'\xa2\x00\x00\x04\xd1\x04=\xb9C\x00\x00e\xf3\x04^\
 \xe3y\x00\x00\x13\xcc\x04\x81\xe5\xd5\x00\x00\x07D\x04\x87\
 wq\x00\x00\x0e\xd8\x04\x98I\xbc\x00\x00\x00\xda\x04\x98\
 I\xbc\x00\x00V\xe0\x04\x99n\x95\x00\x00S\x15\x04\xd4\
@@ -42478,40 +42480,41 @@ Q\xb2\x00\x00G\x91\x04\xf5\x90\xf1\x00\x00&0\x04\xfd\
 \x13\x1c\x00\x00'\x98\x05`\x10\x1e\x00\x00\x09\xec\x05a\
 \x05t\x00\x00[\x1f\x05l\x01\xa4\x00\x00\x0d5\x05l\
 V\x89\x00\x00\x12Y\x05\x80\xebt\x00\x00*\x91\x05\x90\
-7\xf9\x00\x00>5\x05\x907\xf9\x00\x00c\x8b\x05\x9d\
-\x8a\xd5\x00\x009\xb7\x05\xa2\x1b\xe3\x00\x005)\x05\xa8\
-\x1a\x02\x00\x00,\xc0\x05\xc6=\xf3\x00\x00_\xdf\x05\xc8\
-u\x84\x00\x00\x06\x87\x05\xcd\xcc\xff\x00\x00:\x18\x05\xd0\
-\x1b4\x00\x00*\xc9\x05\xd4Ad\x00\x00\x16>\x05\xe2\
-\xe6\xec\x00\x00\x03\xea\x05\xea:\xa4\x00\x00\x14\x0b\x05\xed\
-\x13\x94\x00\x000D\x05\xf0\x10\x1e\x00\x00+1\x06\x00\
-\xb9\xc5\x00\x00Uh\x06\x01\x92E\x00\x00Cr\x06\x1f\
-}T\x00\x00\x04]\x06/\x84\x92\x00\x00GR\x06:\
-3\xf3\x00\x00\x13S\x06A\xec\xdf\x00\x00\x05\x0f\x06C\
-\xbc\x1f\x00\x00[\xe2\x06N\xfab\x00\x00\x01\xf6\x06a\
-I\xbe\x00\x00\x16\xa2\x06b\xd3\xa5\x00\x00A\xc8\x06b\
-\xd3\xa5\x00\x00dF\x06c\xab!\x00\x00\x15\xac\x06g\
-\xa0\xe9\x00\x00\x02o\x06l;\xf4\x00\x00W\xc3\x06{\
-\x06\x03\x00\x00\x5c\xae\x06}\x00E\x00\x00R\x88\x06\x8c\
-\xc9\x9b\x00\x00?\xbd\x06\x9b\x11\xc3\x00\x00*M\x06\xa6\
-8\x84\x00\x007\x0a\x06\xa87\xd5\x00\x009\xeb\x06\xb2\
-\xde\xb1\x00\x00%\xc9\x06\xb3xC\x00\x00FP\x06\xb5\
-a\x83\x00\x00\x0f\xf1\x06\xbc~\x93\x00\x006\xac\x06\xc3\
-7\x9d\x00\x00?\x81\x06\xc4\xc8\xe9\x00\x00:\xb3\x06\xc4\
-\xc8\xe9\x00\x00c\x10\x06\xc9\xef\xbe\x00\x00'Y\x06\xcc\
-=\x14\x00\x00>\x9b\x06\xcc=\x14\x00\x00c\xb7\x06\xe7\
-i\xe4\x00\x00\x10g\x06\xe9lD\x00\x00;\xfa\x06\xeb\
-\xfd\xf4\x00\x00<#\x07\x00\xcfO\x00\x00[j\x07\x06\
-\xf45\x00\x00\x08\xc4\x07\x08\xb0\xb2\x00\x00\x03\x9b\x07\x0f\
-4\xce\x00\x00W\xf9\x07\x14\xcfR\x00\x00\x02\xbd\x07\x14\
-\xcfR\x00\x00a\xa0\x07\x1a\xf6\xf2\x00\x00Q\xfb\x07\x1f\
-\xf0u\x00\x00X\xc1\x07,)\x18\x00\x004\xc3\x07H\
-\xbc\x85\x00\x00?)\x07V\x08\xe4\x00\x00\x12\x87\x07s\
-\x15\xd3\x00\x00<N\x07s\x15\xd3\x00\x00c8\x07z\
-\x16%\x00\x00AI\x07\x7f\xff\xe4\x00\x008\xf5\x07\x80\
-.\x84\x00\x00>d\x07\x88M\xb4\x00\x00@\x81\x07\x89\
-w\xe4\x00\x00\x11\xf0\x07\x8aV2\x00\x007i\x07\x8a\
-\xe0Q\x00\x00A\xf7\x07\x9b$\x13\x00\x006\x10\x07\x9c\
+7\xf9\x00\x00>5\x05\x907\xf9\x00\x00c\x8b\x05\x9b\
+\x88\x98\x00\x00d\xe5\x05\x9d\x8a\xd5\x00\x009\xb7\x05\xa2\
+\x1b\xe3\x00\x005)\x05\xa8\x1a\x02\x00\x00,\xc0\x05\xc6\
+=\xf3\x00\x00_\xdf\x05\xc8u\x84\x00\x00\x06\x87\x05\xcd\
+\xcc\xff\x00\x00:\x18\x05\xd0\x1b4\x00\x00*\xc9\x05\xd4\
+Ad\x00\x00\x16>\x05\xe2\xe6\xec\x00\x00\x03\xea\x05\xea\
+:\xa4\x00\x00\x14\x0b\x05\xed\x13\x94\x00\x000D\x05\xf0\
+\x10\x1e\x00\x00+1\x06\x00\xb9\xc5\x00\x00Uh\x06\x01\
+\x92E\x00\x00Cr\x06\x1f}T\x00\x00\x04]\x06/\
+\x84\x92\x00\x00GR\x06:3\xf3\x00\x00\x13S\x06A\
+\xec\xdf\x00\x00\x05\x0f\x06C\xbc\x1f\x00\x00[\xe2\x06N\
+\xfab\x00\x00\x01\xf6\x06aI\xbe\x00\x00\x16\xa2\x06b\
+\xd3\xa5\x00\x00A\xc8\x06b\xd3\xa5\x00\x00dF\x06c\
+\xab!\x00\x00\x15\xac\x06g\xa0\xe9\x00\x00\x02o\x06l\
+;\xf4\x00\x00W\xc3\x06{\x06\x03\x00\x00\x5c\xae\x06}\
+\x00E\x00\x00R\x88\x06\x8c\xc9\x9b\x00\x00?\xbd\x06\x9b\
+\x11\xc3\x00\x00*M\x06\xa68\x84\x00\x007\x0a\x06\xa8\
+7\xd5\x00\x009\xeb\x06\xb2\xde\xb1\x00\x00%\xc9\x06\xb3\
+xC\x00\x00FP\x06\xb5a\x83\x00\x00\x0f\xf1\x06\xbc\
+~\x93\x00\x006\xac\x06\xc37\x9d\x00\x00?\x81\x06\xc4\
+\xc8\xe9\x00\x00:\xb3\x06\xc4\xc8\xe9\x00\x00c\x10\x06\xc9\
+\xef\xbe\x00\x00'Y\x06\xcc=\x14\x00\x00>\x9b\x06\xcc\
+=\x14\x00\x00c\xb7\x06\xe7i\xe4\x00\x00\x10g\x06\xe9\
+lD\x00\x00;\xfa\x06\xeb\xfd\xf4\x00\x00<#\x07\x00\
+\xcfO\x00\x00[j\x07\x06\xf45\x00\x00\x08\xc4\x07\x08\
+\xb0\xb2\x00\x00\x03\x9b\x07\x0f4\xce\x00\x00W\xf9\x07\x14\
+\xcfR\x00\x00\x02\xbd\x07\x14\xcfR\x00\x00a\xa0\x07\x1a\
+\xf6\xf2\x00\x00Q\xfb\x07\x1f\xf0u\x00\x00X\xc1\x07,\
+)\x18\x00\x004\xc3\x07H\xbc\x85\x00\x00?)\x07V\
+\x08\xe4\x00\x00\x12\x87\x07s\x15\xd3\x00\x00<N\x07s\
+\x15\xd3\x00\x00c8\x07z\x16%\x00\x00AI\x07\x7f\
+\xff\xe4\x00\x008\xf5\x07\x80.\x84\x00\x00>d\x07\x88\
+M\xb4\x00\x00@\x81\x07\x89w\xe4\x00\x00\x11\xf0\x07\x8a\
+V2\x00\x007i\x07\x8a\xe0Q\x00\x00A\xf7\x07\x90\
+\x8d\xae\x00\x00e\xb9\x07\x9b$\x13\x00\x006\x10\x07\x9c\
 \x8f\xc3\x00\x00CE\x07\xa4\xdbU\x00\x00=U\x07\xb3\
 \xaf\xc3\x00\x00RS\x07\xb6\x97#\x00\x00<\xd8\x07\xb6\
 \xa8\xc1\x00\x004\x91\x07\xb70\xc4\x00\x004\xf7\x07\xd2\
@@ -42541,42 +42544,43 @@ tT\x00\x00\x17P\x09\x7fR\x95\x00\x00<\xa7\x09\x9b\
 \x09U\x00\x00\x11\xb6\x0a.oL\x00\x00\x09\xb3\x0a=\
 \x0e\x95\x00\x00T7\x0aC\xa7\xd4\x00\x00\x0az\x0aH\
 \x05C\x00\x00W\x88\x0aLh\xb3\x00\x00=\x15\x0aV\
-\xb5\xb1\x00\x00\x12\x22\x0ag\x86c\x00\x00\x04&\x0a}\
-v \x00\x00 \xd4\x0a}v!\x00\x00!\x01\x0a}\
-v\x22\x00\x00!.\x0a}v#\x00\x00![\x0a}\
-v$\x00\x00!\x88\x0a}v%\x00\x00!\xb5\x0a}\
-v&\x00\x00!\xe2\x0a}v'\x00\x00\x22\x0f\x0a}\
-v(\x00\x00\x22v\x0a}v)\x00\x00\x22\xa3\x0a}\
-v0\x00\x00\x22\xfa\x0a}v1\x00\x00#'\x0a}\
-v5\x00\x00$@\x0a}v6\x00\x00$m\x0a}\
-v\xc0\x00\x00\x1c\xfc\x0a}v\xc1\x00\x00\x1d)\x0a}\
-v\xc2\x00\x00\x1dV\x0a}v\xc3\x00\x00\x1d\x83\x0a}\
-v\xc4\x00\x00\x1d\xb0\x0a}v\xc5\x00\x00\x1d\xdd\x0a}\
-v\xc6\x00\x00\x1e\x0a\x0a}v\xc7\x00\x00\x1e7\x0a}\
-v\xc8\x00\x00\x1ed\x0a}v\xc9\x00\x00\x1e\x91\x0a}\
-v\xd0\x00\x00\x1e\xe8\x0a}v\xd1\x00\x00\x1f\x15\x0a}\
-v\xd2\x00\x00\x1fB\x0a}v\xd3\x00\x00\x1fo\x0a}\
-v\xd4\x00\x00\x1f\x9c\x0a}v\xd5\x00\x00\x1f\xc9\x0a}\
-v\xd6\x00\x00\x1f\xf6\x0a}v\xd7\x00\x00 #\x0a}\
-v\xd8\x00\x00 P\x0a}v\xd9\x00\x00 }\x0a}\
-v\xe0\x00\x00\x18<\x0a}v\xe1\x00\x00\x18i\x0a}\
-v\xe2\x00\x00\x18\x96\x0a}v\xe3\x00\x00\x18\xc3\x0a}\
-v\xe4\x00\x00\x18\xf0\x0a}v\xe5\x00\x00\x19\x1d\x0a}\
-v\xe6\x00\x00\x19J\x0a}v\xe7\x00\x00\x19w\x0a}\
-v\xe8\x00\x00\x19\xa4\x0a}v\xe9\x00\x00\x19\xd1\x0a}\
-v\xf0\x00\x00\x1a(\x0a}v\xf1\x00\x00\x1a\x8f\x0a}\
-v\xf2\x00\x00\x1a\xf4\x0a}v\xf3\x00\x00\x1b!\x0a}\
-v\xf4\x00\x00\x1b\xc4\x0a}v\xf5\x00\x00\x1b\xf1\x0a}\
-v\xf6\x00\x00\x1c\x1e\x0a}v\xf7\x00\x00\x1cK\x0a}\
-v\xf8\x00\x00\x1cx\x0a}v\xf9\x00\x00\x1c\xa5\x0a\x82\
-\x10D\x00\x00.\xb8\x0a\x8dj\xdf\x00\x00\x0b1\x0a\xa7\
-\xd7`\x00\x00\x17\xe8\x0a\xa7\xd7a\x00\x00\x18\x12\x0a\xa7\
-\xd7b\x00\x00\x19\xfe\x0a\xa7\xd7c\x00\x00\x1c\xd2\x0a\xa7\
-\xd7d\x00\x00\x1e\xbe\x0a\xa7\xd7e\x00\x00 \xaa\x0a\xa7\
-\xd7f\x00\x00\x22\xd0\x0a\xa7\xd7g\x00\x00%K\x0a\xa7\
-\xd7h\x00\x00%u\x0a\xa7\xd7i\x00\x00%\x9f\x0a\xbd\
-\x12U\x00\x00&\xea\x0a\xd7\xdfr\x00\x00\x07\xa7\x0a\xf4\
-lt\x00\x00\x0d\xf2\x0b\x13\x14R\x00\x00\x0ec\x0b<\
+\xb5\xb1\x00\x00\x12\x22\x0ag\x86c\x00\x00\x04&\x0ak\
+\x81\x92\x00\x00fI\x0a}v \x00\x00 \xd4\x0a}\
+v!\x00\x00!\x01\x0a}v\x22\x00\x00!.\x0a}\
+v#\x00\x00![\x0a}v$\x00\x00!\x88\x0a}\
+v%\x00\x00!\xb5\x0a}v&\x00\x00!\xe2\x0a}\
+v'\x00\x00\x22\x0f\x0a}v(\x00\x00\x22v\x0a}\
+v)\x00\x00\x22\xa3\x0a}v0\x00\x00\x22\xfa\x0a}\
+v1\x00\x00#'\x0a}v5\x00\x00$@\x0a}\
+v6\x00\x00$m\x0a}v\xc0\x00\x00\x1c\xfc\x0a}\
+v\xc1\x00\x00\x1d)\x0a}v\xc2\x00\x00\x1dV\x0a}\
+v\xc3\x00\x00\x1d\x83\x0a}v\xc4\x00\x00\x1d\xb0\x0a}\
+v\xc5\x00\x00\x1d\xdd\x0a}v\xc6\x00\x00\x1e\x0a\x0a}\
+v\xc7\x00\x00\x1e7\x0a}v\xc8\x00\x00\x1ed\x0a}\
+v\xc9\x00\x00\x1e\x91\x0a}v\xd0\x00\x00\x1e\xe8\x0a}\
+v\xd1\x00\x00\x1f\x15\x0a}v\xd2\x00\x00\x1fB\x0a}\
+v\xd3\x00\x00\x1fo\x0a}v\xd4\x00\x00\x1f\x9c\x0a}\
+v\xd5\x00\x00\x1f\xc9\x0a}v\xd6\x00\x00\x1f\xf6\x0a}\
+v\xd7\x00\x00 #\x0a}v\xd8\x00\x00 P\x0a}\
+v\xd9\x00\x00 }\x0a}v\xe0\x00\x00\x18<\x0a}\
+v\xe1\x00\x00\x18i\x0a}v\xe2\x00\x00\x18\x96\x0a}\
+v\xe3\x00\x00\x18\xc3\x0a}v\xe4\x00\x00\x18\xf0\x0a}\
+v\xe5\x00\x00\x19\x1d\x0a}v\xe6\x00\x00\x19J\x0a}\
+v\xe7\x00\x00\x19w\x0a}v\xe8\x00\x00\x19\xa4\x0a}\
+v\xe9\x00\x00\x19\xd1\x0a}v\xf0\x00\x00\x1a(\x0a}\
+v\xf1\x00\x00\x1a\x8f\x0a}v\xf2\x00\x00\x1a\xf4\x0a}\
+v\xf3\x00\x00\x1b!\x0a}v\xf4\x00\x00\x1b\xc4\x0a}\
+v\xf5\x00\x00\x1b\xf1\x0a}v\xf6\x00\x00\x1c\x1e\x0a}\
+v\xf7\x00\x00\x1cK\x0a}v\xf8\x00\x00\x1cx\x0a}\
+v\xf9\x00\x00\x1c\xa5\x0a\x82\x10D\x00\x00.\xb8\x0a\x8d\
+j\xdf\x00\x00\x0b1\x0a\xa7\xd7`\x00\x00\x17\xe8\x0a\xa7\
+\xd7a\x00\x00\x18\x12\x0a\xa7\xd7b\x00\x00\x19\xfe\x0a\xa7\
+\xd7c\x00\x00\x1c\xd2\x0a\xa7\xd7d\x00\x00\x1e\xbe\x0a\xa7\
+\xd7e\x00\x00 \xaa\x0a\xa7\xd7f\x00\x00\x22\xd0\x0a\xa7\
+\xd7g\x00\x00%K\x0a\xa7\xd7h\x00\x00%u\x0a\xa7\
+\xd7i\x00\x00%\x9f\x0a\xbd\x12U\x00\x00&\xea\x0a\xd7\
+\xdfr\x00\x00\x07\xa7\x0a\xf4lt\x00\x00\x0d\xf2\x0b\x13\
+\x14R\x00\x00\x0ec\x0b1\xb4U\x00\x00eB\x0b<\
 \x02^\x00\x00-\x18\x0bQ\x0b\xf4\x00\x00@!\x0bQ\
 \x0b\xf4\x00\x00d\x16\x0b\x5cA'\x00\x00\x0di\x0bh\
 \x94c\x00\x002U\x0bjn$\x00\x004^\x0bz\
@@ -42593,994 +42597,2927 @@ B\xe5\x00\x00;\xcd\x0c:\xd0\x01\x00\x00#\xca\x0c:\
 \xd2\xd4\x00\x00Z\x05\x0cJ\xe2\xe3\x00\x00Tn\x0cO\
 \xcf\xe4\x00\x000\xb8\x0cd\x0eE\x00\x00\x11\x1b\x0ce\
 \xfe\xce\x00\x00+\xaf\x0cgAU\x00\x00@T\x0c\x9e\
-\xe6e\x00\x00X\x96\x0c\xa9\x99\xb8\x00\x00+p\x0c\xc0\
-`\x97\x00\x00.\x08\x0c\xc2K\xb5\x00\x00\x13\x0e\x0c\xc8\
-\x93\xd2\x00\x00(\xa7\x0c\xc8\xa0>\x00\x00;\x12\x0c\xce\
-\x94\x7f\x00\x00=\xd0\x0c\xcf\xe5\x0e\x00\x00-\xcb\x0c\xd6\
-\xef\x12\x00\x00\x01\xc3\x0c\xe2\xd4\xd2\x00\x00\x0a\xb1\x0c\xf8\
-\x07\x05\x00\x00]\xad\x0d\x01_\xc4\x00\x006G\x0d\x0b\
-\xfct\x00\x0075\x0d\x11>N\x00\x00:}\x0d@\
-\x06\xe9\x00\x00/\x8e\x0dd\x88\x22\x00\x00\x0e\xa5\x0d\x8f\
-\xb9\x9e\x00\x00Y\x19\x0d\x97Z\xe3\x00\x00\x0d\xb2\x0d\xaa\
-|\xf5\x00\x00\x15n\x0d\xb8v#\x00\x00R\xba\x0d\xc3\
-\xff\xbd\x00\x00b\xb1\x0d\xe7|\xee\x00\x00\x12\xbf\x0e\x07\
-A\xa5\x00\x00?\xf0\x0e\x07\x84\x95\x00\x00(d\x0e\x18\
-\xbe\xf1\x00\x00\x0cZ\x0e\x18\xce\xcd\x00\x00ZJ\x0e\x19\
-x\xfc\x00\x00\x11\x83\x0e#\xd10\x00\x00;h\x0e+\
-Os\x00\x00\x16o\x0e22\x22\x00\x00'\x1b\x0e9\
-k\xb3\x00\x00*\xff\x0e:\xd0\x01\x00\x00#T\x0e:\
-\xd0\x02\x00\x00#\x8f\x0eg\xd7\xf3\x00\x00\x05\xa6\x0er\
-jB\x00\x00\x13\x88\x0e\x94m\x08\x00\x00\x0bo\x0e\x98\
-\x22\x02\x00\x00`\xc7\x0e\xda\xea$\x00\x00:\xde\x0f\x16\
-\xa2\xee\x00\x00\x0e(\x0f2nu\x00\x00_l\x0f:\
-\xd0\xc1\x00\x00\x1bN\x0f:\xd0\xc2\x00\x00\x1b\x89\x0ff\
-aT\x00\x00B\x9d\x0f\x96\x99M\x00\x00)\xd2\x0f\x9d\
-\x0cr\x00\x00/X\x0f\xa2Au\x00\x00?T\x0f\xb3\
-V,\x00\x00A\x87\x0f\xcdk\xe2\x00\x007\xa6\x0f\xdc\
-\x9a\x93\x00\x00\x0f\xa6i\x00\x00d\x98\x03\x00\x00\x00\x0c\
-\x81\xeaR\xa8n\x05t\x06\x7f\x13[X\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x10Auto clear\
- cache\x07\x00\x00\x00\x10Clean\
-SettingCard\x01\x03\x00\x00\x00\
-0\x00R\x00O\x00M\x00 \x91\xcd^\xfaT\x0e\x81\
-\xeaR\xa8n\x05t\x06\x7f\x13[X\xff\x08N\x0bk\
-!O\xeee9\x97\x00\x91\xcde\xb0\x89\xe3S\x05\xff\
-\x09\x08\x00\x00\x00\x00\x06\x00\x00\x00 Clear\
- cache after ROM\
- is rebuilt\x07\x00\x00\x00\x10\
-CleanSettingCard\
-\x01\x03\x00\x00\x00\x02\x84\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x04Blue\x07\x00\x00\x00\x09Color\
-Card\x01\x03\x00\x00\x00\x04S\xd6m\x88\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x06Cancel\x07\x00\
+\xe6e\x00\x00X\x96\x0c\xa2\xbd\x93\x00\x00d\x98\x0c\xa9\
+\x99\xb8\x00\x00+p\x0c\xc0`\x97\x00\x00.\x08\x0c\xc2\
+K\xb5\x00\x00\x13\x0e\x0c\xc8\x93\xd2\x00\x00(\xa7\x0c\xc8\
+\xa0>\x00\x00;\x12\x0c\xce\x94\x7f\x00\x00=\xd0\x0c\xcf\
+\xe5\x0e\x00\x00-\xcb\x0c\xd6\xef\x12\x00\x00\x01\xc3\x0c\xe2\
+\xd4\xd2\x00\x00\x0a\xb1\x0c\xf8\x07\x05\x00\x00]\xad\x0d\x01\
+_\xc4\x00\x006G\x0d\x0b\xfct\x00\x0075\x0d\x11\
+>N\x00\x00:}\x0d@\x06\xe9\x00\x00/\x8e\x0dd\
+\x88\x22\x00\x00\x0e\xa5\x0d\x8f\xb9\x9e\x00\x00Y\x19\x0d\x97\
+Z\xe3\x00\x00\x0d\xb2\x0d\xaa|\xf5\x00\x00\x15n\x0d\xb8\
+v#\x00\x00R\xba\x0d\xc3\xff\xbd\x00\x00b\xb1\x0d\xe7\
+|\xee\x00\x00\x12\xbf\x0e\x07A\xa5\x00\x00?\xf0\x0e\x07\
+\x84\x95\x00\x00(d\x0e\x18\xbe\xf1\x00\x00\x0cZ\x0e\x18\
+\xce\xcd\x00\x00ZJ\x0e\x19x\xfc\x00\x00\x11\x83\x0e#\
+\xd10\x00\x00;h\x0e+Os\x00\x00\x16o\x0e2\
+2\x22\x00\x00'\x1b\x0e9k\xb3\x00\x00*\xff\x0e:\
+\xd0\x01\x00\x00#T\x0e:\xd0\x02\x00\x00#\x8f\x0eg\
+\xd7\xf3\x00\x00\x05\xa6\x0erjB\x00\x00\x13\x88\x0e\x94\
+m\x08\x00\x00\x0bo\x0e\x98\x22\x02\x00\x00`\xc7\x0e\xda\
+\xea$\x00\x00:\xde\x0f\x16\xa2\xee\x00\x00\x0e(\x0f2\
+nu\x00\x00_l\x0f:\xd0\xc1\x00\x00\x1bN\x0f:\
+\xd0\xc2\x00\x00\x1b\x89\x0ffaT\x00\x00B\x9d\x0f\x96\
+\x99M\x00\x00)\xd2\x0f\x9d\x0cr\x00\x00/X\x0f\xa2\
+Au\x00\x00?T\x0f\xb3V,\x00\x00A\x87\x0f\xcd\
+k\xe2\x00\x007\xa6\x0f\xdc\x9a\x93\x00\x00\x0f\xa6i\x00\
+\x00f\xae\x03\x00\x00\x00\x0c\x81\xeaR\xa8n\x05t\x06\
+\x7f\x13[X\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10Au\
+to clear cache\x07\x00\
+\x00\x00\x10CleanSettingC\
+ard\x01\x03\x00\x00\x000\x00R\x00O\x00M\x00\
+ \x91\xcd^\xfaT\x0e\x81\xeaR\xa8n\x05t\x06\x7f\
+\x13[X\xff\x08N\x0bk!O\xeee9\x97\x00\x91\
+\xcde\xb0\x89\xe3S\x05\xff\x09\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00 Clear cache a\
+fter ROM is rebu\
+ilt\x07\x00\x00\x00\x10CleanSet\
+tingCard\x01\x03\x00\x00\x00\x02\x84\xdd\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04Blue\x07\x00\
 \x00\x00\x09ColorCard\x01\x03\x00\x00\
-\x00\x16f\xf4e9uL\x97bf>y:v\x84\
-N;\x98\x98\x98\x9c\x82r\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00'Change the the\
-me color of the \
-interface\x07\x00\x00\x00\x09Co\
-lorCard\x01\x03\x00\x00\x00\x08\x90\x09b\
-\xe9\x98\x9c\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cC\
-hoose Color\x07\x00\x00\x00\x09\
-ColorCard\x01\x03\x00\x00\x00\x0a\x81\
-\xea[\x9aNI\x98\x9c\x82r\x08\x00\x00\x00\x00\x06\x00\
+\x00\x04S\xd6m\x88\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06\
+Cancel\x07\x00\x00\x00\x09Color\
+Card\x01\x03\x00\x00\x00\x16f\xf4e9uL\
+\x97bf>y:v\x84N;\x98\x98\x98\x9c\x82r\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00'Change\
+ the theme color\
+ of the interfac\
+e\x07\x00\x00\x00\x09ColorCard\x01\
+\x03\x00\x00\x00\x08\x90\x09b\xe9\x98\x9c\x82r\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cChoose Co\
+lor\x07\x00\x00\x00\x09ColorCar\
+d\x01\x03\x00\x00\x00\x0a\x81\xea[\x9aNI\x98\x9c\x82\
+r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cCusto\
+m color\x07\x00\x00\x00\x09Colo\
+rCard\x01\x03\x00\x00\x00\x08\x9e\xd8\x8b\xa4\x98\
+\x9c\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dDef\
+ault color\x07\x00\x00\x00\x09C\
+olorCard\x01\x03\x00\x00\x00\x08\x7f\x16\
+\x8f\x91\x98\x9c\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0a\
+Edit Color\x07\x00\x00\x00\x09C\
+olorCard\x01\x03\x00\x00\x00\x02~\xff\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Green\x07\
+\x00\x00\x00\x09ColorCard\x01\x03\x00\
+\x00\x00\x04xn[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x02OK\x07\x00\x00\x00\x09ColorCar\
+d\x01\x03\x00\x00\x00\x06\x90\x0ff\x0e^\xa6\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x07Opacity\x07\x00\
+\x00\x00\x09ColorCard\x01\x03\x00\x00\
+\x00\x02~\xa2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03Re\
+d\x07\x00\x00\x00\x09ColorCard\x01\
+\x03\x00\x00\x00\x08N;\x98\x98\x98\x9c\x82r\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0bTheme Col\
+or\x07\x00\x00\x00\x09ColorCard\
+\x01\x03\x00\x00\x00\x12\xff\x12S\xf0\xff%\xff6\xff!\
+T\x0ce\xf6e;Q\xfb\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x062 EVAs\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0eq\x9f~\xc3^\
+\xa6\xff\x14\xff\x15N\xe5N\x0b\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x1145 or Less Po\
+ints\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x0eq\x9f~\xc3^\xa6\xff\x14\xff\
+\x15N\xe5N\x0a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x114\
+5 or More Points\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x12Q\xb3b\x18\xff\x0c{,\xff\x12e\xb0N\
+\x1cN\xac^\x02\x08\x00\x00\x00\x00\x06\x00\x00\x00 A\
+ Decisive Battle\
+ In New Tokyo 2\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x0ef/y^\xff\x0c\x8f\xd8f/`v\x9bT\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11A God,\
+ Or A Devil\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08\x91\xce\
+_\xc3NKu7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12\
+A Man Of Ambitio\
+ns\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0au7[PlINKb\x18\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0dA Man's\
+ Fight\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0e\x96?QK\x89\x7fe\
+\xafv\x84O\x7f\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x15A Messenger Fro\
+m Axis\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0cN\x0er6N\xb2v\
+\x84~\xa6[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15A\
+ Promise With Fa\
+ther\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x0cW(Y)O\x7fNKs\
+\xafN\x0a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16Abo\
+ve The Angel's H\
+alo\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x06\x00A\x00i\x00r\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x03Air\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0a\x96?Y\xc6\
+\x7fWQ\x8dN4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0b\
+Amuro Again\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0cN\x0e\
+Y)eLv\x84\x90m\x90G\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00%An Encounter\
+ With Our Natura\
+l Enemies\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08O\x7f_\x92\
+\x88\xadge\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cAn\
+gel Attack\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x08Y)O\
+\x7fNKs\xaf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aA\
+ngel Halo\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0a\x88\xc5u2\
+\x820e;Q\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0c\
+Armed Attack\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x10_\
+:\x88\xad\xff\x0c\x96;kbg\x81\x96Pp\xb9\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x1eAssault\
+ On The Final Sa\
+feguard\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0e\x81\xf3\x5c\x11\xff\x0c\
+P\xcfN\xba|{\x82,\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x15At Least, To B\
+e Human\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08W#b\x18X\xeb\
+N\xec\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dAura\
+ Battlers\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0c\x89\xc9\x91\x92\
+T'\xff\x0cR\xc7\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x11Awaken, Brave \
+One\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08\x96?QK\x89\x7fe\xaf\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x04Axis\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x1e\x8d\
+\x85\x8d\x8aQ}0\x01\x8d\x85\x8d\x8aN\xba\xff\x0cs\
+\xb0\x8e\xabT'y^NKb\x18X\xeb\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00.Beyond Be\
+ast, Beyond Man,\
+ Become God's Wa\
+rrior\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08\x9e\xd1\x82r\x9a\xd8\x8f\xbe\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cBlack \
+Gundam\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x14N:\x80\xdc\x80\x05N\
+\x0e\x8d%\x80\x05\x90\x01N\x0ay]y\x8f\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00#Blessings\
+ Upon The Winner\
+ And Loser\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x08\x8b\xf1e\
+Lm\xf1Qe\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aB\
+ooby Trap\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0aN\xe5Qh\
+R\x9bQ\xfb\x90\x00\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0b\
+Brute Force\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08Q\x8d\
+\x89\xc1pkf\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0c\
+Bye Bye Mars\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x0cu\
+1\xff%\xff6\xff!c\xa5OO\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0eCatch with \
+EVA\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x14o\xc0z\x81\xff\x01v\xd6XT\
+\xff6\xff3v\xd6XT\xff'\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00$Clash! Gette\
+r Robo vs. Gette\
+r Robo G\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0c\x94\xa2\x94\xc1v\
+\x84\x9a~\x9av\x821\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x10Cockpit of Stee\
+l\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08P\x12ep\x8b\xa1e\xf6\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0aCount Down\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x04r\xd7e\x97\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0bCross Fight\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x0aN\
+\xa4\x95\x19v\x84~\xc8p\xb9\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0cCross Target\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x08SA[WQH\x95\x0b\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x12Crossbone Va\
+nguard\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0a\x8f\xbeU\x80\x5c\x14N\
+Ke\xe5\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cDay\
+ Of Dakar\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0e\x9bTy^\
+\xff:~\xddOS~\xddT}\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x22Desperate Si\
+tuation For Mazi\
+nger Z\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0cS\xeff\xfe\x8b\xb0_\
+\x97r1\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15D\
+o You Remember L\
+ove?\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x0e\x8dLN\x0aW0t\x03v\
+\x84SUc\x11\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12D\
+uel For The Eart\
+h\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08S`OMepcn\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x05Dummy\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0c\xff%\
+\xff6\xff!N\x8cS\xf7g:\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0bEVA Unit-02\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x16\xff%\xff6\xff!N\x8cS\xf7g:\xff\x0f\
+g\x81N\x1cW\xfaW0\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x1dEVA Unit-02 / \
+Far East Sector\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x0a\x82~\x85~v\x84puR\x9b\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0bElle's Aur\
+a\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08g\x81N\x1cW\xfaW0\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0fFar East S\
+ector\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08T}\x8f\xd0NKw\xe2\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cFate's\
+ Arrow\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0er6N\xb2\xff\x0cW\
+0t\x03R0N\x86\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x19Father, The Ear\
+th Is Near\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0a{,N\
+\x00k!c\xa5\x89\xe6\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0dFirst Contact\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x12N:N\x86\x8f\xd9\x98\x97f\x1ft\x03v\x84f\
+\x0eY)\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1aFor\
+ This Planet's T\
+omorrow\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0c\x94\x9fX\xf0N:\
+\x8c\x01\x80\x0c\x9e#\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17\
+For Whom The Bel\
+l Tolls\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08N:\x8c\x01\x80\x0c\
+b\x18\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11For \
+Whom We Fight\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0c\
+_\x02\x90\xa6N\xbav\x84_Rge\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x12Foreigners\
+' Return\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x10ge\x81\xeag\
+(f\x1fv\x84\x90\x03N\xa1\x80\x05\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x15Fugitive Fr\
+om Jupiter\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0c\xff'\xff\
+2[\xf9\xff'\xff2\xff\x12\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0aGR vs. GR2\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
+v\xd6XT\x5c\x0f\x96\x1fQ\xfaQ\xfb\xff\x01\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x14Getter T\
+eam, Launch!\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08h\
+<b\xc9\x7f\xc1\x96\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x06Goraon\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0cS\xe4Qp0\xfb\
+R\xa0Qp\x96\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0a\
+Gran-Garan\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x08\x9a\xd8\x8f\
+\xbeb\xa2Y:\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cG\
+undam Theft\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x10\x9a\xd8\
+\x8f\xbe\xff\x0cRM_\x80f\x1fNKmw\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x1eGundam, \
+Go To The Sea Of\
+ Stars\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0aT|U$\x98\xceN\
+KN\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18He \
+Who Summons The \
+Winds\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0a\x96\x90\x85\xcfv\x84g@\
+a\x0f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10Hidd\
+en Bloodlust\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x0e{\
+,N\x8ck!v\xf4N\x0aO\x1ab\x18\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x15His Secon\
+d Engagement\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x06\x99\
+\x99n/W\xce\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eH\
+ong Kong City\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
+\x82\xf1h<b\xc9Y\xc6v\x84w\x1fa\x0f\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x18Ingram's\
+ True Intentions\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0c\x9avT\x11b\x18e\x97NKmw\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x16Into Th\
+e Sea Of Battle\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x06g\xe5^\x03\x7fW\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x06Jaburo\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08s\x8bV\xfd]\
+)n\x83\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eKin\
+gdom's Fall\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0cy^\
+W#Q\x9bN\x8bT\x0cv\xdf\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x11League Milli\
+taire\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08\x83\x89Z\x1cv\x84\x88@\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dLeina'\
+s Blood\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0cN\x00^v\x00 \
+T\x08OS\xff\x01\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
+Let's Combine!\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x06g\x97f\x0e\x7f\x8e\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0bLynn Minmay\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08g\
+:Vh\x5cU_\x00\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x13Machine Develop\
+ment\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x12\x9bTy^\xff:[\xf9f\
+\x97\x9e\xd1Y'\x5c\x06Q\x9b\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00 Mazinger Z vs\
+. Ankoku Dai-Sho\
+gun\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0c^&w@V\xde_\xc6RM\
+\x88L\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1cMemo\
+ries Taken To Th\
+e Future\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0c\x9e\xa6QK\x7f\
+We\xaf\x5c\x0fY\xd0\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0cMiss Macross\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
+w\xac\x95\xf4\xff\x0c_\xc3a\x0f\x80T~\xd3\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x19Moment A\
+nd Heart Togethe\
+r\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x0cN\xba|{e\xe0Y\x04S\xef\x90\x03\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16No Esc\
+ape For Humanity\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0c~\xc8g+v\x84RMYOf\xf2\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x12Prelude\
+ To The End\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x04^\x8f\
+^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Prol\
+ogue\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x0efn\x972N\x0e\x96?Q\
+K\x89\x7fe\xaf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11P\
+uru, Axis and...\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0aYss\x8b\x83\x89\x83\x89Z\x1c\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cQueen Rel\
+ena\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0cb\xc90\xfbQ\xefb\xc9Y\xc6\
+\x96\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09Ra-C\
+ailum\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x06w\x1f[\x9e|\xfb\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x04Real\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x0eg\
+\x97O[e\xaf\xff*\xffR\xff\x0e\x96\x1f\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cReinforce\
+ Jr\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0cv}\x82rW\xfaW0eQ\
+Q\xfa\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15Resc\
+ue The White Bas\
+e\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x12T\x86T\xee\xff\x0c\xff%\xff6\xff!\
+R\x1dS\xf7g:\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11\
+Roar, EVA Unit-0\
+1\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x12Q\xfaQ\xfb\xff\x01QvT\x0dN:\
+Y'\x94\xc1N\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00#\
+Sally Forth! Its\
+ Name Is Giant R\
+obo\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08W\x1ff\x1fNKb\x18\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0cSaturn F\
+ight\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08y\xd8[\xc6ujS\xf7\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0eSecret \
+Numbers\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0a\x5c\x06[\xfc_9\
+Q\xfb\x84=\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aSh\
+oot Down\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0e[\xf9Q\xb3\xff\
+\x0cg\x81N\x1cW\xfaW0\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x1dShowdown At T\
+he Far East Base\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0cSWN\x9aXTR)N\x9a\x5c\x9b\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0cSouth A\
+taria\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08zz\x95\xf4b\x98S\xe0\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aSpace \
+Fold\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08|\xbepuQ\xedO\x9d\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x11Spirit \
+Possession\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x06\x94\xa2N\
+K\x9bB\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10Spi\
+rits Of Steel\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x06\
+{,\xff\x10\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07\
+Stage 0\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x06{,\xff\x11\x8b\xdd\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stage \
+1\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08{,\xff\x11\xff\x10\x8b\xdd\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08Stage 10\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x08{,\xff\x11\xff\x11\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 11\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08{,\
+\xff\x11\xff\x12\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+Stage 12\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\
+\x13\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
+ge 13\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x14\x8b\xdd\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
+14\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x08{,\xff\x11\xff\x15\x8b\xdd\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08Stage 15\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x08{,\xff\x11\xff\x16\x8b\xdd\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x08Stage 16\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08{\
+,\xff\x11\xff\x17\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x08Stage 17\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x11\
+\xff\x18\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 18\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x19\x8b\
+\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
+ 19\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x06{,\xff\x12\x8b\xdd\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x07Stage 2\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+{,\xff\x12\xff\x10\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08Stage 20\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0e{,\xff\
+\x12\xff\x10\x8b\xdd\x00 ^URM\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0fStage 20 Sc\
+reen\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x11\x8b\xdd\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 2\
+1\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x0c{,\xff\x12\xff\x11\x8b\xdd^URM\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fStage \
+21 Screen\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x12\
+\xff\x12\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 22\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x13\x8b\
+\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
+ 23\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x10{,\xff\x12\xff\x13\x8b\xdd\x00 \
+{,\xff\x11^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
+Stage 23 Act 1\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x10{,\xff\x12\xff\x13\x8b\xdd\x00 {,\xff\x12^\
+U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eStage\
+ 23 Act 2\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x12\
+\xff\x14\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 24\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x15\x8b\
+\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
+ 25\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x16\x8b\xdd\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x08Stage 26\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x08{,\xff\x12\xff\x17\x8b\xdd\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x08Stage 27\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+{,\xff\x12\xff\x18\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08Stage 28\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x08{,\xff\
+\x12\xff\x19\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
+tage 29\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x06{,\xff\x13\x8b\xdd\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stage \
+3\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08{,\xff\x13\xff\x10\x8b\xdd\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08Stage 30\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x08{,\xff\x13\xff\x11\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 31\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08{,\
+\xff\x13\xff\x12\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+Stage 32\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\
+\x13\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
+ge 33\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x14\x8b\xdd\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
+34\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x08{,\xff\x13\xff\x15\x8b\xdd\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08Stage 35\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x08{,\xff\x13\xff\x16\x8b\xdd\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x08Stage 36\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08{\
+,\xff\x13\xff\x17\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x08Stage 37\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x13\
+\xff\x18\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 38\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x19\x8b\
+\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
+ 39\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x06{,\xff\x14\x8b\xdd\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x07Stage 4\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+{,\xff\x14\xff\x10\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08Stage 40\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x08{,\xff\
+\x14\xff\x11\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
+tage 41\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x12\
+\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
+e 42\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x13\x8b\xdd\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 4\
+3\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08{,\xff\x14\xff\x14\x8b\xdd\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08Stage 44\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x08{,\xff\x14\xff\x15\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 45\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08{,\
+\xff\x14\xff\x16\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+Stage 46\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\
+\x17\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
+ge 47\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x18\x8b\xdd\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
+48\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x08{,\xff\x14\xff\x19\x8b\xdd\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08Stage 49\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x06{,\xff\x15\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x07Stage 5\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x15\
+\xff\x10\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 50\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x11\x8b\
+\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
+ 51\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x12\x8b\xdd\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x08Stage 52\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x08{,\xff\x15\xff\x13\x8b\xdd\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x08Stage 53\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+{,\xff\x15\xff\x14\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08Stage 54\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x08{,\xff\
+\x15\xff\x15\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
+tage 55\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x16\
+\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
+e 56\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x17\x8b\xdd\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 5\
+7\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x0e{,\xff\x15\xff\x17\x8b\xdd\x00 ^U\
+RM\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fStag\
+e 57 Screen\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08{,\
+\xff\x15\xff\x18\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+Stage 58\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\
+\x19\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
+ge 59\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x06{,\xff\x16\x8b\xdd\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x07Stage 6\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x08{,\xff\x16\xff\x10\x8b\xdd\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x08Stage 60\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08{\
+,\xff\x16\xff\x11\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x08Stage 61\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x10{,\xff\x16\
+\xff\x12\x8b\xdd\x00 {,\xff\x11^U\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0eStage 62 A\
+ct 1\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x10{,\xff\x16\xff\x12\x8b\xdd\x00\
+ {,\xff\x12^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0eStage 62 Act 2\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x10{,\xff\x16\xff\x14\x8b\xdd\x00 {,\xff\x11\
+^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eStag\
+e 64 Act 1\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x10{,\xff\
+\x16\xff\x14\x8b\xdd\x00 {,\xff\x12^U\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0eStage 64 \
+Act 2\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08{,\xff\x16\xff\x15\x8b\xdd\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
+65\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x08{,\xff\x16\xff\x16\x8b\xdd\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08Stage 66\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x10{,\xff\x16\xff\x17\x8b\xdd\x00 {,\xff\x11\
+^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eStag\
+e 67 Act 1\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x10{,\xff\
+\x16\xff\x17\x8b\xdd\x00 {,\xff\x12^U\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0eStage 67 \
+Act 2\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x10{,\xff\x16\xff\x17\x8b\xdd\
+\x00 {,\xff\x13^U\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0eStage 67 Act 3\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x06{,\xff\x17\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x07Stage 7\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x06{,\xff\
+\x18\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Sta\
+ge 8\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x06{,\xff\x19\x8b\xdd\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x07Stage 9\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x0eT/R\xa8\xff\x01\xff:\xff:\x9a\xd8\x8f\xbe\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x14Startup\
+, Double Zeta\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x06\
+\x8d\x85~\xa7|\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05\
+Super\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08mwN-ge[\xa2\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13Terror\
+ From The Sea\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+Yeb\xc9NK\x8d\xef\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0dThe Aura Road\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x12~\xddg\x1bv\x84[\xb4^-s\xb0W(\
+_\x00Y\xcb\x08\x00\x00\x00\x00\x06\x00\x00\x00!Th\
+e Banquet Of Des\
+pair Begins Now\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x06Y'\x811Q\xfa\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0eThe Big Escape\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0a\x9e\xd1\x82r\x8d\x85e\x97X\xeb\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x17The Black\
+ Super Warrior\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x0cb@\x7fW\x95\xe8e;ueb\x18\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x16The Captu\
+re Of Solomon\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0c\
+o\x06\x9e\xd1Y)O\x7f\x96MN4\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x1dThe Coming\
+ Of The Black An\
+gel\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x14W(r6N\xb2`\x00b\xb1\
+N-T\xedl\xe3T'\xff\x01\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x1fThe Cry With\
+in Father's Brea\
+st!\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08\x9bTy^v\x87^\x1d\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x11The Demo\
+n Emperor\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0cl\x99\x91\xd1\
+`v\x9bTNKb\x18\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x1aThe Devil Shar\
+kin's Battle\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x06\x9f\
+\x99N\x0e\x86N\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18T\
+he Dragon And Th\
+e Tiger\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0e\x96?O\xee\x7fW\
+u7r5k\x92T}\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x18The Fall Of Ba\
+ron Ashura\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0ag\x00T\
+\x0ev\x84O\x7f\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x13The Final Messe\
+nger\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x0aT}\x8f\xd0v\x84\x9f\x7f\x8f\
+n\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13The G\
+ear Of Destiny\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x0aT\x09\x7f\xc1v\x84N\xa1pu\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x12The Ghosts \
+Of Zeon\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0as\xbbt\x83v\x84\
+s\x8bV\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Th\
+e Glass Kingdom\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x10\x88\xaby\xf0N:\x96\xf6_\x0fv\x84\x9a\xd8\
+\x8f\xbe\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16The \
+Gundam Called Ze\
+ro\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0eb\xe5g\x09\x98\xde\x7f\xfcv\x84\x9a\
+\xd8\x8f\xbe\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19The\
+ Gundam That Had\
+ Wings\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0a\xff%\xff/\xff4N\
+K\x5c\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11The\
+ Island Of EOT\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x08g(f\x1f^}pu\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x11The Jupiter G\
+host\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x06g(f\x1fN\xba\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0fThe Jupit\
+orians\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0c\x90\xa3NKV\xfdv\
+\x84Yss\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16T\
+he Land Of Na's \
+Queen\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0e\x88\xaby\xf0N:k{\
+y^v\x84\xff'\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14\
+The Man Called D\
+eath\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x0cb@\x7fW\x95\xe8v\x84V\
+ih\xa6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18The\
+ Nightmare Of So\
+lomon\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0eu\xbe\x9ap\x80\x0cge\
+v\x84\x98\xcef\xb4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12\
+The Oncoming Sto\
+rm\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0aN\xba|{_\x15[\xfc\x80\x05\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x1fThe One\
+ Who Will Guide \
+Humanity\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0eN\x9aO=s\
+\x9bQ\xfbW`T}N\xe4\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x22The Order To \
+Shoot Down The A\
+rgama\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x16RM\x8d\xeff/QI\
+f\x0e\xff\x0c\x90\x00\x8d\xeff/~\xddg\x1b\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00%The Path\
+ Of Hope, The Pa\
+th Of Despair\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
+T\x09\x7f\xc1v\x84^{_q\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x13The Phantom \
+Of Zeon\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0a^\x1dV\xfdv\x84\
+Yss\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17Th\
+e Queen Of The E\
+mpire\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0c~\xa2\x82rv\x84\xff%\
+\xff6\xff!\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Th\
+e Red Evangelion\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0c~\xa2Y4S\xd1v\x84YsN\xba\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x14The Red\
+ Haired Woman\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
+\x5c\x11Ysb@\x89\xc1v\x84mAf\x1f\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x19The Shoo\
+ting Star She Sa\
+w\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08\xff:NK\x9f\x13R\xa8\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x10The Sign O\
+f Zeta\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08N\x1cN\xacN\x0az\
+z\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12The S\
+kies Of Tokyo\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x10\
+S\xbb_\x80y^NKV\xfdv\x84\x8b\xf1`\xd1\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00!The Te\
+mptation Of The \
+Land Of God\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x10[\x87\
+[\x99N-~\xfde>v\x84Y\x96S\x16\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00%The Terr\
+ible Flower Bloo\
+ming In Space\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+{,N\x09NKR\x9b\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x11The Third's Po\
+wer\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0ag*w\xe5v\x84p~S\x84\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14The Un\
+known Calamity\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x0aYG\x8f\xf9v\x84N\xf7P<\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x16The Value O\
+f A Miracle\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0cv}\
+\x82rg:R\xa8b\x18X\xeb\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x15The White Mo\
+bile Suit\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0cYsN\xba\
+N\xecv\x84b\x18W:\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x17The Womens' Ba\
+ttlefield\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08\x89\x81X^\
+S\xd8_b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fTr\
+ans-Formation\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x04\
+Qq\x90\x1a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Un\
+ified\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0am\x88Y1v\x84\x9a\x91\
+Qu\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Vani\
+shing Trooper\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+S\xefS\xd8\x965W\x8b\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x12Variable Forma\
+tion\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x04c/\x98\xa4\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0aVibrations\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x10l\xe2\x9c\x81\x8f\xeae\xaf\x8dwk{V\xde\
+u\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1bVolt\
+es, Back From Th\
+e Ashes\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0cb\x18X\xeb\xff\x0c\
+Q\x8dge &\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0f\
+Warriors, Again\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x14~\xa2\x82r\x95\xeau5\x00 \x98\xde\x7f\xd4\
+v\x84\x9bTy^\x08\x00\x00\x00\x00\x06\x00\x00\x00*\
+With A Red Flash\
+, Fly To The Sky\
+, Mazinger\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0eW(\x97\
+Ykbv\x84\x9e\xd1f\x97N-\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x1eWithin The \
+Paralyzing Darkn\
+ess\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x10_\xc3NKb@_\xf5e\xe0\
+_bNKR\x03\x08\x00\x00\x00\x00\x06\x00\x00\x00$\
+Within The Soul \
+Lies An Unseen B\
+lade\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08T\x09\x7f\xc1Q\x8dge\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x14Zeon's \
+Second Coming\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x02\
+zz\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03air\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x02\x96F\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03ln\
+d\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x02mw\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03\
+sea\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x02W0\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x04wall\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x04\x00A\x00I\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x02AI\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x04\
+\x00S\x00P\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02SP\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x08ryk\x8a\x80\xfdR\x9b\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x09abiliti\
+es\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x04T}N-\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08accuracy\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x0a\x00A\x00I\x00 ep\x91\xcf\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08ai cou\
+nt\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x0a\x00A\x00I\x00 e\
+pcn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07ai \
+data\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x0a\x00A\x00I\x00\
+ \x95\x7f^\xa6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09a\
+i length\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x0a\x00\
+A\x00I\x00 R\x17\x88h\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x07ai list\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x0a\x00A\x00I\x00 c\x07\x94\x88\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0bai pointers\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x02zz\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x03air\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08v{W\
+:O\x5cT\xc1\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aa\
+ppearance\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x04\
+\x88\xc5u2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05ar\
+mor\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x04\x5c^`'\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x09attribut\
+e\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x06\x00B\x00G\x00M\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x10backgrou\
+nd music\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x06W\
+Wep\x91\xcf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bb\
+lock count\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x06WW\x95\x7f^\xa6\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0cblock length\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x06WWc\x07\x94\x88\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0eblock pointe\
+rs\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x04\x7f\x16x\x01\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x04code\x07\x00\x00\x00\x0c\
+FieldMapping\x01\x03\x00\x00\
+\x00\x04h<e\x97\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06\
+combat\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x06T\x08O\
+Sep\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dcom\
+bine count\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08T\x08OS~\xc4S\xf7\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x14combine group\
+ number\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x08T\x08\
+OS^\x8fS\xf7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17\
+combine sequence\
+ number\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x08c\x07\
+N\xe4N\xe3x\x01\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0c\
+command code\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x08c\x07N\xe4\x8b\xa1ep\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0dcommand cou\
+nt\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08c\x07N\xe4epc\
+n\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ccomma\
+nd data\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x08c\x07\
+N\xe4\x8b\xf4f\x0e\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0f\
+command explain\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x08c\x07N\xe4S\xc2ep\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0ecommand \
+params\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08h8_\
+\xc3g:OS\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ac\
+ore robot\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x04\
+\x8dD\x91\xd1\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04co\
+st\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08O\x1a_\xc3\x88ek\
+c\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08criti\
+cal\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x08e9\x90 \x8f\xfd\
+R\xa0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ccust\
+om bonus\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08e\
+9\x90 |{W\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0bcustom type\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x06e;Q\xfbR\x9b\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x06damage\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x08\
+R\x1dY\xcb_9\x83o\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0cdefault ammo\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x04N\xcb~\xcd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0bdescription\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08\x002k!\x88LR\xa8\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0ddouble ac\
+tion\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x04\x00E\x00N\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x06energy\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x08m\x88\x80\x17\x00E\x00N\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0benergy c\
+ost\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x04V\xde\x90\x7f\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x07evasion\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x04h\x07_\xd7\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x05flags\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x06\
+l\x14R\x9b~\xc4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10\
+friendship group\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x04QhT\x0d\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x09full name\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x04QhT\x0d\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08fullname\x07\x00\x00\x00\x0c\
+FieldMapping\x01\x03\x00\x00\
+\x00\x02\x96F\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06gr\
+ound\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x04Qh\x95\x7f\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x06height\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x04\x00H\x00P\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0ahit points\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x04\x96PuL\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x05limit\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x06\x8f\
+\xdc\x5c\x04z\x0b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0al\
+ong range\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x0c\
+W0V\xfekfVhR\x06|{\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x10map weapon\
+ class\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x0ew@_\
+9c\x07[\x9aW\x8bSJ_\x84\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x11map weapon \
+radius\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x0ee\xb9T\
+\x11c\x07[\x9aW\x8b\x83\x03V\xf4\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x10map weapon \
+range\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x0cW0V\xfe\
+kfVho\x14Q\xfa\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0fmap weapon sho\
+w\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x08g\x00Y'_9\x83o\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cmaximu\
+m ammo\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08Rg`\
+\xc5e\x87g,\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07m\
+essage\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x06\x8f\xd0R\
+\xa8`'\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08mob\
+ility\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x0c_\x00Y\xcb\
+y\xfbR\xa8V\xdeT\x08\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0amove round\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x06y\xfbR\xa8R\x9b\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08movement\x07\x00\x00\x00\x0c\
+FieldMapping\x01\x03\x00\x00\
+\x00\x08y\xfbR\xa8|{W\x8b\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0dmovement typ\
+e\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x04T\x0dy\xf0\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x04name\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x04`'h<\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06n\
+ature\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x04g:^\x08\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08nickna\
+me\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08g:OScb\x88\
+\xc5\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13optio\
+n parts system\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08\x81\xeaN;e;Q\xfb\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0aown attac\
+k\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x08\x81\xeaN;y\xfbR\xa8\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08own mo\
+ve\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08\x96\xf6N\xf6c\xd2i\
+\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aparts\
+ slot\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x04r1y\xf0\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08pet na\
+me\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x04\x5c\x04Q\xfb\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x06ranged\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x04S\xcd^\x94\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08reaction\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x06O\xeet\x06\x8d9\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0brepair cost\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x0aW#b\x18X\xeb{I~\xa7\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x13required \
+aura level\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08_\xc5\x89\x81l\x14R\x9b\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x15required mora\
+le value\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x0ae\
+\xb0N\xba|{{I~\xa7\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x16required newt\
+ype level\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x04\
+g:OS\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aro\
+bot name\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08W\
+:foepcn\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0dscenario data\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08W:foc\x07\x94\x88\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x10scenario \
+pointer\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x08Rg\
+g,c\x07N\xe4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
+script command\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08bi\x5cUe\x87g,\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0dscript ex\
+pand\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x0aRgg,S\
+\xc2ep\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0es\
+cript params1\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x0aRgg,S\xc2ep\x002\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0escript p\
+arams2\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x06cbN\
+X|\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06ser\
+ies\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x06\x8f\xd1\x5c\x04z\x0b\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bshort \
+range\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x04OSy\xef\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04size\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x04b\x80\x91\xcf\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x05skill\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x06\x00\
+L\x00v\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cs\
+kill level1\x07\x00\x00\x00\x0c\
+FieldMapping\x01\x03\x00\x00\
+\x00\x06\x00L\x00v\x002\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0cskill level2\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x06\x00L\x00v\x003\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0cskill level\
+3\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x06\x00L\x00v\x004\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0cskill le\
+vel4\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x06\x00L\x00v\x00\
+5\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cskill\
+ level5\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x06\x00L\
+\x00v\x006\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0csk\
+ill level6\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x06\x00L\x00v\x007\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0cskill level7\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x06\x00L\x00v\x008\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0cskill level8\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x06\x00L\x00v\x009\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cskill lev\
+el9\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x04b\x80\x80\xfd\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0askill na\
+me\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x02[\x87\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x05space\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08ryk\x8ab\x80\x80\xfd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0especial skill\
+s\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x08|\xbey^c\x07N\xe4\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fspirit\
+ commands\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x08\
+N`_\x97{I~\xa7\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0cspirit level\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x0av\xeeh\x07\x9a~\x9avTX\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0ctarget \
+pilot\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x06v\xeeh\x07\
+\x00X\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08targ\
+et x\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x06v\xeeh\x07\x00\
+Y\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08targe\
+t y\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x08S\xd8_b~\xc4\
+S\xf7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16tran\
+sform group numb\
+er\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08S\xd8_b^\x8fS\
+\xf7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19trans\
+form sequence nu\
+mber\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
+0\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
+nown01\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08g*w\
+\xe5\x000\x002\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
+nknown02\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08g\
+*w\xe5\x000\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x09unknown03\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08g*w\xe5\x000\x004\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x09unknown04\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x08g*w\xe5\x000\x005\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x09unknown05\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08g*w\xe5\x000\x006\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x09unknown06\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x08g*w\xe5\x000\x007\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
+07\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08g*w\xe5\x000\x00\
+8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
+wn08\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
+0\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
+nown09\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08g*w\
+\xe5\x001\x000\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
+nknown10\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08g\
+*w\xe5\x001\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x09unknown11\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08g*w\xe5\x001\x002\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x09unknown12\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x08g*w\xe5\x001\x003\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x09unknown13\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08g*w\xe5\x001\x004\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x09unknown14\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x08g*w\xe5\x001\x005\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
+15\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08g*w\xe5\x001\x00\
+6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
+wn16\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
+1\x007\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
+nown17\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08g*w\
+\xe5\x001\x008\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
+nknown18\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08g\
+*w\xe5\x001\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x09unknown19\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08g*w\xe5\x002\x000\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x09unknown20\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x08g*w\xe5\x002\x001\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x09unknown21\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08g*w\xe5\x002\x002\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x09unknown22\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x08g*w\xe5\x002\x003\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
+23\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08g*w\xe5\x002\x00\
+4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
+wn24\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
+2\x005\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
+nown25\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08g*w\
+\xe5\x002\x006\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
+nknown26\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08g\
+*w\xe5\x002\x007\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x09unknown27\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08g*w\xe5\x002\x008\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x09unknown28\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x08g*w\xe5\x002\x009\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x09unknown29\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08g*w\xe5\x003\x000\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x09unknown30\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x08g*w\xe5\x003\x001\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
+31\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08g*w\xe5\x003\x00\
+2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
+wn32\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
+3\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
+nown33\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08g*w\
+\xe5\x003\x004\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
+nknown34\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08g\
+*w\xe5\x003\x005\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x09unknown35\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08g*w\xe5\x003\x006\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x09unknown36\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x08g*w\xe5\x003\x007\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x09unknown37\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08g*w\xe5\x003\x008\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x09unknown38\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x08g*w\xe5\x003\x009\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
+39\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08g*w\xe5\x004\x00\
+0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
+wn40\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
+4\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
+nown41\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08g*w\
+\xe5\x004\x002\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
+nknown42\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08g\
+*w\xe5\x004\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x09unknown43\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x08g*w\xe5\x004\x004\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x09unknown44\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x08g*w\xe5\x004\x005\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x09unknown45\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08g*w\xe5\x004\x006\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x09unknown46\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x08g*w\xe5\x004\x007\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
+47\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x08g*w\xe5\x004\x00\
+8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
+wn48\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
+4\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
+nown49\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x08g*w\
+\xe5\x005\x000\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
+nknown50\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x0a{\
+I~\xa7R6b\x80\x80\xfd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0fupgraded skil\
+ls\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x04g\x09eH\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x05valid\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x04X\xf0O\x18\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0bvoice actor\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x02mw\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05w\
+ater\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08kfVhR\
+\x06|{\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cwea\
+pon class\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x06\
+kfVhT\x0d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0b\
+weapon name\x07\x00\x00\x00\x0c\
+FieldMapping\x01\x03\x00\x00\
+\x00\x08kfVhR\x17\x88h\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x07weapons\x07\x00\x00\x00\x0c\
+FieldMapping\x01\x03\x00\x00\
+\x00\x04\x91\xcd\x91\xcf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06\
+weight\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x04\x90\x09b\
+\xe9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Brows\
+e\x07\x00\x00\x00\x0fFileSettin\
+gCard\x01\x03\x00\x00\x00\x10\x97^\x00A\x00\
+S\x00C\x00I\x00I\x8d\xef_\x84\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0eNon-ASCII P\
+ath\x07\x00\x00\x00\x0fFileSett\
+ingCard\x01\x03\x00\x00\x00\x04xn[\
+\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02OK\x07\x00\x00\
+\x00\x0fFileSettingCar\
+d\x01\x03\x00\x00\x00*\x00R\x00O\x00M\x8d\xef_\
+\x84T\x8ce\x87N\xf6T\x0dN\x0d\x80\xfdg\x09\x97\
+^\x00A\x00S\x00C\x00I\x00I[W{&0\
+\x02\x08\x00\x00\x00\x00\x06\x00\x00\x00:ROM p\
+ath and filename\
+ cannot contain \
+non-ASCII charac\
+ters.\x07\x00\x00\x00\x0fFileSe\
+ttingCard\x01\x03\x00\x00\x00\x08\x90\
+\x09b\xe9e\x87N\xf6\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0bSelect File\x07\x00\x00\x00\
+\x0fFileSettingCard\
+\x01\x03\x00\x00\x00\x16\x91M\x7fnN\x0dT\x0c\x8b\xed\
+\x8a\x00v\x84\x9e\xd8\x8b\xa4[WOS\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x1bConfigure \
+the font setting\
+s\x07\x00\x00\x00\x08FontCard\x01\x03\
+\x00\x00\x00\x08[WOS\x8b\xbe\x7fn\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0dFont Setti\
+ngs\x07\x00\x00\x00\x08FontCard\
+\x01\x03\x00\x00\x00 xn\x8b\xa4\x5c\x06O\xeee9\
+v\x84epcng\x84^\xfaR0\x7f\x13[X\
+e\x87N\xf6\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00<\
+Are you sure you\
+ want to build m\
+odified data to \
+cache files?\x07\x00\x00\x00\
+\x09HomeFrame\x01\x03\x00\x00\x00\x08\
+g\x84^\xfa\x7f\x13[X\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0bBuild Cache\x07\x00\x00\
+\x00\x09HomeFrame\x01\x03\x00\x00\x00\
+\x16\x7f\x13[X]\xf2[XW(\xff\x0cf/T\
+&\x89\x86v\xd6\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+ Cache already e\
+xists. Overwrite\
+?\x07\x00\x00\x00\x09HomeFrame\x01\
+\x03\x00\x00\x00\x22\x7f\x13[Xv\xee_Ug*b\
+~R0\xff\x0c\x8b\xf7QH\x89\xe3S\x05\x00 \x00\
+R\x00O\x00M0\x02\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+6Cache directory\
+ not found. Plea\
+se extract a ROM\
+ first.\x07\x00\x00\x00\x09Home\
+Frame\x01\x03\x00\x00\x00&g*b~R\
+0\x7f\x13[X\x98yv\xeee\x87N\xf6\xff\x0c\x8b\
+\xf7QH\x89\xe3S\x05\x00 \x00R\x00O\x00M0\
+\x02\x08\x00\x00\x00\x00\x06\x00\x00\x009Cache\
+ project file no\
+t found. Please \
+extract a ROM fi\
+rst.\x07\x00\x00\x00\x09HomeFra\
+me\x01\x03\x00\x00\x00\x04S\xd6m\x88\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x06Cancel\x07\x00\x00\x00\
+\x09HomeFrame\x01\x03\x00\x00\x00\x04\
+Qs\x95\xed\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Cl\
+ose\x07\x00\x00\x00\x09HomeFram\
+e\x01\x03\x00\x00\x00\x0a\x89\xe3S\x05\x00R\x00O\x00\
+M\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bExtra\
+ct ROM\x07\x00\x00\x00\x09HomeF\
+rame\x01\x03\x00\x00\x00\x04e\x87N\xf6\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x04File\x07\x00\x00\x00\
+\x09HomeFrame\x01\x03\x00\x00\x00\x0a\
+e\x87N\xf6]\xf2[XW(\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x13File Already\
+ Exists\x07\x00\x00\x00\x09Home\
+Frame\x01\x03\x00\x00\x00\x0ae\x87N\xf6g\
+*b~R0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eF\
+ile Not Found\x07\x00\x00\
+\x00\x09HomeFrame\x01\x03\x00\x00\x00\
+\x04^U\x95\xf4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cI\
+ntermission\x07\x00\x00\x00\x09\
+HomeFrame\x01\x03\x00\x00\x00\x04e\
+\x87g,\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Mes\
+sage\x07\x00\x00\x00\x09HomeFra\
+me\x01\x03\x00\x00\x00\x02T&\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x02No\x07\x00\x00\x00\x09HomeF\
+rame\x01\x03\x00\x00\x00\x04xn[\x9a\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x02OK\x07\x00\x00\x00\x09H\
+omeFrame\x01\x03\x00\x00\x00\x04\x89\x86\
+v\xd6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09Over\
+write\x07\x00\x00\x00\x09HomeFr\
+ame\x01\x03\x00\x00\x00\x08\x89\xe3g\x90\x7f\x13[\
+X\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bParse\
+ Cache\x07\x00\x00\x00\x09HomeF\
+rame\x01\x03\x00\x00\x00\x04g:^\x08\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x05Pilot\x07\x00\x00\
+\x00\x09HomeFrame\x01\x03\x00\x00\x00\
+ \x8b\xf7QHW(\x8b\xbe\x7fnN-\x91M\x7f\
+n\x00R\x00O\x00Me\x87N\xf6\x8d\xef_\x840\
+\x02\x08\x00\x00\x00\x00\x06\x00\x00\x005Pleas\
+e configure the \
+ROM file path in\
+ Settings first.\
+\x07\x00\x00\x00\x09HomeFrame\x01\x03\
+\x00\x00\x00$\x8b\xf7QHW(\x8b\xbe\x7fnN-\
+\x91M\x7fnv\xeeh\x07\x00 \x00R\x00O\x00M\
+\x00 \x8d\xef_\x840\x02\x08\x00\x00\x00\x00\x06\x00\x00\
+\x007Please configu\
+re the target RO\
+M path in Settin\
+gs first.\x07\x00\x00\x00\x09Ho\
+meFrame\x01\x03\x00\x00\x00\x10\x00R\x00\
+O\x00M\x8d\xef_\x84g*\x91M\x7fn\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x17ROM Path \
+Not Configured\x07\x00\
+\x00\x00\x09HomeFrame\x01\x03\x00\x00\
+\x00\x18\x00R\x00O\x00Me\x87N\xf6N\x0d[X\
+W(\x00:\x00\x0a\x00{\x00}\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x1bROM file doe\
+s not exist:\x0a{}\x07\
+\x00\x00\x00\x09HomeFrame\x01\x03\x00\
+\x00\x00\x0a\x91\xcd^\xfa\x00R\x00O\x00M\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0bRebuild R\
+OM\x07\x00\x00\x00\x09HomeFrame\
+\x01\x03\x00\x00\x00\x04g:OS\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x05Robot\x07\x00\x00\x00\x09Ho\
+meFrame\x01\x03\x00\x00\x00\x04W:f\
+o\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Scena\
+rio\x07\x00\x00\x00\x09HomeFram\
+e\x01\x03\x00\x00\x00\x14v\xeeh\x07\x00 \x00R\x00\
+O\x00M\x00 g*\x91M\x7fn\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x19Target ROM \
+Not Configured\x07\x00\
+\x00\x00\x09HomeFrame\x01\x03\x00\x00\
+\x00\x1a\x7f\x13[Xv\xee_U]\xf2[XW(\
+\xff\x0cf/T&\x89\x86v\xd6\xff\x1f\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00@The cache \
+directory alread\
+y exists. Do you\
+ want to overwri\
+te it?\x07\x00\x00\x00\x09HomeF\
+rame\x01\x03\x00\x00\x00$\x8f\x93Q\xfae\x87\
+N\xf6]\xf2[XW(\x00:\x00\x0a\x00{\x00}\
+\x00\x0a\x00\x0af/T&\x89\x86v\xd6\xff\x1f\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00@The outp\
+ut file already \
+exists:\x0a{}\x0a\x0aDo y\
+ou want to overw\
+rite it?\x07\x00\x00\x00\x09Hom\
+eFrame\x01\x03\x00\x00\x00\x02f/\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x03Yes\x07\x00\x00\x00\x09\
+HomeFrame\x01\x03\x00\x00\x00\x04i\
+\x82\x89\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04Hom\
+e\x07\x00\x00\x00\x0aMainWindow\
+\x01\x03\x00\x00\x00\x04\x8b\xbe\x7fn\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x07Options\x07\x00\x00\x00\x0a\
+MainWindow\x01\x03\x00\x00\x00\x04\
+g:OS\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Ro\
+bot\x07\x00\x00\x00\x0aMainWind\
+ow\x01\x03\x00\x00\x00\x04e\x87g,\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x05Snmsg\x07\x00\x00\x00\x0a\
+MainWindow\x01\x03\x00\x00\x00\x1c\
+\x8d\x85~\xa7g:VhN\xbaY'b\x18\x03\xb1\
+\x00 \x97Y`\x01O\xeee9Vh\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x1eSuper Robo\
+t Wars \xce\xb1 ROM Ed\
+itor\x07\x00\x00\x00\x0aMainWin\
+dow\x01\x03\x00\x00\x00\x08Rg`\xc5e\x87g\
+,\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07messa\
+ge\x07\x00\x00\x00\x08MsgFrame\x01\
+\x03\x00\x00\x00\x0cf\xf4e9uL\x97b\x8b\xed\x8a\
+\x00\x08\x00\x00\x00\x00\x06\x00\x00\x00$Chang\
+e the language o\
+f the interface\x07\
+\x00\x00\x00\x0bOptionFrame\x01\
+\x03\x00\x00\x00\x16f\xf4e9uL\x97bf>y\
+:v\x84\x7f)e>k\xd4O\x8b\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00)Change the \
+scaling ratio of\
+ the interface\x07\x00\
+\x00\x00\x0bOptionFrame\x01\x03\
+\x00\x00\x00\x16f\xf4e9uL\x97bf>y:\
+v\x84N;\x98\x98\x98\x9c\x82r\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00'Change the t\
+heme color of th\
+e interface\x07\x00\x00\x00\x0b\
+OptionFrame\x01\x03\x00\x00\x00\
+\x0cf\xf4e9uL\x97bN;\x98\x98\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00&Change th\
+e theme mode of \
+the interface\x07\x00\x00\
+\x00\x0bOptionFrame\x01\x03\x00\
+\x00\x00\x04m\xf1\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x04Dark\x07\x00\x00\x00\x0bOption\
+Frame\x01\x03\x00\x00\x00\x0c\x8d\xdf\x96\x8f|\
+\xfb~\xdf\x8b\xbe\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0dFollow System\x07\x00\
+\x00\x00\x0bOptionFrame\x01\x03\
+\x00\x00\x00\x08uL\x97b\x8b\xed\x8a\x00\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x12Interface \
+Language\x07\x00\x00\x00\x0bOpt\
+ionFrame\x01\x03\x00\x00\x00\x08uL\
+\x97b\x7f)e>\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11\
+Interface Scalin\
+g\x07\x00\x00\x00\x0bOptionFram\
+e\x01\x03\x00\x00\x00\x08uL\x97b\x8b\xbe\x7fn\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x12Interfa\
+ce Settings\x07\x00\x00\x00\x0b\
+OptionFrame\x01\x03\x00\x00\x00\
+\x12uL\x97b\x7f)e>k\xd4O\x8b\x8c\x03e\
+tN:\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1dInt\
+erface scaling a\
+djusted to\x07\x00\x00\x00\x0bO\
+ptionFrame\x01\x03\x00\x00\x00\x04\
+mE\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Li\
+ght\x07\x00\x00\x00\x0bOptionFr\
+ame\x01\x03\x00\x00\x00\x0a\x00R\x00O\x00M\x8b\
+\xbe\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cROM\
+ Settings\x07\x00\x00\x00\x0bOp\
+tionFrame\x01\x03\x00\x00\x00\x08z\
+\x0dT\x0e\x91\xcdT/\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0dRestart Later\x07\x00\
+\x00\x00\x0bOptionFrame\x01\x03\
+\x00\x00\x00\x08s\xb0W(\x91\xcdT/\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0bRestart No\
+w\x07\x00\x00\x00\x0bOptionFram\
+e\x01\x03\x00\x00\x00\x1a\x7f)e>\x5c\x06W(\x91\
+\xcde\xb0T/R\xa8uL\x97bT\x0eu\x1fe\
+H\x08\x00\x00\x00\x00\x06\x00\x00\x007Scali\
+ng will take eff\
+ect after restar\
+ting the interfa\
+ce\x07\x00\x00\x00\x0bOptionFra\
+me\x01\x03\x00\x00\x00\x08N;\x98\x98\x98\x9c\x82r\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bTheme \
+Color\x07\x00\x00\x00\x0bOption\
+Frame\x01\x03\x00\x00\x00\x08N;\x98\x98j\
+!_\x0f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aThe\
+me Mode\x07\x00\x00\x00\x0bOpti\
+onFrame\x01\x03\x00\x00\x00\x0e\x91M\x7f\
+n\x00R\x00O\x00M\x8b\xbe\x7fn\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x1aConfigure t\
+he ROM settings\x07\
+\x00\x00\x00\x07RomCard\x01\x03\x00\x00\x00\
+\x0a\x00R\x00O\x00M\x8b\xbe\x7fn\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0cROM Setting\
+s\x07\x00\x00\x00\x07RomCard\x01\x03\x00\
+\x00\x00\x10n\x90\x00 \x00R\x00O\x00M\x00 e\
+\x87N\xf6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aSou\
+rce ROM\x07\x00\x00\x00\x07RomC\
+ard\x01\x03\x00\x00\x00\x12\x8f\x93Q\xfa\x00 \x00\
+R\x00O\x00M\x00 e\x87N\xf6\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0aTarget ROM\x07\
+\x00\x00\x00\x07RomCard\x01\x03\x00\x00\x00\
+\x04\x88\xc5u2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05a\
+rmor\x07\x00\x00\x00\x09UnitFra\
+me\x01\x03\x00\x00\x00\x04\x00E\x00N\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x06energy\x07\x00\x00\x00\
+\x09UnitFrame\x01\x03\x00\x00\x00\x04\
+\x00H\x00P\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ahi\
+t points\x07\x00\x00\x00\x09Uni\
+tFrame\x01\x03\x00\x00\x00\x04\x96PuL\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05limit\x07\
+\x00\x00\x00\x09UnitFrame\x01\x03\x00\
+\x00\x00\x06\x8f\xd0R\xa8`'\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08mobility\x07\x00\x00\x00\x09\
+UnitFrame\x01\x03\x00\x00\x00\x06y\
+\xfbR\xa8R\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08m\
+ovement\x07\x00\x00\x00\x09Unit\
+Frame\x01\x03\x00\x00\x00\x08y\xfbR\xa8|\
+{W\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dmov\
+ement type\x07\x00\x00\x00\x09U\
+nitFrame\x01\x03\x00\x00\x00\x08\x96\xf6\
+N\xf6c\xd2i\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0a\
+parts slot\x07\x00\x00\x00\x09U\
+nitFrame\x01\x03\x00\x00\x00\x04g:\
+OS\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0arobo\
+t name\x07\x00\x00\x00\x09UnitF\
+rame\x01\x03\x00\x00\x00\x04OSy\xef\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x04size\x07\x00\x00\x00\
+\x09UnitFrame\x01\x03\x00\x00\x00\x10\
+\x8f\x93Qee\x87[W\x8f\xc7n\xe4m\x88`o\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1dEnter \
+text to filter m\
+essages\x07\x00\x00\x00\x0b_Fil\
+terCard\x01\x03\x00\x00\x00\x04d\x1c}\
+\x22\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Searc\
+h\x07\x00\x00\x00\x0b_FilterCar\
+d\x01\x03\x00\x00\x00\x0a\x8f\xc7n\xe4\x00.\x00.\x00\
+.\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09filte\
+r...\x07\x00\x00\x00\x0b_Filter\
+Card\x01\x03\x00\x00\x00\x14\x8f\x93QeSA\
+Qm\x8f\xdbR6\x88LS\xf7[\x9aOM\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x1eEnter he\
+x row number to \
+locate\x07\x00\x00\x00\x09_Goto\
+Card\x01\x03\x00\x00\x00\x04\x8d\xf3\x8fl\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x05Go to\x07\x00\x00\
+\x00\x09_GotoCard\x01\x03\x00\x00\x00\
+\x12SAQm\x8f\xdbR6\x88LS\xf7\x00.\x00\
+.\x00.\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ahex\
+ row...\x07\x00\x00\x00\x09_Got\
+oCard\x01\x03\x00\x00\x00\x12\x90\x09b\xe9\x8b\
+\xf4\x8b\xddN\xba\x8f\xc7n\xe4m\x88`o\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00#Select a \
+speaker to filte\
+r messages\x07\x00\x00\x00\x0c_\
+SpeakerCard\x01\x03\x00\x00\x00\
+\x06\x8b\xf4\x8b\xddN\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x07Speaker\x07\x00\x00\x00\x0c_Sp\
+eakerCard\x01\x03\x00\x00\x00\x0aQ\
+h\x90\xe8\x8b\xf4\x8b\xddN\xba\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0call speakers\x07\
+\x00\x00\x00\x0c_SpeakerCard\
+\x01\
+\x00\x00{x\
+<\
+\xb8d\x18\xca\xef\x9c\x95\xcd!\x1c\xbf`\xa1\xbd\xdd\xa7\
+\x00\x00\x00\x05ja_JPB\x00\x00\x0f \x00\x00\
+\x04Y\x00\x006\x05\x00\x00\x05;\x00\x00\x02\x8d\x00\x00\
+\x05;\x00\x00V\xa1\x00\x00\x05;\x00\x00\x5cj\x00\x00\
+\x05O\x00\x00\x5cD\x00\x00\x05\x80\x00\x006,\x00\x00\
+H\x02\x00\x00\x05\x9a\x00\x00X\xb4\x00\x00\x02\xdc\x00\x00\
+_\xc3\x00\x00`\xfc\x00\x00h\x02\x00\x005|\x00\x00\
+h\x02\x00\x007\xad\x00\x00sD\x00\x005\x9e\x00\x00\
+y\xb1\x00\x005\xc0\x00\x01\x98A\x00\x00\x15\xfd\x00\x02\
+\x9c\xfb\x00\x00\x06\xae\x00\x04\x8f\x03\x00\x00\x07\xe8\x00\x04\
+\x93\xb5\x00\x00\x00\xd4\x00\x04\xa8\x8b\x00\x00d\x01\x00\x04\
+\xd0%\x00\x00[$\x00\x04\xf65\x00\x00a!\x00\x05\
+\x8b|\x00\x00\x16h\x00\x06\xa5\xa5\x00\x009A\x00\x06\
+\xa6\xa4\x00\x00;\xb4\x00\x07H5\x00\x00A\xbc\x00\x07\
+\xa1\x05\x00\x00F\xa4\x00\x07\xa1\x05\x00\x00i\xd6\x00\x07\
+\xd8,\x00\x005\xe2\x00\x0c\xc0\x0e\x00\x00Ya\x00\x0f\
+|{\x00\x00\x06@\x00 \x82\xe1\x00\x000F\x000\
+\xc8S\x00\x006S\x006\xfb3\x00\x00l\x01\x00>\
+`$\x00\x00C\xa5\x00J6\x95\x00\x00Z\xc6\x00J\
+B\x15\x00\x001\x02\x00K\xc4I\x00\x00\x0c\x8c\x00N\
+\x17\xaf\x00\x00k\x10\x00N\x8b\xbe\x00\x00\x02h\x00R\
+\xfd\xf4\x00\x00e\x94\x00W\x03d\x00\x00\x5c\xf4\x00Y\
+Yd\x00\x00_\x1c\x00YYd\x00\x00ar\x00Z\
+T\x97\x00\x00a\x9e\x00Z\xc6\xc2\x00\x00'\x92\x00h\
+\x94b\x00\x008\x06\x00h\x94b\x00\x00hA\x00m\
+'\xe3\x00\x00=\xd8\x00s\x04\x04\x00\x00?%\x00s\
+\x04\x04\x00\x00h\xbc\x00s\x18S\x00\x00\x07x\x00z\
+ ,\x00\x00F\xcf\x00z3\xad\x00\x00\x08~\x00z\
+g\x95\x00\x00H\xf5\x00|\x82\xf4\x00\x00T\xeb\x00}\
+\x8a\xc2\x00\x00UE\x00~\xf0\xfd\x00\x00^\xe5\x00\x9f\
+\x94\x04\x00\x00\x11D\x00\xc4\xab\xaf\x00\x00+\xd8\x00\xdc\
+\x80\xcc\x00\x00C\xd7\x01\x01\xe3\xd7\x00\x00d\xac\x01\x01\
+\xe7\x94\x00\x00\x0a\xf9\x01\x0b\x83\xb5\x00\x00A\x84\x01\x0b\
+\x83\xb5\x00\x00i;\x01\x0f\x9bn\x00\x00\x05\xc0\x01\x19\
+`\xfe\x00\x00\x10L\x01\x1e|\xf2\x00\x004@\x01+\
+\x06\x83\x00\x00;<\x01,BQ\x00\x00\x18\xab\x012\
+e\xbf\x00\x00X\xf7\x018\x13s\x00\x00I\x1d\x01T\
+_\xec\x00\x00\x19Q\x01`\xf9w\x00\x005A\x01n\
+\xe8\xbe\x00\x002\x86\x01\x80@\x87\x00\x00\x0d\x9e\x01\x96\
+'\xe9\x00\x00.\x1b\x01\x97\xbb\xfd\x00\x00\x162\x01\xa2\
+f\xfa\x00\x00\x0b\xb0\x01\xb9\x17x\x00\x008\xcb\x01\xd0\
+m\x82\x00\x00\x0dj\x01\xd5\xc5\xbc\x00\x00I\x90\x01\xde\
+\x90\xa4\x00\x00I\xc7\x01\xdf\xa13\x00\x00X\x00\x01\xf0\
+X\x83\x00\x00\x03i\x01\xf0\xfa\xa3\x00\x00\x03\xa5\x02\x08\
+;\xc5\x00\x00b\xc1\x02B\xaa\x92\x00\x002\xf4\x02M\
+\xe4.\x00\x00\x1cV\x02M\xe4>\x00\x00\x1b\xf1\x02M\
+\xe9\x8e\x00\x00#\xd2\x02V\xbd\x00\x00\x00N\xa1\x02V\
+\xbd\x01\x00\x00N\xd3\x02V\xbd\x02\x00\x00O\x05\x02V\
+\xbd\x03\x00\x00O7\x02V\xbd\x04\x00\x00Oi\x02V\
+\xbd\x05\x00\x00O\x9b\x02V\xbd\x06\x00\x00O\xcd\x02V\
+\xbd\x07\x00\x00O\xff\x02V\xbd\x08\x00\x00P1\x02V\
+\xbd\x09\x00\x00Pc\x02V\xbd\x10\x00\x00L\xad\x02V\
+\xbd\x11\x00\x00L\xdf\x02V\xbd\x12\x00\x00M\x11\x02V\
+\xbd\x13\x00\x00MC\x02V\xbd\x14\x00\x00Mu\x02V\
+\xbd\x15\x00\x00M\xa7\x02V\xbd\x16\x00\x00M\xd9\x02V\
+\xbd\x17\x00\x00N\x0b\x02V\xbd\x18\x00\x00N=\x02V\
+\xbd\x19\x00\x00No\x02V\xbd \x00\x00R\x89\x02V\
+\xbd!\x00\x00R\xbb\x02V\xbd\x22\x00\x00R\xed\x02V\
+\xbd#\x00\x00S\x1f\x02V\xbd$\x00\x00SQ\x02V\
+\xbd%\x00\x00S\x83\x02V\xbd&\x00\x00S\xb5\x02V\
+\xbd'\x00\x00S\xe7\x02V\xbd(\x00\x00T\x19\x02V\
+\xbd)\x00\x00TK\x02V\xbd0\x00\x00P\x95\x02V\
+\xbd1\x00\x00P\xc7\x02V\xbd2\x00\x00P\xf9\x02V\
+\xbd3\x00\x00Q+\x02V\xbd4\x00\x00Q]\x02V\
+\xbd5\x00\x00Q\x8f\x02V\xbd6\x00\x00Q\xc1\x02V\
+\xbd7\x00\x00Q\xf3\x02V\xbd8\x00\x00R%\x02V\
+\xbd9\x00\x00RW\x02V\xbda\x00\x00J\xeb\x02V\
+\xbdb\x00\x00K\x1d\x02V\xbdc\x00\x00KO\x02V\
+\xbdd\x00\x00K\x81\x02V\xbde\x00\x00K\xb3\x02V\
+\xbdf\x00\x00K\xe5\x02V\xbdg\x00\x00L\x17\x02V\
+\xbdh\x00\x00LI\x02V\xbdi\x00\x00L{\x02V\
+\xbd\xd0\x00\x00T}\x02Z:\xc4\x00\x002\x04\x02\x8e\
+\xc9\x11\x00\x00F\xf9\x02\x8e\xc9\x12\x00\x00G,\x02\x8e\
+\xc9\x13\x00\x00G_\x02\x8e\xc9\x14\x00\x00G\x92\x02\x8e\
+\xc9\x15\x00\x00G\xc5\x02\x8e\xc9\x16\x00\x00G\xf8\x02\x8e\
+\xc9\x17\x00\x00H+\x02\x8e\xc9\x18\x00\x00H^\x02\x8e\
+\xc9\x19\x00\x00H\x91\x02\x93\xb0u\x00\x001\xc5\x02\xa9\
+\xca\xd7\x00\x00\x09\xe8\x02\xbc\x10b\x00\x00)\xde\x02\xc0\
+\xe6%\x00\x00:R\x02\xc0\xeb!\x00\x00:\xc5\x02\xcd\
+5\x9f\x00\x00e;\x02\xd2\xdd\xe4\x00\x00'\xfe\x02\xdd\
+\xd6\x09\x00\x00\x11\xbd\x02\xe2\xe65\x00\x00H\xc4\x02\xe7\
++\xf5\x00\x00>A\x03\x05q\xc2\x00\x00\x16\x91\x03$\
+\xe4\x85\x00\x00\x01&\x03$\xe4\x85\x00\x00c4\x03:\
+\xd0\x01\x00\x00&(\x03:\xd0\x02\x00\x00&a\x03:\
+\xd0\x03\x00\x00&\x9a\x03D\xaa\x83\x00\x00\x034\x03T\
+\x9c\x7f\x00\x00\x17R\x03r\xabe\x00\x00g%\x03\x81\
+)\xc1\x00\x00*\x9a\x03\xac>\x0e\x00\x00j\x87\x03\xc2\
+\x13\xd3\x00\x003\xbc\x03\xc4\xcct\x00\x00\x00K\x03\xca\
+\x97\x85\x00\x00\x5c\x17\x03\xca\x97\xa5\x00\x00@\xb1\x03\xca\
+\x97\xa5\x00\x00b/\x03\xd1\x22r\x00\x00E\x0d\x03\xd7\
+E\xf2\x00\x00\x01\x91\x04\x03R\xb2\x00\x00*\xe1\x04\x04\
+'\xa2\x00\x00\x05\x1d\x04=\xb9C\x00\x00ko\x04^\
+\xe3y\x00\x00\x15\x10\x04\x81\xe5\xd5\x00\x00\x07\xac\x04\x87\
+wq\x00\x00\x0f\xd6\x04\x98I\xbc\x00\x00\x00\xf8\x04\x98\
+I\xbc\x00\x00Z\x98\x04\x99n\x95\x00\x00V1\x04\xd4\
+G\xb4\x00\x00EN\x04\xe6\x88^\x00\x00\x10\x1f\x04\xe7\
+Q\xb2\x00\x00J\xa3\x04\xf5\x90\xf1\x00\x00'\xbe\x04\xfd\
+\xa7\x85\x00\x00fa\x05\x06kT\x00\x00\x0a\xc1\x05\x07\
+\x9c\x8f\x00\x00\x12z\x05\x07\xde\xd5\x00\x00\x00\x00\x05N\
+\x13\x1c\x00\x00)D\x05`\x10\x1e\x00\x00\x0a\x8a\x05a\
+\x05t\x00\x00_u\x05l\x01\xa4\x00\x00\x0e\x13\x05l\
+V\x89\x00\x00\x13\x89\x05\x80\xebt\x00\x00,i\x05\x90\
+7\xf9\x00\x00@\xeb\x05\x907\xf9\x00\x00h\xe3\x05\x9b\
+\x88\x98\x00\x00j]\x05\x9d\x8a\xd5\x00\x00<O\x05\xa2\
+\x1b\xe3\x00\x007u\x05\xa8\x1a\x02\x00\x00.\xb2\x05\xc6\
+=\xf3\x00\x00d\xf7\x05\xc8u\x84\x00\x00\x06\xe9\x05\xcd\
+\xcc\xff\x00\x00<\xb2\x05\xd0\x1b4\x00\x00,\xa1\x05\xd4\
+Ad\x00\x00\x17\xb2\x05\xe2\xe6\xec\x00\x00\x040\x05\xea\
+:\xa4\x00\x00\x15S\x05\xed\x13\x94\x00\x002F\x05\xf0\
+\x10\x1e\x00\x00-\x1d\x06\x00\xb9\xc5\x00\x00X\xbe\x06\x01\
+\x92E\x00\x00Fr\x06\x1f}T\x00\x00\x04\xa7\x06/\
+\x84\x92\x00\x00J`\x06:3\xf3\x00\x00\x14\x95\x06A\
+\xec\xdf\x00\x00\x05Y\x06C\xbc\x1f\x00\x00`f\x06N\
+\xfab\x00\x00\x026\x06aI\xbe\x00\x00\x18.\x06b\
+\xd3\xa5\x00\x00D\x9e\x06b\xd3\xa5\x00\x00i\xa6\x06c\
+\xab!\x00\x00\x17\x12\x06g\xa0\xe9\x00\x00\x02\xb1\x06l\
+;\xf4\x00\x00[\x97\x06{\x06\x03\x00\x00aH\x06}\
+\x00E\x00\x00U\xa2\x06\x8c\xc9\x9b\x00\x00B\x83\x06\x9b\
+\x11\xc3\x00\x00,!\x06\xa68\x84\x00\x009l\x06\xa8\
+7\xd5\x00\x00<\x85\x06\xb2\xde\xb1\x00\x00'Q\x06\xb3\
+xC\x00\x00IT\x06\xb5a\x83\x00\x00\x11\x05\x06\xbc\
+~\x93\x00\x009\x02\x06\xc37\x9d\x00\x00BC\x06\xc4\
+\xc8\xe9\x00\x00=M\x06\xc4\xc8\xe9\x00\x00hh\x06\xc9\
+\xef\xbe\x00\x00)\x03\x06\xcc=\x14\x00\x00AU\x06\xcc\
+=\x14\x00\x00i\x0f\x06\xe7i\xe4\x00\x00\x11}\x06\xe9\
+lD\x00\x00>\xa2\x06\xeb\xfd\xf4\x00\x00>\xcb\x07\x00\
+\xcfO\x00\x00_\xd0\x07\x06\xf45\x00\x00\x09>\x07\x08\
+\xb0\xb2\x00\x00\x03\xe1\x07\x0f4\xce\x00\x00[\xdb\x07\x14\
+\xcfR\x00\x00\x02\xff\x07\x14\xcfR\x00\x00f\xee\x07\x1a\
+\xf6\xf2\x00\x00U\x15\x07\x1f\xf0u\x00\x00\x5c\xbb\x07,\
+)\x18\x00\x007\x13\x07H\xbc\x85\x00\x00A\xe5\x07V\
+\x08\xe4\x00\x00\x13\xbf\x07s\x15\xd3\x00\x00>\xf6\x07s\
+\x15\xd3\x00\x00h\x90\x07z\x16%\x00\x00D\x17\x07\x7f\
+\xff\xe4\x00\x00;}\x07\x80.\x84\x00\x00A\x1a\x07\x88\
+M\xb4\x00\x00CM\x07\x89w\xe4\x00\x00\x13\x18\x07\x8a\
+V2\x00\x009\xcb\x07\x8a\xe0Q\x00\x00D\xd1\x07\x90\
+\x8d\xae\x00\x00k9\x07\x9b$\x13\x00\x008^\x07\x9c\
+\x8f\xc3\x00\x00FA\x07\xa4\xdbU\x00\x00?\xff\x07\xb3\
+\xaf\xc3\x00\x00Um\x07\xb6\x97#\x00\x00?\x80\x07\xb6\
+\xa8\xc1\x00\x006\xe1\x07\xb70\xc4\x00\x007C\x07\xd2\
+gc\x00\x00gY\x07\xd7lN\x00\x0038\x07\xd7\
+\xe3.\x00\x004\x04\x07\xdb\xfd\xf4\x00\x00V\x06\x07\xea\
+\xae\xbd\x00\x00Z\xef\x07\xfaWu\x00\x004\xec\x08\x03\
+\xe9\xf1\x00\x00\x09\xab\x08\x0c\x14\x8e\x00\x00Y\xef\x08\x16\
+\xfd\xad\x00\x00-\xe0\x083\xf4\x17\x00\x00(4\x087\
+l\xc1\x00\x00.c\x08@J\x9e\x00\x00]\xaa\x08n\
+\xbb\xf9\x00\x00+\x1b\x08o\x17b\x00\x00a\xca\x08z\
+V\x97\x00\x00@>\x08{j.\x00\x00\x15\xbf\x08\x8d\
+\xc1\xd8\x00\x00J\x02\x08\x8d\xc1\xd9\x00\x00J1\x08\x8f\
+K\xc3\x00\x003\x85\x08\x92\xf1\xfd\x00\x00g\xcb\x08\xce\
+\x9f\xc7\x00\x00f*\x08\xcf\x0b\xfe\x00\x00;\x00\x08\xd3\
+\x9cm\x00\x00d)\x08\xf0\xe7\xa1\x00\x00)\x90\x09\x0a\
+\xff\xdc\x00\x00;\xdd\x09\x0e\xea\x92\x00\x00\x0d\xcf\x09&\
+63\x00\x00T\xaf\x09B\xcb\xfe\x00\x00+c\x09[\
+=\xa2\x00\x00\x08\xb3\x09c[\xc5\x00\x00\x15\x90\x09g\
+%\xae\x00\x00V\xcb\x09mg\xfe\x00\x00<\xe7\x09q\
+tT\x00\x00\x18\xe0\x09\x7fR\x95\x00\x00?O\x09\x9b\
+\xc0\xe2\x00\x00\x0c\xe8\x09\xac\x81\xd9\x00\x006\x85\x09\xb1\
+.\xd0\x00\x00\x09\x05\x09\xc4\x8do\x00\x00_G\x09\xc6\
+\x0e\x93\x00\x00<\x16\x09\xc9\x11s\x00\x00e\xbd\x09\xc9\
+\x11s\x00\x00g\x99\x09\xe0\xb9\xd5\x00\x00/F\x09\xf5\
+\xban\x00\x00\x19\x1b\x0a\x0c*\xf5\x00\x00c\xa1\x0a\x12\
+\x96^\x00\x00/\x84\x0a \x99\x1f\x00\x00X6\x0a.\
+\x09U\x00\x00\x12\xda\x0a.oL\x00\x00\x0aM\x0a=\
+\x0e\x95\x00\x00Wk\x0aC\xa7\xd4\x00\x00\x0b4\x0aH\
+\x05C\x00\x00[N\x0aLh\xb3\x00\x00?\xbf\x0aV\
+\xb5\xb1\x00\x00\x13L\x0ag\x86c\x00\x00\x04p\x0ak\
+\x81\x92\x00\x00k\xd5\x0a}v \x00\x00\x22j\x0a}\
+v!\x00\x00\x22\x97\x0a}v\x22\x00\x00\x22\xc4\x0a}\
+v#\x00\x00\x22\xf1\x0a}v$\x00\x00#\x1e\x0a}\
+v%\x00\x00#K\x0a}v&\x00\x00#x\x0a}\
+v'\x00\x00#\xa5\x0a}v(\x00\x00$\x0c\x0a}\
+v)\x00\x00$9\x0a}v0\x00\x00$\x90\x0a}\
+v1\x00\x00$\xbd\x0a}v5\x00\x00%\xce\x0a}\
+v6\x00\x00%\xfb\x0a}v\xc0\x00\x00\x1e\x92\x0a}\
+v\xc1\x00\x00\x1e\xbf\x0a}v\xc2\x00\x00\x1e\xec\x0a}\
+v\xc3\x00\x00\x1f\x19\x0a}v\xc4\x00\x00\x1fF\x0a}\
+v\xc5\x00\x00\x1fs\x0a}v\xc6\x00\x00\x1f\xa0\x0a}\
+v\xc7\x00\x00\x1f\xcd\x0a}v\xc8\x00\x00\x1f\xfa\x0a}\
+v\xc9\x00\x00 '\x0a}v\xd0\x00\x00 ~\x0a}\
+v\xd1\x00\x00 \xab\x0a}v\xd2\x00\x00 \xd8\x0a}\
+v\xd3\x00\x00!\x05\x0a}v\xd4\x00\x00!2\x0a}\
+v\xd5\x00\x00!_\x0a}v\xd6\x00\x00!\x8c\x0a}\
+v\xd7\x00\x00!\xb9\x0a}v\xd8\x00\x00!\xe6\x0a}\
+v\xd9\x00\x00\x22\x13\x0a}v\xe0\x00\x00\x19\xd8\x0a}\
+v\xe1\x00\x00\x1a\x05\x0a}v\xe2\x00\x00\x1a2\x0a}\
+v\xe3\x00\x00\x1a_\x0a}v\xe4\x00\x00\x1a\x8c\x0a}\
+v\xe5\x00\x00\x1a\xb9\x0a}v\xe6\x00\x00\x1a\xe6\x0a}\
+v\xe7\x00\x00\x1b\x13\x0a}v\xe8\x00\x00\x1b@\x0a}\
+v\xe9\x00\x00\x1bm\x0a}v\xf0\x00\x00\x1b\xc4\x0a}\
+v\xf1\x00\x00\x1c)\x0a}v\xf2\x00\x00\x1c\x8e\x0a}\
+v\xf3\x00\x00\x1c\xbb\x0a}v\xf4\x00\x00\x1dZ\x0a}\
+v\xf5\x00\x00\x1d\x87\x0a}v\xf6\x00\x00\x1d\xb4\x0a}\
+v\xf7\x00\x00\x1d\xe1\x0a}v\xf8\x00\x00\x1e\x0e\x0a}\
+v\xf9\x00\x00\x1e;\x0a\x82\x10D\x00\x000\xb6\x0a\x8d\
+j\xdf\x00\x00\x0c\x03\x0a\xa7\xd7`\x00\x00\x19\x84\x0a\xa7\
+\xd7a\x00\x00\x19\xae\x0a\xa7\xd7b\x00\x00\x1b\x9a\x0a\xa7\
+\xd7c\x00\x00\x1eh\x0a\xa7\xd7d\x00\x00 T\x0a\xa7\
+\xd7e\x00\x00\x22@\x0a\xa7\xd7f\x00\x00$f\x0a\xa7\
+\xd7g\x00\x00&\xd3\x0a\xa7\xd7h\x00\x00&\xfd\x0a\xa7\
+\xd7i\x00\x00''\x0a\xbd\x12U\x00\x00(\x88\x0a\xd7\
+\xdfr\x00\x00\x08\x11\x0a\xf4lt\x00\x00\x0e\xe4\x0b\x13\
+\x14R\x00\x00\x0fa\x0b1\xb4U\x00\x00j\xbe\x0b<\
+\x02^\x00\x00/\x0a\x0bQ\x0b\xf4\x00\x00B\xe7\x0bQ\
+\x0b\xf4\x00\x00ip\x0b\x5cA'\x00\x00\x0eS\x0bh\
+\x94c\x00\x004\xa1\x0bjn$\x00\x006\xb2\x0bz\
+\xa9\xde\x00\x00Cx\x0b\x8f\x03\xf5\x00\x007\xd3\x0b\x8f\
+\xd6\x05\x00\x00\x18c\x0b\x8f\xf4\x15\x00\x0080\x0b\xa4\
+\x0a\x88\x00\x00V_\x0b\xb6\xa1\xa4\x00\x00\x10\x83\x0b\xc7\
+\x0a2\x00\x00\x01\xc3\x0b\xcf\xb4\x13\x00\x00\x11\xf8\x0b\xe0\
+d\xff\x00\x00\x06s\x0b\xecL\x03\x00\x00\x09r\x0b\xfa\
+\x1b\xa3\x00\x00\x04\xd9\x0c\x09\x80\x0f\x00\x000\x7f\x0c\x0e\
+Tt\x00\x00:\x8d\x0c\x18\x15\x81\x00\x00E\xc3\x0c\x18\
+\x15\x82\x00\x00F\x02\x0c\x1a\xd3b\x00\x00\x0c\xb4\x0c3\
+B\xe5\x00\x00>u\x0c:\xd0\x01\x00\x00%\x5c\x0c:\
+\xd0\x02\x00\x00%\x95\x0c=u\xfe\x00\x00\x074\x0cG\
+\xd2\xd4\x00\x00^5\x0cJ\xe2\xe3\x00\x00W\xa8\x0cO\
+\xcf\xe4\x00\x002\xcc\x0cd\x0eE\x00\x00\x12=\x0ce\
+\xfe\xce\x00\x00-\x9d\x0cgAU\x00\x00C \x0c\x9e\
+\xe6e\x00\x00\x5c\x8e\x0c\xa2\xbd\x93\x00\x00i\xfe\x0c\xa9\
+\x99\xb8\x00\x00-\x5c\x0c\xc0`\x97\x00\x000\x02\x0c\xc2\
+K\xb5\x00\x00\x14N\x0c\xc8\x93\xd2\x00\x00*_\x0c\xc8\
+\xa0>\x00\x00=\xac\x0c\xce\x94\x7f\x00\x00@|\x0c\xcf\
+\xe5\x0e\x00\x00/\xc7\x0c\xd6\xef\x12\x00\x00\x01\xfb\x0c\xe2\
+\xd4\xd2\x00\x00\x0b{\x0c\xf8\x07\x05\x00\x00be\x0d\x01\
+_\xc4\x00\x008\x95\x0d\x0b\xfct\x00\x009\x97\x0d\x11\
+>N\x00\x00=\x17\x0d@\x06\xe9\x00\x001\x88\x0dd\
+\x88\x22\x00\x00\x0f\xa3\x0d\x8f\xb9\x9e\x00\x00]!\x0d\x97\
+Z\xe3\x00\x00\x0e\x9e\x0d\xaa|\xf5\x00\x00\x16\xce\x0d\xb8\
+v#\x00\x00U\xd4\x0d\xc3\xff\xbd\x00\x00h\x05\x0d\xe7\
+|\xee\x00\x00\x13\xf9\x0e\x07A\xa5\x00\x00B\xb6\x0e\x07\
+\x84\x95\x00\x00*\x14\x0e\x18\xbe\xf1\x00\x00\x0d8\x0e\x18\
+\xce\xcd\x00\x00^\x88\x0e\x19x\xfc\x00\x00\x12\xa7\x0e#\
+\xd10\x00\x00>\x04\x0e+Os\x00\x00\x17\xeb\x0e2\
+2\x22\x00\x00(\xc5\x0e9k\xb3\x00\x00,\xe3\x0e:\
+\xd0\x01\x00\x00$\xea\x0e:\xd0\x02\x00\x00%#\x0eg\
+\xd7\xf3\x00\x00\x05\xf2\x0erjB\x00\x00\x14\xcc\x0e\x94\
+m\x08\x00\x00\x0cI\x0e\x98\x22\x02\x00\x00e\xf3\x0e\xda\
+\xea$\x00\x00=x\x0f\x16\xa2\xee\x00\x00\x0f\x22\x0f2\
+nu\x00\x00dh\x0f:\xd0\xc1\x00\x00\x1c\xe8\x0f:\
+\xd0\xc2\x00\x00\x1d!\x0ffaT\x00\x00E\x89\x0f\x96\
+\x99M\x00\x00+\x9e\x0f\x9d\x0cr\x00\x001R\x0f\xa2\
+Au\x00\x00B\x10\x0f\xb3V,\x00\x00DU\x0f\xcd\
+k\xe2\x00\x00:\x0c\x0f\xdc\x9a\x93\x00\x00\x10\xb8i\x00\
+\x00l4\x03\x00\x00\x00\x160\xad0\xe30\xc30\xb7\
+0\xe50\x92\x81\xeaR\xd50\xaf0\xea0\xa2\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x10Auto cle\
+ar cache\x07\x00\x00\x00\x10Cle\
+anSettingCard\x01\x03\x00\
+\x00\x00D\x00R\x00O\x00M\x00 Q\x8di\xcb{\
+\xc9_\x8c0k0\xad0\xe30\xc30\xb70\xe50\
+\x92\x81\xeaR\xd50\xaf0\xea0\xa2\xff\x08k!V\
+\xdeY\x09f\xf4fB0oQ\x8d\x5cU\x95\x8b0\
+L_\xc5\x89\x81\xff\x09\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+ Clear cache aft\
+er ROM is rebuil\
+t\x07\x00\x00\x00\x10CleanSetti\
+ngCard\x01\x03\x00\x00\x00\x02\x97R\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x04Blue\x07\x00\x00\x00\
+\x09ColorCard\x01\x03\x00\x00\x00\x0a\
+0\xad0\xe30\xf30\xbb0\xeb\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x06Cancel\x07\x00\x00\x00\x09C\
+olorCard\x01\x03\x00\x00\x00&0\xa4\
+0\xf30\xbf0\xd50\xa70\xfc0\xb9\x88hy:\
+0n0\xc60\xfc0\xde0\xab0\xe90\xfc0\x92\
+Y\x09f\xf4\x08\x00\x00\x00\x00\x06\x00\x00\x00'Ch\
+ange the theme c\
+olor of the inte\
+rface\x07\x00\x00\x00\x09ColorC\
+ard\x01\x03\x00\x00\x00\x08\x82r0\x92\x90xb\
+\x9e\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cChoos\
+e Color\x07\x00\x00\x00\x09Colo\
+rCard\x01\x03\x00\x00\x00\x0e0\xab0\xb90\
+\xbf0\xe00\xab0\xe90\xfc\x08\x00\x00\x00\x00\x06\x00\
 \x00\x00\x0cCustom color\x07\
 \x00\x00\x00\x09ColorCard\x01\x03\x00\
-\x00\x00\x08\x9e\xd8\x8b\xa4\x98\x9c\x82r\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0dDefault col\
-or\x07\x00\x00\x00\x09ColorCard\
-\x01\x03\x00\x00\x00\x08\x7f\x16\x8f\x91\x98\x9c\x82r\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0aEdit Col\
-or\x07\x00\x00\x00\x09ColorCard\
-\x01\x03\x00\x00\x00\x02~\xff\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x05Green\x07\x00\x00\x00\x09Colo\
-rCard\x01\x03\x00\x00\x00\x04xn[\x9a\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x02OK\x07\x00\x00\x00\x09\
-ColorCard\x01\x03\x00\x00\x00\x06\x90\
-\x0ff\x0e^\xa6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07O\
-pacity\x07\x00\x00\x00\x09Color\
-Card\x01\x03\x00\x00\x00\x02~\xa2\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x03Red\x07\x00\x00\x00\x09Co\
-lorCard\x01\x03\x00\x00\x00\x08N;\x98\
-\x98\x98\x9c\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bT\
-heme Color\x07\x00\x00\x00\x09C\
-olorCard\x01\x03\x00\x00\x00\x12\xff\x12\
-S\xf0\xff%\xff6\xff!T\x0ce\xf6e;Q\xfb\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x062 EVAs\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0eq\x9f~\xc3^\xa6\xff\x14\xff\x15N\xe5N\
-\x0b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1145 or\
- Less Points\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0eq\
-\x9f~\xc3^\xa6\xff\x14\xff\x15N\xe5N\x0a\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x1145 or Mor\
-e Points\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x12Q\xb3b\x18\xff\
-\x0c{,\xff\x12e\xb0N\x1cN\xac^\x02\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00 A Decisiv\
-e Battle In New \
-Tokyo 2\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x0ef/y^\xff\x0c\
-\x8f\xd8f/`v\x9bT\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x11A God, Or A De\
-vil\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08\x91\xce_\xc3NKu7\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x12A Man Of\
- Ambitions\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0au7[\
-PlINKb\x18\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x00\x00\x100\xc70\xd50\xa90\xeb0\xc80\xab0\
+\xe90\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dDef\
+ault color\x07\x00\x00\x00\x09C\
+olorCard\x01\x03\x00\x00\x00\x0a0\xab\
+0\xe90\xfc}\xe8\x96\xc6\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0aEdit Color\x07\x00\x00\x00\
+\x09ColorCard\x01\x03\x00\x00\x00\x02\
+}\xd1\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Gree\
+n\x07\x00\x00\x00\x09ColorCard\x01\
+\x03\x00\x00\x00\x04x\xba\x8a\x8d\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x02OK\x07\x00\x00\x00\x09ColorC\
+ard\x01\x03\x00\x00\x00\x06\x90\x0ff\x0e^\xa6\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x07Opacity\
+\x07\x00\x00\x00\x09ColorCard\x01\x03\
+\x00\x00\x00\x02\x8dd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03\
+Red\x07\x00\x00\x00\x09ColorCar\
+d\x01\x03\x00\x00\x00\x0c0\xc60\xfc0\xde0\xab0\
+\xe90\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bThe\
+me Color\x07\x00\x00\x00\x09Col\
+orCard\x01\x03\x00\x00\x00\x12\xff%\xff6\
+\xff!\xff\x12OST\x0cfBe;d\x83\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x062 EVAs\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x0eq\x9f}\xf4^\xa6\xff\x14\xff\x15g*n\x80\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x1145 or L\
+ess Points\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0eq\x9f}\
+\xf4^\xa6\xff\x14\xff\x15N\xe5N\x0a\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x1145 or More \
+Points\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x12lzb&0\x01{\
+,\xff\x12e\xb0gqN\xac^\x02\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00 A Decisive \
+Battle In New To\
+kyo 2\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x12y^0K0\x01`\xaa\
+\x9bT0K0\xfb0\xfb0\xfb\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x11A God, Or A \
+Devil\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08\x91\xceg\x1b0nu7\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12A Man \
+Of Ambitions\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08u\
+70nb&0D\x08\x00\x00\x00\x00\x06\x00\x00\x00\
 \x0dA Man's Fight\x07\x00\
 \x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0e\x96?QK\x89\x7fe\xafv\x84O\x7f\x80\x05\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x15A Messe\
-nger From Axis\x07\x00\
+\x120\xa20\xaf0\xb70\xba0K0\x890nO\
+\x7f\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15A M\
+essenger From Ax\
+is\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0ar60h0n}\x04g_\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x15A Promi\
+se With Father\x07\x00\
 \x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0cN\x0er6N\xb2v\x84~\xa6[\x9a\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x15A Promise\
- With Father\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0cW\
-(Y)O\x7fNKs\xafN\x0a\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x16Above The A\
-ngel's Halo\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x06\x00A\
-\x00i\x00r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03Ai\
-r\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0a\x96?Y\xc6\x7fWQ\x8dN4\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0bAmuro Ag\
-ain\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0cN\x0eY)eLv\x84\x90m\
-\x90G\x08\x00\x00\x00\x00\x06\x00\x00\x00%An E\
-ncounter With Ou\
-r Natural Enemie\
-s\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08O\x7f_\x92\x88\xadge\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0cAngel Atta\
-ck\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08Y)O\x7fNKs\xaf\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0aAngel Hal\
-o\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0a\x88\xc5u2\x820e;Q\xfb\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0cArmed At\
-tack\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x10_:\x88\xad\xff\x0c\x96;k\
-bg\x81\x96Pp\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x1eAssault On The \
-Final Safeguard\x07\
+\x0eY)O\x7f0n\x8f*0nN\x0a0g\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x16Above T\
+he Angel's Halo\x07\
 \x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0e\x81\xf3\x5c\x11\xff\x0cP\xcfN\xba|{\x82,\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15At Lea\
-st, To Be Human\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08W#b\x18X\xebN\xec\x08\x00\x00\x00\x00\x06\
+\x00\x06\x00A\x00i\x00r\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x03Air\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0a0\xa20\xe00\xedQ\x8d\
+0s\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bAmur\
+o Again\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0cY)eu0h\
+0n\x90m\x90G\x08\x00\x00\x00\x00\x06\x00\x00\x00%\
+An Encounter Wit\
+h Our Natural En\
+emies\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0aO\x7f_\x920\x01\x89r\
+ge\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cAnge\
+l Attack\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x140\xa80\xf30\
+\xb80\xa70\xeb0\xfb0\xcf0\xa40\xed0\xa5\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0aAngel H\
+alo\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x120\xa20\xfc0\xe00\xc90\xfb\
+0\xa20\xbf0\xc30\xaf\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0cArmed Attack\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x10_7\x89r0\x01\x96;kb\x96PuLp\
+\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1eAssau\
+lt On The Final \
+Safeguard\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x120[0\x81\
+0f0\x01N\xba\x95\x930\x890W0O\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x15At Least\
+, To Be Human\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
+\x80Vb&X\xeb0_0a\x08\x00\x00\x00\x00\x06\
 \x00\x00\x00\x0dAura Battler\
 s\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0c\x89\xc9\x91\x92T'\xff\x0cR\xc7\x80\x05\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Awaken\
-, Brave One\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08\x96?\
-QK\x89\x7fe\xaf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04\
-Axis\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x1e\x8d\x85\x8d\x8aQ}0\x01\x8d\
-\x85\x8d\x8aN\xba\xff\x0cs\xb0\x8e\xabT'y^N\
-Kb\x18X\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00.B\
-eyond Beast, Bey\
-ond Man, Become \
-God's Warrior\x07\x00\x00\
+\x00\x00\x00\x0ev\xee\x89\x9a0\x810\x880\x01R\xc7\
+\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Awak\
+en, Brave One\x07\x00\x00\
 \x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-\x9e\xd1\x82r\x9a\xd8\x8f\xbe\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0cBlack Gundam\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x14N:\x80\xdc\x80\x05N\x0e\x8d%\x80\x05\x90\x01N\
-\x0ay]y\x8f\x08\x00\x00\x00\x00\x06\x00\x00\x00#B\
-lessings Upon Th\
-e Winner And Los\
-er\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08\x8b\xf1eLm\xf1Qe\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0aBooby Tra\
-p\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0aN\xe5QhR\x9bQ\xfb\x90\x00\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0bBrute Fo\
-rce\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08Q\x8d\x89\xc1pkf\x1f\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0cBye Bye \
-Mars\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x0cu1\xff%\xff6\xff!c\
-\xa5OO\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eCat\
-ch with EVA\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x14o\xc0\
-z\x81\xff\x01v\xd6XT\xff6\xff3v\xd6XT\
-\xff'\x08\x00\x00\x00\x00\x06\x00\x00\x00$Clas\
-h! Getter Robo v\
-s. Getter Robo G\
+0\xa20\xaf0\xb70\xba\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x04Axis\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x22sc0\x92\x8d\x850\
+H0\x01N\xba0\x92\x8d\x850H0\x010D0\
+g0\x88y^0nb&X\xeb\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00.Beyond Beas\
+t, Beyond Man, B\
+ecome God's Warr\
+ior\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0c\x9e\xd20D0\xac0\xf30\xc0\
+0\xe0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cBlac\
+k Gundam\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x12R\xdd\x80\x050\
+heW\x80\x050ky]y\x8f0\x92\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00#Blessings\
+ Upon The Winner\
+ And Loser\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x120\xd60\
+\xfc0\xd30\xfc0\xfb0\xc80\xe90\xc30\xd7\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0aBooby T\
+rap\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0cR\x9b0Z0O0gd\x83\
+\x90\x00\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bBrut\
+e Force\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x100\xd00\xa40\xd0\
+0\xa40\xfb0\xde0\xeb0\xb9\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0cBye Bye Mars\
 \x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0c\x94\xa2\x94\xc1v\x84\x9a~\x9av\x821\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x10Cockpit\
- of Steel\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08P\x12ep\
-\x8b\xa1e\xf6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aCo\
-unt Down\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x04r\xd7e\x97\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0bCross F\
-ight\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x0aN\xa4\x95\x19v\x84~\xc8p\
-\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cCross\
- Target\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08SA[WQH\
-\x95\x0b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Cros\
-sbone Vanguard\x07\x00\
+\x00\x00\x12\xff%\xff6\xff!0gS\xd70Qk\
+b0\x810\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eC\
+atch with EVA\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00$\
+o\xc0z\x81\xff\x010\xb20\xc30\xbf0\xfc0\xed\
+0\xdc\xff6\xff30\xb20\xc30\xbf0\xfc0\xed\
+0\xdc\xff'\x08\x00\x00\x00\x00\x06\x00\x00\x00$Cl\
+ash! Getter Robo\
+ vs. Getter Robo\
+ G\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x10\x92\xfc\x92D0n0\xb30\xaf0\
+\xd40\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10C\
+ockpit of Steel\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x100\xab0\xa60\xf30\xc80\xfb0\xc00\xa6\
+0\xf3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aCoun\
+t Down\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x100\xaf0\xed0\xb90\
+\xfb0\xd50\xa10\xa40\xc8\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0bCross Fight\x07\x00\
 \x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0a\x8f\xbeU\x80\x5c\x14NKe\xe5\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0cDay Of Daka\
-r\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0e\x9bTy^\xff:~\xddOS~\xdd\
-T}\x08\x00\x00\x00\x00\x06\x00\x00\x00\x22Desp\
-erate Situation \
-For Mazinger Z\x07\x00\
+\x120\xaf0\xed0\xb90\xfb0\xbf0\xfc0\xb20\
+\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cCro\
+ss Target\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x180\xaf0\xed\
+0\xb90\xdc0\xfc0\xf30\xfb0\xd00\xf30\xac\
+0\xfc0\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Cr\
+ossbone Vanguard\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0c0\xc00\xab0\xfc0\xeb0ne\xe5\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0cDay Of \
+Dakar\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x140\xde0\xb80\xf30\xac\
+0\xfc\xff:}vOS}vT}\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x22Desperate \
+Situation For Ma\
+zinger Z\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x14a\x1b0\xfb0\
+J0|0H0f0D0~0Y0K\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x15Do You \
+Remember Love?\x07\x00\
 \x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0cS\xeff\xfe\x8b\xb0_\x97r1\xff\x1f\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x15Do You Re\
-member Love?\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0e\x8d\
-LN\x0aW0t\x03v\x84SUc\x11\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x12Duel For \
-The Earth\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08S`OM\
-epcn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Du\
-mmy\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0c\xff%\xff6\xff!N\x8cS\xf7\
-g:\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bEVA \
-Unit-02\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x16\xff%\xff6\xff!\
-N\x8cS\xf7g:\xff\x0fg\x81N\x1cW\xfaW0\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1dEVA Un\
-it-02 / Far East\
- Sector\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x0a\x82~\x85~v\x84\
-puR\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bEl\
-le's Aura\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08g\x81N\x1c\
-W\xfaW0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fFa\
+\x14W0t\x030\x92\x8c\xed0Q0_N\x00\x9a\
+\x0e\x8a\x0e0a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12D\
+uel For The Eart\
+h\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x060\xc00\xdf0\xfc\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x05Dummy\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0c\xff%\xff6\
+\xff!_\x10S\xf7j_\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0bEVA Unit-02\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x16\
+\xff%\xff6\xff!_\x10S\xf7j_\xff\x0fiu\
+gqW\xfaW0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1d\
+EVA Unit-02 / Fa\
 r East Sector\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-T}\x8f\xd0NKw\xe2\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0cFate's Arrow\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0er6N\xb2\xff\x0cW0t\x03R0N\x86\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x19Father,\
- The Earth Is Ne\
-ar\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0a{,N\x00k!c\xa5\x89\xe6\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0dFirst C\
-ontact\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x12N:N\x86\x8f\xd9\x98\
-\x97f\x1ft\x03v\x84f\x0eY)\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x1aFor This Pl\
-anet's Tomorrow\x07\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
+0\xa80\xec0n\x97\x0aR\x9b\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0bElle's Aura\x07\
 \x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0c\x94\x9fX\xf0N:\x8c\x01\x80\x0c\x9e#\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x17For Whom\
- The Bell Tolls\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08N:\x8c\x01\x80\x0cb\x18\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x11For Whom We \
-Fight\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0c_\x02\x90\xa6N\xbav\x84\
-_Rge\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Fo\
-reigners' Return\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x10ge\x81\xeag(f\x1fv\x84\x90\x03N\
-\xa1\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15Fug\
-itive From Jupit\
-er\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0c\xff'\xff2[\xf9\xff'\xff2\xff\
-\x12\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aGR vs\
-. GR2\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0ev\xd6XT\x5c\x0f\x96\x1f\
-Q\xfaQ\xfb\xff\x01\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14\
+\x00\x08iugqW\xfaW0\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0fFar East Sec\
+tor\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08\x90KT}0nw\xe2\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0cFate's A\
+rrow\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x0er60\x88W0t\x030\
+o\x8f\xd10D\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19F\
+ather, The Earth\
+ Is Near\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x160\xd50\xa10\
+\xfc0\xb90\xc80\xfb0\xb30\xf30\xbf0\xaf0\
+\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dFirst\
+ Contact\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x140S0nf\
+\x1f0nf\x0ee\xe50n0_0\x810k\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x1aFor Thi\
+s Planet's Tomor\
+row\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x12\x8a\xb00L0_0\x810k\
+\x94\x180o\x9c\xf40\x8b\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x17For Whom The B\
+ell Tolls\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x10b&0D\
+0o\x8a\xb00n0_0\x810k\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x11For Whom W\
+e Fight\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x10up\x90\xa6N\xba\
+0_0a0n^0\x90\x84\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x12Foreigners' \
+Return\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x10g(f\x1f0K0\
+\x890n\x90\x03N\xa1\x80\x05\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x15Fugitive From\
+ Jupiter\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0c\xff'\xff2[\
+\xfe\xff'\xff2\xff\x12\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0aGR vs. GR2\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x180\xb2\
+0\xc30\xbf0\xfc0\xc10\xfc0\xe0Q\xfad\x83\
+0[0\x88\xff\x01\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14\
 Getter Team, Lau\
 nch!\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08h<b\xc9\x7f\xc1\x96\x1f\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x06Goraon\x07\
+a\x01\x03\x00\x00\x00\x0a0\xb40\xe90\xaa0\xf3\x96\
+\x8a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Gorao\
+n\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x100\xb00\xe90\xf30\xfb0\xac0\xe9\
+0\xf3\x96\x8a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aGr\
+an-Garan\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0c0\xac0\xf30\
+\xc00\xe0_7Yj\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0cGundam Theft\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x12\
+0\xac0\xf30\xc00\xe00\x01f\x1f0nmw\
+0x\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1eGund\
+am, Go To The Se\
+a Of Stars\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0a\x98\xa80\
+\x92T|0v\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x18He Who Summons \
+The Winds\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x0c\x96\xa00U\
+0\x8c0_k\xbaa\x0f\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x10Hidden Bloodlu\
+st\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0e{,N\x8ck!v\xf4N\x0aO\
+\x1ab&\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15His\
+ Second Engageme\
+nt\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x100\xdb0\xf30\xb30\xf30\xfb0\
+\xb70\xc60\xa3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eH\
+ong Kong City\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x10\
+0\xa40\xf30\xb00\xe90\xe00nw\x1fa\x0f\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18Ingram\
+'s True Intentio\
+ns\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0ab&0D0nmw0x\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x16Into Th\
+e Sea Of Battle\x07\
 \x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0cS\xe4Qp0\xfbR\xa0Qp\x96\x1f\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0aGran-Gar\
-an\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08\x9a\xd8\x8f\xbeb\xa2Y:\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0cGundam Th\
-eft\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x10\x9a\xd8\x8f\xbe\xff\x0cRM_\x80\
-f\x1fNKmw\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1e\
-Gundam, Go To Th\
-e Sea Of Stars\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0aT|U$\x98\xceNKN\xba\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x18He Who Summ\
-ons The Winds\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
-\x96\x90\x85\xcfv\x84g@a\x0f\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x10Hidden Blood\
-lust\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x0e{,N\x8ck!v\xf4N\
-\x0aO\x1ab\x18\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15H\
-is Second Engage\
-ment\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x06\x99\x99n/W\xce\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0eHong Kong\
- City\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0e\x82\xf1h<b\xc9Y\xc6\
-v\x84w\x1fa\x0f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18\
-Ingram's True In\
-tentions\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0c\x9avT\x11b\
-\x18e\x97NKmw\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x16Into The Sea Of\
- Battle\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x06g\xe5^\x03\x7fW\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Jaburo\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08s\x8bV\xfd])n\x83\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0eKingdom's F\
-all\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0cy^W#Q\x9bN\x8bT\x0c\
-v\xdf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Leag\
+\x00\x0a0\xb80\xe30\xd60\xed0\xfc\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x06Jaburo\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08s\
+\x8bV\xfd])X\xca\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0eKingdom's Fall\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x100\xea0\xac0\xfb0\xdf0\xea0\xc60\xa3\
+0\xa2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Leag\
 ue Millitaire\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-\x83\x89Z\x1cv\x84\x88@\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0dLeina's Blood\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0cN\x00^v\x00 T\x08OS\xff\x01\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0eLet's Co\
-mbine!\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x06g\x97f\x0e\x7f\x8e\x08\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
+0\xea0\xa30\xca0n\x88@\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0dLeina's Bloo\
+d\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x120\xec0\xc30\xc4\xff\x010\xb30\xf3\
+0\xd00\xa40\xf3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
+Let's Combine!\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x0e0\xea0\xf30\xfb0\xdf0\xf30\xe10\xa4\x08\
 \x00\x00\x00\x00\x06\x00\x00\x00\x0bLynn Mi\
 nmay\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08g:Vh\x5cU_\x00\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x13Machine\
- Development\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x12\x9b\
-Ty^\xff:[\xf9f\x97\x9e\xd1Y'\x5c\x06Q\
-\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00 Mazin\
-ger Z vs. Ankoku\
- Dai-Shogun\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0c^&\
-w@V\xde_\xc6RM\x88L\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x1cMemories Tak\
-en To The Future\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0c\x9e\xa6QK\x7fWe\xaf\x5c\x0fY\xd0\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0cMiss Ma\
-cross\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0ew\xac\x95\xf4\xff\x0c_\xc3\
-a\x0f\x80T~\xd3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19\
-Moment And Heart\
- Together\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x0cN\xba|{\
-e\xe0Y\x04S\xef\x90\x03\x08\x00\x00\x00\x00\x06\x00\x00\
+a\x01\x03\x00\x00\x00\x0a0\xde0\xb70\xf3\x5cU\x95\
+\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13Machi\
+ne Development\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x180\xde0\xb80\xf30\xac0\xfc\xff:[\xfef\
+\x97\x9e\xd2Y'\x5c\x06\x8e\xcd\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00 Mazinger Z vs\
+. Ankoku Dai-Sho\
+gun\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0e`\x1d0DQ\xfa0\x92g*\
+ge0x\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1cMe\
+mories Taken To \
+The Future\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0e0\xdf0\
+\xb90\xfb0\xde0\xaf0\xed0\xb9\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0cMiss Macros\
+s\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x0ew\xac\x95\x930\x01_\xc3\x91\xcd0m\
+0f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19Mome\
+nt And Heart Tog\
+ether\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x10N\xba\x98^0k\x90\x03\
+0RX40j0W\x08\x00\x00\x00\x00\x06\x00\x00\
 \x00\x16No Escape For \
 Humanity\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0c~\xc8g+v\
-\x84RMYOf\xf2\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x12Prelude To The \
-End\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x04^\x8f^U\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08Prologue\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0ef\
-n\x972N\x0e\x96?QK\x89\x7fe\xaf\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x11Puru, Axi\
-s and...\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0aYss\x8b\x83\
-\x89\x83\x89Z\x1c\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cQ\
-ueen Relena\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0cb\xc9\
-0\xfbQ\xefb\xc9Y\xc6\x96\x1f\x08\x00\x00\x00\x00\x06\
+mData\x01\x03\x00\x00\x00\x0e}Bg+0\
+x0nRMYOf\xf2\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x12Prelude To Th\
+e End\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0a0\xd70\xed0\xed0\xfc\
+0\xb0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Prol\
+ogue\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x100\xd70\xeb0h0\xa20\
+\xaf0\xb70\xba0h\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x11Puru, Axis and.\
+..\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0cYss\x8b0\xea0\xea0\xfc0\
+\xca\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cQueen\
+ Relena\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x100\xe90\xfc0\xfb\
+0\xab0\xa40\xe90\xe0\x96\x8a\x08\x00\x00\x00\x00\x06\
 \x00\x00\x00\x09Ra-Cailum\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x06\
-w\x1f[\x9e|\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04\
-Real\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x0eg\x97O[e\xaf\xff*\xff\
-R\xff\x0e\x96\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cR\
-einforce Jr\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0cv}\
-\x82rW\xfaW0eQQ\xfa\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x15Rescue The W\
-hite Base\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x12T\x86T\xee\
-\xff\x0c\xff%\xff6\xff!R\x1dS\xf7g:\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x11Roar, EV\
-A Unit-01\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x12Q\xfaQ\xfb\
-\xff\x01QvT\x0dN:Y'\x94\xc1N\xba\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00#Sally Fo\
-rth! Its Name Is\
- Giant Robo\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08W\x1f\
-f\x1fNKb\x18\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0c\
-Saturn Fight\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08y\
-\xd8[\xc6ujS\xf7\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0eSecret Numbers\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0a\x5c\x06[\xfc_9Q\xfb\x84=\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0aShoot Down\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0e[\xf9Q\xb3\xff\x0cg\x81N\x1cW\xfaW\
-0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1dShowd\
-own At The Far E\
-ast Base\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0cSWN\x9aX\
-TR)N\x9a\x5c\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0cSouth Ataria\x07\x00\x00\
 \x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-zz\x95\xf4b\x98S\xe0\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0aSpace Fold\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08|\
-\xbepuQ\xedO\x9d\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x11Spirit Possessi\
-on\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x06\x94\xa2NK\x9bB\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x10Spirits Of \
-Steel\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x06{,\xff\x10\x8b\xdd\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x07Stage 0\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x06{,\xff\x11\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x07Stage 1\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08{,\xff\x11\
-\xff\x10\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
-age 10\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x11\x8b\
-\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 11\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x12\x8b\xdd\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08Stage 12\
+0\xea0\xa20\xeb|\xfb\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x04Real\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x140\xea0\xfc0\xf30\
+\xdb0\xfc0\xb9\xff*\xffR\xff\x0e\x96\x8a\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cReinforce\
+ Jr\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x120\xdb0\xef0\xa40\xc80\xd9\
+0\xfc0\xb9eQQ\xfa\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x15Rescue The Whi\
+te Base\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x12T\x86T\xee0\x01\
+\xff%\xff6\xff!R\x1dS\xf7j_\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x11Roar, EVA \
+Unit-01\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00 Q\xfad\x83\xff\x01\
+0]0nT\x0d0o0\xb80\xe30\xa40\xa2\
+0\xf30\xc80\xfb0\xed0\xdc\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00#Sally Forth!\
+ Its Name Is Gia\
+nt Robo\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x100\xb50\xbf0\xf3\
+0\xfb0\xd50\xa10\xa40\xc8\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0cSaturn Fight\
 \x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08{,\xff\x11\xff\x13\x8b\xdd\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08Stage 13\x07\x00\x00\
+\x00\x00\x180\xb70\xfc0\xaf0\xec0\xc30\xc80\
+\xfb0\xca0\xf30\xd00\xfc0\xba\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0eSecret Numb\
+ers\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0e_>N80\x92d\x830a\
+\x84=0Y\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aSh\
+oot Down\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0e[\xfelz0\
+\x01iugqW\xfaW0\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x1dShowdown At T\
+he Far East Base\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x0cSW0\xa20\xbf0\xea0\xa2\x5c\xf6\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0cSouth A\
+taria\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x140\xb90\xda0\xfc0\xb9\
+0\xfb0\xd50\xa90\xfc0\xeb0\xc9\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0aSpace Fold\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x08|\xbe\x97\x0aa\x91O\x9d\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x11Spirit Poss\
+ession\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x06\x92\xfc0n\x9bB\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x10Spirits\
+ Of Steel\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x06{,\xff\x10\
+\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stag\
+e 0\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x06{,\xff\x11\x8aq\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x07Stage 1\x07\x00\x00\
 \x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-{,\xff\x11\xff\x14\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08Stage 14\x07\x00\x00\x00\x08E\
+{,\xff\x11\xff\x10\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08Stage 10\x07\x00\x00\x00\x08E\
 numData\x01\x03\x00\x00\x00\x08{,\xff\
-\x11\xff\x15\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
-tage 15\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x16\
-\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
-e 16\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x17\x8b\xdd\x08\
+\x11\xff\x11\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
+tage 11\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x12\
+\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
+e 12\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x13\x8aq\x08\
 \x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 1\
-7\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x11\xff\x18\x8b\xdd\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 18\x07\x00\
+3\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08{,\xff\x11\xff\x14\x8aq\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08Stage 14\x07\x00\
 \x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08{,\xff\x11\xff\x19\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Stage 19\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x06{,\
-\xff\x12\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07St\
-age 2\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x10\x8b\xdd\
+\x08{,\xff\x11\xff\x15\x8aq\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 15\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08{,\
+\xff\x11\xff\x16\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+Stage 16\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\
+\x17\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
+ge 17\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x18\x8aq\
 \x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
-20\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0e{,\xff\x12\xff\x10\x8b\xdd\x00 ^\
-URM\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fSta\
-ge 20 Screen\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08{\
-,\xff\x12\xff\x11\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x08Stage 21\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x0c{,\xff\x12\
-\xff\x11\x8b\xdd^URM\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0fStage 21 Scree\
-n\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x12\xff\x12\x8b\xdd\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 22\x07\x00\
+18\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x08{,\xff\x11\xff\x19\x8aq\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08Stage 19\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x06{,\xff\x12\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x07Stage 2\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x12\
+\xff\x10\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 20\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0c{,\xff\x12\xff\x10\x8a\
+q^URM\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fS\
+tage 20 Screen\x07\x00\
 \x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08{,\xff\x12\xff\x13\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Stage 23\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x10{,\
-\xff\x12\xff\x13\x8b\xdd\x00 {,\xff\x11^U\x08\x00\
+\x08{,\xff\x12\xff\x11\x8aq\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 21\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0c{,\
+\xff\x12\xff\x11\x8aq^URM\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0fStage 21 Scr\
+een\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x12\x8aq\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x08Stage 22\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x08{,\xff\x12\xff\x13\x8aq\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x08Stage 23\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
+{,\xff\x12\xff\x13\x8aq{,\xff\x11^U\x08\x00\
 \x00\x00\x00\x06\x00\x00\x00\x0eStage 23\
  Act 1\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x10{,\xff\x12\xff\x13\x8b\
-\xdd\x00 {,\xff\x12^U\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0eStage 23 Act \
-2\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x12\xff\x14\x8b\xdd\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 24\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08{,\xff\x12\xff\x15\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Stage 25\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08{,\
-\xff\x12\xff\x16\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
-Stage 26\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\
-\x17\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
-ge 27\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x18\x8b\xdd\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
-28\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08{,\xff\x12\xff\x19\x8b\xdd\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x08Stage 29\x07\
+ata\x01\x03\x00\x00\x00\x0e{,\xff\x12\xff\x13\x8a\
+q{,\xff\x12^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0eStage 23 Act 2\x07\
 \x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x06{,\xff\x13\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x07Stage 3\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08{,\xff\x13\
-\xff\x10\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
-age 30\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x11\x8b\
-\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 31\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x12\x8b\xdd\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08Stage 32\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08{,\xff\x13\xff\x13\x8b\xdd\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08Stage 33\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-{,\xff\x13\xff\x14\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08Stage 34\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x08{,\xff\
-\x13\xff\x15\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
-tage 35\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x16\
-\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
-e 36\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x17\x8b\xdd\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 3\
-7\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x13\xff\x18\x8b\xdd\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 38\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08{,\xff\x13\xff\x19\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Stage 39\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x06{,\
-\xff\x14\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07St\
-age 4\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x10\x8b\xdd\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
-40\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08{,\xff\x14\xff\x11\x8b\xdd\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x08Stage 41\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08{,\xff\x14\xff\x12\x8b\xdd\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08Stage 42\x07\x00\x00\x00\
+\x00\x08{,\xff\x12\xff\x14\x8aq\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x08Stage 24\x07\x00\x00\x00\
 \x08EnumData\x01\x03\x00\x00\x00\x08{\
-,\xff\x14\xff\x13\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x08Stage 43\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08{,\xff\x14\
-\xff\x14\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
-age 44\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x15\x8b\
-\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 45\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x16\x8b\xdd\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08Stage 46\
+,\xff\x12\xff\x15\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x08Stage 25\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x12\
+\xff\x16\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 26\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x17\x8a\
+q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
+ 27\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x18\x8aq\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x08Stage 28\
 \x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08{,\xff\x14\xff\x17\x8b\xdd\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08Stage 47\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-{,\xff\x14\xff\x18\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08Stage 48\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x08{,\xff\
-\x14\xff\x19\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
-tage 49\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x06{,\xff\x15\x8b\xdd\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stage \
-5\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x15\xff\x10\x8b\xdd\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 50\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08{,\xff\x15\xff\x11\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Stage 51\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08{,\
-\xff\x15\xff\x12\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
-Stage 52\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\
-\x13\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
-ge 53\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x14\x8b\xdd\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
-54\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08{,\xff\x15\xff\x15\x8b\xdd\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x08Stage 55\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08{,\xff\x15\xff\x16\x8b\xdd\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08Stage 56\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08{\
-,\xff\x15\xff\x17\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x08Stage 57\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x0e{,\xff\x15\
-\xff\x17\x8b\xdd\x00 ^URM\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0fStage 57 Scr\
-een\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x18\x8b\xdd\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08Stage 58\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08{,\xff\x15\xff\x19\x8b\xdd\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08Stage 59\x07\x00\x00\
+\x00\x00\x08{,\xff\x12\xff\x19\x8aq\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x08Stage 29\x07\x00\x00\
 \x00\x08EnumData\x01\x03\x00\x00\x00\x06\
-{,\xff\x16\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07\
-Stage 6\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08{,\xff\x16\xff\x10\
-\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
-e 60\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08{,\xff\x16\xff\x11\x8b\xdd\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 6\
+{,\xff\x13\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07\
+Stage 3\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x10\
+\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
+e 30\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x11\x8aq\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 3\
 1\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x10{,\xff\x16\xff\x12\x8b\xdd\x00 {,\
-\xff\x11^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eSt\
-age 62 Act 1\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x10{\
-,\xff\x16\xff\x12\x8b\xdd\x00 {,\xff\x12^U\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0eStage 6\
-2 Act 2\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x10{,\xff\x16\xff\x14\
-\x8b\xdd\x00 {,\xff\x11^U\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0eStage 64 Act\
- 1\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x10{,\xff\x16\xff\x14\x8b\xdd\x00 {\
-,\xff\x12^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eS\
-tage 64 Act 2\x07\x00\x00\
+\x00\x00\x00\x08{,\xff\x13\xff\x12\x8aq\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08Stage 32\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x08{,\xff\x13\xff\x13\x8aq\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 33\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08{,\
+\xff\x13\xff\x14\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+Stage 34\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\
+\x15\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
+ge 35\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x16\x8aq\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
+36\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x08{,\xff\x13\xff\x17\x8aq\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08Stage 37\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x08{,\xff\x13\xff\x18\x8aq\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x08Stage 38\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08{\
+,\xff\x13\xff\x19\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x08Stage 39\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x06{,\xff\x14\
+\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stag\
+e 4\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x10\x8aq\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x08Stage 40\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x08{,\xff\x14\xff\x11\x8aq\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x08Stage 41\x07\x00\x00\
 \x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-{,\xff\x16\xff\x15\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08Stage 65\x07\x00\x00\x00\x08E\
+{,\xff\x14\xff\x12\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08Stage 42\x07\x00\x00\x00\x08E\
 numData\x01\x03\x00\x00\x00\x08{,\xff\
-\x16\xff\x16\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
-tage 66\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x10{,\xff\x16\xff\x17\
-\x8b\xdd\x00 {,\xff\x11^U\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0eStage 67 Act\
- 1\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x10{,\xff\x16\xff\x17\x8b\xdd\x00 {\
-,\xff\x12^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eS\
-tage 67 Act 2\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x10\
-{,\xff\x16\xff\x17\x8b\xdd\x00 {,\xff\x13^U\
+\x14\xff\x13\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
+tage 43\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x14\
+\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
+e 44\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x15\x8aq\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 4\
+5\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08{,\xff\x14\xff\x16\x8aq\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08Stage 46\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x08{,\xff\x14\xff\x17\x8aq\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 47\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x08{,\
+\xff\x14\xff\x18\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+Stage 48\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\
+\x19\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
+ge 49\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x06{,\xff\x15\x8aq\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x07Stage 5\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x08{,\xff\x15\xff\x10\x8aq\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x08Stage 50\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x08{\
+,\xff\x15\xff\x11\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x08Stage 51\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x08{,\xff\x15\
+\xff\x12\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
+age 52\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x13\x8a\
+q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
+ 53\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x14\x8aq\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x08Stage 54\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x08{,\xff\x15\xff\x15\x8aq\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x08Stage 55\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
+{,\xff\x15\xff\x16\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x08Stage 56\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x08{,\xff\
+\x15\xff\x17\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
+tage 57\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0e{,\xff\x15\xff\x17\
+\x8aq{,\xff\x10^U\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0fStage 57 Scree\
+n\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x08{,\xff\x15\xff\x18\x8aq\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08Stage 58\x07\x00\
+\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
+\x08{,\xff\x15\xff\x19\x8aq\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08Stage 59\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x06{,\
+\xff\x16\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07St\
+age 6\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x08{,\xff\x16\xff\x10\x8aq\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
+60\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x08{,\xff\x16\xff\x11\x8aq\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x08Stage 61\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x0e{,\xff\x16\xff\x12\x8aq{,\xff\x11^U\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eStage \
+62 Act 1\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0e{,\xff\x16\xff\
+\x12\x8aq{,\xff\x12^U\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0eStage 62 Act \
+2\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x0e{,\xff\x16\xff\x14\x8aq{,\xff\x11\
+^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eStag\
+e 64 Act 1\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0e{,\xff\
+\x16\xff\x14\x8aq{,\xff\x12^U\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0eStage 64 Ac\
+t 2\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08{,\xff\x16\xff\x15\x8aq\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x08Stage 65\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x08{,\xff\x16\xff\x16\x8aq\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x08Stage 66\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
+{,\xff\x16\xff\x17\x8aq{,\xff\x11^U\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0eStage 67\
+ Act 1\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0e{,\xff\x16\xff\x17\x8a\
+q{,\xff\x12^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0eStage 67 Act 2\x07\
+\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
+\x00\x0e{,\xff\x16\xff\x17\x8aq{,\xff\x13^U\
 \x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eStage \
 67 Act 3\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x06{,\xff\x17\x8b\
-\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stage\
+mData\x01\x03\x00\x00\x00\x06{,\xff\x17\x8a\
+q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stage\
  7\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x06{,\xff\x18\x8b\xdd\x08\x00\x00\x00\x00\
+\x03\x00\x00\x00\x06{,\xff\x18\x8aq\x08\x00\x00\x00\x00\
 \x06\x00\x00\x00\x07Stage 8\x07\x00\x00\x00\
 \x08EnumData\x01\x03\x00\x00\x00\x06{\
-,\xff\x19\x8b\xdd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07S\
+,\xff\x19\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07S\
 tage 9\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0eT/R\xa8\xff\x01\xff\
-:\xff:\x9a\xd8\x8f\xbe\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x14Startup, Double\
- Zeta\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x06\x8d\x85~\xa7|\xfb\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x05Super\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-mwN-ge[\xa2\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x13Terror From Th\
-e Sea\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08Yeb\xc9NK\x8d\xef\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dThe Au\
-ra Road\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x12~\xddg\x1bv\x84\
-[\xb4^-s\xb0W(_\x00Y\xcb\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00!The Banque\
-t Of Despair Beg\
-ins Now\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x06Y'\x811Q\xfa\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eThe Bi\
-g Escape\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0a\x9e\xd1\x82r\x8d\
-\x85e\x97X\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17T\
-he Black Super W\
-arrior\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0cb@\x7fW\x95\xe8e\
-;ueb\x18\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16T\
-he Capture Of So\
-lomon\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0co\x06\x9e\xd1Y)O\x7f\
-\x96MN4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1dTh\
-e Coming Of The \
-Black Angel\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x14W(\
-r6N\xb2`\x00b\xb1N-T\xedl\xe3T'\
-\xff\x01\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1fThe \
-Cry Within Fathe\
-r's Breast!\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08\x9bT\
-y^v\x87^\x1d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11\
-The Demon Empero\
-r\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0cl\x99\x91\xd1`v\x9bTNKb\x18\
+ata\x01\x03\x00\x00\x00\x10Y\xcbR\xd50\xc00\
+\xd60\xeb0\xbc0\xfc0\xbf\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x14Startup, Doub\
+le Zeta\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0a0\xb90\xfc0\xd1\
+0\xfc|\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Su\
+per\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x10mw0K0\x890n0\xde\
+0\xec0\xd30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13\
+Terror From The \
+Sea\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0c0\xaa0\xfc0\xe90\xed0\xfc\
+0\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dThe \
+Aura Road\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x16}vg\x1b\
+0n[\xb40oN\xca0K0\x89Y\xcb0~\
+0\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00!The \
+Banquet Of Despa\
+ir Begins Now\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x12\
+0\xd30\xc30\xb00\xfb0\xa80\xb90\xb10\xfc\
+0\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eThe \
+Big Escape\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0a\x9e\xd20\
+D\x8d\x85\x95\xd8X\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x17The Black Super\
+ Warrior\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0e0\xbd0\xed0\
+\xe20\xf3e;ueb&\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x16The Capture O\
+f Solomon\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x12o\x06\x9e\xd2\
+0nY)O\x7fge0_0\x8a0f\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x1dThe Comi\
+ng Of The Black \
+Angel\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x12r60n\x80\xf80n\
+N-0gl\xe30Q\xff\x01\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x1fThe Cry With\
+in Father's Brea\
+st!\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x08\x9bTy^v\x87^\x1d\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x11The Demo\
+n Emperor\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x140\xb70\xe3\
+0\xfc0\xad0\xf3`\xaa\x9bT0nb&0D\
 \x08\x00\x00\x00\x00\x06\x00\x00\x00\x1aThe De\
 vil Sharkin's Ba\
 ttle\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x06\x9f\x99N\x0e\x86N\x08\x00\x00\
+a\x01\x03\x00\x00\x00\x06\x9f\x8d0h\x86N\x08\x00\x00\
 \x00\x00\x06\x00\x00\x00\x18The Drago\
 n And The Tiger\x07\
 \x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0e\x96?O\xee\x7fWu7r5k\x92T}\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18The Fa\
-ll Of Baron Ashu\
-ra\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0ag\x00T\x0ev\x84O\x7f\x80\x05\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x13The Fin\
-al Messenger\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0aT\
-}\x8f\xd0v\x84\x9f\x7f\x8fn\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x13The Gear Of D\
-estiny\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0aT\x09\x7f\xc1v\x84N\
-\xa1pu\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12The\
- Ghosts Of Zeon\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0as\xbbt\x83v\x84s\x8bV\xfd\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x11The Glass \
-Kingdom\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x10\x88\xaby\xf0N:\
-\x96\xf6_\x0fv\x84\x9a\xd8\x8f\xbe\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x16The Gundam C\
-alled Zero\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0eb\xe5g\
-\x09\x98\xde\x7f\xfcv\x84\x9a\xd8\x8f\xbe\x08\x00\x00\x00\x00\
+\x00\x120B0W0\x850\x89u7r50\x01\
+ec0\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18Th\
+e Fall Of Baron \
+Ashura\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0ag\x00_\x8c0n0\
+\xb7\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13The\
+ Final Messenger\
+\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
+\x00\x00\x180\xae0\xa20\xfb0\xaa0\xd60\xfb0\
+\xc70\xb90\xc60\xa30\xcb0\xfc\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x13The Gear Of\
+ Destiny\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0c0\xb80\xaa0\
+\xf30nN\xa1\x97\x0a\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x12The Ghosts Of Z\
+eon\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x0c0\xac0\xe90\xb90ns\x8b\
+V\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11The \
+Glass Kingdom\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x16\
+0\xbc0\xed0hT|0p0\x8c0_0\xac\
+0\xf30\xc00\xe0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16\
+The Gundam Calle\
+d Zero\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x12\x7f\xfc0\x92c\x010\
+c0_0\xac0\xf30\xc00\xe0\x08\x00\x00\x00\x00\
 \x06\x00\x00\x00\x19The Gundam \
 That Had Wings\x07\x00\
 \x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0a\xff%\xff/\xff4NK\x5c\x9b\x08\x00\x00\x00\x00\
+\x0a\xff%\xff/\xff40n\x5c\xf6\x08\x00\x00\x00\x00\
 \x06\x00\x00\x00\x11The Island \
 Of EOT\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08g(f\x1f^}p\
-u\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11The J\
-upiter Ghost\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x06g\
-(f\x1fN\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fT\
-he Jupitorians\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0c\x90\xa3NKV\xfdv\x84Yss\x8b\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x16The Land \
-Of Na's Queen\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
-\x88\xaby\xf0N:k{y^v\x84\xff'\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x14The Man \
-Called Death\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0cb\
-@\x7fW\x95\xe8v\x84Vih\xa6\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x18The Nightma\
-re Of Solomon\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0e\
-u\xbe\x9ap\x80\x0cgev\x84\x98\xcef\xb4\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x12The Onco\
-ming Storm\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0aN\xba|\
-{_\x15[\xfc\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x1fThe One Who Wil\
-l Guide Humanity\
+ata\x01\x03\x00\x00\x00\x140\xb80\xe50\xd40\
+\xbf0\xfc0\xfb0\xb40\xfc0\xb90\xc8\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x11The Jupit\
+er Ghost\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x0e0\xb80\xe50\
+\xd40\xc80\xea0\xa20\xf3\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0fThe Jupitoria\
+ns\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0c0\xca0nV\xfd0nYss\
+\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16The L\
+and Of Na's Quee\
+n\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x10k{y^0hT|0p0\x8c\
+0_\xff'\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14Th\
+e Man Called Dea\
+th\x07\x00\x00\x00\x08EnumData\x01\
+\x03\x00\x00\x00\x0e0\xbd0\xed0\xe20\xf30n`\
+\xaaY\x22\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18The\
+ Nightmare Of So\
+lomon\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x0c\x99\xc60Qb\x9c0Q\
+0\x8b]P\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Th\
+e Oncoming Storm\
 \x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0eN\x9aO=s\x9bQ\xfbW`T}N\
-\xe4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x22The O\
-rder To Shoot Do\
-wn The Argama\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x16\
-RM\x8d\xeff/QIf\x0e\xff\x0c\x90\x00\x8d\xef\
-f/~\xddg\x1b\x08\x00\x00\x00\x00\x06\x00\x00\x00%\
-The Path Of Hope\
-, The Path Of De\
-spair\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0aT\x09\x7f\xc1v\x84^{\
-_q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13The \
-Phantom Of Zeon\x07\
+\x00\x00\x0cN\xba\x98^0\x92\x5c\x0e0O\x80\x05\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x1fThe One\
+ Who Will Guide \
+Humanity\x07\x00\x00\x00\x08Enu\
+mData\x01\x03\x00\x00\x00\x100\xa20\xfc0\
+\xac0\xded\x83X\x9cT}N\xe4\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x22The Order T\
+o Shoot Down The\
+ Argama\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x16\x902\x8d\xef0k\
+QIf\x0e0\x01\x90\x00\x8d\xef0k}vg\x1b\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00%The Pa\
+th Of Hope, The \
+Path Of Despair\x07\
 \x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0a^\x1dV\xfdv\x84Yss\x8b\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x17The Queen \
-Of The Empire\x07\x00\x00\
+\x00\x0c0\xb80\xaa0\xf30n^{P\xcf\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x13The Phan\
+tom Of Zeon\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0a^\x1d\
+V\xfd0nYss\x8b\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x17The Queen Of T\
+he Empire\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x14}\x050D\
+0\xa80\xf40\xa10\xf30\xb20\xea0\xaa0\xf3\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12The Re\
+d Evangelion\x07\x00\x00\x00\
+\x08EnumData\x01\x03\x00\x00\x00\x0a\x8d\
+d0D\x9a\xea0nYs\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x14The Red Haire\
+d Woman\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0e\x5c\x11Ys0L\
+\x89\x8b0_mAf\x1f\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x19The Shooting S\
+tar She Saw\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0c0\xbc\
+0\xfc0\xbf0n\x9f\x13R\xd5\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x10The Sign Of \
+Zeta\x07\x00\x00\x00\x08EnumDat\
+a\x01\x03\x00\x00\x00\x08gqN\xacN\x0azz\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x12The Ski\
+es Of Tokyo\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0ey^\
+0nV\xfd0x0n\x8a\x98`\xd1\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00!The Tempta\
+tion Of The Land\
+ Of God\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x0e[\x87[\x990k\
+T\xb20OY\x96\x82\xb1\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00%The Terrible F\
+lower Blooming I\
+n Space\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x08{,N\x090n\
+R\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11The \
+Third's Power\x07\x00\x00\
 \x00\x08EnumData\x01\x03\x00\x00\x00\x0c\
-~\xa2\x82rv\x84\xff%\xff6\xff!\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x12The Red Ev\
-angelion\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0c~\xa2Y4S\
-\xd1v\x84YsN\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x14The Red Haired \
-Woman\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0e\x5c\x11Ysb@\x89\xc1\
-v\x84mAf\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19\
-The Shooting Sta\
-r She Saw\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08\xff:NK\
-\x9f\x13R\xa8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10Th\
-e Sign Of Zeta\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08N\x1cN\xacN\x0azz\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x12The Skies Of \
-Tokyo\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x10S\xbb_\x80y^NK\
-V\xfdv\x84\x8b\xf1`\xd1\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00!The Temptation\
- Of The Land Of \
-God\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x10[\x87[\x99N-~\xfde>\
-v\x84Y\x96S\x16\x08\x00\x00\x00\x00\x06\x00\x00\x00%\
-The Terrible Flo\
-wer Blooming In \
-Space\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,N\x09NKR\x9b\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11The Th\
-ird's Power\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0ag*\
-w\xe5v\x84p~S\x84\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x14The Unknown Ca\
-lamity\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0aYG\x8f\xf9v\x84N\
-\xf7P<\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16The\
- Value Of A Mira\
-cle\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0cv}\x82rg:R\xa8b\x18\
-X\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15The \
-White Mobile Sui\
-t\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0cYsN\xbaN\xecv\x84b\x18W:\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17The Wo\
-mens' Battlefiel\
-d\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08\x89\x81X^S\xd8_b\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0fTrans-Form\
-ation\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x04Qq\x90\x1a\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x07Unified\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
-m\x88Y1v\x84\x9a\x91Qu\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x11Vanishing Tr\
-ooper\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08S\xefS\xd8\x965W\x8b\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Variab\
-le Formation\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x04c\
-/\x98\xa4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aVib\
-rations\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x10l\xe2\x9c\x81\x8f\xea\
-e\xaf\x8dwk{V\xdeu\x1f\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x1bVoltes, Back\
- From The Ashes\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0cb\x18X\xeb\xff\x0cQ\x8dge &\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0fWarriors\
-, Again\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x14~\xa2\x82r\x95\xea\
-u5\x00 \x98\xde\x7f\xd4v\x84\x9bTy^\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00*With A R\
-ed Flash, Fly To\
- The Sky, Mazing\
-er\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0eW(\x97Ykbv\x84\x9e\xd1f\
-\x97N-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1eWit\
-hin The Paralyzi\
-ng Darkness\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x10_\xc3\
-NKb@_\xf5e\xe0_bNKR\x03\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00$Within T\
-he Soul Lies An \
-Unseen Blade\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08T\
-\x09\x7f\xc1Q\x8dge\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x14Zeon's Second C\
-oming\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x02zz\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x03air\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x02\x96F\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x03lnd\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x02mw\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x03sea\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x02W0\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04wall\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x04\x00A\x00I\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02A\
-I\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x04\x00S\x00P\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x02SP\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x08r\
-yk\x8a\x80\xfdR\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x09abilities\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x04T}N-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08a\
-ccuracy\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x0a\x00A\
-\x00I\x00 ep\x91\xcf\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08ai count\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x0a\x00A\x00I\x00 epcn\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x07ai data\x07\x00\x00\x00\
+g*w\xe50j0\x8bp}0D\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x14The Unknow\
+n Calamity\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x0cYG\x8d\
+\xe10nO\xa1P$0o\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x16The Value Of \
+A Miracle\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x10v}0D\
+0\xe20\xd30\xeb0\xb90\xfc0\xc4\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x15The White \
+Mobile Suit\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x0cYs\
+0_0a0nb&X4\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x17The Womens' \
+Battlefield\x07\x00\x00\x00\x08\
+EnumData\x01\x03\x00\x00\x00\x1a0\xc8\
+0\xe90\xf30\xb90\xfb0\xd50\xa90\xfc0\xe1\
+0\xfc0\xb70\xe70\xf3\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0fTrans-Formatio\
+n\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x04Qq\x90\x1a\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x07Unified\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x160\xd00\xcb\
+0\xb70\xf30\xb00\xfb0\xc80\xeb0\xfc0\xd1\
+0\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Vani\
+shing Trooper\x07\x00\x00\
+\x00\x08EnumData\x01\x03\x00\x00\x00\x1e\
+0\xf40\xa10\xea0\xa20\xd60\xeb0\xfb0\xd5\
+0\xa90\xfc0\xe10\xfc0\xb70\xe70\xf3\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x12Variable\
+ Formation\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x100\xd00\
+\xa40\xd60\xec0\xfc0\xb70\xe70\xf3\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0aVibration\
+s\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x100\xdc0\xeb0\xc60\xb9\x8dwk{\
+V\xdeu\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1bVo\
+ltes, Back From \
+The Ashes\x07\x00\x00\x00\x08En\
+umData\x01\x03\x00\x00\x00\x10b&X\xeb\
+0\x01Q\x8d0s0\xfb0\xfb0\xfb\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0fWarriors, \
+Again\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x1a}\x050Dz2Y\xbb\
+\x00 zz\x98\xdb0v0\xde0\xb80\xf30\xac\
+0\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00*With\
+ A Red Flash, Fl\
+y To The Sky, Ma\
+zinger\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x10\x97Ykb0W0\
+_\x95\xc70nN-0g\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x1eWithin The Pa\
+ralyzing Darknes\
+s\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x14_\xc30k_\xf50X0\x8b\x89\x8b\
+0H0j0DR\x03\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00$Within The Sou\
+l Lies An Unseen\
+ Blade\x07\x00\x00\x00\x08EnumD\
+ata\x01\x03\x00\x00\x00\x0a0\xb80\xaa0\xf3Q\
+\x8d\x81\xe8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14Zeo\
+n's Second Comin\
+g\x07\x00\x00\x00\x08EnumData\x01\x03\
+\x00\x00\x00\x02zz\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03\
+air\x07\x00\x00\x00\x08EnumData\
+\x01\x03\x00\x00\x00\x02\x96x\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x03lnd\x07\x00\x00\x00\x08EnumDa\
+ta\x01\x03\x00\x00\x00\x02mw\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x03sea\x07\x00\x00\x00\x08Enum\
+Data\x01\x03\x00\x00\x00\x02W0\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x04wall\x07\x00\x00\x00\x08E\
+numData\x01\x03\x00\x00\x00\x04\x00A\x00\
+I\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02AI\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x04\x00S\x00P\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x02SP\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08ryk\x8a\x80\
+\xfdR\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09abi\
+lities\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x04T}N\
+-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08accur\
+acy\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x06\x00A\x00Iep\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08ai cou\
+nt\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x0a\x00A\x00I0\xc70\
+\xfc0\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07ai \
+data\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x06\x00A\x00I\x95\
+w\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09ai le\
+ngth\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x0a\x00A\x00I0\
+\xea0\xb90\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07a\
+i list\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x0c\x00A\x00\
+I0\xdd0\xa40\xf30\xbf\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0bai pointers\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x02zz\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x03air\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08v{X4O\
+\x5cT\xc1\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aapp\
+earance\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x04\x88\xc5\
+u2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05armo\
+r\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x04\x5c^`'\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x09attribute\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x06\x00B\x00G\x00M\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x10background\
+ music\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x0a0\xd60\
+\xed0\xc30\xafep\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0bblock count\x07\x00\x00\x00\
 \x0cFieldMapping\x01\x03\x00\
-\x00\x00\x0a\x00A\x00I\x00 \x95\x7f^\xa6\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x09ai length\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x0a\x00A\x00I\x00 R\x17\x88\
-h\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07ai li\
-st\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x0a\x00A\x00I\x00 c\
-\x07\x94\x88\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bai \
-pointers\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x02z\
-z\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03air\x07\x00\
+\x00\x00\x0a0\xd60\xed0\xc30\xaf\x95w\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cblock len\
+gth\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x100\xd60\xed0\xc3\
+0\xaf0\xdd0\xa40\xf30\xbf\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0eblock pointe\
+rs\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x060\xb30\xfc0\xc9\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x04code\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x04h<\x95\xd8\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x06combat\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x06T\
+\x08OSep\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dc\
+ombine count\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x0cT\x08OS0\xb00\xeb0\xfc0\xd7\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x14combine\
+ group number\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x0eT\x08OS0\xb70\xfc0\xb10\xf3\
+0\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17comb\
+ine sequence num\
+ber\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x0e0\xb30\xde0\xf3\
+0\xc90\xb30\xfc0\xc9\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0ccommand code\x07\x00\
 \x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08v{W:O\x5cT\xc1\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0aappearanc\
-e\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x04\x88\xc5u2\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x05armor\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x04\x5c^`'\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09\
-attribute\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x06\
-\x00B\x00G\x00M\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10\
-background music\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x06WWep\x91\xcf\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0bblock cou\
-nt\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x06WW\x95\x7f^\xa6\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0cblock l\
-ength\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x06WWc\x07\
-\x94\x88\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ebloc\
-k pointers\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x04\x7f\x16x\x01\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04c\
-ode\x07\x00\x00\x00\x0cFieldMap\
-ping\x01\x03\x00\x00\x00\x04h<e\x97\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x06combat\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x06T\x08OSep\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0dcombine cou\
-nt\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08T\x08OS~\xc4S\
-\xf7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14combi\
-ne group number\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x08T\x08OS^\x8fS\xf7\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x17combine \
-sequence number\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x08c\x07N\xe4N\xe3x\x01\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0ccommand \
-code\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08c\x07N\xe4\x8b\
-\xa1ep\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dcom\
-mand count\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08c\x07N\xe4epcn\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0ccommand data\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x08c\x07N\xe4\x8b\xf4f\x0e\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0fcommand \
-explain\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x08c\x07\
-N\xe4S\xc2ep\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
+\x03\x00\x00\x00\x0a0\xb30\xde0\xf30\xc9ep\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0dcommand\
+ count\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x0e0\xb30\
+\xde0\xf30\xc90\xc70\xfc0\xbf\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0ccommand dat\
+a\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x0c0\xb30\xde0\xf30\xc9\
+\x8a\xacf\x0e\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fco\
+mmand explain\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x120\xb30\xde0\xf30\xc90\xd10\xe9\
+0\xe10\xfc0\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
 command params\x07\x00\
 \x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08h8_\xc3g:OS\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0acore robo\
-t\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x04\x8dD\x91\xd1\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x04cost\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08O\x1a_\xc3\x88ekc\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08critical\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x08e9\x90 \x8f\xfdR\xa0\x08\x00\x00\x00\x00\x06\
+\x03\x00\x00\x00\x0c0\xb30\xa20\xe60\xcb0\xc30\
+\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0acore \
+robot\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x04\x8c\xc7\x91\xd1\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04cost\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x100\xaf0\xea0\xc60\xa30\xab0\
+\xeb\x88\xdckc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08c\
+ritical\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x0ce9\
+\x90 0\xdc0\xfc0\xca0\xb9\x08\x00\x00\x00\x00\x06\
 \x00\x00\x00\x0ccustom bonus\
 \x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08e9\x90 |{W\x8b\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0bcustom \
-type\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x06e;Q\xfbR\
-\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06damag\
-e\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x08R\x1dY\xcb_9\x83o\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cdefaul\
-t ammo\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x04N\xcb~\
-\xcd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bdescr\
-iption\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08\x002k\
-!\x88LR\xa8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dd\
-ouble action\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x04\x00E\x00N\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x06energy\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x08m\x88\
-\x80\x17\x00E\x00N\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0b\
-energy cost\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x04V\xde\x90\x7f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07\
-evasion\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x04h\x07\
-_\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05flag\
-s\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x06l\x14R\x9b~\xc4\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x10friendsh\
-ip group\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x04Q\
-hT\x0d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09ful\
+g\x01\x03\x00\x00\x00\x0ae9\x90 0\xbf0\xa40\
+\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bcusto\
+m type\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x06e;d\
+\x83R\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06dam\
+age\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x08R\x1dg\x1f_>\
+ep\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cdefa\
+ult ammo\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x04}\
+9N\xcb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bdes\
+cription\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08\x00\
+2V\xde\x88LR\xd5\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0ddouble action\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x04\x00E\x00N\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x06energy\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x08\
+m\x88\x8c\xbb\x00E\x00N\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x0benergy cost\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x04V\xde\x90\x7f\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x07evasion\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x06\
+0\xd50\xe90\xb0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05\
+flags\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x0cl\x17R\x9b\
+0\xb00\xeb0\xfc0\xd7\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x10friendship gro\
+up\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x0a0\xd50\xeb0\xcd0\
+\xfc0\xe0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09ful\
 l name\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x04QhT\
-\x0d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08fulln\
+Mapping\x01\x03\x00\x00\x00\x04T\x0dR\
+M\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08fulln\
 ame\x07\x00\x00\x00\x0cFieldMap\
-ping\x01\x03\x00\x00\x00\x02\x96F\x08\x00\x00\x00\
+ping\x01\x03\x00\x00\x00\x02\x96x\x08\x00\x00\x00\
 \x00\x06\x00\x00\x00\x06ground\x07\x00\x00\x00\
 \x0cFieldMapping\x01\x03\x00\
-\x00\x00\x04Qh\x95\x7f\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x00\x00\x04Qh\x95w\x08\x00\x00\x00\x00\x06\x00\x00\x00\
 \x06height\x07\x00\x00\x00\x0cFiel\
 dMapping\x01\x03\x00\x00\x00\x04\x00H\
 \x00P\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ahit \
@@ -43588,182 +45525,189 @@ points\x07\x00\x00\x00\x0cField\
 Mapping\x01\x03\x00\x00\x00\x04\x96Pu\
 L\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05limit\
 \x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x06\x8f\xdc\x5c\x04z\x0b\x08\x00\x00\
+g\x01\x03\x00\x00\x00\x06\x90`\x5c\x04z\x0b\x08\x00\x00\
 \x00\x00\x06\x00\x00\x00\x0along rang\
 e\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x0cW0V\xfekfVh\
-R\x06|{\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10ma\
-p weapon class\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x0ew@_9c\x07[\x9aW\x8bS\
-J_\x84\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11map\
- weapon radius\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x0ee\xb9T\x11c\x07[\x9aW\x8b\x83\
-\x03V\xf4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10map\
- weapon range\x07\x00\x00\
+ng\x01\x03\x00\x00\x00\x0e0\xde0\xc30\xd7Qu\
+VhR\x06\x98^\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10\
+map weapon class\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x0ew@_>c\x07[\x9aW\
+\x8bSJ_\x84\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11m\
+ap weapon radius\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x0ee\xb9T\x11c\x07[\x9aW\
+\x8b{\xc4V\xf2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10m\
+ap weapon range\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x0e0\xde0\xc30\xd7QuVh\
+o\x14Q\xfa\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fma\
+p weapon show\x07\x00\x00\
 \x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x0cW0V\xfekfVho\x14Q\xfa\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fmap we\
-apon show\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x08\
-g\x00Y'_9\x83o\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0cmaximum ammo\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08Rg`\xc5e\x87g,\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x07message\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x06\x8f\xd0R\xa8`'\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08mobility\x07\x00\x00\
+\x00\x00\x00\x08g\x00Y'_>ep\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0cmaximum am\
+mo\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x120\xb70\xca0\xea0\
+\xaa0\xe10\xc30\xbb0\xfc0\xb8\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x07message\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x06\x90KR\xd5`'\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x08mobility\x07\x00\x00\x00\x0c\
+FieldMapping\x01\x03\x00\x00\
+\x00\x10y\xfbR\xd5\x95\x8bY\xcb0\xe90\xa60\xf3\
+0\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0amove\
+ round\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x06y\xfbR\
+\xd5R\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08mov\
+ement\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x0ay\xfbR\xd5\
+0\xbf0\xa40\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0d\
+movement type\x07\x00\x00\
 \x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x0c_\x00Y\xcby\xfbR\xa8V\xdeT\x08\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0amove r\
-ound\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x06y\xfbR\xa8R\
-\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08movem\
-ent\x07\x00\x00\x00\x0cFieldMap\
-ping\x01\x03\x00\x00\x00\x08y\xfbR\xa8|{\
-W\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dmove\
-ment type\x07\x00\x00\x00\x0cFi\
+\x00\x00\x00\x04T\x0dy\xf0\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x04name\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x04`'h\
+<\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06natur\
+e\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x0a0\xd10\xa40\xed0\xc3\
+0\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08nick\
+name\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x0c0\xe60\xcb0\
+\xc30\xc8c\xdb\x88\xc5\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x13option parts sy\
+stem\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x08\x81\xeaN;e\
+;d\x83\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aown\
+ attack\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x08\x81\xea\
+N;y\xfbR\xd5\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
+own move\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x0e0\
+\xd10\xfc0\xc40\xb90\xed0\xc30\xc8\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0aparts slo\
+t\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x04a\x1by\xf0\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x08pet name\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x04\x5c\x04d\x83\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x06ranged\x07\x00\x00\x00\x0cFi\
 eldMapping\x01\x03\x00\x00\x00\x04\
-T\x0dy\xf0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04na\
+S\xcd_\xdc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08re\
+action\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x06O\xeet\
+\x06\x8c\xbb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0brep\
+air cost\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x0c\x80\
+Vb&X\xeb0\xec0\xd90\xeb\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x13required au\
+ra level\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x08_\
+\xc5\x89\x81l\x17R\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x15required morale\
+ value\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x120\xcb0\
+\xe50\xfc0\xbf0\xa40\xd70\xec0\xd90\xeb\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x16require\
+d newtype level\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x080\xe60\xcb0\xc30\xc8\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0arobot na\
 me\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x04`'h<\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x06nature\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x04g:^\x08\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08nickname\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08g:OScb\x88\xc5\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x13option parts \
-system\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08\x81\xeaN\
-;e;Q\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ao\
-wn attack\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x08\
-\x81\xeaN;y\xfbR\xa8\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08own move\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08\x96\xf6N\xf6c\xd2i\xfd\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0aparts slot\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x04r1y\xf0\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08pet name\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x04\x5c\x04Q\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06r\
-anged\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x04S\xcd^\x94\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08reacti\
-on\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x06O\xeet\x06\x8d9\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0brepair \
-cost\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x0aW#b\x18X\
-\xeb{I~\xa7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13r\
-equired aura lev\
-el\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08_\xc5\x89\x81l\x14R\
-\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15requi\
-red morale value\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x0ae\xb0N\xba|{{I~\
-\xa7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16requi\
-red newtype leve\
-l\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x04g:OS\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0arobot name\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08W:foepcn\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0dscenari\
-o data\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08W:f\
-oc\x07\x94\x88\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10s\
+ing\x01\x03\x00\x00\x00\x0e0\xb70\xca0\xea0\
+\xaa0\xc70\xfc0\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0dscenario data\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x100\xb70\xca0\xea0\xaa0\xdd0\
+\xa40\xf30\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10s\
 cenario pointer\x07\
 \x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x08Rgg,c\x07N\xe4\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0escript c\
-ommand\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08bi\x5c\
-Ue\x87g,\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ds\
-cript expand\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x0aRgg,S\xc2ep\x001\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0escript pa\
-rams1\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x0aRgg,\
-S\xc2ep\x002\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
-script params2\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x06cbNX|\xfb\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x06series\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x06\x8f\xd1\x5c\x04z\x0b\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0bshort range\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x04OSy\xef\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x04size\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x04b\x80\x91\
-\xcf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05skill\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x06\x00L\x00v\x001\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0cskill lev\
-el1\x07\x00\x00\x00\x0cFieldMap\
-ping\x01\x03\x00\x00\x00\x06\x00L\x00v\x002\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cskill \
-level2\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x06\x00L\x00\
-v\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cski\
-ll level3\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x06\
-\x00L\x00v\x004\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0c\
-skill level4\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x06\x00L\x00v\x005\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0cskill level5\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x06\x00L\x00v\x006\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0cskill leve\
-l6\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x06\x00L\x00v\x007\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0cskill l\
-evel7\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x06\x00L\x00v\
-\x008\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cskil\
-l level8\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x06\x00\
-L\x00v\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cs\
-kill level9\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x04b\x80\x80\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0a\
-skill name\x07\x00\x00\x00\x0cF\
+\x01\x03\x00\x00\x00\x0c\x81\x1ag,0\xb30\xde0\xf3\
+0\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0escri\
+pt command\x07\x00\x00\x00\x0cF\
 ieldMapping\x01\x03\x00\x00\x00\
-\x02[\x87\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05spa\
-ce\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08ryk\x8ab\x80\x80\
-\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0especi\
-al skills\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x08\
-|\xbey^c\x07N\xe4\x08\x00\x00\x00\x00\x06\x00\x00\
+\x0cb\xe1_50\xc60\xad0\xb90\xc8\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0dscript ex\
+pand\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x10\x81\x1ag,0\
+\xd10\xe90\xe10\xfc0\xbf\x001\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0escript para\
+ms1\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x10\x81\x1ag,0\xd1\
+0\xe90\xe10\xfc0\xbf\x002\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0escript param\
+s2\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x0a0n0\x8a0K0\
+H|\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06ser\
+ies\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x06\x8f\xd1\x5c\x04z\x0b\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bshort \
+range\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x060\xb50\xa4\
+0\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04size\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x04b\x80\x91\xcf\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x05skill\x07\x00\x00\x00\x0cF\
+ieldMapping\x01\x03\x00\x00\x00\
+\x06\x00L\x00v\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0cskill level1\x07\x00\x00\
+\x00\x0cFieldMapping\x01\x03\
+\x00\x00\x00\x06\x00L\x00v\x002\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x0cskill level2\
+\x07\x00\x00\x00\x0cFieldMappin\
+g\x01\x03\x00\x00\x00\x06\x00L\x00v\x003\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cskill lev\
+el3\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x06\x00L\x00v\x004\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cskill \
+level4\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x06\x00L\x00\
+v\x005\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cski\
+ll level5\x07\x00\x00\x00\x0cFi\
+eldMapping\x01\x03\x00\x00\x00\x06\
+\x00L\x00v\x006\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0c\
+skill level6\x07\x00\x00\x00\
+\x0cFieldMapping\x01\x03\x00\
+\x00\x00\x06\x00L\x00v\x007\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x0cskill level7\x07\
+\x00\x00\x00\x0cFieldMapping\
+\x01\x03\x00\x00\x00\x06\x00L\x00v\x008\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x0cskill leve\
+l8\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x06\x00L\x00v\x009\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0cskill l\
+evel9\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x060\xb90\xad\
+0\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0askil\
+l name\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x02[\x87\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x05space\x07\x00\
+\x00\x00\x0cFieldMapping\x01\
+\x03\x00\x00\x00\x08ryk\x8ab\x80\x80\xfd\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0especial s\
+kills\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x0c|\xbey^\
+0\xb30\xde0\xf30\xc9\x08\x00\x00\x00\x00\x06\x00\x00\
 \x00\x0fspirit command\
 s\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x08N`_\x97{I~\xa7\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cspirit\
- level\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x0av\xeeh\
-\x07\x9a~\x9avTX\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0ctarget pilot\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x06v\xeeh\x07\x00X\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08target x\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x06v\xeeh\x07\x00Y\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08target y\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x08S\xd8_b~\xc4S\xf7\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x16transform gr\
-oup number\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08S\xd8_b^\x8fS\xf7\x08\x00\x00\x00\x00\x06\x00\
+ng\x01\x03\x00\x00\x00\x0a\x7f\xd2_\x970\xec0\xd9\
+0\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cspir\
+it level\x07\x00\x00\x00\x0cFie\
+ldMapping\x01\x03\x00\x00\x00\x0ev\
+\xeej\x190\xd10\xa40\xed0\xc30\xc8\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0ctarget pi\
+lot\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x06v\xeej\x19\x00X\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08target\
+ x\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x06v\xeej\x19\x00Y\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x08target \
+y\x07\x00\x00\x00\x0cFieldMappi\
+ng\x01\x03\x00\x00\x00\x0cY\x09_b0\xb00\xeb\
+0\xfc0\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16tr\
+ansform group nu\
+mber\x07\x00\x00\x00\x0cFieldMa\
+pping\x01\x03\x00\x00\x00\x0eY\x09_b0\
+\xb70\xfc0\xb10\xf30\xb9\x08\x00\x00\x00\x00\x06\x00\
 \x00\x00\x19transform seq\
 uence number\x07\x00\x00\x00\
 \x0cFieldMapping\x01\x03\x00\
@@ -43923,282 +45867,318 @@ ieldMapping\x01\x03\x00\x00\x00\
 \x03\x00\x00\x00\x08g*w\xe5\x005\x000\x08\x00\x00\
 \x00\x00\x06\x00\x00\x00\x09unknown50\
 \x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x0a{I~\xa7R6b\x80\x80\
-\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fupgra\
-ded skills\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x04g\x09eH\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05v\
-alid\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x04X\xf0O\x18\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0bvoice a\
-ctor\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x02mw\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x05water\x07\x00\x00\x00\
+g\x01\x03\x00\x00\x00\x0c0\xec0\xd90\xebR6b\
+\x80\x80\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fupg\
+raded skills\x07\x00\x00\x00\
 \x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08kfVhR\x06|{\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0cweapon clas\
-s\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x06kfVhT\x0d\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0bweapon n\
-ame\x07\x00\x00\x00\x0cFieldMap\
-ping\x01\x03\x00\x00\x00\x08kfVhR\x17\
-\x88h\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07weap\
-ons\x07\x00\x00\x00\x0cFieldMap\
-ping\x01\x03\x00\x00\x00\x04\x91\xcd\x91\xcf\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x06weight\x07\x00\
+\x00\x00\x04g\x09R\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x05valid\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x04X\xf0Q\
+*\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bvoice\
+ actor\x07\x00\x00\x00\x0cField\
+Mapping\x01\x03\x00\x00\x00\x02mw\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x05water\x07\x00\
 \x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x04\x90\x09b\xe9\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x06Browse\x07\x00\x00\x00\x0fFi\
-leSettingCard\x01\x03\x00\
-\x00\x00\x10\x97^\x00A\x00S\x00C\x00I\x00I\x8d\
-\xef_\x84\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eNon\
--ASCII Path\x07\x00\x00\x00\x0f\
-FileSettingCard\x01\
-\x03\x00\x00\x00\x04xn[\x9a\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x02OK\x07\x00\x00\x00\x0fFileSe\
-ttingCard\x01\x03\x00\x00\x00*\x00\
-R\x00O\x00M\x8d\xef_\x84T\x8ce\x87N\xf6T\
-\x0dN\x0d\x80\xfdg\x09\x97^\x00A\x00S\x00C\x00\
-I\x00I[W{&0\x02\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00:ROM path and \
-filename cannot \
-contain non-ASCI\
-I characters.\x07\x00\x00\
+\x03\x00\x00\x00\x08kfVhR\x06\x98^\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0cweapon cl\
+ass\x07\x00\x00\x00\x0cFieldMap\
+ping\x01\x03\x00\x00\x00\x06kfVhT\x0d\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bweapon\
+ name\x07\x00\x00\x00\x0cFieldM\
+apping\x01\x03\x00\x00\x00\x0akfVh\
+0\xea0\xb90\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07\
+weapons\x07\x00\x00\x00\x0cFiel\
+dMapping\x01\x03\x00\x00\x00\x04\x91\xcd\
+\x91\xcf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06weig\
+ht\x07\x00\x00\x00\x0cFieldMapp\
+ing\x01\x03\x00\x00\x00\x04S\xc2qg\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x06Browse\x07\x00\x00\
 \x00\x0fFileSettingCar\
-d\x01\x03\x00\x00\x00\x08\x90\x09b\xe9e\x87N\xf6\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0bSelect \
-File\x07\x00\x00\x00\x0fFileSet\
-tingCard\x01\x03\x00\x00\x00\x16\x91M\
-\x7fnN\x0dT\x0c\x8b\xed\x8a\x00v\x84\x9e\xd8\x8b\xa4\
-[WOS\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1bCo\
-nfigure the font\
- settings\x07\x00\x00\x00\x08Fo\
-ntCard\x01\x03\x00\x00\x00\x08[WOS\
-\x8b\xbe\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dFo\
+d\x01\x03\x00\x00\x00\x10\x97^\x00A\x00S\x00C\x00\
+I\x00I0\xd10\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0eNon-ASCII Path\x07\
+\x00\x00\x00\x0fFileSettingC\
+ard\x01\x03\x00\x00\x00\x04x\xba\x8a\x8d\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x02OK\x07\x00\x00\x00\x0fFi\
+leSettingCard\x01\x03\x00\
+\x00\x00B\x00R\x00O\x00M0\xd10\xb90h0\
+\xd50\xa10\xa40\xebT\x0d0k\x97^\x00A\x00\
+S\x00C\x00I\x00Ie\x87[W0\x92T+0\
+\x810\x8b0S0h0o0g0M0~0\
+[0\x930\x02\x08\x00\x00\x00\x00\x06\x00\x00\x00:R\
+OM path and file\
+name cannot cont\
+ain non-ASCII ch\
+aracters.\x07\x00\x00\x00\x0fFi\
+leSettingCard\x01\x03\x00\
+\x00\x00\x0e0\xd50\xa10\xa40\xeb0\x92\x90xb\
+\x9e\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bSelec\
+t File\x07\x00\x00\x00\x0fFileS\
+ettingCard\x01\x03\x00\x00\x00 \
+T\x04\x8a\x00\x8a\x9e0n0\xc70\xd50\xa90\xeb\
+0\xc80\xd50\xa90\xf30\xc80\x92\x8a-[\x9a\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1bConfig\
+ure the font set\
+tings\x07\x00\x00\x00\x08FontCa\
+rd\x01\x03\x00\x00\x00\x0c0\xd50\xa90\xf30\xc8\
+\x8a-[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dFo\
 nt Settings\x07\x00\x00\x00\x08\
-FontCard\x01\x03\x00\x00\x00 xn\
-\x8b\xa4\x5c\x06O\xeee9v\x84epcng\x84\
-^\xfaR0\x7f\x13[Xe\x87N\xf6\xff\x1f\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00<Are you \
-sure you want to\
- build modified \
-data to cache fi\
-les?\x07\x00\x00\x00\x09HomeFra\
-me\x01\x03\x00\x00\x00\x08g\x84^\xfa\x7f\x13[X\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bBuild \
-Cache\x07\x00\x00\x00\x09HomeFr\
-ame\x01\x03\x00\x00\x00\x16\x7f\x13[X]\xf2[\
-XW(\xff\x0cf/T&\x89\x86v\xd6\xff\x1f\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00 Cache a\
-lready exists. O\
-verwrite?\x07\x00\x00\x00\x09Ho\
-meFrame\x01\x03\x00\x00\x00\x22\x7f\x13[\
-Xv\xee_Ug*b~R0\xff\x0c\x8b\xf7Q\
-H\x89\xe3S\x05\x00 \x00R\x00O\x00M0\x02\x08\
-\x00\x00\x00\x00\x06\x00\x00\x006Cache d\
-irectory not fou\
-nd. Please extra\
-ct a ROM first.\x07\
-\x00\x00\x00\x09HomeFrame\x01\x03\x00\
-\x00\x00&g*b~R0\x7f\x13[X\x98yv\
-\xeee\x87N\xf6\xff\x0c\x8b\xf7QH\x89\xe3S\x05\x00\
- \x00R\x00O\x00M0\x02\x08\x00\x00\x00\x00\x06\x00\
+FontCard\x01\x03\x00\x00\x00.Y\x09\
+f\xf40\xc70\xfc0\xbf0\x920\xad0\xe30\xc3\
+0\xb70\xe50\xd50\xa10\xa40\xeb0ki\xcb\
+{\xc90W0~0Y0K\xff\x1f\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00<Are you su\
+re you want to b\
+uild modified da\
+ta to cache file\
+s?\x07\x00\x00\x00\x09HomeFrame\
+\x01\x03\x00\x00\x00\x100\xad0\xe30\xc30\xb70\xe5\
+0\x92i\xcb{\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0b\
+Build Cache\x07\x00\x00\x00\x09\
+HomeFrame\x01\x03\x00\x00\x00,0\
+\xad0\xe30\xc30\xb70\xe50oe\xe20k[\
+XW(0W0~0Y0\x02N\x0af\xf80\
+M0W0~0Y0K\xff\x1f\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00 Cache alrea\
+dy exists. Overw\
+rite?\x07\x00\x00\x00\x09HomeFr\
+ame\x01\x03\x00\x00\x00:0\xad0\xe30\xc30\
+\xb70\xe50L0B0\x8a0~0[0\x930\
+\x02QH0k\x00 \x00R\x00O\x00M\x00 0\
+\x92\x5cU\x95\x8b0W0f0O0`0U0\
+D0\x02\x08\x00\x00\x00\x00\x06\x00\x00\x006Cac\
+he directory not\
+ found. Please e\
+xtract a ROM fir\
+st.\x07\x00\x00\x00\x09HomeFram\
+e\x01\x03\x00\x00\x00R0\xad0\xe30\xc30\xb70\
+\xe50\xd70\xed0\xb80\xa70\xaf0\xc80\xd50\
+\xa10\xa40\xeb0L\x89\x8b0d0K0\x8a0\
+~0[0\x930\x02QH0k\x00 \x00R\x00\
+O\x00M\x00 0\x92\x5cU\x95\x8b0W0f0\
+O0`0U0D0\x02\x08\x00\x00\x00\x00\x06\x00\
 \x00\x009Cache project\
  file not found.\
  Please extract \
 a ROM first.\x07\x00\x00\x00\
-\x09HomeFrame\x01\x03\x00\x00\x00\x04\
-S\xd6m\x88\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Ca\
-ncel\x07\x00\x00\x00\x09HomeFra\
-me\x01\x03\x00\x00\x00\x04Qs\x95\xed\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x05Close\x07\x00\x00\x00\x09\
-HomeFrame\x01\x03\x00\x00\x00\x0a\x89\
-\xe3S\x05\x00R\x00O\x00M\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0bExtract ROM\x07\x00\
-\x00\x00\x09HomeFrame\x01\x03\x00\x00\
-\x00\x04e\x87N\xf6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04\
-File\x07\x00\x00\x00\x09HomeFra\
-me\x01\x03\x00\x00\x00\x0ae\x87N\xf6]\xf2[X\
-W(\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13File\
- Already Exists\x07\
+\x09HomeFrame\x01\x03\x00\x00\x00\x0a\
+0\xad0\xe30\xf30\xbb0\xeb\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x06Cancel\x07\x00\x00\x00\x09H\
+omeFrame\x01\x03\x00\x00\x00\x06\x95\x89\
+0X0\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Cl\
+ose\x07\x00\x00\x00\x09HomeFram\
+e\x01\x03\x00\x00\x00\x0c\x00R\x00O\x00M0\x92\x5c\
+U\x95\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bExt\
+ract ROM\x07\x00\x00\x00\x09Hom\
+eFrame\x01\x03\x00\x00\x00\x080\xd50\xa1\
+0\xa40\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04Fi\
+le\x07\x00\x00\x00\x09HomeFrame\
+\x01\x03\x00\x00\x00\x180\xd50\xa10\xa40\xeb0o\
+e\xe20k[XW(0W0~0Y\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x13File Alr\
+eady Exists\x07\x00\x00\x00\x09\
+HomeFrame\x01\x03\x00\x00\x00\x180\
+\xd50\xa10\xa40\xeb0L\x89\x8b0d0K0\
+\x8a0~0[0\x93\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0eFile Not Found\x07\
 \x00\x00\x00\x09HomeFrame\x01\x03\x00\
-\x00\x00\x0ae\x87N\xf6g*b~R0\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0eFile Not \
-Found\x07\x00\x00\x00\x09HomeFr\
-ame\x01\x03\x00\x00\x00\x04^U\x95\xf4\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0cIntermiss\
-ion\x07\x00\x00\x00\x09HomeFram\
-e\x01\x03\x00\x00\x00\x04e\x87g,\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x07Message\x07\x00\x00\x00\
-\x09HomeFrame\x01\x03\x00\x00\x00\x02\
-T&\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02No\x07\x00\
+\x00\x00\x120\xa40\xf30\xbf0\xfc0\xdf0\xc30\
+\xb70\xe70\xf3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cI\
+ntermission\x07\x00\x00\x00\x09\
+HomeFrame\x01\x03\x00\x00\x00\x080\
+\xc60\xad0\xb90\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x07Message\x07\x00\x00\x00\x09Hom\
+eFrame\x01\x03\x00\x00\x00\x060D0D\
+0H\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02No\x07\x00\
 \x00\x00\x09HomeFrame\x01\x03\x00\x00\
-\x00\x04xn[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02\
+\x00\x04x\xba\x8a\x8d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02\
 OK\x07\x00\x00\x00\x09HomeFrame\
-\x01\x03\x00\x00\x00\x04\x89\x86v\xd6\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x09Overwrite\x07\x00\x00\
-\x00\x09HomeFrame\x01\x03\x00\x00\x00\
-\x08\x89\xe3g\x90\x7f\x13[X\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0bParse Cache\x07\x00\
-\x00\x00\x09HomeFrame\x01\x03\x00\x00\
-\x00\x04g:^\x08\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05\
+\x01\x03\x00\x00\x00\x06N\x0af\xf80M\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x09Overwrite\x07\
+\x00\x00\x00\x09HomeFrame\x01\x03\x00\
+\x00\x00\x100\xad0\xe30\xc30\xb70\xe50\x92\x89\
+\xe3g\x90\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bPar\
+se Cache\x07\x00\x00\x00\x09Hom\
+eFrame\x01\x03\x00\x00\x00\x0a0\xd10\xa4\
+0\xed0\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05\
 Pilot\x07\x00\x00\x00\x09HomeFr\
-ame\x01\x03\x00\x00\x00 \x8b\xf7QHW(\x8b\
-\xbe\x7fnN-\x91M\x7fn\x00R\x00O\x00Me\
-\x87N\xf6\x8d\xef_\x840\x02\x08\x00\x00\x00\x00\x06\x00\
-\x00\x005Please config\
-ure the ROM file\
- path in Setting\
-s first.\x07\x00\x00\x00\x09Hom\
-eFrame\x01\x03\x00\x00\x00$\x8b\xf7QH\
-W(\x8b\xbe\x7fnN-\x91M\x7fnv\xeeh\x07\
-\x00 \x00R\x00O\x00M\x00 \x8d\xef_\x840\x02\
-\x08\x00\x00\x00\x00\x06\x00\x00\x007Please\
- configure the t\
-arget ROM path i\
-n Settings first\
-.\x07\x00\x00\x00\x09HomeFrame\x01\
-\x03\x00\x00\x00\x10\x00R\x00O\x00M\x8d\xef_\x84g\
-*\x91M\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17R\
-OM Path Not Conf\
-igured\x07\x00\x00\x00\x09HomeF\
-rame\x01\x03\x00\x00\x00\x18\x00R\x00O\x00M\
-e\x87N\xf6N\x0d[XW(\x00:\x00\x0a\x00{\
-\x00}\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1bROM \
-file does not ex\
-ist:\x0a{}\x07\x00\x00\x00\x09Home\
-Frame\x01\x03\x00\x00\x00\x0a\x91\xcd^\xfa\x00\
-R\x00O\x00M\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bR\
-ebuild ROM\x07\x00\x00\x00\x09H\
-omeFrame\x01\x03\x00\x00\x00\x04g:\
-OS\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Robo\
-t\x07\x00\x00\x00\x09HomeFrame\x01\
-\x03\x00\x00\x00\x04W:fo\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Scenario\x07\x00\x00\x00\x09\
-HomeFrame\x01\x03\x00\x00\x00\x14v\
-\xeeh\x07\x00 \x00R\x00O\x00M\x00 g*\x91\
-M\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19Tar\
-get ROM Not Conf\
-igured\x07\x00\x00\x00\x09HomeF\
-rame\x01\x03\x00\x00\x00\x1a\x7f\x13[Xv\xee\
-_U]\xf2[XW(\xff\x0cf/T&\x89\x86\
-v\xd6\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00@Th\
-e cache director\
-y already exists\
-. Do you want to\
- overwrite it?\x07\x00\
+ame\x01\x03\x00\x00\x006QH0k\x8a-[\
+\x9au;\x97b0g\x00R\x00O\x00M0\xd50\
+\xa10\xa40\xeb0n0\xd10\xb90\x92\x8a-[\
+\x9a0W0f0O0`0U0D0\x02\x08\
+\x00\x00\x00\x00\x06\x00\x00\x005Please \
+configure the RO\
+M file path in S\
+ettings first.\x07\x00\
 \x00\x00\x09HomeFrame\x01\x03\x00\x00\
-\x00$\x8f\x93Q\xfae\x87N\xf6]\xf2[XW(\
-\x00:\x00\x0a\x00{\x00}\x00\x0a\x00\x0af/T&\
-\x89\x86v\xd6\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00@\
+\x006QH0k\x8a-[\x9au;\x97b0g\
+Q\xfaR\x9bQH\x00 \x00R\x00O\x00M\x00 \
+0\xd10\xb90\x92\x8a-[\x9a0W0f0O\
+0`0U0D0\x02\x08\x00\x00\x00\x00\x06\x00\x00\
+\x007Please configu\
+re the target RO\
+M path in Settin\
+gs first.\x07\x00\x00\x00\x09Ho\
+meFrame\x01\x03\x00\x00\x00\x1e\x00R\x00\
+O\x00M0\xd10\xb90L\x8a-[\x9a0U0\
+\x8c0f0D0~0[0\x93\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x17ROM Path No\
+t Configured\x07\x00\x00\x00\
+\x09HomeFrame\x01\x03\x00\x00\x00$\
+\x00R\x00O\x00M0\xd50\xa10\xa40\xeb0L\
+[XW(0W0~0[0\x93\x00:\x00\x0a\
+\x00{\x00}\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1bRO\
+M file does not \
+exist:\x0a{}\x07\x00\x00\x00\x09Ho\
+meFrame\x01\x03\x00\x00\x00\x0e\x00R\x00\
+O\x00M0\x92Q\x8di\xcb{\xc9\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0bRebuild ROM\
+\x07\x00\x00\x00\x09HomeFrame\x01\x03\
+\x00\x00\x00\x080\xed0\xdc0\xc30\xc8\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x05Robot\x07\x00\x00\x00\x09\
+HomeFrame\x01\x03\x00\x00\x00\x080\
+\xb70\xca0\xea0\xaa\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x08Scenario\x07\x00\x00\x00\x09Ho\
+meFrame\x01\x03\x00\x00\x00$Q\xfaR\
+\x9bQH\x00 \x00R\x00O\x00M\x00 0L\x8a\
+-[\x9a0U0\x8c0f0D0~0[0\
+\x93\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19Targe\
+t ROM Not Config\
+ured\x07\x00\x00\x00\x09HomeFra\
+me\x01\x03\x00\x00\x0080\xad0\xe30\xc30\xb7\
+0\xe50\xc70\xa30\xec0\xaf0\xc80\xea0o\
+e\xe20k[XW(0W0~0Y0\x02\
+N\x0af\xf80M0W0~0Y0K\xff\x1f\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00@The ca\
+che directory al\
+ready exists. Do\
+ you want to ove\
+rwrite it?\x07\x00\x00\x00\x09H\
+omeFrame\x01\x03\x00\x00\x008Q\xfa\
+R\x9b0\xd50\xa10\xa40\xeb0oe\xe20k\
+[XW(0W0~0Y\x00:\x00\x0a\x00{\
+\x00}\x00\x0a\x00\x0aN\x0af\xf80M0W0~\
+0Y0K\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00@\
 The output file \
 already exists:\x0a\
 {}\x0a\x0aDo you want \
 to overwrite it?\
 \x07\x00\x00\x00\x09HomeFrame\x01\x03\
-\x00\x00\x00\x02f/\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03\
-Yes\x07\x00\x00\x00\x09HomeFram\
-e\x01\x03\x00\x00\x00\x04i\x82\x89\xc8\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x04Home\x07\x00\x00\x00\x0aMa\
-inWindow\x01\x03\x00\x00\x00\x04\x8b\xbe\
-\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Opti\
-ons\x07\x00\x00\x00\x0aMainWind\
-ow\x01\x03\x00\x00\x00\x04g:OS\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x05Robot\x07\x00\x00\x00\x0a\
+\x00\x00\x00\x040o0D\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x03Yes\x07\x00\x00\x00\x09HomeFr\
+ame\x01\x03\x00\x00\x00\x04i\x82\x89\x81\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x04Home\x07\x00\x00\x00\x0a\
 MainWindow\x01\x03\x00\x00\x00\x04\
-e\x87g,\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Sn\
-msg\x07\x00\x00\x00\x0aMainWind\
-ow\x01\x03\x00\x00\x00\x1c\x8d\x85~\xa7g:Vh\
-N\xbaY'b\x18\x03\xb1\x00 \x97Y`\x01O\xee\
-e9Vh\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1eSu\
-per Robot Wars \xce\
-\xb1 ROM Editor\x07\x00\x00\x00\
-\x0aMainWindow\x01\x03\x00\x00\x00\
-\x08Rg`\xc5e\x87g,\x08\x00\x00\x00\x00\x06\x00\
+\x8a-[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Op\
+tions\x07\x00\x00\x00\x0aMainWi\
+ndow\x01\x03\x00\x00\x00\x080\xe60\xcb0\xc3\
+0\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Robo\
+t\x07\x00\x00\x00\x0aMainWindow\
+\x01\x03\x00\x00\x00\x080\xc60\xad0\xb90\xc8\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x05Snmsg\x07\x00\x00\
+\x00\x0aMainWindow\x01\x03\x00\x00\
+\x00(0\xb90\xfc0\xd10\xfc0\xed0\xdc0\xc3\
+0\xc8Y'b&\x03\xb1\x00 \x00R\x00O\x00M\
+0\xa80\xc70\xa30\xbf0\xfc\x08\x00\x00\x00\x00\x06\
+\x00\x00\x00\x1eSuper Robot \
+Wars \xce\xb1 ROM Edit\
+or\x07\x00\x00\x00\x0aMainWindo\
+w\x01\x03\x00\x00\x00\x120\xb70\xca0\xea0\xaa0\
+\xe10\xc30\xbb0\xfc0\xb8\x08\x00\x00\x00\x00\x06\x00\
 \x00\x00\x07message\x07\x00\x00\x00\x08M\
-sgFrame\x01\x03\x00\x00\x00\x0cf\xf4e\
-9uL\x97b\x8b\xed\x8a\x00\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00$Change the la\
-nguage of the in\
-terface\x07\x00\x00\x00\x0bOpti\
-onFrame\x01\x03\x00\x00\x00\x16f\xf4e\
-9uL\x97bf>y:v\x84\x7f)e>k\
-\xd4O\x8b\x08\x00\x00\x00\x00\x06\x00\x00\x00)Cha\
+sgFrame\x01\x03\x00\x00\x00\x180\xa40\
+\xf30\xbf0\xd50\xa70\xfc0\xb9\x8a\x00\x8a\x9e0\
+\x92Y\x09f\xf4\x08\x00\x00\x00\x00\x06\x00\x00\x00$C\
+hange the langua\
+ge of the interf\
+ace\x07\x00\x00\x00\x0bOptionFr\
+ame\x01\x03\x00\x00\x00*0\xa40\xf30\xbf0\
+\xd50\xa70\xfc0\xb9\x88hy:0n0\xb90\
+\xb10\xfc0\xea0\xf30\xb0k\xd4s\x870\x92Y\
+\x09f\xf4\x08\x00\x00\x00\x00\x06\x00\x00\x00)Cha\
 nge the scaling \
 ratio of the int\
 erface\x07\x00\x00\x00\x0bOptio\
-nFrame\x01\x03\x00\x00\x00\x16f\xf4e9\
-uL\x97bf>y:v\x84N;\x98\x98\x98\x9c\
-\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00'Chan\
+nFrame\x01\x03\x00\x00\x00&0\xa40\xf3\
+0\xbf0\xd50\xa70\xfc0\xb9\x88hy:0n\
+0\xc60\xfc0\xde0\xab0\xe90\xfc0\x92Y\x09\
+f\xf4\x08\x00\x00\x00\x00\x06\x00\x00\x00'Chan\
 ge the theme col\
 or of the interf\
 ace\x07\x00\x00\x00\x0bOptionFr\
-ame\x01\x03\x00\x00\x00\x0cf\xf4e9uL\x97\
-bN;\x98\x98\x08\x00\x00\x00\x00\x06\x00\x00\x00&C\
-hange the theme \
-mode of the inte\
-rface\x07\x00\x00\x00\x0bOption\
-Frame\x01\x03\x00\x00\x00\x04m\xf1\x82r\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x04Dark\x07\x00\x00\
-\x00\x0bOptionFrame\x01\x03\x00\
-\x00\x00\x0c\x8d\xdf\x96\x8f|\xfb~\xdf\x8b\xbe\x7fn\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0dFollow \
-System\x07\x00\x00\x00\x0bOptio\
-nFrame\x01\x03\x00\x00\x00\x08uL\x97b\
-\x8b\xed\x8a\x00\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12In\
-terface Language\
-\x07\x00\x00\x00\x0bOptionFrame\
-\x01\x03\x00\x00\x00\x08uL\x97b\x7f)e>\x08\x00\
+ame\x01\x03\x00\x00\x00\x1a0\xa40\xf30\xbf0\
+\xd50\xa70\xfc0\xb90\xc60\xfc0\xde0\x92Y\
+\x09f\xf4\x08\x00\x00\x00\x00\x06\x00\x00\x00&Cha\
+nge the theme mo\
+de of the interf\
+ace\x07\x00\x00\x00\x0bOptionFr\
+ame\x01\x03\x00\x00\x00\x04f\x97\x82r\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x04Dark\x07\x00\x00\x00\x0b\
+OptionFrame\x01\x03\x00\x00\x00\
+\x120\xb70\xb90\xc60\xe0\x8a-[\x9a0k_\
+\x930F\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dFol\
+low System\x07\x00\x00\x00\x0bO\
+ptionFrame\x01\x03\x00\x00\x00\x12\
+0\xa40\xf30\xbf0\xd50\xa70\xfc0\xb9\x8a\x00\
+\x8a\x9e\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Inte\
+rface Language\x07\x00\
+\x00\x00\x0bOptionFrame\x01\x03\
+\x00\x00\x00\x1a0\xa40\xf30\xbf0\xd50\xa70\xfc\
+0\xb90\xb90\xb10\xfc0\xea0\xf30\xb0\x08\x00\
 \x00\x00\x00\x06\x00\x00\x00\x11Interfac\
 e Scaling\x07\x00\x00\x00\x0bOp\
-tionFrame\x01\x03\x00\x00\x00\x08u\
-L\x97b\x8b\xbe\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x12Interface Setti\
-ngs\x07\x00\x00\x00\x0bOptionFr\
-ame\x01\x03\x00\x00\x00\x12uL\x97b\x7f)e\
->k\xd4O\x8b\x8c\x03etN:\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x1dInterface s\
-caling adjusted \
-to\x07\x00\x00\x00\x0bOptionFra\
-me\x01\x03\x00\x00\x00\x04mE\x82r\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x05Light\x07\x00\x00\x00\x0b\
-OptionFrame\x01\x03\x00\x00\x00\
-\x0a\x00R\x00O\x00M\x8b\xbe\x7fn\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0cROM Setting\
-s\x07\x00\x00\x00\x0bOptionFram\
-e\x01\x03\x00\x00\x00\x08z\x0dT\x0e\x91\xcdT/\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0dRestart\
- Later\x07\x00\x00\x00\x0bOptio\
-nFrame\x01\x03\x00\x00\x00\x08s\xb0W(\
-\x91\xcdT/\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bRe\
-start Now\x07\x00\x00\x00\x0bOp\
-tionFrame\x01\x03\x00\x00\x00\x1a\x7f\
-)e>\x5c\x06W(\x91\xcde\xb0T/R\xa8u\
-L\x97bT\x0eu\x1feH\x08\x00\x00\x00\x00\x06\x00\
-\x00\x007Scaling will \
-take effect afte\
-r restarting the\
- interface\x07\x00\x00\x00\x0bO\
-ptionFrame\x01\x03\x00\x00\x00\x08\
-N;\x98\x98\x98\x9c\x82r\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0bTheme Color\x07\x00\x00\
+tionFrame\x01\x03\x00\x00\x00\x120\
+\xa40\xf30\xbf0\xd50\xa70\xfc0\xb9\x8a-[\
+\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Inter\
+face Settings\x07\x00\x00\
 \x00\x0bOptionFrame\x01\x03\x00\
-\x00\x00\x08N;\x98\x98j!_\x0f\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0aTheme Mode\x07\
+\x00\x00\x1c0\xa40\xf30\xbf0\xd50\xa70\xfc0\
+\xb90\xb90\xb10\xfc0\xea0\xf30\xb00\x92\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x1dInterfa\
+ce scaling adjus\
+ted to\x07\x00\x00\x00\x0bOptio\
+nFrame\x01\x03\x00\x00\x00\x04f\x0e\x82r\
+\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Light\x07\
 \x00\x00\x00\x0bOptionFrame\x01\
-\x03\x00\x00\x00\x0e\x91M\x7fn\x00R\x00O\x00M\x8b\
-\xbe\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1aCon\
-figure the ROM s\
-ettings\x07\x00\x00\x00\x07RomC\
-ard\x01\x03\x00\x00\x00\x0a\x00R\x00O\x00M\x8b\
-\xbe\x7fn\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cROM\
- Settings\x07\x00\x00\x00\x07Ro\
-mCard\x01\x03\x00\x00\x00\x10n\x90\x00 \x00\
-R\x00O\x00M\x00 e\x87N\xf6\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0aSource ROM\x07\
+\x03\x00\x00\x00\x0a\x00R\x00O\x00M\x8a-[\x9a\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0cROM Set\
+tings\x07\x00\x00\x00\x0bOption\
+Frame\x01\x03\x00\x00\x00\x0a_\x8c0gQ\
+\x8d\x8dwR\xd5\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dR\
+estart Later\x07\x00\x00\x00\
+\x0bOptionFrame\x01\x03\x00\x00\
+\x00\x0cN\xca0Y0PQ\x8d\x8dwR\xd5\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x0bRestart \
+Now\x07\x00\x00\x00\x0bOptionFr\
+ame\x01\x03\x00\x00\x0060\xb90\xb10\xfc0\
+\xea0\xf30\xb00o0\xa40\xf30\xbf0\xd50\
+\xa70\xfc0\xb90\x92Q\x8d\x8dwR\xd5_\x8c0\
+kg\x09R\xb90k0j0\x8a0~0Y\x08\
+\x00\x00\x00\x00\x06\x00\x00\x007Scaling\
+ will take effec\
+t after restarti\
+ng the interface\
+\x07\x00\x00\x00\x0bOptionFrame\
+\x01\x03\x00\x00\x00\x0c0\xc60\xfc0\xde0\xab0\xe9\
+0\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bThem\
+e Color\x07\x00\x00\x00\x0bOpti\
+onFrame\x01\x03\x00\x00\x00\x0a0\xc60\
+\xfc0\xde\x8a-[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0aTheme Mode\x07\x00\x00\x00\x0b\
+OptionFrame\x01\x03\x00\x00\x00\
+\x0a\x00R\x00O\x00M\x8a-[\x9a\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x1aConfigure t\
+he ROM settings\x07\
 \x00\x00\x00\x07RomCard\x01\x03\x00\x00\x00\
-\x12\x8f\x93Q\xfa\x00 \x00R\x00O\x00M\x00 e\
-\x87N\xf6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aTar\
+\x0a\x00R\x00O\x00M\x8a-[\x9a\x08\x00\x00\x00\x00\
+\x06\x00\x00\x00\x0cROM Setting\
+s\x07\x00\x00\x00\x07RomCard\x01\x03\x00\
+\x00\x00\x14QC\x00 \x00R\x00O\x00M\x00 0\
+\xd50\xa10\xa40\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\
+\x0aSource ROM\x07\x00\x00\x00\x07\
+RomCard\x01\x03\x00\x00\x00\x16Q\xfaR\
+\x9b\x00 \x00R\x00O\x00M\x00 0\xd50\xa10\
+\xa40\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aTar\
 get ROM\x07\x00\x00\x00\x07RomC\
 ard\x01\x03\x00\x00\x00\x04\x88\xc5u2\x08\x00\x00\
 \x00\x00\x06\x00\x00\x00\x05armor\x07\x00\x00\x00\
@@ -44210,1962 +46190,60 @@ me\x01\x03\x00\x00\x00\x04\x00H\x00P\x08\x00\x00\x00\
 \x07\x00\x00\x00\x09UnitFrame\x01\x03\
 \x00\x00\x00\x04\x96PuL\x08\x00\x00\x00\x00\x06\x00\x00\
 \x00\x05limit\x07\x00\x00\x00\x09Unit\
-Frame\x01\x03\x00\x00\x00\x06\x8f\xd0R\xa8`\
+Frame\x01\x03\x00\x00\x00\x06\x90KR\xd5`\
 '\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08mobil\
 ity\x07\x00\x00\x00\x09UnitFram\
-e\x01\x03\x00\x00\x00\x06y\xfbR\xa8R\x9b\x08\x00\x00\
+e\x01\x03\x00\x00\x00\x06y\xfbR\xd5R\x9b\x08\x00\x00\
 \x00\x00\x06\x00\x00\x00\x08movement\x07\
 \x00\x00\x00\x09UnitFrame\x01\x03\x00\
-\x00\x00\x08y\xfbR\xa8|{W\x8b\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0dmovement ty\
-pe\x07\x00\x00\x00\x09UnitFrame\
-\x01\x03\x00\x00\x00\x08\x96\xf6N\xf6c\xd2i\xfd\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0aparts sl\
-ot\x07\x00\x00\x00\x09UnitFrame\
-\x01\x03\x00\x00\x00\x04g:OS\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0arobot name\x07\x00\
-\x00\x00\x09UnitFrame\x01\x03\x00\x00\
-\x00\x04OSy\xef\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04\
-size\x07\x00\x00\x00\x09UnitFra\
-me\x01\
-\x00\x00x\xfa\
-<\
-\xb8d\x18\xca\xef\x9c\x95\xcd!\x1c\xbf`\xa1\xbd\xdd\xa7\
-\x00\x00\x00\x05ja_JPB\x00\x00\x0e\xd8\x00\x00\
-\x04Y\x00\x006\x05\x00\x00\x05;\x00\x00\x02\x8d\x00\x00\
-\x05;\x00\x00V\xa1\x00\x00\x05;\x00\x00\x5cj\x00\x00\
-\x05O\x00\x00\x5cD\x00\x00\x05\x80\x00\x006,\x00\x00\
-H\x02\x00\x00\x05\x9a\x00\x00X\xb4\x00\x00\x02\xdc\x00\x00\
-_\xc3\x00\x00`\xfc\x00\x00h\x02\x00\x005|\x00\x00\
-h\x02\x00\x007\xad\x00\x00sD\x00\x005\x9e\x00\x00\
-y\xb1\x00\x005\xc0\x00\x01\x98A\x00\x00\x15\xfd\x00\x02\
-\x9c\xfb\x00\x00\x06\xae\x00\x04\x8f\x03\x00\x00\x07\xe8\x00\x04\
-\x93\xb5\x00\x00\x00\xd4\x00\x04\xa8\x8b\x00\x00d\x01\x00\x04\
-\xd0%\x00\x00[$\x00\x04\xf65\x00\x00a!\x00\x05\
-\x8b|\x00\x00\x16h\x00\x06\xa5\xa5\x00\x009A\x00\x06\
-\xa6\xa4\x00\x00;\xb4\x00\x07H5\x00\x00A\xbc\x00\x07\
-\xa1\x05\x00\x00F\xa4\x00\x07\xa1\x05\x00\x00i\xd6\x00\x07\
-\xd8,\x00\x005\xe2\x00\x0c\xc0\x0e\x00\x00Ya\x00\x0f\
-|{\x00\x00\x06@\x00 \x82\xe1\x00\x000F\x000\
-\xc8S\x00\x006S\x00>`$\x00\x00C\xa5\x00J\
-6\x95\x00\x00Z\xc6\x00JB\x15\x00\x001\x02\x00K\
-\xc4I\x00\x00\x0c\x8c\x00N\x8b\xbe\x00\x00\x02h\x00R\
-\xfd\xf4\x00\x00e\x94\x00W\x03d\x00\x00\x5c\xf4\x00Y\
-Yd\x00\x00_\x1c\x00YYd\x00\x00ar\x00Z\
-T\x97\x00\x00a\x9e\x00Z\xc6\xc2\x00\x00'\x92\x00h\
-\x94b\x00\x008\x06\x00h\x94b\x00\x00hA\x00m\
-'\xe3\x00\x00=\xd8\x00s\x04\x04\x00\x00?%\x00s\
-\x04\x04\x00\x00h\xbc\x00s\x18S\x00\x00\x07x\x00z\
- ,\x00\x00F\xcf\x00z3\xad\x00\x00\x08~\x00z\
-g\x95\x00\x00H\xf5\x00|\x82\xf4\x00\x00T\xeb\x00}\
-\x8a\xc2\x00\x00UE\x00~\xf0\xfd\x00\x00^\xe5\x00\x9f\
-\x94\x04\x00\x00\x11D\x00\xc4\xab\xaf\x00\x00+\xd8\x00\xdc\
-\x80\xcc\x00\x00C\xd7\x01\x01\xe3\xd7\x00\x00d\xac\x01\x01\
-\xe7\x94\x00\x00\x0a\xf9\x01\x0b\x83\xb5\x00\x00A\x84\x01\x0b\
-\x83\xb5\x00\x00i;\x01\x0f\x9bn\x00\x00\x05\xc0\x01\x19\
-`\xfe\x00\x00\x10L\x01\x1e|\xf2\x00\x004@\x01+\
-\x06\x83\x00\x00;<\x01,BQ\x00\x00\x18\xab\x012\
-e\xbf\x00\x00X\xf7\x018\x13s\x00\x00I\x1d\x01T\
-_\xec\x00\x00\x19Q\x01`\xf9w\x00\x005A\x01n\
-\xe8\xbe\x00\x002\x86\x01\x80@\x87\x00\x00\x0d\x9e\x01\x96\
-'\xe9\x00\x00.\x1b\x01\x97\xbb\xfd\x00\x00\x162\x01\xa2\
-f\xfa\x00\x00\x0b\xb0\x01\xb9\x17x\x00\x008\xcb\x01\xd0\
-m\x82\x00\x00\x0dj\x01\xd5\xc5\xbc\x00\x00I\x90\x01\xde\
-\x90\xa4\x00\x00I\xc7\x01\xdf\xa13\x00\x00X\x00\x01\xf0\
-X\x83\x00\x00\x03i\x01\xf0\xfa\xa3\x00\x00\x03\xa5\x02\x08\
-;\xc5\x00\x00b\xc1\x02B\xaa\x92\x00\x002\xf4\x02M\
-\xe4.\x00\x00\x1cV\x02M\xe4>\x00\x00\x1b\xf1\x02M\
-\xe9\x8e\x00\x00#\xd2\x02V\xbd\x00\x00\x00N\xa1\x02V\
-\xbd\x01\x00\x00N\xd3\x02V\xbd\x02\x00\x00O\x05\x02V\
-\xbd\x03\x00\x00O7\x02V\xbd\x04\x00\x00Oi\x02V\
-\xbd\x05\x00\x00O\x9b\x02V\xbd\x06\x00\x00O\xcd\x02V\
-\xbd\x07\x00\x00O\xff\x02V\xbd\x08\x00\x00P1\x02V\
-\xbd\x09\x00\x00Pc\x02V\xbd\x10\x00\x00L\xad\x02V\
-\xbd\x11\x00\x00L\xdf\x02V\xbd\x12\x00\x00M\x11\x02V\
-\xbd\x13\x00\x00MC\x02V\xbd\x14\x00\x00Mu\x02V\
-\xbd\x15\x00\x00M\xa7\x02V\xbd\x16\x00\x00M\xd9\x02V\
-\xbd\x17\x00\x00N\x0b\x02V\xbd\x18\x00\x00N=\x02V\
-\xbd\x19\x00\x00No\x02V\xbd \x00\x00R\x89\x02V\
-\xbd!\x00\x00R\xbb\x02V\xbd\x22\x00\x00R\xed\x02V\
-\xbd#\x00\x00S\x1f\x02V\xbd$\x00\x00SQ\x02V\
-\xbd%\x00\x00S\x83\x02V\xbd&\x00\x00S\xb5\x02V\
-\xbd'\x00\x00S\xe7\x02V\xbd(\x00\x00T\x19\x02V\
-\xbd)\x00\x00TK\x02V\xbd0\x00\x00P\x95\x02V\
-\xbd1\x00\x00P\xc7\x02V\xbd2\x00\x00P\xf9\x02V\
-\xbd3\x00\x00Q+\x02V\xbd4\x00\x00Q]\x02V\
-\xbd5\x00\x00Q\x8f\x02V\xbd6\x00\x00Q\xc1\x02V\
-\xbd7\x00\x00Q\xf3\x02V\xbd8\x00\x00R%\x02V\
-\xbd9\x00\x00RW\x02V\xbda\x00\x00J\xeb\x02V\
-\xbdb\x00\x00K\x1d\x02V\xbdc\x00\x00KO\x02V\
-\xbdd\x00\x00K\x81\x02V\xbde\x00\x00K\xb3\x02V\
-\xbdf\x00\x00K\xe5\x02V\xbdg\x00\x00L\x17\x02V\
-\xbdh\x00\x00LI\x02V\xbdi\x00\x00L{\x02V\
-\xbd\xd0\x00\x00T}\x02Z:\xc4\x00\x002\x04\x02\x8e\
-\xc9\x11\x00\x00F\xf9\x02\x8e\xc9\x12\x00\x00G,\x02\x8e\
-\xc9\x13\x00\x00G_\x02\x8e\xc9\x14\x00\x00G\x92\x02\x8e\
-\xc9\x15\x00\x00G\xc5\x02\x8e\xc9\x16\x00\x00G\xf8\x02\x8e\
-\xc9\x17\x00\x00H+\x02\x8e\xc9\x18\x00\x00H^\x02\x8e\
-\xc9\x19\x00\x00H\x91\x02\x93\xb0u\x00\x001\xc5\x02\xa9\
-\xca\xd7\x00\x00\x09\xe8\x02\xbc\x10b\x00\x00)\xde\x02\xc0\
-\xe6%\x00\x00:R\x02\xc0\xeb!\x00\x00:\xc5\x02\xcd\
-5\x9f\x00\x00e;\x02\xd2\xdd\xe4\x00\x00'\xfe\x02\xdd\
-\xd6\x09\x00\x00\x11\xbd\x02\xe2\xe65\x00\x00H\xc4\x02\xe7\
-+\xf5\x00\x00>A\x03\x05q\xc2\x00\x00\x16\x91\x03$\
-\xe4\x85\x00\x00\x01&\x03$\xe4\x85\x00\x00c4\x03:\
-\xd0\x01\x00\x00&(\x03:\xd0\x02\x00\x00&a\x03:\
-\xd0\x03\x00\x00&\x9a\x03D\xaa\x83\x00\x00\x034\x03T\
-\x9c\x7f\x00\x00\x17R\x03r\xabe\x00\x00g%\x03\x81\
-)\xc1\x00\x00*\x9a\x03\xc2\x13\xd3\x00\x003\xbc\x03\xc4\
-\xcct\x00\x00\x00K\x03\xca\x97\x85\x00\x00\x5c\x17\x03\xca\
-\x97\xa5\x00\x00@\xb1\x03\xca\x97\xa5\x00\x00b/\x03\xd1\
-\x22r\x00\x00E\x0d\x03\xd7E\xf2\x00\x00\x01\x91\x04\x03\
-R\xb2\x00\x00*\xe1\x04\x04'\xa2\x00\x00\x05\x1d\x04^\
-\xe3y\x00\x00\x15\x10\x04\x81\xe5\xd5\x00\x00\x07\xac\x04\x87\
-wq\x00\x00\x0f\xd6\x04\x98I\xbc\x00\x00\x00\xf8\x04\x98\
-I\xbc\x00\x00Z\x98\x04\x99n\x95\x00\x00V1\x04\xd4\
-G\xb4\x00\x00EN\x04\xe6\x88^\x00\x00\x10\x1f\x04\xe7\
-Q\xb2\x00\x00J\xa3\x04\xf5\x90\xf1\x00\x00'\xbe\x04\xfd\
-\xa7\x85\x00\x00fa\x05\x06kT\x00\x00\x0a\xc1\x05\x07\
-\x9c\x8f\x00\x00\x12z\x05\x07\xde\xd5\x00\x00\x00\x00\x05N\
-\x13\x1c\x00\x00)D\x05`\x10\x1e\x00\x00\x0a\x8a\x05a\
-\x05t\x00\x00_u\x05l\x01\xa4\x00\x00\x0e\x13\x05l\
-V\x89\x00\x00\x13\x89\x05\x80\xebt\x00\x00,i\x05\x90\
-7\xf9\x00\x00@\xeb\x05\x907\xf9\x00\x00h\xe3\x05\x9d\
-\x8a\xd5\x00\x00<O\x05\xa2\x1b\xe3\x00\x007u\x05\xa8\
-\x1a\x02\x00\x00.\xb2\x05\xc6=\xf3\x00\x00d\xf7\x05\xc8\
-u\x84\x00\x00\x06\xe9\x05\xcd\xcc\xff\x00\x00<\xb2\x05\xd0\
-\x1b4\x00\x00,\xa1\x05\xd4Ad\x00\x00\x17\xb2\x05\xe2\
-\xe6\xec\x00\x00\x040\x05\xea:\xa4\x00\x00\x15S\x05\xed\
-\x13\x94\x00\x002F\x05\xf0\x10\x1e\x00\x00-\x1d\x06\x00\
-\xb9\xc5\x00\x00X\xbe\x06\x01\x92E\x00\x00Fr\x06\x1f\
-}T\x00\x00\x04\xa7\x06/\x84\x92\x00\x00J`\x06:\
-3\xf3\x00\x00\x14\x95\x06A\xec\xdf\x00\x00\x05Y\x06C\
-\xbc\x1f\x00\x00`f\x06N\xfab\x00\x00\x026\x06a\
-I\xbe\x00\x00\x18.\x06b\xd3\xa5\x00\x00D\x9e\x06b\
-\xd3\xa5\x00\x00i\xa6\x06c\xab!\x00\x00\x17\x12\x06g\
-\xa0\xe9\x00\x00\x02\xb1\x06l;\xf4\x00\x00[\x97\x06{\
-\x06\x03\x00\x00aH\x06}\x00E\x00\x00U\xa2\x06\x8c\
-\xc9\x9b\x00\x00B\x83\x06\x9b\x11\xc3\x00\x00,!\x06\xa6\
-8\x84\x00\x009l\x06\xa87\xd5\x00\x00<\x85\x06\xb2\
-\xde\xb1\x00\x00'Q\x06\xb3xC\x00\x00IT\x06\xb5\
-a\x83\x00\x00\x11\x05\x06\xbc~\x93\x00\x009\x02\x06\xc3\
-7\x9d\x00\x00BC\x06\xc4\xc8\xe9\x00\x00=M\x06\xc4\
-\xc8\xe9\x00\x00hh\x06\xc9\xef\xbe\x00\x00)\x03\x06\xcc\
-=\x14\x00\x00AU\x06\xcc=\x14\x00\x00i\x0f\x06\xe7\
-i\xe4\x00\x00\x11}\x06\xe9lD\x00\x00>\xa2\x06\xeb\
-\xfd\xf4\x00\x00>\xcb\x07\x00\xcfO\x00\x00_\xd0\x07\x06\
-\xf45\x00\x00\x09>\x07\x08\xb0\xb2\x00\x00\x03\xe1\x07\x0f\
-4\xce\x00\x00[\xdb\x07\x14\xcfR\x00\x00\x02\xff\x07\x14\
-\xcfR\x00\x00f\xee\x07\x1a\xf6\xf2\x00\x00U\x15\x07\x1f\
-\xf0u\x00\x00\x5c\xbb\x07,)\x18\x00\x007\x13\x07H\
-\xbc\x85\x00\x00A\xe5\x07V\x08\xe4\x00\x00\x13\xbf\x07s\
-\x15\xd3\x00\x00>\xf6\x07s\x15\xd3\x00\x00h\x90\x07z\
-\x16%\x00\x00D\x17\x07\x7f\xff\xe4\x00\x00;}\x07\x80\
-.\x84\x00\x00A\x1a\x07\x88M\xb4\x00\x00CM\x07\x89\
-w\xe4\x00\x00\x13\x18\x07\x8aV2\x00\x009\xcb\x07\x8a\
-\xe0Q\x00\x00D\xd1\x07\x9b$\x13\x00\x008^\x07\x9c\
-\x8f\xc3\x00\x00FA\x07\xa4\xdbU\x00\x00?\xff\x07\xb3\
-\xaf\xc3\x00\x00Um\x07\xb6\x97#\x00\x00?\x80\x07\xb6\
-\xa8\xc1\x00\x006\xe1\x07\xb70\xc4\x00\x007C\x07\xd2\
-gc\x00\x00gY\x07\xd7lN\x00\x0038\x07\xd7\
-\xe3.\x00\x004\x04\x07\xdb\xfd\xf4\x00\x00V\x06\x07\xea\
-\xae\xbd\x00\x00Z\xef\x07\xfaWu\x00\x004\xec\x08\x03\
-\xe9\xf1\x00\x00\x09\xab\x08\x0c\x14\x8e\x00\x00Y\xef\x08\x16\
-\xfd\xad\x00\x00-\xe0\x083\xf4\x17\x00\x00(4\x087\
-l\xc1\x00\x00.c\x08@J\x9e\x00\x00]\xaa\x08n\
-\xbb\xf9\x00\x00+\x1b\x08o\x17b\x00\x00a\xca\x08z\
-V\x97\x00\x00@>\x08{j.\x00\x00\x15\xbf\x08\x8d\
-\xc1\xd8\x00\x00J\x02\x08\x8d\xc1\xd9\x00\x00J1\x08\x8f\
-K\xc3\x00\x003\x85\x08\x92\xf1\xfd\x00\x00g\xcb\x08\xce\
-\x9f\xc7\x00\x00f*\x08\xcf\x0b\xfe\x00\x00;\x00\x08\xd3\
-\x9cm\x00\x00d)\x08\xf0\xe7\xa1\x00\x00)\x90\x09\x0a\
-\xff\xdc\x00\x00;\xdd\x09\x0e\xea\x92\x00\x00\x0d\xcf\x09&\
-63\x00\x00T\xaf\x09B\xcb\xfe\x00\x00+c\x09[\
-=\xa2\x00\x00\x08\xb3\x09c[\xc5\x00\x00\x15\x90\x09g\
-%\xae\x00\x00V\xcb\x09mg\xfe\x00\x00<\xe7\x09q\
-tT\x00\x00\x18\xe0\x09\x7fR\x95\x00\x00?O\x09\x9b\
-\xc0\xe2\x00\x00\x0c\xe8\x09\xac\x81\xd9\x00\x006\x85\x09\xb1\
-.\xd0\x00\x00\x09\x05\x09\xc4\x8do\x00\x00_G\x09\xc6\
-\x0e\x93\x00\x00<\x16\x09\xc9\x11s\x00\x00e\xbd\x09\xc9\
-\x11s\x00\x00g\x99\x09\xe0\xb9\xd5\x00\x00/F\x09\xf5\
-\xban\x00\x00\x19\x1b\x0a\x0c*\xf5\x00\x00c\xa1\x0a\x12\
-\x96^\x00\x00/\x84\x0a \x99\x1f\x00\x00X6\x0a.\
-\x09U\x00\x00\x12\xda\x0a.oL\x00\x00\x0aM\x0a=\
-\x0e\x95\x00\x00Wk\x0aC\xa7\xd4\x00\x00\x0b4\x0aH\
-\x05C\x00\x00[N\x0aLh\xb3\x00\x00?\xbf\x0aV\
-\xb5\xb1\x00\x00\x13L\x0ag\x86c\x00\x00\x04p\x0a}\
-v \x00\x00\x22j\x0a}v!\x00\x00\x22\x97\x0a}\
-v\x22\x00\x00\x22\xc4\x0a}v#\x00\x00\x22\xf1\x0a}\
-v$\x00\x00#\x1e\x0a}v%\x00\x00#K\x0a}\
-v&\x00\x00#x\x0a}v'\x00\x00#\xa5\x0a}\
-v(\x00\x00$\x0c\x0a}v)\x00\x00$9\x0a}\
-v0\x00\x00$\x90\x0a}v1\x00\x00$\xbd\x0a}\
-v5\x00\x00%\xce\x0a}v6\x00\x00%\xfb\x0a}\
-v\xc0\x00\x00\x1e\x92\x0a}v\xc1\x00\x00\x1e\xbf\x0a}\
-v\xc2\x00\x00\x1e\xec\x0a}v\xc3\x00\x00\x1f\x19\x0a}\
-v\xc4\x00\x00\x1fF\x0a}v\xc5\x00\x00\x1fs\x0a}\
-v\xc6\x00\x00\x1f\xa0\x0a}v\xc7\x00\x00\x1f\xcd\x0a}\
-v\xc8\x00\x00\x1f\xfa\x0a}v\xc9\x00\x00 '\x0a}\
-v\xd0\x00\x00 ~\x0a}v\xd1\x00\x00 \xab\x0a}\
-v\xd2\x00\x00 \xd8\x0a}v\xd3\x00\x00!\x05\x0a}\
-v\xd4\x00\x00!2\x0a}v\xd5\x00\x00!_\x0a}\
-v\xd6\x00\x00!\x8c\x0a}v\xd7\x00\x00!\xb9\x0a}\
-v\xd8\x00\x00!\xe6\x0a}v\xd9\x00\x00\x22\x13\x0a}\
-v\xe0\x00\x00\x19\xd8\x0a}v\xe1\x00\x00\x1a\x05\x0a}\
-v\xe2\x00\x00\x1a2\x0a}v\xe3\x00\x00\x1a_\x0a}\
-v\xe4\x00\x00\x1a\x8c\x0a}v\xe5\x00\x00\x1a\xb9\x0a}\
-v\xe6\x00\x00\x1a\xe6\x0a}v\xe7\x00\x00\x1b\x13\x0a}\
-v\xe8\x00\x00\x1b@\x0a}v\xe9\x00\x00\x1bm\x0a}\
-v\xf0\x00\x00\x1b\xc4\x0a}v\xf1\x00\x00\x1c)\x0a}\
-v\xf2\x00\x00\x1c\x8e\x0a}v\xf3\x00\x00\x1c\xbb\x0a}\
-v\xf4\x00\x00\x1dZ\x0a}v\xf5\x00\x00\x1d\x87\x0a}\
-v\xf6\x00\x00\x1d\xb4\x0a}v\xf7\x00\x00\x1d\xe1\x0a}\
-v\xf8\x00\x00\x1e\x0e\x0a}v\xf9\x00\x00\x1e;\x0a\x82\
-\x10D\x00\x000\xb6\x0a\x8dj\xdf\x00\x00\x0c\x03\x0a\xa7\
-\xd7`\x00\x00\x19\x84\x0a\xa7\xd7a\x00\x00\x19\xae\x0a\xa7\
-\xd7b\x00\x00\x1b\x9a\x0a\xa7\xd7c\x00\x00\x1eh\x0a\xa7\
-\xd7d\x00\x00 T\x0a\xa7\xd7e\x00\x00\x22@\x0a\xa7\
-\xd7f\x00\x00$f\x0a\xa7\xd7g\x00\x00&\xd3\x0a\xa7\
-\xd7h\x00\x00&\xfd\x0a\xa7\xd7i\x00\x00''\x0a\xbd\
-\x12U\x00\x00(\x88\x0a\xd7\xdfr\x00\x00\x08\x11\x0a\xf4\
-lt\x00\x00\x0e\xe4\x0b\x13\x14R\x00\x00\x0fa\x0b<\
-\x02^\x00\x00/\x0a\x0bQ\x0b\xf4\x00\x00B\xe7\x0bQ\
-\x0b\xf4\x00\x00ip\x0b\x5cA'\x00\x00\x0eS\x0bh\
-\x94c\x00\x004\xa1\x0bjn$\x00\x006\xb2\x0bz\
-\xa9\xde\x00\x00Cx\x0b\x8f\x03\xf5\x00\x007\xd3\x0b\x8f\
-\xd6\x05\x00\x00\x18c\x0b\x8f\xf4\x15\x00\x0080\x0b\xa4\
-\x0a\x88\x00\x00V_\x0b\xb6\xa1\xa4\x00\x00\x10\x83\x0b\xc7\
-\x0a2\x00\x00\x01\xc3\x0b\xcf\xb4\x13\x00\x00\x11\xf8\x0b\xe0\
-d\xff\x00\x00\x06s\x0b\xecL\x03\x00\x00\x09r\x0b\xfa\
-\x1b\xa3\x00\x00\x04\xd9\x0c\x09\x80\x0f\x00\x000\x7f\x0c\x0e\
-Tt\x00\x00:\x8d\x0c\x18\x15\x81\x00\x00E\xc3\x0c\x18\
-\x15\x82\x00\x00F\x02\x0c\x1a\xd3b\x00\x00\x0c\xb4\x0c3\
-B\xe5\x00\x00>u\x0c:\xd0\x01\x00\x00%\x5c\x0c:\
-\xd0\x02\x00\x00%\x95\x0c=u\xfe\x00\x00\x074\x0cG\
-\xd2\xd4\x00\x00^5\x0cJ\xe2\xe3\x00\x00W\xa8\x0cO\
-\xcf\xe4\x00\x002\xcc\x0cd\x0eE\x00\x00\x12=\x0ce\
-\xfe\xce\x00\x00-\x9d\x0cgAU\x00\x00C \x0c\x9e\
-\xe6e\x00\x00\x5c\x8e\x0c\xa9\x99\xb8\x00\x00-\x5c\x0c\xc0\
-`\x97\x00\x000\x02\x0c\xc2K\xb5\x00\x00\x14N\x0c\xc8\
-\x93\xd2\x00\x00*_\x0c\xc8\xa0>\x00\x00=\xac\x0c\xce\
-\x94\x7f\x00\x00@|\x0c\xcf\xe5\x0e\x00\x00/\xc7\x0c\xd6\
-\xef\x12\x00\x00\x01\xfb\x0c\xe2\xd4\xd2\x00\x00\x0b{\x0c\xf8\
-\x07\x05\x00\x00be\x0d\x01_\xc4\x00\x008\x95\x0d\x0b\
-\xfct\x00\x009\x97\x0d\x11>N\x00\x00=\x17\x0d@\
-\x06\xe9\x00\x001\x88\x0dd\x88\x22\x00\x00\x0f\xa3\x0d\x8f\
-\xb9\x9e\x00\x00]!\x0d\x97Z\xe3\x00\x00\x0e\x9e\x0d\xaa\
-|\xf5\x00\x00\x16\xce\x0d\xb8v#\x00\x00U\xd4\x0d\xc3\
-\xff\xbd\x00\x00h\x05\x0d\xe7|\xee\x00\x00\x13\xf9\x0e\x07\
-A\xa5\x00\x00B\xb6\x0e\x07\x84\x95\x00\x00*\x14\x0e\x18\
-\xbe\xf1\x00\x00\x0d8\x0e\x18\xce\xcd\x00\x00^\x88\x0e\x19\
-x\xfc\x00\x00\x12\xa7\x0e#\xd10\x00\x00>\x04\x0e+\
-Os\x00\x00\x17\xeb\x0e22\x22\x00\x00(\xc5\x0e9\
-k\xb3\x00\x00,\xe3\x0e:\xd0\x01\x00\x00$\xea\x0e:\
-\xd0\x02\x00\x00%#\x0eg\xd7\xf3\x00\x00\x05\xf2\x0er\
-jB\x00\x00\x14\xcc\x0e\x94m\x08\x00\x00\x0cI\x0e\x98\
-\x22\x02\x00\x00e\xf3\x0e\xda\xea$\x00\x00=x\x0f\x16\
-\xa2\xee\x00\x00\x0f\x22\x0f2nu\x00\x00dh\x0f:\
-\xd0\xc1\x00\x00\x1c\xe8\x0f:\xd0\xc2\x00\x00\x1d!\x0ff\
-aT\x00\x00E\x89\x0f\x96\x99M\x00\x00+\x9e\x0f\x9d\
-\x0cr\x00\x001R\x0f\xa2Au\x00\x00B\x10\x0f\xb3\
-V,\x00\x00DU\x0f\xcdk\xe2\x00\x00:\x0c\x0f\xdc\
-\x9a\x93\x00\x00\x10\xb8i\x00\x00i\xfe\x03\x00\x00\x00\x16\
-0\xad0\xe30\xc30\xb70\xe50\x92\x81\xeaR\xd5\
-0\xaf0\xea0\xa2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10\
-Auto clear cache\
-\x07\x00\x00\x00\x10CleanSettin\
-gCard\x01\x03\x00\x00\x00D\x00R\x00O\x00\
-M\x00 Q\x8di\xcb{\xc9_\x8c0k0\xad0\
-\xe30\xc30\xb70\xe50\x92\x81\xeaR\xd50\xaf0\
-\xea0\xa2\xff\x08k!V\xdeY\x09f\xf4fB0\
-oQ\x8d\x5cU\x95\x8b0L_\xc5\x89\x81\xff\x09\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00 Clear c\
-ache after ROM i\
-s rebuilt\x07\x00\x00\x00\x10Cl\
-eanSettingCard\x01\x03\
-\x00\x00\x00\x02\x97R\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04\
-Blue\x07\x00\x00\x00\x09ColorCa\
-rd\x01\x03\x00\x00\x00\x0a0\xad0\xe30\xf30\xbb\
-0\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Canc\
-el\x07\x00\x00\x00\x09ColorCard\
-\x01\x03\x00\x00\x00&0\xa40\xf30\xbf0\xd50\xa7\
-0\xfc0\xb9\x88hy:0n0\xc60\xfc0\xde\
-0\xab0\xe90\xfc0\x92Y\x09f\xf4\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00'Change the\
- theme color of \
-the interface\x07\x00\x00\
-\x00\x09ColorCard\x01\x03\x00\x00\x00\
-\x08\x82r0\x92\x90xb\x9e\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0cChoose Color\x07\
-\x00\x00\x00\x09ColorCard\x01\x03\x00\
-\x00\x00\x0e0\xab0\xb90\xbf0\xe00\xab0\xe90\
-\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cCusto\
-m color\x07\x00\x00\x00\x09Colo\
-rCard\x01\x03\x00\x00\x00\x100\xc70\xd50\
-\xa90\xeb0\xc80\xab0\xe90\xfc\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0dDefault col\
-or\x07\x00\x00\x00\x09ColorCard\
-\x01\x03\x00\x00\x00\x0a0\xab0\xe90\xfc}\xe8\x96\xc6\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aEdit C\
-olor\x07\x00\x00\x00\x09ColorCa\
-rd\x01\x03\x00\x00\x00\x02}\xd1\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x05Green\x07\x00\x00\x00\x09Co\
-lorCard\x01\x03\x00\x00\x00\x04x\xba\x8a\
-\x8d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02OK\x07\x00\x00\
-\x00\x09ColorCard\x01\x03\x00\x00\x00\
-\x06\x90\x0ff\x0e^\xa6\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x07Opacity\x07\x00\x00\x00\x09Col\
-orCard\x01\x03\x00\x00\x00\x02\x8dd\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x03Red\x07\x00\x00\x00\x09\
-ColorCard\x01\x03\x00\x00\x00\x0c0\
-\xc60\xfc0\xde0\xab0\xe90\xfc\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0bTheme Color\
-\x07\x00\x00\x00\x09ColorCard\x01\x03\
-\x00\x00\x00\x12\xff%\xff6\xff!\xff\x12OST\x0c\
-fBe;d\x83\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06\
-2 EVAs\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0eq\x9f}\xf4^\xa6\xff\
-\x14\xff\x15g*n\x80\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x1145 or Less Poin\
-ts\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0eq\x9f}\xf4^\xa6\xff\x14\xff\x15N\
-\xe5N\x0a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1145 \
-or More Points\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x12lzb&0\x01{,\xff\x12e\xb0gqN\
-\xac^\x02\x08\x00\x00\x00\x00\x06\x00\x00\x00 A D\
-ecisive Battle I\
-n New Tokyo 2\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x12\
-y^0K0\x01`\xaa\x9bT0K0\xfb0\xfb\
-0\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11A Go\
-d, Or A Devil\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-\x91\xceg\x1b0nu7\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x12A Man Of Ambit\
-ions\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08u70nb&0D\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0dA Man's\
- Fight\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x120\xa20\xaf0\xb70\
-\xba0K0\x890nO\x7f\x80\x05\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x15A Messenger\
- From Axis\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0ar60\
-h0n}\x04g_\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x15A Promise With \
-Father\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0eY)O\x7f0n\x8f\
-*0nN\x0a0g\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x16Above The Angel\
-'s Halo\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x06\x00A\x00i\x00r\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03Air\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
-0\xa20\xe00\xedQ\x8d0s\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0bAmuro Again\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0cY)eu0h0n\x90m\x90G\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00%An Encou\
-nter With Our Na\
-tural Enemies\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
-O\x7f_\x920\x01\x89rge\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0cAngel Attack\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x140\xa80\xf30\xb80\xa70\xeb0\xfb0\
-\xcf0\xa40\xed0\xa5\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0aAngel Halo\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x120\xa2\
-0\xfc0\xe00\xc90\xfb0\xa20\xbf0\xc30\xaf\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cArmed \
-Attack\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x10_7\x89r0\x01\x96\
-;kb\x96PuLp\xb9\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x1eAssault On Th\
-e Final Safeguar\
-d\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x120[0\x810f0\x01N\xba\x95\x93\
-0\x890W0O\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15\
-At Least, To Be \
-Human\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0a\x80Vb&X\xeb0_\
-0a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dAura\
- Battlers\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x0ev\xee\x89\x9a\
-0\x810\x880\x01R\xc7\x80\x05\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x11Awaken, Brav\
-e One\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x080\xa20\xaf0\xb70\xba\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04Axis\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x22sc0\x92\x8d\x850H0\x01N\xba0\x92\x8d\
-\x850H0\x010D0g0\x88y^0nb\
-&X\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00.Bey\
-ond Beast, Beyon\
-d Man, Become Go\
-d's Warrior\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0c\x9e\xd2\
-0D0\xac0\xf30\xc00\xe0\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0cBlack Gundam\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x12R\xdd\x80\x050heW\x80\x050ky\
-]y\x8f0\x92\x08\x00\x00\x00\x00\x06\x00\x00\x00#B\
-lessings Upon Th\
-e Winner And Los\
-er\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x120\xd60\xfc0\xd30\xfc0\xfb0\
-\xc80\xe90\xc30\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0aBooby Trap\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0cR\x9b\
-0Z0O0gd\x83\x90\x00\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0bBrute Force\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x100\xd00\xa40\xd00\xa40\xfb0\xde0\xeb\
-0\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cBye \
-Bye Mars\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x12\xff%\xff6\xff\
-!0gS\xd70Qkb0\x810\x8b\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0eCatch wit\
-h EVA\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00$o\xc0z\x81\xff\x010\xb2\
-0\xc30\xbf0\xfc0\xed0\xdc\xff6\xff30\xb2\
-0\xc30\xbf0\xfc0\xed0\xdc\xff'\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00$Clash! Get\
-ter Robo vs. Get\
-ter Robo G\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x10\x92\xfc\x92\
-D0n0\xb30\xaf0\xd40\xc30\xc8\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x10Cockpit o\
-f Steel\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x100\xab0\xa60\xf3\
-0\xc80\xfb0\xc00\xa60\xf3\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0aCount Down\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x100\xaf0\xed0\xb90\xfb0\xd50\xa10\xa40\
-\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bCross\
- Fight\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x120\xaf0\xed0\xb90\
-\xfb0\xbf0\xfc0\xb20\xc30\xc8\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0cCross Targe\
-t\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x180\xaf0\xed0\xb90\xdc0\xfc0\xf3\
-0\xfb0\xd00\xf30\xac0\xfc0\xc9\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x12Crossbone \
-Vanguard\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0c0\xc00\xab0\
-\xfc0\xeb0ne\xe5\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0cDay Of Dakar\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x14\
-0\xde0\xb80\xf30\xac0\xfc\xff:}vOS\
-}vT}\x08\x00\x00\x00\x00\x06\x00\x00\x00\x22De\
-sperate Situatio\
-n For Mazinger Z\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x14a\x1b0\xfb0J0|0H0f0\
-D0~0Y0K\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x15Do You Remember\
- Love?\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x14W0t\x030\x92\x8c\
-\xed0Q0_N\x00\x9a\x0e\x8a\x0e0a\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x12Duel For \
-The Earth\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x060\xc00\xdf\
-0\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Dumm\
-y\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0c\xff%\xff6\xff!_\x10S\xf7j_\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bEVA Un\
-it-02\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x16\xff%\xff6\xff!_\x10\
-S\xf7j_\xff\x0fiugqW\xfaW0\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x1dEVA Unit\
--02 / Far East S\
-ector\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0a0\xa80\xec0n\x97\x0a\
-R\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bElle\
-'s Aura\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08iugqW\xfa\
-W0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fFar \
-East Sector\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08\x90K\
-T}0nw\xe2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0c\
-Fate's Arrow\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0er\
-60\x88W0t\x030o\x8f\xd10D\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x19Father, T\
-he Earth Is Near\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x160\xd50\xa10\xfc0\xb90\xc80\xfb0\
-\xb30\xf30\xbf0\xaf0\xc8\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0dFirst Contact\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x140S0nf\x1f0nf\x0ee\xe50\
-n0_0\x810k\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x1aFor This Planet\
-'s Tomorrow\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x12\x8a\xb0\
-0L0_0\x810k\x94\x180o\x9c\xf40\x8b\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17For Wh\
-om The Bell Toll\
-s\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x10b&0D0o\x8a\xb00n0_\
-0\x810k\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Fo\
-r Whom We Fight\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x10up\x90\xa6N\xba0_0a0n^0\
-\x90\x84\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Fore\
-igners' Return\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x10g(f\x1f0K0\x890n\x90\x03N\xa1\x80\
-\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15Fugit\
-ive From Jupiter\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0c\xff'\xff2[\xfe\xff'\xff2\xff\x12\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0aGR vs. \
-GR2\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x180\xb20\xc30\xbf0\xfc0\xc1\
-0\xfc0\xe0Q\xfad\x830[0\x88\xff\x01\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x14Getter T\
-eam, Launch!\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0a0\
-\xb40\xe90\xaa0\xf3\x96\x8a\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x06Goraon\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x100\xb00\xe9\
-0\xf30\xfb0\xac0\xe90\xf3\x96\x8a\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0aGran-Garan\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0c0\xac0\xf30\xc00\xe0_7Yj\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0cGundam \
-Theft\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x120\xac0\xf30\xc00\xe0\
-0\x01f\x1f0nmw0x\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x1eGundam, Go T\
-o The Sea Of Sta\
-rs\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0a\x98\xa80\x92T|0v\x80\x05\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x18He Who \
-Summons The Wind\
-s\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x0c\x96\xa00U0\x8c0_k\xbaa\x0f\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10Hidden\
- Bloodlust\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0e{,N\
-\x8ck!v\xf4N\x0aO\x1ab&\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x15His Second \
-Engagement\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x100\xdb0\
-\xf30\xb30\xf30\xfb0\xb70\xc60\xa3\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0eHong Kong\
- City\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x100\xa40\xf30\xb00\xe9\
-0\xe00nw\x1fa\x0f\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x18Ingram's True \
-Intentions\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0ab&0\
-D0nmw0x\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x16Into The Sea Of\
- Battle\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x0a0\xb80\xe30\xd6\
-0\xed0\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Ja\
-buro\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08s\x8bV\xfd])X\xca\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0eKingdom\
-'s Fall\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x100\xea0\xac0\xfb\
-0\xdf0\xea0\xc60\xa30\xa2\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x11League Milli\
-taire\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0a0\xea0\xa30\xca0n\
-\x88@\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dLein\
-a's Blood\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x120\xec0\xc3\
-0\xc4\xff\x010\xb30\xf30\xd00\xa40\xf3\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0eLet's Co\
-mbine!\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0e0\xea0\xf30\xfb0\
-\xdf0\xf30\xe10\xa4\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0bLynn Minmay\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x0a0\
-\xde0\xb70\xf3\x5cU\x95\x8b\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x13Machine Devel\
-opment\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x180\xde0\xb80\xf30\
-\xac0\xfc\xff:[\xfef\x97\x9e\xd2Y'\x5c\x06\x8e\
-\xcd\x08\x00\x00\x00\x00\x06\x00\x00\x00 Mazin\
-ger Z vs. Ankoku\
- Dai-Shogun\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0e`\x1d\
-0DQ\xfa0\x92g*ge0x\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x1cMemories T\
-aken To The Futu\
-re\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0e0\xdf0\xb90\xfb0\xde0\xaf0\
-\xed0\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cMis\
-s Macross\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x0ew\xac\x95\x93\
-0\x01_\xc3\x91\xcd0m0f\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x19Moment And H\
-eart Together\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x10\
-N\xba\x98^0k\x90\x030RX40j0W\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16No Esc\
-ape For Humanity\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0e}Bg+0x0nRMYOf\
-\xf2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12Prelu\
-de To The End\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0a\
-0\xd70\xed0\xed0\xfc0\xb0\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08Prologue\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x100\
-\xd70\xeb0h0\xa20\xaf0\xb70\xba0h\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x11Puru, A\
-xis and...\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0cYss\
-\x8b0\xea0\xea0\xfc0\xca\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0cQueen Relena\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x100\xe90\xfc0\xfb0\xab0\xa40\xe90\xe0\
-\x96\x8a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09Ra-C\
-ailum\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x080\xea0\xa20\xeb|\xfb\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04Real\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x140\xea0\xfc0\xf30\xdb0\xfc0\xb9\xff*\xff\
-R\xff\x0e\x96\x8a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cR\
-einforce Jr\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x120\xdb\
-0\xef0\xa40\xc80\xd90\xfc0\xb9eQQ\xfa\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15Rescue\
- The White Base\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x12T\x86T\xee0\x01\xff%\xff6\xff!R\x1d\
-S\xf7j_\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Ro\
-ar, EVA Unit-01\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00 Q\xfad\x83\xff\x010]0nT\x0d0o\
-0\xb80\xe30\xa40\xa20\xf30\xc80\xfb0\xed\
-0\xdc\x08\x00\x00\x00\x00\x06\x00\x00\x00#Sall\
-y Forth! Its Nam\
-e Is Giant Robo\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x100\xb50\xbf0\xf30\xfb0\xd50\xa10\xa4\
-0\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cSatu\
-rn Fight\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x180\xb70\xfc0\
-\xaf0\xec0\xc30\xc80\xfb0\xca0\xf30\xd00\
-\xfc0\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eSec\
-ret Numbers\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0e_>\
-N80\x92d\x830a\x84=0Y\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0aShoot Down\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0e[\xfelz0\x01iugqW\xfaW\
-0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1dShowd\
-own At The Far E\
-ast Base\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0cSW0\xa20\
-\xbf0\xea0\xa2\x5c\xf6\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0cSouth Ataria\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x14\
-0\xb90\xda0\xfc0\xb90\xfb0\xd50\xa90\xfc\
-0\xeb0\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aSp\
-ace Fold\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08|\xbe\x97\x0aa\
-\x91O\x9d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11Spi\
-rit Possession\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x06\x92\xfc0n\x9bB\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x10Spirits Of Stee\
-l\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x06{,\xff\x10\x8aq\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x07Stage 0\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x06{,\
-\xff\x11\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07St\
-age 1\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x10\x8aq\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
-10\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08{,\xff\x11\xff\x11\x8aq\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x08Stage 11\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08{,\xff\x11\xff\x12\x8aq\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08Stage 12\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08{\
-,\xff\x11\xff\x13\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x08Stage 13\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08{,\xff\x11\
-\xff\x14\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
-age 14\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x15\x8a\
-q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 15\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08{,\xff\x11\xff\x16\x8aq\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08Stage 16\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08{,\xff\x11\xff\x17\x8aq\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08Stage 17\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-{,\xff\x11\xff\x18\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08Stage 18\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x08{,\xff\
-\x11\xff\x19\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
-tage 19\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x06{,\xff\x12\x8aq\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Stage \
-2\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x12\xff\x10\x8aq\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 20\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0c{,\xff\x12\xff\x10\x8aq^URM\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0fStage 20 \
-Screen\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x11\x8a\
-q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 21\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0c{,\xff\x12\xff\x11\x8aq^U\
-RM\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fStag\
-e 21 Screen\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08{,\
-\xff\x12\xff\x12\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
-Stage 22\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\
-\x13\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
-ge 23\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0e{,\xff\x12\xff\x13\x8aq\
-{,\xff\x11^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
-Stage 23 Act 1\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0e{,\xff\x12\xff\x13\x8aq{,\xff\x12^U\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0eStage 2\
-3 Act 2\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x14\
-\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
-e 24\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\x15\x8aq\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 2\
-5\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x12\xff\x16\x8aq\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 26\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08{,\xff\x12\xff\x17\x8aq\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Stage 27\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08{,\
-\xff\x12\xff\x18\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
-Stage 28\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08{,\xff\x12\xff\
-\x19\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
-ge 29\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x06{,\xff\x13\x8aq\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x07Stage 3\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08{,\xff\x13\xff\x10\x8aq\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08Stage 30\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08{\
-,\xff\x13\xff\x11\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x08Stage 31\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08{,\xff\x13\
-\xff\x12\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
-age 32\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x13\x8a\
-q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 33\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x14\x8aq\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08Stage 34\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08{,\xff\x13\xff\x15\x8aq\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08Stage 35\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-{,\xff\x13\xff\x16\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08Stage 36\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x08{,\xff\
-\x13\xff\x17\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
-tage 37\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x18\
-\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
-e 38\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08{,\xff\x13\xff\x19\x8aq\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 3\
-9\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x06{,\xff\x14\x8aq\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x07Stage 4\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08{,\
-\xff\x14\xff\x10\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
-Stage 40\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\
-\x11\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
-ge 41\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x12\x8aq\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
-42\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08{,\xff\x14\xff\x13\x8aq\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x08Stage 43\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08{,\xff\x14\xff\x14\x8aq\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08Stage 44\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08{\
-,\xff\x14\xff\x15\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x08Stage 45\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08{,\xff\x14\
-\xff\x16\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
-age 46\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x17\x8a\
-q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 47\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x08{,\xff\x14\xff\x18\x8aq\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08Stage 48\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x08{,\xff\x14\xff\x19\x8aq\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08Stage 49\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x06\
-{,\xff\x15\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07\
-Stage 5\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x10\
-\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stag\
-e 50\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x11\x8aq\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage 5\
-1\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x08{,\xff\x15\xff\x12\x8aq\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08Stage 52\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x08{,\xff\x15\xff\x13\x8aq\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08Stage 53\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08{,\
-\xff\x15\xff\x14\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
-Stage 54\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\
-\x15\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
-ge 55\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x16\x8aq\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage \
-56\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x08{,\xff\x15\xff\x17\x8aq\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x08Stage 57\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0e{,\xff\x15\xff\x17\x8aq{,\xff\x10^U\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fStage \
-57 Screen\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x08{,\xff\x15\
-\xff\x18\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08St\
-age 58\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x08{,\xff\x15\xff\x19\x8a\
-q\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Stage\
- 59\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x06{,\xff\x16\x8aq\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x07Stage 6\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x08\
-{,\xff\x16\xff\x10\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08Stage 60\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x08{,\xff\
-\x16\xff\x11\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08S\
-tage 61\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x0e{,\xff\x16\xff\x12\
-\x8aq{,\xff\x11^U\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0eStage 62 Act 1\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0e{,\xff\x16\xff\x12\x8aq{,\xff\x12^\
-U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eStage\
- 62 Act 2\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x0e{,\xff\x16\
-\xff\x14\x8aq{,\xff\x11^U\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0eStage 64 Act\
- 1\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0e{,\xff\x16\xff\x14\x8aq{,\xff\
-\x12^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0eSta\
-ge 64 Act 2\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08{,\
-\xff\x16\xff\x15\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08\
-Stage 65\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x08{,\xff\x16\xff\
-\x16\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08Sta\
-ge 66\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0e{,\xff\x16\xff\x17\x8aq\
-{,\xff\x11^U\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0e\
-Stage 67 Act 1\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0e{,\xff\x16\xff\x17\x8aq{,\xff\x12^U\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0eStage 6\
-7 Act 2\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x0e{,\xff\x16\xff\x17\
-\x8aq{,\xff\x13^U\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0eStage 67 Act 3\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x06{,\xff\x17\x8aq\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x07Stage 7\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x06{,\xff\
-\x18\x8aq\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Sta\
-ge 8\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x06{,\xff\x19\x8aq\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x07Stage 9\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x10Y\xcbR\xd50\xc00\xd60\xeb0\xbc0\xfc0\
-\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14Start\
-up, Double Zeta\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0a0\xb90\xfc0\xd10\xfc|\xfb\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x05Super\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x10mw\
-0K0\x890n0\xde0\xec0\xd30\xc8\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x13Terror F\
-rom The Sea\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0c0\xaa\
-0\xfc0\xe90\xed0\xfc0\xc9\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0dThe Aura Roa\
-d\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x16}vg\x1b0n[\xb40oN\xca\
-0K0\x89Y\xcb0~0\x8b\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00!The Banquet \
-Of Despair Begin\
-s Now\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x120\xd30\xc30\xb00\xfb\
-0\xa80\xb90\xb10\xfc0\xd7\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0eThe Big Esca\
-pe\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0a\x9e\xd20D\x8d\x85\x95\xd8X\xeb\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x17The Bla\
-ck Super Warrior\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0e0\xbd0\xed0\xe20\xf3e;ueb\
-&\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16The C\
-apture Of Solomo\
-n\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x12o\x06\x9e\xd20nY)O\x7fge\
-0_0\x8a0f\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1d\
-The Coming Of Th\
-e Black Angel\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x12\
-r60n\x80\xf80nN-0gl\xe30Q\
-\xff\x01\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1fThe \
-Cry Within Fathe\
-r's Breast!\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x08\x9bT\
-y^v\x87^\x1d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11\
-The Demon Empero\
-r\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x140\xb70\xe30\xfc0\xad0\xf3`\xaa\
-\x9bT0nb&0D\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x1aThe Devil Shar\
-kin's Battle\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x06\x9f\
-\x8d0h\x86N\x08\x00\x00\x00\x00\x06\x00\x00\x00\x18T\
-he Dragon And Th\
-e Tiger\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x120B0W0\x85\
-0\x89u7r50\x01ec0\x8b\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x18The Fall O\
-f Baron Ashura\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0ag\x00_\x8c0n0\xb7\x80\x05\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x13The Final M\
-essenger\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x180\xae0\xa20\
-\xfb0\xaa0\xd60\xfb0\xc70\xb90\xc60\xa30\
-\xcb0\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13The\
- Gear Of Destiny\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0c0\xb80\xaa0\xf30nN\xa1\x97\x0a\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x12The Gho\
-sts Of Zeon\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x0c0\xac\
-0\xe90\xb90ns\x8bV\xfd\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x11The Glass Ki\
-ngdom\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x160\xbc0\xed0hT|\
-0p0\x8c0_0\xac0\xf30\xc00\xe0\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x16The Gund\
-am Called Zero\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x12\x7f\xfc0\x92c\x010c0_0\xac0\xf30\
-\xc00\xe0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19The\
- Gundam That Had\
- Wings\x07\x00\x00\x00\x08EnumD\
-ata\x01\x03\x00\x00\x00\x0a\xff%\xff/\xff40\
-n\x5c\xf6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11The\
- Island Of EOT\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x140\xb80\xe50\xd40\xbf0\xfc0\xfb0\xb40\
-\xfc0\xb90\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11T\
-he Jupiter Ghost\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x0e0\xb80\xe50\xd40\xc80\xea0\xa20\
-\xf3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fThe J\
-upitorians\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0c0\xca0\
-nV\xfd0nYss\x8b\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x16The Land Of N\
-a's Queen\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x10k{y^\
-0hT|0p0\x8c0_\xff'\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x14The Man Ca\
-lled Death\x07\x00\x00\x00\x08E\
-numData\x01\x03\x00\x00\x00\x0e0\xbd0\
-\xed0\xe20\xf30n`\xaaY\x22\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x18The Nightma\
-re Of Solomon\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x0c\
-\x99\xc60Qb\x9c0Q0\x8b]P\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x12The Oncomi\
-ng Storm\x07\x00\x00\x00\x08Enu\
-mData\x01\x03\x00\x00\x00\x0cN\xba\x98^0\
-\x92\x5c\x0e0O\x80\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x1fThe One Who Wil\
-l Guide Humanity\
-\x07\x00\x00\x00\x08EnumData\x01\x03\x00\
-\x00\x00\x100\xa20\xfc0\xac0\xded\x83X\x9cT\
-}N\xe4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x22The\
- Order To Shoot \
-Down The Argama\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x16\x902\x8d\xef0kQIf\x0e0\x01\x90\x00\
-\x8d\xef0k}vg\x1b\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00%The Path Of Ho\
-pe, The Path Of \
-Despair\x07\x00\x00\x00\x08Enum\
-Data\x01\x03\x00\x00\x00\x0c0\xb80\xaa0\xf3\
-0n^{P\xcf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13\
-The Phantom Of Z\
-eon\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0a^\x1dV\xfd0nYss\x8b\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17The Qu\
-een Of The Empir\
-e\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x14}\x050D0\xa80\xf40\xa10\xf3\
-0\xb20\xea0\xaa0\xf3\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x12The Red Evange\
-lion\x07\x00\x00\x00\x08EnumDat\
-a\x01\x03\x00\x00\x00\x0a\x8dd0D\x9a\xea0nY\
-s\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14The R\
-ed Haired Woman\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0e\x5c\x11Ys0L\x89\x8b0_mAf\x1f\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19The Sh\
-ooting Star She \
-Saw\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0c0\xbc0\xfc0\xbf0n\x9f\x13\
-R\xd5\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10The \
-Sign Of Zeta\x07\x00\x00\x00\
-\x08EnumData\x01\x03\x00\x00\x00\x08g\
-qN\xacN\x0azz\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x12The Skies Of To\
-kyo\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0ey^0nV\xfd0x0n\
-\x8a\x98`\xd1\x08\x00\x00\x00\x00\x06\x00\x00\x00!Th\
-e Temptation Of \
-The Land Of God\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x0e[\x87[\x990kT\xb20OY\x96\x82\xb1\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00%The Te\
-rrible Flower Bl\
-ooming In Space\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x08{,N\x090nR\x9b\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x11The Third's \
-Power\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x0cg*w\xe50j0\x8b\
-p}0D\x08\x00\x00\x00\x00\x06\x00\x00\x00\x14Th\
-e Unknown Calami\
-ty\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x0cYG\x8d\xe10nO\xa1P$0\
-o\x08\x00\x00\x00\x00\x06\x00\x00\x00\x16The V\
-alue Of A Miracl\
-e\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x10v}0D0\xe20\xd30\xeb0\xb9\
-0\xfc0\xc4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x15Th\
-e White Mobile S\
-uit\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x0cYs0_0a0nb&\
-X4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17The \
-Womens' Battlefi\
-eld\x07\x00\x00\x00\x08EnumData\
-\x01\x03\x00\x00\x00\x1a0\xc80\xe90\xf30\xb90\xfb\
-0\xd50\xa90\xfc0\xe10\xfc0\xb70\xe70\xf3\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fTrans-\
-Formation\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x04Qq\x90\x1a\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Unifie\
-d\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x160\xd00\xcb0\xb70\xf30\xb00\xfb\
-0\xc80\xeb0\xfc0\xd10\xfc\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x11Vanishing Tr\
-ooper\x07\x00\x00\x00\x08EnumDa\
-ta\x01\x03\x00\x00\x00\x1e0\xf40\xa10\xea0\xa2\
-0\xd60\xeb0\xfb0\xd50\xa90\xfc0\xe10\xfc\
-0\xb70\xe70\xf3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x12\
-Variable Formati\
-on\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x100\xd00\xa40\xd60\xec0\xfc0\
-\xb70\xe70\xf3\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0aV\
-ibrations\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x100\xdc0\xeb\
-0\xc60\xb9\x8dwk{V\xdeu\x1f\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x1bVoltes, Ba\
-ck From The Ashe\
-s\x07\x00\x00\x00\x08EnumData\x01\x03\
-\x00\x00\x00\x10b&X\xeb0\x01Q\x8d0s0\xfb\
-0\xfb0\xfb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fWa\
-rriors, Again\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x1a\
-}\x050Dz2Y\xbb\x00 zz\x98\xdb0v\
-0\xde0\xb80\xf30\xac0\xfc\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00*With A Red F\
-lash, Fly To The\
- Sky, Mazinger\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x10\x97Ykb0W0_\x95\xc70nN-0\
-g\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1eWithi\
-n The Paralyzing\
- Darkness\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x14_\xc30k\
-_\xf50X0\x8b\x89\x8b0H0j0DR\x03\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00$Within\
- The Soul Lies A\
-n Unseen Blade\x07\x00\
-\x00\x00\x08EnumData\x01\x03\x00\x00\x00\
-\x0a0\xb80\xaa0\xf3Q\x8d\x81\xe8\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x14Zeon's Seco\
-nd Coming\x07\x00\x00\x00\x08En\
-umData\x01\x03\x00\x00\x00\x02zz\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x03air\x07\x00\x00\x00\x08\
-EnumData\x01\x03\x00\x00\x00\x02\x96x\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03lnd\x07\x00\x00\
-\x00\x08EnumData\x01\x03\x00\x00\x00\x02\
-mw\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03sea\x07\
-\x00\x00\x00\x08EnumData\x01\x03\x00\x00\
-\x00\x02W0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04wa\
-ll\x07\x00\x00\x00\x08EnumData\x01\
-\x03\x00\x00\x00\x04\x00A\x00I\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x02AI\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x04\x00S\x00P\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02SP\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08ryk\x8a\x80\xfdR\x9b\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09abilities\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x04T}N-\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08accuracy\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x06\x00A\x00Iep\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08ai count\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x0a\x00A\x00I0\xc70\xfc0\xbf\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x07ai data\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x06\x00A\x00I\x95w\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x09ai length\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x0a\x00A\x00I0\xea0\xb90\xc8\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x07ai list\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x0c\x00A\x00I0\xdd0\xa40\xf30\
-\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bai po\
-inters\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x02zz\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x03air\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08v{X4O\x5cT\xc1\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0aappearance\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x04\x88\xc5u2\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x05armor\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x04\
-\x5c^`'\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09at\
-tribute\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x06\x00B\
-\x00G\x00M\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10ba\
-ckground music\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x0a0\xd60\xed0\xc30\xafep\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0bblock c\
-ount\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x0a0\xd60\xed0\
-\xc30\xaf\x95w\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cb\
-lock length\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x100\xd60\xed0\xc30\xaf0\xdd0\xa40\xf3\
-0\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ebloc\
-k pointers\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x060\xb30\xfc0\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x04code\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x04h<\x95\xd8\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06combat\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x06T\x08OSep\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0dcombine c\
-ount\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x0cT\x08OS0\
-\xb00\xeb0\xfc0\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x14combine group n\
-umber\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x0eT\x08OS\
-0\xb70\xfc0\xb10\xf30\xb9\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x17combine sequ\
-ence number\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x0e0\xb30\xde0\xf30\xc90\xb30\xfc0\xc9\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ccomman\
-d code\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x0a0\xb30\
-\xde0\xf30\xc9ep\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0dcommand count\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x0e0\xb30\xde0\xf30\xc90\xc70\
-\xfc0\xbf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ccom\
-mand data\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x0c\
-0\xb30\xde0\xf30\xc9\x8a\xacf\x0e\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0fcommand ex\
-plain\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x120\xb30\xde\
-0\xf30\xc90\xd10\xe90\xe10\xfc0\xbf\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0ecommand \
-params\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x0c0\xb30\
-\xa20\xe60\xcb0\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0acore robot\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x04\x8c\xc7\x91\xd1\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x04cost\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x100\xaf0\
-\xea0\xc60\xa30\xab0\xeb\x88\xdckc\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x08critical\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x0ce9\x90 0\xdc0\xfc0\xca\
-0\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ccust\
-om bonus\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x0ae\
-9\x90 0\xbf0\xa40\xd7\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0bcustom type\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x06e;d\x83R\x9b\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x06damage\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x08R\x1dg\x1f_>ep\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0cdefault ammo\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x04}9N\xcb\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0bdescription\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08\x002V\xde\x88LR\xd5\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0ddouble \
-action\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x04\x00E\x00\
-N\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06energ\
-y\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x08m\x88\x8c\xbb\x00E\x00N\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0benergy\
- cost\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x04V\xde\x90\x7f\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07evasio\
-n\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x060\xd50\xe90\xb0\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x05flags\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x0cl\x17R\x9b0\xb00\xeb0\xfc0\xd7\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x10friend\
-ship group\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x0a0\xd50\xeb0\xcd0\xfc0\xe0\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09full name\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x04T\x0dRM\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08fullname\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x02\x96x\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06gr\
-ound\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x04Qh\x95w\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x06height\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x04\x00H\x00P\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0ahit points\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x04\x96PuL\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x05limit\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x06\x90\
-`\x5c\x04z\x0b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0al\
-ong range\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x0e\
-0\xde0\xc30\xd7QuVhR\x06\x98^\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x10map weap\
-on class\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x0ew\
-@_>c\x07[\x9aW\x8bSJ_\x84\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x11map weapo\
-n radius\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x0ee\
-\xb9T\x11c\x07[\x9aW\x8b{\xc4V\xf2\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x10map weapo\
-n range\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x0e0\xde\
-0\xc30\xd7QuVho\x14Q\xfa\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0fmap weapon\
- show\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x08g\x00Y'\
-_>ep\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cma\
-ximum ammo\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x120\xb70\xca0\xea0\xaa0\xe10\xc30\xbb0\
-\xfc0\xb8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07mes\
-sage\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x06\x90KR\xd5`\
-'\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08mobil\
-ity\x07\x00\x00\x00\x0cFieldMap\
-ping\x01\x03\x00\x00\x00\x10y\xfbR\xd5\x95\x8b\
-Y\xcb0\xe90\xa60\xf30\xc9\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0amove round\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x06y\xfbR\xd5R\x9b\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x08movement\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x0ay\xfbR\xd50\xbf0\xa40\xd7\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0dmovement\
- type\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x04T\x0dy\xf0\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04name\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x04`'h<\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x06nature\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x0a\
-0\xd10\xa40\xed0\xc30\xc8\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x08nickname\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x0c0\xe60\xcb0\xc30\xc8c\xdb\x88\xc5\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x13option \
-parts system\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08\x81\xeaN;e;d\x83\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0aown attack\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x08\x81\xeaN;y\xfbR\xd5\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x08own move\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x0e0\xd10\xfc0\xc40\xb90\
-\xed0\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ap\
-arts slot\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x04\
-a\x1by\xf0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08pe\
-t name\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x04\x5c\x04d\
-\x83\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06range\
-d\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x04S\xcd_\xdc\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x08reaction\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x06O\xeet\x06\x8c\xbb\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0brepair cost\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x0c\x80Vb&X\xeb0\xec0\
-\xd90\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13req\
-uired aura level\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08_\xc5\x89\x81l\x17R\x9b\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x15require\
-d morale value\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x120\xcb0\xe50\xfc0\xbf0\xa40\
-\xd70\xec0\xd90\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x16required newtyp\
-e level\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x080\xe6\
+\x00\x00\x0ay\xfbR\xd50\xbf0\xa40\xd7\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x0dmovement \
+type\x07\x00\x00\x00\x09UnitFra\
+me\x01\x03\x00\x00\x00\x0e0\xd10\xfc0\xc40\xb9\
+0\xed0\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0a\
+parts slot\x07\x00\x00\x00\x09U\
+nitFrame\x01\x03\x00\x00\x00\x080\xe6\
 0\xcb0\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0a\
-robot name\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x0e0\xb70\xca0\xea0\xaa0\xc70\xfc0\xbf\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0dscenari\
-o data\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x100\xb70\
-\xca0\xea0\xaa0\xdd0\xa40\xf30\xbf\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x10scenario \
-pointer\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x0c\x81\x1a\
-g,0\xb30\xde0\xf30\xc9\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0escript comma\
-nd\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x0cb\xe1_50\xc60\
-\xad0\xb90\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ds\
-cript expand\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x10\x81\x1ag,0\xd10\xe90\xe10\xfc0\
-\xbf\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0escr\
-ipt params1\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x10\x81\x1ag,0\xd10\xe90\xe10\xfc0\xbf\
-\x002\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0escri\
-pt params2\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x0a0n0\x8a0K0H|\xfb\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x06series\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x06\x8f\xd1\x5c\x04z\x0b\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0bshort range\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x060\xb50\xa40\xba\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x04size\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x04b\
-\x80\x91\xcf\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05ski\
-ll\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x06\x00L\x00v\x001\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0cskill l\
-evel1\x07\x00\x00\x00\x0cFieldM\
-apping\x01\x03\x00\x00\x00\x06\x00L\x00v\
-\x002\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cskil\
-l level2\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x06\x00\
-L\x00v\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cs\
-kill level3\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x06\x00L\x00v\x004\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0cskill level4\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x06\x00L\x00v\x005\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0cskill level\
-5\x07\x00\x00\x00\x0cFieldMappi\
-ng\x01\x03\x00\x00\x00\x06\x00L\x00v\x006\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0cskill le\
-vel6\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x06\x00L\x00v\x00\
-7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cskill\
- level7\x07\x00\x00\x00\x0cFiel\
-dMapping\x01\x03\x00\x00\x00\x06\x00L\
-\x00v\x008\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0csk\
-ill level8\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x06\x00L\x00v\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0cskill level9\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x060\xb90\xad0\xeb\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0askill name\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x02[\x87\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x05space\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08ryk\
-\x8ab\x80\x80\xfd\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0es\
-pecial skills\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x0c|\xbey^0\xb30\xde0\xf30\xc9\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0fspirit\
- commands\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x0a\
-\x7f\xd2_\x970\xec0\xd90\xeb\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0cspirit level\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x0ev\xeej\x190\xd10\xa40\
-\xed0\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ct\
-arget pilot\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x06v\xeej\x19\x00X\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x08target x\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x06v\xeej\x19\x00Y\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x08target y\x07\x00\x00\x00\x0cFi\
-eldMapping\x01\x03\x00\x00\x00\x0c\
-Y\x09_b0\xb00\xeb0\xfc0\xd7\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x16transform \
-group number\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x0eY\x09_b0\xb70\xfc0\xb10\xf30\
-\xb9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x19trans\
-form sequence nu\
-mber\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
-0\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
-nown01\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08g*w\
-\xe5\x000\x002\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
-nknown02\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x08g\
-*w\xe5\x000\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x09unknown03\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08g*w\xe5\x000\x004\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x09unknown04\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08g*w\xe5\x000\x005\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09unknown05\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08g*w\xe5\x000\x006\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x09unknown06\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08g*w\xe5\x000\x007\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
-07\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08g*w\xe5\x000\x00\
-8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
-wn08\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
-0\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
-nown09\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08g*w\
-\xe5\x001\x000\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
-nknown10\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x08g\
-*w\xe5\x001\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x09unknown11\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08g*w\xe5\x001\x002\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x09unknown12\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08g*w\xe5\x001\x003\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09unknown13\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08g*w\xe5\x001\x004\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x09unknown14\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08g*w\xe5\x001\x005\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
-15\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08g*w\xe5\x001\x00\
-6\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
-wn16\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
-1\x007\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
-nown17\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08g*w\
-\xe5\x001\x008\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
-nknown18\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x08g\
-*w\xe5\x001\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x09unknown19\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08g*w\xe5\x002\x000\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x09unknown20\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08g*w\xe5\x002\x001\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09unknown21\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08g*w\xe5\x002\x002\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x09unknown22\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08g*w\xe5\x002\x003\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
-23\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08g*w\xe5\x002\x00\
-4\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
-wn24\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
-2\x005\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
-nown25\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08g*w\
-\xe5\x002\x006\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
-nknown26\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x08g\
-*w\xe5\x002\x007\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x09unknown27\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08g*w\xe5\x002\x008\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x09unknown28\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08g*w\xe5\x002\x009\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09unknown29\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08g*w\xe5\x003\x000\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x09unknown30\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08g*w\xe5\x003\x001\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
-31\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08g*w\xe5\x003\x00\
-2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
-wn32\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
-3\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
-nown33\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08g*w\
-\xe5\x003\x004\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
-nknown34\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x08g\
-*w\xe5\x003\x005\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x09unknown35\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08g*w\xe5\x003\x006\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x09unknown36\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08g*w\xe5\x003\x007\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09unknown37\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08g*w\xe5\x003\x008\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x09unknown38\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08g*w\xe5\x003\x009\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
-39\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08g*w\xe5\x004\x00\
-0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
-wn40\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
-4\x001\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
-nown41\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08g*w\
-\xe5\x004\x002\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
-nknown42\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x08g\
-*w\xe5\x004\x003\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x09unknown43\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x08g*w\xe5\x004\x004\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x09unknown44\x07\x00\x00\x00\
-\x0cFieldMapping\x01\x03\x00\
-\x00\x00\x08g*w\xe5\x004\x005\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x09unknown45\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x08g*w\xe5\x004\x006\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x09unknown46\
-\x07\x00\x00\x00\x0cFieldMappin\
-g\x01\x03\x00\x00\x00\x08g*w\xe5\x004\x007\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x09unknown\
-47\x07\x00\x00\x00\x0cFieldMapp\
-ing\x01\x03\x00\x00\x00\x08g*w\xe5\x004\x00\
-8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unkno\
-wn48\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x08g*w\xe5\x00\
-4\x009\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09unk\
-nown49\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08g*w\
-\xe5\x005\x000\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09u\
-nknown50\x07\x00\x00\x00\x0cFie\
-ldMapping\x01\x03\x00\x00\x00\x0c0\
-\xec0\xd90\xebR6b\x80\x80\xfd\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0fupgraded sk\
-ills\x07\x00\x00\x00\x0cFieldMa\
-pping\x01\x03\x00\x00\x00\x04g\x09R\xb9\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x05valid\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x04X\xf0Q*\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0bvoice actor\x07\x00\
-\x00\x00\x0cFieldMapping\x01\
-\x03\x00\x00\x00\x02mw\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x05water\x07\x00\x00\x00\x0cField\
-Mapping\x01\x03\x00\x00\x00\x08kfV\
-hR\x06\x98^\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cw\
-eapon class\x07\x00\x00\x00\x0c\
-FieldMapping\x01\x03\x00\x00\
-\x00\x06kfVhT\x0d\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x0bweapon name\x07\x00\x00\
-\x00\x0cFieldMapping\x01\x03\
-\x00\x00\x00\x0akfVh0\xea0\xb90\xc8\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x07weapons\x07\
-\x00\x00\x00\x0cFieldMapping\
-\x01\x03\x00\x00\x00\x04\x91\xcd\x91\xcf\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x06weight\x07\x00\x00\x00\x0cF\
-ieldMapping\x01\x03\x00\x00\x00\
-\x04S\xc2qg\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06B\
-rowse\x07\x00\x00\x00\x0fFileSe\
-ttingCard\x01\x03\x00\x00\x00\x10\x97\
-^\x00A\x00S\x00C\x00I\x00I0\xd10\xb9\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0eNon-ASC\
-II Path\x07\x00\x00\x00\x0fFile\
-SettingCard\x01\x03\x00\x00\x00\
-\x04x\xba\x8a\x8d\x08\x00\x00\x00\x00\x06\x00\x00\x00\x02O\
-K\x07\x00\x00\x00\x0fFileSettin\
-gCard\x01\x03\x00\x00\x00B\x00R\x00O\x00\
-M0\xd10\xb90h0\xd50\xa10\xa40\xebT\
-\x0d0k\x97^\x00A\x00S\x00C\x00I\x00Ie\
-\x87[W0\x92T+0\x810\x8b0S0h0\
-o0g0M0~0[0\x930\x02\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00:ROM path \
-and filename can\
-not contain non-\
-ASCII characters\
-.\x07\x00\x00\x00\x0fFileSettin\
-gCard\x01\x03\x00\x00\x00\x0e0\xd50\xa10\
-\xa40\xeb0\x92\x90xb\x9e\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x0bSelect File\x07\x00\
-\x00\x00\x0fFileSettingCa\
-rd\x01\x03\x00\x00\x00 T\x04\x8a\x00\x8a\x9e0n\
-0\xc70\xd50\xa90\xeb0\xc80\xd50\xa90\xf3\
-0\xc80\x92\x8a-[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x1bConfigure the \
-font settings\x07\x00\x00\
-\x00\x08FontCard\x01\x03\x00\x00\x00\x0c\
-0\xd50\xa90\xf30\xc8\x8a-[\x9a\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x0dFont Setti\
-ngs\x07\x00\x00\x00\x08FontCard\
-\x01\x03\x00\x00\x00.Y\x09f\xf40\xc70\xfc0\xbf\
-0\x920\xad0\xe30\xc30\xb70\xe50\xd50\xa1\
-0\xa40\xeb0ki\xcb{\xc90W0~0Y\
-0K\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00<Ar\
-e you sure you w\
-ant to build mod\
-ified data to ca\
-che files?\x07\x00\x00\x00\x09H\
-omeFrame\x01\x03\x00\x00\x00\x100\xad\
-0\xe30\xc30\xb70\xe50\x92i\xcb{\xc9\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0bBuild Ca\
-che\x07\x00\x00\x00\x09HomeFram\
-e\x01\x03\x00\x00\x00,0\xad0\xe30\xc30\xb70\
-\xe50oe\xe20k[XW(0W0~0\
-Y0\x02N\x0af\xf80M0W0~0Y0\
-K\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\x00 Cac\
-he already exist\
-s. Overwrite?\x07\x00\x00\
-\x00\x09HomeFrame\x01\x03\x00\x00\x00\
-:0\xad0\xe30\xc30\xb70\xe50L0B0\
-\x8a0~0[0\x930\x02QH0k\x00 \x00\
-R\x00O\x00M\x00 0\x92\x5cU\x95\x8b0W0\
-f0O0`0U0D0\x02\x08\x00\x00\x00\x00\
-\x06\x00\x00\x006Cache direc\
-tory not found. \
-Please extract a\
- ROM first.\x07\x00\x00\x00\x09\
-HomeFrame\x01\x03\x00\x00\x00R0\
-\xad0\xe30\xc30\xb70\xe50\xd70\xed0\xb80\
-\xa70\xaf0\xc80\xd50\xa10\xa40\xeb0L\x89\
-\x8b0d0K0\x8a0~0[0\x930\x02Q\
-H0k\x00 \x00R\x00O\x00M\x00 0\x92\x5c\
-U\x95\x8b0W0f0O0`0U0D0\
-\x02\x08\x00\x00\x00\x00\x06\x00\x00\x009Cache\
- project file no\
-t found. Please \
-extract a ROM fi\
-rst.\x07\x00\x00\x00\x09HomeFra\
-me\x01\x03\x00\x00\x00\x0a0\xad0\xe30\xf30\xbb\
-0\xeb\x08\x00\x00\x00\x00\x06\x00\x00\x00\x06Canc\
-el\x07\x00\x00\x00\x09HomeFrame\
-\x01\x03\x00\x00\x00\x06\x95\x890X0\x8b\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x05Close\x07\x00\x00\x00\x09\
-HomeFrame\x01\x03\x00\x00\x00\x0c\x00\
-R\x00O\x00M0\x92\x5cU\x95\x8b\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0bExtract ROM\
-\x07\x00\x00\x00\x09HomeFrame\x01\x03\
-\x00\x00\x00\x080\xd50\xa10\xa40\xeb\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x04File\x07\x00\x00\x00\x09H\
-omeFrame\x01\x03\x00\x00\x00\x180\xd5\
-0\xa10\xa40\xeb0oe\xe20k[XW(\
-0W0~0Y\x08\x00\x00\x00\x00\x06\x00\x00\x00\x13\
-File Already Exi\
-sts\x07\x00\x00\x00\x09HomeFram\
-e\x01\x03\x00\x00\x00\x180\xd50\xa10\xa40\xeb0\
-L\x89\x8b0d0K0\x8a0~0[0\x93\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0eFile No\
-t Found\x07\x00\x00\x00\x09Home\
-Frame\x01\x03\x00\x00\x00\x120\xa40\xf30\
-\xbf0\xfc0\xdf0\xc30\xb70\xe70\xf3\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0cIntermiss\
-ion\x07\x00\x00\x00\x09HomeFram\
-e\x01\x03\x00\x00\x00\x080\xc60\xad0\xb90\xc8\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x07Message\
-\x07\x00\x00\x00\x09HomeFrame\x01\x03\
-\x00\x00\x00\x060D0D0H\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x02No\x07\x00\x00\x00\x09HomeF\
-rame\x01\x03\x00\x00\x00\x04x\xba\x8a\x8d\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x02OK\x07\x00\x00\x00\x09H\
-omeFrame\x01\x03\x00\x00\x00\x06N\x0a\
-f\xf80M\x08\x00\x00\x00\x00\x06\x00\x00\x00\x09Ov\
-erwrite\x07\x00\x00\x00\x09Home\
-Frame\x01\x03\x00\x00\x00\x100\xad0\xe30\
-\xc30\xb70\xe50\x92\x89\xe3g\x90\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0bParse Cache\
-\x07\x00\x00\x00\x09HomeFrame\x01\x03\
-\x00\x00\x00\x0a0\xd10\xa40\xed0\xc30\xc8\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x05Pilot\x07\x00\x00\
-\x00\x09HomeFrame\x01\x03\x00\x00\x00\
-6QH0k\x8a-[\x9au;\x97b0g\x00\
-R\x00O\x00M0\xd50\xa10\xa40\xeb0n0\
-\xd10\xb90\x92\x8a-[\x9a0W0f0O0\
-`0U0D0\x02\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-5Please configur\
-e the ROM file p\
-ath in Settings \
-first.\x07\x00\x00\x00\x09HomeF\
-rame\x01\x03\x00\x00\x006QH0k\x8a-\
-[\x9au;\x97b0gQ\xfaR\x9bQH\x00 \
-\x00R\x00O\x00M\x00 0\xd10\xb90\x92\x8a-\
-[\x9a0W0f0O0`0U0D0\x02\
-\x08\x00\x00\x00\x00\x06\x00\x00\x007Please\
- configure the t\
-arget ROM path i\
-n Settings first\
-.\x07\x00\x00\x00\x09HomeFrame\x01\
-\x03\x00\x00\x00\x1e\x00R\x00O\x00M0\xd10\xb90\
-L\x8a-[\x9a0U0\x8c0f0D0~0\
-[0\x93\x08\x00\x00\x00\x00\x06\x00\x00\x00\x17ROM\
- Path Not Config\
-ured\x07\x00\x00\x00\x09HomeFra\
-me\x01\x03\x00\x00\x00$\x00R\x00O\x00M0\xd5\
-0\xa10\xa40\xeb0L[XW(0W0~\
-0[0\x93\x00:\x00\x0a\x00{\x00}\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x1bROM file d\
-oes not exist:\x0a{\
-}\x07\x00\x00\x00\x09HomeFrame\x01\
-\x03\x00\x00\x00\x0e\x00R\x00O\x00M0\x92Q\x8di\
-\xcb{\xc9\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0bReb\
-uild ROM\x07\x00\x00\x00\x09Hom\
-eFrame\x01\x03\x00\x00\x00\x080\xed0\xdc\
-0\xc30\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05Ro\
-bot\x07\x00\x00\x00\x09HomeFram\
-e\x01\x03\x00\x00\x00\x080\xb70\xca0\xea0\xaa\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x08Scenari\
-o\x07\x00\x00\x00\x09HomeFrame\x01\
-\x03\x00\x00\x00$Q\xfaR\x9bQH\x00 \x00R\x00\
-O\x00M\x00 0L\x8a-[\x9a0U0\x8c0\
-f0D0~0[0\x93\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x19Target ROM No\
-t Configured\x07\x00\x00\x00\
-\x09HomeFrame\x01\x03\x00\x00\x008\
-0\xad0\xe30\xc30\xb70\xe50\xc70\xa30\xec\
-0\xaf0\xc80\xea0oe\xe20k[XW(\
-0W0~0Y0\x02N\x0af\xf80M0W\
-0~0Y0K\xff\x1f\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00@The cache dire\
-ctory already ex\
-ists. Do you wan\
-t to overwrite i\
-t?\x07\x00\x00\x00\x09HomeFrame\
-\x01\x03\x00\x00\x008Q\xfaR\x9b0\xd50\xa10\xa4\
-0\xeb0oe\xe20k[XW(0W0~\
-0Y\x00:\x00\x0a\x00{\x00}\x00\x0a\x00\x0aN\x0a\
-f\xf80M0W0~0Y0K\xff\x1f\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00@The outp\
-ut file already \
-exists:\x0a{}\x0a\x0aDo y\
-ou want to overw\
-rite it?\x07\x00\x00\x00\x09Hom\
-eFrame\x01\x03\x00\x00\x00\x040o0D\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x03Yes\x07\x00\x00\
-\x00\x09HomeFrame\x01\x03\x00\x00\x00\
-\x04i\x82\x89\x81\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04H\
-ome\x07\x00\x00\x00\x0aMainWind\
-ow\x01\x03\x00\x00\x00\x04\x8a-[\x9a\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x07Options\x07\x00\x00\
-\x00\x0aMainWindow\x01\x03\x00\x00\
-\x00\x080\xe60\xcb0\xc30\xc8\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x05Robot\x07\x00\x00\x00\x0aMa\
-inWindow\x01\x03\x00\x00\x00\x080\xc6\
-0\xad0\xb90\xc8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05\
-Snmsg\x07\x00\x00\x00\x0aMainWi\
-ndow\x01\x03\x00\x00\x00(0\xb90\xfc0\xd1\
-0\xfc0\xed0\xdc0\xc30\xc8Y'b&\x03\xb1\
-\x00 \x00R\x00O\x00M0\xa80\xc70\xa30\xbf\
-0\xfc\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1eSupe\
-r Robot Wars \xce\xb1 \
-ROM Editor\x07\x00\x00\x00\x0aM\
-ainWindow\x01\x03\x00\x00\x00\x120\
-\xb70\xca0\xea0\xaa0\xe10\xc30\xbb0\xfc0\
-\xb8\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07messa\
-ge\x07\x00\x00\x00\x08MsgFrame\x01\
-\x03\x00\x00\x00\x180\xa40\xf30\xbf0\xd50\xa70\
-\xfc0\xb9\x8a\x00\x8a\x9e0\x92Y\x09f\xf4\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00$Change th\
-e language of th\
-e interface\x07\x00\x00\x00\x0b\
-OptionFrame\x01\x03\x00\x00\x00\
-*0\xa40\xf30\xbf0\xd50\xa70\xfc0\xb9\x88\
-hy:0n0\xb90\xb10\xfc0\xea0\xf30\
-\xb0k\xd4s\x870\x92Y\x09f\xf4\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00)Change the \
-scaling ratio of\
- the interface\x07\x00\
-\x00\x00\x0bOptionFrame\x01\x03\
-\x00\x00\x00&0\xa40\xf30\xbf0\xd50\xa70\xfc\
-0\xb9\x88hy:0n0\xc60\xfc0\xde0\xab\
-0\xe90\xfc0\x92Y\x09f\xf4\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00'Change the t\
-heme color of th\
-e interface\x07\x00\x00\x00\x0b\
-OptionFrame\x01\x03\x00\x00\x00\
-\x1a0\xa40\xf30\xbf0\xd50\xa70\xfc0\xb90\
-\xc60\xfc0\xde0\x92Y\x09f\xf4\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00&Change the \
-theme mode of th\
-e interface\x07\x00\x00\x00\x0b\
-OptionFrame\x01\x03\x00\x00\x00\
-\x04f\x97\x82r\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04D\
-ark\x07\x00\x00\x00\x0bOptionFr\
-ame\x01\x03\x00\x00\x00\x120\xb70\xb90\xc60\
-\xe0\x8a-[\x9a0k_\x930F\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0dFollow Syst\
-em\x07\x00\x00\x00\x0bOptionFra\
-me\x01\x03\x00\x00\x00\x120\xa40\xf30\xbf0\xd5\
-0\xa70\xfc0\xb9\x8a\x00\x8a\x9e\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x12Interface La\
-nguage\x07\x00\x00\x00\x0bOptio\
-nFrame\x01\x03\x00\x00\x00\x1a0\xa40\xf3\
-0\xbf0\xd50\xa70\xfc0\xb90\xb90\xb10\xfc\
-0\xea0\xf30\xb0\x08\x00\x00\x00\x00\x06\x00\x00\x00\x11\
-Interface Scalin\
-g\x07\x00\x00\x00\x0bOptionFram\
-e\x01\x03\x00\x00\x00\x120\xa40\xf30\xbf0\xd50\
-\xa70\xfc0\xb9\x8a-[\x9a\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x12Interface Set\
-tings\x07\x00\x00\x00\x0bOption\
-Frame\x01\x03\x00\x00\x00\x1c0\xa40\xf30\
-\xbf0\xd50\xa70\xfc0\xb90\xb90\xb10\xfc0\
-\xea0\xf30\xb00\x92\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x1dInterface scali\
-ng adjusted to\x07\x00\
-\x00\x00\x0bOptionFrame\x01\x03\
-\x00\x00\x00\x04f\x0e\x82r\x08\x00\x00\x00\x00\x06\x00\x00\
-\x00\x05Light\x07\x00\x00\x00\x0bOpti\
-onFrame\x01\x03\x00\x00\x00\x0a\x00R\x00\
-O\x00M\x8a-[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-\x0cROM Settings\x07\x00\x00\
-\x00\x0bOptionFrame\x01\x03\x00\
-\x00\x00\x0a_\x8c0gQ\x8d\x8dwR\xd5\x08\x00\x00\
-\x00\x00\x06\x00\x00\x00\x0dRestart L\
-ater\x07\x00\x00\x00\x0bOptionF\
-rame\x01\x03\x00\x00\x00\x0cN\xca0Y0P\
-Q\x8d\x8dwR\xd5\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0b\
-Restart Now\x07\x00\x00\x00\x0b\
-OptionFrame\x01\x03\x00\x00\x00\
-60\xb90\xb10\xfc0\xea0\xf30\xb00o0\
-\xa40\xf30\xbf0\xd50\xa70\xfc0\xb90\x92Q\
-\x8d\x8dwR\xd5_\x8c0kg\x09R\xb90k0\
-j0\x8a0~0Y\x08\x00\x00\x00\x00\x06\x00\x00\x00\
-7Scaling will ta\
-ke effect after \
-restarting the i\
-nterface\x07\x00\x00\x00\x0bOpt\
-ionFrame\x01\x03\x00\x00\x00\x0c0\xc6\
-0\xfc0\xde0\xab0\xe90\xfc\x08\x00\x00\x00\x00\x06\
-\x00\x00\x00\x0bTheme Color\x07\
-\x00\x00\x00\x0bOptionFrame\x01\
-\x03\x00\x00\x00\x0a0\xc60\xfc0\xde\x8a-[\x9a\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0aTheme M\
-ode\x07\x00\x00\x00\x0bOptionFr\
-ame\x01\x03\x00\x00\x00\x0a\x00R\x00O\x00M\x8a\
--[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x1aCon\
-figure the ROM s\
-ettings\x07\x00\x00\x00\x07RomC\
-ard\x01\x03\x00\x00\x00\x0a\x00R\x00O\x00M\x8a\
--[\x9a\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0cROM\
- Settings\x07\x00\x00\x00\x07Ro\
-mCard\x01\x03\x00\x00\x00\x14QC\x00 \x00\
-R\x00O\x00M\x00 0\xd50\xa10\xa40\xeb\x08\
-\x00\x00\x00\x00\x06\x00\x00\x00\x0aSource \
-ROM\x07\x00\x00\x00\x07RomCard\x01\
-\x03\x00\x00\x00\x16Q\xfaR\x9b\x00 \x00R\x00O\x00\
-M\x00 0\xd50\xa10\xa40\xeb\x08\x00\x00\x00\x00\
-\x06\x00\x00\x00\x0aTarget ROM\x07\
-\x00\x00\x00\x07RomCard\x01\x03\x00\x00\x00\
-\x04\x88\xc5u2\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05a\
-rmor\x07\x00\x00\x00\x09UnitFra\
-me\x01\x03\x00\x00\x00\x04\x00E\x00N\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x06energy\x07\x00\x00\x00\
-\x09UnitFrame\x01\x03\x00\x00\x00\x04\
-\x00H\x00P\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0ahi\
-t points\x07\x00\x00\x00\x09Uni\
-tFrame\x01\x03\x00\x00\x00\x04\x96PuL\
-\x08\x00\x00\x00\x00\x06\x00\x00\x00\x05limit\x07\
-\x00\x00\x00\x09UnitFrame\x01\x03\x00\
-\x00\x00\x06\x90KR\xd5`'\x08\x00\x00\x00\x00\x06\x00\
-\x00\x00\x08mobility\x07\x00\x00\x00\x09\
-UnitFrame\x01\x03\x00\x00\x00\x06y\
-\xfbR\xd5R\x9b\x08\x00\x00\x00\x00\x06\x00\x00\x00\x08m\
-ovement\x07\x00\x00\x00\x09Unit\
-Frame\x01\x03\x00\x00\x00\x0ay\xfbR\xd50\
-\xbf0\xa40\xd7\x08\x00\x00\x00\x00\x06\x00\x00\x00\x0dm\
-ovement type\x07\x00\x00\x00\
-\x09UnitFrame\x01\x03\x00\x00\x00\x0e\
-0\xd10\xfc0\xc40\xb90\xed0\xc30\xc8\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0aparts sl\
-ot\x07\x00\x00\x00\x09UnitFrame\
-\x01\x03\x00\x00\x00\x080\xe60\xcb0\xc30\xc8\x08\x00\
-\x00\x00\x00\x06\x00\x00\x00\x0arobot na\
-me\x07\x00\x00\x00\x09UnitFrame\
-\x01\x03\x00\x00\x00\x060\xb50\xa40\xba\x08\x00\x00\x00\
-\x00\x06\x00\x00\x00\x04size\x07\x00\x00\x00\x09U\
-nitFrame\x01\
+robot name\x07\x00\x00\x00\x09U\
+nitFrame\x01\x03\x00\x00\x00\x060\xb5\
+0\xa40\xba\x08\x00\x00\x00\x00\x06\x00\x00\x00\x04si\
+ze\x07\x00\x00\x00\x09UnitFrame\
+\x01\x03\x00\x00\x00\x22e\x87[W0\x92QeR\x9b\
+0W0f0\xe10\xc30\xbb0\xfc0\xb80\x92\
+0\xd50\xa30\xeb0\xbf\x08\x00\x00\x00\x00\x06\x00\x00\
+\x00\x1dEnter text to \
+filter messages\x07\
+\x00\x00\x00\x0b_FilterCard\x01\
+\x03\x00\x00\x00\x04i\x1c}\x22\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00\x06Search\x07\x00\x00\x00\x0b_F\
+ilterCard\x01\x03\x00\x00\x00\x0e0\
+\xd50\xa30\xeb0\xbf\x00.\x00.\x00.\x08\x00\x00\
+\x00\x00\x06\x00\x00\x00\x09filter...\
+\x07\x00\x00\x00\x0b_FilterCard\
+\x01\x03\x00\x00\x00\x16\x001\x006\x902ep0n\
+\x88LujS\xf70\x92QeR\x9b\x08\x00\x00\x00\
+\x00\x06\x00\x00\x00\x1eEnter hex \
+row number to lo\
+cate\x07\x00\x00\x00\x09_GotoCa\
+rd\x01\x03\x00\x00\x00\x06\x88Lc\x07[\x9a\x08\x00\
+\x00\x00\x00\x06\x00\x00\x00\x05Go to\x07\x00\x00\
+\x00\x09_GotoCard\x01\x03\x00\x00\x00\
+\x0e\x001\x006\x902\x88L\x00.\x00.\x00.\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0ahex row\
+...\x07\x00\x00\x00\x09_GotoCar\
+d\x01\x03\x00\x00\x00\x22\x8aq\x80\x050\x92\x90xb\
+\x9e0W0f0\xe10\xc30\xbb0\xfc0\xb80\
+\x920\xd50\xa30\xeb0\xbf\x08\x00\x00\x00\x00\x06\x00\
+\x00\x00#Select a spea\
+ker to filter me\
+ssages\x07\x00\x00\x00\x0c_Spea\
+kerCard\x01\x03\x00\x00\x00\x04\x8aq\x80\
+\x05\x08\x00\x00\x00\x00\x06\x00\x00\x00\x07Speak\
+er\x07\x00\x00\x00\x0c_SpeakerC\
+ard\x01\x03\x00\x00\x00\x06Qh\x8aq\x80\x05\x08\
+\x00\x00\x00\x00\x06\x00\x00\x00\x0call spe\
+akers\x07\x00\x00\x00\x0c_Speak\
+erCard\x01\
 \x00\x00-\xf6\
 <\
 ?xml version=\x221.\
@@ -47009,6 +47087,3026 @@ A1.87,1.87 0 0,0\
 20,18A1,1 0 0,0 \
 19,17Z\x22 fill=\x22#5\
 15151\x22/></svg>\
+\x00\x00\xbc\x97\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<svg versi\
+on=\x221.1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 widt\
+h=\x221024\x22 height=\
+\x221024\x22>\x0a<path d=\
+\x22M0 0 C1.4784741\
+2 0.06960938 1.4\
+7847412 0.069609\
+38 2.98681641 0.\
+140625 C61.90114\
+269 3.13958998 1\
+18.58909705 18.1\
+0525531 172 43 C\
+172.7537793 43.3\
+5126953 173.5075\
+5859 43.70253906\
+ 174.28417969 44\
+.06445312 C201.1\
+7665753 56.74791\
+9 226.21987224 7\
+3.24361682 250 9\
+1 C250.59989746 \
+91.44682129 251.\
+19979492 91.8936\
+4258 251.8178710\
+9 92.35400391 C2\
+64.25851375 101.\
+66071734 275.918\
+31613 111.752734\
+21 287.24951172 \
+122.3671875 C289\
+.13839029 124.12\
+908707 291.03905\
+061 125.87766483\
+ 292.94140625 12\
+7.625 C294.27354\
+084 128.85405467\
+ 295.60557397 13\
+0.08321932 296.9\
+375 131.3125 C29\
+7.85958252 132.1\
+5615112 297.8595\
+8252 132.1561511\
+2 298.80029297 1\
+33.0168457 C302.\
+36873638 136.324\
+83656 305.611295\
+61 139.75098803 \
+308.69775391 143\
+.51464844 C310.0\
+8438698 145.1853\
+5835 310.0843869\
+8 145.18535835 3\
+12.4375 146.9375\
+ C315.41291403 1\
+49.33234544 317.\
+70541329 152.028\
+41686 320.179687\
+5 154.92578125 C\
+321.88594825 156\
+.87003974 323.65\
+296485 158.69023\
+686 325.5 160.5 \
+C328.46098359 16\
+3.42176527 331.2\
+3205596 166.4495\
+8857 333.9414062\
+5 169.60546875 C\
+335.49581332 171\
+.41353618 337.06\
+954755 173.20501\
+308 338.65234375\
+ 174.98828125 C3\
+77.59908499 219.\
+13880334 402.957\
+97917 275.930775\
+11 416 333 C416.\
+2470166 334.0749\
+1699 416.4940332\
+ 335.14983398 41\
+6.74853516 336.2\
+5732422 C423.631\
+15282 366.843345\
+86 427.46921209 \
+397.38823475 427\
+.4375 428.75 C42\
+7.43772156 429.7\
+6840973 427.4379\
+4312 430.7868194\
+6 427.43817139 4\
+31.83609009 C427\
+.40674579 445.33\
+365526 426.61095\
+989 458.60109661\
+ 425 472 C424.87\
+020752 473.13195\
+801 424.74041504\
+ 474.26391602 42\
+4.60668945 475.4\
+3017578 C422.795\
+60721 490.436285\
+79 419.83581094 \
+505.18041318 416\
+.625 519.9375 C4\
+16.44226532 520.\
+78670013 416.259\
+53064 521.635900\
+27 416.07125854 \
+522.51083374 C41\
+2.60769034 538.5\
+129253 408.76198\
+126 554.78718602\
+ 402.125 569.812\
+5 C401.79040771 \
+570.5854541 401.\
+45581543 571.358\
+4082 401.1110839\
+8 572.15478516 C\
+384.78874444 609\
+.22430973 357.08\
+130726 639.04411\
+769 319 654 C306\
+.77436467 658.26\
+198619 293.83788\
+815 662.05239264\
+ 280.82104492 66\
+2.01416016 C279.\
+91875656 662.012\
+11578 279.016468\
+2 662.01007141 2\
+78.08683777 662.\
+00796509 C277.39\
+81813 662.005336\
+61 276.70952484 \
+662.00270813 276\
+ 662 C276.003330\
+92 660.84821259 \
+276.00333092 660\
+.84821259 276.00\
+672913 659.67315\
+674 C276.0267726\
+6 652.43406022 2\
+76.04199488 645.\
+19497717 276.051\
+81217 637.955860\
+14 C276.05702901\
+ 634.23423325 27\
+6.0641049 630.51\
+262931 276.07543\
+945 626.79101562\
+ C276.08631093 6\
+23.19893926 276.\
+09228588 619.606\
+88495 276.094877\
+24 616.0147934 C\
+276.0967238 614.\
+64488121 276.100\
+32966 613.274970\
+23 276.10573006 \
+611.90506744 C27\
+6.11299688 609.9\
+8522623 276.1134\
+0854 608.0653627\
+8 276.11352539 6\
+06.14550781 C276\
+.11685631 604.50\
+669647 276.11685\
+631 604.50669647\
+ 276.12025452 60\
+2.83477783 C276.\
+01596014 600.376\
+23073 275.714501\
+64 598.34237451 \
+275 596 C274.437\
+03502 598.104042\
+31 273.87467147 \
+600.20824554 273\
+.3125 602.3125 C\
+273.13098389 602\
+.98764648 272.94\
+946777 603.66279\
+297 272.76245117\
+ 604.35839844 C2\
+71.78904649 607.\
+99078924 270.838\
+38749 611.626246\
+95 269.9375 615.\
+27734375 C267.48\
+498444 625.11135\
+421 264.60576341\
+ 634.78994585 26\
+1.5 644.4375 C26\
+0.94856323 646.2\
+0722168 260.9485\
+6323 646.2072216\
+8 260.38598633 6\
+48.01269531 C259\
+.83914185 649.67\
+510254 259.83914\
+185 649.67510254\
+ 259.28125 651.3\
+7109375 C258.962\
+20703 652.360368\
+65 258.64316406 \
+653.34964355 258\
+.31445312 654.36\
+889648 C255.8035\
+7184 659.3948563\
+ 251.33019449 66\
+1.52098461 246.4\
+140625 663.84765\
+625 C245.3309277\
+3 664.36432861 2\
+44.24779297 664.\
+88100098 243.131\
+83594 665.413330\
+08 C241.39595215\
+ 666.22966919 24\
+1.39595215 666.2\
+2966919 239.625 \
+667.0625 C238.40\
+364272 667.64343\
+394 237.18261861\
+ 668.22506879 23\
+5.96191406 668.8\
+0737305 C231.309\
+03218 671.024238\
+57 226.64804214 \
+673.22375987 221\
+.98535156 675.41\
+992188 C197.6050\
+2158 686.9060696\
+4 173.67085755 6\
+99.18127271 150.\
+32861328 712.660\
+15625 C148.29784\
+771 713.82862359\
+ 146.26003691 71\
+4.98204889 144.2\
+1484375 716.125 \
+C124.7856357 727\
+.03262557 106.32\
+171751 739.35151\
+624 88 752 C87.3\
+4 751.67 86.68 7\
+51.34 86 751 C89\
+.3 747.7 92.6 74\
+4.4 96 741 C80.0\
+7061743 746.3097\
+9419 64.1933255 \
+761.67551393 51 \
+772 C41.53953187\
+ 779.38230655 31\
+.90260725 786.47\
+50034 22.1455078\
+1 793.45996094 C\
+20.20347631 794.\
+85394532 18.2682\
+7538 796.2566888\
+6 16.3359375 797\
+.6640625 C-46.87\
+633949 843.55975\
+586 -133.1326718\
+5 888.76836502 -\
+213.9375 877 C-2\
+33.85018516 873.\
+63632707 -250.62\
+73319 863.914209\
+79 -265 850 C-26\
+5.53334961 849.4\
+9364014 -266.066\
+69922 848.987280\
+27 -266.61621094\
+ 848.46557617 C-\
+285.93731316 829\
+.74658586 -298.5\
+6743658 803.9982\
+2437 -310 780 C-\
+310.50499023 778\
+.94071289 -311.0\
+0998047 777.8814\
+2578 -311.530273\
+44 776.79003906 \
+C-317.61447694 7\
+63.96641015 -323\
+.50356777 751.05\
+189636 -329.2124\
+6338 738.0568847\
+7 C-330.03219808\
+ 736.1938674 -33\
+0.85946295 734.3\
+3416892 -331.687\
+01172 732.474609\
+38 C-338.0138260\
+9 717.9340007 -3\
+42.40711064 703.\
+10617438 -342.25\
+ 687.1875 C-342.\
+24613281 686.225\
+53711 -342.24226\
+562 685.26357422\
+ -342.23828125 6\
+84.27246094 C-34\
+2.1632117 678.07\
+713745 -341.7029\
+6993 672.1281610\
+6 -340.4375 666.\
+046875 C-339.238\
+18829 657.694525\
+63 -340.00346384\
+ 651.59449661 -3\
+43.625 644 C-344\
+.45623064 642.15\
+764805 -345.2841\
+1343 640.3137834\
+5 -346.109375 63\
+8.46875 C-346.56\
+892578 637.45039\
+062 -347.0284765\
+6 636.43203125 -\
+347.50195312 635\
+.3828125 C-370.2\
+9126805 583.9211\
+5221 -390.836676\
+05 529.57858967 \
+-403.24609375 47\
+4.60546875 C-403\
+.81137488 471.86\
+682485 -403.8113\
+7488 471.8668248\
+5 -406 470 C-407\
+.71197041 469.57\
+82707 -409.42679\
+347 469.1649441 \
+-411.15380859 46\
+8.80981445 C-425\
+.20913361 465.89\
+430853 -435.8940\
+6253 459.2298281\
+2 -446 449 C-446\
+.68449219 448.33\
+742188 -447.3689\
+8437 447.6748437\
+5 -448.07421875 \
+446.9921875 C-46\
+5.47084365 429.0\
+1453583 -469.577\
+35219 403.418189\
+14 -475 380 C-47\
+5.34828857 378.4\
+9928955 -475.348\
+28857 378.499289\
+55 -475.70361328\
+ 376.96826172 C-\
+476.94220856 371\
+.61291001 -478.1\
+5365801 366.2519\
+0225 -479.351074\
+22 360.88720703 \
+C-480.06921975 3\
+57.69202681 -480\
+.8020157 354.500\
+36539 -481.53515\
+625 351.30859375\
+ C-495.35559678 \
+290.82244616 -49\
+5.35559678 290.8\
+2244616 -481.75 \
+268.3125 C-469.9\
+3088117 251.0192\
+6297 -454.586772\
+72 236.43021069 \
+-439.8203125 221\
+.6875 C-438.3123\
+4465 220.1788560\
+4 -436.80452505 \
+218.67006388 -43\
+5.29684448 217.1\
+6113281 C-432.16\
+728686 214.03011\
+58 -429.03596593\
+ 210.90087654 -4\
+25.90332031 207.\
+77294922 C-421.9\
+0578991 203.7811\
+499 -417.9128143\
+5 199.78482909 -\
+413.92112923 195\
+.78718567 C-410.\
+82073053 192.683\
+16301 -407.71794\
+139 189.58153865\
+ -404.6144371 18\
+6.48062134 C-403\
+.14102875 185.00\
+787538 -401.6683\
+4984 183.5343992\
+3 -400.19644547 \
+182.06015015 C-3\
+98.14005778 180.\
+00120171 -396.08\
+045582 177.94552\
+089 -394.0200195\
+3 175.890625 C-3\
+93.42557541 175.\
+29415665 -392.83\
+113129 174.69768\
+829 -392.2186737\
+1 174.08314514 C\
+-388.56586756 17\
+0.44836721 -384.\
+77747616 167.029\
+20104 -380.88129\
+425 163.65754318\
+ C-378.2769201 1\
+61.36291935 -375\
+.84471528 158.94\
+914679 -373.4011\
+2305 156.4829101\
+6 C-372.90068481\
+ 155.97940536 -3\
+72.40024658 155.\
+47590057 -371.88\
+464355 154.95713\
+806 C-370.813643\
+46 153.87906466 \
+-369.74378232 15\
+2.79985873 -368.\
+67499352 151.719\
+59305 C-366.9729\
+2206 149.9998633\
+1 -365.26710338 \
+148.28392917 -36\
+3.56025696 146.5\
+6893921 C-358.71\
+295838 141.69742\
+61 -353.87136804\
+ 136.82027026 -3\
+49.03442383 131.\
+93847656 C-346.0\
+5992981 128.9369\
+2803 -343.080358\
+71 125.9404937 -\
+340.09778786 122\
+.94697189 C-338.\
+97453503 121.817\
+58751 -337.85317\
+133 120.68632047\
+ -336.73389244 1\
+19.55299759 C-32\
+9.82106413 112.5\
+5420333 -322.722\
+49987 106.117812\
+89 -315 100 C-31\
+3.22628091 98.52\
+429497 -311.4551\
+2583 97.0454982 \
+-309.6875 95.562\
+5 C-291.08277298\
+ 80.44453301 -27\
+0.18983629 67.18\
+004609 -248 58 C\
+-247.28183105 57\
+.7014209 -246.56\
+366211 57.402841\
+8 -245.82373047 \
+57.09521484 C-21\
+7.84824306 45.64\
+32962 -188.68651\
+079 37.1315549 -\
+159.61816406 28.\
+98388672 C-157.6\
+4516226 28.43073\
+551 -155.6721802\
+9 27.87751355 -1\
+53.69921875 27.3\
+2421875 C-152.73\
+409866 27.053827\
+82 -151.76897858\
+ 26.78343689 -15\
+0.77461243 26.50\
+485229 C-143.780\
+81625 24.5334260\
+4 -136.82780237 \
+22.44505145 -129\
+.8828125 20.3085\
+9375 C-121.69348\
+404 17.79243799 \
+-113.51023361 15\
+.4165831 -105.18\
+75 13.375 C-104.\
+02645752 13.0885\
+0586 -102.865415\
+04 12.80201172 -\
+101.66918945 12.\
+50683594 C-68.90\
+061282 4.5658960\
+9 -33.84709124 -\
+1.61830276 0 0 Z\
+ M-50 15 C-51.35\
+135886 15.152543\
+6 -52.70276126 1\
+5.30470176 -54.0\
+5419922 15.45654\
+297 C-124.094790\
+02 23.40978045 -\
+189.85841708 41.\
+88180565 -235.74\
+609375 99.414062\
+5 C-237.6312661 \
+101.80303938 -23\
+9.49775963 104.2\
+0592398 -241.359\
+375 106.61328125\
+ C-243.61510268 \
+109.52544192 -24\
+5.94767221 112.3\
+6284458 -248.312\
+5 115.1875 C-253\
+.03387953 120.91\
+576871 -257.3938\
+6334 126.8962624\
+6 -261.77441406 \
+132.88720703 C-2\
+65.91287494 138.\
+54384722 -270.11\
+482772 144.12634\
+4 -274.4921875 1\
+49.6015625 C-276\
+.46040156 152.15\
+076476 -278.0840\
+3937 154.7984692\
+4 -279.6953125 1\
+57.5859375 C-284\
+.51720565 165.60\
+921837 -288.5490\
+0299 171.3777361\
+1 -297.84741211 \
+174.02661133 C-3\
+01.8456616 174.9\
+369706 -305.8563\
+1824 175.7082080\
+4 -309.89550781 \
+176.41357422 C-3\
+15.05563204 177.\
+38830042 -320.07\
+717435 178.81390\
+787 -325.125 180\
+.25 C-326.149079\
+59 180.53721924 \
+-327.17315918 18\
+0.82443848 -328.\
+22827148 181.120\
+36133 C-348.4056\
+8535 186.8753350\
+3 -368.12975879 \
+193.8030556 -387\
+ 203 C-387.73025\
+391 203.35336426\
+ -388.46050781 2\
+03.70672852 -389\
+.21289062 204.07\
+080078 C-397.602\
+66817 208.147179\
+24 -405.85817537\
+ 212.44609809 -4\
+14 217 C-409.882\
+3607 218.3725464\
+3 -407.11923245 \
+216.90950767 -40\
+3.203125 215.5 C\
+-402.03851242 21\
+5.09349213 -402.\
+03851242 215.093\
+49213 -400.85037\
+231 214.67877197\
+ C-399.18287624 \
+214.09620058 -39\
+7.51670705 213.5\
+0982014 -395.851\
+74561 212.920043\
+95 C-391.4896410\
+1 211.37749193 -\
+387.11531052 209\
+.87034386 -382.7\
+421875 208.35937\
+5 C-381.88279572\
+ 208.06174255 -3\
+81.02340393 207.\
+76411011 -380.13\
+796997 207.45745\
+85 C-350.8377866\
+3 197.32430583 -\
+320.47126686 189\
+.69669667 -290 1\
+84 C-288.8596630\
+9 183.78359863 -\
+287.71932617 183\
+.56719727 -286.5\
+4443359 183.3442\
+3828 C-215.41224\
+417 170.04078115\
+ -215.41224417 1\
+70.04078115 -189\
+.25 184.25 C-185\
+.38211318 187.04\
+822786 -183.3595\
+9844 190.4623402\
+2 -182 195 C-180\
+.16725333 208.51\
+65067 -188.52457\
+597 221.96119639\
+ -194.98861694 2\
+33.23683167 C-20\
+0.65949391 243.1\
+6129852 -205.797\
+10879 253.325121\
+63 -210.875 263.\
+5625 C-211.75994\
+788 265.33926407\
+ -212.64504038 2\
+67.11595612 -213\
+.53027344 268.89\
+257812 C-219.048\
+71904 279.984775\
+85 -224.46528594\
+ 291.12008219 -2\
+29.76953125 302.\
+31640625 C-232.3\
+8523099 307.8317\
+5782 -235.104246\
+08 313.29153427 \
+-237.859375 318.\
+73828125 C-239.5\
+0339297 321.9925\
+2523 -241.107547\
+67 325.26471199 \
+-242.703125 328.\
+54296875 C-255.2\
+7263129 354.2467\
+6195 -269.178476\
+9 379.23248152 -\
+289.578125 399.5\
+703125 C-290.972\
+69345 400.969379\
+56 -292.35021558\
+ 402.38695148 -2\
+93.67578125 403.\
+8515625 C-317.03\
+748304 429.16471\
+91 -357.54071201\
+ 442.6465806 -38\
+9.86938477 452.0\
+480957 C-391.927\
+61051 452.650658\
+25 -393.96673805\
+ 453.31792911 -3\
+96 454 C-396.33 \
+454.66 -396.66 4\
+55.32 -397 456 C\
+-385.96321041 45\
+4.54627641 -375.\
+20545397 452.156\
+72348 -364.375 4\
+49.625 C-363.452\
+68585 449.410240\
+17 -362.5303717 \
+449.19548035 -36\
+1.58010864 448.9\
+7421265 C-346.94\
+992312 445.55267\
+867 -332.4183859\
+2 441.81771476 -\
+317.9375 437.812\
+5 C-317.06091736\
+ 437.57291565 -3\
+16.18433472 437.\
+3333313 -315.281\
+18896 437.086486\
+82 C-294.3538071\
+1 431.34216977 -\
+272.67298106 424\
+.44579249 -256 4\
+10 C-255.1917578\
+1 409.34644531 -\
+254.38351562 408\
+.69289063 -253.5\
+5078125 408.0195\
+3125 C-236.66568\
+355 393.82363747\
+ -229.60406727 3\
+74.04201434 -225\
+ 353.125 C-222.5\
+7961145 342.3956\
+1676 -218.931646\
+47 333.83278615 \
+-210 327 C-171.8\
+1645381 304.5679\
+3273 -115.054926\
+79 303.11508787 \
+-72 302 C-70.258\
+31543 301.950209\
+96 -70.25831543 \
+301.95020996 -68\
+.48144531 301.89\
+941406 C-61.6446\
+0992 301.7283347\
+7 -54.83488432 3\
+01.77264877 -48 \
+302 C-46.3271997\
+1 302.05365723 -\
+46.32719971 302.\
+05365723 -44.620\
+60547 302.108398\
+44 C-0.38902459 \
+303.75528703 67.\
+9809876 309.3064\
+8306 103.28125 3\
+38.80078125 C108\
+.06931182 344.92\
+732398 109.87277\
+14 352.6125804 1\
+11.515625 360.07\
+03125 C111.73215\
+729 361.01589523\
+ 111.94868958 36\
+1.96147797 112.1\
+7178345 362.9357\
+1472 C112.632937\
+85 364.95218119 \
+113.09021401 366\
+.96953797 113.54\
+388428 368.98770\
+142 C114.7453859\
+1 374.32601816 1\
+15.97961285 379.\
+65677901 117.210\
+9375 384.9882812\
+5 C117.4535733 3\
+86.04172226 117.\
+69620911 387.095\
+16327 117.946197\
+51 388.18052673 \
+C120.51565418 39\
+9.30282535 123.3\
+4471389 410.3481\
+3613 126.2609252\
+9 421.38449097 C\
+127.94565339 427\
+.76699261 129.59\
+362006 434.15885\
+927 131.2421875 \
+440.55078125 C13\
+2.11966728 443.9\
+4729432 132.9975\
+2513 447.3437094\
+1 133.87554932 4\
+50.74008179 C134\
+.45133642 452.96\
+890075 135.02634\
+844 455.19792011\
+ 135.6005249 457\
+.42715454 C139.6\
+02403 473.059626\
+58 139.602403 47\
+3.05962658 144.2\
+5317383 488.5073\
+2422 C145.710112\
+87 493.3701381 1\
+47.0415177 497.8\
+4067509 144.7734\
+375 502.54296875\
+ C140.15575936 5\
+08.94058891 132.\
+11146507 512.600\
+44181 125.358886\
+72 516.39477539 \
+C82.59392646 540\
+.45076176 41.227\
+09116 567.467731\
+52 3.953125 599.\
+48046875 C1.1076\
+4343 601.9081613\
+6 -1.77919283 60\
+4.2731706 -4.687\
+5 606.625 C-9.13\
+546253 610.24543\
+462 -13.41791821\
+ 614.0122166 -17\
+.65625 617.875 C\
+-19.80692711 619\
+.82494724 -21.98\
+824971 621.73026\
+129 -24.1875 623\
+.625 C-27.355297\
+93 626.38015892 \
+-30.30895489 629\
+.28768622 -33.25\
+ 632.28125 C-34.\
+94121548 633.942\
+26521 -36.689706\
+41 635.47061403 \
+-38.5 637 C-42.7\
+0482938 640.6288\
+2535 -46.6313290\
+8 644.51789135 -\
+50.5625 648.4375\
+ C-51.18769531 6\
+49.05818359 -51.\
+81289063 649.678\
+86719 -52.457031\
+25 650.31835938 \
+C-56.20138604 65\
+4.0745136 -59.74\
+498997 657.94941\
+411 -63.21166992\
+ 661.9621582 C-6\
+6.33652446 665.5\
+2299927 -69.6128\
+4833 668.9403703\
+6 -72.875 672.37\
+5 C-77.32554084 \
+677.07844151 -81\
+.75444592 681.79\
+048836 -86.0625 \
+686.625 C-91.970\
+52229 693.237956\
+77 -98.20934991 \
+699.29800969 -10\
+5 705 C-105.7574\
+8535 705.6441284\
+2 -105.75748535 \
+705.64412842 -10\
+6.53027344 706.3\
+0126953 C-134.23\
+098318 729.72856\
+938 -166.2304226\
+5 744.33234869 -\
+203 742 C-219.62\
+652998 739.99737\
+495 -234.5267269\
+2 730.65351794 -\
+247 720 C-247.66\
+257812 719.43925\
+781 -248.3251562\
+5 718.87851562 -\
+249.0078125 718.\
+30078125 C-261.6\
+4039746 706.6376\
+7374 -269.213260\
+4 689.98947373 -\
+277 675 C-277.38\
+929688 674.25459\
+961 -277.7785937\
+5 673.50919922 -\
+278.1796875 672.\
+74121094 C-293.4\
+6549655 643.3332\
+6815 -306.112216\
+11 612.6198094 -\
+316 581 C-316.47\
+131348 579.49904\
+785 -316.4713134\
+8 579.49904785 -\
+316.95214844 577\
+.96777344 C-326.\
+06793189 548.635\
+77013 -332.60125\
+785 518.43742327\
+ -336.45629883 4\
+87.96557617 C-33\
+7.32118184 483.2\
+4813841 -339.053\
+90131 480.757614\
+55 -342.61328125\
+ 477.54296875 C-\
+345.97802507 475\
+.3677252 -349.51\
+656045 474.23312\
+166 -353.3125 47\
+3 C-354.10849609\
+ 472.73944824 -3\
+54.90449219 472.\
+47889648 -355.72\
+460938 472.21044\
+922 C-366.271859\
+07 468.85087706 \
+-376.85190595 46\
+6.29176814 -388 \
+467 C-388.858161\
+25 470.49868712 \
+-389.03586341 47\
+3.08789303 -388.\
+3203125 476.6132\
+8125 C-388.13799\
+072 477.51530273\
+ -387.95566895 4\
+78.41732422 -387\
+.76782227 479.34\
+667969 C-387.555\
+69092 480.325400\
+39 -387.34355957\
+ 481.30412109 -3\
+87.125 482.3125 \
+C-386.90448975 4\
+83.34922852 -386\
+.68397949 484.38\
+595703 -386.4567\
+8711 485.4541015\
+6 C-383.56049203\
+ 498.59578764 -3\
+79.8147571 511.5\
+1011328 -376.042\
+96875 524.421875\
+ C-375.16190008 \
+527.44456751 -37\
+4.29577688 530.4\
+707875 -373.4375\
+ 533.5 C-369.304\
+17522 547.897916\
+77 -364.14817189\
+ 561.93954624 -3\
+59 576 C-358.716\
+56738 576.777949\
+22 -358.43313477\
+ 577.55589844 -3\
+58.14111328 578.\
+35742188 C-356.7\
+5627175 582.1502\
+4103 -355.334230\
+96 585.92748882 \
+-353.8828125 589\
+.6953125 C-353.2\
+2330456 591.4170\
+3678 -352.570792\
+28 593.14144372 \
+-351.921875 594.\
+8671875 C-346.55\
+40875 609.123194\
+57 -340.7652343 \
+623.08052326 -33\
+4.3125 636.875 C\
+-334.00684113 63\
+7.53242187 -333.\
+70118225 638.189\
+84375 -333.38626\
+099 638.8671875 \
+C-327.53224752 6\
+51.41580486 -321\
+.15278847 663.60\
+507446 -312.875 \
+674.75 C-312.328\
+59863 675.497495\
+12 -311.78219727\
+ 676.24499023 -3\
+11.21923828 677.\
+01513672 C-306.6\
+4066215 683.2373\
+7097 -301.876511\
+4 689.3101492 -2\
+97.10009766 695.\
+38085938 C-292.3\
+3528167 701.4749\
+273 -287.9267071\
+8 707.76133528 -\
+283.6015625 714.\
+171875 C-280.274\
+74283 719.100682\
+44 -276.78144216\
+ 723.9065078 -27\
+3.2890625 728.71\
+875 C-270.727504\
+81 732.39060744 \
+-268.37283993 73\
+6.20345611 -266 \
+740 C-295.205 71\
+0.795 -295.205 7\
+10.795 -325 681 \
+C-326.78513755 6\
+84.57027511 -324\
+.59281972 688.70\
+056744 -323.4436\
+0352 692.3532714\
+8 C-319.24206234\
+ 704.8669466 -31\
+1.53080474 714.9\
+0829444 -303.234\
+375 724.9921875 \
+C-299.68307165 7\
+29.33677464 -296\
+.36936031 733.84\
+3038 -293.0625 7\
+38.375 C-287.020\
+63971 746.640450\
+72 -280.84941699\
+ 754.79451878 -2\
+74.60449219 762.\
+90722656 C-272.9\
+9054027 765.0123\
+3853 -271.388237\
+ 767.12583316 -2\
+69.7890625 769.2\
+421875 C-245.859\
+74495 802.152829\
+01 -245.85974495\
+ 802.15282901 -2\
+10 819 C-200.010\
+6779 819.9974900\
+6 -190.53866407 \
+819.20779947 -18\
+1 816 C-179.7573\
+4375 815.5862109\
+4 -178.5146875 8\
+15.17242188 -177\
+.234375 814.7460\
+9375 C-148.08133\
+439 804.61023226\
+ -122.8602023 78\
+4.45586566 -100.\
+74414062 763.403\
+07617 C-97.02493\
+552 759.86526159\
+ -93.25522248 75\
+6.47464793 -89.2\
+5878906 753.2507\
+3242 C-88.843388\
+67 752.83799072 \
+-88.42798828 752\
+.42524902 -88 75\
+2 C-88 751.34 -8\
+8 750.68 -88 750\
+ C-87.46375 749.\
+79375 -86.9275 7\
+49.5875 -86.375 \
+749.375 C-83.080\
+21991 747.467495\
+74 -80.40636372 \
+744.95180616 -78\
+ 742 C-78 741.34\
+ -78 740.68 -78 \
+740 C-77.34 740 \
+-76.68 740 -76 7\
+40 C-74.60177029\
+ 738.61707981 -7\
+4.60177029 738.6\
+1707981 -73.125 \
+736.75 C-69.9744\
+879 733.02845758\
+ -66.60945323 72\
+9.59251208 -63.1\
+25 726.1875 C-58\
+.5544652 721.690\
+93347 -54.466969\
+91 716.99997309 \
+-50.46875 711.98\
+046875 C-45.2815\
+0785 705.7180229\
+2 -39.62334728 6\
+99.86959002 -34 \
+694 C-33.2367138\
+7 693.20166748 -\
+33.23671387 693.\
+20166748 -32.458\
+00781 692.387207\
+03 C-26.34446805\
+ 686.028714 -19.\
+96512633 680.395\
+82317 -13 675 C-\
+11.16220424 673.\
+50547069 -9.3289\
+7649 672.0053093\
+ -7.5 670.5 C-4.\
+05183249 667.666\
+02221 -0.5749053\
+2 664.87872577 2\
+.9375 662.125 C1\
+5.23147262 652.2\
+663854 26.174858\
+45 640.92573756 \
+37.25 629.75 C40\
+.23137851 626.74\
+179675 43.216225\
+62 623.73709545 \
+46.203125 620.73\
+4375 C46.8678985\
+6 620.0613031 47\
+.53267212 619.38\
+82312 48.2175903\
+3 618.69476318 C\
+52.09635555 614.\
+79602129 56.0858\
+7199 611.0952121\
+3 60.26165771 60\
+7.51568604 C62.6\
+2519149 605.4548\
+864 64.81314163 \
+603.24596265 67 \
+601 C70.53313399\
+ 597.42916488 74\
+.13373095 594.03\
+448775 77.949218\
+75 590.76953125 \
+C80.27566583 588\
+.76213977 82.541\
+92686 586.695333\
+62 84.8125 584.6\
+25 C89.10608632 \
+580.74966257 93.\
+53088002 577.077\
+7869 98.02734375\
+ 573.44140625 C1\
+01.33751679 570.\
+72280159 104.574\
+88543 567.929081\
+45 107.8125 565.\
+125 C113.5540691\
+5 560.16811982 1\
+19.4409072 555.4\
+3855532 125.4296\
+875 550.78515625\
+ C129.17297626 5\
+47.87589124 132.\
+86797567 544.908\
+27649 136.5625 5\
+41.9375 C146.727\
+65379 533.784525\
+37 157.08643106 \
+525.89753945 167\
+.53295898 518.10\
+9375 C168.793226\
+74 517.16842594 \
+170.05063228 516\
+.22362713 171.30\
+46875 515.274414\
+06 C172.80205936\
+ 514.14879754 17\
+4.32138932 513.0\
+5252029 175.8437\
+5 511.9609375 C1\
+78.37952628 509.\
+6548511 179.2988\
+2606 508.3607992\
+2 180 505 C179.4\
+9946294 502.3654\
+3666 178.9036244\
+ 500.08468725 17\
+8.0625 497.5625 \
+C177.82942139 49\
+6.81718018 177.5\
+9634277 496.0718\
+6035 177.3562011\
+7 495.30395508 C\
+176.58847645 492\
+.86324802 175.79\
+727353 490.43120\
+399 175 488 C162\
+.64581213 450.17\
+116399 152.69627\
+916 411.52324447\
+ 143.859375 372.\
+73046875 C143.70\
+099655 372.03755\
+737 143.5426181 \
+371.344646 143.3\
+7944031 370.6307\
+373 C142.6765410\
+4 367.54622119 1\
+41.98624068 364.\
+45982253 141.317\
+62695 361.367675\
+78 C136.94797748\
+ 341.80575231 12\
+8.87569695 328.7\
+7127747 111.875 \
+317.9375 C80.828\
+40277 299.511470\
+75 44.3158621 29\
+1.57546012 9 286\
+.25 C7.0650769 2\
+85.95210571 7.06\
+50769 285.952105\
+71 5.09106445 28\
+5.64819336 C-20.\
+71058554 281.843\
+43902 -46.537203\
+ 281.72781067 -7\
+2.54821777 281.8\
+626709 C-77.0145\
+4712 281.8835348\
+4 -81.48090108 2\
+81.89234911 -85.\
+94726562 281.902\
+34375 C-94.63157\
+525 281.92346957\
+ -103.31576935 2\
+81.95736888 -112\
+ 282 C-99.337570\
+13 252.94951066 \
+-86.30883511 224\
+.65709082 -69 19\
+8 C-68.54641113 \
+197.29423828 -68\
+.09282227 196.58\
+847656 -67.62548\
+828 195.86132812\
+ C-61.84777253 1\
+86.88765846 -55.\
+65219796 178.342\
+83775 -49 170 C-\
+48.50097168 169.\
+3694873 -48.0019\
+4336 168.7389746\
+1 -47.48779297 1\
+68.08935547 C-40\
+.03419587 158.68\
+914601 -32.30059\
+138 149.66187937\
+ -24 141 C-23.22\
+011719 140.17886\
+719 -22.44023438\
+ 139.35773438 -2\
+1.63671875 138.5\
+1171875 C-16.639\
+41004 133.372390\
+61 -11.32350209 \
+128.77879312 -5.\
+69482422 124.344\
+23828 C-3.795271\
+43 122.83762093 \
+-1.91614256 121.\
+30706961 -0.0351\
+5625 119.7773437\
+5 C19.65772491 1\
+03.92822455 42.1\
+6281647 89.73332\
+195 66 81 C66.62\
+600098 80.768613\
+28 67.25200195 8\
+0.53722656 67.89\
+697266 80.298828\
+12 C101.86158682\
+ 67.90122068 139\
+.09125259 63.157\
+15721 174.425781\
+25 72.51171875 C\
+177.10353628 73.\
+2363119 177.1035\
+3628 73.2363119 \
+180 72 C170.2281\
+4728 65.34086103\
+ 160.47881139 58\
+.75059139 150.06\
+787109 53.120605\
+47 C148.55635669\
+ 52.30149672 147\
+.04949308 51.473\
+78939 145.545410\
+16 50.64111328 C\
+131.12961319 42.\
+68132588 116.575\
+27924 36.3280960\
+5 101 31 C100.18\
+112305 30.714311\
+52 99.36224609 3\
+0.42862305 98.51\
+855469 30.134277\
+34 C78.62953883 \
+23.24578521 58.1\
+8475718 19.08632\
+467 37.375 16.18\
+75 C36.62662872 \
+16.0822702 35.87\
+825745 15.977040\
+41 35.10720825 1\
+5.86862183 C6.92\
+293043 11.954752\
+17 -21.74379602 \
+11.6793358 -50 1\
+5 Z M139 82 C142\
+.40317475 85.452\
+49612 145.898999\
+31 88.75514224 1\
+49.5 92 C154.655\
+6556 96.67598436\
+ 159.58553251 10\
+1.54334063 164.4\
+7436523 106.4960\
+9375 C167.245970\
+62 109.29090485 \
+170.0322429 111.\
+98126065 173.062\
+5 114.5 C175.807\
+29997 116.835999\
+98 177.81248459 \
+119.15622997 180\
+ 122 C181.653079\
+64 123.6819579 1\
+83.32246142 125.\
+34263485 185 127\
+ C186.47514796 1\
+28.4735821 187.9\
+4941867 129.9480\
+4259 189.4230957\
+ 131.4230957 C19\
+0.26358963 132.2\
+6358963 191.1040\
+8356 133.1040835\
+6 191.970047 133\
+.970047 C209.485\
+0235 151.4850235\
+ 209.4850235 151\
+.4850235 227 169\
+ C223.79597858 1\
+72.22567471 220.\
+54858135 175.320\
+96805 217.125 17\
+8.3125 C178.2629\
+0741 213.2196008\
+6 158.14613842 2\
+69.26448747 154.\
+84771729 320.358\
+94775 C153.76871\
+569 341.45506702\
+ 154.72542166 36\
+2.27687058 159 3\
+83 C159.30550781\
+ 384.4857251 159\
+.30550781 384.48\
+57251 159.617187\
+5 386.00146484 C\
+161.18775071 393\
+.39498813 163.03\
+882451 400.70130\
+714 165 408 C165\
+.17015625 408.63\
+359436 165.34031\
+25 409.26718872 \
+165.515625 409.9\
+1998291 C172.581\
+06443 436.139387\
+03 180.89853798 \
+461.92652288 190\
+.01953125 487.5 \
+C190.49564928 48\
+8.84449067 190.9\
+715654 490.18905\
+285 191.44726562\
+ 491.53369141 C1\
+92.32944912 494.\
+02708721 193.230\
+01603 496.510907\
+23 194.14257812 \
+498.99365234 C19\
+4.53509766 500.0\
+9660645 194.9276\
+1719 501.1995605\
+5 195.33203125 5\
+02.3359375 C195.\
+67983643 503.290\
+32715 196.027641\
+6 504.2447168 19\
+6.38598633 505.2\
+2802734 C197.100\
+81437 508.455127\
+8 196.73053725 5\
+10.80098476 196 \
+514 C195.01 514.\
+33 194.02 514.66\
+ 193 515 C193 51\
+5.66 193 516.32 \
+193 517 C192.486\
+95313 517.221718\
+75 191.97390625 \
+517.4434375 191.\
+4453125 517.6718\
+75 C188.00315802\
+ 519.54141577 18\
+4.98972191 521.8\
+8352651 181.875 \
+524.25 C181.1792\
+2852 524.7750512\
+7 180.48345703 5\
+25.30010254 179.\
+76660156 525.841\
+06445 C173.61051\
+234 530.50192747\
+ 167.51834464 53\
+5.24429974 161.4\
+3310547 539.9970\
+7031 C157.319289\
+04 543.20746387 \
+153.18593371 546\
+.38367642 149 54\
+9.5 C143.1716802\
+9 553.84092605 1\
+37.43951554 558.\
+30056576 131.711\
+91406 562.772949\
+22 C128.30437567\
+ 565.43306927 12\
+4.89580083 568.0\
+8979097 121.4492\
+1875 570.6992187\
+5 C114.52863571 \
+575.9412983 107.\
+90514005 581.434\
+70467 101.347656\
+25 587.12109375 \
+C98.38480556 589\
+.68472505 95.362\
+3645 592.1651519\
+6 92.3125 594.62\
+5 C87.65489202 5\
+98.40588177 83.2\
+0676542 602.3750\
+8762 78.80078125\
+ 606.4453125 C76\
+.65771041 608.40\
+008004 74.492434\
+41 610.30415877 \
+72.29589844 612.\
+19702148 C68.193\
+94083 615.782774\
+6 64.31016295 61\
+9.54479952 60.46\
+484375 623.40234\
+375 C59.44131554\
+ 624.42443687 59\
+.44131554 624.42\
+443687 58.397109\
+99 625.46717834 \
+C56.96655563 626\
+.89705741 55.537\
+24233 628.328179\
+11 54.10913086 6\
+29.76049805 C51.\
+94300926 631.931\
+97711 49.7715982\
+6 634.09806325 4\
+7.59960938 636.2\
+6367188 C46.2002\
+0013 637.6637420\
+2 44.80110116 63\
+9.06412238 43.40\
+234375 640.46484\
+375 C42.76360825\
+ 641.10155502 42\
+.12487274 641.73\
+82663 41.4667816\
+2 642.39427185 C\
+37.66075389 646.\
+21982903 34.0385\
+0588 650.1586809\
+4 30.51515198 65\
+4.24635315 C29.2\
+0027508 655.7682\
+0031 27.85287862\
+ 657.26183352 26\
+.5 658.75 C24.77\
+172365 660.85388\
+665 24.77172365 \
+660.85388665 25.\
+125 663.1875 C25\
+.96774898 665.18\
+733041 25.967748\
+98 665.18733041 \
+28 667 C30.54599\
+047 666.78826448\
+ 31.73220216 666\
+.2495537 33.6054\
+6875 664.5039062\
+5 C34.12753906 6\
+63.86324219 34.6\
+4960937 663.2225\
+7813 35.1875 662\
+.5625 C35.792070\
+31 661.840625 36\
+.39664063 661.11\
+875 37.01953125 \
+660.375 C37.6730\
+8594 659.59125 3\
+8.32664062 658.8\
+075 39 658 C45.8\
+6753252 650.1657\
+3986 52.88472541\
+ 642.46869562 60\
+.8125 635.6875 C\
+64.38902076 632.\
+62497025 67.6936\
+2644 629.3469646\
+2 71 626 C74.884\
+44269 622.072751\
+87 78.81104084 6\
+18.28294358 83.0\
+1953125 614.6992\
+1875 C85.3266995\
+2 612.71969568 8\
+7.56646782 610.6\
+735788 89.8125 6\
+08.625 C94.07258\
+134 604.78510877\
+ 98.43880733 601\
+.11320365 102.89\
+84375 597.507812\
+5 C105.18443597 \
+595.6594359 107.\
+4591417 593.8005\
+6903 109.7265625\
+ 591.9296875 C13\
+7.47947488 569.0\
+8939882 168.1674\
+8323 548.8431499\
+3 200.5625 533.1\
+875 C201.2586743\
+2 532.84372314 2\
+01.95484863 532.\
+49994629 202.672\
+11914 532.145751\
+95 C205.21648625\
+ 530.9556294 207\
+.33753292 529.98\
+219175 210.17968\
+75 530.05859375 \
+C212.67270821 53\
+1.34790274 214.5\
+0169559 532.9669\
+7351 216.5625 53\
+4.875 C217.44164\
+062 535.68710937\
+ 218.32078125 53\
+6.49921875 219.2\
+265625 537.33593\
+75 C222.01269352\
+ 540.01219293 22\
+4.72921527 542.7\
+451545 227.4375 \
+545.5 C231.78198\
+892 549.88714169\
+ 236.29567432 55\
+3.84599093 241.1\
+25 557.6875 C243\
+.71407377 559.77\
+001585 246.22939\
+36 561.91097363 \
+248.73901367 564\
+.08691406 C269.8\
+4321806 582.3157\
+0603 295.7773280\
+7 598.70899497 3\
+24.65234375 597.\
+453125 C335.6335\
+5244 596.5611993\
+1 346.82307744 5\
+93.12496437 356 \
+587 C357.010625 \
+586.401875 358.0\
+2125 585.80375 3\
+59.0625 585.1875\
+ C359.701875 584\
+.795625 360.3412\
+5 584.40375 361 \
+584 C360.67 583.\
+34 360.34 582.68\
+ 360 582 C359.27\
+296875 582.26554\
+687 358.5459375 \
+582.53109375 357\
+.796875 582.8046\
+875 C332.3795519\
+8 591.73333687 3\
+06.7062991 589.3\
+4282241 282.5429\
+6875 577.8125 C2\
+77.43535731 575.\
+19956537 272.680\
+20156 572.314276\
+07 268 569 C266.\
+55560547 567.982\
+92969 266.555605\
+47 567.98292969 \
+265.08203125 566\
+.9453125 C204.72\
+528273 523.06369\
+197 182.72375308\
+ 443.67615278 17\
+1.45703125 373.3\
+4545898 C169.932\
+58698 363.344696\
+25 168.85327635 \
+353.3732212 168.\
+875 343.25 C168.\
+87242187 342.058\
+90625 168.869843\
+75 340.8678125 1\
+68.8671875 339.6\
+40625 C168.98410\
+277 332.75264518\
+ 169.54111051 32\
+5.87184404 170 3\
+19 C170.1451001 \
+319.91773193 170\
+.2902002 320.835\
+46387 170.439697\
+27 321.78100586 \
+C174.59265195 34\
+7.84900695 179.2\
+6642745 373.7702\
+9769 185.75 399.\
+375 C185.9363501\
+ 400.12982666 18\
+6.1227002 400.88\
+465332 186.31469\
+727 401.66235352\
+ C187.2506811 40\
+5.1826764 188.02\
+085827 407.75708\
+295 191 410 C202\
+.02636142 403.92\
+334792 210.56299\
+625 395.44826589\
+ 218.5625 385.81\
+25 C220.83847931\
+ 383.18637003 22\
+1.89943709 382.2\
+5304704 225 381 \
+C229.53741041 38\
+0.69237896 233.3\
+4734179 380.9866\
+3909 237.7695312\
+5 382.015625 C23\
+8.56593018 382.1\
+9899414 239.3623\
+291 382.38236328\
+ 240.18286133 38\
+2.57128906 C241.\
+08234497 382.783\
+50098 241.082344\
+97 382.78350098 \
+242 383 C242.039\
+63867 382.203439\
+94 242.07927734 \
+381.40687988 242\
+.12011719 380.58\
+618164 C243.6554\
+538 350.82737122\
+ 245.52091996 31\
+9.94220566 253 2\
+91 C252.9388501 \
+292.21502197 252\
+.9388501 292.215\
+02197 252.876464\
+84 293.45458984 \
+C251.75175932 31\
+7.27910425 252.2\
+8263977 340.8280\
+6192 253.8443603\
+5 364.62304688 C\
+253.98906973 366\
+.83307118 254.12\
+727558 369.04341\
+647 254.26464844\
+ 371.25390625 C2\
+57.76791744 424.\
+50359503 271.080\
+18739 487.078370\
+38 312.43359375 \
+524.18359375 C32\
+3.67429749 533.4\
+6024317 336.7306\
+845 541.50240186\
+ 351.66796875 54\
+1.33984375 C361.\
+18567384 540.369\
+10478 368.400748\
+58 535.61362888 \
+375 529 C375.581\
+36719 528.489531\
+25 376.16273438 \
+527.9790625 376.\
+76171875 527.453\
+125 C386.1801717\
+8 518.90243956 3\
+91.57512742 506.\
+689778 396 495 C\
+396.62841797 493\
+.34097656 396.62\
+841797 493.34097\
+656 397.26953125\
+ 491.6484375 C41\
+2.19604668 448.1\
+4830682 418.7871\
+0028 384.3559665\
+9 398.18359375 3\
+42.08984375 C396\
+.33065276 338.58\
+415151 394.21515\
+502 335.28964147\
+ 392 332 C391.57\
+57373 331.368842\
+77 391.15147461 \
+330.73768555 390\
+.71435547 330.08\
+740234 C385.7104\
+1567 322.2228597\
+3 385.71041567 3\
+22.22285973 379 \
+316 C379.2539453\
+1 317.15113281 3\
+79.50789063 318.\
+30226563 379.769\
+53125 319.488281\
+25 C391.12334576\
+ 371.63275132 39\
+8.98619196 446.3\
+170937 369.96875\
+ 494.36328125 C3\
+64.03739355 503.\
+52992303 357.006\
+36243 512.178278\
+9 346 515 C335.9\
+5486041 516.3834\
+6234 328.3826146\
+9 514.65826492 3\
+20 509 C316.4166\
+9783 506.2187741\
+9 313.18914142 5\
+03.22173912 310 \
+500 C309.3361328\
+1 499.36964844 3\
+08.67226563 498.\
+73929687 307.988\
+28125 498.089843\
+75 C296.54862943\
+ 486.41815031 28\
+9.5516918 470.15\
+260218 284 455 C\
+283.74943848 454\
+.33838867 283.49\
+887695 453.67677\
+734 283.24072266\
+ 452.99511719 C2\
+75.40580988 432.\
+13930135 271.170\
+99567 410.128110\
+14 268.125 388.1\
+25 C267.969814 3\
+87.01321381 267.\
+969814 387.01321\
+381 267.81149292\
+ 385.87896729 C2\
+65.38210728 368.\
+22093047 264.813\
+41352 350.702612\
+82 264.81469727 \
+332.89453125 C26\
+4.81252183 329.5\
+3372304 264.7943\
+2928 326.1732500\
+6 264.77539062 3\
+22.8125 C264.724\
+83656 303.641799\
+97 265.75341292 \
+284.56090842 268\
+.875 265.625 C26\
+9.02324219 264.6\
+246875 269.17148\
+437 263.624375 2\
+69.32421875 262.\
+59375 C271.10523\
+465 251.50222007\
+ 274.44399963 24\
+2.58126615 283 2\
+35 C291.01358872\
+ 229.82902118 29\
+8.67600548 229.2\
+7649879 308 230 \
+C311.33666623 23\
+0.87543717 314.0\
+5907485 232.2154\
+3105 317 234 C31\
+7.71285156 234.4\
+2410156 318.4257\
+0312 234.8482031\
+2 319.16015625 2\
+35.28515625 C335\
+.06079179 245.35\
+275441 349.17618\
+253 259.42490186\
+ 360.7578125 274\
+.18359375 C365.1\
+6677333 279.7216\
+787 369.89093542\
+ 284.99957879 37\
+4.54638672 290.3\
+3056641 C375.809\
+49264 291.781207\
+7 377.06374884 2\
+93.23954545 378.\
+31640625 294.699\
+21875 C378.93386\
+719 295.41722656\
+ 379.55132813 29\
+6.13523437 380.1\
+875 296.875 C380\
+.69667969 297.47\
+054687 381.20585\
+938 298.06609375\
+ 381.73046875 29\
+8.6796875 C382.9\
+8526039 300.1321\
+1563 382.9852603\
+9 300.13211563 3\
+85 301 C377.7149\
+7106 282.2725172\
+4 369.12297025 2\
+64.16599945 356.\
+3046875 248.5898\
+4375 C354.966398\
+96 246.95905503 \
+353.65504541 245\
+.30878895 352.34\
+375 243.65625 C3\
+40.67578699 229.\
+17188212 324.413\
+94874 214.950241\
+78 305.375 212.0\
+625 C294.0403480\
+1 211.43392359 2\
+83.45276913 216.\
+27193414 274.457\
+03125 222.863281\
+25 C265.18741153\
+ 231.31258064 25\
+9.06989512 243.9\
+7955166 254.0351\
+5625 255.3125 C2\
+53 257 253 257 2\
+50 258 C247.25 2\
+57.29296875 247.\
+25 257.29296875 \
+244 256.1875 C23\
+0.76540262 251.9\
+7980072 213.3007\
+6659 248.2147169\
+6 200.16015625 2\
+54.68359375 C191\
+.95538998 259.68\
+360502 184.37353\
+965 266.25292069\
+ 180 275 C181.69\
+427677 257.98807\
+818 188.81827227\
+ 241.83297756 19\
+7 227 C197.33725\
+098 226.37818848\
+ 197.67450195 22\
+5.75637695 198.0\
+2197266 225.1157\
+2266 C212.205323\
+98 199.23295767 \
+231.69137184 181\
+.89208323 259.75\
+390625 172.78125\
+ C284.04716021 1\
+65.68832914 306.\
+44174862 169.663\
+57846 328.46875 \
+181.1953125 C331\
+.28570091 182.63\
+494892 334.04073\
+789 183.8959676 \
+337 185 C330.226\
+94627 169.967124\
+64 309.12227279 \
+159.30539592 294\
+.609375 153.6875\
+ C277.41330342 1\
+48.03399701 260.\
+77169725 150.724\
+45615 244.6875 1\
+58.4375 C244.051\
+99219 158.786835\
+94 243.41648437 \
+159.13617188 242\
+.76171875 159.49\
+609375 C241 160 \
+241 160 239.1564\
+9414 159.2880859\
+4 C236.61236694 \
+157.76846462 234\
+.8060341 156.014\
+36311 232.734375\
+ 153.89453125 C2\
+31.92613281 153.\
+07533203 231.117\
+89062 152.256132\
+81 230.28515625 \
+151.41210938 C22\
+9.44855469 150.5\
+5423828 228.6119\
+5313 149.6963671\
+9 227.75 148.812\
+5 C222.01881506 \
+142.95985352 216\
+.24839543 137.29\
+926171 210 132 C\
+208.84709106 131\
+.00325753 207.69\
+472835 130.00588\
+283 206.54296875\
+ 129.0078125 C20\
+0.38269871 123.7\
+0717809 194.2011\
+8235 118.4395468\
+8 187.87890625 1\
+13.33203125 C185\
+.78708404 111.63\
+757011 183.71548\
+942 109.92776864\
+ 181.65234375 10\
+8.19921875 C174.\
+78353522 102.501\
+97242 167.732365\
+17 97.33610106 1\
+60.1875 92.5625 \
+C159.42373047 92\
+.07869873 158.65\
+996094 91.594897\
+46 157.87304688 \
+91.09643555 C148\
+.96271836 84.924\
+81843 148.962718\
+36 84.92481843 1\
+39 82 Z M-372 22\
+1 C-372.96083496\
+ 221.31437012 -3\
+73.92166992 221.\
+62874023 -374.91\
+162109 221.95263\
+672 C-387.959665\
+43 226.25487225 \
+-400.59298896 23\
+1.09743791 -413 \
+237 C-414.021662\
+6 237.47904785 -\
+414.0216626 237.\
+47904785 -415.06\
+396484 237.96777\
+344 C-434.426180\
+38 247.09084557 \
+-459.51629091 25\
+9.48389993 -468.\
+5 280.0625 C-473\
+.3540459 295.664\
+7904 -468.799505\
+97 313.41736172 \
+-466 329 C-465.7\
+8569336 330.1991\
+5039 -465.571386\
+72 331.39830078 \
+-465.35058594 33\
+2.63378906 C-460\
+.26310768 371.23\
+812161 -460.2631\
+0768 371.2381216\
+1 -442.60546875 \
+404.21484375 C-4\
+37.5413858 407.6\
+8453777 -433.560\
+33808 408.338682\
+31 -427.5 407.93\
+75 C-426.3999060\
+1 407.86631958 -\
+426.39990601 407\
+.86631958 -425.2\
+7758789 407.7937\
+0117 C-398.66361\
+167 405.60484139\
+ -369.59697962 3\
+95.05368317 -351\
+.8125 374.4375 C\
+-336.20727577 35\
+3.58815765 -330.\
+9080512 326.0025\
+4602 -326 301 C-\
+325.85304688 300\
+.2879541 -325.70\
+609375 299.57590\
+82 -325.5546875 \
+298.84228516 C-3\
+22.11042225 281.\
+74462267 -323.06\
+527439 262.21438\
+251 -325 245 C-3\
+25.99 245.495 -3\
+25.99 245.495 -3\
+27 246 C-329.112\
+38616 253.556163\
+92 -329.89054278\
+ 261.35619587 -3\
+30.88665771 269.\
+12045288 C-334.4\
+409277 296.49496\
+581 -339.6149365\
+6 323.65980072 -\
+348 350 C-348.24\
+572754 350.77408\
+203 -348.4914550\
+8 351.54816406 -\
+348.74462891 352\
+.34570312 C-354.\
+22323138 369.033\
+09818 -365.24135\
+919 378.19141167\
+ -380.4375 386.0\
+625 C-396.301798\
+69 393.92495342 \
+-416.16036109 40\
+0.33290215 -434 \
+400 C-437.508350\
+67 391.98410752 \
+-440.43505658 38\
+3.96325414 -442.\
+875 375.5625 C-4\
+43.38426025 373.\
+81549805 -443.38\
+426025 373.81549\
+805 -443.9038085\
+9 372.03320312 C\
+-449.48081801 35\
+2.61098885 -453.\
+99273041 333.089\
+68883 -457.4375 \
+313.1875 C-457.5\
+6932678 312.4334\
+79 -457.70115356\
+ 311.67945801 -4\
+57.8369751 310.9\
+0258789 C-458.21\
+126033 308.74241\
+726 -458.5746730\
+1 306.5807402 -4\
+58.93359375 304.\
+41796875 C-459.1\
+4040771 303.1781\
+3232 -459.347221\
+68 301.9382959 -\
+459.56030273 300\
+.66088867 C-460.\
+80629938 290.286\
+80774 -459.33189\
+467 282.44641552\
+ -452.890625 274\
+.1171875 C-447.7\
+4965249 268.3601\
+4804 -442.550226\
+6 263.66456231 -\
+436 259.5625 C-4\
+34.8869751 258.8\
+5710083 -434.886\
+9751 258.8571008\
+3 -433.75146484 \
+258.13745117 C-4\
+00.00364443 237.\
+00459624 -361.47\
+822591 226.72766\
+083 -323 218 C-3\
+22.72845093 219.\
+02250854 -322.72\
+845093 219.02250\
+854 -322.4514160\
+2 220.06567383 C\
+-320.7685474 226\
+.32953461 -318.9\
+3768035 232.5184\
+3463 -316.9375 2\
+38.6875 C-314.70\
+382102 245.61246\
+154 -312.5172528\
+1 252.5493397 -3\
+10.390625 259.50\
+78125 C-309.7137\
+3059 261.7121764\
+9 -309.03626858 \
+263.91636534 -30\
+8.3586731 266.12\
+051392 C-307.911\
+55006 267.580774\
+29 -307.46710699\
+ 269.04185796 -3\
+07.02536011 270.\
+50375366 C-306.4\
+0268022 272.5632\
+6996 -305.770665\
+31 274.61970992 \
+-305.13671875 27\
+6.67578125 C-304\
+.77280029 277.87\
+114502 -304.4088\
+8184 279.0665087\
+9 -304.03393555 \
+280.2980957 C-30\
+3.29806608 283.1\
+3243414 -303.298\
+06608 283.132434\
+14 -301 284 C-29\
+4.43843833 272.3\
+3247136 -288.850\
+89776 261.011261\
+58 -285.21875 24\
+8.1015625 C-282.\
+36314923 238.231\
+31662 -282.36314\
+923 238.23131662\
+ -278.98046875 2\
+35.17578125 C-27\
+4.54085637 233.4\
+2437453 -270.017\
+30356 232.879521\
+02 -265.3125 232\
+.1875 C-258.0590\
+362 231.01176903\
+ -252.62228554 2\
+29.81941958 -246\
+.609375 225.4414\
+0625 C-242.90878\
+997 223.39722081\
+ -239.12340475 2\
+22.74598618 -235\
+ 221.9375 C-226.\
+01310864 220.158\
+20066 -216.62266\
+111 217.87172556\
+ -211 210 C-210.\
+0831978 206.4567\
+8447 -210.083197\
+8 206.45678447 -\
+211 203 C-217.89\
+032921 196.10967\
+079 -229.6110496\
+8 196.7405485 -2\
+38.71655273 196.\
+67041016 C-240.6\
+5123413 196.6788\
+6963 -240.651234\
+13 196.67886963 \
+-242.625 196.687\
+5 C-243.30184845\
+ 196.68965515 -2\
+43.9786969 196.6\
+918103 -244.6760\
+5591 196.6940307\
+6 C-287.31681097\
+ 196.90988278 -3\
+31.62748113 207.\
+69140776 -372 22\
+1 Z M-202 338 C-\
+203.25139028 340\
+.05741619 -203.2\
+5139028 340.0574\
+1619 -204 342 C-\
+203.01 342.99 -2\
+03.01 342.99 -20\
+2 344 C-196.8691\
+888 343.15888341\
+ -192.06575336 3\
+41.71778596 -187\
+.12109375 340.13\
+28125 C-179.7853\
+0925 337.8698588\
+1 -172.38030344 \
+336.09878014 -16\
+4.875 334.5 C-16\
+4.17822144 334.3\
+5036804 -163.481\
+44287 334.200736\
+08 -162.7635498 \
+334.04656982 C-1\
+46.00436556 330.\
+48882551 -129.05\
+825594 328.48658\
+046 -112 327 C-1\
+10.53901131 326.\
+87117432 -110.53\
+901131 326.87117\
+432 -109.0485076\
+9 326.73974609 C\
+-101.65349586 32\
+6.12494981 -94.3\
+1363089 325.8285\
+6192 -86.8945312\
+5 325.796875 C-8\
+5.22855896 325.7\
+8642151 -85.2285\
+5896 325.7864215\
+1 -83.52893066 3\
+25.77575684 C-79\
+.95674807 325.75\
+845059 -76.38472\
+28 325.75203476 \
+-72.8125 325.75 \
+C-71.5882431 325\
+.74899292 -70.36\
+398621 325.74798\
+584 -69.10263062\
+ 325.74694824 C-\
+49.21858939 325.\
+75799105 -29.730\
+26879 326.547261\
+96 -10 329 C-8.8\
+0101074 329.1392\
+1875 -7.60202148\
+ 329.2784375 -6.\
+36669922 329.421\
+875 C71.16225918\
+ 338.53424339 71\
+.16225918 338.53\
+424339 86.15625 \
+356.59765625 C88\
+.49515322 360.91\
+372553 89.651766\
+41 365.12518869 \
+90.8125 369.875 \
+C91.06402832 370\
+.86967285 91.315\
+55664 371.864345\
+7 91.57470703 37\
+2.88916016 C93.8\
+4508228 382.0249\
+497 95.83521365 \
+391.22245434 97.\
+81619263 400.424\
+40796 C99.995373\
+57 410.54602984 \
+102.29513155 420\
+.62884738 104.75\
+ 430.6875 C104.9\
+0909851 431.3406\
+8207 105.0681970\
+2 431.99386414 1\
+05.2321167 432.6\
+668396 C107.1933\
+8472 440.7106871\
+9 109.18453034 4\
+48.7470262 111.1\
+8414307 456.7814\
+1785 C112.207360\
+05 460.89777695 \
+113.22531302 465\
+.01542999 114.24\
+279785 469.13320\
+923 C114.9881985\
+2 472.13989691 1\
+15.74156516 475.\
+14451661 116.495\
+11719 478.149169\
+92 C116.9554825 \
+480.00950284 117\
+.41546166 481.86\
+993138 117.875 4\
+83.73046875 C118\
+.19781952 485.00\
+331726 118.19781\
+952 485.00331726\
+ 118.52716064 48\
+6.30187988 C121.\
+36723774 497.901\
+3341 121.3672377\
+4 497.9013341 11\
+9 503 C117.34094\
+51 503.6853897 1\
+15.67256082 504.\
+34826192 114 505\
+ C112.12756937 5\
+06.02997273 110.\
+2743722 507.0953\
+7326 108.4375 50\
+8.1875 C106.8577\
+5391 509.1214257\
+8 106.85775391 5\
+09.12142578 105.\
+24609375 510.074\
+21875 C104.17488\
+281 510.70972656\
+ 103.10367187 51\
+1.34523438 102 5\
+12 C100.00102983\
+ 513.1684303 98.\
+00104827 514.335\
+13222 96 515.5 C\
+95.01 516.0775 9\
+4.02 516.655 93 \
+517.25 C90 519 8\
+7 520.75 84 522.\
+5 C82.51693359 5\
+23.36612915 82.5\
+1693359 523.3661\
+2915 81.00390625\
+ 524.24975586 C7\
+8.99323822 525.4\
+2128375 76.98019\
+053 526.58873653\
+ 74.96484375 527\
+.75219727 C68.20\
+768723 531.66208\
+42 61.57265959 5\
+35.72538563 55 5\
+39.9375 C53.5580\
+2246 540.8597033\
+7 53.55802246 54\
+0.85970337 52.08\
+691406 541.80053\
+711 C49.38860532\
+ 543.52958374 46\
+.6934025 545.263\
+32321 44 547 C43\
+.38060547 547.39\
+864258 42.761210\
+94 547.79728516 \
+42.12304688 548.\
+20800781 C32.490\
+63194 554.432672\
+48 23.24822756 5\
+61.22400682 14 5\
+68 C13.40590332 \
+568.43521973 12.\
+81180664 568.870\
+43945 12.1997070\
+3 569.31884766 C\
+5.95413813 573.9\
+1013433 -0.11280\
+902 578.67298323\
+ -6.08203125 583\
+.6171875 C-8.774\
+8098 585.8161097\
+4 -11.50120809 5\
+87.9595584 -14.2\
+4731445 590.0908\
+2031 C-19.891067\
+68 594.47222497 \
+-25.31165584 598\
+.97545178 -30.57\
+03125 603.820312\
+5 C-33.162995 60\
+6.14622381 -35.8\
+4360549 608.3233\
+7808 -38.5625 61\
+0.5 C-42.8719778\
+7 613.98400042 -\
+46.8087772 617.6\
+5968276 -50.6367\
+1875 621.6640625\
+ C-52.52768667 6\
+23.53315145 -54.\
+43368348 625.242\
+85371 -56.453125\
+ 626.96484375 C-\
+62.00120948 631.\
+77838583 -67.145\
+87062 636.996420\
+13 -72.32739258 \
+642.19702148 C-7\
+4.058947 643.933\
+936 -75.79578359\
+ 645.66543889 -7\
+7.53320312 647.3\
+9648438 C-82.722\
+33769 652.582830\
+83 -87.81994697 \
+657.7797606 -92.\
+58374023 663.365\
+47852 C-94.60560\
+322 665.69893356\
+ -96.78880045 66\
+7.84698991 -99 6\
+70 C-101.9724832\
+5 672.93661618 -\
+104.84380752 675\
+.8896408 -107.56\
+25 679.0625 C-12\
+6.96751964 701.5\
+3622041 -151.057\
+19472 713.247137\
+37 -180 718 C-18\
+0.7425 718.13148\
+438 -181.485 718\
+.26296875 -182.2\
+5 718.3984375 C-\
+198.44434682 720\
+.89506597 -218.0\
+1106298 718.6570\
+1443 -231.679687\
+5 709.1328125 C-\
+244.47428185 698\
+.51602145 -251.3\
+9825786 682.2052\
+9568 -255.1875 6\
+66.375 C-255.570\
+83496 664.797066\
+65 -255.57083496\
+ 664.79706665 -2\
+55.96191406 663.\
+18725586 C-258.4\
+9080289 652.4427\
+5835 -259.670769\
+55 641.91735298 \
+-260.4140625 630\
+.92578125 C-262.\
+61500608 599.064\
+73053 -272.93122\
+271 580.98146968\
+ -296.22900391 5\
+59.65283203 C-29\
+7.65634412 558.3\
+2072654 -299.030\
+80124 556.932083\
+17 -300.38671875\
+ 555.52734375 C-\
+301.87179648 553\
+.77083308 -301.8\
+7179648 553.7708\
+3308 -304 554 C-\
+304.30550781 553\
+.20335937 -304.3\
+0550781 553.2033\
+5937 -304.617187\
+5 552.390625 C-3\
+06.59505609 548.\
+97125896 -309.30\
+326899 546.48662\
+079 -312.125 543\
+.75 C-312.969980\
+47 542.91855469 \
+-312.96998047 54\
+2.91855469 -313.\
+83203125 542.070\
+3125 C-315.21686\
+028 540.70895515\
+ -316.60783204 5\
+39.35385141 -318\
+ 538 C-319.33448\
+158 542.00344474\
+ -318.3133651 54\
+3.79111853 -316.\
+97265625 547.773\
+4375 C-316.74913\
+986 548.44410751\
+ -316.52562347 5\
+49.11477753 -316\
+.29533386 549.80\
+577087 C-315.560\
+86317 551.998959\
+85 -314.81254482\
+ 554.18709231 -3\
+14.0625 556.375 \
+C-313.54574679 5\
+57.89863022 -313\
+.02914612 559.42\
+231218 -312.5126\
+9531 560.9460449\
+2 C-304.9162913 \
+583.26187861 -29\
+5.95633439 604.9\
+4574513 -286.820\
+3125 626.6660156\
+2 C-285.18310696\
+ 630.55985186 -2\
+83.55890975 634.\
+45893585 -281.93\
+75 638.359375 C-\
+267.17594098 675\
+.33841171 -267.1\
+7594098 675.3384\
+1171 -245 708 C-\
+244.525625 708.6\
+1488281 -244.051\
+25 709.22976563 \
+-243.5625 709.86\
+328125 C-233.440\
+95487 722.831510\
+95 -216.0701788 \
+730.82341038 -20\
+0.1875 733.6875 \
+C-198.79328783 7\
+33.8114912 -197.\
+39704624 733.913\
+61021 -196 734 C\
+-194.68902344 73\
+4.11408203 -194.\
+68902344 734.114\
+08203 -193.35156\
+25 734.23046875 \
+C-162.70943809 7\
+35.68774202 -135\
+.7942626 717.543\
+84159 -114 698 C\
+-109.86018468 69\
+4.12188627 -105.\
+85715825 690.106\
+22971 -101.86816\
+406 686.07397461\
+ C-100.11063484 \
+684.29798395 -98\
+.34502854 682.53\
+033191 -96.57812\
+5 680.76367188 C\
+-95.42921224 679\
+.60984804 -94.28\
+075807 678.45556\
+735 -93.1328125 \
+677.30078125 C-9\
+2.61913116 676.7\
+8598709 -92.1054\
+4983 676.2711929\
+3 -91.57620239 6\
+75.74079895 C-88\
+.80583071 672.93\
+494128 -86.15833\
+787 670.06042445\
+ -83.5793457 667\
+.07714844 C-80.0\
+7724695 663.0389\
+3995 -76.3822125\
+8 659.23740636 -\
+72.59765625 655.\
+46484375 C-71.91\
+626083 654.78249\
+161 -71.23486542\
+ 654.10013947 -7\
+0.53282166 653.3\
+9710999 C-69.102\
+94259 651.966555\
+63 -67.67182089 \
+650.53724233 -66\
+.23950195 649.10\
+913086 C-64.0680\
+2289 646.9430092\
+6 -61.90193675 6\
+44.77159826 -59.\
+73632812 642.599\
+60938 C-58.33625\
+798 641.20020013\
+ -56.93587762 63\
+9.80110116 -55.5\
+3515625 638.4023\
+4375 C-54.898444\
+98 637.76360825 \
+-54.2617337 637.\
+12487274 -53.605\
+72815 636.466781\
+62 C-49.77887174\
+ 632.65946129 -4\
+5.83852686 629.0\
+3685181 -41.7483\
+0627 625.5136261\
+ C-39.40310434 6\
+23.48322736 -37.\
+14353979 621.365\
+35865 -34.875 61\
+9.25 C-30.201444\
+63 614.98312141 \
+-25.34608452 611\
+.05133962 -20.34\
+008789 607.18334\
+961 C-16.2322569\
+1 604.00032708 -\
+12.25188983 600.\
+70103299 -8.3125\
+ 597.3125 C-3.74\
+266541 593.40190\
+687 0.9336257 58\
+9.74195688 5.839\
+84375 586.261718\
+75 C8.27299997 5\
+84.52031275 10.6\
+7472318 582.7539\
+5424 13.06640625\
+ 580.95703125 C2\
+5.72286178 571.4\
+6914562 38.77880\
+568 562.67780074\
+ 52 554 C54.1902\
+4303 552.5548979\
+5 56.38034564 55\
+1.10958304 58.57\
+03125 549.664062\
+5 C69.49876846 5\
+42.4678838 80.48\
+771131 535.39684\
+683 91.63452148 \
+528.54370117 C11\
+1.22514981 517.9\
+1454249 111.2251\
+4981 517.9145424\
+9 127 503 C128.3\
+3983385 494.6083\
+2298 125.6763532\
+1 486.183581 123\
+.66796875 478.10\
+9375 C123.315597\
+38 476.65664776 \
+122.9642629 475.\
+20366868 122.613\
+8916 473.7504577\
+6 C121.67778879 \
+469.87956953 120\
+.72809021 466.01\
+213899 119.77578\
+354 462.14521027\
+ C118.79040042 4\
+58.13319971 117.\
+81812377 454.118\
+0186 116.8449707\
+ 450.10302734 C1\
+15.29281849 443.\
+70436688 113.734\
+52769 437.307236\
+42 112.171875 43\
+0.91113281 C109.\
+53245099 420.102\
+84795 106.942292\
+33 409.28297303 \
+104.36343384 398\
+.46008301 C103.7\
+1079586 395.7227\
+1032 103.0563391\
+ 392.98578006 10\
+2.40112305 390.2\
+4902344 C102.199\
+35455 389.405870\
+82 101.99758606 \
+388.5627182 101.\
+78970337 387.694\
+0155 C101.404031\
+6 386.0824122 10\
+1.01819496 384.4\
+7084835 100.6321\
+7163 382.8593292\
+2 C99.70351801 3\
+78.97490922 98.7\
+8606128 375.0882\
+8328 97.88647461\
+ 371.19702148 C9\
+7.7068367 370.42\
+284882 97.527198\
+79 369.64867615 \
+97.34211731 368.\
+8510437 C97.0064\
+0558 367.4012897\
+3 96.6730335 365\
+.95099094 96.342\
+57507 364.500030\
+52 C94.6083478 3\
+57.01791753 92.7\
+0243871 350.2562\
+4529 86.3828125 \
+345.45703125 C44\
+.73330491 319.98\
+938153 -19.50287\
+882 317.54046669\
+ -66.8125 317.62\
+5 C-67.97309937 \
+317.62554382 -69\
+.13369873 317.62\
+608765 -70.32946\
+777 317.62664795\
+ C-138.98662803 \
+316.42986379 -13\
+8.98662803 316.4\
+2986379 -202 338\
+ Z M211 498 C212\
+.47680539 502.87\
+345778 215.19332\
+437 506.66593647\
+ 219 510 C221.39\
+005307 511.09204\
+829 223.38647588\
+ 511.52956566 22\
+6 512 C223.92462\
+949 509.84776392\
+ 221.89603574 50\
+7.9220268 219.5 \
+506.125 C216.676\
+50372 503.725028\
+17 215.02834376 \
+501.07748708 213\
+ 498 C212.34 498\
+ 211.68 498 211 \
+498 Z M70 631 C6\
+9.2471875 631.72\
+832031 68.494375\
+ 632.45664062 67\
+.71875 633.20703\
+125 C56.71457358\
+ 644.61328335 52\
+.60447005 658.27\
+506403 52.628662\
+11 673.78540039 \
+C53.12484633 693\
+.91071461 60.799\
+05965 717.434932\
+98 75 732 C81.70\
+005525 736.95804\
+088 86.85135624 \
+737.58615068 95 \
+737 C104.9472996\
+2 734.38228957 1\
+12.34893261 725.\
+62575095 117.417\
+96875 717.054687\
+5 C130.51923604 \
+691.75791955 143\
+.21633484 653.81\
+214524 134.98046\
+875 625.5859375 \
+C132.0291177 617\
+.80189609 126.94\
+65761 611.631050\
+73 120 607 C101.\
+15017828 600.716\
+72609 82.3320390\
+7 618.86286384 7\
+0 631 Z \x22 fill=\x22\
+#515151\x22 transfo\
+rm=\x22translate(54\
+3,3)\x22/>\x0a<path d=\
+\x22M0 0 C6.7250846\
+ 5.92447929 10.2\
+7054499 13.46251\
+724 11.625 22.31\
+25 C13.19806196 \
+47.75375206 7.63\
+733094 82.907349\
+07 -8.9375 103.1\
+25 C-12.91148602\
+ 107.12547926 -1\
+6.67876763 109.3\
+9330993 -22.375 \
+109.75 C-26.6449\
+1744 109.5629369\
+5 -29.08997764 1\
+08.08651888 -32.\
+375 105.3125 C-4\
+1.94370814 94.70\
+933692 -45.84883\
+293 80.86620466 \
+-49.375 67.3125 \
+C-49.6225 66.456\
+5625 -49.87 65.6\
+00625 -50.125 64\
+.71875 C-53.0908\
+9844 53.01992838\
+ -53.61955272 36\
+.89621628 -47.37\
+5 26.3125 C-38.0\
+8437704 12.44222\
+367 -18.76829597\
+ -9.38414798 0 0\
+ Z \x22 fill=\x22#5151\
+51\x22 transform=\x22t\
+ranslate(657.375\
+,621.6875)\x22/>\x0a<p\
+ath d=\x22M0 0 C9.3\
+4465177 10.01212\
+689 9.97541996 2\
+1.84379685 10.74\
+804688 34.880859\
+38 C11.44835147 \
+44.84284995 13.1\
+8418139 52.37105\
+218 20.19140625 \
+59.73828125 C27.\
+13612452 65.6574\
+5525 35.888167 6\
+8.60896247 44.62\
+5 70.8125 C43.28\
+500502 73.819318\
+ 41.82654709 75.\
+81012609 39.4375\
+ 78.0625 C36.989\
+74079 80.3784126\
+9 34.7601998 82.\
+79913314 32.5703\
+125 85.35546875 \
+C28.30935542 90.\
+26120199 23.7393\
+1717 94.84879774\
+ 19.13696289 99.\
+4309082 C17.6897\
+5615 100.8727522\
+1 16.24797974 10\
+2.31987116 14.80\
+664062 103.76757\
+812 C9.58205629 \
+108.99591138 4.2\
+421524 114.00926\
+317 -1.375 118.8\
+125 C-2.98268373\
+ 120.26695517 -4\
+.58739715 121.72\
+470895 -6.1875 1\
+23.1875 C-10.430\
+76008 127.012863\
+25 -14.78359497 \
+130.6634409 -19.\
+2265625 134.2539\
+0625 C-21.553114\
+54 136.13512409 \
+-23.85466809 138\
+.04379752 -26.14\
+84375 139.964843\
+75 C-36.18165737\
+ 148.34704262 -4\
+6.49594234 156.2\
+7247386 -57.0029\
+2969 164.0502929\
+7 C-59.21094631 \
+165.69062479 -61\
+.40870244 167.34\
+338977 -63.60156\
+25 169.00390625 \
+C-84.8504214 185\
+.09162403 -106.8\
+92276 200.144318\
+69 -129.33935547\
+ 214.50634766 C-\
+131.40924031 215\
+.83446998 -133.4\
+7306659 217.1715\
+2914 -135.535156\
+25 218.51171875 \
+C-145.30238245 2\
+24.85945143 -155\
+.13159776 231.10\
+413795 -164.9897\
+4609 237.3095703\
+1 C-167.31389164\
+ 238.7739961 -16\
+9.63588789 240.2\
+4175869 -171.957\
+03125 241.710937\
+5 C-187.85762266\
+ 251.773982 -203\
+.78847398 261.79\
+116833 -219.8320\
+3125 271.625 C-2\
+23.73475548 274.\
+02667645 -227.61\
+610201 276.46242\
+772 -231.4997558\
+6 278.89477539 C\
+-235.6999097 281\
+.52468439 -239.9\
+0325863 284.1494\
+5529 -244.107421\
+88 286.77294922 \
+C-246.27351305 2\
+88.12497594 -248\
+.43888656 289.47\
+815316 -250.6035\
+1562 290.8325195\
+3 C-275.5254648 \
+306.40685088 -30\
+1.1891223 322.42\
+315233 -328.375 \
+333.8125 C-329.4\
+0625 334.26625 -\
+330.4375 334.72 \
+-331.5 335.1875 \
+C-347.20943943 3\
+38.60259553 -367\
+.48266658 324.90\
+888921 -380.2421\
+875 316.7421875 \
+C-393.94060343 3\
+07.77620081 -393\
+.94060343 307.77\
+620081 -399.375 \
+302.8125 C-399.3\
+75 302.1525 -399\
+.375 301.4925 -3\
+99.375 300.8125 \
+C-397.87109375 2\
+99.3671875 -397.\
+87109375 299.367\
+1875 -395.8125 2\
+97.6875 C-382.02\
+531039 285.84559\
+287 -375.4697821\
+9 270.7589987 -3\
+73.5625 252.6875\
+ C-372.85905462 \
+239.23185241 -37\
+4.36935091 227.4\
+3968742 -383.187\
+5 216.75 C-391.4\
+7591232 208.1278\
+2611 -402.274419\
+79 202.07066862 \
+-412.375 195.812\
+5 C-411.88 194.8\
+225 -411.88 194.\
+8225 -411.375 19\
+3.8125 C-408.978\
+15569 193.190981\
+96 -406.61261697\
+ 192.67241449 -4\
+04.1875 192.1875\
+ C-374.82149569 \
+185.75158972 -34\
+5.98312196 171.2\
+0364498 -320.255\
+37109 155.925781\
+25 C-318.1835112\
+ 154.69912829 -3\
+16.10143712 153.\
+49076826 -314.01\
+953125 152.28125\
+ C-292.40558615 \
+139.61961549 -27\
+1.79007118 125.3\
+0549771 -251.375\
+ 110.8125 C-250.\
+15110233 109.947\
+83079 -248.92714\
+814 109.08324159\
+ -247.703125 108\
+.21875 C-241.972\
+37505 104.158551\
+58 -236.29969764\
+ 100.02574971 -2\
+30.65649414 95.8\
+4472656 C-207.28\
+617457 78.536891\
+23 -183.35274212\
+ 61.52528768 -15\
+8.19433594 46.89\
+160156 C-156.123\
+25311 45.6631815\
+3 -154.08087481 \
+44.3936547 -152.\
+0390625 43.11718\
+75 C-143.1696181\
+7 37.57829066 -1\
+34.25940893 32.4\
+9804134 -124.824\
+21875 27.9921875\
+ C-121.9551711 2\
+6.61028576 -119.\
+10316813 25.1956\
+4104 -116.25 23.\
+78125 C-95.59319\
+739 13.60338654 \
+-74.48134033 4.3\
+8254801 -52.375 \
+-2.1875 C-51.690\
+99121 -2.3963281\
+2 -51.00698242 -\
+2.60515625 -50.3\
+0224609 -2.82031\
+25 C-34.40730001\
+ -7.55545552 -14\
+.25096922 -10.23\
+511006 0 0 Z \x22 f\
+ill=\x22#515151\x22 tr\
+ansform=\x22transla\
+te(839.375,685.1\
+875)\x22/>\x0a<path d=\
+\x22M0 0 C4.5873951\
+9 1.69873131 8.4\
+7373745 4.061261\
+35 12.59765625 6\
+.66015625 C22.90\
+052391 12.406308\
+46 36.99020943 8\
+.54509159 47.75 \
+6.0625 C70.47775\
+485 0.9552725 91\
+.27804861 0.3805\
+4227 113.8125 7 \
+C114.70364502 7.\
+26119629 115.594\
+79004 7.52239258\
+ 116.51293945 7.\
+79150391 C117.75\
+370239 8.1731469\
+7 117.75370239 8\
+.17314697 119.01\
+953125 8.5625 C1\
+19.76307861 8.79\
+066406 120.50662\
+598 9.01882813 1\
+21.27270508 9.25\
+390625 C123 10 1\
+23 10 124 12 C11\
+9.26341411 13.96\
+760514 114.52045\
+998 15.9190404 1\
+09.7734375 17.86\
+132812 C107.8577\
+8282 18.64782579\
+ 105.94382043 19\
+.43845349 104.03\
+125 20.23242188 \
+C58.20904341 39.\
+23822347 58.2090\
+4341 39.23822347\
+ 37 31 C23.05717\
+856 23.74051446 \
+9.84907242 12.18\
+174747 0 0 Z \x22 f\
+ill=\x22#515151\x22 tr\
+ansform=\x22transla\
+te(287,772)\x22/>\x0a<\
+/svg>\x0a\
 \x00\x00\x01\xdf\
 <\
 svg xmlns=\x22http:\
@@ -47330,6 +50428,11111 @@ svg xmlns=\x22http:\
 .31,12L20,8.69Z\x22\
  fill=\x22#e6e6e6\x22/\
 ></svg>\
+\x00\x00\xbc\x97\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<svg versi\
+on=\x221.1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 widt\
+h=\x221024\x22 height=\
+\x221024\x22>\x0a<path d=\
+\x22M0 0 C1.4784741\
+2 0.06960938 1.4\
+7847412 0.069609\
+38 2.98681641 0.\
+140625 C61.90114\
+269 3.13958998 1\
+18.58909705 18.1\
+0525531 172 43 C\
+172.7537793 43.3\
+5126953 173.5075\
+5859 43.70253906\
+ 174.28417969 44\
+.06445312 C201.1\
+7665753 56.74791\
+9 226.21987224 7\
+3.24361682 250 9\
+1 C250.59989746 \
+91.44682129 251.\
+19979492 91.8936\
+4258 251.8178710\
+9 92.35400391 C2\
+64.25851375 101.\
+66071734 275.918\
+31613 111.752734\
+21 287.24951172 \
+122.3671875 C289\
+.13839029 124.12\
+908707 291.03905\
+061 125.87766483\
+ 292.94140625 12\
+7.625 C294.27354\
+084 128.85405467\
+ 295.60557397 13\
+0.08321932 296.9\
+375 131.3125 C29\
+7.85958252 132.1\
+5615112 297.8595\
+8252 132.1561511\
+2 298.80029297 1\
+33.0168457 C302.\
+36873638 136.324\
+83656 305.611295\
+61 139.75098803 \
+308.69775391 143\
+.51464844 C310.0\
+8438698 145.1853\
+5835 310.0843869\
+8 145.18535835 3\
+12.4375 146.9375\
+ C315.41291403 1\
+49.33234544 317.\
+70541329 152.028\
+41686 320.179687\
+5 154.92578125 C\
+321.88594825 156\
+.87003974 323.65\
+296485 158.69023\
+686 325.5 160.5 \
+C328.46098359 16\
+3.42176527 331.2\
+3205596 166.4495\
+8857 333.9414062\
+5 169.60546875 C\
+335.49581332 171\
+.41353618 337.06\
+954755 173.20501\
+308 338.65234375\
+ 174.98828125 C3\
+77.59908499 219.\
+13880334 402.957\
+97917 275.930775\
+11 416 333 C416.\
+2470166 334.0749\
+1699 416.4940332\
+ 335.14983398 41\
+6.74853516 336.2\
+5732422 C423.631\
+15282 366.843345\
+86 427.46921209 \
+397.38823475 427\
+.4375 428.75 C42\
+7.43772156 429.7\
+6840973 427.4379\
+4312 430.7868194\
+6 427.43817139 4\
+31.83609009 C427\
+.40674579 445.33\
+365526 426.61095\
+989 458.60109661\
+ 425 472 C424.87\
+020752 473.13195\
+801 424.74041504\
+ 474.26391602 42\
+4.60668945 475.4\
+3017578 C422.795\
+60721 490.436285\
+79 419.83581094 \
+505.18041318 416\
+.625 519.9375 C4\
+16.44226532 520.\
+78670013 416.259\
+53064 521.635900\
+27 416.07125854 \
+522.51083374 C41\
+2.60769034 538.5\
+129253 408.76198\
+126 554.78718602\
+ 402.125 569.812\
+5 C401.79040771 \
+570.5854541 401.\
+45581543 571.358\
+4082 401.1110839\
+8 572.15478516 C\
+384.78874444 609\
+.22430973 357.08\
+130726 639.04411\
+769 319 654 C306\
+.77436467 658.26\
+198619 293.83788\
+815 662.05239264\
+ 280.82104492 66\
+2.01416016 C279.\
+91875656 662.012\
+11578 279.016468\
+2 662.01007141 2\
+78.08683777 662.\
+00796509 C277.39\
+81813 662.005336\
+61 276.70952484 \
+662.00270813 276\
+ 662 C276.003330\
+92 660.84821259 \
+276.00333092 660\
+.84821259 276.00\
+672913 659.67315\
+674 C276.0267726\
+6 652.43406022 2\
+76.04199488 645.\
+19497717 276.051\
+81217 637.955860\
+14 C276.05702901\
+ 634.23423325 27\
+6.0641049 630.51\
+262931 276.07543\
+945 626.79101562\
+ C276.08631093 6\
+23.19893926 276.\
+09228588 619.606\
+88495 276.094877\
+24 616.0147934 C\
+276.0967238 614.\
+64488121 276.100\
+32966 613.274970\
+23 276.10573006 \
+611.90506744 C27\
+6.11299688 609.9\
+8522623 276.1134\
+0854 608.0653627\
+8 276.11352539 6\
+06.14550781 C276\
+.11685631 604.50\
+669647 276.11685\
+631 604.50669647\
+ 276.12025452 60\
+2.83477783 C276.\
+01596014 600.376\
+23073 275.714501\
+64 598.34237451 \
+275 596 C274.437\
+03502 598.104042\
+31 273.87467147 \
+600.20824554 273\
+.3125 602.3125 C\
+273.13098389 602\
+.98764648 272.94\
+946777 603.66279\
+297 272.76245117\
+ 604.35839844 C2\
+71.78904649 607.\
+99078924 270.838\
+38749 611.626246\
+95 269.9375 615.\
+27734375 C267.48\
+498444 625.11135\
+421 264.60576341\
+ 634.78994585 26\
+1.5 644.4375 C26\
+0.94856323 646.2\
+0722168 260.9485\
+6323 646.2072216\
+8 260.38598633 6\
+48.01269531 C259\
+.83914185 649.67\
+510254 259.83914\
+185 649.67510254\
+ 259.28125 651.3\
+7109375 C258.962\
+20703 652.360368\
+65 258.64316406 \
+653.34964355 258\
+.31445312 654.36\
+889648 C255.8035\
+7184 659.3948563\
+ 251.33019449 66\
+1.52098461 246.4\
+140625 663.84765\
+625 C245.3309277\
+3 664.36432861 2\
+44.24779297 664.\
+88100098 243.131\
+83594 665.413330\
+08 C241.39595215\
+ 666.22966919 24\
+1.39595215 666.2\
+2966919 239.625 \
+667.0625 C238.40\
+364272 667.64343\
+394 237.18261861\
+ 668.22506879 23\
+5.96191406 668.8\
+0737305 C231.309\
+03218 671.024238\
+57 226.64804214 \
+673.22375987 221\
+.98535156 675.41\
+992188 C197.6050\
+2158 686.9060696\
+4 173.67085755 6\
+99.18127271 150.\
+32861328 712.660\
+15625 C148.29784\
+771 713.82862359\
+ 146.26003691 71\
+4.98204889 144.2\
+1484375 716.125 \
+C124.7856357 727\
+.03262557 106.32\
+171751 739.35151\
+624 88 752 C87.3\
+4 751.67 86.68 7\
+51.34 86 751 C89\
+.3 747.7 92.6 74\
+4.4 96 741 C80.0\
+7061743 746.3097\
+9419 64.1933255 \
+761.67551393 51 \
+772 C41.53953187\
+ 779.38230655 31\
+.90260725 786.47\
+50034 22.1455078\
+1 793.45996094 C\
+20.20347631 794.\
+85394532 18.2682\
+7538 796.2566888\
+6 16.3359375 797\
+.6640625 C-46.87\
+633949 843.55975\
+586 -133.1326718\
+5 888.76836502 -\
+213.9375 877 C-2\
+33.85018516 873.\
+63632707 -250.62\
+73319 863.914209\
+79 -265 850 C-26\
+5.53334961 849.4\
+9364014 -266.066\
+69922 848.987280\
+27 -266.61621094\
+ 848.46557617 C-\
+285.93731316 829\
+.74658586 -298.5\
+6743658 803.9982\
+2437 -310 780 C-\
+310.50499023 778\
+.94071289 -311.0\
+0998047 777.8814\
+2578 -311.530273\
+44 776.79003906 \
+C-317.61447694 7\
+63.96641015 -323\
+.50356777 751.05\
+189636 -329.2124\
+6338 738.0568847\
+7 C-330.03219808\
+ 736.1938674 -33\
+0.85946295 734.3\
+3416892 -331.687\
+01172 732.474609\
+38 C-338.0138260\
+9 717.9340007 -3\
+42.40711064 703.\
+10617438 -342.25\
+ 687.1875 C-342.\
+24613281 686.225\
+53711 -342.24226\
+562 685.26357422\
+ -342.23828125 6\
+84.27246094 C-34\
+2.1632117 678.07\
+713745 -341.7029\
+6993 672.1281610\
+6 -340.4375 666.\
+046875 C-339.238\
+18829 657.694525\
+63 -340.00346384\
+ 651.59449661 -3\
+43.625 644 C-344\
+.45623064 642.15\
+764805 -345.2841\
+1343 640.3137834\
+5 -346.109375 63\
+8.46875 C-346.56\
+892578 637.45039\
+062 -347.0284765\
+6 636.43203125 -\
+347.50195312 635\
+.3828125 C-370.2\
+9126805 583.9211\
+5221 -390.836676\
+05 529.57858967 \
+-403.24609375 47\
+4.60546875 C-403\
+.81137488 471.86\
+682485 -403.8113\
+7488 471.8668248\
+5 -406 470 C-407\
+.71197041 469.57\
+82707 -409.42679\
+347 469.1649441 \
+-411.15380859 46\
+8.80981445 C-425\
+.20913361 465.89\
+430853 -435.8940\
+6253 459.2298281\
+2 -446 449 C-446\
+.68449219 448.33\
+742188 -447.3689\
+8437 447.6748437\
+5 -448.07421875 \
+446.9921875 C-46\
+5.47084365 429.0\
+1453583 -469.577\
+35219 403.418189\
+14 -475 380 C-47\
+5.34828857 378.4\
+9928955 -475.348\
+28857 378.499289\
+55 -475.70361328\
+ 376.96826172 C-\
+476.94220856 371\
+.61291001 -478.1\
+5365801 366.2519\
+0225 -479.351074\
+22 360.88720703 \
+C-480.06921975 3\
+57.69202681 -480\
+.8020157 354.500\
+36539 -481.53515\
+625 351.30859375\
+ C-495.35559678 \
+290.82244616 -49\
+5.35559678 290.8\
+2244616 -481.75 \
+268.3125 C-469.9\
+3088117 251.0192\
+6297 -454.586772\
+72 236.43021069 \
+-439.8203125 221\
+.6875 C-438.3123\
+4465 220.1788560\
+4 -436.80452505 \
+218.67006388 -43\
+5.29684448 217.1\
+6113281 C-432.16\
+728686 214.03011\
+58 -429.03596593\
+ 210.90087654 -4\
+25.90332031 207.\
+77294922 C-421.9\
+0578991 203.7811\
+499 -417.9128143\
+5 199.78482909 -\
+413.92112923 195\
+.78718567 C-410.\
+82073053 192.683\
+16301 -407.71794\
+139 189.58153865\
+ -404.6144371 18\
+6.48062134 C-403\
+.14102875 185.00\
+787538 -401.6683\
+4984 183.5343992\
+3 -400.19644547 \
+182.06015015 C-3\
+98.14005778 180.\
+00120171 -396.08\
+045582 177.94552\
+089 -394.0200195\
+3 175.890625 C-3\
+93.42557541 175.\
+29415665 -392.83\
+113129 174.69768\
+829 -392.2186737\
+1 174.08314514 C\
+-388.56586756 17\
+0.44836721 -384.\
+77747616 167.029\
+20104 -380.88129\
+425 163.65754318\
+ C-378.2769201 1\
+61.36291935 -375\
+.84471528 158.94\
+914679 -373.4011\
+2305 156.4829101\
+6 C-372.90068481\
+ 155.97940536 -3\
+72.40024658 155.\
+47590057 -371.88\
+464355 154.95713\
+806 C-370.813643\
+46 153.87906466 \
+-369.74378232 15\
+2.79985873 -368.\
+67499352 151.719\
+59305 C-366.9729\
+2206 149.9998633\
+1 -365.26710338 \
+148.28392917 -36\
+3.56025696 146.5\
+6893921 C-358.71\
+295838 141.69742\
+61 -353.87136804\
+ 136.82027026 -3\
+49.03442383 131.\
+93847656 C-346.0\
+5992981 128.9369\
+2803 -343.080358\
+71 125.9404937 -\
+340.09778786 122\
+.94697189 C-338.\
+97453503 121.817\
+58751 -337.85317\
+133 120.68632047\
+ -336.73389244 1\
+19.55299759 C-32\
+9.82106413 112.5\
+5420333 -322.722\
+49987 106.117812\
+89 -315 100 C-31\
+3.22628091 98.52\
+429497 -311.4551\
+2583 97.0454982 \
+-309.6875 95.562\
+5 C-291.08277298\
+ 80.44453301 -27\
+0.18983629 67.18\
+004609 -248 58 C\
+-247.28183105 57\
+.7014209 -246.56\
+366211 57.402841\
+8 -245.82373047 \
+57.09521484 C-21\
+7.84824306 45.64\
+32962 -188.68651\
+079 37.1315549 -\
+159.61816406 28.\
+98388672 C-157.6\
+4516226 28.43073\
+551 -155.6721802\
+9 27.87751355 -1\
+53.69921875 27.3\
+2421875 C-152.73\
+409866 27.053827\
+82 -151.76897858\
+ 26.78343689 -15\
+0.77461243 26.50\
+485229 C-143.780\
+81625 24.5334260\
+4 -136.82780237 \
+22.44505145 -129\
+.8828125 20.3085\
+9375 C-121.69348\
+404 17.79243799 \
+-113.51023361 15\
+.4165831 -105.18\
+75 13.375 C-104.\
+02645752 13.0885\
+0586 -102.865415\
+04 12.80201172 -\
+101.66918945 12.\
+50683594 C-68.90\
+061282 4.5658960\
+9 -33.84709124 -\
+1.61830276 0 0 Z\
+ M-50 15 C-51.35\
+135886 15.152543\
+6 -52.70276126 1\
+5.30470176 -54.0\
+5419922 15.45654\
+297 C-124.094790\
+02 23.40978045 -\
+189.85841708 41.\
+88180565 -235.74\
+609375 99.414062\
+5 C-237.6312661 \
+101.80303938 -23\
+9.49775963 104.2\
+0592398 -241.359\
+375 106.61328125\
+ C-243.61510268 \
+109.52544192 -24\
+5.94767221 112.3\
+6284458 -248.312\
+5 115.1875 C-253\
+.03387953 120.91\
+576871 -257.3938\
+6334 126.8962624\
+6 -261.77441406 \
+132.88720703 C-2\
+65.91287494 138.\
+54384722 -270.11\
+482772 144.12634\
+4 -274.4921875 1\
+49.6015625 C-276\
+.46040156 152.15\
+076476 -278.0840\
+3937 154.7984692\
+4 -279.6953125 1\
+57.5859375 C-284\
+.51720565 165.60\
+921837 -288.5490\
+0299 171.3777361\
+1 -297.84741211 \
+174.02661133 C-3\
+01.8456616 174.9\
+369706 -305.8563\
+1824 175.7082080\
+4 -309.89550781 \
+176.41357422 C-3\
+15.05563204 177.\
+38830042 -320.07\
+717435 178.81390\
+787 -325.125 180\
+.25 C-326.149079\
+59 180.53721924 \
+-327.17315918 18\
+0.82443848 -328.\
+22827148 181.120\
+36133 C-348.4056\
+8535 186.8753350\
+3 -368.12975879 \
+193.8030556 -387\
+ 203 C-387.73025\
+391 203.35336426\
+ -388.46050781 2\
+03.70672852 -389\
+.21289062 204.07\
+080078 C-397.602\
+66817 208.147179\
+24 -405.85817537\
+ 212.44609809 -4\
+14 217 C-409.882\
+3607 218.3725464\
+3 -407.11923245 \
+216.90950767 -40\
+3.203125 215.5 C\
+-402.03851242 21\
+5.09349213 -402.\
+03851242 215.093\
+49213 -400.85037\
+231 214.67877197\
+ C-399.18287624 \
+214.09620058 -39\
+7.51670705 213.5\
+0982014 -395.851\
+74561 212.920043\
+95 C-391.4896410\
+1 211.37749193 -\
+387.11531052 209\
+.87034386 -382.7\
+421875 208.35937\
+5 C-381.88279572\
+ 208.06174255 -3\
+81.02340393 207.\
+76411011 -380.13\
+796997 207.45745\
+85 C-350.8377866\
+3 197.32430583 -\
+320.47126686 189\
+.69669667 -290 1\
+84 C-288.8596630\
+9 183.78359863 -\
+287.71932617 183\
+.56719727 -286.5\
+4443359 183.3442\
+3828 C-215.41224\
+417 170.04078115\
+ -215.41224417 1\
+70.04078115 -189\
+.25 184.25 C-185\
+.38211318 187.04\
+822786 -183.3595\
+9844 190.4623402\
+2 -182 195 C-180\
+.16725333 208.51\
+65067 -188.52457\
+597 221.96119639\
+ -194.98861694 2\
+33.23683167 C-20\
+0.65949391 243.1\
+6129852 -205.797\
+10879 253.325121\
+63 -210.875 263.\
+5625 C-211.75994\
+788 265.33926407\
+ -212.64504038 2\
+67.11595612 -213\
+.53027344 268.89\
+257812 C-219.048\
+71904 279.984775\
+85 -224.46528594\
+ 291.12008219 -2\
+29.76953125 302.\
+31640625 C-232.3\
+8523099 307.8317\
+5782 -235.104246\
+08 313.29153427 \
+-237.859375 318.\
+73828125 C-239.5\
+0339297 321.9925\
+2523 -241.107547\
+67 325.26471199 \
+-242.703125 328.\
+54296875 C-255.2\
+7263129 354.2467\
+6195 -269.178476\
+9 379.23248152 -\
+289.578125 399.5\
+703125 C-290.972\
+69345 400.969379\
+56 -292.35021558\
+ 402.38695148 -2\
+93.67578125 403.\
+8515625 C-317.03\
+748304 429.16471\
+91 -357.54071201\
+ 442.6465806 -38\
+9.86938477 452.0\
+480957 C-391.927\
+61051 452.650658\
+25 -393.96673805\
+ 453.31792911 -3\
+96 454 C-396.33 \
+454.66 -396.66 4\
+55.32 -397 456 C\
+-385.96321041 45\
+4.54627641 -375.\
+20545397 452.156\
+72348 -364.375 4\
+49.625 C-363.452\
+68585 449.410240\
+17 -362.5303717 \
+449.19548035 -36\
+1.58010864 448.9\
+7421265 C-346.94\
+992312 445.55267\
+867 -332.4183859\
+2 441.81771476 -\
+317.9375 437.812\
+5 C-317.06091736\
+ 437.57291565 -3\
+16.18433472 437.\
+3333313 -315.281\
+18896 437.086486\
+82 C-294.3538071\
+1 431.34216977 -\
+272.67298106 424\
+.44579249 -256 4\
+10 C-255.1917578\
+1 409.34644531 -\
+254.38351562 408\
+.69289063 -253.5\
+5078125 408.0195\
+3125 C-236.66568\
+355 393.82363747\
+ -229.60406727 3\
+74.04201434 -225\
+ 353.125 C-222.5\
+7961145 342.3956\
+1676 -218.931646\
+47 333.83278615 \
+-210 327 C-171.8\
+1645381 304.5679\
+3273 -115.054926\
+79 303.11508787 \
+-72 302 C-70.258\
+31543 301.950209\
+96 -70.25831543 \
+301.95020996 -68\
+.48144531 301.89\
+941406 C-61.6446\
+0992 301.7283347\
+7 -54.83488432 3\
+01.77264877 -48 \
+302 C-46.3271997\
+1 302.05365723 -\
+46.32719971 302.\
+05365723 -44.620\
+60547 302.108398\
+44 C-0.38902459 \
+303.75528703 67.\
+9809876 309.3064\
+8306 103.28125 3\
+38.80078125 C108\
+.06931182 344.92\
+732398 109.87277\
+14 352.6125804 1\
+11.515625 360.07\
+03125 C111.73215\
+729 361.01589523\
+ 111.94868958 36\
+1.96147797 112.1\
+7178345 362.9357\
+1472 C112.632937\
+85 364.95218119 \
+113.09021401 366\
+.96953797 113.54\
+388428 368.98770\
+142 C114.7453859\
+1 374.32601816 1\
+15.97961285 379.\
+65677901 117.210\
+9375 384.9882812\
+5 C117.4535733 3\
+86.04172226 117.\
+69620911 387.095\
+16327 117.946197\
+51 388.18052673 \
+C120.51565418 39\
+9.30282535 123.3\
+4471389 410.3481\
+3613 126.2609252\
+9 421.38449097 C\
+127.94565339 427\
+.76699261 129.59\
+362006 434.15885\
+927 131.2421875 \
+440.55078125 C13\
+2.11966728 443.9\
+4729432 132.9975\
+2513 447.3437094\
+1 133.87554932 4\
+50.74008179 C134\
+.45133642 452.96\
+890075 135.02634\
+844 455.19792011\
+ 135.6005249 457\
+.42715454 C139.6\
+02403 473.059626\
+58 139.602403 47\
+3.05962658 144.2\
+5317383 488.5073\
+2422 C145.710112\
+87 493.3701381 1\
+47.0415177 497.8\
+4067509 144.7734\
+375 502.54296875\
+ C140.15575936 5\
+08.94058891 132.\
+11146507 512.600\
+44181 125.358886\
+72 516.39477539 \
+C82.59392646 540\
+.45076176 41.227\
+09116 567.467731\
+52 3.953125 599.\
+48046875 C1.1076\
+4343 601.9081613\
+6 -1.77919283 60\
+4.2731706 -4.687\
+5 606.625 C-9.13\
+546253 610.24543\
+462 -13.41791821\
+ 614.0122166 -17\
+.65625 617.875 C\
+-19.80692711 619\
+.82494724 -21.98\
+824971 621.73026\
+129 -24.1875 623\
+.625 C-27.355297\
+93 626.38015892 \
+-30.30895489 629\
+.28768622 -33.25\
+ 632.28125 C-34.\
+94121548 633.942\
+26521 -36.689706\
+41 635.47061403 \
+-38.5 637 C-42.7\
+0482938 640.6288\
+2535 -46.6313290\
+8 644.51789135 -\
+50.5625 648.4375\
+ C-51.18769531 6\
+49.05818359 -51.\
+81289063 649.678\
+86719 -52.457031\
+25 650.31835938 \
+C-56.20138604 65\
+4.0745136 -59.74\
+498997 657.94941\
+411 -63.21166992\
+ 661.9621582 C-6\
+6.33652446 665.5\
+2299927 -69.6128\
+4833 668.9403703\
+6 -72.875 672.37\
+5 C-77.32554084 \
+677.07844151 -81\
+.75444592 681.79\
+048836 -86.0625 \
+686.625 C-91.970\
+52229 693.237956\
+77 -98.20934991 \
+699.29800969 -10\
+5 705 C-105.7574\
+8535 705.6441284\
+2 -105.75748535 \
+705.64412842 -10\
+6.53027344 706.3\
+0126953 C-134.23\
+098318 729.72856\
+938 -166.2304226\
+5 744.33234869 -\
+203 742 C-219.62\
+652998 739.99737\
+495 -234.5267269\
+2 730.65351794 -\
+247 720 C-247.66\
+257812 719.43925\
+781 -248.3251562\
+5 718.87851562 -\
+249.0078125 718.\
+30078125 C-261.6\
+4039746 706.6376\
+7374 -269.213260\
+4 689.98947373 -\
+277 675 C-277.38\
+929688 674.25459\
+961 -277.7785937\
+5 673.50919922 -\
+278.1796875 672.\
+74121094 C-293.4\
+6549655 643.3332\
+6815 -306.112216\
+11 612.6198094 -\
+316 581 C-316.47\
+131348 579.49904\
+785 -316.4713134\
+8 579.49904785 -\
+316.95214844 577\
+.96777344 C-326.\
+06793189 548.635\
+77013 -332.60125\
+785 518.43742327\
+ -336.45629883 4\
+87.96557617 C-33\
+7.32118184 483.2\
+4813841 -339.053\
+90131 480.757614\
+55 -342.61328125\
+ 477.54296875 C-\
+345.97802507 475\
+.3677252 -349.51\
+656045 474.23312\
+166 -353.3125 47\
+3 C-354.10849609\
+ 472.73944824 -3\
+54.90449219 472.\
+47889648 -355.72\
+460938 472.21044\
+922 C-366.271859\
+07 468.85087706 \
+-376.85190595 46\
+6.29176814 -388 \
+467 C-388.858161\
+25 470.49868712 \
+-389.03586341 47\
+3.08789303 -388.\
+3203125 476.6132\
+8125 C-388.13799\
+072 477.51530273\
+ -387.95566895 4\
+78.41732422 -387\
+.76782227 479.34\
+667969 C-387.555\
+69092 480.325400\
+39 -387.34355957\
+ 481.30412109 -3\
+87.125 482.3125 \
+C-386.90448975 4\
+83.34922852 -386\
+.68397949 484.38\
+595703 -386.4567\
+8711 485.4541015\
+6 C-383.56049203\
+ 498.59578764 -3\
+79.8147571 511.5\
+1011328 -376.042\
+96875 524.421875\
+ C-375.16190008 \
+527.44456751 -37\
+4.29577688 530.4\
+707875 -373.4375\
+ 533.5 C-369.304\
+17522 547.897916\
+77 -364.14817189\
+ 561.93954624 -3\
+59 576 C-358.716\
+56738 576.777949\
+22 -358.43313477\
+ 577.55589844 -3\
+58.14111328 578.\
+35742188 C-356.7\
+5627175 582.1502\
+4103 -355.334230\
+96 585.92748882 \
+-353.8828125 589\
+.6953125 C-353.2\
+2330456 591.4170\
+3678 -352.570792\
+28 593.14144372 \
+-351.921875 594.\
+8671875 C-346.55\
+40875 609.123194\
+57 -340.7652343 \
+623.08052326 -33\
+4.3125 636.875 C\
+-334.00684113 63\
+7.53242187 -333.\
+70118225 638.189\
+84375 -333.38626\
+099 638.8671875 \
+C-327.53224752 6\
+51.41580486 -321\
+.15278847 663.60\
+507446 -312.875 \
+674.75 C-312.328\
+59863 675.497495\
+12 -311.78219727\
+ 676.24499023 -3\
+11.21923828 677.\
+01513672 C-306.6\
+4066215 683.2373\
+7097 -301.876511\
+4 689.3101492 -2\
+97.10009766 695.\
+38085938 C-292.3\
+3528167 701.4749\
+273 -287.9267071\
+8 707.76133528 -\
+283.6015625 714.\
+171875 C-280.274\
+74283 719.100682\
+44 -276.78144216\
+ 723.9065078 -27\
+3.2890625 728.71\
+875 C-270.727504\
+81 732.39060744 \
+-268.37283993 73\
+6.20345611 -266 \
+740 C-295.205 71\
+0.795 -295.205 7\
+10.795 -325 681 \
+C-326.78513755 6\
+84.57027511 -324\
+.59281972 688.70\
+056744 -323.4436\
+0352 692.3532714\
+8 C-319.24206234\
+ 704.8669466 -31\
+1.53080474 714.9\
+0829444 -303.234\
+375 724.9921875 \
+C-299.68307165 7\
+29.33677464 -296\
+.36936031 733.84\
+3038 -293.0625 7\
+38.375 C-287.020\
+63971 746.640450\
+72 -280.84941699\
+ 754.79451878 -2\
+74.60449219 762.\
+90722656 C-272.9\
+9054027 765.0123\
+3853 -271.388237\
+ 767.12583316 -2\
+69.7890625 769.2\
+421875 C-245.859\
+74495 802.152829\
+01 -245.85974495\
+ 802.15282901 -2\
+10 819 C-200.010\
+6779 819.9974900\
+6 -190.53866407 \
+819.20779947 -18\
+1 816 C-179.7573\
+4375 815.5862109\
+4 -178.5146875 8\
+15.17242188 -177\
+.234375 814.7460\
+9375 C-148.08133\
+439 804.61023226\
+ -122.8602023 78\
+4.45586566 -100.\
+74414062 763.403\
+07617 C-97.02493\
+552 759.86526159\
+ -93.25522248 75\
+6.47464793 -89.2\
+5878906 753.2507\
+3242 C-88.843388\
+67 752.83799072 \
+-88.42798828 752\
+.42524902 -88 75\
+2 C-88 751.34 -8\
+8 750.68 -88 750\
+ C-87.46375 749.\
+79375 -86.9275 7\
+49.5875 -86.375 \
+749.375 C-83.080\
+21991 747.467495\
+74 -80.40636372 \
+744.95180616 -78\
+ 742 C-78 741.34\
+ -78 740.68 -78 \
+740 C-77.34 740 \
+-76.68 740 -76 7\
+40 C-74.60177029\
+ 738.61707981 -7\
+4.60177029 738.6\
+1707981 -73.125 \
+736.75 C-69.9744\
+879 733.02845758\
+ -66.60945323 72\
+9.59251208 -63.1\
+25 726.1875 C-58\
+.5544652 721.690\
+93347 -54.466969\
+91 716.99997309 \
+-50.46875 711.98\
+046875 C-45.2815\
+0785 705.7180229\
+2 -39.62334728 6\
+99.86959002 -34 \
+694 C-33.2367138\
+7 693.20166748 -\
+33.23671387 693.\
+20166748 -32.458\
+00781 692.387207\
+03 C-26.34446805\
+ 686.028714 -19.\
+96512633 680.395\
+82317 -13 675 C-\
+11.16220424 673.\
+50547069 -9.3289\
+7649 672.0053093\
+ -7.5 670.5 C-4.\
+05183249 667.666\
+02221 -0.5749053\
+2 664.87872577 2\
+.9375 662.125 C1\
+5.23147262 652.2\
+663854 26.174858\
+45 640.92573756 \
+37.25 629.75 C40\
+.23137851 626.74\
+179675 43.216225\
+62 623.73709545 \
+46.203125 620.73\
+4375 C46.8678985\
+6 620.0613031 47\
+.53267212 619.38\
+82312 48.2175903\
+3 618.69476318 C\
+52.09635555 614.\
+79602129 56.0858\
+7199 611.0952121\
+3 60.26165771 60\
+7.51568604 C62.6\
+2519149 605.4548\
+864 64.81314163 \
+603.24596265 67 \
+601 C70.53313399\
+ 597.42916488 74\
+.13373095 594.03\
+448775 77.949218\
+75 590.76953125 \
+C80.27566583 588\
+.76213977 82.541\
+92686 586.695333\
+62 84.8125 584.6\
+25 C89.10608632 \
+580.74966257 93.\
+53088002 577.077\
+7869 98.02734375\
+ 573.44140625 C1\
+01.33751679 570.\
+72280159 104.574\
+88543 567.929081\
+45 107.8125 565.\
+125 C113.5540691\
+5 560.16811982 1\
+19.4409072 555.4\
+3855532 125.4296\
+875 550.78515625\
+ C129.17297626 5\
+47.87589124 132.\
+86797567 544.908\
+27649 136.5625 5\
+41.9375 C146.727\
+65379 533.784525\
+37 157.08643106 \
+525.89753945 167\
+.53295898 518.10\
+9375 C168.793226\
+74 517.16842594 \
+170.05063228 516\
+.22362713 171.30\
+46875 515.274414\
+06 C172.80205936\
+ 514.14879754 17\
+4.32138932 513.0\
+5252029 175.8437\
+5 511.9609375 C1\
+78.37952628 509.\
+6548511 179.2988\
+2606 508.3607992\
+2 180 505 C179.4\
+9946294 502.3654\
+3666 178.9036244\
+ 500.08468725 17\
+8.0625 497.5625 \
+C177.82942139 49\
+6.81718018 177.5\
+9634277 496.0718\
+6035 177.3562011\
+7 495.30395508 C\
+176.58847645 492\
+.86324802 175.79\
+727353 490.43120\
+399 175 488 C162\
+.64581213 450.17\
+116399 152.69627\
+916 411.52324447\
+ 143.859375 372.\
+73046875 C143.70\
+099655 372.03755\
+737 143.5426181 \
+371.344646 143.3\
+7944031 370.6307\
+373 C142.6765410\
+4 367.54622119 1\
+41.98624068 364.\
+45982253 141.317\
+62695 361.367675\
+78 C136.94797748\
+ 341.80575231 12\
+8.87569695 328.7\
+7127747 111.875 \
+317.9375 C80.828\
+40277 299.511470\
+75 44.3158621 29\
+1.57546012 9 286\
+.25 C7.0650769 2\
+85.95210571 7.06\
+50769 285.952105\
+71 5.09106445 28\
+5.64819336 C-20.\
+71058554 281.843\
+43902 -46.537203\
+ 281.72781067 -7\
+2.54821777 281.8\
+626709 C-77.0145\
+4712 281.8835348\
+4 -81.48090108 2\
+81.89234911 -85.\
+94726562 281.902\
+34375 C-94.63157\
+525 281.92346957\
+ -103.31576935 2\
+81.95736888 -112\
+ 282 C-99.337570\
+13 252.94951066 \
+-86.30883511 224\
+.65709082 -69 19\
+8 C-68.54641113 \
+197.29423828 -68\
+.09282227 196.58\
+847656 -67.62548\
+828 195.86132812\
+ C-61.84777253 1\
+86.88765846 -55.\
+65219796 178.342\
+83775 -49 170 C-\
+48.50097168 169.\
+3694873 -48.0019\
+4336 168.7389746\
+1 -47.48779297 1\
+68.08935547 C-40\
+.03419587 158.68\
+914601 -32.30059\
+138 149.66187937\
+ -24 141 C-23.22\
+011719 140.17886\
+719 -22.44023438\
+ 139.35773438 -2\
+1.63671875 138.5\
+1171875 C-16.639\
+41004 133.372390\
+61 -11.32350209 \
+128.77879312 -5.\
+69482422 124.344\
+23828 C-3.795271\
+43 122.83762093 \
+-1.91614256 121.\
+30706961 -0.0351\
+5625 119.7773437\
+5 C19.65772491 1\
+03.92822455 42.1\
+6281647 89.73332\
+195 66 81 C66.62\
+600098 80.768613\
+28 67.25200195 8\
+0.53722656 67.89\
+697266 80.298828\
+12 C101.86158682\
+ 67.90122068 139\
+.09125259 63.157\
+15721 174.425781\
+25 72.51171875 C\
+177.10353628 73.\
+2363119 177.1035\
+3628 73.2363119 \
+180 72 C170.2281\
+4728 65.34086103\
+ 160.47881139 58\
+.75059139 150.06\
+787109 53.120605\
+47 C148.55635669\
+ 52.30149672 147\
+.04949308 51.473\
+78939 145.545410\
+16 50.64111328 C\
+131.12961319 42.\
+68132588 116.575\
+27924 36.3280960\
+5 101 31 C100.18\
+112305 30.714311\
+52 99.36224609 3\
+0.42862305 98.51\
+855469 30.134277\
+34 C78.62953883 \
+23.24578521 58.1\
+8475718 19.08632\
+467 37.375 16.18\
+75 C36.62662872 \
+16.0822702 35.87\
+825745 15.977040\
+41 35.10720825 1\
+5.86862183 C6.92\
+293043 11.954752\
+17 -21.74379602 \
+11.6793358 -50 1\
+5 Z M139 82 C142\
+.40317475 85.452\
+49612 145.898999\
+31 88.75514224 1\
+49.5 92 C154.655\
+6556 96.67598436\
+ 159.58553251 10\
+1.54334063 164.4\
+7436523 106.4960\
+9375 C167.245970\
+62 109.29090485 \
+170.0322429 111.\
+98126065 173.062\
+5 114.5 C175.807\
+29997 116.835999\
+98 177.81248459 \
+119.15622997 180\
+ 122 C181.653079\
+64 123.6819579 1\
+83.32246142 125.\
+34263485 185 127\
+ C186.47514796 1\
+28.4735821 187.9\
+4941867 129.9480\
+4259 189.4230957\
+ 131.4230957 C19\
+0.26358963 132.2\
+6358963 191.1040\
+8356 133.1040835\
+6 191.970047 133\
+.970047 C209.485\
+0235 151.4850235\
+ 209.4850235 151\
+.4850235 227 169\
+ C223.79597858 1\
+72.22567471 220.\
+54858135 175.320\
+96805 217.125 17\
+8.3125 C178.2629\
+0741 213.2196008\
+6 158.14613842 2\
+69.26448747 154.\
+84771729 320.358\
+94775 C153.76871\
+569 341.45506702\
+ 154.72542166 36\
+2.27687058 159 3\
+83 C159.30550781\
+ 384.4857251 159\
+.30550781 384.48\
+57251 159.617187\
+5 386.00146484 C\
+161.18775071 393\
+.39498813 163.03\
+882451 400.70130\
+714 165 408 C165\
+.17015625 408.63\
+359436 165.34031\
+25 409.26718872 \
+165.515625 409.9\
+1998291 C172.581\
+06443 436.139387\
+03 180.89853798 \
+461.92652288 190\
+.01953125 487.5 \
+C190.49564928 48\
+8.84449067 190.9\
+715654 490.18905\
+285 191.44726562\
+ 491.53369141 C1\
+92.32944912 494.\
+02708721 193.230\
+01603 496.510907\
+23 194.14257812 \
+498.99365234 C19\
+4.53509766 500.0\
+9660645 194.9276\
+1719 501.1995605\
+5 195.33203125 5\
+02.3359375 C195.\
+67983643 503.290\
+32715 196.027641\
+6 504.2447168 19\
+6.38598633 505.2\
+2802734 C197.100\
+81437 508.455127\
+8 196.73053725 5\
+10.80098476 196 \
+514 C195.01 514.\
+33 194.02 514.66\
+ 193 515 C193 51\
+5.66 193 516.32 \
+193 517 C192.486\
+95313 517.221718\
+75 191.97390625 \
+517.4434375 191.\
+4453125 517.6718\
+75 C188.00315802\
+ 519.54141577 18\
+4.98972191 521.8\
+8352651 181.875 \
+524.25 C181.1792\
+2852 524.7750512\
+7 180.48345703 5\
+25.30010254 179.\
+76660156 525.841\
+06445 C173.61051\
+234 530.50192747\
+ 167.51834464 53\
+5.24429974 161.4\
+3310547 539.9970\
+7031 C157.319289\
+04 543.20746387 \
+153.18593371 546\
+.38367642 149 54\
+9.5 C143.1716802\
+9 553.84092605 1\
+37.43951554 558.\
+30056576 131.711\
+91406 562.772949\
+22 C128.30437567\
+ 565.43306927 12\
+4.89580083 568.0\
+8979097 121.4492\
+1875 570.6992187\
+5 C114.52863571 \
+575.9412983 107.\
+90514005 581.434\
+70467 101.347656\
+25 587.12109375 \
+C98.38480556 589\
+.68472505 95.362\
+3645 592.1651519\
+6 92.3125 594.62\
+5 C87.65489202 5\
+98.40588177 83.2\
+0676542 602.3750\
+8762 78.80078125\
+ 606.4453125 C76\
+.65771041 608.40\
+008004 74.492434\
+41 610.30415877 \
+72.29589844 612.\
+19702148 C68.193\
+94083 615.782774\
+6 64.31016295 61\
+9.54479952 60.46\
+484375 623.40234\
+375 C59.44131554\
+ 624.42443687 59\
+.44131554 624.42\
+443687 58.397109\
+99 625.46717834 \
+C56.96655563 626\
+.89705741 55.537\
+24233 628.328179\
+11 54.10913086 6\
+29.76049805 C51.\
+94300926 631.931\
+97711 49.7715982\
+6 634.09806325 4\
+7.59960938 636.2\
+6367188 C46.2002\
+0013 637.6637420\
+2 44.80110116 63\
+9.06412238 43.40\
+234375 640.46484\
+375 C42.76360825\
+ 641.10155502 42\
+.12487274 641.73\
+82663 41.4667816\
+2 642.39427185 C\
+37.66075389 646.\
+21982903 34.0385\
+0588 650.1586809\
+4 30.51515198 65\
+4.24635315 C29.2\
+0027508 655.7682\
+0031 27.85287862\
+ 657.26183352 26\
+.5 658.75 C24.77\
+172365 660.85388\
+665 24.77172365 \
+660.85388665 25.\
+125 663.1875 C25\
+.96774898 665.18\
+733041 25.967748\
+98 665.18733041 \
+28 667 C30.54599\
+047 666.78826448\
+ 31.73220216 666\
+.2495537 33.6054\
+6875 664.5039062\
+5 C34.12753906 6\
+63.86324219 34.6\
+4960937 663.2225\
+7813 35.1875 662\
+.5625 C35.792070\
+31 661.840625 36\
+.39664063 661.11\
+875 37.01953125 \
+660.375 C37.6730\
+8594 659.59125 3\
+8.32664062 658.8\
+075 39 658 C45.8\
+6753252 650.1657\
+3986 52.88472541\
+ 642.46869562 60\
+.8125 635.6875 C\
+64.38902076 632.\
+62497025 67.6936\
+2644 629.3469646\
+2 71 626 C74.884\
+44269 622.072751\
+87 78.81104084 6\
+18.28294358 83.0\
+1953125 614.6992\
+1875 C85.3266995\
+2 612.71969568 8\
+7.56646782 610.6\
+735788 89.8125 6\
+08.625 C94.07258\
+134 604.78510877\
+ 98.43880733 601\
+.11320365 102.89\
+84375 597.507812\
+5 C105.18443597 \
+595.6594359 107.\
+4591417 593.8005\
+6903 109.7265625\
+ 591.9296875 C13\
+7.47947488 569.0\
+8939882 168.1674\
+8323 548.8431499\
+3 200.5625 533.1\
+875 C201.2586743\
+2 532.84372314 2\
+01.95484863 532.\
+49994629 202.672\
+11914 532.145751\
+95 C205.21648625\
+ 530.9556294 207\
+.33753292 529.98\
+219175 210.17968\
+75 530.05859375 \
+C212.67270821 53\
+1.34790274 214.5\
+0169559 532.9669\
+7351 216.5625 53\
+4.875 C217.44164\
+062 535.68710937\
+ 218.32078125 53\
+6.49921875 219.2\
+265625 537.33593\
+75 C222.01269352\
+ 540.01219293 22\
+4.72921527 542.7\
+451545 227.4375 \
+545.5 C231.78198\
+892 549.88714169\
+ 236.29567432 55\
+3.84599093 241.1\
+25 557.6875 C243\
+.71407377 559.77\
+001585 246.22939\
+36 561.91097363 \
+248.73901367 564\
+.08691406 C269.8\
+4321806 582.3157\
+0603 295.7773280\
+7 598.70899497 3\
+24.65234375 597.\
+453125 C335.6335\
+5244 596.5611993\
+1 346.82307744 5\
+93.12496437 356 \
+587 C357.010625 \
+586.401875 358.0\
+2125 585.80375 3\
+59.0625 585.1875\
+ C359.701875 584\
+.795625 360.3412\
+5 584.40375 361 \
+584 C360.67 583.\
+34 360.34 582.68\
+ 360 582 C359.27\
+296875 582.26554\
+687 358.5459375 \
+582.53109375 357\
+.796875 582.8046\
+875 C332.3795519\
+8 591.73333687 3\
+06.7062991 589.3\
+4282241 282.5429\
+6875 577.8125 C2\
+77.43535731 575.\
+19956537 272.680\
+20156 572.314276\
+07 268 569 C266.\
+55560547 567.982\
+92969 266.555605\
+47 567.98292969 \
+265.08203125 566\
+.9453125 C204.72\
+528273 523.06369\
+197 182.72375308\
+ 443.67615278 17\
+1.45703125 373.3\
+4545898 C169.932\
+58698 363.344696\
+25 168.85327635 \
+353.3732212 168.\
+875 343.25 C168.\
+87242187 342.058\
+90625 168.869843\
+75 340.8678125 1\
+68.8671875 339.6\
+40625 C168.98410\
+277 332.75264518\
+ 169.54111051 32\
+5.87184404 170 3\
+19 C170.1451001 \
+319.91773193 170\
+.2902002 320.835\
+46387 170.439697\
+27 321.78100586 \
+C174.59265195 34\
+7.84900695 179.2\
+6642745 373.7702\
+9769 185.75 399.\
+375 C185.9363501\
+ 400.12982666 18\
+6.1227002 400.88\
+465332 186.31469\
+727 401.66235352\
+ C187.2506811 40\
+5.1826764 188.02\
+085827 407.75708\
+295 191 410 C202\
+.02636142 403.92\
+334792 210.56299\
+625 395.44826589\
+ 218.5625 385.81\
+25 C220.83847931\
+ 383.18637003 22\
+1.89943709 382.2\
+5304704 225 381 \
+C229.53741041 38\
+0.69237896 233.3\
+4734179 380.9866\
+3909 237.7695312\
+5 382.015625 C23\
+8.56593018 382.1\
+9899414 239.3623\
+291 382.38236328\
+ 240.18286133 38\
+2.57128906 C241.\
+08234497 382.783\
+50098 241.082344\
+97 382.78350098 \
+242 383 C242.039\
+63867 382.203439\
+94 242.07927734 \
+381.40687988 242\
+.12011719 380.58\
+618164 C243.6554\
+538 350.82737122\
+ 245.52091996 31\
+9.94220566 253 2\
+91 C252.9388501 \
+292.21502197 252\
+.9388501 292.215\
+02197 252.876464\
+84 293.45458984 \
+C251.75175932 31\
+7.27910425 252.2\
+8263977 340.8280\
+6192 253.8443603\
+5 364.62304688 C\
+253.98906973 366\
+.83307118 254.12\
+727558 369.04341\
+647 254.26464844\
+ 371.25390625 C2\
+57.76791744 424.\
+50359503 271.080\
+18739 487.078370\
+38 312.43359375 \
+524.18359375 C32\
+3.67429749 533.4\
+6024317 336.7306\
+845 541.50240186\
+ 351.66796875 54\
+1.33984375 C361.\
+18567384 540.369\
+10478 368.400748\
+58 535.61362888 \
+375 529 C375.581\
+36719 528.489531\
+25 376.16273438 \
+527.9790625 376.\
+76171875 527.453\
+125 C386.1801717\
+8 518.90243956 3\
+91.57512742 506.\
+689778 396 495 C\
+396.62841797 493\
+.34097656 396.62\
+841797 493.34097\
+656 397.26953125\
+ 491.6484375 C41\
+2.19604668 448.1\
+4830682 418.7871\
+0028 384.3559665\
+9 398.18359375 3\
+42.08984375 C396\
+.33065276 338.58\
+415151 394.21515\
+502 335.28964147\
+ 392 332 C391.57\
+57373 331.368842\
+77 391.15147461 \
+330.73768555 390\
+.71435547 330.08\
+740234 C385.7104\
+1567 322.2228597\
+3 385.71041567 3\
+22.22285973 379 \
+316 C379.2539453\
+1 317.15113281 3\
+79.50789063 318.\
+30226563 379.769\
+53125 319.488281\
+25 C391.12334576\
+ 371.63275132 39\
+8.98619196 446.3\
+170937 369.96875\
+ 494.36328125 C3\
+64.03739355 503.\
+52992303 357.006\
+36243 512.178278\
+9 346 515 C335.9\
+5486041 516.3834\
+6234 328.3826146\
+9 514.65826492 3\
+20 509 C316.4166\
+9783 506.2187741\
+9 313.18914142 5\
+03.22173912 310 \
+500 C309.3361328\
+1 499.36964844 3\
+08.67226563 498.\
+73929687 307.988\
+28125 498.089843\
+75 C296.54862943\
+ 486.41815031 28\
+9.5516918 470.15\
+260218 284 455 C\
+283.74943848 454\
+.33838867 283.49\
+887695 453.67677\
+734 283.24072266\
+ 452.99511719 C2\
+75.40580988 432.\
+13930135 271.170\
+99567 410.128110\
+14 268.125 388.1\
+25 C267.969814 3\
+87.01321381 267.\
+969814 387.01321\
+381 267.81149292\
+ 385.87896729 C2\
+65.38210728 368.\
+22093047 264.813\
+41352 350.702612\
+82 264.81469727 \
+332.89453125 C26\
+4.81252183 329.5\
+3372304 264.7943\
+2928 326.1732500\
+6 264.77539062 3\
+22.8125 C264.724\
+83656 303.641799\
+97 265.75341292 \
+284.56090842 268\
+.875 265.625 C26\
+9.02324219 264.6\
+246875 269.17148\
+437 263.624375 2\
+69.32421875 262.\
+59375 C271.10523\
+465 251.50222007\
+ 274.44399963 24\
+2.58126615 283 2\
+35 C291.01358872\
+ 229.82902118 29\
+8.67600548 229.2\
+7649879 308 230 \
+C311.33666623 23\
+0.87543717 314.0\
+5907485 232.2154\
+3105 317 234 C31\
+7.71285156 234.4\
+2410156 318.4257\
+0312 234.8482031\
+2 319.16015625 2\
+35.28515625 C335\
+.06079179 245.35\
+275441 349.17618\
+253 259.42490186\
+ 360.7578125 274\
+.18359375 C365.1\
+6677333 279.7216\
+787 369.89093542\
+ 284.99957879 37\
+4.54638672 290.3\
+3056641 C375.809\
+49264 291.781207\
+7 377.06374884 2\
+93.23954545 378.\
+31640625 294.699\
+21875 C378.93386\
+719 295.41722656\
+ 379.55132813 29\
+6.13523437 380.1\
+875 296.875 C380\
+.69667969 297.47\
+054687 381.20585\
+938 298.06609375\
+ 381.73046875 29\
+8.6796875 C382.9\
+8526039 300.1321\
+1563 382.9852603\
+9 300.13211563 3\
+85 301 C377.7149\
+7106 282.2725172\
+4 369.12297025 2\
+64.16599945 356.\
+3046875 248.5898\
+4375 C354.966398\
+96 246.95905503 \
+353.65504541 245\
+.30878895 352.34\
+375 243.65625 C3\
+40.67578699 229.\
+17188212 324.413\
+94874 214.950241\
+78 305.375 212.0\
+625 C294.0403480\
+1 211.43392359 2\
+83.45276913 216.\
+27193414 274.457\
+03125 222.863281\
+25 C265.18741153\
+ 231.31258064 25\
+9.06989512 243.9\
+7955166 254.0351\
+5625 255.3125 C2\
+53 257 253 257 2\
+50 258 C247.25 2\
+57.29296875 247.\
+25 257.29296875 \
+244 256.1875 C23\
+0.76540262 251.9\
+7980072 213.3007\
+6659 248.2147169\
+6 200.16015625 2\
+54.68359375 C191\
+.95538998 259.68\
+360502 184.37353\
+965 266.25292069\
+ 180 275 C181.69\
+427677 257.98807\
+818 188.81827227\
+ 241.83297756 19\
+7 227 C197.33725\
+098 226.37818848\
+ 197.67450195 22\
+5.75637695 198.0\
+2197266 225.1157\
+2266 C212.205323\
+98 199.23295767 \
+231.69137184 181\
+.89208323 259.75\
+390625 172.78125\
+ C284.04716021 1\
+65.68832914 306.\
+44174862 169.663\
+57846 328.46875 \
+181.1953125 C331\
+.28570091 182.63\
+494892 334.04073\
+789 183.8959676 \
+337 185 C330.226\
+94627 169.967124\
+64 309.12227279 \
+159.30539592 294\
+.609375 153.6875\
+ C277.41330342 1\
+48.03399701 260.\
+77169725 150.724\
+45615 244.6875 1\
+58.4375 C244.051\
+99219 158.786835\
+94 243.41648437 \
+159.13617188 242\
+.76171875 159.49\
+609375 C241 160 \
+241 160 239.1564\
+9414 159.2880859\
+4 C236.61236694 \
+157.76846462 234\
+.8060341 156.014\
+36311 232.734375\
+ 153.89453125 C2\
+31.92613281 153.\
+07533203 231.117\
+89062 152.256132\
+81 230.28515625 \
+151.41210938 C22\
+9.44855469 150.5\
+5423828 228.6119\
+5313 149.6963671\
+9 227.75 148.812\
+5 C222.01881506 \
+142.95985352 216\
+.24839543 137.29\
+926171 210 132 C\
+208.84709106 131\
+.00325753 207.69\
+472835 130.00588\
+283 206.54296875\
+ 129.0078125 C20\
+0.38269871 123.7\
+0717809 194.2011\
+8235 118.4395468\
+8 187.87890625 1\
+13.33203125 C185\
+.78708404 111.63\
+757011 183.71548\
+942 109.92776864\
+ 181.65234375 10\
+8.19921875 C174.\
+78353522 102.501\
+97242 167.732365\
+17 97.33610106 1\
+60.1875 92.5625 \
+C159.42373047 92\
+.07869873 158.65\
+996094 91.594897\
+46 157.87304688 \
+91.09643555 C148\
+.96271836 84.924\
+81843 148.962718\
+36 84.92481843 1\
+39 82 Z M-372 22\
+1 C-372.96083496\
+ 221.31437012 -3\
+73.92166992 221.\
+62874023 -374.91\
+162109 221.95263\
+672 C-387.959665\
+43 226.25487225 \
+-400.59298896 23\
+1.09743791 -413 \
+237 C-414.021662\
+6 237.47904785 -\
+414.0216626 237.\
+47904785 -415.06\
+396484 237.96777\
+344 C-434.426180\
+38 247.09084557 \
+-459.51629091 25\
+9.48389993 -468.\
+5 280.0625 C-473\
+.3540459 295.664\
+7904 -468.799505\
+97 313.41736172 \
+-466 329 C-465.7\
+8569336 330.1991\
+5039 -465.571386\
+72 331.39830078 \
+-465.35058594 33\
+2.63378906 C-460\
+.26310768 371.23\
+812161 -460.2631\
+0768 371.2381216\
+1 -442.60546875 \
+404.21484375 C-4\
+37.5413858 407.6\
+8453777 -433.560\
+33808 408.338682\
+31 -427.5 407.93\
+75 C-426.3999060\
+1 407.86631958 -\
+426.39990601 407\
+.86631958 -425.2\
+7758789 407.7937\
+0117 C-398.66361\
+167 405.60484139\
+ -369.59697962 3\
+95.05368317 -351\
+.8125 374.4375 C\
+-336.20727577 35\
+3.58815765 -330.\
+9080512 326.0025\
+4602 -326 301 C-\
+325.85304688 300\
+.2879541 -325.70\
+609375 299.57590\
+82 -325.5546875 \
+298.84228516 C-3\
+22.11042225 281.\
+74462267 -323.06\
+527439 262.21438\
+251 -325 245 C-3\
+25.99 245.495 -3\
+25.99 245.495 -3\
+27 246 C-329.112\
+38616 253.556163\
+92 -329.89054278\
+ 261.35619587 -3\
+30.88665771 269.\
+12045288 C-334.4\
+409277 296.49496\
+581 -339.6149365\
+6 323.65980072 -\
+348 350 C-348.24\
+572754 350.77408\
+203 -348.4914550\
+8 351.54816406 -\
+348.74462891 352\
+.34570312 C-354.\
+22323138 369.033\
+09818 -365.24135\
+919 378.19141167\
+ -380.4375 386.0\
+625 C-396.301798\
+69 393.92495342 \
+-416.16036109 40\
+0.33290215 -434 \
+400 C-437.508350\
+67 391.98410752 \
+-440.43505658 38\
+3.96325414 -442.\
+875 375.5625 C-4\
+43.38426025 373.\
+81549805 -443.38\
+426025 373.81549\
+805 -443.9038085\
+9 372.03320312 C\
+-449.48081801 35\
+2.61098885 -453.\
+99273041 333.089\
+68883 -457.4375 \
+313.1875 C-457.5\
+6932678 312.4334\
+79 -457.70115356\
+ 311.67945801 -4\
+57.8369751 310.9\
+0258789 C-458.21\
+126033 308.74241\
+726 -458.5746730\
+1 306.5807402 -4\
+58.93359375 304.\
+41796875 C-459.1\
+4040771 303.1781\
+3232 -459.347221\
+68 301.9382959 -\
+459.56030273 300\
+.66088867 C-460.\
+80629938 290.286\
+80774 -459.33189\
+467 282.44641552\
+ -452.890625 274\
+.1171875 C-447.7\
+4965249 268.3601\
+4804 -442.550226\
+6 263.66456231 -\
+436 259.5625 C-4\
+34.8869751 258.8\
+5710083 -434.886\
+9751 258.8571008\
+3 -433.75146484 \
+258.13745117 C-4\
+00.00364443 237.\
+00459624 -361.47\
+822591 226.72766\
+083 -323 218 C-3\
+22.72845093 219.\
+02250854 -322.72\
+845093 219.02250\
+854 -322.4514160\
+2 220.06567383 C\
+-320.7685474 226\
+.32953461 -318.9\
+3768035 232.5184\
+3463 -316.9375 2\
+38.6875 C-314.70\
+382102 245.61246\
+154 -312.5172528\
+1 252.5493397 -3\
+10.390625 259.50\
+78125 C-309.7137\
+3059 261.7121764\
+9 -309.03626858 \
+263.91636534 -30\
+8.3586731 266.12\
+051392 C-307.911\
+55006 267.580774\
+29 -307.46710699\
+ 269.04185796 -3\
+07.02536011 270.\
+50375366 C-306.4\
+0268022 272.5632\
+6996 -305.770665\
+31 274.61970992 \
+-305.13671875 27\
+6.67578125 C-304\
+.77280029 277.87\
+114502 -304.4088\
+8184 279.0665087\
+9 -304.03393555 \
+280.2980957 C-30\
+3.29806608 283.1\
+3243414 -303.298\
+06608 283.132434\
+14 -301 284 C-29\
+4.43843833 272.3\
+3247136 -288.850\
+89776 261.011261\
+58 -285.21875 24\
+8.1015625 C-282.\
+36314923 238.231\
+31662 -282.36314\
+923 238.23131662\
+ -278.98046875 2\
+35.17578125 C-27\
+4.54085637 233.4\
+2437453 -270.017\
+30356 232.879521\
+02 -265.3125 232\
+.1875 C-258.0590\
+362 231.01176903\
+ -252.62228554 2\
+29.81941958 -246\
+.609375 225.4414\
+0625 C-242.90878\
+997 223.39722081\
+ -239.12340475 2\
+22.74598618 -235\
+ 221.9375 C-226.\
+01310864 220.158\
+20066 -216.62266\
+111 217.87172556\
+ -211 210 C-210.\
+0831978 206.4567\
+8447 -210.083197\
+8 206.45678447 -\
+211 203 C-217.89\
+032921 196.10967\
+079 -229.6110496\
+8 196.7405485 -2\
+38.71655273 196.\
+67041016 C-240.6\
+5123413 196.6788\
+6963 -240.651234\
+13 196.67886963 \
+-242.625 196.687\
+5 C-243.30184845\
+ 196.68965515 -2\
+43.9786969 196.6\
+918103 -244.6760\
+5591 196.6940307\
+6 C-287.31681097\
+ 196.90988278 -3\
+31.62748113 207.\
+69140776 -372 22\
+1 Z M-202 338 C-\
+203.25139028 340\
+.05741619 -203.2\
+5139028 340.0574\
+1619 -204 342 C-\
+203.01 342.99 -2\
+03.01 342.99 -20\
+2 344 C-196.8691\
+888 343.15888341\
+ -192.06575336 3\
+41.71778596 -187\
+.12109375 340.13\
+28125 C-179.7853\
+0925 337.8698588\
+1 -172.38030344 \
+336.09878014 -16\
+4.875 334.5 C-16\
+4.17822144 334.3\
+5036804 -163.481\
+44287 334.200736\
+08 -162.7635498 \
+334.04656982 C-1\
+46.00436556 330.\
+48882551 -129.05\
+825594 328.48658\
+046 -112 327 C-1\
+10.53901131 326.\
+87117432 -110.53\
+901131 326.87117\
+432 -109.0485076\
+9 326.73974609 C\
+-101.65349586 32\
+6.12494981 -94.3\
+1363089 325.8285\
+6192 -86.8945312\
+5 325.796875 C-8\
+5.22855896 325.7\
+8642151 -85.2285\
+5896 325.7864215\
+1 -83.52893066 3\
+25.77575684 C-79\
+.95674807 325.75\
+845059 -76.38472\
+28 325.75203476 \
+-72.8125 325.75 \
+C-71.5882431 325\
+.74899292 -70.36\
+398621 325.74798\
+584 -69.10263062\
+ 325.74694824 C-\
+49.21858939 325.\
+75799105 -29.730\
+26879 326.547261\
+96 -10 329 C-8.8\
+0101074 329.1392\
+1875 -7.60202148\
+ 329.2784375 -6.\
+36669922 329.421\
+875 C71.16225918\
+ 338.53424339 71\
+.16225918 338.53\
+424339 86.15625 \
+356.59765625 C88\
+.49515322 360.91\
+372553 89.651766\
+41 365.12518869 \
+90.8125 369.875 \
+C91.06402832 370\
+.86967285 91.315\
+55664 371.864345\
+7 91.57470703 37\
+2.88916016 C93.8\
+4508228 382.0249\
+497 95.83521365 \
+391.22245434 97.\
+81619263 400.424\
+40796 C99.995373\
+57 410.54602984 \
+102.29513155 420\
+.62884738 104.75\
+ 430.6875 C104.9\
+0909851 431.3406\
+8207 105.0681970\
+2 431.99386414 1\
+05.2321167 432.6\
+668396 C107.1933\
+8472 440.7106871\
+9 109.18453034 4\
+48.7470262 111.1\
+8414307 456.7814\
+1785 C112.207360\
+05 460.89777695 \
+113.22531302 465\
+.01542999 114.24\
+279785 469.13320\
+923 C114.9881985\
+2 472.13989691 1\
+15.74156516 475.\
+14451661 116.495\
+11719 478.149169\
+92 C116.9554825 \
+480.00950284 117\
+.41546166 481.86\
+993138 117.875 4\
+83.73046875 C118\
+.19781952 485.00\
+331726 118.19781\
+952 485.00331726\
+ 118.52716064 48\
+6.30187988 C121.\
+36723774 497.901\
+3341 121.3672377\
+4 497.9013341 11\
+9 503 C117.34094\
+51 503.6853897 1\
+15.67256082 504.\
+34826192 114 505\
+ C112.12756937 5\
+06.02997273 110.\
+2743722 507.0953\
+7326 108.4375 50\
+8.1875 C106.8577\
+5391 509.1214257\
+8 106.85775391 5\
+09.12142578 105.\
+24609375 510.074\
+21875 C104.17488\
+281 510.70972656\
+ 103.10367187 51\
+1.34523438 102 5\
+12 C100.00102983\
+ 513.1684303 98.\
+00104827 514.335\
+13222 96 515.5 C\
+95.01 516.0775 9\
+4.02 516.655 93 \
+517.25 C90 519 8\
+7 520.75 84 522.\
+5 C82.51693359 5\
+23.36612915 82.5\
+1693359 523.3661\
+2915 81.00390625\
+ 524.24975586 C7\
+8.99323822 525.4\
+2128375 76.98019\
+053 526.58873653\
+ 74.96484375 527\
+.75219727 C68.20\
+768723 531.66208\
+42 61.57265959 5\
+35.72538563 55 5\
+39.9375 C53.5580\
+2246 540.8597033\
+7 53.55802246 54\
+0.85970337 52.08\
+691406 541.80053\
+711 C49.38860532\
+ 543.52958374 46\
+.6934025 545.263\
+32321 44 547 C43\
+.38060547 547.39\
+864258 42.761210\
+94 547.79728516 \
+42.12304688 548.\
+20800781 C32.490\
+63194 554.432672\
+48 23.24822756 5\
+61.22400682 14 5\
+68 C13.40590332 \
+568.43521973 12.\
+81180664 568.870\
+43945 12.1997070\
+3 569.31884766 C\
+5.95413813 573.9\
+1013433 -0.11280\
+902 578.67298323\
+ -6.08203125 583\
+.6171875 C-8.774\
+8098 585.8161097\
+4 -11.50120809 5\
+87.9595584 -14.2\
+4731445 590.0908\
+2031 C-19.891067\
+68 594.47222497 \
+-25.31165584 598\
+.97545178 -30.57\
+03125 603.820312\
+5 C-33.162995 60\
+6.14622381 -35.8\
+4360549 608.3233\
+7808 -38.5625 61\
+0.5 C-42.8719778\
+7 613.98400042 -\
+46.8087772 617.6\
+5968276 -50.6367\
+1875 621.6640625\
+ C-52.52768667 6\
+23.53315145 -54.\
+43368348 625.242\
+85371 -56.453125\
+ 626.96484375 C-\
+62.00120948 631.\
+77838583 -67.145\
+87062 636.996420\
+13 -72.32739258 \
+642.19702148 C-7\
+4.058947 643.933\
+936 -75.79578359\
+ 645.66543889 -7\
+7.53320312 647.3\
+9648438 C-82.722\
+33769 652.582830\
+83 -87.81994697 \
+657.7797606 -92.\
+58374023 663.365\
+47852 C-94.60560\
+322 665.69893356\
+ -96.78880045 66\
+7.84698991 -99 6\
+70 C-101.9724832\
+5 672.93661618 -\
+104.84380752 675\
+.8896408 -107.56\
+25 679.0625 C-12\
+6.96751964 701.5\
+3622041 -151.057\
+19472 713.247137\
+37 -180 718 C-18\
+0.7425 718.13148\
+438 -181.485 718\
+.26296875 -182.2\
+5 718.3984375 C-\
+198.44434682 720\
+.89506597 -218.0\
+1106298 718.6570\
+1443 -231.679687\
+5 709.1328125 C-\
+244.47428185 698\
+.51602145 -251.3\
+9825786 682.2052\
+9568 -255.1875 6\
+66.375 C-255.570\
+83496 664.797066\
+65 -255.57083496\
+ 664.79706665 -2\
+55.96191406 663.\
+18725586 C-258.4\
+9080289 652.4427\
+5835 -259.670769\
+55 641.91735298 \
+-260.4140625 630\
+.92578125 C-262.\
+61500608 599.064\
+73053 -272.93122\
+271 580.98146968\
+ -296.22900391 5\
+59.65283203 C-29\
+7.65634412 558.3\
+2072654 -299.030\
+80124 556.932083\
+17 -300.38671875\
+ 555.52734375 C-\
+301.87179648 553\
+.77083308 -301.8\
+7179648 553.7708\
+3308 -304 554 C-\
+304.30550781 553\
+.20335937 -304.3\
+0550781 553.2033\
+5937 -304.617187\
+5 552.390625 C-3\
+06.59505609 548.\
+97125896 -309.30\
+326899 546.48662\
+079 -312.125 543\
+.75 C-312.969980\
+47 542.91855469 \
+-312.96998047 54\
+2.91855469 -313.\
+83203125 542.070\
+3125 C-315.21686\
+028 540.70895515\
+ -316.60783204 5\
+39.35385141 -318\
+ 538 C-319.33448\
+158 542.00344474\
+ -318.3133651 54\
+3.79111853 -316.\
+97265625 547.773\
+4375 C-316.74913\
+986 548.44410751\
+ -316.52562347 5\
+49.11477753 -316\
+.29533386 549.80\
+577087 C-315.560\
+86317 551.998959\
+85 -314.81254482\
+ 554.18709231 -3\
+14.0625 556.375 \
+C-313.54574679 5\
+57.89863022 -313\
+.02914612 559.42\
+231218 -312.5126\
+9531 560.9460449\
+2 C-304.9162913 \
+583.26187861 -29\
+5.95633439 604.9\
+4574513 -286.820\
+3125 626.6660156\
+2 C-285.18310696\
+ 630.55985186 -2\
+83.55890975 634.\
+45893585 -281.93\
+75 638.359375 C-\
+267.17594098 675\
+.33841171 -267.1\
+7594098 675.3384\
+1171 -245 708 C-\
+244.525625 708.6\
+1488281 -244.051\
+25 709.22976563 \
+-243.5625 709.86\
+328125 C-233.440\
+95487 722.831510\
+95 -216.0701788 \
+730.82341038 -20\
+0.1875 733.6875 \
+C-198.79328783 7\
+33.8114912 -197.\
+39704624 733.913\
+61021 -196 734 C\
+-194.68902344 73\
+4.11408203 -194.\
+68902344 734.114\
+08203 -193.35156\
+25 734.23046875 \
+C-162.70943809 7\
+35.68774202 -135\
+.7942626 717.543\
+84159 -114 698 C\
+-109.86018468 69\
+4.12188627 -105.\
+85715825 690.106\
+22971 -101.86816\
+406 686.07397461\
+ C-100.11063484 \
+684.29798395 -98\
+.34502854 682.53\
+033191 -96.57812\
+5 680.76367188 C\
+-95.42921224 679\
+.60984804 -94.28\
+075807 678.45556\
+735 -93.1328125 \
+677.30078125 C-9\
+2.61913116 676.7\
+8598709 -92.1054\
+4983 676.2711929\
+3 -91.57620239 6\
+75.74079895 C-88\
+.80583071 672.93\
+494128 -86.15833\
+787 670.06042445\
+ -83.5793457 667\
+.07714844 C-80.0\
+7724695 663.0389\
+3995 -76.3822125\
+8 659.23740636 -\
+72.59765625 655.\
+46484375 C-71.91\
+626083 654.78249\
+161 -71.23486542\
+ 654.10013947 -7\
+0.53282166 653.3\
+9710999 C-69.102\
+94259 651.966555\
+63 -67.67182089 \
+650.53724233 -66\
+.23950195 649.10\
+913086 C-64.0680\
+2289 646.9430092\
+6 -61.90193675 6\
+44.77159826 -59.\
+73632812 642.599\
+60938 C-58.33625\
+798 641.20020013\
+ -56.93587762 63\
+9.80110116 -55.5\
+3515625 638.4023\
+4375 C-54.898444\
+98 637.76360825 \
+-54.2617337 637.\
+12487274 -53.605\
+72815 636.466781\
+62 C-49.77887174\
+ 632.65946129 -4\
+5.83852686 629.0\
+3685181 -41.7483\
+0627 625.5136261\
+ C-39.40310434 6\
+23.48322736 -37.\
+14353979 621.365\
+35865 -34.875 61\
+9.25 C-30.201444\
+63 614.98312141 \
+-25.34608452 611\
+.05133962 -20.34\
+008789 607.18334\
+961 C-16.2322569\
+1 604.00032708 -\
+12.25188983 600.\
+70103299 -8.3125\
+ 597.3125 C-3.74\
+266541 593.40190\
+687 0.9336257 58\
+9.74195688 5.839\
+84375 586.261718\
+75 C8.27299997 5\
+84.52031275 10.6\
+7472318 582.7539\
+5424 13.06640625\
+ 580.95703125 C2\
+5.72286178 571.4\
+6914562 38.77880\
+568 562.67780074\
+ 52 554 C54.1902\
+4303 552.5548979\
+5 56.38034564 55\
+1.10958304 58.57\
+03125 549.664062\
+5 C69.49876846 5\
+42.4678838 80.48\
+771131 535.39684\
+683 91.63452148 \
+528.54370117 C11\
+1.22514981 517.9\
+1454249 111.2251\
+4981 517.9145424\
+9 127 503 C128.3\
+3983385 494.6083\
+2298 125.6763532\
+1 486.183581 123\
+.66796875 478.10\
+9375 C123.315597\
+38 476.65664776 \
+122.9642629 475.\
+20366868 122.613\
+8916 473.7504577\
+6 C121.67778879 \
+469.87956953 120\
+.72809021 466.01\
+213899 119.77578\
+354 462.14521027\
+ C118.79040042 4\
+58.13319971 117.\
+81812377 454.118\
+0186 116.8449707\
+ 450.10302734 C1\
+15.29281849 443.\
+70436688 113.734\
+52769 437.307236\
+42 112.171875 43\
+0.91113281 C109.\
+53245099 420.102\
+84795 106.942292\
+33 409.28297303 \
+104.36343384 398\
+.46008301 C103.7\
+1079586 395.7227\
+1032 103.0563391\
+ 392.98578006 10\
+2.40112305 390.2\
+4902344 C102.199\
+35455 389.405870\
+82 101.99758606 \
+388.5627182 101.\
+78970337 387.694\
+0155 C101.404031\
+6 386.0824122 10\
+1.01819496 384.4\
+7084835 100.6321\
+7163 382.8593292\
+2 C99.70351801 3\
+78.97490922 98.7\
+8606128 375.0882\
+8328 97.88647461\
+ 371.19702148 C9\
+7.7068367 370.42\
+284882 97.527198\
+79 369.64867615 \
+97.34211731 368.\
+8510437 C97.0064\
+0558 367.4012897\
+3 96.6730335 365\
+.95099094 96.342\
+57507 364.500030\
+52 C94.6083478 3\
+57.01791753 92.7\
+0243871 350.2562\
+4529 86.3828125 \
+345.45703125 C44\
+.73330491 319.98\
+938153 -19.50287\
+882 317.54046669\
+ -66.8125 317.62\
+5 C-67.97309937 \
+317.62554382 -69\
+.13369873 317.62\
+608765 -70.32946\
+777 317.62664795\
+ C-138.98662803 \
+316.42986379 -13\
+8.98662803 316.4\
+2986379 -202 338\
+ Z M211 498 C212\
+.47680539 502.87\
+345778 215.19332\
+437 506.66593647\
+ 219 510 C221.39\
+005307 511.09204\
+829 223.38647588\
+ 511.52956566 22\
+6 512 C223.92462\
+949 509.84776392\
+ 221.89603574 50\
+7.9220268 219.5 \
+506.125 C216.676\
+50372 503.725028\
+17 215.02834376 \
+501.07748708 213\
+ 498 C212.34 498\
+ 211.68 498 211 \
+498 Z M70 631 C6\
+9.2471875 631.72\
+832031 68.494375\
+ 632.45664062 67\
+.71875 633.20703\
+125 C56.71457358\
+ 644.61328335 52\
+.60447005 658.27\
+506403 52.628662\
+11 673.78540039 \
+C53.12484633 693\
+.91071461 60.799\
+05965 717.434932\
+98 75 732 C81.70\
+005525 736.95804\
+088 86.85135624 \
+737.58615068 95 \
+737 C104.9472996\
+2 734.38228957 1\
+12.34893261 725.\
+62575095 117.417\
+96875 717.054687\
+5 C130.51923604 \
+691.75791955 143\
+.21633484 653.81\
+214524 134.98046\
+875 625.5859375 \
+C132.0291177 617\
+.80189609 126.94\
+65761 611.631050\
+73 120 607 C101.\
+15017828 600.716\
+72609 82.3320390\
+7 618.86286384 7\
+0 631 Z \x22 fill=\x22\
+#e6e6e6\x22 transfo\
+rm=\x22translate(54\
+3,3)\x22/>\x0a<path d=\
+\x22M0 0 C6.7250846\
+ 5.92447929 10.2\
+7054499 13.46251\
+724 11.625 22.31\
+25 C13.19806196 \
+47.75375206 7.63\
+733094 82.907349\
+07 -8.9375 103.1\
+25 C-12.91148602\
+ 107.12547926 -1\
+6.67876763 109.3\
+9330993 -22.375 \
+109.75 C-26.6449\
+1744 109.5629369\
+5 -29.08997764 1\
+08.08651888 -32.\
+375 105.3125 C-4\
+1.94370814 94.70\
+933692 -45.84883\
+293 80.86620466 \
+-49.375 67.3125 \
+C-49.6225 66.456\
+5625 -49.87 65.6\
+00625 -50.125 64\
+.71875 C-53.0908\
+9844 53.01992838\
+ -53.61955272 36\
+.89621628 -47.37\
+5 26.3125 C-38.0\
+8437704 12.44222\
+367 -18.76829597\
+ -9.38414798 0 0\
+ Z \x22 fill=\x22#e6e6\
+e6\x22 transform=\x22t\
+ranslate(657.375\
+,621.6875)\x22/>\x0a<p\
+ath d=\x22M0 0 C9.3\
+4465177 10.01212\
+689 9.97541996 2\
+1.84379685 10.74\
+804688 34.880859\
+38 C11.44835147 \
+44.84284995 13.1\
+8418139 52.37105\
+218 20.19140625 \
+59.73828125 C27.\
+13612452 65.6574\
+5525 35.888167 6\
+8.60896247 44.62\
+5 70.8125 C43.28\
+500502 73.819318\
+ 41.82654709 75.\
+81012609 39.4375\
+ 78.0625 C36.989\
+74079 80.3784126\
+9 34.7601998 82.\
+79913314 32.5703\
+125 85.35546875 \
+C28.30935542 90.\
+26120199 23.7393\
+1717 94.84879774\
+ 19.13696289 99.\
+4309082 C17.6897\
+5615 100.8727522\
+1 16.24797974 10\
+2.31987116 14.80\
+664062 103.76757\
+812 C9.58205629 \
+108.99591138 4.2\
+421524 114.00926\
+317 -1.375 118.8\
+125 C-2.98268373\
+ 120.26695517 -4\
+.58739715 121.72\
+470895 -6.1875 1\
+23.1875 C-10.430\
+76008 127.012863\
+25 -14.78359497 \
+130.6634409 -19.\
+2265625 134.2539\
+0625 C-21.553114\
+54 136.13512409 \
+-23.85466809 138\
+.04379752 -26.14\
+84375 139.964843\
+75 C-36.18165737\
+ 148.34704262 -4\
+6.49594234 156.2\
+7247386 -57.0029\
+2969 164.0502929\
+7 C-59.21094631 \
+165.69062479 -61\
+.40870244 167.34\
+338977 -63.60156\
+25 169.00390625 \
+C-84.8504214 185\
+.09162403 -106.8\
+92276 200.144318\
+69 -129.33935547\
+ 214.50634766 C-\
+131.40924031 215\
+.83446998 -133.4\
+7306659 217.1715\
+2914 -135.535156\
+25 218.51171875 \
+C-145.30238245 2\
+24.85945143 -155\
+.13159776 231.10\
+413795 -164.9897\
+4609 237.3095703\
+1 C-167.31389164\
+ 238.7739961 -16\
+9.63588789 240.2\
+4175869 -171.957\
+03125 241.710937\
+5 C-187.85762266\
+ 251.773982 -203\
+.78847398 261.79\
+116833 -219.8320\
+3125 271.625 C-2\
+23.73475548 274.\
+02667645 -227.61\
+610201 276.46242\
+772 -231.4997558\
+6 278.89477539 C\
+-235.6999097 281\
+.52468439 -239.9\
+0325863 284.1494\
+5529 -244.107421\
+88 286.77294922 \
+C-246.27351305 2\
+88.12497594 -248\
+.43888656 289.47\
+815316 -250.6035\
+1562 290.8325195\
+3 C-275.5254648 \
+306.40685088 -30\
+1.1891223 322.42\
+315233 -328.375 \
+333.8125 C-329.4\
+0625 334.26625 -\
+330.4375 334.72 \
+-331.5 335.1875 \
+C-347.20943943 3\
+38.60259553 -367\
+.48266658 324.90\
+888921 -380.2421\
+875 316.7421875 \
+C-393.94060343 3\
+07.77620081 -393\
+.94060343 307.77\
+620081 -399.375 \
+302.8125 C-399.3\
+75 302.1525 -399\
+.375 301.4925 -3\
+99.375 300.8125 \
+C-397.87109375 2\
+99.3671875 -397.\
+87109375 299.367\
+1875 -395.8125 2\
+97.6875 C-382.02\
+531039 285.84559\
+287 -375.4697821\
+9 270.7589987 -3\
+73.5625 252.6875\
+ C-372.85905462 \
+239.23185241 -37\
+4.36935091 227.4\
+3968742 -383.187\
+5 216.75 C-391.4\
+7591232 208.1278\
+2611 -402.274419\
+79 202.07066862 \
+-412.375 195.812\
+5 C-411.88 194.8\
+225 -411.88 194.\
+8225 -411.375 19\
+3.8125 C-408.978\
+15569 193.190981\
+96 -406.61261697\
+ 192.67241449 -4\
+04.1875 192.1875\
+ C-374.82149569 \
+185.75158972 -34\
+5.98312196 171.2\
+0364498 -320.255\
+37109 155.925781\
+25 C-318.1835112\
+ 154.69912829 -3\
+16.10143712 153.\
+49076826 -314.01\
+953125 152.28125\
+ C-292.40558615 \
+139.61961549 -27\
+1.79007118 125.3\
+0549771 -251.375\
+ 110.8125 C-250.\
+15110233 109.947\
+83079 -248.92714\
+814 109.08324159\
+ -247.703125 108\
+.21875 C-241.972\
+37505 104.158551\
+58 -236.29969764\
+ 100.02574971 -2\
+30.65649414 95.8\
+4472656 C-207.28\
+617457 78.536891\
+23 -183.35274212\
+ 61.52528768 -15\
+8.19433594 46.89\
+160156 C-156.123\
+25311 45.6631815\
+3 -154.08087481 \
+44.3936547 -152.\
+0390625 43.11718\
+75 C-143.1696181\
+7 37.57829066 -1\
+34.25940893 32.4\
+9804134 -124.824\
+21875 27.9921875\
+ C-121.9551711 2\
+6.61028576 -119.\
+10316813 25.1956\
+4104 -116.25 23.\
+78125 C-95.59319\
+739 13.60338654 \
+-74.48134033 4.3\
+8254801 -52.375 \
+-2.1875 C-51.690\
+99121 -2.3963281\
+2 -51.00698242 -\
+2.60515625 -50.3\
+0224609 -2.82031\
+25 C-34.40730001\
+ -7.55545552 -14\
+.25096922 -10.23\
+511006 0 0 Z \x22 f\
+ill=\x22#e6e6e6\x22 tr\
+ansform=\x22transla\
+te(839.375,685.1\
+875)\x22/>\x0a<path d=\
+\x22M0 0 C4.5873951\
+9 1.69873131 8.4\
+7373745 4.061261\
+35 12.59765625 6\
+.66015625 C22.90\
+052391 12.406308\
+46 36.99020943 8\
+.54509159 47.75 \
+6.0625 C70.47775\
+485 0.9552725 91\
+.27804861 0.3805\
+4227 113.8125 7 \
+C114.70364502 7.\
+26119629 115.594\
+79004 7.52239258\
+ 116.51293945 7.\
+79150391 C117.75\
+370239 8.1731469\
+7 117.75370239 8\
+.17314697 119.01\
+953125 8.5625 C1\
+19.76307861 8.79\
+066406 120.50662\
+598 9.01882813 1\
+21.27270508 9.25\
+390625 C123 10 1\
+23 10 124 12 C11\
+9.26341411 13.96\
+760514 114.52045\
+998 15.9190404 1\
+09.7734375 17.86\
+132812 C107.8577\
+8282 18.64782579\
+ 105.94382043 19\
+.43845349 104.03\
+125 20.23242188 \
+C58.20904341 39.\
+23822347 58.2090\
+4341 39.23822347\
+ 37 31 C23.05717\
+856 23.74051446 \
+9.84907242 12.18\
+174747 0 0 Z \x22 f\
+ill=\x22#e6e6e6\x22 tr\
+ansform=\x22transla\
+te(287,772)\x22/>\x0a<\
+/svg>\x0a\
+\x00\x01\xf9.\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<svg versi\
+on=\x221.1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 widt\
+h=\x221024\x22 height=\
+\x221024\x22>\x0a<path d=\
+\x22M0 0 C5.0414100\
+3 -0.64831952 8.\
+32447447 1.62109\
+603 12.4375 4.18\
+75 C13.96458175 \
+5.11371336 15.49\
+193912 6.0394723\
+9 17.01953125 6.\
+96484375 C17.828\
+5791 7.45968262 \
+18.63762695 7.95\
+452148 19.471191\
+41 8.46435547 C2\
+2.92171153 10.55\
+971863 26.403638\
+24 12.59978715 2\
+9.88574219 14.64\
+208984 C48.80591\
+536 25.74799542 \
+67.49625113 37.2\
+1478605 86 49 C8\
+7.76555247 50.12\
+250992 89.531179\
+89 51.24490196 9\
+1.296875 52.3671\
+875 C95.93769944\
+ 55.31795769 100\
+.57647193 58.271\
+939 105.21484375\
+ 61.2265625 C107\
+.94457316 62.964\
+70718 110.675231\
+85 64.70138106 1\
+13.40625 66.4375\
+ C130.87296441 7\
+7.5421975 148.33\
+293042 88.658260\
+89 165.6940918 9\
+9.92749023 C171.\
+31528534 103.570\
+54321 176.968781\
+04 107.1616407 1\
+82.625 110.75 C1\
+93.27382648 117.\
+50916326 203.837\
+21417 124.395224\
+11 214.39306641 \
+131.29833984 C21\
+8.08807327 133.7\
+1023325 221.7930\
+3389 136.1065434\
+7 225.5 138.5 C2\
+32.17928643 142.\
+81406093 238.841\
+58647 147.153799\
+77 245.5 151.5 C\
+252.90225349 156\
+.33153057 260.31\
+125779 161.15209\
+616 267.73632812\
+ 165.94848633 C2\
+71.36620353 168.\
+2938581 274.9925\
+1061 170.6444974\
+1 278.61328125 1\
+73.00390625 C286\
+.699162 178.2720\
+7921 294.7985510\
+7 183.51560987 3\
+02.93945312 188.\
+69848633 C313.44\
+342581 195.38828\
+194 323.85195692\
+ 202.20020718 33\
+4.19400024 209.1\
+3607788 C343.523\
+67874 215.390023\
+4 352.94292435 2\
+21.48561122 362.\
+41870117 227.516\
+8457 C368.505627\
+27 231.39380344 \
+374.54958569 235\
+.32163978 380.53\
+857422 239.34790\
+039 C385.6191979\
+5 242.75995084 3\
+90.74230107 246.\
+10437687 395.875\
+ 249.4375 C397.1\
+3630737 250.2575\
+8545 397.1363073\
+7 250.25758545 3\
+98.4230957 251.0\
+9423828 C402.575\
+99592 253.790926\
+73 406.73682638 \
+256.47396056 410\
+.9140625 259.132\
+8125 C411.687661\
+13 259.62724854 \
+412.46125977 260\
+.12168457 413.25\
+830078 260.63110\
+352 C414.7096297\
+3 261.55782336 4\
+16.16357575 262.\
+48046258 417.620\
+60547 263.398193\
+36 C421.14361005\
+ 265.65139933 42\
+4.16908845 267.8\
+7299822 427 271 \
+C423.06026438 27\
+0.36858018 419.8\
+1120334 269.1538\
+8836 416.1953125\
+ 267.48046875 C4\
+14.50124268 266.\
+69796753 414.501\
+24268 266.697967\
+53 412.77294922 \
+265.8996582 C411\
+.55667906 265.32\
+955088 410.34070\
+271 264.75881637\
+ 409.125 264.187\
+5 C408.50562561 \
+263.89821625 407\
+.88625122 263.60\
+89325 407.248107\
+91 263.31088257 \
+C394.97140046 25\
+7.57124872 382.9\
+2904017 251.4319\
+8777 371 245 C37\
+0.24702637 244.5\
+978125 369.49405\
+273 244.195625 3\
+68.71826172 243.\
+78125 C353.79520\
+523 235.7916959 \
+339.42012217 226\
+.85293919 325 21\
+8 C323.87932129 \
+217.31301025 322\
+.75864258 216.62\
+602051 321.60400\
+391 215.91821289\
+ C290.08491555 1\
+96.56782807 259.\
+34751443 176.013\
+63155 228.776611\
+33 155.20892334 \
+C227.17633501 15\
+4.11998995 225.5\
+7550629 153.0318\
+6846 223.9746093\
+8 151.94384766 C\
+214.02849533 145\
+.18159115 204.14\
+623405 138.33318\
+502 194.31689453\
+ 131.40209961 C1\
+93.52009277 130.\
+84143799 192.723\
+29102 130.280776\
+37 191.90234375 \
+129.703125 C191.\
+19585693 129.204\
+58008 190.489370\
+12 128.70603516 \
+189.76147461 128\
+.19238281 C188.0\
+084717 126.94963\
+417 188.0084717 \
+126.94963417 186\
+ 126 C203.895551\
+27 139.81512183 \
+203.89555127 139\
+.81512183 221.93\
+75 153.4375 C227\
+.68983927 157.73\
+603768 233.35100\
+36 162.14763088 \
+239.01318359 166\
+.56396484 C246.9\
+67164 172.764050\
+22 254.9801245 1\
+78.88554272 263 \
+185 C272.5518323\
+5 192.28244109 2\
+82.07616245 199.\
+59719021 291.550\
+53711 206.980224\
+61 C295.85597224\
+ 210.33482351 30\
+0.1703969 213.67\
+664888 304.5 217\
+ C310.46408111 2\
+21.57848651 316.\
+39836744 226.194\
+62108 322.330078\
+12 230.81494141 \
+C326.87368743 23\
+4.35218959 331.4\
+2940505 237.8727\
+1279 336 241.375\
+ C340.52341511 2\
+44.8467211 344.9\
+8912413 248.3803\
+0738 349.4296875\
+ 251.95703125 C3\
+52.30009194 254.\
+23852292 355.209\
+82717 256.463516\
+8 358.125 258.68\
+75 C363.86468119\
+ 263.0710274 369\
+.4668892 267.610\
+53091 375.057128\
+91 272.18237305 \
+C379.15507388 27\
+5.52527829 383.2\
+9429289 278.7936\
+6884 387.5 282 C\
+392.41055041 285\
+.74368695 397.22\
+007189 289.59116\
+172 402 293.5 C4\
+06.97318639 297.\
+56382756 411.973\
+36725 301.582075\
+12 417.0625 305.\
+5 C418.09890625 \
+306.30179687 419\
+.1353125 307.103\
+59375 420.203125\
+ 307.9296875 C42\
+2.52116149 309.6\
+455525 424.84903\
+615 311.13706784\
+ 427.3125 312.62\
+5 C430 315 430 3\
+15 430.28662109 \
+318.29736328 C43\
+0.07110923 324.4\
+5482037 429.0339\
+6591 330.5362421\
+3 428.1015625 33\
+6.6171875 C427.9\
+0654144 337.9106\
+9122 427.7115203\
+9 339.20419495 4\
+27.5105896 340.5\
+3689575 C427.099\
+28014 343.258947\
+85 426.68348639 \
+345.98026842 426\
+.26464844 348.70\
+117188 C425.7281\
+1697 352.1901096\
+9 425.20463636 3\
+55.68086699 424.\
+68462563 359.172\
+30034 C424.18546\
+134 362.50927783\
+ 423.67412622 36\
+5.84435856 423.1\
+640625 369.17968\
+75 C422.97752106\
+ 370.43482147 42\
+2.79097961 371.6\
+8995544 422.5987\
+854 372.98312378\
+ C422.41874969 3\
+74.13837555 422.\
+23871399 375.293\
+62732 422.053222\
+66 376.48388672 \
+C421.89777985 37\
+7.50344452 421.7\
+4233704 378.5230\
+0232 421.5821838\
+4 379.57345581 C\
+421 382 421 382 \
+419 384 C418.587\
+5 383.61255615 4\
+18.175 383.22511\
+23 417.75 382.82\
+592773 C414.4420\
+668 379.72150996\
+ 411.1303815 376\
+.62112819 407.81\
+25 373.52734375 \
+C407.17957031 37\
+2.93687256 406.5\
+4664063 372.3464\
+0137 405.8945312\
+5 371.73803711 C\
+403.37661488 369\
+.42810842 400.80\
+112028 367.18917\
+334 398.2109375 \
+364.9609375 C394\
+.27926613 361.47\
+383674 390.46981\
+435 357.85390504\
+ 386.63549805 35\
+4.26049805 C382.\
+28540665 350.187\
+87604 377.891378\
+41 346.171464 37\
+3.44921875 342.1\
+9921875 C370.657\
+70517 339.692644\
+35 367.88892475 \
+337.16188649 365\
+.125 334.625 C36\
+4.37271118 333.9\
+3458618 364.3727\
+1118 333.9345861\
+8 363.60522461 3\
+33.23022461 C361\
+.55596319 331.34\
+87045 359.507491\
+24 329.46632592 \
+357.45898438 327\
+.58398438 C355.9\
+3135839 326.1805\
+8719 354.4033320\
+3 324.77762825 3\
+52.875 323.375 C\
+352.12174438 322\
+.68361938 352.12\
+174438 322.68361\
+938 351.35327148\
+ 321.97827148 C3\
+48.31585459 319.\
+19434399 345.258\
+82365 316.433923\
+3 342.1875 313.6\
+875 C337.2877350\
+1 309.29108165 3\
+32.48146229 304.\
+79832822 327.675\
+29297 300.300292\
+97 C321.82171231\
+ 294.82445788 31\
+5.91762744 289.4\
+0652331 310 284 \
+C307.99926337 28\
+2.1674698 305.99\
+963714 280.33372\
+979 304 278.5 C3\
+03.00002026 277.\
+58331123 302.000\
+02028 276.666644\
+54 301 275.75 C2\
+99 273.91666667 \
+297 272.08333333\
+ 295 270.25 C294\
+.25762085 269.56\
+949585 294.25762\
+085 269.56949585\
+ 293.50024414 26\
+8.87524414 C292.\
+49940332 267.957\
+79315 291.498589\
+55 267.04031264 \
+290.49780273 266\
+.12280273 C288.0\
+1088739 263.8428\
+9449 285.5235168\
+5 261.56348707 2\
+83.03515625 259.\
+28515625 C277.80\
+36419 254.494045\
+6 272.5826826 24\
+9.69201102 267.3\
+75 244.875 C263.\
+64987568 241.429\
+65618 259.907898\
+75 238.00706179 \
+256.125 234.625 \
+C251.8177798 230\
+.76820806 247.59\
+321072 226.82840\
+887 243.375 222.\
+875 C239.0049338\
+2 218.78034912 2\
+34.61758 214.730\
+88217 230.074218\
+75 210.828125 C2\
+27.80284897 208.\
+82623977 225.591\
+27925 206.767944\
+11 223.37792969 \
+204.70239258 C21\
+7.88856911 199.5\
+800993 212.28299\
+8 194.72395281 2\
+06.42578125 190.\
+01953125 C203.66\
+127397 187.71800\
+104 201.16317926\
+ 185.25390084 19\
+8.6640625 182.67\
+1875 C196.271287\
+64 180.26786645 \
+193.71215283 178\
+.07742529 191.14\
+453125 175.86328\
+125 C188.8587029\
+6 173.87723372 1\
+86.61642587 171.\
+8484924 184.375 \
+169.8125 C180.39\
+455193 166.21548\
+959 176.33946869\
+ 162.72118804 17\
+2.25 159.25 C166\
+.64015621 154.48\
+08643 161.211451\
+15 149.54661326 \
+155.83789062 144\
+.51367188 C152.2\
+578649 141.16120\
+737 148.63498367\
+ 137.87720813 14\
+4.921875 134.671\
+875 C142.5889492\
+6 132.64241927 1\
+40.29488755 130.\
+572353 138 128.5\
+ C132.66437363 1\
+23.68985199 127.\
+28413119 118.940\
+19763 121.8125 1\
+14.28515625 C116\
+.05735347 109.38\
+425795 110.35089\
+524 104.45821729\
+ 104.8125 99.312\
+5 C101.16586624 \
+95.92475627 97.4\
+4382599 92.68102\
+204 93.5625 89.5\
+625 C88.14091657\
+ 85.19859541 83.\
+07157883 80.5157\
+847 77.984375 75\
+.7734375 C73.366\
+46239 71.4689448\
+6 68.59238393 67\
+.35687595 63.789\
+0625 63.26171875\
+ C57.24344569 57\
+.67681067 50.779\
+60493 52.0344603\
+9 44.43359375 46\
+.22265625 C39.96\
+2935 42.13950243\
+ 35.38858111 38.\
+18157621 30.7812\
+5 34.25390625 C2\
+9.58321624 33.23\
+190808 28.385303\
+09 32.20976851 2\
+7.1875 31.1875 C\
+26.58292969 30.6\
+7179443 25.97835\
+938 30.15608887 \
+25.35546875 29.6\
+2475586 C20.6546\
+8138 25.59901464\
+ 16.08642369 21.\
+45400617 11.5546\
+875 17.23828125 \
+C9.07955626 15.0\
+6970296 6.518087\
+24 13.24193948 3\
+.8125 11.375 C0.\
+16471746 8.65538\
+988 0.16471746 8\
+.65538988 -0.554\
+6875 5.79296875 \
+C-0.5625 3.5625 \
+-0.5625 3.5625 0\
+ 0 Z M175 118 C1\
+75.33 118.66 175\
+.66 119.32 176 1\
+20 C176.66 119.6\
+7 177.32 119.34 \
+178 119 C177.01 \
+118.67 176.02 11\
+8.34 175 118 Z M\
+179 121 C179.33 \
+121.66 179.66 12\
+2.32 180 123 C18\
+0.66 122.67 181.\
+32 122.34 182 12\
+2 C181.01 121.67\
+ 180.02 121.34 1\
+79 121 Z \x22 fill=\
+\x22#e6e6e6\x22 transf\
+orm=\x22translate(0\
+,60)\x22/>\x0a<path d=\
+\x22M0 0 C0.7148762\
+4 6.90302369 0.7\
+1487624 6.903023\
+69 -1.08984375 9\
+.67236328 C-2.65\
+3018 11.25160464\
+ -4.27479888 12.\
+66214531 -6 14.0\
+625 C-6.60013916\
+ 14.58070312 -7.\
+20027832 15.0989\
+0625 -7.81860352\
+ 15.6328125 C-9.\
+00649831 16.6555\
+3945 -10.2023596\
+4 17.66910033 -1\
+1.40673828 18.67\
+236328 C-13.2882\
+9381 20.24023012\
+ -15.11259714 21\
+.86677184 -16.93\
+75 23.5 C-19.350\
+82555 25.5925670\
+9 -21.78024563 2\
+7.66595163 -24.2\
+109375 29.738281\
+25 C-30.75655431\
+ 35.32318933 -37\
+.22039507 40.965\
+53961 -43.566406\
+25 46.77734375 C\
+-48.02489278 50.\
+8493804 -52.5849\
+7728 54.79842118\
+ -57.18359375 58\
+.7109375 C-62.93\
+971645 63.613499\
+82 -68.64776645 \
+68.54053928 -74.\
+1875 73.6875 C-7\
+7.83413376 77.07\
+524373 -81.55617\
+401 80.31897796 \
+-85.4375 83.4375\
+ C-90.21701922 8\
+7.28174639 -94.6\
+9320344 91.37089\
+045 -99.16601562\
+ 95.56054688 C-1\
+02.49137277 98.6\
+5765465 -105.887\
+10807 101.596143\
+76 -109.4375 104\
+.4375 C-115.1457\
+7779 109.0191440\
+2 -120.44296038 \
+113.98802436 -12\
+5.77734375 118.9\
+921875 C-128.817\
+94331 121.842255\
+7 -131.92348424 \
+124.60488811 -13\
+5.078125 127.328\
+125 C-137.411050\
+74 129.35758073 \
+-139.70511245 13\
+1.427647 -142 13\
+3.5 C-144.936784\
+65 136.15113994 \
+-147.88602542 13\
+8.78290171 -150.\
+875 141.375 C-15\
+4.30332192 144.3\
+5916686 -157.656\
+20801 147.421884\
+84 -161 150.5 C-\
+164.95864649 154\
+.14411716 -168.9\
+5176688 157.7391\
+3655 -173.015625\
+ 161.265625 C-17\
+7.89361626 165.5\
+2906618 -182.688\
+61052 169.889442\
+15 -187.47265625\
+ 174.2578125 C-1\
+91.6408851 178.0\
+4951354 -195.854\
+50202 181.723304\
+7 -200.25 185.25\
+ C-206.01234335 \
+189.9089159 -211\
+.38492006 194.93\
+327716 -216.7851\
+5625 200 C-219.7\
+80417 202.807678\
+77 -222.84555799\
+ 205.52052442 -2\
+25.953125 208.20\
+3125 C-229.16258\
+705 211.02059169\
+ -232.29528816 2\
+13.92162562 -235\
+.43798828 216.81\
+298828 C-238.608\
+15648 219.728188\
+5 -241.79411892 \
+222.6239845 -245\
+ 225.5 C-256.228\
+75528 235.582598\
+44 -267.28484833\
+ 245.85804195 -2\
+78.359375 256.10\
+9375 C-283.17164\
+556 260.56137615\
+ -287.98793596 2\
+65.00491463 -292\
+.875 269.375 C-2\
+97.81206727 273.\
+79577266 -302.64\
+818465 278.32130\
+105 -307.4721679\
+7 282.86474609 C\
+-310.58730475 28\
+5.78900645 -313.\
+73448879 288.659\
+64309 -316.96093\
+75 291.4609375 C\
+-321.07454511 29\
+5.03681862 -325.\
+04340778 298.752\
+05619 -329 302.5\
+ C-333.60052765 \
+306.8579217 -338\
+.25492363 311.12\
+179405 -343.0400\
+3906 315.2763671\
+9 C-346.21841172\
+ 318.0714981 -34\
+9.29409849 320.9\
+7338651 -352.375\
+ 323.875 C-358.7\
+5929048 329.8595\
+2872 -365.170289\
+91 335.81089821 \
+-371.78173828 34\
+1.54541016 C-376\
+.62911013 345.75\
+481447 -381.3394\
+7274 350.0852427\
+3 -386 354.5 C-3\
+90.61362196 358.\
+87032549 -395.28\
+082148 363.14717\
+042 -400.0805664\
+1 367.3125 C-403\
+.5798477 370.388\
+94776 -406.95446\
+709 373.60145502\
+ -410.33007812 3\
+76.8125 C-410.86\
+439453 377.31265\
+625 -411.3987109\
+4 377.8128125 -4\
+11.94921875 378.\
+328125 C-412.416\
+74561 378.770595\
+7 -412.88427246 \
+379.21306641 -41\
+3.3659668 379.66\
+894531 C-415.442\
+0902 381.3601189\
+ -417.69726169 3\
+82.63940223 -420\
+ 384 C-421.12126\
+952 376.43778225\
+ -422.24225195 3\
+68.87552198 -423\
+.36303711 361.31\
+323242 C-423.744\
+15623 358.741933\
+61 -424.12534049\
+ 356.17064445 -4\
+24.5065918 353.5\
+9936523 C-425.05\
+534819 349.89830\
+027 -425.6038684\
+9 346.19720038 -\
+426.15234375 342\
+.49609375 C-426.\
+3221727 341.3510\
+3867 -426.492001\
+65 340.20598358 \
+-426.66697693 33\
+9.02622986 C-429\
+.52953176 319.70\
+432236 -429.5295\
+3176 319.7043223\
+6 -429 315 C-426\
+.9699893 312.782\
+84769 -425.43190\
+634 311.44756344\
+ -423 309.8125 C\
+-421.70287786 30\
+8.87061943 -420.\
+40736508 307.926\
+51944 -419.11328\
+125 306.98046875\
+ C-418.43475098 \
+306.49497559 -41\
+7.7562207 306.00\
+948242 -417.0571\
+2891 305.5092773\
+4 C-413.65765605\
+ 303.01514713 -4\
+10.43444703 300.\
+31267006 -407.18\
+75 297.625 C-401\
+.01537738 292.57\
+120008 -394.7223\
+7117 287.6997317\
+ -388.36499023 2\
+82.88208008 C-38\
+3.41516147 279.1\
+1766923 -378.561\
+34957 275.252060\
+37 -373.75 271.3\
+125 C-367.517730\
+19 266.21000833 \
+-361.19514691 26\
+1.26027885 -354.\
+79150391 256.373\
+53516 C-351.2840\
+2957 253.6843759\
+ -347.79973521 2\
+50.96531729 -344\
+.3125 248.25 C-3\
+43.55227539 247.\
+65856201 -342.79\
+205078 247.06712\
+402 -342.0087890\
+6 246.45776367 C\
+-338.13960009 24\
+3.44699514 -334.\
+27312572 240.432\
+80686 -330.41015\
+625 237.4140625 \
+C-322.58632454 2\
+31.30571069 -314\
+.72216858 225.26\
+428 -306.7639160\
+2 219.33203125 C\
+-301.80936939 21\
+5.63019494 -296.\
+93163672 211.839\
+90449 -292.07934\
+57 208.00537109 \
+C-286.62211679 2\
+03.69281404 -281\
+.11169658 199.45\
+193886 -275.5913\
+0859 195.2207031\
+2 C-272.97462222\
+ 193.21342606 -2\
+70.36279461 191.\
+19983871 -267.75\
+ 189.1875 C-259.\
+11385481 182.541\
+68043 -250.45155\
+171 175.93001319\
+ -241.79296875 1\
+69.31347656 C-23\
+9.61185414 167.6\
+4664786 -237.430\
+8717 165.9796465\
+1 -235.25 164.31\
+25 C-234.5358593\
+7 163.76658203 -\
+233.82171875 163\
+.22066406 -233.0\
+859375 162.65820\
+312 C-228.967999\
+63 159.50896835 \
+-224.85630055 15\
+6.3518914 -220.7\
+5 153.1875 C-193\
+.66002273 132.34\
+118248 -193.6600\
+2273 132.3411824\
+8 -182 124 C-189\
+.18697105 128.73\
+944595 -196.2422\
+7978 133.6493885\
+8 -203.27539062 \
+138.61328125 C-2\
+08.58967756 142.\
+35034442 -213.96\
+01045 145.988513\
+49 -219.37329102\
+ 149.58056641 C-\
+223.90363952 152\
+.59466104 -228.4\
+0515694 155.6513\
+3715 -232.910156\
+25 158.703125 C-\
+234.74409172 159\
+.94408269 -236.5\
+7807701 161.1849\
+6676 -238.412109\
+38 162.42578125 \
+C-241.22714995 1\
+64.33041017 -244\
+.04162872 166.23\
+584002 -246.8542\
+4805 168.1440429\
+7 C-258.05670239\
+ 175.74236643 -2\
+69.33058272 183.\
+18239701 -280.80\
+444336 190.36474\
+609 C-286.172660\
+87 193.72594868 \
+-291.4622399 197\
+.20124043 -296.7\
+5 200.6875 C-303\
+.59416211 205.17\
+578278 -310.4648\
+8898 209.5734117\
+8 -317.51635742 \
+213.72827148 C-3\
+21.62190012 216.\
+1525558 -325.659\
+67148 218.667718\
+13 -329.67993164\
+ 221.23095703 C-\
+355.41485604 237\
+.63865245 -381.9\
+9932562 251.4882\
+9261 -409.625 26\
+4.375 C-410.8104\
+541 264.92865234\
+ -411.9959082 26\
+5.48230469 -413.\
+21728516 266.052\
+73438 C-414.3134\
+7168 266.5586914\
+1 -415.4096582 2\
+67.06464844 -416\
+.5390625 267.585\
+9375 C-417.50021\
+973 268.0298584 \
+-418.46137695 26\
+8.4737793 -419.4\
+5166016 268.9311\
+5234 C-421.64211\
+525 269.84989275\
+ -423.68186167 2\
+70.51207863 -426\
+ 271 C-423.13299\
+311 267.94023551\
+ -420.21300895 2\
+65.69135223 -416\
+.66796875 263.46\
+09375 C-415.6301\
+123 262.80343506\
+ -414.59225586 2\
+62.14593262 -413\
+.52294922 261.46\
+850586 C-412.422\
+25098 260.777648\
+93 -411.32155273\
+ 260.08679199 -4\
+10.1875 259.375 \
+C-407.90076533 2\
+57.92826621 -405\
+.61644286 256.47\
+774205 -403.3320\
+3125 255.0273437\
+5 C-401.68195068\
+ 253.98102783 -4\
+01.68195068 253.\
+98102783 -399.99\
+853516 252.91357\
+422 C-396.425842\
+45 250.63359006 \
+-392.88967119 24\
+8.30562777 -389.\
+375 245.9375 C-3\
+80.31311664 239.\
+84320557 -371.14\
+802045 233.90749\
+525 -361.9951171\
+9 227.95117188 C\
+-359.09095266 22\
+6.05925119 -356.\
+18949838 224.163\
+25592 -353.28906\
+25 222.265625 C-\
+343.22679155 215\
+.68524677 -333.1\
+3541615 209.1547\
+4482 -323 202.68\
+75 C-315.7004854\
+5 198.02962989 -\
+308.43140613 193\
+.33815439 -301.2\
+4487305 188.5078\
+125 C-294.643874\
+13 184.07429188 \
+-287.95479317 17\
+9.77851335 -281.\
+27294922 175.468\
+26172 C-277.3020\
+063 172.90314349\
+ -273.33838012 1\
+70.3267828 -269.\
+375 167.75 C-268\
+.54436035 167.20\
+996338 -267.7137\
+207 166.66992676\
+ -266.85791016 1\
+66.11352539 C-26\
+0.46467782 161.9\
+5542939 -254.075\
+45459 157.791198\
+36 -247.6875 153\
+.625 C-246.72835\
+693 152.99956299\
+ -245.76921387 1\
+52.37412598 -244\
+.78100586 151.72\
+973633 C-239.919\
+43502 148.558970\
+02 -235.0596985 \
+145.3854471 -230\
+.203125 142.2070\
+3125 C-220.92363\
+18 136.13825055 \
+-211.622925 130.\
+11109996 -202.25\
+ 124.1875 C-193.\
+82538423 118.862\
+58634 -185.52385\
+479 113.36705441\
+ -177.25 107.812\
+5 C-169.15148844\
+ 102.37636989 -1\
+61.00729644 97.0\
+6528402 -152.641\
+35742 92.0478515\
+6 C-146.51994988\
+ 88.3622351 -140\
+.53687752 84.481\
+23582 -134.5625 \
+80.5625 C-125.25\
+340148 74.456639\
+35 -115.87774098\
+ 68.47101702 -10\
+6.45263672 62.54\
+638672 C-101.958\
+66878 59.7129412\
+8 -97.4802972 56\
+.8549921 -93 54 \
+C-89.33372902 51\
+.66604459 -85.66\
+694119 49.332902\
+25 -82 47 C-81.1\
+4809082 46.45778\
+809 -80.29618164\
+ 45.91557617 -79\
+.41845703 45.356\
+93359 C-69.61066\
+186 39.11942788 \
+-59.75763959 32.\
+98262953 -49.762\
+20703 27.0502929\
+7 C-47.48063743 \
+25.69045473 -45.\
+21092638 24.3111\
+8153 -42.9394531\
+2 22.93457031 C-\
+33.95610418 17.5\
+0149695 -24.8526\
+3499 12.27639921\
+ -15.74682617 7.\
+05224609 C-14.11\
+644409 6.1156616\
+2 -14.11644409 6\
+.11566162 -12.45\
+3125 5.16015625 \
+C-11.47504883 4.\
+59949463 -10.496\
+97266 4.03883301\
+ -9.48925781 3.4\
+6118164 C-3.5928\
+1537 0 -3.592815\
+37 0 0 0 Z M-172\
+ 115 C-172.33 11\
+5.66 -172.66 116\
+.32 -173 117 C-1\
+72.01 116.67 -17\
+1.02 116.34 -170\
+ 116 C-170.66 11\
+5.67 -171.32 115\
+.34 -172 115 Z M\
+-176 118 C-176.3\
+3 118.66 -176.66\
+ 119.32 -177 120\
+ C-176.01 119.67\
+ -175.02 119.34 \
+-174 119 C-174.6\
+6 118.67 -175.32\
+ 118.34 -176 118\
+ Z M-179 120 C-1\
+79.99 121.485 -1\
+79.99 121.485 -1\
+81 123 C-179.68 \
+122.34 -178.36 1\
+21.68 -177 121 C\
+-177.66 120.67 -\
+178.32 120.34 -1\
+79 120 Z \x22 fill=\
+\x22#e6e6e6\x22 transf\
+orm=\x22translate(1\
+024,60)\x22/>\x0a<path\
+ d=\x22M0 0 C0.9745\
+9671 -0.00671722\
+ 1.94919342 -0.0\
+1343445 2.953323\
+36 -0.02035522 C\
+6.17157098 -0.03\
+933587 9.3896100\
+7 -0.04325941 12\
+.60791016 -0.045\
+41016 C14.848440\
+4 -0.05183779 17\
+.08896981 -0.058\
+56613 19.3294982\
+9 -0.06558228 C2\
+4.02518662 -0.07\
+755504 28.720801\
+39 -0.08126307 3\
+3.41650391 -0.08\
+007812 C39.42780\
+395 -0.07987489 \
+45.4386315 -0.10\
+718261 51.449819\
+56 -0.14162254 C\
+56.0772823 -0.16\
+388004 60.704631\
+09 -0.16791602 6\
+5.33214188 -0.16\
+685867 C67.54807\
+794 -0.16921614 \
+69.76401708 -0.1\
+7804783 71.97990\
+036 -0.19352341 \
+C75.08198728 -0.\
+21316042 78.1830\
+5221 -0.20735392\
+ 81.28515625 -0.\
+1953125 C82.6522\
+599 -0.21217102 \
+82.6522599 -0.21\
+217102 84.046981\
+81 -0.22937012 C\
+90.94625371 -0.1\
+6145643 95.05284\
+243 1.51395175 1\
+00.34619141 6.07\
+958984 C100.8785\
+7422 6.68544922 \
+101.41095703 7.2\
+9130859 101.9594\
+7266 7.91552734 \
+C102.49958984 8.\
+50591797 103.039\
+70703 9.09630859\
+ 103.59619141 9.\
+70458984 C107.95\
+627385 16.432735\
+71 109.96019661 \
+24.21241467 111.\
+56201172 31.9865\
+7227 C111.757667\
+24 32.90074417 1\
+11.95332275 33.8\
+1491608 112.1549\
+0723 34.75679016\
+ C112.79353204 3\
+7.7593208 113.41\
+723185 40.764642\
+58 114.03759766 \
+43.77099609 C114\
+.36307209 45.339\
+10758 114.363072\
+09 45.33910758 1\
+14.69512177 46.9\
+3889809 C115.847\
+67791 52.4993825\
+1 116.98785311 5\
+8.06224961 118.1\
+1865234 63.62719\
+727 C119.0393330\
+4 68.14742121 11\
+9.98214805 72.66\
+204976 120.94677\
+734 77.1730957 C\
+127.01520158 105\
+.59161376 130.72\
+199814 132.23259\
+976 129.27197266\
+ 161.29052734 C1\
+29.17688695 163.\
+85849395 129.085\
+65893 166.426607\
+47 128.99902344 \
+168.99487305 C12\
+8.85793576 173.0\
+5073609 128.6936\
+5562 177.1040861\
+ 128.49853516 18\
+1.15771484 C128.\
+12239537 189.234\
+35425 127.866910\
+23 197.32853132 \
+128.63916016 205\
+.38818359 C128.7\
+3221436 206.4137\
+1338 128.7322143\
+6 206.41371338 1\
+28.82714844 207.\
+45996094 C129.01\
+034647 209.35759\
+865 129.2260104 \
+211.25202214 129\
+.44384766 213.14\
+599609 C129.2719\
+7266 216.2905273\
+4 129.27197266 2\
+16.29052734 127.\
+89697266 218.700\
+68359 C123.87687\
+836 221.13547285\
+ 120.12120731 22\
+0.71715969 115.5\
+2197266 220.5405\
+2734 C114.633808\
+59 220.52248047 \
+113.74564453 220\
+.50443359 112.83\
+056641 220.48583\
+984 C110.6432641\
+7 220.43880109 1\
+08.45817449 220.\
+37309743 106.271\
+97266 220.290527\
+34 C106.12501953\
+ 219.64986328 10\
+5.97806641 219.0\
+0919922 105.8266\
+6016 218.3491210\
+9 C103.75976918 \
+210.3785243 100.\
+66573805 205.819\
+21528 94.0844726\
+6 200.91552734 C\
+81.01250573 193.\
+36283534 58.9789\
+6502 197.1140512\
+4 44.22607422 19\
+7.24902344 C40.6\
+7593039 197.2813\
+8598 37.12595227\
+ 197.30008751 33\
+.57568359 197.31\
+25 C28.52030131 \
+197.33231127 23.\
+46576641 197.380\
+51936 18.4107666\
+ 197.44512939 C1\
+6.41791989 197.4\
+668829 14.424965\
+88 197.48048847 \
+12.43200684 197.\
+48553467 C-2.519\
+44173 197.129216\
+29 -2.51944173 1\
+97.12921629 -15.\
+72802734 203.290\
+52734 C-20.68456\
+784 208.37899342\
+ -22.64546504 21\
+3.59830902 -24.7\
+2802734 220.2905\
+2734 C-27.811041\
+5 220.4069689 -3\
+0.89348858 220.4\
+7785166 -33.9780\
+2734 220.5405273\
+4 C-34.85072266 \
+220.57404297 -35\
+.72341797 220.60\
+755859 -36.62255\
+859 220.64208984\
+ C-37.46689453 2\
+20.65498047 -38.\
+31123047 220.667\
+87109 -39.181152\
+34 220.68115234 \
+C-39.95620117 22\
+0.70209961 -40.7\
+3125 220.7230468\
+8 -41.52978516 2\
+20.74462891 C-44\
+.67811099 220.09\
+426395 -45.83052\
+462 218.84811278\
+ -47.72802734 21\
+6.29052734 C-48.\
+07446289 213.668\
+45703 -48.074462\
+89 213.66845703 \
+-47.86474609 210\
+.71240234 C-47.8\
+0222656 209.6334\
+5703 -47.7397070\
+3 208.55451172 -\
+47.67529297 207.\
+44287109 C-47.58\
+957031 206.32009\
+766 -47.50384766\
+ 205.19732422 -4\
+7.41552734 204.0\
+4052734 C-46.938\
+02368 196.907037\
+87 -46.67614593 \
+190.36229766 -47\
+.72802734 183.29\
+052734 C-48.2473\
+8946 176.2603623\
+9 -48.39983109 1\
+69.20599374 -48.\
+60877991 162.161\
+33118 C-48.68642\
+545 159.64093603\
+ -48.77237482 15\
+7.12077858 -48.8\
+6790466 154.6009\
+9792 C-49.612776\
+88 133.50516822 \
+-47.39117518 114\
+.36943374 -42.71\
+558762 93.826786\
+04 C-41.88179686\
+ 90.13075576 -41\
+.08590887 86.426\
+56892 -40.286865\
+23 82.72290039 C\
+-39.33138999 78.\
+30465302 -38.372\
+68359 73.8872483\
+1 -37.39552307 6\
+9.47373962 C-35.\
+55970554 61.1802\
+459 -33.80799867\
+ 52.87637174 -32\
+.19287109 44.536\
+62109 C-31.92254\
+562 43.15243988 \
+-31.92254562 43.\
+15243988 -31.646\
+75903 41.7402954\
+1 C-30.9975986 3\
+8.41144913 -30.3\
+4863443 35.08280\
+775 -29.72558594\
+ 31.7489624 C-27\
+.86082873 21.812\
+46272 -25.757710\
+57 12.61633027 -\
+18.22802734 5.35\
+302734 C-17.6814\
+6484 4.80775391 \
+-17.13490234 4.2\
+6248047 -16.5717\
+7734 3.70068359 \
+C-11.43226173 -0\
+.23017475 -6.193\
+97632 -0.0061325\
+5 0 0 Z M-11.728\
+02734 45.2905273\
+4 C-10.64017767 \
+48.54035869 -10.\
+64017767 48.5403\
+5869 -8.72802734\
+ 51.29052734 C-5\
+.09883356 51.677\
+51251 -1.4368107\
+8 51.72523519 2.\
+20947266 51.8530\
+2734 C3.38662842\
+ 51.89476074 4.5\
+6378418 51.93649\
+414 5.77661133 5\
+1.97949219 C23.9\
+3667779 52.54422\
+104 42.10605705 \
+52.45542352 60.2\
+7197266 52.29052\
+734 C61.47037781\
+ 52.2811615 61.4\
+7037781 52.28116\
+15 62.69299316 5\
+2.27160645 C67.6\
+9970085 52.23069\
+814 72.70375421 \
+52.14853557 77.7\
+0947266 52.04052\
+734 C78.95253174\
+ 52.02650879 80.\
+19559082 52.0124\
+9023 81.47631836\
+ 51.99804688 C83\
+.16760864 51.949\
+46533 83.1676086\
+4 51.94946533 84\
+.89306641 51.899\
+90234 C85.866872\
+56 51.87895508 8\
+6.84067871 51.85\
+800781 87.843994\
+14 51.83642578 C\
+90.41594981 51.4\
+9281743 90.41594\
+981 51.49281743 \
+92.1081543 49.37\
+744141 C93.43432\
+476 47.39765289 \
+93.43432476 47.3\
+9765289 93.27197\
+266 45.29052734 \
+C75.21221463 44.\
+34054567 57.1658\
+3129 44.17978862\
+ 39.08447266 44.\
+16552734 C37.997\
+10815 44.1630297\
+9 36.90974365 44\
+.16053223 35.789\
+42871 44.1579589\
+8 C19.92693701 4\
+4.1281232 4.1164\
+6296 44.53571637\
+ -11.72802734 45\
+.29052734 Z M-28\
+.72802734 60.290\
+52734 C-30.22768\
+477 69.81131273 \
+-31.72341046 79.\
+33270615 -33.214\
+59579 88.8548221\
+6 C-33.90769957 \
+93.27996539 -34.\
+60198069 97.7049\
+1605 -35.2993164\
+1 102.12939453 C\
+-37.02224665 113\
+.06557247 -38.72\
+190036 124.00497\
+834 -40.37478638\
+ 134.95198059 C-\
+40.60658548 136.\
+48655071 -40.839\
+12504 138.021009\
+21 -41.07247925 \
+139.55534363 C-4\
+1.80028669 144.3\
+465603 -42.49858\
+763 149.14108882\
+ -43.18115234 15\
+3.93896484 C-43.\
+35628357 155.096\
+91559 -43.531414\
+79 156.25486633 \
+-43.71185303 157\
+.44790649 C-45.1\
+0492485 167.5714\
+5751 -44.5065991\
+ 177.24551273 -4\
+2.72802734 187.2\
+9052734 C-40.306\
+97102 184.869471\
+02 -40.26463685 \
+183.72006094 -39\
+.72583008 180.38\
+427734 C-39.4688\
+5849 178.8303401\
+9 -39.46885849 1\
+78.83034019 -39.\
+20669556 177.245\
+01038 C-39.02682\
+098 176.10503098\
+ -38.84694641 17\
+4.96505157 -38.6\
+6162109 173.7905\
+2734 C-38.466600\
+04 172.59540024 \
+-38.27157898 171\
+.40027313 -38.07\
+064819 170.16893\
+005 C-37.5381657\
+9 166.89321126 -\
+37.01315454 163.\
+6164698 -36.4920\
+0821 160.3389396\
+7 C-36.05691042 \
+157.609041 -35.6\
+1653726 154.8800\
+0434 -35.1761770\
+2 152.15095043 C\
+-34.02812591 145\
+.0348436 -32.892\
+30293 137.916837\
+08 -31.76242733 \
+130.79782391 C-3\
+0.96764184 125.7\
+9185424 -30.1672\
+3283 120.7868102\
+4 -29.36376953 1\
+15.78222656 C-28\
+.28234603 109.04\
+399792 -27.21092\
+064 102.30424732\
+ -26.14700317 95\
+.56323242 C-25.7\
+4316743 93.00947\
+377 -25.33698373\
+ 90.45608529 -24\
+.92843628 87.903\
+07617 C-24.36028\
+511 84.34460816 \
+-23.80246473 80.\
+78467518 -23.247\
+55859 77.2241210\
+9 C-23.07727142 \
+76.16962265 -22.\
+90698425 75.1151\
+2421 -22.7315368\
+7 74.02867126 C-\
+22.5831839 73.06\
+248367 -22.43483\
+093 72.09629608 \
+-22.28198242 71.\
+10083008 C-22.15\
+003983 70.263337\
+25 -22.01809723 \
+69.42584442 -21.\
+88215637 68.5629\
+7302 C-21.718592\
+89 66.15142775 -\
+21.83849193 64.5\
+3783307 -22.7280\
+2734 62.29052734\
+ C-25.54312728 6\
+0.01317725 -25.5\
+4312728 60.01317\
+725 -28.72802734\
+ 60.29052734 Z M\
+108.27197266 59.\
+29052734 C105.64\
+81013 60.6814562\
+7 105.6481013 60\
+.68145627 103.27\
+197266 62.290527\
+34 C103.8757687 \
+72.77198153 105.\
+5740703 83.01949\
+946 107.29150391\
+ 93.36083984 C10\
+7.59482199 95.20\
+947068 107.89768\
+432 97.05817634 \
+108.20011902 98.\
+9069519 C108.995\
+14867 103.760417\
+57 109.79554257 \
+108.61298222 110\
+.59735107 113.46\
+533203 C111.8681\
+5427 121.1618040\
+7 113.13052817 1\
+28.85966454 114.\
+39348984 136.557\
+42645 C114.85075\
+664 139.34107186\
+ 115.30969542 14\
+2.12443789 115.7\
+6882935 144.9077\
+7588 C117.074408\
+08 152.83945694 \
+118.36482579 160\
+.77141375 119.54\
+296875 168.72314\
+453 C119.7252653\
+5 169.9483078 11\
+9.90756195 171.1\
+7347107 120.0953\
+8269 172.4357605\
+ C120.41744677 1\
+74.62833971 120.\
+73286826 176.821\
+91043 121.039993\
+29 179.01663208 \
+C121.17672958 17\
+9.95248138 121.3\
+1346588 180.8883\
+3069 121.4543457\
+ 181.85253906 C1\
+21.56570358 182.\
+64683319 121.677\
+06146 183.441127\
+32 121.79179382 \
+184.25949097 C12\
+2.21728661 186.5\
+8591253 122.2172\
+8661 186.5859125\
+3 124.27197266 1\
+89.29052734 C127\
+.52708793 173.68\
+341213 126.15234\
+446 159.34501609\
+ 123.53369141 14\
+3.84521484 C123.\
+24831679 142.101\
+10098 122.964064\
+68 140.35680313 \
+122.68086243 138\
+.61233521 C121.9\
+3774506 134.0518\
+4195 121.1808931\
+9 129.49374202 1\
+20.42053223 124.\
+93609619 C119.21\
+302066 117.67999\
+708 118.02937682\
+ 110.41993843 11\
+6.84027481 103.1\
+6080475 C116.412\
+82948 100.557913\
+26 115.98244485 \
+97.95552179 115.\
+55148315 95.3532\
+1045 C113.926618\
+69 85.51165667 1\
+12.36630926 75.6\
+6831892 111.1737\
+5183 65.76290894\
+ C110.93787327 6\
+3.92929024 110.6\
+1604472 62.10695\
+533 110.27197266\
+ 60.29052734 C10\
+9.61197266 59.96\
+052734 108.95197\
+266 59.63052734 \
+108.27197266 59.\
+29052734 Z M93.4\
+5947266 64.79052\
+734 C93.06759766\
+ 65.28552734 92.\
+67572266 65.7805\
+2734 92.27197266\
+ 66.29052734 C92\
+.60197266 66.950\
+52734 92.9319726\
+6 67.61052734 93\
+.27197266 68.290\
+52734 C96.156350\
+45 66.9975304 98\
+.14416687 65.631\
+11371 100.271972\
+66 63.29052734 C\
+96.55460624 62.9\
+4152176 96.55460\
+624 62.94152176 \
+93.45947266 64.7\
+9052734 Z M-1.61\
+872864 77.150894\
+17 C-4.1393942 8\
+2.01279442 -4.37\
+917901 87.331364\
+05 -4.83740234 9\
+2.70849609 C-4.9\
+7437375 94.04800\
+129 -5.11418425 \
+95.38721883 -5.2\
+5665283 96.72615\
+051 C-5.62512183\
+ 100.25948929 -5\
+.95604861 103.79\
+535617 -6.278747\
+56 107.33312988 \
+C-6.6035977 110.\
+82957209 -6.9615\
+7611 114.3225642\
+9 -7.31787109 11\
+7.81591797 C-7.8\
+0574844 122.6253\
+0005 -8.28157255\
+ 127.43556804 -8\
+.74187469 132.24\
+766731 C-9.65057\
+34 141.73113756 \
+-10.69784763 151\
+.19698315 -11.82\
+684326 160.65678\
+406 C-13.4514608\
+8 170.35978138 -\
+13.45146088 170.\
+35978138 -11.485\
+83984 179.567871\
+09 C-10.94701172\
+ 180.11572266 -1\
+0.40818359 180.6\
+6357422 -9.85302\
+734 181.22802734\
+ C-9.31935547 18\
+1.79392578 -8.78\
+568359 182.35982\
+422 -8.23583984 \
+182.94287109 C-4\
+.69881623 186.10\
+420049 -0.730573\
+24 185.46048317 \
+3.75732422 185.4\
+8339844 C4.63555\
+344 185.49157593\
+ 5.51378265 185.\
+49975342 6.41862\
+488 185.50817871\
+ C9.33327549 185\
+.53304858 12.247\
+87733 185.549553\
+46 15.16259766 1\
+85.56396484 C16.\
+15723778 185.569\
+28852 17.1518779\
+ 185.5746122 18.\
+17665863 185.580\
+0972 C23.4419833\
+4 185.60683665 2\
+8.70728427 185.6\
+2620837 33.97265\
+625 185.640625 C\
+39.41139233 185.\
+65726808 44.8495\
+2189 185.7020409\
+3 50.28802872 18\
+5.75299644 C54.4\
+6936742 185.7866\
+5494 58.65056199\
+ 185.79820096 62\
+.83202362 185.80\
+385208 C64.83669\
+414 185.8105692 \
+66.84135503 185.\
+82580318 68.8458\
+9386 185.8497428\
+9 C71.65411242 1\
+85.88136504 74.4\
+6069308 185.8814\
+3557 77.26904297\
+ 185.87402344 C7\
+8.09524643 185.8\
+9042877 78.92144\
+989 185.90683411\
+ 79.77268982 185\
+.92373657 C83.86\
+340825 185.87960\
+356 86.46642295 \
+185.55041689 89.\
+70965576 182.941\
+55884 C93.446349\
+92 179.18303721 \
+93.44634992 179.\
+18303721 94.3150\
+0244 174.1679992\
+7 C94.21604675 1\
+72.88988373 94.1\
+1709106 171.6117\
+6819 94.01513672\
+ 170.29492188 C9\
+3.93589148 169.2\
+3770022 93.93589\
+148 169.23770022\
+ 93.85504532 168\
+.15912056 C93.18\
+063499 159.49927\
+77 92.2951334 15\
+0.85751632 91.38\
+134766 142.22021\
+484 C91.2431448 \
+140.91300161 91.\
+2431448 140.9130\
+0161 91.10214996\
+ 139.57938004 C9\
+0.61510148 134.9\
+8775541 90.12240\
+604 130.39677149\
+ 89.62597656 125\
+.80615234 C89.21\
+874547 122.02895\
+896 88.82390087 \
+118.25077054 88.\
+43945312 114.471\
+19141 C87.970997\
+81 109.8664664 8\
+7.48158425 105.2\
+6442516 86.97705\
+841 100.663517 C\
+86.78958473 98.9\
+2203591 86.60939\
+646 97.17975375 \
+86.43682098 95.4\
+3673325 C86.1946\
+2681 93.00626885\
+ 85.92552363 90.\
+58018973 85.6499\
+0234 88.15332031\
+ C85.58529312 87\
+.44261887 85.520\
+6839 86.73191742\
+ 85.45411682 85.\
+99967957 C84.794\
+08852 80.5777172\
+1 82.99518628 78\
+.0609558 79.2719\
+7266 74.29052734\
+ C76.34328242 72\
+.82618223 73.725\
+23154 73.12263 7\
+0.45483398 73.08\
+178711 C69.75377\
+533 73.07200333 \
+69.05271667 73.0\
+6221954 68.33041\
+382 73.05213928 \
+C66.00496317 73.\
+02217136 63.6795\
+7026 73.00079267\
+ 61.35400391 72.\
+98193359 C60.559\
+19806 72.9753617\
+7 59.7643922 72.\
+96878994 58.9455\
+0133 72.96201897\
+ C54.73590245 72\
+.92941445 50.526\
+32896 72.9049699\
+3 46.31665039 72\
+.88549805 C42.83\
+710727 72.867705\
+48 39.35837774 7\
+2.83292157 35.87\
+915039 72.782958\
+98 C31.67516094 \
+72.72265959 27.4\
+7192412 72.69200\
+88 23.26752281 7\
+2.68232536 C21.6\
+6834446 72.67378\
+338 20.06918553 \
+72.65499594 18.4\
+702549 72.625581\
+74 C7.47500539 7\
+2.01801097 7.475\
+00539 72.0180109\
+7 -1.61872864 77\
+.15089417 Z \x22 fi\
+ll=\x22#e6e6e6\x22 tra\
+nsform=\x22translat\
+e(471.7280273437\
+5,67.70947265625\
+)\x22/>\x0a<path d=\x22M0\
+ 0 C29.90150266 \
+6.50032667 58.73\
+780015 19.514274\
+09 84.5 35.875 C\
+85.23734375 36.3\
+3970703 85.97468\
+75 36.80441406 8\
+6.734375 37.2832\
+0312 C87.4098437\
+5 37.72341797 88\
+.0853125 38.1636\
+3281 88.78125 38\
+.6171875 C89.380\
+01953 39.0050341\
+8 89.97878906 39\
+.39288086 90.595\
+70312 39.7924804\
+7 C92 41 92 41 9\
+3 44 C88.5027383\
+ 47.00650771 84.\
+00440195 50.0113\
+9862 79.50512695\
+ 53.01489258 C77\
+.97945075 54.033\
+67077 76.4540526\
+5 55.05286557 74\
+.92895508 56.072\
+50977 C67.825855\
+21 60.82111969 6\
+0.72126664 65.56\
+836922 53.550781\
+25 70.21484375 C\
+52.70813721 70.7\
+6132568 51.86549\
+316 71.30780762 \
+50.99731445 71.8\
+7084961 C49 73 4\
+9 73 47 73 C47 6\
+4.09 47 55.18 47\
+ 46 C46.835 48.0\
+00625 46.67 50.0\
+0125 46.5 52.062\
+5 C46.32984375 5\
+3.97675781 46.32\
+984375 53.976757\
+81 46.15625 55.9\
+296875 C45.97009\
+376 58.7808893 4\
+6.13475386 60.98\
+489222 46.53125 \
+63.8828125 C47.0\
+448196 68.051285\
+74 47.16594088 7\
+0.95059765 46 75\
+ C42.13575277 79\
+.3746991 36.5780\
+1 81.91149641 31\
+.50146484 84.621\
+09375 C27.374223\
+25 86.89619238 2\
+3.48738753 89.52\
+128289 19.5625 9\
+2.125 C17.891566\
+62 93.21368617 1\
+6.21965565 94.30\
+087307 14.546875\
+ 95.38671875 C8.\
+7041286 99.19092\
+451 2.86561586 1\
+03.00160272 -2.9\
+7073364 106.8156\
+1279 C-4.6404298\
+ 107.90674016 -6\
+.31032434 108.99\
+756394 -7.980224\
+61 110.08837891 \
+C-9.54268921 111\
+.1100415 -9.5426\
+8921 111.1100415\
+ -11.13671875 11\
+2.15234375 C-12.\
+63017822 113.124\
+69971 -12.630178\
+22 113.12469971 \
+-14.15380859 114\
+.11669922 C-16.0\
+0708406 115.3429\
+9592 -17.8445463\
+6 116.59364501 -\
+19.66259766 117.\
+87158203 C-20.46\
+101074 118.43087\
+402 -21.25942383\
+ 118.99016602 -2\
+2.08203125 119.5\
+6640625 C-23.116\
+14136 120.309993\
+9 -23.11614136 1\
+20.3099939 -24.1\
+7114258 121.0686\
+0352 C-24.774665\
+53 121.37596436 \
+-25.37818848 121\
+.6833252 -26 122\
+ C-26.99 121.67 \
+-27.98 121.34 -2\
+9 121 C-29.67429\
+967 117.60563644\
+ -30.3380828 114\
+.20929807 -31 11\
+0.8125 C-31.1907\
+8125 109.8527929\
+7 -31.3815625 10\
+8.89308594 -31.5\
+78125 107.904296\
+88 C-31.75859375\
+ 106.97294922 -3\
+1.9390625 106.04\
+160156 -32.125 1\
+05.08203125 C-32\
+.29257812 104.22\
+843018 -32.46015\
+625 103.3748291 \
+-32.6328125 102.\
+49536133 C-33.00\
+595229 99.959548\
+97 -33.06412996 \
+97.55918603 -33 \
+95 C-28.42853794\
+ 93.47617931 -23\
+.75276466 93.769\
+05298 -18.957031\
+25 93.671875 C-1\
+5.10571573 93.18\
+049526 -11.84501\
+759 92.36341517 \
+-8.62231445 90.1\
+3427734 C-4.7068\
+5184 84.98319019\
+ -5.42914527 77.\
+16328655 -5.1875\
+ 70.9375 C-5.092\
+55078 69.2206488\
+4 -4.99368133 67\
+.5040105 -4.8911\
+1328 65.78759766\
+ C-4.67707518 62\
+.12880519 -4.483\
+22727 58.4697026\
+ -4.30322266 54.\
+80908203 C-3.849\
+14866 45.8012098\
+1 -3.20194364 36\
+.80586055 -2.576\
+08032 27.8086242\
+7 C-2.37734463 2\
+4.90920652 -2.18\
+768076 22.009330\
+4 -2.00073242 19\
+.10913086 C-1.91\
+146233 17.749519\
+88 -1.91146233 1\
+7.74951988 -1.82\
+038879 16.362442\
+02 C-1.70919633 \
+14.66805199 -1.6\
+0030491 12.97350\
+871 -1.4941864 1\
+1.27879333 C-1.2\
+3798317 7.439376\
+07 -0.88396777 3\
+.75850694 0 0 Z \
+\x22 fill=\x22#e6e6e6\x22\
+ transform=\x22tran\
+slate(613,201)\x22/\
+>\x0a<path d=\x22M0 0 \
+C0.36715569 2.47\
+409214 0.6012154\
+7 4.85578616 0.7\
+6196289 7.346191\
+41 C0.84777367 8\
+.49997284 0.8477\
+7367 8.49997284 \
+0.93531799 9.677\
+06299 C1.1233589\
+5 12.23466816 1.\
+29791459 14.7930\
+1713 1.47265625 \
+17.3515625 C1.60\
+102135 19.127049\
+11 1.73030082 20\
+.90246982 1.8604\
+5837 22.67782593\
+ C2.20204286 27.\
+36652189 2.53256\
+155 32.05593163 \
+2.8604126 36.745\
+60547 C3.3857868\
+ 44.23127552 3.9\
+2877863 51.71569\
+31 4.46990776 59\
+.20023727 C4.657\
+29788 61.8117279\
+7 4.84063874 64.\
+42347722 5.02320\
+862 67.03530884 \
+C5.1378975 68.64\
+935673 5.2526359\
+4 70.26340111 5.\
+36743164 71.8774\
+4141 C5.41679871\
+ 72.59876251 5.4\
+6616577 73.32008\
+362 5.51702881 7\
+4.06326294 C5.63\
+892251 81.767021\
+9 5.63892251 81.\
+7670219 8.214843\
+75 88.70703125 C\
+15.58874274 93.4\
+3903446 24.48554\
+808 93.39052534 \
+33 94 C31.502237\
+31 113.99552538 \
+31.50223731 113.\
+99552538 28 121 \
+C23.47209687 119\
+.40395752 19.651\
+8403 117.0595567\
+ 15.625 114.5 C1\
+4.56780762 113.8\
+335144 14.567807\
+62 113.8335144 1\
+3.48925781 113.1\
+5356445 C8.24755\
+93 109.83268952 \
+3.07123495 106.4\
+1998721 -2.07836\
+914 102.95849609\
+ C-7.2880769 99.\
+4592877 -12.5447\
+5881 96.03609072\
+ -17.8125 92.625\
+ C-24.63043608 8\
+8.205736 -31.424\
+62754 83.7531348\
+5 -38.1875 79.25\
+ C-38.96005127 7\
+8.73646973 -39.7\
+3260254 78.22293\
+945 -40.52856445\
+ 77.69384766 C-4\
+1.23456787 77.22\
+253418 -41.94057\
+129 76.7512207 -\
+42.66796875 76.2\
+65625 C-43.28953\
+857 75.85086914 \
+-43.9111084 75.4\
+3611328 -44.5515\
+1367 75.00878906\
+ C-46 74 -46 74 \
+-47 73 C-47.1009\
+1959 71.01378816\
+ -47.13082387 69\
+.02392931 -47.13\
+28125 67.0351562\
+5 C-47.13498779 \
+65.77155273 -47.\
+13716309 64.5079\
+4922 -47.1394043\
+ 63.20605469 C-4\
+7.1353507 61.824\
+86739 -47.130532\
+62 60.44368216 -\
+47.125 59.0625 C\
+-47.12311676 58.\
+37192505 -47.121\
+23352 57.6813501\
+ -47.11929321 56\
+.96984863 C-47.0\
+8761459 47.06146\
+412 -46.97458764\
+ 37.15452371 -46\
+.6875 27.25 C-46\
+.66510254 26.156\
+95557 -46.642705\
+08 25.06391113 -\
+46.61962891 23.9\
+3774414 C-46.584\
+01855 22.9321948\
+2 -46.5484082 21\
+.92664551 -46.51\
+171875 20.890625\
+ C-46.48553467 2\
+0.01438477 -46.4\
+5935059 19.13814\
+453 -46.43237305\
+ 18.23535156 C-4\
+5.89857719 15.47\
+564809 -45.24001\
+715 14.66978061 \
+-43 13 C-40.7260\
+7422 11.91259766\
+ -40.72607422 11\
+.91259766 -38.05\
+46875 10.9140625\
+ C-37.06742676 1\
+0.54265137 -36.0\
+8016602 10.17124\
+023 -35.06298828\
+ 9.78857422 C-34\
+.01095215 9.4045\
+9473 -32.9589160\
+2 9.02061523 -31\
+.875 8.625 C-30.\
+80362793 8.22941\
+895 -29.73225586\
+ 7.83383789 -28.\
+62841797 7.42626\
+953 C-22.1777662\
+5 5.07435902 -15\
+.70339067 2.8431\
+4294 -9.125 0.87\
+5 C-8.42487793 0\
+.66311035 -7.724\
+75586 0.4512207 \
+-7.00341797 0.23\
+291016 C-2.25310\
+241 -1.1265512 -\
+2.25310241 -1.12\
+65512 0 0 Z \x22 fi\
+ll=\x22#e6e6e6\x22 tra\
+nsform=\x22translat\
+e(412,202)\x22/>\x0a<p\
+ath d=\x22M0 0 C1.2\
+4339976 2.486799\
+52 1.15827487 4.\
+21797088 1.20532\
+227 7.00048828 C\
+1.2352401 8.5618\
+8034 1.2352401 8\
+.56188034 1.2657\
+6233 10.15481567\
+ C1.28247482 11.\
+28192963 1.29918\
+732 12.40904358 \
+1.31640625 13.57\
+03125 C1.3371873\
+5 14.72167694 1.\
+35796844 15.8730\
+4138 1.37937927 \
+17.05929565 C1.4\
+4491665 20.74780\
+14 1.50377928 24\
+.43638003 1.5625\
+ 28.125 C1.60568\
+123 30.62110138 \
+1.64929538 33.11\
+71953 1.69335938\
+ 35.61328125 C1.\
+80060231 41.7421\
+0981 1.90236089 \
+47.87101133 2 54\
+ C-2.84921623 52\
+.62883913 -6.708\
+66798 50.4608283\
+8 -10.83203125 4\
+7.640625 C-11.46\
+807785 47.213764\
+04 -12.10412445 \
+46.78690308 -12.\
+75944519 46.3471\
+0693 C-14.781590\
+87 44.98789104 -\
+16.7971062 43.61\
+920197 -18.8125 \
+42.25 C-20.15386\
+304 41.34571031 \
+-21.49565646 40.\
+44205867 -22.837\
+89062 39.5390625\
+ C-24.78955319 3\
+8.22587176 -26.7\
+3978399 36.91084\
+986 -28.68508911\
+ 35.58825684 C-3\
+2.91912997 32.70\
+974105 -37.20380\
+888 29.92826711 \
+-41.56518555 27.\
+24511719 C-42.03\
+867432 26.834228\
+52 -42.51216309 \
+26.42333984 -43 \
+26 C-43 25.01 -4\
+3 24.02 -43 23 C\
+-40.95898438 21.\
+40942383 -40.958\
+98438 21.4094238\
+3 -38.09375 19.7\
+0703125 C-37.046\
+46729 19.0799829\
+1 -35.99918457 1\
+8.45293457 -34.9\
+2016602 17.80688\
+477 C-33.7915112\
+3 17.14873779 -3\
+2.66285645 16.49\
+059082 -31.5 15.\
+8125 C-29.798316\
+65 14.8069104 -2\
+9.79831665 14.80\
+69104 -28.062255\
+86 13.78100586 C\
+-4.53187699 0 -4\
+.53187699 0 0 0 \
+Z \x22 fill=\x22#e6e6e\
+6\x22 transform=\x22tr\
+anslate(362,219)\
+\x22/>\x0a<path d=\x22M0 \
+0 C0.83979904 -0\
+.01051392 1.6795\
+9808 -0.02102783\
+ 2.54484558 -0.0\
+3186035 C5.30865\
+862 -0.05817382 \
+8.07014976 -0.04\
+082129 10.833984\
+38 -0.02050781 C\
+12.76160116 -0.0\
+2455194 14.68921\
+495 -0.03037702 \
+16.61682129 -0.0\
+3790283 C20.6519\
+0841 -0.04673756\
+ 24.68619727 -0.\
+03392783 28.7211\
+9141 -0.00585938\
+ C33.88665555 0.\
+02832676 39.0502\
+4928 0.00863766 \
+44.21564484 -0.0\
+2729416 C48.1946\
+6172 -0.04900342\
+ 52.17323708 -0.\
+04206243 56.1522\
+6746 -0.0265274 \
+C58.05641401 -0.\
+02253252 59.9606\
+01 -0.02741008 6\
+1.86470032 -0.04\
+140472 C64.52936\
+548 -0.0566926 6\
+7.19102671 -0.03\
+335765 69.855468\
+75 0 C71.0292432\
+4 -0.01821808 71\
+.02924324 -0.018\
+21808 72.2267303\
+5 -0.0368042 C76\
+.4458956 0.06076\
+688 78.78051997 \
+0.63731695 81.88\
+792419 3.5917968\
+8 C84.92513117 6\
+.89721284 85.702\
+60728 10.4711758\
+7 86.30664062 14\
+.82324219 C86.50\
+69413 16.0381961\
+8 86.5069413 16.\
+03819618 86.7112\
+8845 17.2776947 \
+C87.00347231 19.\
+06788285 87.2844\
+197 20.85993158 \
+87.55566406 22.6\
+5341187 C88.1645\
+402 26.67870741 \
+88.82700408 30.6\
+9478868 89.48410\
+034 34.71244812 \
+C89.85201974 36.\
+96760089 90.2169\
+2136 39.22324764\
+ 90.57913208 41.\
+47932434 C92.139\
+58354 51.1677057\
+8 93.82628202 60\
+.83054079 95.548\
+82812 70.4912109\
+4 C95.82624388 7\
+2.04846177 96.10\
+365884 73.605712\
+75 96.381073 75.\
+16296387 C96.803\
+43004 77.5332478\
+5 97.22584512 79\
+.90352141 97.648\
+44704 82.2737617\
+5 C102.04562507 \
+106.95046059 106\
+.33013878 131.64\
+226079 110.24023\
+438 156.40136719\
+ C110.4092627 15\
+7.46003998 110.5\
+7829102 158.5187\
+1277 110.7524414\
+1 159.60946655 C\
+111.22046063 162\
+.55204447 111.67\
+949565 165.49585\
+549 112.13476562\
+ 168.44042969 C1\
+12.33529289 169.\
+69919167 112.335\
+29289 169.699191\
+67 112.53987122 \
+170.98338318 C11\
+4.41750208 183.3\
+9068573 114.4175\
+0208 183.3906857\
+3 112.29492188 1\
+88.50683594 C109\
+.98976364 191.30\
+871237 107.56330\
+969 193.05654836\
+ 104.55273438 19\
+5.08886719 C98.3\
+077166 199.39278\
+708 92.25461777 \
+203.90607174 86.\
+24023438 208.526\
+36719 C78.576556\
+55 214.40056031 \
+70.85211028 220.\
+17975924 63.0612\
+793 225.8840332 \
+C57.3275119 230.\
+08977078 51.6850\
+9564 234.3975677\
+8 46.09179688 23\
+8.78808594 C41.0\
+1344823 242.5782\
+3177 37.92377459\
+ 244.56037204 31\
+.42773438 243.77\
+636719 C26.33357\
+056 241.16907058\
+ 22.06499935 238\
+.04632098 17.677\
+73438 234.401367\
+19 C12.00226712 \
+229.77458093 6.2\
+1684187 225.3435\
+9207 0.30273438 \
+221.02636719 C-7\
+.62946905 215.23\
+387807 -15.45967\
+152 209.31942561\
+ -23.25561523 20\
+3.3449707 C-28.6\
+6710577 199.2044\
+8824 -34.1183287\
+5 195.1533535 -3\
+9.70898438 191.2\
+5683594 C-42.068\
+6401 189.3819732\
+1 -43.45487099 1\
+87.74796237 -43.\
+82347107 184.697\
+3114 C-43.749949\
+44 178.13733464 \
+-43.02302056 171\
+.83102977 -41.98\
+242188 165.35839\
+844 C-41.8065806\
+6 164.23163696 -\
+41.63073944 163.\
+10487549 -41.449\
+5697 161.9439697\
+3 C-40.85416618 \
+158.15735679 -40\
+.24530166 154.37\
+306801 -39.63476\
+562 150.58886719\
+ C-39.42235374 1\
+49.25804624 -39.\
+21019855 147.927\
+1843 -38.9982910\
+2 146.59628296 C\
+-32.94404982 108\
+.63893871 -26.00\
+499984 70.827034\
+52 -19.13523865 \
+33.01062012 C-18\
+.97870032 32.145\
+74919 -18.822162\
+ 31.28087826 -18\
+.66088009 30.389\
+79912 C-18.35962\
+858 28.73174622 \
+-18.05553537 27.\
+07420654 -17.748\
+29197 25.4172534\
+9 C-17.11628331 \
+21.97860035 -16.\
+54711125 18.5725\
+3788 -16.1186523\
+4 15.10067749 C-\
+15.98861816 14.0\
+5030304 -15.8585\
+8398 12.99992859\
+ -15.72460938 11\
+.91772461 C-15.6\
+4073975 11.05169\
+113 -15.55687012\
+ 10.18565765 -15\
+.47045898 9.2933\
+8074 C-12.766453\
+33 1.71592673 -7\
+.49661003 -0.116\
+3544 0 0 Z M90.4\
+2773438 141.7763\
+6719 C90.0977343\
+7 142.43636719 8\
+9.76773438 143.0\
+9636719 89.42773\
+438 143.77636719\
+ C90.41773438 14\
+3.44636719 91.40\
+773438 143.11636\
+719 92.42773438 \
+142.77636719 C91\
+.76773438 142.44\
+636719 91.107734\
+38 142.11636719 \
+90.42773438 141.\
+77636719 Z M87.4\
+2773438 143.7763\
+6719 C86.3947924\
+8 144.46674072 8\
+5.36185059 145.1\
+5711426 84.29760\
+742 145.8684082 \
+C80.4162559 148.\
+46206998 76.5338\
+4028 151.0541351\
+9 72.65112305 15\
+3.64575195 C70.9\
+7993991 154.7615\
+3659 69.30903467\
+ 155.87773759 67\
+.63842773 156.99\
+438477 C62.92549\
+554 160.14433316\
+ 58.20709854 163\
+.28572869 53.479\
+94995 166.414306\
+64 C51.64716136 \
+167.63073295 49.\
+82118144 168.856\
+67129 47.9963378\
+9 170.08496094 C\
+46.56245728 171.\
+03242188 46.5624\
+5728 171.0324218\
+8 45.09960938 17\
+1.99902344 C44.3\
+1038086 172.5263\
+3057 43.52115234\
+ 173.0536377 42.\
+70800781 173.596\
+92383 C38.260694\
+13 175.89724207 \
+34.23518114 175.\
+95310029 29.4277\
+3438 174.7763671\
+9 C20.94803887 1\
+70.6463757 13.11\
+230166 165.03648\
+864 5.30273438 1\
+59.77636719 C4.2\
+9597656 159.1034\
+7656 3.28921875 \
+158.43058594 2.2\
+5195312 157.7373\
+0469 C-4.0785455\
+4 153.49513353 -\
+10.34760574 149.\
+17226493 -16.572\
+26562 144.776367\
+19 C-17.56226563\
+ 145.27136719 -1\
+7.56226563 145.2\
+7136719 -18.5722\
+6562 145.7763671\
+9 C-9.30044291 1\
+53.67757263 0.06\
+747014 161.45568\
+815 9.48730469 1\
+69.1796875 C11.2\
+1073533 170.5978\
+0984 12.92670846\
+ 172.0241313 14.\
+63867188 173.456\
+05469 C23.155996\
+33 181.58268933 \
+23.15599633 181.\
+58268933 33.4277\
+3438 185.7763671\
+9 C33.42249756 1\
+86.61594971 33.4\
+1726074 187.4555\
+3223 33.41186523\
+ 188.32055664 C3\
+3.32622221 204.1\
+6885203 33.29927\
+994 219.95785416\
+ 34.42773438 235\
+.77636719 C35.08\
+773437 235.77636\
+719 35.74773437 \
+235.77636719 36.\
+42773438 235.776\
+36719 C37.143585\
+38 228.09279628 \
+37.4753657 220.5\
+5792537 37.32226\
+562 212.85058594\
+ C37.30081706 21\
+0.51164643 37.28\
+506323 208.17273\
+655 37.27124023 \
+205.83374023 C37\
+.25044761 204.24\
+449642 37.209845\
+71 202.65539691 \
+37.15014648 201.\
+06713867 C36.684\
+24658 187.789670\
+5 36.68424658 18\
+7.7896705 40.966\
+06445 182.845214\
+84 C44.02005654 \
+180.56044805 47.\
+10716833 178.646\
+08804 50.4277343\
+8 176.77636719 C\
+51.59130194 175.\
+89403062 52.7358\
+6775 174.9844657\
+6 53.83789062 17\
+4.02636719 C65.5\
+4918753 164.0915\
+9986 77.50467089\
+ 154.45471885 89\
+.42773438 144.77\
+636719 C88.43773\
+437 144.28136719\
+ 88.43773437 144\
+.28136719 87.427\
+73438 143.776367\
+19 Z \x22 fill=\x22#e6\
+e6e6\x22 transform=\
+\x22translate(477.5\
+72265625,278.223\
+6328125)\x22/>\x0a<pat\
+h d=\x22M0 0 C4.986\
+69007 2.49334503\
+ 8.49675474 5.99\
+350949 11 11 C11\
+.5072965 16.5553\
+1248 11.76260422\
+ 21.41830236 9.3\
+125 26.5 C4.9697\
+7076 31.19484242\
+ 1.80302742 33.7\
+624553 -4.6875 3\
+4.3125 C-9.44875\
+46 34.23358418 -\
+13.15436044 32.7\
+8830186 -17 30 C\
+-21.19659702 24.\
+72735246 -22.447\
+01486 20.7052228\
+5 -22 14 C-20.10\
+71201 8.22173504\
+ -17.43710909 4.\
+06226545 -12.144\
+53125 0.88671875\
+ C-8.20033205 -0\
+.744125 -4.18280\
+747 -0.53608767 \
+0 0 Z \x22 fill=\x22#e\
+6e6e6\x22 transform\
+=\x22translate(283,\
+390)\x22/>\x0a<path d=\
+\x22M0 0 C5.0709502\
+4 2.39195766 8.4\
+662244 6.0434907\
+5 11 11 C12.6245\
+8637 15.97342698\
+ 12.19405374 20.\
+32229053 10.1562\
+5 25.10546875 C7\
+.52659553 29.414\
+19313 3.75234935\
+ 32.41588355 -1 \
+34 C-7.282566 34\
+.53242085 -11.81\
+968006 33.756019\
+12 -17 30 C-20.7\
+892098 25.239197\
+94 -22.39359041 \
+21.32278933 -22.\
+26953125 15.1875\
+ C-21.68201286 1\
+0.41923483 -19.7\
+8272463 6.696463\
+76 -16.3046875 3\
+.38671875 C-11.1\
+7165099 -0.30200\
+182 -6.1940886 -\
+1.10348469 0 0 Z\
+ \x22 fill=\x22#e6e6e6\
+\x22 transform=\x22tra\
+nslate(752,390)\x22\
+/>\x0a<path d=\x22M0 0\
+ C5.76886726 3.8\
+6687015 10.20843\
+441 8.29123991 1\
+4.74609375 13.53\
+125 C17.46316508\
+ 16.50731427 20.\
+41405554 19.0263\
+5596 23.56640625\
+ 21.52734375 C25\
+ 23 25 23 25 26 \
+C21.89948553 26.\
+8678228 18.79413\
+335 27.71686767 \
+15.6875 28.5625 \
+C14.80642578 28.\
+80935547 13.9253\
+5156 29.05621094\
+ 13.01757812 29.\
+31054688 C11.746\
+24023 29.6537597\
+7 11.74624023 29\
+.65375977 10.449\
+21875 30.0039062\
+5 C9.27879028 30\
+.32597046 9.2787\
+9028 30.32597046\
+ 8.0847168 30.65\
+454102 C6 31 6 3\
+1 3 30 C-2.14349\
+177 21.95235982 \
+-0.10276935 9.20\
+356602 0 0 Z \x22 f\
+ill=\x22#e6e6e6\x22 tr\
+ansform=\x22transla\
+te(373,422)\x22/>\x0a<\
+path d=\x22M0 0 C0.\
+31607409 24.0567\
+5037 0.31607409 \
+24.05675037 -4 3\
+1 C-11.11120489 \
+29.68882339 -18.\
+04699943 27.9827\
+9484 -25 26 C-25\
+ 23 -25 23 -23.5\
+4663086 21.47241\
+211 C-22.8802661\
+1 20.93366455 -2\
+2.21390137 20.39\
+491699 -21.52734\
+375 19.83984375 \
+C-16.93541468 15\
+.99282537 -12.75\
+64943 11.8346675\
+4 -8.5625 7.5625\
+ C-7.14941047 6.\
+12406358 -5.7341\
+7027 4.68773558 \
+-4.31640625 3.25\
+390625 C-3.70224\
+854 2.62814697 -\
+3.08809082 2.002\
+3877 -2.45532227\
+ 1.35766602 C-1 \
+0 -1 0 0 0 Z \x22 f\
+ill=\x22#e6e6e6\x22 tr\
+ansform=\x22transla\
+te(652,422)\x22/>\x0a<\
+path d=\x22M0 0 C2.\
+07284525 2.64757\
+337 2.89874672 5\
+.55521764 3.9748\
+5352 8.72412109 \
+C4.61293945 10.5\
+8037109 4.612939\
+45 10.58037109 5\
+.26391602 12.474\
+12109 C5.9599493\
+6 14.55721371 6.\
+65532222 16.6405\
+272 7.34985352 1\
+8.72412109 C9.17\
+00155 19.7804760\
+8 9.1700155 19.7\
+8047608 11.34985\
+352 20.72412109 \
+C12.90044611 21.\
+7186853 14.43436\
+936 22.73948304 \
+15.95532227 23.7\
+7880859 C16.8479\
+9805 24.38764893\
+ 17.74067383 24.\
+99648926 18.6604\
+0039 25.6237793 \
+C20.08449219 26.\
+60157349 20.0844\
+9219 26.60157349\
+ 21.53735352 27.\
+59912109 C23.009\
+78516 28.6068859\
+9 23.00978516 28\
+.60688599 24.511\
+96289 29.6350097\
+7 C36.11915093 3\
+7.59656784 47.59\
+0111 45.74501641\
+ 59.03881836 53.\
+93188477 C65.797\
+93068 58.7632696\
+8 72.57006773 63\
+.57523905 79.378\
+17383 68.3374023\
+4 C81.18788639 6\
+9.61020662 82.98\
+458241 70.899398\
+26 84.77954102 7\
+2.19287109 C92.8\
+2155495 78.11279\
+62 92.82155495 7\
+8.1127962 102.34\
+985352 79.724121\
+09 C112.21960683\
+ 76.66919745 120\
+.77140849 69.388\
+36558 129.028564\
+45 63.39794922 C\
+132.98110877 60.\
+54786047 136.979\
+16912 57.7632407\
+2 140.97485352 5\
+4.97412109 C141.\
+80090088 54.3961\
+377 142.62694824\
+ 53.8181543 143.\
+47802734 53.2226\
+5625 C150.956666\
+67 47.99110976 1\
+58.4510147 42.78\
+217714 165.94897\
+461 37.57836914 \
+C170.4748207 34.\
+43402812 174.990\
+66043 31.2776337\
+5 179.47875977 2\
+8.07958984 C180.\
+65595581 27.2416\
+1865 180.6559558\
+1 27.24161865 18\
+1.85693359 26.38\
+671875 C183.3109\
+978 25.34939026 \
+184.76280667 24.\
+3088902 186.2119\
+1406 23.26464844\
+ C188.90784904 2\
+1.34126467 191.1\
+8820189 19.77800\
+497 194.34985352\
+ 18.72412109 C19\
+5.27392863 16.96\
+819702 195.27392\
+863 16.96819702 \
+195.84985352 14.\
+78662109 C196.09\
+348633 13.984824\
+22 196.33711914 \
+13.18302734 196.\
+58813477 12.3569\
+3359 C196.839501\
+95 11.48810547 1\
+97.09086914 10.6\
+1927734 197.3498\
+5352 9.72412109 \
+C197.91227424 7.\
+86993038 198.474\
+77199 6.01576303\
+ 199.03735352 4.\
+16162109 C199.47\
+625255 2.6828689\
+5 199.91427436 1\
+.20385454 200.34\
+985352 -0.275878\
+91 C250.95999916\
+ -3.1199649 311.\
+18472444 31.5363\
+8348 353.6623535\
+2 56.53662109 C3\
+54.25855499 56.8\
+8500031 354.8547\
+5647 57.23337952\
+ 355.46902466 57\
+.59231567 C357.1\
+3891806 58.57146\
+314 358.80124701\
+ 59.56347777 360\
+.46313477 60.556\
+15234 C361.88299\
+683 61.40270386 \
+361.88299683 61.\
+40270386 363.331\
+54297 62.2663574\
+2 C363.99758545 \
+62.74741943 364.\
+66362793 63.2284\
+8145 365.3498535\
+2 63.72412109 C3\
+65.34985352 64.3\
+8412109 365.3498\
+5352 65.04412109\
+ 365.34985352 65\
+.72412109 C327.4\
+8095446 75.63743\
+852 289.61976169\
+ 85.45876106 251\
+.34985352 93.724\
+12109 C249.65348\
+755 94.09156433 \
+249.65348755 94.\
+09156433 247.922\
+85156 94.4664306\
+6 C205.0682544 1\
+03.73177368 162.\
+01007396 111.730\
+31802 118.796173\
+1 119.12937927 C\
+116.53088948 119\
+.52030614 114.26\
+733769 119.92143\
+027 112.00582886\
+ 120.33363342 C9\
+4.76509499 123.4\
+0684072 77.02445\
+452 119.52862684\
+ 59.84985352 117\
+.16162109 C58.54\
+366058 116.98228\
+027 57.23746765 \
+116.80293945 55.\
+89169312 116.618\
+16406 C17.478440\
+47 111.33179573 \
+-20.55854767 104\
+.68426955 -58.58\
+664322 97.132537\
+84 C-61.23986647\
+ 96.60612088 -63\
+.89350656 96.081\
+84804 -66.547210\
+69 95.55786133 C\
+-91.5047745 90.6\
+2036073 -115.818\
+3809 85.18484821\
+ -139.75268555 7\
+6.39990234 C-142\
+.33511609 75.452\
+11134 -144.92186\
+259 74.51690853 \
+-147.50952148 73\
+.58349609 C-149.\
+1738354 72.98002\
+235 -150.8379080\
+2 72.37588263 -1\
+52.50170898 71.7\
+7099609 C-153.64\
+683456 71.355364\
+07 -153.64683456\
+ 71.35536407 -15\
+4.81509399 70.93\
+133545 C-158.188\
+99726 69.69127 -\
+161.48733584 68.\
+44175622 -164.65\
+014648 66.724121\
+09 C-163.4530646\
+8 63.13287567 -1\
+62.6921142 62.86\
+199934 -159.5134\
+2773 61.00927734\
+ C-158.63775146 \
+60.49421631 -157\
+.7620752 59.9791\
+5527 -156.859863\
+28 59.44848633 C\
+-155.42574097 58\
+.62586304 -155.4\
+2574097 58.62586\
+304 -153.9626464\
+8 57.78662109 C-\
+152.97240479 57.\
+21177979 -151.98\
+216309 56.636938\
+48 -150.96191406\
+ 56.04467773 C-1\
+47.86588317 54.2\
+5693243 -144.760\
+32911 52.4871176\
+ -141.65014648 5\
+0.72412109 C-140\
+.72814453 50.200\
+43945 -139.80614\
+258 49.67675781 \
+-138.85620117 49\
+.13720703 C-98.3\
+4297481 26.26279\
+346 -55.70700354\
+ 9.89938828 -10.\
+21264648 0.09912\
+109 C-9.3842627 \
+-0.08996826 -8.5\
+5587891 -0.27905\
+762 -7.70239258 \
+-0.47387695 C-2.\
+0859071 -1.61280\
+523 -2.0859071 -\
+1.61280523 0 0 Z\
+ \x22 fill=\x22#e6e6e6\
+\x22 transform=\x22tra\
+nslate(411.65014\
+6484375,461.2758\
+7890625)\x22/>\x0a<pat\
+h d=\x22M0 0 C1.753\
+97346 0.00848969\
+ 1.75397346 0.00\
+848969 3.5433807\
+4 0.01715088 C7.\
+272829 0.0395156\
+4 11.00131155 0.\
+089715 14.730468\
+75 0.140625 C17.\
+26105382 0.16068\
+975 19.79165397 \
+0.17894055 22.32\
+226562 0.1953125\
+ C28.52116203 0.\
+23938091 34.7194\
+9639 0.30629529 \
+40.91796875 0.39\
+0625 C40.4499893\
+5 3.733335 39.97\
+899838 7.0625806\
+8 39.36157227 10\
+.38134766 C38.85\
+667537 13.806421\
+47 38.80551838 1\
+7.07723764 38.82\
+03125 20.5390625\
+ C38.82243492 21\
+.52514999 38.822\
+43492 21.5251499\
+9 38.82460022 22\
+.53115845 C38.83\
+015113 24.609362\
+31 38.8426941 26\
+.68745427 38.855\
+46875 28.765625 \
+C38.86049011 30.\
+18359218 38.8650\
+519 31.60156107 \
+38.86914062 33.0\
+1953125 C38.8801\
+0438 36.47659822\
+ 38.89733454 39.\
+93360067 38.9179\
+6875 43.390625 C\
+28.26335174 43.1\
+0370961 17.60980\
+515 42.79096628 \
+6.95666504 42.45\
+379639 C5.134937\
+55 42.39734803 3\
+.31308049 42.345\
+11734 1.49121094\
+ 42.29345703 C-1\
+.17982991 42.215\
+36416 -3.8494019\
+2 42.11975488 -6\
+.51953125 42.015\
+625 C-7.26759033\
+ 41.99701416 -8.\
+01564941 41.9784\
+0332 -8.78637695\
+ 41.95922852 C-1\
+3.51849477 41.74\
+590693 -13.51849\
+477 41.74590693 \
+-15.75610352 40.\
+33520508 C-17.78\
+645641 37.357528\
+63 -17.54980075 \
+34.28472905 -17.\
+55078125 30.8007\
+8125 C-17.558394\
+78 30.05984726 -\
+17.5660083 29.31\
+891327 -17.57385\
+254 28.55552673 \
+C-17.58464978 26\
+.98960741 -17.58\
+750813 25.423616\
+1 -17.58300781 2\
+3.85766602 C-17.\
+58203584 21.4644\
+326 -17.62364451\
+ 19.07441058 -17\
+.66796875 16.681\
+64062 C-17.67317\
+631 15.15886084 \
+-17.67586393 13.\
+63606993 -17.675\
+78125 12.1132812\
+5 C-17.69217651 \
+11.39962906 -17.\
+70857178 10.6859\
+7687 -17.7254638\
+7 9.95069885 C-1\
+7.67899955 6.601\
+62238 -17.277043\
+38 4.65964502 -1\
+5.30004883 1.932\
+37305 C-10.28712\
+422 -0.46931263 \
+-5.48460653 -0.0\
+9989421 0 0 Z \x22 \
+fill=\x22#e6e6e6\x22 t\
+ransform=\x22transl\
+ate(170.08203125\
+,527.609375)\x22/>\x0a\
+<path d=\x22M0 0 C1\
+.04811356 -0.009\
+60754 2.09622711\
+ -0.01921509 3.1\
+7610168 -0.02911\
+377 C4.31770248 \
+-0.03336365 5.45\
+930328 -0.037613\
+53 6.63549805 -0\
+.04199219 C7.800\
+98679 -0.0476922\
+6 8.96647552 -0.\
+05339233 10.1672\
+821 -0.05926514 \
+C12.63966967 -0.\
+06873309 15.1120\
+6995 -0.07525621\
+ 17.58447266 -0.\
+07910156 C21.370\
+5854 -0.08879898\
+ 25.15615369 -0.\
+11980293 28.9421\
+3867 -0.15136719\
+ C31.33992189 -0\
+.15789763 33.737\
+70901 -0.1631479\
+4 36.13549805 -0\
+.16699219 C37.27\
+102615 -0.179338\
+99 38.40655426 -\
+0.19168579 39.57\
+649231 -0.204406\
+74 C41.16284737 \
+-0.19990509 41.1\
+6284737 -0.19990\
+509 42.78125 -0.\
+1953125 C43.7108\
+9066 -0.19895813\
+ 44.64053131 -0.\
+20260376 45.5983\
+429 -0.20635986 \
+C48.58693456 0.2\
+3536193 49.94761\
+988 1.04471039 5\
+2.0847168 3.1611\
+3281 C52.5610051\
+9 5.81716575 52.\
+78334283 8.08221\
+532 52.8347168 1\
+0.75097656 C52.8\
+7375122 11.86237\
+755 52.87375122 \
+11.86237755 52.9\
+1357422 12.99623\
+108 C52.96318441\
+ 14.56190858 53.\
+00290519 16.1279\
+2629 53.03344727\
+ 17.6940918 C53.\
+08449092 20.0880\
+3913 53.17813106\
+ 22.47768476 53.\
+27612305 24.8701\
+1719 C53.3190635\
+6 26.39283319 53\
+.35951107 27.915\
+62195 53.3972168\
+ 29.43847656 C53\
+.4271875 30.1521\
+2875 53.4571582 \
+30.86578094 53.4\
+8803711 31.60105\
+896 C53.52531461\
+ 34.97429331 53.\
+31892379 36.8354\
+6767 51.32666016\
+ 39.60571289 C48\
+.92145212 41.274\
+4029 47.78735638\
+ 41.68608654 44.\
+90112305 41.7705\
+0781 C44.0691943\
+4 41.80281494 43\
+.23726562 41.835\
+12207 42.3801269\
+5 41.8684082 C41\
+.02733643 41.889\
+55688 41.0273364\
+3 41.88955688 39\
+.6472168 41.9111\
+3281 C38.7066845\
+7 41.94005615 37\
+.76615234 41.968\
+97949 36.7971191\
+4 41.9987793 C23\
+.89997755 42.340\
+80409 10.9846326\
+2 42.24963762 -1\
+.9152832 42.1611\
+3281 C-1.9351025\
+4 41.29423828 -1\
+.95492187 40.427\
+34375 -1.9753418\
+ 39.53417969 C-2\
+.05395627 36.283\
+62313 -2.1406649\
+1 33.03340624 -2\
+.23266602 29.783\
+20312 C-2.270686\
+33 28.38289547 -\
+2.30558354 26.98\
+249907 -2.337158\
+2 25.58203125 C-\
+2.5337849 16.967\
+3243 -3.17900924\
+ 9.36995469 -5.9\
+152832 1.1611328\
+1 C-4.25606051 -\
+0.49808988 -2.28\
+228803 0.0168060\
+4 0 0 Z \x22 fill=\x22\
+#e6e6e6\x22 transfo\
+rm=\x22translate(81\
+8.915283203125,5\
+27.8388671875)\x22/\
+>\x0a<path d=\x22M0 0 \
+C1.05598389 0.04\
+455322 2.1119677\
+7 0.08910645 3.1\
+9995117 0.135009\
+77 C4.34439697 0\
+.20002686 5.4888\
+4277 0.26504395 \
+6.66796875 0.332\
+03125 C7.8452856\
+4 0.38738037 9.0\
+2260254 0.442729\
+49 10.2355957 0.\
+49975586 C24.119\
+42353 1.18561313\
+ 37.99122578 2.1\
+4455908 51.85546\
+875 3.14453125 C\
+49.98046875 9.01\
+953125 49.980468\
+75 9.01953125 48\
+.85546875 10.144\
+53125 C48.814277\
+13 11.61670862 4\
+8.84506363 13.09\
+101803 48.90625 \
+14.5625 C48.9634\
+1187 15.94091064\
+ 48.96341187 15.\
+94091064 49.0217\
+2852 17.34716797\
+ C49.06998779 18\
+.33217285 49.118\
+24707 19.3171777\
+3 49.16796875 20\
+.33203125 C49.21\
+429443 21.324770\
+51 49.26062012 2\
+2.31750977 49.30\
+834961 23.340332\
+03 C49.70821617 \
+31.03448837 50.5\
+2080796 38.55121\
+841 51.85546875 \
+46.14453125 C45.\
+23223826 46.2229\
+571 38.68981498 \
+46.02087597 32.0\
+859375 45.523437\
+5 C31.2019075 45\
+.45922104 30.317\
+8775 45.39500458\
+ 29.40705872 45.\
+32884216 C27.557\
+45621 45.1935752\
+1 25.70798378 45\
+.05651832 23.858\
+64258 44.9177246\
+1 C21.03306696 4\
+4.70629031 18.20\
+702673 44.502182\
+97 15.38085938 4\
+4.29882812 C13.5\
+7418671 44.16579\
+902 11.76754488 \
+44.03235032 9.96\
+09375 43.8984375\
+ C9.12128952 43.\
+83797745 8.28164\
+154 43.7775174 7\
+.41654968 43.715\
+22522 C3.4913773\
+ 43.41649475 -0.\
+30071511 43.0460\
+7113 -4.14453125\
+ 42.14453125 C-6\
+.1708599 36.0655\
+4529 -6.7674886 \
+30.13971177 -7.2\
+6953125 23.76953\
+125 C-7.35589844\
+ 22.77953125 -7.\
+44226563 21.7895\
+3125 -7.53125 20\
+.76953125 C-7.77\
+011549 17.895562\
+39 -7.97126625 1\
+5.02316204 -8.14\
+453125 12.144531\
+25 C-8.19706055 \
+11.27795898 -8.2\
+4958984 10.41138\
+672 -8.30371094 \
+9.51855469 C-8.5\
+0491472 3.669442\
+41 -8.50491472 3\
+.66944241 -6.950\
+92773 1.40600586\
+ C-4.4918923 -0.\
+31123108 -2.9806\
+1378 -0.1446799 \
+0 0 Z \x22 fill=\x22#e\
+6e6e6\x22 transform\
+=\x22translate(161.\
+14453125,586.855\
+46875)\x22/>\x0a<path \
+d=\x22M0 0 C1.66031\
+493 1.41818567 3\
+.3196114 2.83757\
+603 4.97460938 4\
+.26196289 C6.198\
+95206 5.31260122\
+ 7.42807436 6.35\
+775323 8.6660156\
+2 7.39233398 C16\
+.32123137 13.897\
+33423 23.2435826\
+2 21.18370479 30\
+.30029297 28.320\
+80078 C38.942029\
+17 37.06316533 3\
+8.94202917 37.06\
+316533 48.068359\
+38 45.29101562 C\
+53.15583528 49.7\
+9206862 57.81343\
+784 54.78030811 \
+62.578125 59.617\
+1875 C66.2611988\
+7 63.33415469 69\
+.92642129 67.006\
+04763 73.90625 7\
+0.40625 C79.9459\
+6586 75.58488187\
+ 85.42566454 81.\
+37030314 91.0092\
+7734 87.02978516\
+ C96.82322954 92\
+.91553786 102.69\
+511874 98.634203\
+79 109 104 C114.\
+34227331 108.887\
+61175 114.342273\
+31 108.88761175 \
+115 113 C115.083\
+32859 115.691603\
+2 115.11629936 1\
+18.3560833 115.0\
+9765625 121.0468\
+75 C115.09553383\
+ 122.20367767 11\
+5.09553383 122.2\
+0367767 115.0933\
+6853 123.3838501\
+ C115.08778534 1\
+25.83927338 115.\
+07523595 128.294\
+60442 115.0625 1\
+30.75 C115.05748\
+283 132.41796743\
+ 115.0529203 134\
+.08593629 115.04\
+882812 135.75390\
+625 C115.0378214\
+1 139.83597287 1\
+15.02056836 143.\
+91797081 115 148\
+ C109.67074014 1\
+50.42986077 104.\
+29870896 152.711\
+34448 98.859375 \
+154.8828125 C63.\
+17642345 169.131\
+87097 25.5557098\
+7 185.28279769 -\
+2 213 C-2.846269\
+53 213.83624405 \
+-3.69253906 214.\
+6724881 -4.56445\
+312 215.53407288\
+ C-7.81488553 21\
+9.4854658 -7.668\
+18671 223.098440\
+92 -7.55175781 2\
+28.04711914 C-7.\
+55044357 229.382\
+37892 -7.5504435\
+7 229.38237892 -\
+7.54910278 230.7\
+4461365 C-7.5405\
+4925 233.6754468\
+ -7.49681661 236\
+.60465448 -7.453\
+125 239.53515625\
+ C-7.44125102 24\
+1.57725319 -7.43\
+174393 243.61936\
+515 -7.42449951 \
+245.66148376 C-7\
+.39977753 251.03\
+073838 -7.345910\
+04 256.39929804 \
+-7.28503418 261.\
+76824951 C-7.204\
+54405 269.336705\
+48 -7.16364186 2\
+76.90549517 -7.1\
+1834717 284.4742\
+2791 C-7.0941393\
+2 288.50317196 -\
+7.05894214 292.5\
+3178771 -7.01495\
+361 296.56056213\
+ C-6.99853661 29\
+8.40113287 -6.98\
+215684 300.24170\
+394 -6.96582031 \
+302.08227539 C-6\
+.94864456 303.33\
+157333 -6.948644\
+56 303.33157333 \
+-6.93112183 304.\
+60610962 C-6.906\
+66232 307.834575\
+16 -6.94417326 3\
+10.7213315 -7.58\
+050537 313.89768\
+982 C-8.25024046\
+ 316.14439388 -8\
+.25024046 316.14\
+439388 -6.746093\
+75 318.5546875 C\
+-6.16988281 319.\
+36164063 -5.5936\
+7188 320.1685937\
+5 -5 321 C-4.537\
+22656 321.662578\
+12 -4.07445312 3\
+22.32515625 -3.5\
+9765625 323.0078\
+125 C-3.09105469\
+ 323.70648437 -2\
+.58445313 324.40\
+515625 -2.0625 3\
+25.125 C1.292085\
+77 329.88024788 \
+4.41010755 334.7\
+5871251 7.5 339.\
+6875 C18.9968119\
+4 358.01082931 3\
+0.95961024 376.0\
+3065171 43 394 C\
+44.23564697 393.\
+87882812 45.4712\
+9395 393.7576562\
+5 46.74438477 39\
+3.6328125 C51.34\
+920116 393.18214\
+944 55.9544392 3\
+92.73592824 60.5\
+5981445 392.2910\
+1562 C62.5491892\
+5 392.09820851 6\
+4.53844928 391.9\
+0421313 66.52758\
+789 391.70898438\
+ C69.3943968 391\
+.42782623 72.261\
+59762 391.151009\
+51 75.12890625 3\
+90.875 C76.01147\
+598 390.78750488\
+ 76.89404572 390\
+.70000977 77.803\
+35999 390.609863\
+28 C82.56228523 \
+390.15634715 87.\
+21957965 389.909\
+3222 92 390 C84.\
+91063537 377.683\
+45407 77.4043676\
+2 365.6715492 69\
+.73291016 353.71\
+044922 C66.63645\
+86 348.8672814 6\
+3.57786012 344.0\
+001869 60.521972\
+66 339.13134766 \
+C60.08804199 338\
+.44218262 59.654\
+11133 337.753017\
+58 59.20703125 3\
+37.04296875 C58.\
+51275024 335.873\
+74878 58.5127502\
+4 335.87374878 5\
+7.80444336 334.6\
+809082 C56.35393\
+655 332.52585269\
+ 54.96908274 330\
+.8582289 53.2131\
+3477 328.9812011\
+7 C41.17167037 3\
+15.04262713 43.7\
+4424742 296.8019\
+6322 44.24468994\
+ 279.52911377 C4\
+4.35853216 275.1\
+7820976 44.40773\
+115 270.82658282\
+ 44.46289062 266\
+.47460938 C44.57\
+981256 257.98111\
+004 44.76677902 \
+249.49109949 45 \
+241 C50.15795385\
+ 241.55581399 54\
+.90987984 242.39\
+038162 59.90625 \
+243.84765625 C61\
+.14375 244.20537\
+109 62.38125 244\
+.56308594 63.656\
+25 244.93164062 \
+C64.93753893 245\
+.30846141 66.218\
+78847 245.685416\
+15 67.5 246.0625\
+ C68.81233874 24\
+6.44391466 70.12\
+483765 246.82477\
+866 71.4375 247.\
+20507812 C74.626\
+61361 248.131328\
+03 77.81399933 2\
+49.06310952 81 2\
+50 C82.23987055 \
+253.55677392 81.\
+74101339 255.874\
+54553 80.75 259.\
+46484375 C80.471\
+5625 260.5122070\
+3 80.193125 261.\
+55957031 79.9062\
+5 262.63867188 C\
+79.30308109 264.\
+83425872 78.6989\
+176 267.02957258\
+ 78.09375 269.22\
+460938 C77.81531\
+25 270.27326172 \
+77.536875 271.32\
+191406 77.25 272\
+.40234375 C76.98\
+703125 273.35616\
+943 76.7240625 2\
+74.30999512 76.4\
+53125 275.292724\
+61 C75.94540547 \
+278.32618465 75.\
+94340433 280.107\
+54714 77 283 C79\
+.01579398 285.02\
+244729 79.015793\
+98 285.02244729 \
+81.6796875 286.7\
+3046875 C82.6783\
+8867 287.4180224\
+6 83.67708984 28\
+8.10557617 84.70\
+605469 288.81396\
+484 C85.79305664\
+ 289.53535645 86\
+.88005859 290.25\
+674805 88 291 C8\
+9.11622994 291.7\
+4818128 90.23244\
+063 292.49639129\
+ 91.34863281 293\
+.24462891 C96.21\
+399739 296.48577\
+481 101.11362798\
+ 299.67172656 10\
+6.04418945 302.8\
+1274414 C116.989\
+27759 309.813245\
+57 116.98927759 \
+309.81324557 121\
+.47265625 313.82\
+03125 C128.05615\
+997 319.51261808\
+ 133.09551006 32\
+1.45774988 141.9\
+1796875 320.8710\
+9375 C149.387878\
+06 320.2375317 1\
+56.75258976 318.\
+98334373 164.125\
+ 317.65478516 C1\
+67.34016558 317.\
+11149672 170.470\
+94686 316.722492\
+54 173.71875 316\
+.48046875 C186.2\
+3093309 315.4543\
+2062 194.7441494\
+2 309.87722997 2\
+04.77099609 302.\
+58300781 C208.08\
+353432 300.23048\
+888 211.52513661\
+ 298.10268891 21\
+5 296 C214.56687\
+5 294.64455078 2\
+14.566875 294.64\
+455078 214.125 2\
+93.26171875 C213\
+.75375 292.08222\
+656 213.3825 290\
+.90273438 213 28\
+9.6875 C212.6287\
+5 288.51574219 2\
+12.2575 287.3439\
+8437 211.875 286\
+.13671875 C211 2\
+83 211 283 211 2\
+80 C217.36804598\
+ 280.37878748 22\
+3.57810125 281.2\
+1678366 229.8359\
+375 282.4453125 \
+C230.52778137 28\
+2.57983826 231.2\
+1962524 282.7143\
+6401 231.9324340\
+8 282.85296631 C\
+234.79869781 283\
+.41350529 237.66\
+367156 283.97875\
+915 240.52441406\
+ 284.56689453 C2\
+57.06084593 287.\
+94437206 271.446\
+1544 285.5661112\
+5 287.8125 282.4\
+375 C289.5838650\
+6 282.10418298 2\
+91.35534883 281.\
+77149623 293.126\
+95312 281.439453\
+12 C297.41936981\
+ 280.63354998 30\
+1.71009739 279.8\
+1917578 306 279 \
+C305.30859767 28\
+3.3918655 304.29\
+722363 287.01826\
+895 302.5234375 \
+291.0703125 C301\
+.84558953 293.56\
+924456 302.01436\
+239 294.59319113\
+ 303 297 C305.35\
+751411 299.00443\
+509 305.35751411\
+ 299.00443509 30\
+8.35546875 300.8\
+203125 C309.4531\
+0547 301.5202734\
+4 310.55074219 3\
+02.22023438 311.\
+68164062 302.941\
+40625 C312.25760\
+986 303.29992676\
+ 312.8335791 303\
+.65844727 313.42\
+700195 304.02783\
+203 C315.1721074\
+1 305.11540712 3\
+16.90395322 306.\
+22188487 318.634\
+76562 307.332031\
+25 C327.23746604\
+ 312.76584436 33\
+4.24448349 315.2\
+1868151 344.2539\
+0625 316.5429687\
+5 C345.23238022 \
+316.6756868 346.\
+21085419 316.808\
+40485 347.218978\
+88 316.94514465 \
+C349.28027127 31\
+7.22283602 351.3\
+419748 317.49749\
+045 353.40405273\
+ 317.76928711 C3\
+56.55666921 318.\
+18672794 359.706\
+98784 318.619165\
+87 362.85742188 \
+319.05273438 C36\
+4.86446162 319.3\
+2122393 366.8716\
+195 319.58883212\
+ 368.87890625 31\
+9.85546875 C369.\
+81859756 319.985\
+5986 370.7582888\
+8 320.11572845 3\
+71.72645569 320.\
+24980164 C378.35\
+939847 321.10598\
+678 382.78666646\
+ 321.09282236 38\
+8.5 317.3125 C38\
+9.45003906 316.6\
+8859375 390.4000\
+7813 316.0646875\
+ 391.37890625 31\
+5.421875 C392.58\
+616831 314.61492\
+855 393.79316857\
+ 313.80759034 39\
+5 313 C396.65473\
+102 311.90071511\
+ 398.30969826 31\
+0.80178575 399.9\
+6484375 309.7031\
+25 C403.63295084\
+ 307.26512322 40\
+7.29661957 304.8\
+2063313 410.9570\
+3125 302.3710937\
+5 C413.84499023 \
+300.43848549 416\
+.73523636 298.50\
+990165 419.63671\
+875 296.59765625\
+ C425.50311795 2\
+92.72506593 431.\
+20575223 288.700\
+01281 436.820312\
+5 284.46875 C439\
+ 283 439 283 441\
+ 283 C440.279028\
+88 275.79028884 \
+438.55237467 269\
+.04616503 436.64\
+0625 262.0703125\
+ C436.41632812 2\
+61.21695312 436.\
+19203125 260.363\
+59375 435.960937\
+5 259.484375 C43\
+5.64842041 258.3\
+3533691 435.6484\
+2041 258.3353369\
+1 435.32958984 2\
+57.16308594 C434\
+.74176559 253.30\
+52171 434.741765\
+59 253.3052171 4\
+36 251 C438.5336\
+0996 249.9146361\
+8 440.82426665 2\
+49.13619718 443.\
+46484375 248.421\
+875 C444.5876046\
+ 248.09742401 44\
+4.5876046 248.09\
+742401 445.73304\
+749 247.76641846\
+ C448.13028507 2\
+47.07821508 450.\
+53353843 246.414\
+28727 452.9375 2\
+45.75 C454.55446\
+721 245.28796315\
+ 456.17101036 24\
+4.82443947 457.7\
+8710938 244.3593\
+75 C469.56447095\
+ 241 469.5644709\
+5 241 472 241 C4\
+72.28065057 250.\
+31964601 472.492\
+54109 259.637793\
+13 472.62174606 \
+268.96077442 C47\
+2.6838278 273.29\
+220302 472.76770\
+004 277.62069889\
+ 472.90527344 28\
+1.95043945 C474.\
+01524732 317.841\
+83599 474.015247\
+32 317.84183599 \
+461.49969482 332\
+.22964478 C459.3\
+0654021 334.8186\
+1332 457.6257953\
+9 337.58599152 4\
+55.85546875 340.\
+48046875 C454.63\
+302524 342.38294\
+921 453.41037018\
+ 344.28529376 45\
+2.1875 346.1875 \
+C446.6618073 354\
+.80440461 441.18\
+017139 363.44756\
+337 435.75 372.1\
+25 C435.13020264\
+ 373.11395264 43\
+4.51040527 374.1\
+0290527 433.8718\
+2617 375.1218261\
+7 C430.80973258 \
+380.02736882 427\
+.82388187 384.95\
+335963 425 390 C\
+425.86496094 390\
+.04898437 426.72\
+992187 390.09796\
+875 427.62109375\
+ 390.1484375 C43\
+7.47038116 390.7\
+3314443 447.2987\
+557 391.48654284\
+ 457.12866211 39\
+2.33935547 C459.\
+15088077 392.508\
+6069 461.1747891\
+9 392.65897279 4\
+63.19995117 392.\
+78833008 C466 39\
+3 466 393 468.49\
+731445 393.42065\
+43 C470.99322775\
+ 393.72724435 47\
+2.6049408 393.78\
+628728 475 393 C\
+478.11504334 389\
+.97421976 480.14\
+436108 386.42591\
+405 482.3125 382\
+.6875 C483.27941\
+772 381.11331299\
+ 483.27941772 38\
+1.11331299 484.2\
+6586914 379.5073\
+2422 C485.581777\
+73 377.36188115 \
+486.88483532 375\
+.20850196 488.17\
+480469 373.04736\
+328 C490.6849853\
+2 368.85634206 4\
+93.31078485 364.\
+74348005 495.937\
+5 360.625 C496.8\
+9812578 359.1008\
+8418 497.8577327\
+9 357.57612584 4\
+98.81640625 356.\
+05078125 C502.65\
+163923 349.96011\
+013 506.50819609\
+ 343.88315658 51\
+0.375 337.8125 C\
+511.04136475 336\
+.76078613 511.70\
+772949 335.70907\
+227 512.39428711\
+ 334.62548828 C5\
+13.03503174 333.\
+62114746 513.675\
+77637 332.616806\
+64 514.3359375 3\
+31.58203125 C515\
+.17970947 330.25\
+522339 515.17970\
+947 330.25522339\
+ 516.04052734 32\
+8.90161133 C518 \
+326 518 326 519.\
+4726553 324.3108\
+12 C523.97547362\
+ 319.00038917 52\
+4.8964353 315.06\
+946692 524.88745\
+117 308.21020508\
+ C524.90920914 3\
+07.26431519 524.\
+9309671 306.3184\
+2529 524.9533844\
+ 305.34387207 C5\
+25.01517042 302.\
+2353041 525.0320\
+3964 299.1286676\
+3 525.04296875 2\
+96.01953125 C525\
+.06481428 293.84\
+24965 525.087393\
+95 291.665469 52\
+5.110672 289.488\
+4491 C525.151040\
+37 284.92987527 \
+525.16622198 280\
+.37197556 525.16\
+674805 275.81323\
+242 C525.1717197\
+9 269.99913363 5\
+25.26391998 264.\
+19003215 525.378\
+58105 258.377202\
+03 C525.45317815\
+ 253.88056419 52\
+5.46814446 249.3\
+851125 525.46703\
+529 244.88791466\
+ C525.47590446 2\
+42.74653568 525.\
+50577054 240.605\
+12818 525.557882\
+31 238.46436501 \
+C526.02882523 22\
+4.64382517 526.0\
+2882523 224.6438\
+2517 519.4796342\
+8 213.01048565 C\
+516.79261862 210\
+.46507577 513.97\
+021297 208.20275\
+068 511 206 C509\
+.40228849 204.68\
+496297 507.80461\
+748 203.36987672\
+ 506.20703125 20\
+2.0546875 C504.7\
+5222655 200.9810\
+5363 503.2873288\
+7 199.92095707 5\
+01.8125 198.875 \
+C501.01497314 19\
+8.29862793 500.2\
+1744629 197.7222\
+5586 499.3957519\
+5 197.12841797 C\
+491.83847678 191\
+.74130376 484.00\
+700011 186.85484\
+591 475.99609375\
+ 182.17578125 C4\
+74.24246002 181.\
+14281892 472.509\
+96128 180.074150\
+7 470.78125 179 \
+C452.84529976 16\
+8.12972713 432.6\
+5208473 160.3658\
+2355 413.0361328\
+1 153.07080078 C\
+412.02131836 152\
+.69294434 411.00\
+650391 152.31508\
+789 409.9609375 \
+151.92578125 C40\
+9.07196777 151.6\
+0005127 408.1829\
+9805 151.2743212\
+9 407.26708984 1\
+50.9387207 C405 \
+150 405 150 402 \
+148 C401.6435546\
+9 144.9465332 40\
+1.64355469 144.9\
+465332 401.67187\
+5 141.05078125 C\
+401.67374817 140\
+.35993942 401.67\
+562134 139.66909\
+76 401.67755127 \
+138.95732117 C40\
+1.68428034 137.4\
+9208773 401.6982\
+119 136.02687252\
+ 401.71875 134.5\
+6176758 C401.749\
+63834 132.338531\
+05 401.75969651 \
+130.11600708 401\
+.765625 127.8925\
+7812 C401.875725\
+5 110.78841762 4\
+01.8757255 110.7\
+8841762 404.1799\
+3164 107.1230468\
+8 C404.66840576 \
+106.65962891 405\
+.15687988 106.19\
+621094 405.66015\
+625 105.71875 C4\
+06.20736328 105.\
+18636719 406.754\
+57031 104.653984\
+37 407.31835938 \
+104.10546875 C40\
+7.89392578 103.5\
+7566406 408.4694\
+9219 103.0458593\
+8 409.0625 102.5\
+ C409.61099609 1\
+01.97019531 410.\
+15949219 101.440\
+39063 410.724609\
+38 100.89453125 \
+C413.56843401 98\
+.17263189 416.49\
+478281 95.577128\
+04 419.49609375 \
+93.03125 C426.35\
+14784 87.0724846\
+7 432.61382188 8\
+0.45105946 439 7\
+4 C454.17177075 \
+58.67408934 454.\
+17177075 58.6740\
+8934 460.2460937\
+5 53.53125 C463.\
+67389923 50.5386\
+0023 466.8153598\
+3 47.24684017 47\
+0 44 C473.809060\
+05 40.11654425 4\
+77.60394115 36.2\
+8803794 481.7460\
+9375 32.7578125 \
+C485.25140456 29\
+.73956441 488.53\
+399667 26.529317\
+68 491.78515625 \
+23.2421875 C492.\
+29476898 22.7270\
+6604 492.8043817\
+1 22.21194458 49\
+3.32943726 21.68\
+121338 C495.4427\
+9316 19.54025483\
+ 497.55245445 17\
+.39574144 499.65\
+74707 15.2465820\
+3 C510.61341207 \
+4.07654549 510.6\
+1341207 4.076545\
+49 517 0 C544.41\
+046135 34.424314\
+7 557.67423491 7\
+8.94829731 563 1\
+22 C563.13148438\
+ 122.99257813 56\
+3.26296875 123.9\
+8515625 563.3984\
+375 125.0078125 \
+C563.7003338 127\
+.67592308 563.87\
+125242 130.31775\
+87 564 133 C564.\
+06477539 133.977\
+91504 564.064775\
+39 133.97791504 \
+564.13085938 134\
+.97558594 C564.9\
+4923213 148.3601\
+3166 562.4583102\
+7 159.40792723 5\
+58 172 C555.7650\
+5374 168.3342648\
+9 555.35799694 1\
+64.53820474 554.\
+8515625 160.3593\
+75 C554.70540245\
+ 159.23190102 55\
+4.70540245 159.2\
+3190102 554.5562\
+8967 158.0816497\
+8 C554.3479275 1\
+56.47183411 554.\
+14260124 154.861\
+62311 553.940032\
+96 153.25106812 \
+C553.41242932 14\
+9.06238692 552.8\
+6134663 144.8768\
+3266 552.3085937\
+5 140.69140625 C\
+552.19927017 139\
+.86159744 552.08\
+994659 139.03178\
+864 551.97731018\
+ 138.17683411 C5\
+50.58747287 127.\
+74033745 548.846\
+2337 117.3649031\
+7 547 107 C546.9\
+0098253 117.1657\
+9355 546.9304773\
+ 127.30619193 54\
+7.35961914 137.4\
+6484375 C547.587\
+78959 142.906014\
+43 547.7693097 1\
+48.34834039 547.\
+93310547 153.791\
+80908 C547.98010\
+937 155.34340957\
+ 548.02875806 15\
+6.89496068 548.0\
+7861328 158.4464\
+7217 C548.248043\
+77 163.81612496 \
+548.37324398 169\
+.18448017 548.45\
+19043 174.556243\
+9 C548.48371864 \
+176.33810978 548\
+.52795572 178.11\
+980139 548.58520\
+508 179.90103149\
+ C549.08247048 1\
+95.86516627 549.\
+08247048 195.865\
+16627 544.46875 \
+201.171875 C542.\
+51367188 202.909\
+17969 542.513671\
+88 202.90917969 \
+541 204 C541.577\
+5 203.71125 542.\
+155 203.4225 542\
+.75 203.125 C544\
+.83333333 202.08\
+333333 546.91666\
+667 201.04166667\
+ 549 200 C549.18\
+018001 209.11277\
+763 549.34580567\
+ 218.22568697 54\
+9.49477577 227.3\
+3902836 C549.564\
+42784 231.574563\
+07 549.6383831 2\
+35.80991425 549.\
+72363281 240.045\
+16602 C550.22182\
+502 265.02163077\
+ 549.81972617 28\
+9.61791748 546.9\
+4099426 314.4678\
+6499 C541.264099\
+45 363.69538847 \
+541.60763828 413\
+.02814141 541.78\
+391868 462.49756\
+753 C541.8181703\
+2 472.28562188 5\
+41.83412511 482.\
+07368447 541.849\
+02918 491.861784\
+34 C541.87993815\
+ 511.90792315 54\
+1.93229866 531.9\
+5395371 542 552 \
+C544.73223615 55\
+1.36392191 547.4\
+6404949 550.7261\
+1575 550.1956481\
+9 550.08731079 C\
+550.96566634 549\
+.90823464 551.73\
+568449 549.72915\
+85 552.52903652 \
+549.5446558 C557\
+.66748255 548.34\
+11459 562.720486\
+81 547.01398652 \
+567.7265625 545.\
+3359375 C568.796\
+84441 544.985435\
+87 568.79684441 \
+544.98543587 569\
+.88874817 544.62\
+785339 C572.1375\
+4843 543.8866307\
+8 574.38167504 5\
+43.13261929 576.\
+625 542.375 C577\
+.39949493 542.11\
+53244 578.173989\
+87 541.8556488 5\
+78.97195435 541.\
+58810425 C588.93\
+273285 538.23722\
+441 598.77463856\
+ 534.70645756 60\
+8.4375 530.5625 \
+C609.81059326 52\
+9.98024658 609.8\
+1059326 529.9802\
+4658 611.2114257\
+8 529.38623047 C\
+616.04638951 527\
+.22628424 619.48\
+176516 525.08330\
+507 623 521 C623\
+.7425 520.175 62\
+4.485 519.35 625\
+.25 518.5 C628.8\
+9434467 513.2937\
+9333 628.1424811\
+ 507.09072382 62\
+8.12939453 500.9\
+7167969 C628.131\
+14685 499.964378\
+05 628.13289917 \
+498.95707642 628\
+.13470459 497.91\
+925049 C628.1391\
+0693 494.5867744\
+7 628.13618811 4\
+91.25435157 628.\
+1328125 487.9218\
+75 C628.13348663\
+ 485.59320058 62\
+8.13445758 483.2\
+6452623 628.1357\
+1167 480.9358520\
+5 C628.13718698 \
+476.04674614 628\
+.13504176 471.15\
+765848 628.13037\
+109 466.26855469\
+ C628.12471187 4\
+60.04542944 628.\
+12792953 453.822\
+34769 628.133943\
+56 447.59922409 \
+C628.13758623 44\
+2.78265058 628.1\
+3639305 437.9660\
+8708 628.1338157\
+7 433.14951324 C\
+628.13315472 430\
+.85812627 628.13\
+394572 428.56673\
+834 628.13629532\
+ 426.27535248 C6\
+28.14556738 414.\
+6776995 628.0544\
+3305 403.1564599\
+1 627.16296387 3\
+91.58914185 C626\
+.88047256 385.36\
+750887 627.62446\
+975 379.30108474\
+ 628.375 373.125\
+ C628.66494183 3\
+70.5199166 628.9\
+5140301 367.9144\
+4345 629.234375 \
+365.30859375 C62\
+9.37037109 364.0\
+6190918 629.5063\
+6719 362.8152246\
+1 629.64648438 3\
+61.53076172 C630\
+.19671569 356.03\
+52885 630.495754\
+44 350.53957042 \
+630.70849609 345\
+.02197266 C631.1\
+8888328 332.8492\
+5243 631.1888832\
+8 332.84925243 6\
+32.48458862 328.\
+29776001 C634.76\
+569019 318.12836\
+095 634.16794196\
+ 306.72153697 63\
+4.203125 296.371\
+09375 C634.20736\
+607 295.3722198 \
+634.20736607 295\
+.3722198 634.211\
+69281 294.353166\
+58 C634.2265334 \
+290.81722778 634\
+.23585346 287.28\
+132806 634.24023\
+438 283.74536133\
+ C634.2445794 28\
+0.90017597 634.2\
+5833758 278.0553\
+0064 634.28125 2\
+75.21020508 C634\
+.46799415 251.51\
+156858 633.07876\
+47 228.41358319 \
+629.28326416 204\
+.9684906 C629.02\
+119762 202.22214\
+22 629.1666592 2\
+00.58071742 630 \
+198 C630.0776608\
+4 196.55901569 6\
+30.10796367 195.\
+11491371 630.097\
+65625 193.671875\
+ C630.09443359 1\
+92.87265625 630.\
+09121094 192.073\
+4375 630.0878906\
+2 191.25 C630.07\
+951172 190.425 6\
+30.07113281 189.\
+6 630.0625 188.7\
+5 C630.05573242 \
+187.48929687 630\
+.05573242 187.48\
+929687 630.04882\
+812 186.203125 C\
+630.03707961 184\
+.13538599 630.01\
+914522 182.06768\
+376 630 180 C629\
+.33677734 181.64\
+548828 629.33677\
+734 181.64548828\
+ 628.66015625 18\
+3.32421875 C627.\
+16003668 187.046\
+08975 624.996400\
+61 189.31092253 \
+622 192 C621.34 \
+192.66 620.68 19\
+3.32 620 194 C61\
+7.35913086 194.1\
+6699219 617.3591\
+3086 194.1669921\
+9 613.96484375 1\
+94.046875 C612.6\
+9511719 194.0055\
+4443 611.4253906\
+2 193.96421387 6\
+10.1171875 193.9\
+2163086 C608.723\
+93855 193.864904\
+43 607.33070971 \
+193.80768206 605\
+.9375 193.75 C60\
+4.51433841 193.6\
+9822147 603.0911\
+6098 193.6468765\
+7 601.66796875 1\
+93.59594727 C586\
+.09730168 193.01\
+223423 570.54628\
+572 192.03411099\
+ 555 191 C556.40\
+379722 187.40993\
+663 557.97950953\
+ 184.1088484 559\
+.875 180.75 C567\
+.60636574 166.68\
+268576 569.32006\
+248 154.74501613\
+ 569.625 138.937\
+5 C569.66324919 \
+137.2922986 569.\
+70230477 135.647\
+11574 569.742187\
+5 134.00195312 C\
+569.83743071 130\
+.00145543 569.92\
+173259 126.00086\
+435 570 122 C576\
+.89822869 124.59\
+311976 583.37643\
+922 127.60234576\
+ 589.8125 131.18\
+75 C590.68197266\
+ 131.67089844 59\
+1.55144531 132.1\
+5429688 592.4472\
+6562 132.6523437\
+5 C613.39109769 \
+144.45168576 627\
+.79298286 156.51\
+671435 635.8125 \
+179.625 C636.237\
+00439 180.837927\
+25 636.66150879 \
+182.05085449 637\
+.09887695 183.30\
+053711 C658.3490\
+4399 244.771747 \
+665.03818246 309\
+.19927144 664 37\
+4 C663.98211426 \
+375.19963379 663\
+.96422852 376.39\
+926758 663.94580\
+078 377.63525391\
+ C663.15130745 4\
+24.1392105 657.5\
+3266424 469.6636\
+649 645.5 514.68\
+75 C645.23977051\
+ 515.69675537 64\
+4.97954102 516.7\
+0601074 644.7114\
+2578 517.7458496\
+1 C640.48963122 \
+532.90360262 630\
+.69505118 540.87\
+953503 617.50781\
+25 548.48046875 \
+C606.64811701 55\
+4.60651368 595.6\
+4715871 560.6770\
+4653 584.1484375\
+ 565.51953125 C5\
+83.22828857 565.\
+90947266 582.308\
+13965 566.299414\
+06 581.36010742 \
+566.70117188 C57\
+9.62284965 567.4\
+2356133 577.8757\
+6632 568.1229073\
+3 576.1184082 56\
+8.79492188 C573.\
+88676526 569.717\
+81824 571.947126\
+89 570.56996087 \
+570 572 C569.273\
+73397 574.315475\
+45 568.60997686 \
+576.65120943 568\
+ 579 C565.692695\
+65 581.44181257 \
+562.99994141 583\
+.27309005 560.25\
+ 585.1875 C558.7\
+0068383 586.3182\
+7741 557.1538460\
+6 587.45245758 5\
+55.609375 588.58\
+984375 C554.8340\
+0391 589.1568701\
+2 554.05863281 5\
+89.72389648 553.\
+25976562 590.308\
+10547 C544.19367\
+144 597.09592231\
+ 535.81297116 60\
+4.81498259 528 6\
+13 C522.76464654\
+ 610.38232327 51\
+8.55201649 607.0\
+6135622 514.1062\
+0117 603.2658691\
+4 C509.70973198 \
+599.53526775 505\
+.16431776 596.03\
+531791 500.5625 \
+592.5625 C494.12\
+29998 587.695694\
+87 487.91655346 \
+582.64286769 481\
+.83203125 577.33\
+984375 C479.0793\
+3607 574.9148432\
+1 479.07933607 5\
+74.91484321 475.\
+87046623 573.291\
+93497 C473 571 4\
+73 571 472.24609\
+566 567.82162094\
+ C472.24333028 5\
+65.92457098 472.\
+24333028 565.924\
+57098 472.240509\
+03 563.98919678 \
+C472.23129893 56\
+3.28340807 472.2\
+2208883 562.5776\
+1937 472.2125996\
+4 561.85044312 C\
+472.18900182 559\
+.48515023 472.20\
+813134 557.12214\
+246 472.22705078\
+ 554.75683594 C4\
+72.21888104 553.\
+06167188 472.208\
+07924 551.366518\
+76 472.19483948 \
+549.67138672 C47\
+2.16636034 545.0\
+682387 472.17476\
+934 540.46580476\
+ 472.18970728 53\
+5.86262035 C472.\
+19907459 531.052\
+56329 472.174648\
+41 526.24268201 \
+472.15377808 521\
+.43267822 C472.1\
+1940441 512.3237\
+583 472.11550535\
+ 503.21508932 47\
+2.12250316 494.1\
+0611749 C472.128\
+9898 483.7361335\
+1 472.10158228 4\
+73.36632628 472.\
+07130075 462.996\
+39463 C472.00976\
+886 441.6642436 \
+471.99088898 420\
+.33223012 472 39\
+9 C471.2531727 3\
+99.02978156 470.\
+50634541 399.059\
+56312 469.736886\
+98 399.09024715 \
+C466.3202388 399\
+.22588014 462.90\
+352918 399.35990\
+117 459.48681641\
+ 399.49389648 C4\
+58.31200211 399.\
+54077354 457.137\
+18781 399.587650\
+6 455.92677307 3\
+99.63594818 C448\
+.06977298 399.94\
+259434 440.23839\
+636 400.13358773\
+ 432.375 400.062\
+5 C430.83392578 \
+400.05573242 430\
+.83392578 400.05\
+573242 429.26171\
+875 400.04882812\
+ C426.84106767 4\
+00.03751667 424.\
+42057818 400.021\
+45317 422 400 C4\
+22.33 400.66 422\
+.66 401.32 423 4\
+02 C423.09471334\
+ 404.29312353 42\
+3.1218962 406.58\
+91077 423.120254\
+52 408.88418579 \
+C423.12110894 40\
+9.6005163 423.12\
+196337 410.31684\
+682 423.12284368\
+ 411.05488431 C4\
+23.12449732 413.\
+46711589 423.118\
+97901 415.879278\
+68 423.11352539 \
+418.29150391 C42\
+3.11324347 420.0\
+159149 423.11340\
+135 421.74032601\
+ 423.1139679 423\
+.46473694 C423.1\
+1425567 428.1566\
+2808 423.1083621\
+3 432.84849383 4\
+23.10139394 437.\
+54037905 C423.09\
+515711 442.43979\
+038 423.09455634\
+ 447.33920225 42\
+3.09336853 452.2\
+3861694 C423.090\
+25619 461.521081\
+ 423.0820441 470\
+.80353333 423.07\
+201904 480.08599\
+222 C423.0608549\
+ 490.65173683 42\
+3.05534669 501.2\
+1748198 423.0503\
+2361 511.7832310\
+2 C423.03986142 \
+533.52216057 423\
+.02226384 555.26\
+107955 423 577 C\
+425.24652324 577\
+.33187986 427.49\
+349857 577.66070\
+055 429.74066162\
+ 577.98822021 C4\
+30.99189693 578.\
+17165859 432.243\
+13225 578.355096\
+97 433.53228378 \
+578.54409409 C43\
+7.27055618 579.0\
+3557043 440.7514\
+1676 579.1941342\
+ 444.515625 579.\
+140625 C461.1131\
+1105 579.2815690\
+5 471.78915304 5\
+81.03767438 483.\
+95410156 593.064\
+45312 C487.46694\
+271 596.38781883\
+ 491.36839621 59\
+9.18874095 495.2\
+5 602.0625 C499.\
+92812138 605.598\
+59338 504.576851\
+46 609.14691564 \
+509 613 C509 613\
+.33 509 613.66 5\
+09 614 C503.1511\
+0437 614.2502324\
+9 497.30542603 6\
+14.43003228 491.\
+45239258 614.549\
+31641 C489.46876\
+67 614.59911186 \
+487.48549821 614\
+.66698028 485.50\
+317383 614.75439\
+453 C471.8275122\
+2 615.34162931 4\
+63.2996384 614.0\
+8338021 452.6391\
+9067 605.3033447\
+3 C450.12307986 \
+603.30274784 447\
+.4128092 601.661\
+41696 444.671875\
+ 599.98828125 C4\
+43.68703125 599.\
+37533203 442.702\
+1875 598.7623828\
+1 441.6875 598.1\
+3085938 C440.718\
+125 597.53080078\
+ 439.74875 596.9\
+3074219 438.75 5\
+96.3125 C416.483\
+16062 582.483160\
+62 416.48316062 \
+582.48316062 415\
+ 581 C414.763212\
+84 578.30764224 \
+414.57801975 575\
+.63501844 414.43\
+75 572.9375 C414\
+.37272461 571.79\
+958008 414.37272\
+461 571.79958008\
+ 414.30664062 57\
+0.63867188 C414.\
+20026367 568.759\
+34562 414.099600\
+66 566.87969756 \
+414 565 C406.631\
+7823 570.7449072\
+4 399.30540938 5\
+76.53511439 392.\
+0625 582.4375 C3\
+89.37509905 584.\
+62512171 386.687\
+63672 586.812667\
+96 384 589 C383.\
+39075684 589.496\
+12793 382.781513\
+67 589.99225586 \
+382.15380859 590\
+.50341797 C367.0\
+961159 602.74009\
+303 351.47323716\
+ 614.22810209 33\
+5.82714844 625.6\
+9677734 C335.075\
+94727 626.248012\
+7 334.32474609 6\
+26.79924805 333.\
+55078125 627.367\
+1875 C332.555584\
+72 628.09591064 \
+332.55558472 628\
+.09591064 331.54\
+02832 628.839355\
+47 C330.03904716\
+ 629.91455605 33\
+0.03904716 629.9\
+1455605 329 631 \
+C327.48071962 63\
+1.07179964 325.9\
+5832518 631.0839\
+2007 324.4375 63\
+1.0625 C323.6112\
+1094 631.0534765\
+6 322.78492188 6\
+31.04445313 321.\
+93359375 631.035\
+15625 C321.29550\
+781 631.02355469\
+ 320.65742187 63\
+1.01195312 320 6\
+31 C319.97607178\
+ 630.39043457 31\
+9.95214355 629.7\
+8086914 319.9274\
+9023 629.1528320\
+3 C319.03320455 \
+609.258189 315.4\
+2359311 590.3463\
+7584 311 571 C31\
+0.79705322 570.1\
+0740479 310.5941\
+0645 569.2148095\
+7 310.38500977 5\
+68.29516602 C308\
+.86346158 561.60\
+788929 307.31443\
+078 554.92736408\
+ 305.75 548.25 C\
+305.53585449 547\
+.32896484 305.32\
+170898 546.40792\
+969 305.10107422\
+ 545.45898438 C3\
+04.48716779 542.\
+82997602 303.862\
+55937 540.203753\
+77 303.234375 53\
+7.578125 C303.05\
+332214 536.79834\
+29 302.87226929 \
+536.01856079 302\
+.68572998 535.21\
+514893 C301.0181\
+643 528.34350765\
+ 299.07828856 52\
+3.10284478 293 5\
+19 C289.91566411\
+ 517.97188804 28\
+7.80130431 517.8\
+7323212 284.5698\
+2422 517.8706054\
+7 C283.45791718 \
+517.86745331 282\
+.34601013 517.86\
+430115 281.20040\
+894 517.86105347\
+ C279.99732086 5\
+17.8630777 278.7\
+9423279 517.8651\
+0193 277.5546875\
+ 517.8671875 C27\
+5.69531052 517.8\
+6575241 275.6953\
+1052 517.8657524\
+1 273.79837036 5\
+17.86428833 C270\
+.49741882 517.86\
+34325 267.196514\
+15 517.86746 263\
+.89556885 517.87\
+304688 C261.8860\
+9291 517.8749892\
+8 259.87666099 5\
+17.87306485 257.\
+8671875 517.8696\
+2891 C253.992167\
+14 517.86341894 \
+250.11721065 517\
+.8642105 246.242\
+1875 517.8671875\
+ C245.05124481 5\
+17.86516327 243.\
+86030212 517.863\
+13904 242.633270\
+26 517.86105347 \
+C239.42000998 51\
+7.87001043 236.2\
+1214258 517.9171\
+0983 233 518 C23\
+2.13828186 518.0\
+1838928 231.2765\
+6372 518.0367785\
+6 230.38873291 5\
+18.0557251 C224.\
+67296775 518.397\
+67867 221.882427\
+32 519.72721 218\
+ 524 C216.421303\
+48 527.08050641 \
+216.42130348 527\
+.08050641 215.50\
+78125 530.664062\
+5 C215.31156281 \
+531.34433502 215\
+.11531311 532.02\
+460754 214.91311\
+646 532.72549438\
+ C212.12901489 5\
+42.6735927 209.9\
+1208446 552.7836\
+2614 207.6606445\
+3 562.86230469 C\
+206.8776001 566.\
+36337471 206.082\
+14427 569.861455\
+89 205.28515625 \
+573.359375 C199.\
+71227584 597.509\
+18718 199.712275\
+84 597.50918718 \
+197.3125 622.125\
+ C197.27833984 6\
+22.99769531 197.\
+24417969 623.870\
+39063 197.208984\
+38 624.76953125 \
+C197.1291207 626\
+.84598687 197.06\
+287489 628.92296\
+055 197 631 C188\
+.87609487 631.79\
+788354 185.23852\
+783 629.8481508 \
+179 624.8125 C17\
+8.18184814 624.1\
+8045654 177.3636\
+9629 623.5484130\
+9 176.52075195 6\
+22.8972168 C174.\
+82812429 621.587\
+40071 173.142322\
+95 620.26871687 \
+171.46337891 618\
+.94140625 C168.4\
+4391962 616.5617\
+4914 165.3809216\
+1 614.24332031 1\
+62.31445312 611.\
+92480469 C158.85\
+907136 609.30550\
+474 155.42888243\
+ 606.65384343 15\
+2 604 C151.39881\
+348 603.53529297\
+ 150.79762695 60\
+3.07058594 150.1\
+7822266 602.5917\
+9688 C142.476647\
+63 596.62624141 \
+134.92491721 590\
+.49327725 127.41\
+52832 584.288330\
+08 C122.52599271\
+ 580.25061098 11\
+7.62334991 576.2\
+3072062 112.6875\
+ 572.25 C112.071\
+40869 571.748635\
+25 111.45531738 \
+571.24727051 110\
+.82055664 570.73\
+071289 C108.0066\
+8916 568.4707284\
+6 105.33601269 5\
+66.41677576 102 \
+565 C102.1044140\
+6 566.08539062 1\
+02.20882812 567.\
+17078125 102.316\
+40625 568.289062\
+5 C102.4008644 5\
+69.73423521 102.\
+48276027 571.179\
+55926 102.5625 5\
+72.625 C102.6379\
+1016 573.3378515\
+6 102.71332031 5\
+74.05070313 102.\
+79101562 574.785\
+15625 C102.88783\
+901 577.13043386\
+ 102.79202189 57\
+8.7831623 102 58\
+1 C99.33380783 5\
+83.58877793 96.2\
+4494157 585.2260\
+8638 93 587 C91.\
+40537143 587.983\
+16672 89.8155105\
+5 588.97410753 8\
+8.23046875 589.9\
+7265625 C86.5500\
+5538 591.0035440\
+2 84.86904496 59\
+2.03345908 83.18\
+75 593.0625 C74.\
+78089832 598.231\
+83787 66.4734625\
+6 603.53701024 5\
+8.22143555 608.9\
+4946289 C57.4329\
+3213 609.4662963\
+9 56.64442871 60\
+9.98312988 55.83\
+203125 610.51562\
+5 C54.79139526 6\
+11.20060059 54.7\
+9139526 611.2006\
+0059 53.72973633\
+ 611.89941406 C5\
+0.90369085 613.6\
+9755281 49.24024\
+304 614.12347378\
+ 45.91748047 614\
+.11352539 C44.65\
+639969 614.11341\
+209 44.65639969 \
+614.11341209 43.\
+36984253 614.113\
+29651 C42.007278\
+29 614.10555458 \
+42.00727829 614.\
+10555458 40.6171\
+875 614.09765625\
+ C39.68778351 61\
+4.0962413 38.758\
+37952 614.094826\
+35 37.80081177 6\
+14.09336853 C34.\
+82550876 614.087\
+76053 31.8502803\
+6 614.07520668 2\
+8.875 614.0625 C\
+26.86067817 614.\
+05748603 24.8463\
+5516 614.0529229\
+5 22.83203125 61\
+4.04882812 C17.8\
+8799198 614.0377\
+885 12.94400865 \
+614.02051849 8 6\
+14 C13.26429527 \
+608.66192971 13.\
+26429527 608.661\
+92971 16.2070312\
+5 606.30859375 C\
+16.78598145 605.\
+84453125 17.3649\
+3164 605.3804687\
+5 17.96142578 60\
+4.90234375 C18.5\
+7228027 604.4189\
+4531 19.18313477\
+ 603.93554688 19\
+.8125 603.4375 C\
+20.77905518 602.\
+66792969 20.7790\
+5518 602.6679296\
+9 21.76513672 60\
+1.8828125 C28.47\
+31454 596.571969\
+13 35.32101018 5\
+91.44943858 42.2\
+0166016 586.3652\
+3438 C44.1367798\
+3 584.94293498 4\
+4.13677983 584.9\
+4293498 46.27685\
+547 582.88525391\
+ C49.69577891 58\
+0.51830691 51.89\
+785607 580.41035\
+672 56.03125 580\
+.2421875 C57.039\
+80042 580.191204\
+07 57.03980042 5\
+80.19120407 58.0\
+6872559 580.1391\
+9067 C60.2121040\
+7 580.03355867 6\
+2.35544916 579.9\
+5286935 64.5 579\
+.875 C66.6155432\
+7 579.78591937 6\
+8.73061235 579.6\
+9121127 70.84558\
+105 579.58938599\
+ C72.78524863 57\
+9.49789494 74.72\
+563438 579.42201\
+125 76.66601562 \
+579.34716797 C82\
+.47812371 578.88\
+159689 88.237076\
+19 577.88660366 \
+94 577 C94.33 51\
+8.59 94.66 460.1\
+8 95 400 C78.5 4\
+00 62 400 45 400\
+ C45.02618408 40\
+5.09332764 45.05\
+236816 410.18665\
+527 45.0793457 4\
+15.43432617 C45.\
+16208982 432.238\
+00823 45.2176364\
+2 449.04169817 4\
+5.25906086 465.8\
+4553051 C45.2848\
+5082 476.0365302\
+ 45.32001652 486\
+.227337 45.37719\
+727 496.41821289\
+ C45.42700793 50\
+5.29980592 45.45\
+928525 514.18125\
+927 45.47044247 \
+523.0629881 C45.\
+4769652 527.7665\
+8086 45.49231182\
+ 532.46977399 45\
+.52865028 537.17\
+323875 C45.56257\
+29 541.59984733 \
+45.57306058 546.\
+02589143 45.5655\
+3841 550.4526176\
+5 C45.56691463 5\
+52.07761896 45.5\
+768697 553.70263\
+903 45.59602737 \
+555.327528 C45.6\
+2090916 557.5466\
+5703 45.61492568\
+ 559.76365549 45\
+.60127258 561.98\
+283386 C45.60818\
+603 563.84531659\
+ 45.60818603 563\
+.84531659 45.615\
+23914 565.745425\
+22 C44.57840195 \
+571.23022605 40.\
+32506023 573.900\
+64751 36.0625 57\
+7.125 C35.281328\
+12 577.723125 34\
+.50015625 578.32\
+125 33.6953125 5\
+78.9375 C32.8058\
+5938 579.618125 \
+31.91640625 580.\
+29875 31 581 C22\
+.15668965 587.88\
+058062 13.418749\
+7 594.8810168 4.\
+734375 601.96093\
+75 C0.181063 605\
+.67181716 -4.403\
+52744 609.342710\
+53 -9 613 C-12.8\
+5051776 611.3963\
+726 -15.42575812\
+ 608.91078234 -1\
+8.4375 606.0625 \
+C-22.68292424 60\
+2.10722123 -26.9\
+6391679 598.2078\
+4087 -31.375 594\
+.4375 C-31.90311\
+279 593.98407227\
+ -32.43122559 59\
+3.53064453 -32.9\
+753418 593.06347\
+656 C-35.8465700\
+8 590.6478688 -3\
+8.76762468 588.4\
+3738916 -41.8984\
+375 586.3671875 \
+C-42.54119629 58\
+5.93736572 -43.1\
+8395508 585.5075\
+4395 -43.8461914\
+1 585.06469727 C\
+-45.08076161 584\
+.25268001 -46.33\
+005442 583.46245\
+657 -47.59521484\
+ 582.69897461 C-\
+50.03795617 581.\
+09559705 -51.772\
+08749 579.780655\
+3 -52.60742188 5\
+76.91943359 C-52\
+.890625 574.6992\
+1875 -52.890625 \
+574.69921875 -53\
+ 571 C-53.524245\
+61 570.84144531 \
+-54.04849121 570\
+.68289063 -54.58\
+862305 570.51953\
+125 C-60.9279799\
+ 568.51464128 -6\
+6.83377465 565.8\
+9489187 -72.8125\
+ 563 C-73.808623\
+05 562.51942139 \
+-74.80474609 562\
+.03884277 -75.83\
+105469 561.54370\
+117 C-119.425608\
+15 540.29602276 \
+-119.42560815 54\
+0.29602276 -126.\
+78222656 520.534\
+42383 C-128.6365\
+8832 515.1523879\
+2 -130.09168614 \
+509.71611786 -13\
+1.4375 504.1875 \
+C-131.87799683 5\
+02.3916748 -131.\
+87799683 502.391\
+6748 -132.327392\
+58 500.55957031 \
+C-137.06185009 4\
+80.81630902 -140\
+.68034755 460.88\
+622261 -143.25 4\
+40.75 C-143.4010\
+6201 439.5824316\
+4 -143.55212402 \
+438.41486328 -14\
+3.70776367 437.2\
+1191406 C-146.54\
+136778 413.62891\
+223 -147.3790708\
+1 390.01675289 -\
+147.31785583 366\
+.28768539 C-147.\
+31240554 364.086\
+85891 -147.31004\
+517 361.88604322\
+ -147.3079834 35\
+9.68521118 C-147\
+.2749153 337.009\
+44075 -146.61825\
+985 314.54162455\
+ -144 292 C-143.\
+85546387 290.691\
+11816 -143.71092\
+773 289.38223633\
+ -143.56201172 2\
+88.03369141 C-13\
+9.7154546 253.83\
+213318 -132.2145\
+585 220.37237544\
+ -121.5 187.6875\
+ C-121.27865387 \
+187.00311859 -12\
+1.05730774 186.3\
+1873718 -120.829\
+25415 185.613616\
+94 C-111.6957943\
+9 157.53728118 -\
+95.20380145 142.\
+64060518 -69.384\
+76562 129.203613\
+28 C-65.30026823\
+ 127.14212964 -6\
+1.16877908 125.1\
+9709707 -57 123.\
+3125 C-56.228173\
+83 122.96106934 \
+-55.45634766 122\
+.60963867 -54.66\
+113281 122.24755\
+859 C-52.8014417\
+3 121.43284079 -\
+50.90313845 120.\
+7073048 -49 120 \
+C-48.34 120.33 -\
+47.68 120.66 -47\
+ 121 C-46.885192\
+87 120.38406982 \
+-46.77038574 119\
+.76813965 -46.65\
+209961 119.13354\
+492 C-38.5213580\
+7 75.96951546 -2\
+6.45890495 35.67\
+614642 0 0 Z M-1\
+7.0703125 63.460\
+9375 C-24.568326\
+39 73.6569815 -2\
+6.78098714 83.47\
+528037 -26 96 C-\
+24.4687051 105.1\
+6181525 -19.4648\
+3446 111.7460828\
+3 -14 119 C-13.0\
+1 118.505 -13.01\
+ 118.505 -12 118\
+ C-12.72896484 1\
+16.53820312 -12.\
+72896484 116.538\
+20312 -13.472656\
+25 115.046875 C-\
+15.30242962 110.\
+75547959 -15.499\
+5091 106.8711546\
+1 -15.4375 102.2\
+5 C-15.42992676 \
+101.45867676 -15\
+.42235352 100.66\
+735352 -15.41455\
+078 99.85205078 \
+C-15.13630583 89\
+.90631693 -12.10\
+400059 81.166867\
+85 -5 74 C5.0642\
+5942 65.91920777\
+ 15.18906153 63.\
+13634123 28 64 C\
+40.34981382 66.0\
+9078627 47.98933\
+762 74.02154875 \
+55.0390625 83.83\
+984375 C62.48738\
+673 95.12391547 \
+66.6827234 107.3\
+8594964 67 121 C\
+70.69602627 115.\
+45596059 69.4832\
+1887 108.7892127\
+4 68.3828125 102\
+.4375 C63.925855\
+37 83.82082951 5\
+4.27810489 66.70\
+607795 38 56 C34\
+.41965485 54.064\
+14442 30.7974777\
+7 52.45875118 27\
+ 51 C25.88625 50\
+.566875 24.7725 \
+50.13375 23.625 \
+49.6875 C7.61177\
+926 46.65050986 \
+-6.48849655 50.8\
+825525 -17.07031\
+25 63.4609375 Z \
+M466.19140625 66\
+.37890625 C454.8\
+9246163 79.89333\
+021 447.71316187\
+ 96.06600373 447\
+.9375 113.875 C4\
+47.94201172 114.\
+56335938 447.946\
+52344 115.251718\
+75 447.95117188 \
+115.9609375 C447\
+.96283664 117.64\
+066335 447.98076\
+729 119.32034375\
+ 448 121 C448.33\
+ 121 448.66 121 \
+449 121 C449.158\
+55469 119.984218\
+75 449.31710937 \
+118.9684375 449.\
+48046875 117.921\
+875 C452.3737578\
+6 100.4341187 45\
+9.27267015 82.90\
+830001 473 71 C4\
+82.66620498 64.9\
+5400428 491.9456\
+9111 62.37937542\
+ 503.22265625 64\
+.6484375 C514.05\
+589422 67.613323\
+68 522.31128672 \
+73.17875641 528 \
+83 C534.04127152\
+ 95.195464 532.4\
+5912118 106.2341\
+9565 529 119 C53\
+7.84480497 110.9\
+1332117 542.3524\
+747 101.0773423 \
+543.05859375 89.\
+1484375 C542.845\
+12341 77.6779646\
+ 537.99299204 68\
+.11236964 530.37\
+5 59.75 C521.905\
+69659 51.6894467\
+6 511.9718552 48\
+.59892939 500.57\
+421875 48.726562\
+5 C486.9899582 4\
+9.76579555 475.4\
+1365964 56.59572\
+869 466.19140625\
+ 66.37890625 Z M\
+0.47265625 82.85\
+15625 C-5.001864\
+91 90.83826445 -\
+6.38524907 98.32\
+440533 -5 108 C-\
+2.5041248 115.57\
+581906 1.2308647\
+3 121.67407704 8\
+ 126 C8.61746094\
+ 126.39832031 9.\
+23492187 126.796\
+64063 9.87109375\
+ 127.20703125 C1\
+6.60227756 131.0\
+3987837 23.57279\
+993 131.8883056 \
+31.0625 129.9375\
+ C39.06043143 12\
+7.15834458 46.09\
+310757 122.69169\
+446 50 115 C53.4\
+4797934 107.1342\
+9714 53.73903243\
+ 99.80930833 51.\
+27734375 91.5859\
+375 C47.93867781\
+ 83.17423369 42.\
+25307961 76.5783\
+619 33.9375 72.8\
+515625 C20.94008\
+909 69.08369604 \
+8.82653141 72.22\
+653925 0.4726562\
+5 82.8515625 Z M\
+469.6953125 82.7\
+03125 C464.68397\
+302 89.49268172 \
+462.75963622 97.\
+68828393 464 106\
+ C466.05004962 1\
+14.66115636 469.\
+82429061 121.802\
+06554 477.535156\
+25 126.56640625 \
+C485.48367313 13\
+0.67528611 492.0\
+6622969 132.1916\
+1437 500.9375 12\
+9.875 C509.77077\
+835 127.02468796\
+ 515.93341269 12\
+1.18607751 520.2\
+5 113.0625 C523.\
+1556202 106.1167\
+9433 523.4058622\
+5 98.18980292 52\
+1.01171875 91.05\
+46875 C519.81602\
+405 88.57445392 \
+518.50890948 86.\
+30075703 517 84 \
+C516.443125 83.0\
+925 515.88625 82\
+.185 515.3125 81\
+.25 C507.7786031\
+3 73.91972196 49\
+9.92405363 71.55\
+819718 489.64453\
+125 71.6640625 C\
+481.43871896 72.\
+42043962 475.216\
+38166 76.7573582\
+1 469.6953125 82\
+.703125 Z M-30 1\
+03 C-31.61030034\
+ 107.46247535 -3\
+2.63074739 111.8\
+788687 -33.40234\
+375 116.546875 C\
+-33.52475937 117\
+.26798462 -33.64\
+717499 117.98909\
+424 -33.77330017\
+ 118.73205566 C-\
+34.16744157 121.\
+07040167 -34.553\
+15656 123.410024\
+96 -34.9375 125.\
+75 C-35.06972961\
+ 126.54547241 -3\
+5.20195923 127.3\
+4094482 -35.3381\
+958 128.16052246\
+ C-37.69745815 1\
+42.3933673 -39.5\
+7489573 156.6408\
+1935 -41 171 C-4\
+1.8175507 168.45\
+986091 -42.62915\
+186 165.91806769\
+ -43.4375 163.37\
+5 C-43.66759766 \
+162.66214844 -43\
+.89769531 161.94\
+929688 -44.13476\
+562 161.21484375\
+ C-45.41873606 1\
+57.15824149 -46.\
+41945974 153.230\
+60375 -47 149 C-\
+47.33 149 -47.66\
+ 149 -48 149 C-4\
+9.92787347 163.2\
+1806685 -49.9652\
+939 173.23298597\
+ -41.875 185.246\
+09375 C-40.78832\
+031 186.86342407\
+ -40.78832031 18\
+6.86342407 -39.6\
+796875 188.51342\
+773 C-39.1253906\
+2 189.33399658 -\
+38.57109375 190.\
+15456543 -38 191\
+ C-38.85940186 1\
+91.02505615 -39.\
+71880371 191.050\
+1123 -40.6042480\
+5 191.07592773 C\
+-44.63205972 191\
+.19449558 -48.65\
+98005 191.315187\
+25 -52.6875 191.\
+4375 C-53.415296\
+63 191.45956512 \
+-54.14309326 191\
+.48163025 -54.89\
+294434 191.50436\
+401 C-63.8501887\
+5 191.77839132 -\
+72.79991307 192.\
+10527004 -81.75 \
+192.5625 C-83.39\
+320874 192.63716\
+969 -85.03643692\
+ 192.71141314 -8\
+6.6796875 192.78\
+515625 C-89.3627\
+3157 192.9075386\
+6 -92.0166992 19\
+3.08490406 -94.6\
+953125 193.30859\
+375 C-101.758410\
+89 193.73376798 \
+-101.75841089 19\
+3.73376798 -105.\
+16796875 191.718\
+75 C-109.4795907\
+1 187.80717544 -\
+111.35819909 183\
+.50486187 -113 1\
+78 C-113.33 178 \
+-113.66 178 -114\
+ 178 C-114.02724\
+423 180.83339965\
+ -114.04695589 1\
+83.66653117 -114\
+.0625 186.5 C-11\
+4.07087891 187.2\
+9148437 -114.079\
+25781 188.082968\
+75 -114.08789062\
+ 188.8984375 C-1\
+14.10306593 192.\
+60121125 -114.00\
+340415 195.98002\
+471 -113.3789062\
+5 199.64453125 C\
+-112.46996683 20\
+6.13557065 -113.\
+94610742 212.751\
+82002 -114.875 2\
+19.1875 C-115.16\
+017149 221.21075\
+515 -115.4422107\
+4 223.23437277 -\
+115.72024536 225\
+.25862122 C-115.\
+97535061 227.108\
+38477 -116.23908\
+077 228.95695306\
+ -116.50341797 2\
+30.80541992 C-11\
+7.84947253 241.4\
+4915358 -118.149\
+64504 252.059411\
+36 -118.1328125 \
+262.77734375 C-1\
+18.13348904 264.\
+16012082 -118.13\
+446195 265.54289\
+777 -118.1357116\
+7 266.92567444 C\
+-118.1371727 269\
+.80226796 -118.1\
+3508641 272.6788\
+301 -118.1303710\
+9 275.55541992 C\
+-118.12468023 27\
+9.20031459 -118.\
+12795903 282.845\
+13547 -118.13394\
+356 286.49002743\
+ C-118.1375973 2\
+89.33944735 -118\
+.13638868 292.18\
+885045 -118.1338\
+1577 295.0382709\
+5 C-118.13284567\
+ 297.02201003 -1\
+18.13582617 299.\
+00574983 -118.13\
+894653 300.98948\
+669 C-118.112353\
+38 311.43647448 \
+-117.82665424 32\
+1.84456576 -115.\
+96484375 332.144\
+53125 C-114.9157\
+1902 338.0112833\
+3 -114.67722333 \
+343.73875776 -11\
+4.5625 349.6875 \
+C-114.31550119 3\
+58.61522479 -113\
+.5671431 367.337\
+89807 -112.375 3\
+76.1875 C-111.38\
+314068 383.72517\
+028 -110.7129503\
+ 390.75197958 -1\
+11.60742188 398.\
+34765625 C-113.5\
+1033966 416.0514\
+1872 -113.157124\
+35 433.94379142 \
+-113.13037109 45\
+1.7253418 C-113.\
+12582081 454.778\
+096 -113.1258003\
+7 457.83079075 -\
+113.13037109 460\
+.88354492 C-113.\
+14532207 470.923\
+1807 -113.112389\
+24 480.9609389 -\
+113 491 C-112.98\
+707916 492.20209\
+106 -112.9741583\
+3 493.40418213 -\
+112.96084595 494\
+.6427002 C-112.9\
+1441843 497.8476\
+5994 -112.837831\
+86 501.04996173 \
+-112.74609375 50\
+4.25390625 C-112\
+.73301178 505.16\
+215652 -112.7199\
+2981 506.0704068\
+ -112.70645142 5\
+07.00617981 C-11\
+2.44661306 513.9\
+1326548 -110.599\
+28627 517.883687\
+6 -105.71484375 \
+522.9140625 C-99\
+.2625736 527.871\
+63409 -92.649932\
+53 531.22725301 \
+-85.0625 534.125\
+ C-84.09320557 5\
+34.49898926 -83.\
+12391113 534.872\
+97852 -82.125244\
+14 535.25830078 \
+C-73.13381832 53\
+8.67025999 -64.0\
+4907648 541.8021\
+0649 -54.9375 54\
+4.875 C-54.24802\
+277 545.10979065\
+ -53.55854553 54\
+5.3445813 -52.84\
+817505 545.58648\
+682 C-43.6485853\
+8 548.70786669 -\
+34.55904519 551.\
+1812725 -25 553 \
+C-23.5994751 550\
+.1989502 -23.867\
+56146 547.888414\
+41 -23.85955811 \
+544.75357056 C-2\
+3.85658698 544.1\
+0503691 -23.8536\
+1586 543.4565032\
+6 -23.8505547 54\
+2.78831708 C-23.\
+84184746 540.603\
+16855 -23.840357\
+46 538.4180747 -\
+23.83886719 536.\
+23291016 C-23.83\
+423865 534.66855\
+757 -23.82921394\
+ 533.1042061 -23\
+.82382202 531.53\
+985596 C-23.8106\
+5733 527.2685616\
+6 -23.80423955 5\
+22.99728314 -23.\
+79981136 518.725\
+9717 C-23.796873\
+57 516.03775481 \
+-23.79276639 513\
+.34954213 -23.78\
+830719 510.66132\
+736 C-23.7745919\
+2 502.19729051 -\
+23.76495766 493.\
+73326338 -23.761\
+1053 485.2692161\
+8 C-23.75711627 \
+476.55686958 -23\
+.74505703 467.84\
+463358 -23.71875\
+ 459.13232422 C-\
+23.34297622 402.\
+02132372 -23.342\
+97622 402.021323\
+72 -26.64306641 \
+345.0357666 C-27\
+.14544537 339.57\
+376777 -27.45332\
+854 334.10132546\
+ -27.76544189 32\
+8.6257019 C-28.2\
+546799 321.06326\
+375 -29.10253457\
+ 313.53182454 -2\
+9.89453125 305.9\
+9609375 C-30.298\
+66303 301.999679\
+49 -30.66821939 \
+298.00298859 -31\
+ 294 C-31.055983\
+58 293.33158081 \
+-31.11196716 292\
+.66316162 -31.16\
+964722 291.97448\
+73 C-32.56774913\
+ 274.13204381 -3\
+1.90692821 256.1\
+975272 -31.60510\
+254 238.32312012\
+ C-31.53338539 2\
+33.9915278 -31.4\
+6919543 229.6598\
+2389 -31.4042968\
+8 225.328125 C-3\
+1.27673247 216.8\
+8529283 -31.1410\
+6991 208.4426172\
+8 -31 200 C-30.3\
+8125 200.66 -29.\
+7625 201.32 -29.\
+125 202 C-27.243\
+62573 204.228454\
+9 -27.24362573 2\
+04.2284549 -25 2\
+04 C-25.97430702\
+ 201.82654587 -2\
+6.75534074 200.2\
+2262456 -28.5309\
+1431 198.6069641\
+1 C-33.05096787 \
+193.66268898 -31\
+.04626224 181.67\
+542002 -30.91406\
+25 175.3828125 C\
+-30.89282318 174\
+.17221161 -30.87\
+158386 172.96161\
+072 -30.84970093\
+ 171.71432495 C-\
+30.80357387 169.\
+15080795 -30.754\
+65738 166.587339\
+82 -30.703125 16\
+4.02392578 C-30.\
+62649544 160.199\
+63175 -30.558528\
+08 156.37526607 \
+-30.4921875 152.\
+55078125 C-30.19\
+175424 136.02534\
+973 -29.67592591\
+ 119.51420763 -2\
+9 103 C-29.33 10\
+3 -29.66 103 -30\
+ 103 Z M-14 131 \
+C-11.06588728 14\
+0.21911553 -1.49\
+803264 147.33903\
+752 6.71484375 1\
+51.85546875 C17.\
+08925948 157.051\
+54364 28.8589241\
+5 159.22736723 4\
+0.26953125 156.1\
+0546875 C42.5845\
+1196 155.1682161\
+9 44.80198433 15\
+4.1835469 47 153\
+ C44.3234047 150\
+.79574504 41.681\
+76537 148.798043\
+41 38.75 146.937\
+5 C36 145 36 145\
+ 35 142 C30.2833\
+7621 141.8875072\
+3 30.28337621 14\
+1.88750723 25.62\
+5 142.5 C11.0300\
+9778 145.2799813\
+7 -2.10172539 13\
+8.93218307 -14 1\
+31 Z M529 132 C5\
+28.50113281 132.\
+38671875 528.002\
+26562 132.773437\
+5 527.48828125 1\
+33.171875 C519.1\
+3063486 139.2337\
+9446 508.3804951\
+1 143.16524276 4\
+97.9375 143.125 \
+C497.16792969 14\
+3.12371094 496.3\
+9835938 143.1224\
+2187 495.6054687\
+5 143.12109375 C\
+493 143 493 143 \
+489.92578125 142\
+.59765625 C483.6\
+2517287 141.5454\
+0013 483.6251728\
+7 141.54540013 4\
+78.125 144.125 C\
+477.42375 145.07\
+375 476.7225 146\
+.0225 476 147 C4\
+74.92012567 147.\
+96538163 473.815\
+26092 148.903519\
+49 472.6875 149.\
+8125 C471.800625\
+ 150.534375 470.\
+91375 151.25625 \
+470 152 C470.956\
+02515 154.439748\
+47 470.95602515 \
+154.43974847 474\
+.625 155.625 C48\
+6.8645825 159.41\
+34422 499.778226\
+18 157.26754357 \
+510.97265625 151\
+.45703125 C518.6\
+0349367 146.8701\
+3173 524.7695150\
+3 141.19191683 5\
+30 134 C529.505 \
+133.01 529.505 1\
+33.01 529 132 Z \
+M60 309 C58.35 3\
+10.32 56.7 311.6\
+4 55 313 C59.385\
+7667 325.7162732\
+8 69.26019469 33\
+5.88616529 79.23\
+925781 344.46093\
+75 C82.44612771 \
+347.26405838 85.\
+52497097 350.204\
+94477 88.625 353\
+.125 C98.2666427\
+7 362.97656217 9\
+8.26664277 362.9\
+7656217 109.0874\
+0234 371.1999511\
+7 C111.89953151 \
+373.84659763 111\
+.6474864 375.984\
+52548 111.871093\
+75 379.7890625 C\
+111.91816971 380\
+.47144989 111.96\
+524567 381.15383\
+728 112.01374817\
+ 381.85690308 C1\
+12.11540409 383.\
+33567623 112.209\
+44502 384.814988\
+14 112.29675293 \
+386.29467773 C11\
+2.53782945 390.2\
+8613554 112.8522\
+9449 394.2716609\
+7 113.16796875 3\
+98.2578125 C113.\
+23219025 399.075\
+54138 113.296411\
+74 399.89327026 \
+113.36257935 400\
+.73577881 C117.4\
+7051356 451.0855\
+1897 130.4009485\
+4 500.94503492 1\
+49.875 547.4375 \
+C150.53483887 54\
+9.01724609 150.5\
+3483887 549.0172\
+4609 151.2080078\
+1 550.62890625 C\
+155.13076046 559\
+.76906906 158.65\
+723908 566.78204\
+995 167 572.4375\
+ C167.6506543 57\
+2.89415039 168.3\
+0130859 573.3508\
+0078 168.9716796\
+9 573.82128906 C\
+170.31216807 574\
+.75982605 171.65\
+691412 575.69231\
+143 173.00585938\
+ 576.61865234 C1\
+74.94776423 577.\
+96381611 176.859\
+07095 579.343597\
+7 178.765625 580\
+.73828125 C179.9\
+2665565 581.5761\
+1381 181.0880943\
+5 582.4133813 18\
+2.25 583.25 C183\
+.28640625 583.99\
+765625 184.32281\
+25 584.7453125 1\
+85.390625 585.51\
+5625 C186.251718\
+75 586.00546875 \
+187.1128125 586.\
+4953125 188 587 \
+C188.99 586.67 1\
+89.98 586.34 191\
+ 586 C191.812868\
+56 583.47088178 \
+192.41471017 581\
+.0878047 192.945\
+3125 578.4960937\
+5 C193.11645065 \
+577.7179985 193.\
+28758881 576.939\
+90326 193.463912\
+96 576.13822937 \
+C193.83404779 57\
+4.45390118 194.1\
+987752 572.76837\
+773 194.55874634\
+ 571.08184814 C1\
+95.51277954 566.\
+62660821 196.514\
+62021 562.182280\
+77 197.51953125 \
+557.73828125 C19\
+7.72303696 556.8\
+3676331 197.9265\
+4266 555.9352453\
+6 198.13621521 5\
+55.00640869 C200\
+.11978158 546.30\
+997267 202.39300\
+155 537.7091687 \
+204.8125 529.125\
+ C204.99500305 5\
+28.46708466 205.\
+1775061 527.8091\
+6931 205.3655395\
+5 527.13131714 C\
+211.43166245 505\
+.32794808 211.43\
+166245 505.32794\
+808 220 500 C226\
+.51447671 496.55\
+115939 233.37187\
+429 494.48447329\
+ 240.5 492.75 C2\
+41.16306152 492.\
+58677246 241.826\
+12305 492.423544\
+92 242.50927734 \
+492.25537109 C25\
+3.14136474 489.8\
+4447274 262.7224\
+8395 489.7621860\
+8 273.375 492.06\
+25 C275.00646973\
+ 492.40486694 27\
+5.00646973 492.4\
+0486694 276.6708\
+9844 492.7541503\
+9 C298.56160135 \
+497.58375 298.56\
+160135 497.58375\
+ 305 507 C306.14\
+428525 509.65153\
+037 307.08130818\
+ 512.11632056 30\
+7.92578125 514.8\
+5546875 C308.173\
+30643 515.628357\
+39 308.4208316 5\
+16.40124603 308.\
+67585754 517.197\
+55554 C311.97975\
+651 527.77441203\
+ 314.55734438 53\
+8.55337682 317.1\
+875 549.3125 C31\
+7.71225016 551.4\
+331013 318.23763\
+807 553.55354488\
+ 318.76367188 55\
+5.67382812 C321.\
+26053274 565.763\
+20237 323.721098\
+21 575.85882547 \
+326 586 C330.458\
+78903 586 331.40\
+189391 585.38051\
+428 334.95703125\
+ 582.9296875 C33\
+5.90513672 582.2\
+8 336.85324219 5\
+81.6303125 337.8\
+3007812 580.9609\
+375 C338.8142773\
+4 580.27257812 3\
+39.79847656 579.\
+58421875 340.812\
+5 578.875 C342.2\
+7139648 577.8772\
+6563 342.2713964\
+8 577.87726563 3\
+43.75976562 576.\
+859375 C346.5350\
+7289 574.9427782\
+4 349.27579957 5\
+72.98844281 352 \
+571 C352.6962548\
+8 570.49509033 3\
+53.39250977 569.\
+99018066 354.109\
+86328 569.469970\
+7 C358.79729048 \
+565.80223148 360\
+.99329681 561.88\
+607176 363.25 55\
+6.4375 C363.6185\
+9131 555.5818042\
+ 363.98718262 55\
+4.7261084 364.36\
+694336 553.84448\
+242 C387.0834525\
+1 500.25766627 4\
+07.54824717 435.\
+62095734 404.746\
+58203 376.524902\
+34 C405.13315437\
+ 372.6733309 407\
+.05692904 370.97\
+275868 409.9375 \
+368.57421875 C41\
+0.618125 368.054\
+72656 411.29875 \
+367.53523438 412\
+ 367 C413.339796\
+82 365.84076173 \
+414.67310849 364\
+.673988 416 363.\
+5 C416.6703125 3\
+62.9225 417.3406\
+25 362.345 418.0\
+3125 361.75 C419\
+.93023071 360.06\
+201714 421.72005\
+988 358.31230266\
+ 423.5 356.5 C42\
+7.97735015 351.9\
+6228109 432.6954\
+5653 347.7364767\
+3 437.7890625 34\
+3.8984375 C448.6\
+3900329 335.5156\
+6671 455.3643262\
+5 324.84283441 4\
+62 313 C460.35 3\
+11.68 458.7 310.\
+36 457 309 C452.\
+4558366 310.2780\
+4596 449.6831438\
+5 312.87813228 4\
+46.26953125 315.\
+96875 C443.01854\
+637 318.87840945\
+ 439.62690485 32\
+1.60362792 436.2\
+421875 324.35546\
+875 C433.8208201\
+1 326.3254077 43\
+1.41213464 328.3\
+1007534 429.0078\
+125 330.30078125\
+ C421.62243383 3\
+36.41305167 414.\
+21218599 342.478\
+93096 406.641357\
+42 348.36083984 \
+C404.03885708 35\
+0.38451855 401.6\
+930684 352.32594\
+197 399.42602539\
+ 354.73339844 C3\
+97.46431427 356.\
+3533576 396.4388\
+2178 356.9752116\
+4 393.87818909 3\
+57.11985779 C391\
+.2496491 356.779\
+20557 388.717002\
+8 356.2580671 38\
+6.1328125 355.66\
+796875 C384.0578\
+8473 355.2504585\
+5 381.98267277 3\
+54.83435898 379.\
+90722656 354.419\
+43359 C378.79238\
+892 354.1868988 \
+377.67755127 353\
+.95436401 376.52\
+893066 353.71478\
+271 C370.9353263\
+6 352.58180164 3\
+65.31254104 351.\
+62344599 359.689\
+31007 350.650266\
+65 C356.26893248\
+ 350.05544251 35\
+2.8512068 349.44\
+578171 349.43334\
+961 348.83666992\
+ C348.73713595 3\
+48.71269994 348.\
+0409223 348.5887\
+2995 347.3236112\
+6 348.4610033 C3\
+45.89783067 348.\
+2071128 344.4720\
+6256 347.9531522\
+ 343.04630661 34\
+7.69912338 C340.\
+84820885 347.307\
+72956 338.649958\
+55 346.91720102 \
+336.45169067 346\
+.52676392 C321.5\
+9625877 343.8859\
+073 306.7530674 \
+341.21775332 291\
+.97265625 338.17\
+96875 C290.92444\
+702 337.96477158\
+ 289.87623779 33\
+7.74985565 288.7\
+9626465 337.5284\
+2712 C284.018073\
+33 336.54387124 \
+279.24538127 335\
+.53890624 274.47\
+802734 334.50317\
+383 C272.8070114\
+8 334.1516399 27\
+1.13595304 333.8\
+0030826 269.4648\
+4375 333.4492187\
+5 C268.74490738 \
+333.28529633 268\
+.02497101 333.12\
+13739 267.283218\
+38 332.95248413 \
+C255.51764005 33\
+0.51905976 243.0\
+7376957 334.3714\
+8313 231.4882812\
+5 336.5703125 C2\
+29.55583863 336.\
+93367277 227.623\
+31632 337.296609\
+38 225.6907196 3\
+37.65914917 C220\
+.59394858 338.61\
+62146 215.498089\
+72 339.57804671 \
+210.40246582 340\
+.54119873 C206.3\
+6042387 341.3048\
+8007 202.3180474\
+2 342.06677573 1\
+98.2755146 342.8\
+2785416 C196.282\
+90194 343.203099\
+22 194.29038248 \
+343.57883946 192\
+.29795647 343.95\
+507431 C187.3417\
+1259 344.8898324\
+5 182.38392415 3\
+45.81419705 177.\
+42190552 346.717\
+83447 C168.77570\
+312 348.29956176\
+ 160.16188101 34\
+9.91696727 151.5\
+9917545 351.9082\
+5844 C148.066474\
+15 352.72428524 \
+144.5234332 353.\
+48803959 140.978\
+04832 354.246791\
+84 C139.34258044\
+ 354.61211371 13\
+7.7125554 355.00\
+295304 136.08999\
+062 355.42187881\
+ C124.10803509 3\
+58.50787755 124.\
+10803509 358.507\
+87755 118.874027\
+25 355.96857452 \
+C114.68126426 35\
+3.24539283 111.0\
+6882306 349.9862\
+1945 107.5228214\
+3 346.47793961 C\
+105.49315694 344\
+.50809503 103.30\
+360445 342.78446\
+219 101.0625 341\
+.0625 C97.463388\
+63 338.18559838 \
+93.88708197 335.\
+28173504 90.3156\
+7383 332.3706054\
+7 C84.36502297 3\
+27.52203118 78.3\
+9983597 322.6937\
+3531 72.375 317.\
+9375 C71.8197363\
+3 317.49688232 7\
+1.26447266 317.0\
+5626465 70.69238\
+281 316.60229492\
+ C67.23027684 31\
+3.88154265 63.68\
+784761 311.39765\
+468 60 309 Z M84\
+ 359 C84.66 359.\
+66 85.32 360.32 \
+86 361 C86 360.3\
+4 86 359.68 86 3\
+59 C85.34 359 84\
+.68 359 84 359 Z\
+ M431 359 C430.5\
+153125 359.49628\
+906 430.030625 3\
+59.99257813 429.\
+53125 360.503906\
+25 C425.38522681\
+ 364.7057413 421\
+.14738282 368.71\
+43932 416.664062\
+5 372.5546875 C4\
+13.43071718 375.\
+28087177 413.430\
+71718 375.280871\
+77 412.5859375 3\
+79.4765625 C412.\
+5061894 380.8588\
+6294 412.4362506\
+4 382.24175649 4\
+12.375 383.625 C\
+412.33632813 384\
+.33140625 412.29\
+765625 385.03781\
+25 412.2578125 3\
+85.765625 C412.1\
+6352276 387.5099\
+8524 412.0806710\
+9 389.25495691 4\
+12 391 C416.7602\
+9488 386.5927365\
+9 419.83586976 3\
+81.18179226 423.\
+19262695 375.699\
+70703 C424.31701\
+36 373.86764559 \
+425.45577239 372\
+.04507613 426.59\
+570312 370.22265\
+625 C427.3107803\
+9 369.063045 428\
+.02500416 367.90\
+290691 428.73828\
+125 366.7421875 \
+C429.38837158 36\
+5.6888623 430.03\
+846191 364.63553\
+711 430.70825195\
+ 363.55029297 C4\
+31.13452881 362.\
+70869629 431.560\
+80566 361.867099\
+61 432 361 C431.\
+67 360.34 431.34\
+ 359.68 431 359 \
+Z M86 361 C87.29\
+780567 364.44962\
+165 88.80405878 \
+367.53810472 90.\
+71484375 370.687\
+5 C91.23626953 3\
+71.55117188 91.7\
+5769531 372.4148\
+4375 92.29492188\
+ 373.3046875 C92\
+.83697266 374.19\
+414063 93.379023\
+44 375.08359375 \
+93.9375 376 C94.\
+47568359 376.889\
+45313 95.0138671\
+9 377.77890625 9\
+5.56835938 378.6\
+953125 C96.57374\
+644 380.35649458\
+ 97.58064828 382\
+.01676158 98.589\
+59961 383.675781\
+25 C99.2877478 3\
+84.82626953 99.2\
+877478 384.82626\
+953 100 386 C100\
+.5136058 386.672\
+50793 101.027211\
+61 387.34501587 \
+101.55638123 388\
+.03790283 C103.6\
+1571744 392.2633\
+6323 103.4760962\
+8 396.07219678 1\
+03.50830078 400.\
+71777344 C103.52\
+663971 401.69271\
+759 103.54497864\
+ 402.66766174 10\
+3.56387329 403.6\
+7214966 C103.621\
+29594 406.901159\
+33 103.6582247 4\
+10.13007305 103.\
+6953125 413.3593\
+75 C103.73211842\
+ 415.62406615 10\
+3.77029811 417.8\
+8873534 103.8097\
+8394 420.1533813\
+5 C103.91075916 \
+426.13429681 103\
+.99481334 432.11\
+532952 104.07482\
+91 438.09655762 \
+C104.18943357 44\
+6.44204939 104.3\
+2675881 454.7872\
+0131 104.4616394\
+ 463.13238525 C1\
+04.53327474 467.\
+56799142 104.598\
+72708 472.003614\
+06 104.65872192 \
+476.43939209 C10\
+4.73027472 481.5\
+7416263 104.8256\
+5355 486.7080279\
+2 104.93686676 4\
+91.84208679 C104\
+.98068396 494.03\
+381495 105.01651\
+294 496.22571163\
+ 105.0460434 498\
+.41767883 C105.0\
+9472719 501.8420\
+1949 105.1713407\
+6 505.26479221 1\
+05.25341797 508.\
+68847656 C105.26\
+27492 509.734106\
+41 105.27208042 \
+510.77973625 105\
+.28169441 511.85\
+705185 C105.4639\
+258 518.04371016\
+ 106.05248923 52\
+1.46867698 110.3\
+75 526 C112.2045\
+4038 527.3950572\
+6 114.08209272 5\
+28.72915995 116 \
+530 C117.9074294\
+6 531.54832268 1\
+19.80338508 533.\
+11088931 121.687\
+5 534.6875 C122.\
+60660156 535.420\
+97656 123.525703\
+13 536.15445313 \
+124.47265625 536\
+.91015625 C127.2\
+5747976 539.2129\
+0831 129.7284521\
+9 541.69355009 1\
+32.23046875 544.\
+29296875 C135.56\
+168538 547.50652\
+652 139.29458021\
+ 550.2356392 143\
+ 553 C143.33 552\
+.34 143.66 551.6\
+8 144 551 C143.4\
+2114832 549.1608\
+8583 143.4211483\
+2 549.16088583 1\
+42.41015625 547.\
+1328125 C142.041\
+80664 546.339636\
+23 141.67345703 \
+545.54645996 141\
+.29394531 544.72\
+924805 C140.8875\
+6836 543.8698461\
+9 140.48119141 5\
+43.01044434 140.\
+0625 542.125 C13\
+5.34066345 531.8\
+8477198 131.0079\
+2846 521.5397934\
+9 127 511 C126.3\
+0777344 509.1804\
+8828 126.3077734\
+4 509.18048828 1\
+25.6015625 507.3\
+2421875 C115.532\
+90988 479.010141\
+49 112.40059166 \
+448.52318006 108\
+.64404297 418.86\
+416626 C108.4236\
+9964 417.1267924\
+1 108.2017046 41\
+5.38962721 107.9\
+7802734 413.6526\
+7944 C105.948818\
+16 397.85434653 \
+105.94881816 397\
+.85434653 105.66\
+40625 390.183593\
+75 C105.43535841\
+ 379.54965862 10\
+5.43535841 379.5\
+4965862 99.87133\
+789 370.87231445\
+ C97.38764886 36\
+8.67435625 94.77\
+21122 366.817043\
+7 92 365 C90.869\
+39671 364.241473\
+78 89.73917256 3\
+63.48238205 88.6\
+09375 362.722656\
+25 C87.74828125 \
+362.15417969 86.\
+8871875 361.5857\
+0313 86 361 Z M4\
+12 399 C410.2302\
+5511 406.9695979\
+1 409.2161372 41\
+4.9620885 408.25\
+ 423.0625 C403.7\
+0814197 459.6633\
+9371 396.9860006\
+7 496.11990822 3\
+82 530 C381.4102\
+5391 531.3431225\
+6 381.41025391 5\
+31.34312256 380.\
+80859375 532.713\
+37891 C379.39221\
+644 535.93203632\
+ 377.97499256 53\
+9.14950982 376.5\
+1171875 542.3471\
+6797 C374.762620\
+11 546.17378643 \
+373.24986233 549\
+.98169261 372 55\
+4 C376.52731842 \
+551.15097002 380\
+.32789288 548.00\
+273292 384.1875 \
+544.3125 C389.00\
+837527 539.77304\
+989 393.94376464\
+ 535.49864787 39\
+9.171875 531.425\
+78125 C400.10515\
+625 530.62527344\
+ 401.0384375 529\
+.82476563 402 52\
+9 C402.72890945 \
+528.39998169 403\
+.45781891 527.79\
+996338 404.20881\
+653 527.1817627 \
+C408.35808548 52\
+3.47971009 411.5\
+0232016 520.6334\
+6896 412.0778808\
+6 514.92651367 C\
+412.10593464 512\
+.94462565 412.08\
+517527 510.96171\
+145 412.02734375\
+ 508.98046875 C4\
+12.03519142 507.\
+27808296 412.035\
+19142 507.278082\
+96 412.04319763 \
+505.54130554 C41\
+2.05360093 502.8\
+9659883 412.0474\
+5017 500.2559943\
+9 412.02215576 4\
+97.61175537 C411\
+.98294807 492.40\
+481346 412.06112\
+319 487.20090071\
+ 412.14111328 48\
+1.99462891 C412.\
+26398429 473.734\
+16854 412.366690\
+49 465.47391515 \
+412.44335938 457\
+.21289062 C412.4\
+5315134 456.1582\
+1657 412.4629433\
+1 455.10354252 4\
+12.473032 454.01\
+690865 C412.4928\
+4981 451.8683492\
+3 412.51258091 4\
+49.71978902 412.\
+53222656 447.571\
+22803 C412.58324\
+577 442.07935978\
+ 412.6385038 436\
+.58753416 412.69\
+335938 431.09570\
+312 C412.7996206\
+9 420.39717216 4\
+12.90133561 409.\
+69860355 413 399\
+ C412.67 399 412\
+.34 399 412 399 \
+Z \x22 fill=\x22#e6e6e\
+6\x22 transform=\x22tr\
+anslate(254,307)\
+\x22/>\x0a<path d=\x22M0 \
+0 C0.79970215 -0\
+.02739258 1.5994\
+043 -0.05478516 \
+2.42333984 -0.08\
+300781 C3.504823\
+ -0.13013916 3.5\
+04823 -0.1301391\
+6 4.6081543 -0.1\
+7822266 C6.56005\
+859 0.12792969 6\
+.56005859 0.1279\
+2969 8.32324219 \
+1.18261719 C10.2\
+1894649 4.164253\
+95 9.7456673 7.0\
+752151 9.4858398\
+4 10.46386719 C9\
+.44194626 11.180\
+23346 9.39805267\
+ 11.89659973 9.3\
+5282898 12.63467\
+407 C9.25666058 \
+14.14984942 9.15\
+27714 15.6645515\
+9 9.04174805 17.\
+17871094 C8.8737\
+5526 19.4864906 \
+8.7315203 21.794\
+76064 8.59326172\
+ 24.10449219 C8.\
+49648106 25.5785\
+5155 8.39822159 \
+27.05251471 8.29\
+833984 28.526367\
+19 C8.25550369 2\
+9.21298431 8.212\
+66754 29.8996014\
+4 8.16853333 30.\
+60702515 C7.6080\
+1901 37.96345532\
+ 7.60801901 37.9\
+6345532 5.560058\
+59 41.12792969 C\
+0.27365147 43.31\
+983386 -5.178154\
+78 43.60579269 -\
+10.84619141 43.9\
+7949219 C-12.171\
+48865 44.0751295\
+5 -12.17148865 4\
+4.07512955 -13.5\
+2355957 44.17269\
+897 C-15.3823232\
+6 44.30545901 -1\
+7.24134259 44.43\
+468246 -19.10058\
+594 44.56054688 \
+C-21.93175101 44\
+.75237474 -24.76\
+200076 44.954805\
+74 -27.59228516 \
+45.15917969 C-29\
+.40604353 45.287\
+40359 -31.219844\
+42 45.41502786 -\
+33.03369141 45.5\
+4199219 C-34.291\
+79626 45.6310130\
+3 -34.29179626 4\
+5.63101303 -35.5\
+7531738 45.72183\
+228 C-40.2097833\
+3 46.03326567 -4\
+4.79505809 46.18\
+63412 -49.439941\
+41 46.12792969 C\
+-50.77421347 43.\
+45938557 -50.184\
+90324 42.2156621\
+2 -49.56494141 3\
+9.31542969 C-48.\
+32895259 32.9350\
+5499 -47.7774525\
+4 26.61296496 -4\
+7.43994141 20.12\
+792969 C-47.3858\
+0078 19.18046875\
+ -47.33166016 18\
+.23300781 -47.27\
+587891 17.256835\
+94 C-47.11258888\
+ 12.26164553 -47\
+.33465582 9.2683\
+1047 -50.4399414\
+1 5.12792969 C-5\
+0.43994141 4.467\
+92969 -50.439941\
+41 3.80792969 -5\
+0.43994141 3.127\
+92969 C-23.50616\
+304 1.12278169 -\
+23.50616304 1.12\
+278169 -11.25244\
+141 0.50292969 C\
+-10.48383789 0.4\
+6304932 -9.71523\
+438 0.42316895 -\
+8.92333984 0.382\
+08008 C-5.949131\
+85 0.24006066 -2\
+.97354103 0.1559\
+0709 0 0 Z \x22 fil\
+l=\x22#e6e6e6\x22 tran\
+sform=\x22translate\
+(862.43994140625\
+,586.8720703125)\
+\x22/>\x0a<path d=\x22M0 \
+0 C1.11658241 0.\
+08627907 1.11658\
+241 0.08627907 2\
+.25572205 0.1743\
+0115 C3.86914179\
+ 0.30002527 5.48\
+204457 0.4325251\
+6 7.09442139 0.5\
+7098389 C9.65186\
+254 0.78709613 1\
+2.20999535 0.977\
+82449 14.7700195\
+3 1.16064453 C20\
+.07841304 1.5402\
+0791 25.38490228\
+ 1.94264946 30.6\
+9140625 2.347656\
+25 C32.54100578 \
+2.48776021 34.39\
+061512 2.6277348\
+3 36.24023438 2.\
+76757812 C40.703\
+2389 3.10528659 \
+45.16610887 3.44\
+472183 49.628906\
+25 3.78515625 C5\
+0.12390625 5.270\
+15625 50.1239062\
+5 5.27015625 50.\
+62890625 6.78515\
+625 C50.1596875 \
+7.68492187 49.69\
+046875 8.5846875\
+ 49.20703125 9.5\
+1171875 C47.3471\
+0329 13.36968814\
+ 47.29244269 15.\
+8975028 47.37890\
+625 20.16015625 \
+C47.38986328 20.\
+84335937 47.4008\
+2031 21.5265625 \
+47.41210938 22.2\
+3046875 C47.5701\
+2074 29.76005374\
+ 48.06973135 37.\
+2762362 48.62890\
+625 44.78515625 \
+C38.51100591 45.\
+02109641 28.4594\
+7107 44.41716407\
+ 18.37133789 43.\
+72314453 C16.485\
+8022 43.59677474\
+ 14.59969093 43.\
+47874315 12.7131\
+3477 43.36865234\
+ C9.96348227 43.\
+20795375 7.21645\
+63 43.02285185 4\
+.46875 42.832031\
+25 C3.62505356 4\
+2.78705505 2.781\
+35712 42.7420788\
+6 1.91209412 42.\
+69573975 C-3.767\
+85976 42.2616199\
+2 -3.76785976 42\
+.26161992 -6.357\
+66602 40.2160644\
+5 C-7.77348671 3\
+6.8199366 -8.131\
+90292 33.4736419\
+1 -8.42578125 29\
+.84375 C-8.49523\
+956 29.07966324 \
+-8.56469788 28.3\
+1557648 -8.63626\
+099 27.52833557 \
+C-8.77874574 25.\
+91765312 -8.9145\
+0036 24.3063629 \
+-9.04394531 22.6\
+9458008 C-9.2458\
+5421 20.22558543\
+ -9.47898466 17.\
+76087776 -9.7148\
+4375 15.29492188\
+ C-9.84954975 13\
+.72802622 -9.982\
+42521 12.1609718\
+8 -10.11328125 1\
+0.59375 C-10.184\
+97528 9.8561998 \
+-10.25666931 9.1\
+186496 -10.33053\
+589 8.35874939 C\
+-10.53943364 5.5\
+2042135 -10.6624\
+5175 3.35508058 \
+-9.34790039 0.78\
+369141 C-6.26828\
+995 -0.77189791 \
+-3.33026202 -0.3\
+1594006 0 0 Z \x22 \
+fill=\x22#e6e6e6\x22 t\
+ransform=\x22transl\
+ate(168.37109375\
+,649.21484375)\x22/\
+>\x0a<path d=\x22M0 0 \
+C1.85721119 3.15\
+199473 1.2545085\
+3 6.28927935 0.9\
+1357422 9.796630\
+86 C0.84985626 1\
+0.55976089 0.786\
+13831 11.3228909\
+3 0.7204895 12.1\
+0914612 C0.58175\
+753 13.7228717 0\
+.43497384 15.335\
+9223 0.28076172 \
+16.94824219 C0.0\
+4773458 19.41129\
+046 -0.15399589 \
+21.87547377 -0.3\
+5205078 24.34155\
+273 C-0.49080626\
+ 25.91007861 -0.\
+63137194 27.4784\
+4563 -0.77392578\
+ 29.04663086 C-0\
+.83347443 29.782\
+15683 -0.8930230\
+7 30.5176828 -0.\
+95437622 31.2754\
+9744 C-1.2466377\
+3 34.17942017 -1\
+.71783973 36.726\
+97858 -2.8601074\
+2 39.41894531 C-\
+6.00131203 41.92\
+279276 -9.512738\
+07 41.8216722 -1\
+3.37939453 42.03\
+491211 C-14.6549\
+8482 42.12630463\
+ -14.65498482 42\
+.12630463 -15.95\
+63446 42.2195434\
+6 C-18.68373313 \
+42.40993544 -21.\
+41204343 42.5737\
+1949 -24.1411132\
+8 42.73803711 C-\
+25.93614794 42.8\
+6272603 -27.7310\
+7244 42.98901166\
+ -29.52587891 43\
+.11694336 C-39.3\
+0804776 43.78899\
+819 -49.02055562\
+ 44.17261112 -58\
+.82861328 43.988\
+03711 C-58.66707\
+764 43.30104736 \
+-58.50554199 42.\
+61405762 -58.339\
+11133 41.90625 C\
+-57.44394749 36.\
+78913217 -57.642\
+67626 31.6231657\
+2 -57.64331055 2\
+6.44042969 C-57.\
+64111607 24.4280\
+9135 -57.6229062\
+7 22.41629489 -5\
+7.60400391 20.40\
+405273 C-57.6020\
+7031 19.13110352\
+ -57.60013672 17\
+.8581543 -57.598\
+14453 16.5466308\
+6 C-57.59403564 \
+15.38446045 -57.\
+58992676 14.2222\
+9004 -57.5856933\
+6 13.02490234 C-\
+57.82362467 10.0\
+5040228 -58.4114\
+8526 8.54392245 \
+-59.82861328 5.9\
+8803711 C-59.828\
+61328 4.99803711\
+ -59.82861328 4.\
+00803711 -59.828\
+61328 2.98803711\
+ C-52.37235238 2\
+.41573045 -44.91\
+587075 1.8463692\
+4 -37.45922852 1\
+.27905273 C-34.9\
+2271839 1.085720\
+68 -32.38625951 \
+0.89171502 -29.8\
+4985352 0.697021\
+48 C-26.20358336\
+ 0.41725286 -22.\
+55713563 0.13990\
+908 -18.91064453\
+ -0.13696289 C-1\
+7.21038872 -0.26\
+820557 -17.21038\
+872 -0.26820557 \
+-15.4757843 -0.4\
+0209961 C-14.415\
+0621 -0.48218262\
+ -13.3543399 -0.\
+56226563 -12.261\
+47461 -0.6447753\
+9 C-11.33103836 \
+-0.71583496 -10.\
+40060211 -0.7868\
+9453 -9.44197083\
+ -0.86010742 C-2\
+.303726 -1.27489\
+242 -2.303726 -1\
+.27489242 0 0 Z \
+\x22 fill=\x22#e6e6e6\x22\
+ transform=\x22tran\
+slate(865.828613\
+28125,650.011962\
+890625)\x22/>\x0a<path\
+ d=\x22M0 0 C1.3023\
+8998 0.40086022 \
+2.60512334 0.800\
+60659 3.90820312\
+ 1.19921875 C7.6\
+7618889 2.357285\
+47 11.43251234 3\
+.55041331 15.187\
+5 4.75 C16.35974\
+121 5.11931641 1\
+7.53198242 5.488\
+63281 18.7397460\
+9 5.86914062 C19\
+.81949707 6.2165\
+4297 20.89924805\
+ 6.56394531 22.0\
+1171875 6.921875\
+ C23.44197388 7.\
+37965332 23.4419\
+7388 7.37965332 \
+24.90112305 7.84\
+667969 C27.1875 \
+8.75 27.1875 8.7\
+5 29.1875 10.75 \
+C29.3828125 13.3\
+515625 29.382812\
+5 13.3515625 29.\
+3125 16.375 C29.\
+29445313 17.3778\
+9062 29.27640625\
+ 18.38078125 29.\
+2578125 19.41406\
+25 C29.23460937 \
+20.18492187 29.2\
+1140625 20.95578\
+125 29.1875 21.7\
+5 C25.34084604 2\
+3.03221799 23.74\
+145042 22.224396\
+89 19.89453125 2\
+1.01953125 C18.9\
+6722198 20.73314\
+789 18.96722198 \
+20.73314789 18.0\
+211792 20.440979\
+ C16.69840396 20\
+.03217238 15.376\
+68344 19.6199402\
+1 14.05593872 19\
+.20462036 C11.98\
+989257 18.559343\
+2 9.91902326 17.\
+93291642 7.84545\
+898 17.31225586 \
+C-3.42938271 13.\
+93127758 -3.4293\
+8271 13.93127758\
+ -8.546875 12.04\
+6875 C-20.711172\
+56 7.99210915 -3\
+1.08191393 11.91\
+241444 -42.8125 \
+15.75 C-45.89726\
+103 16.74552112 \
+-48.98210545 17.\
+740751 -52.06787\
+109 18.7331543 C\
+-53.98596652 19.\
+35745363 -55.899\
+37466 19.9963911\
+6 -57.80712891 2\
+0.65161133 C-58.\
+66870605 20.9406\
+0303 -59.5302832\
+ 21.22959473 -60\
+.41796875 21.527\
+34375 C-61.17231\
+201 21.78765381 \
+-61.92665527 22.\
+04796387 -62.703\
+85742 22.3161621\
+1 C-64.8125 22.7\
+5 -64.8125 22.75\
+ -68.8125 21.75 \
+C-68.8125 18.12 \
+-68.8125 14.49 -\
+68.8125 10.75 C-\
+61.31205539 7.20\
+610061 -53.65393\
+388 4.62229348 -\
+45.75 2.125 C-44\
+.52216797 1.7305\
+4687 -43.2943359\
+4 1.33609375 -42\
+.02929688 0.9296\
+875 C-38.6304345\
+9 -0.15384857 -3\
+5.22551123 -1.21\
+198086 -31.8125 \
+-2.25 C-31.04180\
+176 -2.48686523 \
+-30.27110352 -2.\
+72373047 -29.477\
+05078 -2.9677734\
+4 C-18.90517891 \
+-5.94495488 -10.\
+15819229 -3.2115\
+506 0 0 Z \x22 fill\
+=\x22#e6e6e6\x22 trans\
+form=\x22translate(\
+531.8125,673.25)\
+\x22/>\x0a<path d=\x22M0 \
+0 C2.34326114 0.\
+69559857 4.69187\
+833 1.36983522 7\
+.04223633 2.0410\
+1562 C14.5503582\
+8 4.21219703 21.\
+7467392 6.495988\
+47 28.78637695 9\
+.94726562 C28.78\
+637695 13.907265\
+63 28.78637695 1\
+7.86726562 28.78\
+637695 21.947265\
+62 C24.88308471 \
+23.24836304 22.3\
+5416331 22.13540\
+772 18.59106445 \
+20.92773438 C17.\
+88418488 20.7091\
+0233 17.1773053 \
+20.49047028 16.4\
+4900513 20.26521\
+301 C14.18380451\
+ 19.56328671 11.\
+92249378 18.8497\
+2711 9.66137695 \
+18.13476562 C-8.\
+14742346 12.5502\
+9183 -19.9779473\
+5 9.37040292 -38\
+.33862305 14.697\
+26562 C-39.56838\
+867 15.0453125 -\
+40.7981543 15.39\
+335938 -42.06518\
+555 15.75195312 \
+C-45.78436165 16\
+.80676147 -49.49\
+915023 17.876025\
+23 -53.21362305 \
+18.94726562 C-55\
+.85641825 19.703\
+99553 -58.499850\
+68 20.45848638 -\
+61.14331055 21.2\
+1289062 C-62.891\
+0376 21.71224121\
+ -62.8910376 21.\
+71224121 -64.674\
+07227 22.2216796\
+9 C-65.51212402 \
+22.46112305 -66.\
+35017578 22.7005\
+6641 -67.2136230\
+5 22.94726562 C-\
+69.71425452 20.4\
+4663415 -69.5378\
+2447 19.46914864\
+ -69.58862305 16\
+.00976562 C-69.6\
+1698242 15.13449\
+219 -69.6453418 \
+14.25921875 -69.\
+67456055 13.3574\
+2188 C-69.213623\
+05 10.94726562 -\
+69.21362305 10.9\
+4726562 -67.5815\
+4297 9.43139648 \
+C-64.75049578 7.\
+65699336 -62.063\
+12934 6.7645334 \
+-58.8659668 5.79\
+101562 C-57.6200\
+8789 5.40816406 \
+-56.37420898 5.0\
+253125 -55.09057\
+617 4.63085938 C\
+-53.77743904 4.2\
+3628182 -52.4642\
+8793 3.84175081 \
+-51.15112305 3.4\
+4726562 C-49.865\
+10055 3.05343643\
+ -48.57929103 2.\
+65891107 -47.293\
+70117 2.26367188\
+ C-43.60591987 1\
+.13858605 -39.91\
+057953 0.0417492\
+1 -36.21362305 -\
+1.05273438 C-35.\
+21218262 -1.3659\
+7656 -34.2107421\
+9 -1.67921875 -3\
+3.17895508 -2.00\
+195312 C-21.0847\
+7746 -5.62956775\
+ -11.80418941 -3\
+.50851888 0 0 Z \
+\x22 fill=\x22#e6e6e6\x22\
+ transform=\x22tran\
+slate(532.213623\
+046875,708.05273\
+4375)\x22/>\x0a<path d\
+=\x22M0 0 C1.681289\
+98 0.15049553 1.\
+68128998 0.15049\
+553 3.39654541 0\
+.30403137 C5.202\
+97516 0.4913105 \
+5.20297516 0.491\
+3105 7.04589844 \
+0.68237305 C8.28\
+321716 0.7975981\
+1 9.52053589 0.9\
+1282318 10.79534\
+912 1.03153992 C\
+14.07801052 1.34\
+024291 17.358837\
+98 1.66331594 20\
+.6394043 1.99340\
+82 C23.98989965 \
+2.32695637 27.34\
+216758 2.6415562\
+7 30.69433594 2.\
+95776367 C37.266\
+42206 3.58158912\
+ 43.83644524 4.2\
+2439382 50.40527\
+344 4.8815918 C4\
+9.80033265 7.575\
+03445 49.0659930\
+3 9.5970041 47.8\
+6108398 12.13769\
+531 C46.17651648\
+ 15.98966244 46.\
+01838585 19.6247\
+2059 46.11230469\
+ 23.78393555 C46\
+.11867195 24.867\
+78282 46.1186719\
+5 24.86778282 46\
+.12516785 25.973\
+526 C46.14180926\
+ 28.25577873 46.\
+17943095 30.5371\
+1113 46.21777344\
+ 32.8190918 C46.\
+2328392 34.37702\
+165 46.24652428 \
+35.9349655 46.25\
+878906 37.492919\
+92 C46.29166462 \
+41.28949237 46.3\
+4334254 45.08538\
+667 46.40527344 \
+48.8815918 C35.6\
+2989913 48.30954\
+694 24.96002055 \
+47.25919248 14.2\
+5805664 45.88964\
+844 C12.54579887\
+ 45.67357977 10.\
+83252814 45.4654\
+0993 9.1184082 4\
+5.26464844 C6.60\
+357689 44.970028\
+81 4.09247119 44\
+.6531023 1.58105\
+469 44.33081055 \
+C0.81755203 44.2\
+4522385 0.054049\
+38 44.15963715 -\
+0.73258972 44.07\
+145691 C-4.03558\
+49 43.62349141 -\
+6.33523192 43.06\
+422747 -9.079101\
+56 41.13305664 C\
+-10.9591466 38.3\
+4024489 -11.0715\
+8072 36.7585847 \
+-11.02050781 33.\
+40893555 C-11.01\
+212891 32.343525\
+39 -11.00375 31.\
+27811523 -10.995\
+11719 30.1804199\
+2 C-10.96611328 \
+29.07118164 -10.\
+93710938 27.9619\
+4336 -10.9072265\
+6 26.8190918 C-1\
+0.89755859 25.73\
+692383 -10.88789\
+063 24.65475586 \
+-10.87792969 23.\
+53979492 C-10.83\
+345863 20.316610\
+36 -10.7279509 1\
+7.10225298 -10.5\
+9472656 13.88159\
+18 C-10.56040527\
+ 12.84019043 -10\
+.52608398 11.798\
+78906 -10.490722\
+66 10.72583008 C\
+-10.43609863 9.7\
+4727051 -10.3814\
+7461 8.76871094 \
+-10.32519531 7.7\
+6049805 C-10.281\
+60889 6.89110596\
+ -10.23802246 6.\
+02171387 -10.193\
+11523 5.12597656\
+ C-8.79884432 -0\
+.10353486 -4.775\
+53259 -0.4624952\
+7 0 0 Z \x22 fill=\x22\
+#e6e6e6\x22 transfo\
+rm=\x22translate(17\
+0.5947265625,711\
+.118408203125)\x22/\
+>\x0a<path d=\x22M0 0 \
+C0.70703125 2.32\
+8125 0.70703125 \
+2.328125 0.8125 \
+5.25 C0.85375 6.\
+38824219 0.895 7\
+.52648437 0.9375\
+ 8.69921875 C0.9\
+4652344 9.359702\
+15 0.95554687 10\
+.02018555 0.9648\
+4375 10.70068359\
+ C1.00630698 13.\
+41249412 1.10032\
+466 16.12131414 \
+1.1875 18.832031\
+25 C1.2323843 20\
+.90878712 1.2740\
+3316 22.98561535\
+ 1.3125 25.0625 \
+C1.3575769 26.57\
+98877 1.3575769 \
+26.5798877 1.403\
+56445 28.1279296\
+9 C1.41456177 29\
+.56700684 1.4145\
+6177 29.56700684\
+ 1.42578125 31.0\
+3515625 C1.44036\
+377 31.8950415 1\
+.45494629 32.754\
+92676 1.4699707 \
+33.64086914 C0.7\
+866355 37.071034\
+35 -0.09111701 3\
+8.01127663 -3 40\
+ C-6.44632891 40\
+.92002239 -9.920\
+95787 41.3070973\
+3 -13.4609375 41\
+.703125 C-14.995\
+92392 41.8943997\
+2 -14.99592392 4\
+1.89439972 -16.5\
+6192017 42.08953\
+857 C-19.8312176\
+3 42.49245888 -2\
+3.10284834 42.87\
+103829 -26.375 4\
+3.25 C-28.570496\
+41 43.5193384 -3\
+0.765812 43.7901\
+5517 -32.9609375\
+ 44.0625 C-50.31\
+896671 46.178611\
+4 -50.31896671 4\
+6.1786114 -56 46\
+ C-55.98428955 4\
+4.65421875 -55.9\
+8428955 44.65421\
+875 -55.96826172\
+ 43.28125 C-55.9\
+3396274 39.91908\
+138 -55.90899625\
+ 36.55710156 -55\
+.89013672 33.194\
+82422 C-55.88014\
+414 31.74590094 \
+-55.86654547 30.\
+29699749 -55.849\
+12109 28.8481445\
+3 C-55.73514427 \
+19.11988757 -56.\
+29496877 11.1332\
+4233 -60 2 C-52.\
+26098349 1.20888\
+265 -44.51965291\
+ 0.44461211 -36.\
+77612305 -0.3010\
+2539 C-34.142049\
+16 -0.55786179 -\
+31.50856708 -0.8\
+2084483 -28.8757\
+3242 -1.09008789\
+ C-25.09172008 -\
+1.47597869 -21.3\
+0613177 -1.83973\
+245 -17.51953125\
+ -2.19921875 C-1\
+5.7536541 -2.386\
+49788 -15.753654\
+1 -2.38649788 -1\
+3.95210266 -2.57\
+756042 C-12.3009\
+5711 -2.72805595\
+ -12.30095711 -2\
+.72805595 -10.61\
+645508 -2.881591\
+8 C-9.65048904 -\
+2.97707809 -8.68\
+452301 -3.072564\
+39 -7.68928528 -\
+3.17094421 C-4.3\
+7246123 -2.96011\
+055 -2.63494882 \
+-1.98586826 0 0 \
+Z \x22 fill=\x22#e6e6e\
+6\x22 transform=\x22tr\
+anslate(864,714)\
+\x22/>\x0a<path d=\x22M0 \
+0 C1.19431641 0.\
+34804688 2.38863\
+281 0.69609375 3\
+.61914062 1.0546\
+875 C7.15072099 \
+2.09282217 10.66\
+973233 3.1660800\
+7 14.1875 4.25 C\
+15.31591309 4.58\
+580078 16.444326\
+17 4.92160156 17\
+.60693359 5.2675\
+7812 C19.1994897\
+5 5.76161133 19.\
+19948975 5.76161\
+133 20.82421875 \
+6.265625 C21.763\
+54248 6.55211914\
+ 22.70286621 6.8\
+3861328 23.67065\
+43 7.13378906 C2\
+6.558788 8.41466\
+473 28.17796076 \
+9.82658687 30.18\
+75 12.25 C30.578\
+125 14.828125 30\
+.578125 14.82812\
+5 30.4375 17.5 C\
+30.40140625 18.3\
+9203125 30.36531\
+25 19.2840625 30\
+.328125 20.20312\
+5 C30.28171875 2\
+0.87859375 30.23\
+53125 21.5540625\
+ 30.1875 22.25 C\
+26.09545858 23.9\
+3449466 22.54149\
+351 22.4601181 1\
+8.52734375 21.23\
+046875 C17.78223\
+038 21.0118367 1\
+7.037117 20.7932\
+0465 16.26942444\
+ 20.56794739 C13\
+.88505867 19.867\
+16867 11.5048755\
+5 19.15336618 9.\
+125 18.4375 C3.1\
+6011747 16.65533\
+567 -2.81292465 \
+14.91190802 -8.8\
+125 13.25 C-9.83\
+883545 12.960041\
+5 -10.8651709 12\
+.67008301 -11.92\
+260742 12.371337\
+89 C-19.49454289\
+ 10.57622843 -25\
+.63573031 12.160\
+72214 -33 14.312\
+5 C-34.18021729 \
+14.63742432 -35.\
+36043457 14.9623\
+4863 -36.5764160\
+2 15.29711914 C-\
+44.40038418 17.4\
+7458216 -52.1715\
+0228 19.81920141\
+ -59.87109375 22\
+.40234375 C-62.8\
+125 23.25 -62.81\
+25 23.25 -66.812\
+5 23.25 C-66.974\
+9969 21.33614764\
+ -67.09112512 19\
+.41831905 -67.18\
+75 17.5 C-67.257\
+10938 16.4326562\
+5 -67.32671875 1\
+5.3653125 -67.39\
+84375 14.265625 \
+C-66.8125 11.25 \
+-66.8125 11.25 -\
+64.25268555 9.22\
+045898 C-60.6559\
+1811 7.1603135 -\
+57.13808037 5.84\
+887094 -53.18359\
+375 4.70703125 C\
+-52.47147232 4.4\
+9310226 -51.7593\
+5089 4.27917328 \
+-51.02565002 4.0\
+587616 C-48.7697\
+8829 3.38389047 \
+-46.51002045 2.7\
+2329222 -44.25 2\
+.0625 C-42.72955\
+653 1.60829526 -\
+41.2093714 1.153\
+22476 -39.689453\
+12 0.69726562 C-\
+38.22939494 0.26\
+225394 -36.76911\
+563 -0.17201641 \
+-35.30859375 -0.\
+60546875 C-34.29\
+278481 -0.907011\
+18 -34.29278481 \
+-0.90701118 -33.\
+25645447 -1.2146\
+4539 C-20.957454\
+72 -4.80722836 -\
+12.15627772 -3.6\
+6442578 0 0 Z \x22 \
+fill=\x22#e6e6e6\x22 t\
+ransform=\x22transl\
+ate(530.8125,743\
+.75)\x22/>\x0a<path d=\
+\x22M0 0 C0.9659106\
+4 0.11158447 1.9\
+3182129 0.223168\
+95 2.92700195 0.\
+33813477 C4.0876\
+416 0.46559082 5\
+.24828125 0.5930\
+4688 6.4440918 0\
+.72436523 C7.851\
+46486 0.907057 9\
+.25850285 1.0923\
+3987 10.6652832 \
+1.27954102 C11.9\
+0281342 1.437038\
+27 11.90281342 1\
+.43703827 13.165\
+34424 1.59771729\
+ C19.94332647 2.\
+46192658 26.7106\
+8669 3.39694624 \
+33.4777832 4.342\
+04102 C35.538280\
+96 4.62690171 37\
+.59882752 4.9114\
+0971 39.65942383\
+ 5.19555664 C44.\
+66194859 5.88615\
+436 49.66378943 \
+6.58151739 54.66\
+52832 7.27954102\
+ C54.6652832 11.\
+17374282 53.9209\
+2594 12.93974493\
+ 52.36431885 16.\
+38101196 C51.203\
+95175 19.5324830\
+8 51.20473904 22\
+.72638189 51.188\
+7207 26.04125977\
+ C51.16535141 27\
+.110877 51.16535\
+141 27.110877 51\
+.14151001 28.202\
+10266 C51.094403\
+74 30.45707217 5\
+1.06636443 32.71\
+173918 51.040283\
+2 34.96704102 C5\
+1.00366422 37.23\
+284031 50.962975\
+41 39.49847296 5\
+0.91763306 41.76\
+411438 C50.87823\
+302 43.81168236 \
+50.85030659 45.8\
+5946162 50.82299\
+805 47.90722656 \
+C50.69804767 50.\
+57895955 50.4650\
+4236 52.74991162\
+ 49.6652832 55.2\
+7954102 C38.9457\
+295 54.03957764 \
+28.43951388 52.1\
+8989751 17.89038\
+086 49.93041992 \
+C15.3795595 49.3\
+9695087 12.86456\
+832 48.88714127 \
+10.34887695 48.3\
+7719727 C8.74049\
+962 48.03618194 \
+7.13241414 47.69\
+378656 5.5246582\
+ 47.34985352 C4.\
+77786804 47.2017\
+8253 4.03107788 \
+47.05371155 3.26\
+165771 46.901153\
+56 C0.31680981 4\
+6.24843308 -1.94\
+698503 45.596601\
+03 -4.30102539 4\
+3.67163086 C-5.8\
+2649079 40.14151\
+512 -5.76271731 \
+36.71416997 -5.7\
+331543 32.935791\
+02 C-5.73602448 \
+32.12968384 -5.7\
+3889465 31.32357\
+666 -5.74185181 \
+30.49304199 C-5.\
+74388971 28.7918\
+2226 -5.73837894\
+ 27.09057896 -5.\
+72583008 25.3894\
+043 C-5.70977178\
+ 22.78844711 -5.\
+72568722 20.1890\
+4374 -5.74487305\
+ 17.58813477 C-5\
+.74289057 15.933\
+18343 -5.7390467\
+9 14.27823305 -5\
+.7331543 12.6232\
+9102 C-5.7392269\
+9 11.84715454 -5\
+.74529968 11.071\
+01807 -5.7515564\
+ 10.2713623 C-5.\
+7103772 7.103151\
+72 -5.50372179 4\
+.63635233 -4.138\
+67188 1.75439453\
+ C-2.3347168 0.2\
+7954102 -2.33471\
+68 0.27954102 0 \
+0 Z \x22 fill=\x22#e6e\
+6e6\x22 transform=\x22\
+translate(165.33\
+4716796875,773.7\
+20458984375)\x22/>\x0a\
+<path d=\x22M0 0 C1\
+.63644974 3.5815\
+3273 1.60030931 \
+7.00100892 1.585\
+69336 10.8652343\
+8 C1.59093521 11\
+.67134155 1.5961\
+7706 12.47744873\
+ 1.60157776 13.3\
+079834 C1.607989\
+89 15.00918426 1\
+.6066714 16.7104\
+2951 1.59814453 \
+18.41162109 C1.5\
+8962789 21.01284\
+712 1.61841486 2\
+3.61188111 1.650\
+14648 26.2128906\
+2 C1.6517585 27.\
+86783788 1.65118\
+096 29.52278903 \
+1.64819336 31.17\
+773438 C1.665044\
+33 32.34193909 1\
+.66504433 32.341\
+93909 1.68223572\
+ 33.52966309 C1.\
+63677361 37.0555\
+5106 1.45692057 \
+39.11313472 -0.6\
+809082 41.977050\
+78 C-3.61959292 \
+44.07147614 -6.5\
+5612716 44.72833\
+826 -10.03540039\
+ 45.39648438 C-1\
+1.14999634 45.62\
+694458 -11.14999\
+634 45.62694458 \
+-12.28710938 45.\
+86206055 C-15.13\
+655061 46.438610\
+91 -17.99134654 \
+46.98122868 -20.\
+84790039 47.5214\
+8438 C-22.200461\
+82 47.78031933 -\
+23.55299933 48.0\
+3927931 -24.9055\
+1758 48.29833984\
+ C-29.40462551 4\
+9.15723678 -33.9\
+0698796 49.99799\
+086 -38.41040039\
+ 50.83398438 C-3\
+9.54063126 51.04\
+556183 -39.54063\
+126 51.04556183 \
+-40.69369507 51.\
+26141357 C-42.84\
+947037 51.662983\
+3 -45.0065651 52\
+.05641652 -47.16\
+430664 52.447265\
+62 C-48.42702393\
+ 52.67841064 -49\
+.68974121 52.909\
+55566 -50.990722\
+66 53.14770508 C\
+-51.93359131 53.\
+27105225 -52.876\
+45996 53.3943994\
+1 -53.84790039 5\
+3.52148438 C-55.\
+78231752 51.5870\
+6724 -55.0316757\
+6 47.94521609 -5\
+5.05883789 45.30\
+273438 C-55.0869\
+432 43.79751585 \
+-55.11560783 42.\
+29230769 -55.144\
+77539 40.7871093\
+8 C-55.18576839 \
+38.41537169 -55.\
+22264974 36.0438\
+1978 -55.2492675\
+8 33.671875 C-55\
+.29726352 19.435\
+21727 -55.297263\
+52 19.43521727 -\
+60.84790039 6.52\
+148438 C-59.2293\
+0751 4.90289149 \
+-57.28929007 5.0\
+6726724 -55.0561\
+5234 4.76538086 \
+C-54.03451492 4.\
+62531113 -53.012\
+8775 4.48524139 \
+-51.96028137 4.3\
+4092712 C-50.846\
+82846 4.19297195\
+ -49.73337555 4.\
+04501678 -48.586\
+18164 3.89257812\
+ C-47.44763229 3\
+.73862076 -46.30\
+908295 3.5846633\
+9 -45.1360321 3.\
+42604065 C-42.71\
+938568 3.1003859\
+3 -40.30244916 2\
+.77687797 -37.88\
+525391 2.4553222\
+7 C-34.19291374 \
+1.96331679 -30.5\
+0182541 1.462633\
+89 -26.81079102 \
+0.9609375 C-24.4\
+6515838 0.645958\
+99 -22.11945733 \
+0.33148946 -19.7\
+7368164 0.017578\
+12 C-18.67034988\
+ -0.13240128 -17\
+.56701813 -0.282\
+38068 -16.430252\
+08 -0.43690491 C\
+-15.39285385 -0.\
+57382248 -14.355\
+45563 -0.7107400\
+5 -13.28662109 -\
+0.85180664 C-12.\
+37918655 -0.9731\
+4468 -11.4717520\
+1 -1.09448273 -1\
+0.53681946 -1.21\
+949768 C-2.49264\
+133 -1.99437652 \
+-2.49264133 -1.9\
+9437652 0 0 Z \x22 \
+fill=\x22#e6e6e6\x22 t\
+ransform=\x22transl\
+ate(863.84790039\
+0625,775.4785156\
+25)\x22/>\x0a<path d=\x22\
+M0 0 C1.96356445\
+ -0.00505302 1.9\
+6356445 -0.00505\
+302 3.96679688 -\
+0.01020813 C6.73\
+092268 -0.014528\
+63 9.49387736 0.\
+002211 12.257812\
+5 0.03442383 C15\
+.78891628 0.0742\
+0776 19.31782556\
+ 0.06489891 22.8\
+4899902 0.040188\
+79 C26.23287383 \
+0.02254126 29.61\
+612655 0.0440035\
+5 33 0.0625 C34.\
+26263672 0.05551\
+59 35.52527344 0\
+.0485318 36.8261\
+7188 0.04133606 \
+C46.59397897 0.1\
+9832938 46.59397\
+897 0.19832938 5\
+0.26831055 2.760\
+98633 C53.217129\
+47 6.72597193 53\
+.51684996 9.6325\
+8959 53.70703125\
+ 14.47265625 C53\
+.76275803 15.317\
+84821 53.8184848\
+ 16.16304016 53.\
+87590027 17.0338\
+4399 C54.0478812\
+4 19.73396231 54\
+.1808839 22.4343\
+6259 54.3125 25.\
+13671875 C54.418\
+63152 26.9142191\
+9 54.52733233 28\
+.69156818 54.638\
+67188 30.46875 C\
+54.8524497 33.94\
+325792 55.050567\
+48 37.41805425 5\
+5.23413086 40.89\
+428711 C55.46535\
+599 45.23783762 \
+55.75109618 49.5\
+7497472 56.05468\
+75 53.9140625 C5\
+6.43818211 59.59\
+426258 56.740316\
+64 65.25635759 5\
+6.8125 70.949218\
+75 C56.85600586 \
+72.15674805 56.8\
+5600586 72.15674\
+805 56.90039062 \
+73.38867188 C56.\
+90876953 74.1653\
+3203 56.91714844\
+ 74.94199219 56.\
+92578125 75.7421\
+875 C56.94036377\
+ 76.42176514 56.\
+95494629 77.1013\
+4277 56.9699707 \
+77.80151367 C56.\
+25752601 80.7730\
+5572 54.87556907\
+ 81.87320448 52.\
+5 83.76171875 C4\
+9.35046387 84.26\
+965332 49.350463\
+87 84.26965332 4\
+5.59179688 84.27\
+929688 C44.90513\
+443 84.28630615 \
+44.21847198 84.2\
+9331543 43.51100\
+159 84.30053711 \
+C41.24650349 84.\
+31810888 38.9832\
+6028 84.3064987 \
+36.71875 84.2929\
+6875 C35.1422094\
+8 84.29566394 33\
+.56567058 84.299\
+54658 31.9891357\
+4 84.30456543 C2\
+8.68709466 84.31\
+045931 25.385486\
+77 84.30190153 2\
+2.08349609 84.28\
+320312 C17.85298\
+94 84.26041306 1\
+3.62349772 84.27\
+353682 9.3930282\
+6 84.29749298 C6\
+.13816697 84.311\
+95426 2.88354593\
+ 84.30734358 -0.\
+37132263 84.2969\
+8181 C-1.9310264\
+1 84.29431541 -3\
+.49075208 84.297\
+58129 -5.0504303\
+ 84.30690002 C-7\
+.23147262 84.317\
+07177 -9.4108764\
+7 84.30155916 -1\
+1.59179688 84.27\
+929688 C-12.8321\
+5698 84.2761145 \
+-14.07251709 84.\
+27293213 -15.350\
+46387 84.2696533\
+2 C-18.5 83.7617\
+1875 -18.5 83.76\
+171875 -20.90487\
+671 81.99633789 \
+C-22.67014786 79\
+.52335744 -22.98\
+653031 78.482581\
+9 -22.93017578 7\
+5.49023438 C-22.\
+923237 74.647388\
+92 -22.91629822 \
+73.80454346 -22.\
+90914917 72.9361\
+5723 C-22.879833\
+07 72.02265503 -\
+22.85051697 71.1\
+0915283 -22.8203\
+125 70.16796875 \
+C-22.80380646 69\
+.20322632 -22.78\
+730042 68.238483\
+89 -22.77029419 \
+67.24450684 C-22\
+.70594727 64.082\
+33333 -22.606755\
+53 60.92272979 -\
+22.5 57.76171875\
+ C-22.46773315 5\
+6.69566406 -22.4\
+3546631 55.62960\
+937 -22.40222168\
+ 54.53125 C-22.1\
+9340359 47.89685\
+791 -21.90143298\
+ 41.27029234 -21\
+.54785156 34.642\
+08984 C-21.43118\
+259 32.36045336 \
+-21.32698368 30.\
+07814981 -21.234\
+375 27.79541016 \
+C-21.09760908 24\
+.43847156 -20.92\
+411639 21.085226\
+15 -20.7421875 1\
+7.73046875 C-20.\
+70753387 16.7148\
+8892 -20.6728802\
+5 15.69930908 -2\
+0.63717651 14.65\
+29541 C-20.36378\
+529 10.29772422 \
+-20.012691 6.636\
+82949 -17.266113\
+28 3.1237793 C-1\
+2.42380583 -0.88\
+992015 -5.949191\
+87 -0.07200659 0\
+ 0 Z \x22 fill=\x22#e6\
+e6e6\x22 transform=\
+\x22translate(495.5\
+,833.23828125)\x22/\
+>\x0a<path d=\x22M0 0 \
+C0.69320343 -0.0\
+0671722 1.386406\
+86 -0.01343445 2\
+.10061646 -0.020\
+35522 C4.3876262\
+2 -0.03932144 6.\
+6743423 -0.04325\
+87 8.96142578 -0\
+.04541016 C10.55\
+559407 -0.051839\
+15 12.14976118 -\
+0.05856759 13.74\
+3927 -0.06558228\
+ C17.08452082 -0\
+.07755165 20.425\
+01125 -0.0812634\
+6 23.765625 -0.0\
+8007812 C28.0384\
+5629 -0.07987498\
+ 32.31062216 -0.\
+10717383 36.5832\
+9582 -0.14162254\
+ C39.8759361 -0.\
+16390125 43.1684\
+1649 -0.16791537\
+ 46.46112442 -0.\
+16685867 C48.035\
+94378 -0.1692133\
+ 49.61076764 -0.\
+1780291 51.18551\
+254 -0.19352341 \
+C53.39237303 -0.\
+21320387 55.5978\
+021 -0.20733886 \
+57.8046875 -0.19\
+53125 C59.058371\
+28 -0.19816254 6\
+0.31205505 -0.20\
+101257 61.603729\
+25 -0.20394897 C\
+65.68087944 0.38\
+416331 67.851145\
+84 1.7173811 71.\
+03173828 4.29052\
+734 C72.14428711\
+ 6.66235352 72.1\
+4428711 6.662353\
+52 72.67626953 9\
+.39599609 C72.89\
+621582 10.457377\
+93 73.11616211 1\
+1.51875977 73.34\
+277344 12.612304\
+69 C73.57013184 \
+13.82611816 73.7\
+9749023 15.03993\
+164 74.03173828 \
+16.29052734 C74.\
+32228829 17.7034\
+0041 74.61589683\
+ 19.11564699 74.\
+91210938 20.5273\
+4375 C75.7204943\
+5 24.4100851 76.\
+49178439 28.2990\
+7879 77.2487793 \
+32.19213867 C77.\
+72209416 34.6176\
+6244 78.20584874\
+ 37.04096269 78.\
+68994141 39.4643\
+5547 C78.9959168\
+5 41.02738197 79\
+.30127744 42.590\
+52898 79.6059570\
+3 44.15380859 C7\
+9.82151497 45.22\
+43322 79.8215149\
+7 45.2243322 80.\
+04142761 46.3164\
+8254 C80.8803989\
+1 50.69895722 81\
+.3606018 54.8324\
+851 81.03173828 \
+59.29052734 C78.\
+580796 62.271403\
+09 76.2364583 64\
+.15404733 73.031\
+73828 66.2905273\
+4 C70.17014988 6\
+6.50599274 67.40\
+397263 66.604983\
+76 64.54052734 6\
+6.61279297 C63.6\
+7351196 66.62272\
+278 62.80649658 \
+66.63265259 61.9\
+1320801 66.64288\
+33 C59.04122758 \
+66.67212256 56.1\
+6946819 66.68573\
+059 53.29736328 \
+66.69677734 C51.\
+30059808 66.7082\
+8206 49.30383295\
+ 66.71979751 47.\
+30706787 66.7313\
+2324 C43.1172991\
+ 66.75234306 38.\
+92760706 66.7640\
+2797 34.73779297\
+ 66.77099609 C29\
+.37636617 66.781\
+95601 24.0159577\
+5 66.82998784 18\
+.65485001 66.886\
+94 C14.52835154 \
+66.92424523 10.4\
+0209687 66.93460\
+672 6.27544403 6\
+6.93766785 C4.29\
+950146 66.943711\
+96 2.32356274 66\
+.95973929 0.3477\
+8595 66.98603821\
+ C-2.42208011 67\
+.02027007 -5.189\
+47912 67.0163761\
+8 -7.95947266 67\
+.00341797 C-9.17\
+700226 67.031062\
+32 -9.17700226 6\
+7.03106232 -10.4\
+1912842 67.05926\
+514 C-15.8493787\
+ 66.97994849 -18\
+.66587596 65.568\
+49158 -22.650277\
+14 61.89186668 C\
+-24.97301231 59.\
+06976447 -25.024\
+6889 56.89118548\
+ -24.96826172 53\
+.29052734 C-24.5\
+1491287 49.71811\
+807 -23.79735032\
+ 46.23475288 -23\
+.01904297 42.720\
+21484 C-22.80515\
+427 41.72095978 \
+-22.59126556 40.\
+72170471 -22.370\
+89539 39.6921691\
+9 C-21.91690307 \
+37.58807578 -21.\
+45680368 35.4852\
+9188 -20.9909668\
+ 33.38378906 C-2\
+0.282402 30.1729\
+6018 -19.6017436\
+4 26.95706566 -1\
+8.92333984 23.73\
+974609 C-18.4777\
+4494 21.69120488\
+ -18.03053368 19\
+.64301445 -17.58\
+154297 17.595214\
+84 C-17.38031326\
+ 16.6367868 -17.\
+17908356 15.6783\
+5876 -16.9717559\
+8 14.69088745 C-\
+15.68767503 9.01\
+439722 -14.41315\
+812 4.53777199 -\
+9.27336121 1.184\
+87549 C-6.115465\
+28 -0.04034641 -\
+3.38561122 0.020\
+61392 0 0 Z \x22 fi\
+ll=\x22#e6e6e6\x22 tra\
+nsform=\x22translat\
+e(483.9682617187\
+5,925.7094726562\
+5)\x22/>\x0a</svg>\x0a\
 \x00\x00\x07{\
 <\
 ?xml version=\x221.\
@@ -47452,6 +61655,8091 @@ A21.589333 21.58\
  fill=\x22#515151\x22 \
 p-id=\x2223078\x22></p\
 ath></svg>\
+\x00\x01\xf9.\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<svg versi\
+on=\x221.1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 widt\
+h=\x221024\x22 height=\
+\x221024\x22>\x0a<path d=\
+\x22M0 0 C5.0414100\
+3 -0.64831952 8.\
+32447447 1.62109\
+603 12.4375 4.18\
+75 C13.96458175 \
+5.11371336 15.49\
+193912 6.0394723\
+9 17.01953125 6.\
+96484375 C17.828\
+5791 7.45968262 \
+18.63762695 7.95\
+452148 19.471191\
+41 8.46435547 C2\
+2.92171153 10.55\
+971863 26.403638\
+24 12.59978715 2\
+9.88574219 14.64\
+208984 C48.80591\
+536 25.74799542 \
+67.49625113 37.2\
+1478605 86 49 C8\
+7.76555247 50.12\
+250992 89.531179\
+89 51.24490196 9\
+1.296875 52.3671\
+875 C95.93769944\
+ 55.31795769 100\
+.57647193 58.271\
+939 105.21484375\
+ 61.2265625 C107\
+.94457316 62.964\
+70718 110.675231\
+85 64.70138106 1\
+13.40625 66.4375\
+ C130.87296441 7\
+7.5421975 148.33\
+293042 88.658260\
+89 165.6940918 9\
+9.92749023 C171.\
+31528534 103.570\
+54321 176.968781\
+04 107.1616407 1\
+82.625 110.75 C1\
+93.27382648 117.\
+50916326 203.837\
+21417 124.395224\
+11 214.39306641 \
+131.29833984 C21\
+8.08807327 133.7\
+1023325 221.7930\
+3389 136.1065434\
+7 225.5 138.5 C2\
+32.17928643 142.\
+81406093 238.841\
+58647 147.153799\
+77 245.5 151.5 C\
+252.90225349 156\
+.33153057 260.31\
+125779 161.15209\
+616 267.73632812\
+ 165.94848633 C2\
+71.36620353 168.\
+2938581 274.9925\
+1061 170.6444974\
+1 278.61328125 1\
+73.00390625 C286\
+.699162 178.2720\
+7921 294.7985510\
+7 183.51560987 3\
+02.93945312 188.\
+69848633 C313.44\
+342581 195.38828\
+194 323.85195692\
+ 202.20020718 33\
+4.19400024 209.1\
+3607788 C343.523\
+67874 215.390023\
+4 352.94292435 2\
+21.48561122 362.\
+41870117 227.516\
+8457 C368.505627\
+27 231.39380344 \
+374.54958569 235\
+.32163978 380.53\
+857422 239.34790\
+039 C385.6191979\
+5 242.75995084 3\
+90.74230107 246.\
+10437687 395.875\
+ 249.4375 C397.1\
+3630737 250.2575\
+8545 397.1363073\
+7 250.25758545 3\
+98.4230957 251.0\
+9423828 C402.575\
+99592 253.790926\
+73 406.73682638 \
+256.47396056 410\
+.9140625 259.132\
+8125 C411.687661\
+13 259.62724854 \
+412.46125977 260\
+.12168457 413.25\
+830078 260.63110\
+352 C414.7096297\
+3 261.55782336 4\
+16.16357575 262.\
+48046258 417.620\
+60547 263.398193\
+36 C421.14361005\
+ 265.65139933 42\
+4.16908845 267.8\
+7299822 427 271 \
+C423.06026438 27\
+0.36858018 419.8\
+1120334 269.1538\
+8836 416.1953125\
+ 267.48046875 C4\
+14.50124268 266.\
+69796753 414.501\
+24268 266.697967\
+53 412.77294922 \
+265.8996582 C411\
+.55667906 265.32\
+955088 410.34070\
+271 264.75881637\
+ 409.125 264.187\
+5 C408.50562561 \
+263.89821625 407\
+.88625122 263.60\
+89325 407.248107\
+91 263.31088257 \
+C394.97140046 25\
+7.57124872 382.9\
+2904017 251.4319\
+8777 371 245 C37\
+0.24702637 244.5\
+978125 369.49405\
+273 244.195625 3\
+68.71826172 243.\
+78125 C353.79520\
+523 235.7916959 \
+339.42012217 226\
+.85293919 325 21\
+8 C323.87932129 \
+217.31301025 322\
+.75864258 216.62\
+602051 321.60400\
+391 215.91821289\
+ C290.08491555 1\
+96.56782807 259.\
+34751443 176.013\
+63155 228.776611\
+33 155.20892334 \
+C227.17633501 15\
+4.11998995 225.5\
+7550629 153.0318\
+6846 223.9746093\
+8 151.94384766 C\
+214.02849533 145\
+.18159115 204.14\
+623405 138.33318\
+502 194.31689453\
+ 131.40209961 C1\
+93.52009277 130.\
+84143799 192.723\
+29102 130.280776\
+37 191.90234375 \
+129.703125 C191.\
+19585693 129.204\
+58008 190.489370\
+12 128.70603516 \
+189.76147461 128\
+.19238281 C188.0\
+084717 126.94963\
+417 188.0084717 \
+126.94963417 186\
+ 126 C203.895551\
+27 139.81512183 \
+203.89555127 139\
+.81512183 221.93\
+75 153.4375 C227\
+.68983927 157.73\
+603768 233.35100\
+36 162.14763088 \
+239.01318359 166\
+.56396484 C246.9\
+67164 172.764050\
+22 254.9801245 1\
+78.88554272 263 \
+185 C272.5518323\
+5 192.28244109 2\
+82.07616245 199.\
+59719021 291.550\
+53711 206.980224\
+61 C295.85597224\
+ 210.33482351 30\
+0.1703969 213.67\
+664888 304.5 217\
+ C310.46408111 2\
+21.57848651 316.\
+39836744 226.194\
+62108 322.330078\
+12 230.81494141 \
+C326.87368743 23\
+4.35218959 331.4\
+2940505 237.8727\
+1279 336 241.375\
+ C340.52341511 2\
+44.8467211 344.9\
+8912413 248.3803\
+0738 349.4296875\
+ 251.95703125 C3\
+52.30009194 254.\
+23852292 355.209\
+82717 256.463516\
+8 358.125 258.68\
+75 C363.86468119\
+ 263.0710274 369\
+.4668892 267.610\
+53091 375.057128\
+91 272.18237305 \
+C379.15507388 27\
+5.52527829 383.2\
+9429289 278.7936\
+6884 387.5 282 C\
+392.41055041 285\
+.74368695 397.22\
+007189 289.59116\
+172 402 293.5 C4\
+06.97318639 297.\
+56382756 411.973\
+36725 301.582075\
+12 417.0625 305.\
+5 C418.09890625 \
+306.30179687 419\
+.1353125 307.103\
+59375 420.203125\
+ 307.9296875 C42\
+2.52116149 309.6\
+455525 424.84903\
+615 311.13706784\
+ 427.3125 312.62\
+5 C430 315 430 3\
+15 430.28662109 \
+318.29736328 C43\
+0.07110923 324.4\
+5482037 429.0339\
+6591 330.5362421\
+3 428.1015625 33\
+6.6171875 C427.9\
+0654144 337.9106\
+9122 427.7115203\
+9 339.20419495 4\
+27.5105896 340.5\
+3689575 C427.099\
+28014 343.258947\
+85 426.68348639 \
+345.98026842 426\
+.26464844 348.70\
+117188 C425.7281\
+1697 352.1901096\
+9 425.20463636 3\
+55.68086699 424.\
+68462563 359.172\
+30034 C424.18546\
+134 362.50927783\
+ 423.67412622 36\
+5.84435856 423.1\
+640625 369.17968\
+75 C422.97752106\
+ 370.43482147 42\
+2.79097961 371.6\
+8995544 422.5987\
+854 372.98312378\
+ C422.41874969 3\
+74.13837555 422.\
+23871399 375.293\
+62732 422.053222\
+66 376.48388672 \
+C421.89777985 37\
+7.50344452 421.7\
+4233704 378.5230\
+0232 421.5821838\
+4 379.57345581 C\
+421 382 421 382 \
+419 384 C418.587\
+5 383.61255615 4\
+18.175 383.22511\
+23 417.75 382.82\
+592773 C414.4420\
+668 379.72150996\
+ 411.1303815 376\
+.62112819 407.81\
+25 373.52734375 \
+C407.17957031 37\
+2.93687256 406.5\
+4664063 372.3464\
+0137 405.8945312\
+5 371.73803711 C\
+403.37661488 369\
+.42810842 400.80\
+112028 367.18917\
+334 398.2109375 \
+364.9609375 C394\
+.27926613 361.47\
+383674 390.46981\
+435 357.85390504\
+ 386.63549805 35\
+4.26049805 C382.\
+28540665 350.187\
+87604 377.891378\
+41 346.171464 37\
+3.44921875 342.1\
+9921875 C370.657\
+70517 339.692644\
+35 367.88892475 \
+337.16188649 365\
+.125 334.625 C36\
+4.37271118 333.9\
+3458618 364.3727\
+1118 333.9345861\
+8 363.60522461 3\
+33.23022461 C361\
+.55596319 331.34\
+87045 359.507491\
+24 329.46632592 \
+357.45898438 327\
+.58398438 C355.9\
+3135839 326.1805\
+8719 354.4033320\
+3 324.77762825 3\
+52.875 323.375 C\
+352.12174438 322\
+.68361938 352.12\
+174438 322.68361\
+938 351.35327148\
+ 321.97827148 C3\
+48.31585459 319.\
+19434399 345.258\
+82365 316.433923\
+3 342.1875 313.6\
+875 C337.2877350\
+1 309.29108165 3\
+32.48146229 304.\
+79832822 327.675\
+29297 300.300292\
+97 C321.82171231\
+ 294.82445788 31\
+5.91762744 289.4\
+0652331 310 284 \
+C307.99926337 28\
+2.1674698 305.99\
+963714 280.33372\
+979 304 278.5 C3\
+03.00002026 277.\
+58331123 302.000\
+02028 276.666644\
+54 301 275.75 C2\
+99 273.91666667 \
+297 272.08333333\
+ 295 270.25 C294\
+.25762085 269.56\
+949585 294.25762\
+085 269.56949585\
+ 293.50024414 26\
+8.87524414 C292.\
+49940332 267.957\
+79315 291.498589\
+55 267.04031264 \
+290.49780273 266\
+.12280273 C288.0\
+1088739 263.8428\
+9449 285.5235168\
+5 261.56348707 2\
+83.03515625 259.\
+28515625 C277.80\
+36419 254.494045\
+6 272.5826826 24\
+9.69201102 267.3\
+75 244.875 C263.\
+64987568 241.429\
+65618 259.907898\
+75 238.00706179 \
+256.125 234.625 \
+C251.8177798 230\
+.76820806 247.59\
+321072 226.82840\
+887 243.375 222.\
+875 C239.0049338\
+2 218.78034912 2\
+34.61758 214.730\
+88217 230.074218\
+75 210.828125 C2\
+27.80284897 208.\
+82623977 225.591\
+27925 206.767944\
+11 223.37792969 \
+204.70239258 C21\
+7.88856911 199.5\
+800993 212.28299\
+8 194.72395281 2\
+06.42578125 190.\
+01953125 C203.66\
+127397 187.71800\
+104 201.16317926\
+ 185.25390084 19\
+8.6640625 182.67\
+1875 C196.271287\
+64 180.26786645 \
+193.71215283 178\
+.07742529 191.14\
+453125 175.86328\
+125 C188.8587029\
+6 173.87723372 1\
+86.61642587 171.\
+8484924 184.375 \
+169.8125 C180.39\
+455193 166.21548\
+959 176.33946869\
+ 162.72118804 17\
+2.25 159.25 C166\
+.64015621 154.48\
+08643 161.211451\
+15 149.54661326 \
+155.83789062 144\
+.51367188 C152.2\
+578649 141.16120\
+737 148.63498367\
+ 137.87720813 14\
+4.921875 134.671\
+875 C142.5889492\
+6 132.64241927 1\
+40.29488755 130.\
+572353 138 128.5\
+ C132.66437363 1\
+23.68985199 127.\
+28413119 118.940\
+19763 121.8125 1\
+14.28515625 C116\
+.05735347 109.38\
+425795 110.35089\
+524 104.45821729\
+ 104.8125 99.312\
+5 C101.16586624 \
+95.92475627 97.4\
+4382599 92.68102\
+204 93.5625 89.5\
+625 C88.14091657\
+ 85.19859541 83.\
+07157883 80.5157\
+847 77.984375 75\
+.7734375 C73.366\
+46239 71.4689448\
+6 68.59238393 67\
+.35687595 63.789\
+0625 63.26171875\
+ C57.24344569 57\
+.67681067 50.779\
+60493 52.0344603\
+9 44.43359375 46\
+.22265625 C39.96\
+2935 42.13950243\
+ 35.38858111 38.\
+18157621 30.7812\
+5 34.25390625 C2\
+9.58321624 33.23\
+190808 28.385303\
+09 32.20976851 2\
+7.1875 31.1875 C\
+26.58292969 30.6\
+7179443 25.97835\
+938 30.15608887 \
+25.35546875 29.6\
+2475586 C20.6546\
+8138 25.59901464\
+ 16.08642369 21.\
+45400617 11.5546\
+875 17.23828125 \
+C9.07955626 15.0\
+6970296 6.518087\
+24 13.24193948 3\
+.8125 11.375 C0.\
+16471746 8.65538\
+988 0.16471746 8\
+.65538988 -0.554\
+6875 5.79296875 \
+C-0.5625 3.5625 \
+-0.5625 3.5625 0\
+ 0 Z M175 118 C1\
+75.33 118.66 175\
+.66 119.32 176 1\
+20 C176.66 119.6\
+7 177.32 119.34 \
+178 119 C177.01 \
+118.67 176.02 11\
+8.34 175 118 Z M\
+179 121 C179.33 \
+121.66 179.66 12\
+2.32 180 123 C18\
+0.66 122.67 181.\
+32 122.34 182 12\
+2 C181.01 121.67\
+ 180.02 121.34 1\
+79 121 Z \x22 fill=\
+\x22#515151\x22 transf\
+orm=\x22translate(0\
+,60)\x22/>\x0a<path d=\
+\x22M0 0 C0.7148762\
+4 6.90302369 0.7\
+1487624 6.903023\
+69 -1.08984375 9\
+.67236328 C-2.65\
+3018 11.25160464\
+ -4.27479888 12.\
+66214531 -6 14.0\
+625 C-6.60013916\
+ 14.58070312 -7.\
+20027832 15.0989\
+0625 -7.81860352\
+ 15.6328125 C-9.\
+00649831 16.6555\
+3945 -10.2023596\
+4 17.66910033 -1\
+1.40673828 18.67\
+236328 C-13.2882\
+9381 20.24023012\
+ -15.11259714 21\
+.86677184 -16.93\
+75 23.5 C-19.350\
+82555 25.5925670\
+9 -21.78024563 2\
+7.66595163 -24.2\
+109375 29.738281\
+25 C-30.75655431\
+ 35.32318933 -37\
+.22039507 40.965\
+53961 -43.566406\
+25 46.77734375 C\
+-48.02489278 50.\
+8493804 -52.5849\
+7728 54.79842118\
+ -57.18359375 58\
+.7109375 C-62.93\
+971645 63.613499\
+82 -68.64776645 \
+68.54053928 -74.\
+1875 73.6875 C-7\
+7.83413376 77.07\
+524373 -81.55617\
+401 80.31897796 \
+-85.4375 83.4375\
+ C-90.21701922 8\
+7.28174639 -94.6\
+9320344 91.37089\
+045 -99.16601562\
+ 95.56054688 C-1\
+02.49137277 98.6\
+5765465 -105.887\
+10807 101.596143\
+76 -109.4375 104\
+.4375 C-115.1457\
+7779 109.0191440\
+2 -120.44296038 \
+113.98802436 -12\
+5.77734375 118.9\
+921875 C-128.817\
+94331 121.842255\
+7 -131.92348424 \
+124.60488811 -13\
+5.078125 127.328\
+125 C-137.411050\
+74 129.35758073 \
+-139.70511245 13\
+1.427647 -142 13\
+3.5 C-144.936784\
+65 136.15113994 \
+-147.88602542 13\
+8.78290171 -150.\
+875 141.375 C-15\
+4.30332192 144.3\
+5916686 -157.656\
+20801 147.421884\
+84 -161 150.5 C-\
+164.95864649 154\
+.14411716 -168.9\
+5176688 157.7391\
+3655 -173.015625\
+ 161.265625 C-17\
+7.89361626 165.5\
+2906618 -182.688\
+61052 169.889442\
+15 -187.47265625\
+ 174.2578125 C-1\
+91.6408851 178.0\
+4951354 -195.854\
+50202 181.723304\
+7 -200.25 185.25\
+ C-206.01234335 \
+189.9089159 -211\
+.38492006 194.93\
+327716 -216.7851\
+5625 200 C-219.7\
+80417 202.807678\
+77 -222.84555799\
+ 205.52052442 -2\
+25.953125 208.20\
+3125 C-229.16258\
+705 211.02059169\
+ -232.29528816 2\
+13.92162562 -235\
+.43798828 216.81\
+298828 C-238.608\
+15648 219.728188\
+5 -241.79411892 \
+222.6239845 -245\
+ 225.5 C-256.228\
+75528 235.582598\
+44 -267.28484833\
+ 245.85804195 -2\
+78.359375 256.10\
+9375 C-283.17164\
+556 260.56137615\
+ -287.98793596 2\
+65.00491463 -292\
+.875 269.375 C-2\
+97.81206727 273.\
+79577266 -302.64\
+818465 278.32130\
+105 -307.4721679\
+7 282.86474609 C\
+-310.58730475 28\
+5.78900645 -313.\
+73448879 288.659\
+64309 -316.96093\
+75 291.4609375 C\
+-321.07454511 29\
+5.03681862 -325.\
+04340778 298.752\
+05619 -329 302.5\
+ C-333.60052765 \
+306.8579217 -338\
+.25492363 311.12\
+179405 -343.0400\
+3906 315.2763671\
+9 C-346.21841172\
+ 318.0714981 -34\
+9.29409849 320.9\
+7338651 -352.375\
+ 323.875 C-358.7\
+5929048 329.8595\
+2872 -365.170289\
+91 335.81089821 \
+-371.78173828 34\
+1.54541016 C-376\
+.62911013 345.75\
+481447 -381.3394\
+7274 350.0852427\
+3 -386 354.5 C-3\
+90.61362196 358.\
+87032549 -395.28\
+082148 363.14717\
+042 -400.0805664\
+1 367.3125 C-403\
+.5798477 370.388\
+94776 -406.95446\
+709 373.60145502\
+ -410.33007812 3\
+76.8125 C-410.86\
+439453 377.31265\
+625 -411.3987109\
+4 377.8128125 -4\
+11.94921875 378.\
+328125 C-412.416\
+74561 378.770595\
+7 -412.88427246 \
+379.21306641 -41\
+3.3659668 379.66\
+894531 C-415.442\
+0902 381.3601189\
+ -417.69726169 3\
+82.63940223 -420\
+ 384 C-421.12126\
+952 376.43778225\
+ -422.24225195 3\
+68.87552198 -423\
+.36303711 361.31\
+323242 C-423.744\
+15623 358.741933\
+61 -424.12534049\
+ 356.17064445 -4\
+24.5065918 353.5\
+9936523 C-425.05\
+534819 349.89830\
+027 -425.6038684\
+9 346.19720038 -\
+426.15234375 342\
+.49609375 C-426.\
+3221727 341.3510\
+3867 -426.492001\
+65 340.20598358 \
+-426.66697693 33\
+9.02622986 C-429\
+.52953176 319.70\
+432236 -429.5295\
+3176 319.7043223\
+6 -429 315 C-426\
+.9699893 312.782\
+84769 -425.43190\
+634 311.44756344\
+ -423 309.8125 C\
+-421.70287786 30\
+8.87061943 -420.\
+40736508 307.926\
+51944 -419.11328\
+125 306.98046875\
+ C-418.43475098 \
+306.49497559 -41\
+7.7562207 306.00\
+948242 -417.0571\
+2891 305.5092773\
+4 C-413.65765605\
+ 303.01514713 -4\
+10.43444703 300.\
+31267006 -407.18\
+75 297.625 C-401\
+.01537738 292.57\
+120008 -394.7223\
+7117 287.6997317\
+ -388.36499023 2\
+82.88208008 C-38\
+3.41516147 279.1\
+1766923 -378.561\
+34957 275.252060\
+37 -373.75 271.3\
+125 C-367.517730\
+19 266.21000833 \
+-361.19514691 26\
+1.26027885 -354.\
+79150391 256.373\
+53516 C-351.2840\
+2957 253.6843759\
+ -347.79973521 2\
+50.96531729 -344\
+.3125 248.25 C-3\
+43.55227539 247.\
+65856201 -342.79\
+205078 247.06712\
+402 -342.0087890\
+6 246.45776367 C\
+-338.13960009 24\
+3.44699514 -334.\
+27312572 240.432\
+80686 -330.41015\
+625 237.4140625 \
+C-322.58632454 2\
+31.30571069 -314\
+.72216858 225.26\
+428 -306.7639160\
+2 219.33203125 C\
+-301.80936939 21\
+5.63019494 -296.\
+93163672 211.839\
+90449 -292.07934\
+57 208.00537109 \
+C-286.62211679 2\
+03.69281404 -281\
+.11169658 199.45\
+193886 -275.5913\
+0859 195.2207031\
+2 C-272.97462222\
+ 193.21342606 -2\
+70.36279461 191.\
+19983871 -267.75\
+ 189.1875 C-259.\
+11385481 182.541\
+68043 -250.45155\
+171 175.93001319\
+ -241.79296875 1\
+69.31347656 C-23\
+9.61185414 167.6\
+4664786 -237.430\
+8717 165.9796465\
+1 -235.25 164.31\
+25 C-234.5358593\
+7 163.76658203 -\
+233.82171875 163\
+.22066406 -233.0\
+859375 162.65820\
+312 C-228.967999\
+63 159.50896835 \
+-224.85630055 15\
+6.3518914 -220.7\
+5 153.1875 C-193\
+.66002273 132.34\
+118248 -193.6600\
+2273 132.3411824\
+8 -182 124 C-189\
+.18697105 128.73\
+944595 -196.2422\
+7978 133.6493885\
+8 -203.27539062 \
+138.61328125 C-2\
+08.58967756 142.\
+35034442 -213.96\
+01045 145.988513\
+49 -219.37329102\
+ 149.58056641 C-\
+223.90363952 152\
+.59466104 -228.4\
+0515694 155.6513\
+3715 -232.910156\
+25 158.703125 C-\
+234.74409172 159\
+.94408269 -236.5\
+7807701 161.1849\
+6676 -238.412109\
+38 162.42578125 \
+C-241.22714995 1\
+64.33041017 -244\
+.04162872 166.23\
+584002 -246.8542\
+4805 168.1440429\
+7 C-258.05670239\
+ 175.74236643 -2\
+69.33058272 183.\
+18239701 -280.80\
+444336 190.36474\
+609 C-286.172660\
+87 193.72594868 \
+-291.4622399 197\
+.20124043 -296.7\
+5 200.6875 C-303\
+.59416211 205.17\
+578278 -310.4648\
+8898 209.5734117\
+8 -317.51635742 \
+213.72827148 C-3\
+21.62190012 216.\
+1525558 -325.659\
+67148 218.667718\
+13 -329.67993164\
+ 221.23095703 C-\
+355.41485604 237\
+.63865245 -381.9\
+9932562 251.4882\
+9261 -409.625 26\
+4.375 C-410.8104\
+541 264.92865234\
+ -411.9959082 26\
+5.48230469 -413.\
+21728516 266.052\
+73438 C-414.3134\
+7168 266.5586914\
+1 -415.4096582 2\
+67.06464844 -416\
+.5390625 267.585\
+9375 C-417.50021\
+973 268.0298584 \
+-418.46137695 26\
+8.4737793 -419.4\
+5166016 268.9311\
+5234 C-421.64211\
+525 269.84989275\
+ -423.68186167 2\
+70.51207863 -426\
+ 271 C-423.13299\
+311 267.94023551\
+ -420.21300895 2\
+65.69135223 -416\
+.66796875 263.46\
+09375 C-415.6301\
+123 262.80343506\
+ -414.59225586 2\
+62.14593262 -413\
+.52294922 261.46\
+850586 C-412.422\
+25098 260.777648\
+93 -411.32155273\
+ 260.08679199 -4\
+10.1875 259.375 \
+C-407.90076533 2\
+57.92826621 -405\
+.61644286 256.47\
+774205 -403.3320\
+3125 255.0273437\
+5 C-401.68195068\
+ 253.98102783 -4\
+01.68195068 253.\
+98102783 -399.99\
+853516 252.91357\
+422 C-396.425842\
+45 250.63359006 \
+-392.88967119 24\
+8.30562777 -389.\
+375 245.9375 C-3\
+80.31311664 239.\
+84320557 -371.14\
+802045 233.90749\
+525 -361.9951171\
+9 227.95117188 C\
+-359.09095266 22\
+6.05925119 -356.\
+18949838 224.163\
+25592 -353.28906\
+25 222.265625 C-\
+343.22679155 215\
+.68524677 -333.1\
+3541615 209.1547\
+4482 -323 202.68\
+75 C-315.7004854\
+5 198.02962989 -\
+308.43140613 193\
+.33815439 -301.2\
+4487305 188.5078\
+125 C-294.643874\
+13 184.07429188 \
+-287.95479317 17\
+9.77851335 -281.\
+27294922 175.468\
+26172 C-277.3020\
+063 172.90314349\
+ -273.33838012 1\
+70.3267828 -269.\
+375 167.75 C-268\
+.54436035 167.20\
+996338 -267.7137\
+207 166.66992676\
+ -266.85791016 1\
+66.11352539 C-26\
+0.46467782 161.9\
+5542939 -254.075\
+45459 157.791198\
+36 -247.6875 153\
+.625 C-246.72835\
+693 152.99956299\
+ -245.76921387 1\
+52.37412598 -244\
+.78100586 151.72\
+973633 C-239.919\
+43502 148.558970\
+02 -235.0596985 \
+145.3854471 -230\
+.203125 142.2070\
+3125 C-220.92363\
+18 136.13825055 \
+-211.622925 130.\
+11109996 -202.25\
+ 124.1875 C-193.\
+82538423 118.862\
+58634 -185.52385\
+479 113.36705441\
+ -177.25 107.812\
+5 C-169.15148844\
+ 102.37636989 -1\
+61.00729644 97.0\
+6528402 -152.641\
+35742 92.0478515\
+6 C-146.51994988\
+ 88.3622351 -140\
+.53687752 84.481\
+23582 -134.5625 \
+80.5625 C-125.25\
+340148 74.456639\
+35 -115.87774098\
+ 68.47101702 -10\
+6.45263672 62.54\
+638672 C-101.958\
+66878 59.7129412\
+8 -97.4802972 56\
+.8549921 -93 54 \
+C-89.33372902 51\
+.66604459 -85.66\
+694119 49.332902\
+25 -82 47 C-81.1\
+4809082 46.45778\
+809 -80.29618164\
+ 45.91557617 -79\
+.41845703 45.356\
+93359 C-69.61066\
+186 39.11942788 \
+-59.75763959 32.\
+98262953 -49.762\
+20703 27.0502929\
+7 C-47.48063743 \
+25.69045473 -45.\
+21092638 24.3111\
+8153 -42.9394531\
+2 22.93457031 C-\
+33.95610418 17.5\
+0149695 -24.8526\
+3499 12.27639921\
+ -15.74682617 7.\
+05224609 C-14.11\
+644409 6.1156616\
+2 -14.11644409 6\
+.11566162 -12.45\
+3125 5.16015625 \
+C-11.47504883 4.\
+59949463 -10.496\
+97266 4.03883301\
+ -9.48925781 3.4\
+6118164 C-3.5928\
+1537 0 -3.592815\
+37 0 0 0 Z M-172\
+ 115 C-172.33 11\
+5.66 -172.66 116\
+.32 -173 117 C-1\
+72.01 116.67 -17\
+1.02 116.34 -170\
+ 116 C-170.66 11\
+5.67 -171.32 115\
+.34 -172 115 Z M\
+-176 118 C-176.3\
+3 118.66 -176.66\
+ 119.32 -177 120\
+ C-176.01 119.67\
+ -175.02 119.34 \
+-174 119 C-174.6\
+6 118.67 -175.32\
+ 118.34 -176 118\
+ Z M-179 120 C-1\
+79.99 121.485 -1\
+79.99 121.485 -1\
+81 123 C-179.68 \
+122.34 -178.36 1\
+21.68 -177 121 C\
+-177.66 120.67 -\
+178.32 120.34 -1\
+79 120 Z \x22 fill=\
+\x22#515151\x22 transf\
+orm=\x22translate(1\
+024,60)\x22/>\x0a<path\
+ d=\x22M0 0 C0.9745\
+9671 -0.00671722\
+ 1.94919342 -0.0\
+1343445 2.953323\
+36 -0.02035522 C\
+6.17157098 -0.03\
+933587 9.3896100\
+7 -0.04325941 12\
+.60791016 -0.045\
+41016 C14.848440\
+4 -0.05183779 17\
+.08896981 -0.058\
+56613 19.3294982\
+9 -0.06558228 C2\
+4.02518662 -0.07\
+755504 28.720801\
+39 -0.08126307 3\
+3.41650391 -0.08\
+007812 C39.42780\
+395 -0.07987489 \
+45.4386315 -0.10\
+718261 51.449819\
+56 -0.14162254 C\
+56.0772823 -0.16\
+388004 60.704631\
+09 -0.16791602 6\
+5.33214188 -0.16\
+685867 C67.54807\
+794 -0.16921614 \
+69.76401708 -0.1\
+7804783 71.97990\
+036 -0.19352341 \
+C75.08198728 -0.\
+21316042 78.1830\
+5221 -0.20735392\
+ 81.28515625 -0.\
+1953125 C82.6522\
+599 -0.21217102 \
+82.6522599 -0.21\
+217102 84.046981\
+81 -0.22937012 C\
+90.94625371 -0.1\
+6145643 95.05284\
+243 1.51395175 1\
+00.34619141 6.07\
+958984 C100.8785\
+7422 6.68544922 \
+101.41095703 7.2\
+9130859 101.9594\
+7266 7.91552734 \
+C102.49958984 8.\
+50591797 103.039\
+70703 9.09630859\
+ 103.59619141 9.\
+70458984 C107.95\
+627385 16.432735\
+71 109.96019661 \
+24.21241467 111.\
+56201172 31.9865\
+7227 C111.757667\
+24 32.90074417 1\
+11.95332275 33.8\
+1491608 112.1549\
+0723 34.75679016\
+ C112.79353204 3\
+7.7593208 113.41\
+723185 40.764642\
+58 114.03759766 \
+43.77099609 C114\
+.36307209 45.339\
+10758 114.363072\
+09 45.33910758 1\
+14.69512177 46.9\
+3889809 C115.847\
+67791 52.4993825\
+1 116.98785311 5\
+8.06224961 118.1\
+1865234 63.62719\
+727 C119.0393330\
+4 68.14742121 11\
+9.98214805 72.66\
+204976 120.94677\
+734 77.1730957 C\
+127.01520158 105\
+.59161376 130.72\
+199814 132.23259\
+976 129.27197266\
+ 161.29052734 C1\
+29.17688695 163.\
+85849395 129.085\
+65893 166.426607\
+47 128.99902344 \
+168.99487305 C12\
+8.85793576 173.0\
+5073609 128.6936\
+5562 177.1040861\
+ 128.49853516 18\
+1.15771484 C128.\
+12239537 189.234\
+35425 127.866910\
+23 197.32853132 \
+128.63916016 205\
+.38818359 C128.7\
+3221436 206.4137\
+1338 128.7322143\
+6 206.41371338 1\
+28.82714844 207.\
+45996094 C129.01\
+034647 209.35759\
+865 129.2260104 \
+211.25202214 129\
+.44384766 213.14\
+599609 C129.2719\
+7266 216.2905273\
+4 129.27197266 2\
+16.29052734 127.\
+89697266 218.700\
+68359 C123.87687\
+836 221.13547285\
+ 120.12120731 22\
+0.71715969 115.5\
+2197266 220.5405\
+2734 C114.633808\
+59 220.52248047 \
+113.74564453 220\
+.50443359 112.83\
+056641 220.48583\
+984 C110.6432641\
+7 220.43880109 1\
+08.45817449 220.\
+37309743 106.271\
+97266 220.290527\
+34 C106.12501953\
+ 219.64986328 10\
+5.97806641 219.0\
+0919922 105.8266\
+6016 218.3491210\
+9 C103.75976918 \
+210.3785243 100.\
+66573805 205.819\
+21528 94.0844726\
+6 200.91552734 C\
+81.01250573 193.\
+36283534 58.9789\
+6502 197.1140512\
+4 44.22607422 19\
+7.24902344 C40.6\
+7593039 197.2813\
+8598 37.12595227\
+ 197.30008751 33\
+.57568359 197.31\
+25 C28.52030131 \
+197.33231127 23.\
+46576641 197.380\
+51936 18.4107666\
+ 197.44512939 C1\
+6.41791989 197.4\
+668829 14.424965\
+88 197.48048847 \
+12.43200684 197.\
+48553467 C-2.519\
+44173 197.129216\
+29 -2.51944173 1\
+97.12921629 -15.\
+72802734 203.290\
+52734 C-20.68456\
+784 208.37899342\
+ -22.64546504 21\
+3.59830902 -24.7\
+2802734 220.2905\
+2734 C-27.811041\
+5 220.4069689 -3\
+0.89348858 220.4\
+7785166 -33.9780\
+2734 220.5405273\
+4 C-34.85072266 \
+220.57404297 -35\
+.72341797 220.60\
+755859 -36.62255\
+859 220.64208984\
+ C-37.46689453 2\
+20.65498047 -38.\
+31123047 220.667\
+87109 -39.181152\
+34 220.68115234 \
+C-39.95620117 22\
+0.70209961 -40.7\
+3125 220.7230468\
+8 -41.52978516 2\
+20.74462891 C-44\
+.67811099 220.09\
+426395 -45.83052\
+462 218.84811278\
+ -47.72802734 21\
+6.29052734 C-48.\
+07446289 213.668\
+45703 -48.074462\
+89 213.66845703 \
+-47.86474609 210\
+.71240234 C-47.8\
+0222656 209.6334\
+5703 -47.7397070\
+3 208.55451172 -\
+47.67529297 207.\
+44287109 C-47.58\
+957031 206.32009\
+766 -47.50384766\
+ 205.19732422 -4\
+7.41552734 204.0\
+4052734 C-46.938\
+02368 196.907037\
+87 -46.67614593 \
+190.36229766 -47\
+.72802734 183.29\
+052734 C-48.2473\
+8946 176.2603623\
+9 -48.39983109 1\
+69.20599374 -48.\
+60877991 162.161\
+33118 C-48.68642\
+545 159.64093603\
+ -48.77237482 15\
+7.12077858 -48.8\
+6790466 154.6009\
+9792 C-49.612776\
+88 133.50516822 \
+-47.39117518 114\
+.36943374 -42.71\
+558762 93.826786\
+04 C-41.88179686\
+ 90.13075576 -41\
+.08590887 86.426\
+56892 -40.286865\
+23 82.72290039 C\
+-39.33138999 78.\
+30465302 -38.372\
+68359 73.8872483\
+1 -37.39552307 6\
+9.47373962 C-35.\
+55970554 61.1802\
+459 -33.80799867\
+ 52.87637174 -32\
+.19287109 44.536\
+62109 C-31.92254\
+562 43.15243988 \
+-31.92254562 43.\
+15243988 -31.646\
+75903 41.7402954\
+1 C-30.9975986 3\
+8.41144913 -30.3\
+4863443 35.08280\
+775 -29.72558594\
+ 31.7489624 C-27\
+.86082873 21.812\
+46272 -25.757710\
+57 12.61633027 -\
+18.22802734 5.35\
+302734 C-17.6814\
+6484 4.80775391 \
+-17.13490234 4.2\
+6248047 -16.5717\
+7734 3.70068359 \
+C-11.43226173 -0\
+.23017475 -6.193\
+97632 -0.0061325\
+5 0 0 Z M-11.728\
+02734 45.2905273\
+4 C-10.64017767 \
+48.54035869 -10.\
+64017767 48.5403\
+5869 -8.72802734\
+ 51.29052734 C-5\
+.09883356 51.677\
+51251 -1.4368107\
+8 51.72523519 2.\
+20947266 51.8530\
+2734 C3.38662842\
+ 51.89476074 4.5\
+6378418 51.93649\
+414 5.77661133 5\
+1.97949219 C23.9\
+3667779 52.54422\
+104 42.10605705 \
+52.45542352 60.2\
+7197266 52.29052\
+734 C61.47037781\
+ 52.2811615 61.4\
+7037781 52.28116\
+15 62.69299316 5\
+2.27160645 C67.6\
+9970085 52.23069\
+814 72.70375421 \
+52.14853557 77.7\
+0947266 52.04052\
+734 C78.95253174\
+ 52.02650879 80.\
+19559082 52.0124\
+9023 81.47631836\
+ 51.99804688 C83\
+.16760864 51.949\
+46533 83.1676086\
+4 51.94946533 84\
+.89306641 51.899\
+90234 C85.866872\
+56 51.87895508 8\
+6.84067871 51.85\
+800781 87.843994\
+14 51.83642578 C\
+90.41594981 51.4\
+9281743 90.41594\
+981 51.49281743 \
+92.1081543 49.37\
+744141 C93.43432\
+476 47.39765289 \
+93.43432476 47.3\
+9765289 93.27197\
+266 45.29052734 \
+C75.21221463 44.\
+34054567 57.1658\
+3129 44.17978862\
+ 39.08447266 44.\
+16552734 C37.997\
+10815 44.1630297\
+9 36.90974365 44\
+.16053223 35.789\
+42871 44.1579589\
+8 C19.92693701 4\
+4.1281232 4.1164\
+6296 44.53571637\
+ -11.72802734 45\
+.29052734 Z M-28\
+.72802734 60.290\
+52734 C-30.22768\
+477 69.81131273 \
+-31.72341046 79.\
+33270615 -33.214\
+59579 88.8548221\
+6 C-33.90769957 \
+93.27996539 -34.\
+60198069 97.7049\
+1605 -35.2993164\
+1 102.12939453 C\
+-37.02224665 113\
+.06557247 -38.72\
+190036 124.00497\
+834 -40.37478638\
+ 134.95198059 C-\
+40.60658548 136.\
+48655071 -40.839\
+12504 138.021009\
+21 -41.07247925 \
+139.55534363 C-4\
+1.80028669 144.3\
+465603 -42.49858\
+763 149.14108882\
+ -43.18115234 15\
+3.93896484 C-43.\
+35628357 155.096\
+91559 -43.531414\
+79 156.25486633 \
+-43.71185303 157\
+.44790649 C-45.1\
+0492485 167.5714\
+5751 -44.5065991\
+ 177.24551273 -4\
+2.72802734 187.2\
+9052734 C-40.306\
+97102 184.869471\
+02 -40.26463685 \
+183.72006094 -39\
+.72583008 180.38\
+427734 C-39.4688\
+5849 178.8303401\
+9 -39.46885849 1\
+78.83034019 -39.\
+20669556 177.245\
+01038 C-39.02682\
+098 176.10503098\
+ -38.84694641 17\
+4.96505157 -38.6\
+6162109 173.7905\
+2734 C-38.466600\
+04 172.59540024 \
+-38.27157898 171\
+.40027313 -38.07\
+064819 170.16893\
+005 C-37.5381657\
+9 166.89321126 -\
+37.01315454 163.\
+6164698 -36.4920\
+0821 160.3389396\
+7 C-36.05691042 \
+157.609041 -35.6\
+1653726 154.8800\
+0434 -35.1761770\
+2 152.15095043 C\
+-34.02812591 145\
+.0348436 -32.892\
+30293 137.916837\
+08 -31.76242733 \
+130.79782391 C-3\
+0.96764184 125.7\
+9185424 -30.1672\
+3283 120.7868102\
+4 -29.36376953 1\
+15.78222656 C-28\
+.28234603 109.04\
+399792 -27.21092\
+064 102.30424732\
+ -26.14700317 95\
+.56323242 C-25.7\
+4316743 93.00947\
+377 -25.33698373\
+ 90.45608529 -24\
+.92843628 87.903\
+07617 C-24.36028\
+511 84.34460816 \
+-23.80246473 80.\
+78467518 -23.247\
+55859 77.2241210\
+9 C-23.07727142 \
+76.16962265 -22.\
+90698425 75.1151\
+2421 -22.7315368\
+7 74.02867126 C-\
+22.5831839 73.06\
+248367 -22.43483\
+093 72.09629608 \
+-22.28198242 71.\
+10083008 C-22.15\
+003983 70.263337\
+25 -22.01809723 \
+69.42584442 -21.\
+88215637 68.5629\
+7302 C-21.718592\
+89 66.15142775 -\
+21.83849193 64.5\
+3783307 -22.7280\
+2734 62.29052734\
+ C-25.54312728 6\
+0.01317725 -25.5\
+4312728 60.01317\
+725 -28.72802734\
+ 60.29052734 Z M\
+108.27197266 59.\
+29052734 C105.64\
+81013 60.6814562\
+7 105.6481013 60\
+.68145627 103.27\
+197266 62.290527\
+34 C103.8757687 \
+72.77198153 105.\
+5740703 83.01949\
+946 107.29150391\
+ 93.36083984 C10\
+7.59482199 95.20\
+947068 107.89768\
+432 97.05817634 \
+108.20011902 98.\
+9069519 C108.995\
+14867 103.760417\
+57 109.79554257 \
+108.61298222 110\
+.59735107 113.46\
+533203 C111.8681\
+5427 121.1618040\
+7 113.13052817 1\
+28.85966454 114.\
+39348984 136.557\
+42645 C114.85075\
+664 139.34107186\
+ 115.30969542 14\
+2.12443789 115.7\
+6882935 144.9077\
+7588 C117.074408\
+08 152.83945694 \
+118.36482579 160\
+.77141375 119.54\
+296875 168.72314\
+453 C119.7252653\
+5 169.9483078 11\
+9.90756195 171.1\
+7347107 120.0953\
+8269 172.4357605\
+ C120.41744677 1\
+74.62833971 120.\
+73286826 176.821\
+91043 121.039993\
+29 179.01663208 \
+C121.17672958 17\
+9.95248138 121.3\
+1346588 180.8883\
+3069 121.4543457\
+ 181.85253906 C1\
+21.56570358 182.\
+64683319 121.677\
+06146 183.441127\
+32 121.79179382 \
+184.25949097 C12\
+2.21728661 186.5\
+8591253 122.2172\
+8661 186.5859125\
+3 124.27197266 1\
+89.29052734 C127\
+.52708793 173.68\
+341213 126.15234\
+446 159.34501609\
+ 123.53369141 14\
+3.84521484 C123.\
+24831679 142.101\
+10098 122.964064\
+68 140.35680313 \
+122.68086243 138\
+.61233521 C121.9\
+3774506 134.0518\
+4195 121.1808931\
+9 129.49374202 1\
+20.42053223 124.\
+93609619 C119.21\
+302066 117.67999\
+708 118.02937682\
+ 110.41993843 11\
+6.84027481 103.1\
+6080475 C116.412\
+82948 100.557913\
+26 115.98244485 \
+97.95552179 115.\
+55148315 95.3532\
+1045 C113.926618\
+69 85.51165667 1\
+12.36630926 75.6\
+6831892 111.1737\
+5183 65.76290894\
+ C110.93787327 6\
+3.92929024 110.6\
+1604472 62.10695\
+533 110.27197266\
+ 60.29052734 C10\
+9.61197266 59.96\
+052734 108.95197\
+266 59.63052734 \
+108.27197266 59.\
+29052734 Z M93.4\
+5947266 64.79052\
+734 C93.06759766\
+ 65.28552734 92.\
+67572266 65.7805\
+2734 92.27197266\
+ 66.29052734 C92\
+.60197266 66.950\
+52734 92.9319726\
+6 67.61052734 93\
+.27197266 68.290\
+52734 C96.156350\
+45 66.9975304 98\
+.14416687 65.631\
+11371 100.271972\
+66 63.29052734 C\
+96.55460624 62.9\
+4152176 96.55460\
+624 62.94152176 \
+93.45947266 64.7\
+9052734 Z M-1.61\
+872864 77.150894\
+17 C-4.1393942 8\
+2.01279442 -4.37\
+917901 87.331364\
+05 -4.83740234 9\
+2.70849609 C-4.9\
+7437375 94.04800\
+129 -5.11418425 \
+95.38721883 -5.2\
+5665283 96.72615\
+051 C-5.62512183\
+ 100.25948929 -5\
+.95604861 103.79\
+535617 -6.278747\
+56 107.33312988 \
+C-6.6035977 110.\
+82957209 -6.9615\
+7611 114.3225642\
+9 -7.31787109 11\
+7.81591797 C-7.8\
+0574844 122.6253\
+0005 -8.28157255\
+ 127.43556804 -8\
+.74187469 132.24\
+766731 C-9.65057\
+34 141.73113756 \
+-10.69784763 151\
+.19698315 -11.82\
+684326 160.65678\
+406 C-13.4514608\
+8 170.35978138 -\
+13.45146088 170.\
+35978138 -11.485\
+83984 179.567871\
+09 C-10.94701172\
+ 180.11572266 -1\
+0.40818359 180.6\
+6357422 -9.85302\
+734 181.22802734\
+ C-9.31935547 18\
+1.79392578 -8.78\
+568359 182.35982\
+422 -8.23583984 \
+182.94287109 C-4\
+.69881623 186.10\
+420049 -0.730573\
+24 185.46048317 \
+3.75732422 185.4\
+8339844 C4.63555\
+344 185.49157593\
+ 5.51378265 185.\
+49975342 6.41862\
+488 185.50817871\
+ C9.33327549 185\
+.53304858 12.247\
+87733 185.549553\
+46 15.16259766 1\
+85.56396484 C16.\
+15723778 185.569\
+28852 17.1518779\
+ 185.5746122 18.\
+17665863 185.580\
+0972 C23.4419833\
+4 185.60683665 2\
+8.70728427 185.6\
+2620837 33.97265\
+625 185.640625 C\
+39.41139233 185.\
+65726808 44.8495\
+2189 185.7020409\
+3 50.28802872 18\
+5.75299644 C54.4\
+6936742 185.7866\
+5494 58.65056199\
+ 185.79820096 62\
+.83202362 185.80\
+385208 C64.83669\
+414 185.8105692 \
+66.84135503 185.\
+82580318 68.8458\
+9386 185.8497428\
+9 C71.65411242 1\
+85.88136504 74.4\
+6069308 185.8814\
+3557 77.26904297\
+ 185.87402344 C7\
+8.09524643 185.8\
+9042877 78.92144\
+989 185.90683411\
+ 79.77268982 185\
+.92373657 C83.86\
+340825 185.87960\
+356 86.46642295 \
+185.55041689 89.\
+70965576 182.941\
+55884 C93.446349\
+92 179.18303721 \
+93.44634992 179.\
+18303721 94.3150\
+0244 174.1679992\
+7 C94.21604675 1\
+72.88988373 94.1\
+1709106 171.6117\
+6819 94.01513672\
+ 170.29492188 C9\
+3.93589148 169.2\
+3770022 93.93589\
+148 169.23770022\
+ 93.85504532 168\
+.15912056 C93.18\
+063499 159.49927\
+77 92.2951334 15\
+0.85751632 91.38\
+134766 142.22021\
+484 C91.2431448 \
+140.91300161 91.\
+2431448 140.9130\
+0161 91.10214996\
+ 139.57938004 C9\
+0.61510148 134.9\
+8775541 90.12240\
+604 130.39677149\
+ 89.62597656 125\
+.80615234 C89.21\
+874547 122.02895\
+896 88.82390087 \
+118.25077054 88.\
+43945312 114.471\
+19141 C87.970997\
+81 109.8664664 8\
+7.48158425 105.2\
+6442516 86.97705\
+841 100.663517 C\
+86.78958473 98.9\
+2203591 86.60939\
+646 97.17975375 \
+86.43682098 95.4\
+3673325 C86.1946\
+2681 93.00626885\
+ 85.92552363 90.\
+58018973 85.6499\
+0234 88.15332031\
+ C85.58529312 87\
+.44261887 85.520\
+6839 86.73191742\
+ 85.45411682 85.\
+99967957 C84.794\
+08852 80.5777172\
+1 82.99518628 78\
+.0609558 79.2719\
+7266 74.29052734\
+ C76.34328242 72\
+.82618223 73.725\
+23154 73.12263 7\
+0.45483398 73.08\
+178711 C69.75377\
+533 73.07200333 \
+69.05271667 73.0\
+6221954 68.33041\
+382 73.05213928 \
+C66.00496317 73.\
+02217136 63.6795\
+7026 73.00079267\
+ 61.35400391 72.\
+98193359 C60.559\
+19806 72.9753617\
+7 59.7643922 72.\
+96878994 58.9455\
+0133 72.96201897\
+ C54.73590245 72\
+.92941445 50.526\
+32896 72.9049699\
+3 46.31665039 72\
+.88549805 C42.83\
+710727 72.867705\
+48 39.35837774 7\
+2.83292157 35.87\
+915039 72.782958\
+98 C31.67516094 \
+72.72265959 27.4\
+7192412 72.69200\
+88 23.26752281 7\
+2.68232536 C21.6\
+6834446 72.67378\
+338 20.06918553 \
+72.65499594 18.4\
+702549 72.625581\
+74 C7.47500539 7\
+2.01801097 7.475\
+00539 72.0180109\
+7 -1.61872864 77\
+.15089417 Z \x22 fi\
+ll=\x22#515151\x22 tra\
+nsform=\x22translat\
+e(471.7280273437\
+5,67.70947265625\
+)\x22/>\x0a<path d=\x22M0\
+ 0 C29.90150266 \
+6.50032667 58.73\
+780015 19.514274\
+09 84.5 35.875 C\
+85.23734375 36.3\
+3970703 85.97468\
+75 36.80441406 8\
+6.734375 37.2832\
+0312 C87.4098437\
+5 37.72341797 88\
+.0853125 38.1636\
+3281 88.78125 38\
+.6171875 C89.380\
+01953 39.0050341\
+8 89.97878906 39\
+.39288086 90.595\
+70312 39.7924804\
+7 C92 41 92 41 9\
+3 44 C88.5027383\
+ 47.00650771 84.\
+00440195 50.0113\
+9862 79.50512695\
+ 53.01489258 C77\
+.97945075 54.033\
+67077 76.4540526\
+5 55.05286557 74\
+.92895508 56.072\
+50977 C67.825855\
+21 60.82111969 6\
+0.72126664 65.56\
+836922 53.550781\
+25 70.21484375 C\
+52.70813721 70.7\
+6132568 51.86549\
+316 71.30780762 \
+50.99731445 71.8\
+7084961 C49 73 4\
+9 73 47 73 C47 6\
+4.09 47 55.18 47\
+ 46 C46.835 48.0\
+00625 46.67 50.0\
+0125 46.5 52.062\
+5 C46.32984375 5\
+3.97675781 46.32\
+984375 53.976757\
+81 46.15625 55.9\
+296875 C45.97009\
+376 58.7808893 4\
+6.13475386 60.98\
+489222 46.53125 \
+63.8828125 C47.0\
+448196 68.051285\
+74 47.16594088 7\
+0.95059765 46 75\
+ C42.13575277 79\
+.3746991 36.5780\
+1 81.91149641 31\
+.50146484 84.621\
+09375 C27.374223\
+25 86.89619238 2\
+3.48738753 89.52\
+128289 19.5625 9\
+2.125 C17.891566\
+62 93.21368617 1\
+6.21965565 94.30\
+087307 14.546875\
+ 95.38671875 C8.\
+7041286 99.19092\
+451 2.86561586 1\
+03.00160272 -2.9\
+7073364 106.8156\
+1279 C-4.6404298\
+ 107.90674016 -6\
+.31032434 108.99\
+756394 -7.980224\
+61 110.08837891 \
+C-9.54268921 111\
+.1100415 -9.5426\
+8921 111.1100415\
+ -11.13671875 11\
+2.15234375 C-12.\
+63017822 113.124\
+69971 -12.630178\
+22 113.12469971 \
+-14.15380859 114\
+.11669922 C-16.0\
+0708406 115.3429\
+9592 -17.8445463\
+6 116.59364501 -\
+19.66259766 117.\
+87158203 C-20.46\
+101074 118.43087\
+402 -21.25942383\
+ 118.99016602 -2\
+2.08203125 119.5\
+6640625 C-23.116\
+14136 120.309993\
+9 -23.11614136 1\
+20.3099939 -24.1\
+7114258 121.0686\
+0352 C-24.774665\
+53 121.37596436 \
+-25.37818848 121\
+.6833252 -26 122\
+ C-26.99 121.67 \
+-27.98 121.34 -2\
+9 121 C-29.67429\
+967 117.60563644\
+ -30.3380828 114\
+.20929807 -31 11\
+0.8125 C-31.1907\
+8125 109.8527929\
+7 -31.3815625 10\
+8.89308594 -31.5\
+78125 107.904296\
+88 C-31.75859375\
+ 106.97294922 -3\
+1.9390625 106.04\
+160156 -32.125 1\
+05.08203125 C-32\
+.29257812 104.22\
+843018 -32.46015\
+625 103.3748291 \
+-32.6328125 102.\
+49536133 C-33.00\
+595229 99.959548\
+97 -33.06412996 \
+97.55918603 -33 \
+95 C-28.42853794\
+ 93.47617931 -23\
+.75276466 93.769\
+05298 -18.957031\
+25 93.671875 C-1\
+5.10571573 93.18\
+049526 -11.84501\
+759 92.36341517 \
+-8.62231445 90.1\
+3427734 C-4.7068\
+5184 84.98319019\
+ -5.42914527 77.\
+16328655 -5.1875\
+ 70.9375 C-5.092\
+55078 69.2206488\
+4 -4.99368133 67\
+.5040105 -4.8911\
+1328 65.78759766\
+ C-4.67707518 62\
+.12880519 -4.483\
+22727 58.4697026\
+ -4.30322266 54.\
+80908203 C-3.849\
+14866 45.8012098\
+1 -3.20194364 36\
+.80586055 -2.576\
+08032 27.8086242\
+7 C-2.37734463 2\
+4.90920652 -2.18\
+768076 22.009330\
+4 -2.00073242 19\
+.10913086 C-1.91\
+146233 17.749519\
+88 -1.91146233 1\
+7.74951988 -1.82\
+038879 16.362442\
+02 C-1.70919633 \
+14.66805199 -1.6\
+0030491 12.97350\
+871 -1.4941864 1\
+1.27879333 C-1.2\
+3798317 7.439376\
+07 -0.88396777 3\
+.75850694 0 0 Z \
+\x22 fill=\x22#515151\x22\
+ transform=\x22tran\
+slate(613,201)\x22/\
+>\x0a<path d=\x22M0 0 \
+C0.36715569 2.47\
+409214 0.6012154\
+7 4.85578616 0.7\
+6196289 7.346191\
+41 C0.84777367 8\
+.49997284 0.8477\
+7367 8.49997284 \
+0.93531799 9.677\
+06299 C1.1233589\
+5 12.23466816 1.\
+29791459 14.7930\
+1713 1.47265625 \
+17.3515625 C1.60\
+102135 19.127049\
+11 1.73030082 20\
+.90246982 1.8604\
+5837 22.67782593\
+ C2.20204286 27.\
+36652189 2.53256\
+155 32.05593163 \
+2.8604126 36.745\
+60547 C3.3857868\
+ 44.23127552 3.9\
+2877863 51.71569\
+31 4.46990776 59\
+.20023727 C4.657\
+29788 61.8117279\
+7 4.84063874 64.\
+42347722 5.02320\
+862 67.03530884 \
+C5.1378975 68.64\
+935673 5.2526359\
+4 70.26340111 5.\
+36743164 71.8774\
+4141 C5.41679871\
+ 72.59876251 5.4\
+6616577 73.32008\
+362 5.51702881 7\
+4.06326294 C5.63\
+892251 81.767021\
+9 5.63892251 81.\
+7670219 8.214843\
+75 88.70703125 C\
+15.58874274 93.4\
+3903446 24.48554\
+808 93.39052534 \
+33 94 C31.502237\
+31 113.99552538 \
+31.50223731 113.\
+99552538 28 121 \
+C23.47209687 119\
+.40395752 19.651\
+8403 117.0595567\
+ 15.625 114.5 C1\
+4.56780762 113.8\
+335144 14.567807\
+62 113.8335144 1\
+3.48925781 113.1\
+5356445 C8.24755\
+93 109.83268952 \
+3.07123495 106.4\
+1998721 -2.07836\
+914 102.95849609\
+ C-7.2880769 99.\
+4592877 -12.5447\
+5881 96.03609072\
+ -17.8125 92.625\
+ C-24.63043608 8\
+8.205736 -31.424\
+62754 83.7531348\
+5 -38.1875 79.25\
+ C-38.96005127 7\
+8.73646973 -39.7\
+3260254 78.22293\
+945 -40.52856445\
+ 77.69384766 C-4\
+1.23456787 77.22\
+253418 -41.94057\
+129 76.7512207 -\
+42.66796875 76.2\
+65625 C-43.28953\
+857 75.85086914 \
+-43.9111084 75.4\
+3611328 -44.5515\
+1367 75.00878906\
+ C-46 74 -46 74 \
+-47 73 C-47.1009\
+1959 71.01378816\
+ -47.13082387 69\
+.02392931 -47.13\
+28125 67.0351562\
+5 C-47.13498779 \
+65.77155273 -47.\
+13716309 64.5079\
+4922 -47.1394043\
+ 63.20605469 C-4\
+7.1353507 61.824\
+86739 -47.130532\
+62 60.44368216 -\
+47.125 59.0625 C\
+-47.12311676 58.\
+37192505 -47.121\
+23352 57.6813501\
+ -47.11929321 56\
+.96984863 C-47.0\
+8761459 47.06146\
+412 -46.97458764\
+ 37.15452371 -46\
+.6875 27.25 C-46\
+.66510254 26.156\
+95557 -46.642705\
+08 25.06391113 -\
+46.61962891 23.9\
+3774414 C-46.584\
+01855 22.9321948\
+2 -46.5484082 21\
+.92664551 -46.51\
+171875 20.890625\
+ C-46.48553467 2\
+0.01438477 -46.4\
+5935059 19.13814\
+453 -46.43237305\
+ 18.23535156 C-4\
+5.89857719 15.47\
+564809 -45.24001\
+715 14.66978061 \
+-43 13 C-40.7260\
+7422 11.91259766\
+ -40.72607422 11\
+.91259766 -38.05\
+46875 10.9140625\
+ C-37.06742676 1\
+0.54265137 -36.0\
+8016602 10.17124\
+023 -35.06298828\
+ 9.78857422 C-34\
+.01095215 9.4045\
+9473 -32.9589160\
+2 9.02061523 -31\
+.875 8.625 C-30.\
+80362793 8.22941\
+895 -29.73225586\
+ 7.83383789 -28.\
+62841797 7.42626\
+953 C-22.1777662\
+5 5.07435902 -15\
+.70339067 2.8431\
+4294 -9.125 0.87\
+5 C-8.42487793 0\
+.66311035 -7.724\
+75586 0.4512207 \
+-7.00341797 0.23\
+291016 C-2.25310\
+241 -1.1265512 -\
+2.25310241 -1.12\
+65512 0 0 Z \x22 fi\
+ll=\x22#515151\x22 tra\
+nsform=\x22translat\
+e(412,202)\x22/>\x0a<p\
+ath d=\x22M0 0 C1.2\
+4339976 2.486799\
+52 1.15827487 4.\
+21797088 1.20532\
+227 7.00048828 C\
+1.2352401 8.5618\
+8034 1.2352401 8\
+.56188034 1.2657\
+6233 10.15481567\
+ C1.28247482 11.\
+28192963 1.29918\
+732 12.40904358 \
+1.31640625 13.57\
+03125 C1.3371873\
+5 14.72167694 1.\
+35796844 15.8730\
+4138 1.37937927 \
+17.05929565 C1.4\
+4491665 20.74780\
+14 1.50377928 24\
+.43638003 1.5625\
+ 28.125 C1.60568\
+123 30.62110138 \
+1.64929538 33.11\
+71953 1.69335938\
+ 35.61328125 C1.\
+80060231 41.7421\
+0981 1.90236089 \
+47.87101133 2 54\
+ C-2.84921623 52\
+.62883913 -6.708\
+66798 50.4608283\
+8 -10.83203125 4\
+7.640625 C-11.46\
+807785 47.213764\
+04 -12.10412445 \
+46.78690308 -12.\
+75944519 46.3471\
+0693 C-14.781590\
+87 44.98789104 -\
+16.7971062 43.61\
+920197 -18.8125 \
+42.25 C-20.15386\
+304 41.34571031 \
+-21.49565646 40.\
+44205867 -22.837\
+89062 39.5390625\
+ C-24.78955319 3\
+8.22587176 -26.7\
+3978399 36.91084\
+986 -28.68508911\
+ 35.58825684 C-3\
+2.91912997 32.70\
+974105 -37.20380\
+888 29.92826711 \
+-41.56518555 27.\
+24511719 C-42.03\
+867432 26.834228\
+52 -42.51216309 \
+26.42333984 -43 \
+26 C-43 25.01 -4\
+3 24.02 -43 23 C\
+-40.95898438 21.\
+40942383 -40.958\
+98438 21.4094238\
+3 -38.09375 19.7\
+0703125 C-37.046\
+46729 19.0799829\
+1 -35.99918457 1\
+8.45293457 -34.9\
+2016602 17.80688\
+477 C-33.7915112\
+3 17.14873779 -3\
+2.66285645 16.49\
+059082 -31.5 15.\
+8125 C-29.798316\
+65 14.8069104 -2\
+9.79831665 14.80\
+69104 -28.062255\
+86 13.78100586 C\
+-4.53187699 0 -4\
+.53187699 0 0 0 \
+Z \x22 fill=\x22#51515\
+1\x22 transform=\x22tr\
+anslate(362,219)\
+\x22/>\x0a<path d=\x22M0 \
+0 C0.83979904 -0\
+.01051392 1.6795\
+9808 -0.02102783\
+ 2.54484558 -0.0\
+3186035 C5.30865\
+862 -0.05817382 \
+8.07014976 -0.04\
+082129 10.833984\
+38 -0.02050781 C\
+12.76160116 -0.0\
+2455194 14.68921\
+495 -0.03037702 \
+16.61682129 -0.0\
+3790283 C20.6519\
+0841 -0.04673756\
+ 24.68619727 -0.\
+03392783 28.7211\
+9141 -0.00585938\
+ C33.88665555 0.\
+02832676 39.0502\
+4928 0.00863766 \
+44.21564484 -0.0\
+2729416 C48.1946\
+6172 -0.04900342\
+ 52.17323708 -0.\
+04206243 56.1522\
+6746 -0.0265274 \
+C58.05641401 -0.\
+02253252 59.9606\
+01 -0.02741008 6\
+1.86470032 -0.04\
+140472 C64.52936\
+548 -0.0566926 6\
+7.19102671 -0.03\
+335765 69.855468\
+75 0 C71.0292432\
+4 -0.01821808 71\
+.02924324 -0.018\
+21808 72.2267303\
+5 -0.0368042 C76\
+.4458956 0.06076\
+688 78.78051997 \
+0.63731695 81.88\
+792419 3.5917968\
+8 C84.92513117 6\
+.89721284 85.702\
+60728 10.4711758\
+7 86.30664062 14\
+.82324219 C86.50\
+69413 16.0381961\
+8 86.5069413 16.\
+03819618 86.7112\
+8845 17.2776947 \
+C87.00347231 19.\
+06788285 87.2844\
+197 20.85993158 \
+87.55566406 22.6\
+5341187 C88.1645\
+402 26.67870741 \
+88.82700408 30.6\
+9478868 89.48410\
+034 34.71244812 \
+C89.85201974 36.\
+96760089 90.2169\
+2136 39.22324764\
+ 90.57913208 41.\
+47932434 C92.139\
+58354 51.1677057\
+8 93.82628202 60\
+.83054079 95.548\
+82812 70.4912109\
+4 C95.82624388 7\
+2.04846177 96.10\
+365884 73.605712\
+75 96.381073 75.\
+16296387 C96.803\
+43004 77.5332478\
+5 97.22584512 79\
+.90352141 97.648\
+44704 82.2737617\
+5 C102.04562507 \
+106.95046059 106\
+.33013878 131.64\
+226079 110.24023\
+438 156.40136719\
+ C110.4092627 15\
+7.46003998 110.5\
+7829102 158.5187\
+1277 110.7524414\
+1 159.60946655 C\
+111.22046063 162\
+.55204447 111.67\
+949565 165.49585\
+549 112.13476562\
+ 168.44042969 C1\
+12.33529289 169.\
+69919167 112.335\
+29289 169.699191\
+67 112.53987122 \
+170.98338318 C11\
+4.41750208 183.3\
+9068573 114.4175\
+0208 183.3906857\
+3 112.29492188 1\
+88.50683594 C109\
+.98976364 191.30\
+871237 107.56330\
+969 193.05654836\
+ 104.55273438 19\
+5.08886719 C98.3\
+077166 199.39278\
+708 92.25461777 \
+203.90607174 86.\
+24023438 208.526\
+36719 C78.576556\
+55 214.40056031 \
+70.85211028 220.\
+17975924 63.0612\
+793 225.8840332 \
+C57.3275119 230.\
+08977078 51.6850\
+9564 234.3975677\
+8 46.09179688 23\
+8.78808594 C41.0\
+1344823 242.5782\
+3177 37.92377459\
+ 244.56037204 31\
+.42773438 243.77\
+636719 C26.33357\
+056 241.16907058\
+ 22.06499935 238\
+.04632098 17.677\
+73438 234.401367\
+19 C12.00226712 \
+229.77458093 6.2\
+1684187 225.3435\
+9207 0.30273438 \
+221.02636719 C-7\
+.62946905 215.23\
+387807 -15.45967\
+152 209.31942561\
+ -23.25561523 20\
+3.3449707 C-28.6\
+6710577 199.2044\
+8824 -34.1183287\
+5 195.1533535 -3\
+9.70898438 191.2\
+5683594 C-42.068\
+6401 189.3819732\
+1 -43.45487099 1\
+87.74796237 -43.\
+82347107 184.697\
+3114 C-43.749949\
+44 178.13733464 \
+-43.02302056 171\
+.83102977 -41.98\
+242188 165.35839\
+844 C-41.8065806\
+6 164.23163696 -\
+41.63073944 163.\
+10487549 -41.449\
+5697 161.9439697\
+3 C-40.85416618 \
+158.15735679 -40\
+.24530166 154.37\
+306801 -39.63476\
+562 150.58886719\
+ C-39.42235374 1\
+49.25804624 -39.\
+21019855 147.927\
+1843 -38.9982910\
+2 146.59628296 C\
+-32.94404982 108\
+.63893871 -26.00\
+499984 70.827034\
+52 -19.13523865 \
+33.01062012 C-18\
+.97870032 32.145\
+74919 -18.822162\
+ 31.28087826 -18\
+.66088009 30.389\
+79912 C-18.35962\
+858 28.73174622 \
+-18.05553537 27.\
+07420654 -17.748\
+29197 25.4172534\
+9 C-17.11628331 \
+21.97860035 -16.\
+54711125 18.5725\
+3788 -16.1186523\
+4 15.10067749 C-\
+15.98861816 14.0\
+5030304 -15.8585\
+8398 12.99992859\
+ -15.72460938 11\
+.91772461 C-15.6\
+4073975 11.05169\
+113 -15.55687012\
+ 10.18565765 -15\
+.47045898 9.2933\
+8074 C-12.766453\
+33 1.71592673 -7\
+.49661003 -0.116\
+3544 0 0 Z M90.4\
+2773438 141.7763\
+6719 C90.0977343\
+7 142.43636719 8\
+9.76773438 143.0\
+9636719 89.42773\
+438 143.77636719\
+ C90.41773438 14\
+3.44636719 91.40\
+773438 143.11636\
+719 92.42773438 \
+142.77636719 C91\
+.76773438 142.44\
+636719 91.107734\
+38 142.11636719 \
+90.42773438 141.\
+77636719 Z M87.4\
+2773438 143.7763\
+6719 C86.3947924\
+8 144.46674072 8\
+5.36185059 145.1\
+5711426 84.29760\
+742 145.8684082 \
+C80.4162559 148.\
+46206998 76.5338\
+4028 151.0541351\
+9 72.65112305 15\
+3.64575195 C70.9\
+7993991 154.7615\
+3659 69.30903467\
+ 155.87773759 67\
+.63842773 156.99\
+438477 C62.92549\
+554 160.14433316\
+ 58.20709854 163\
+.28572869 53.479\
+94995 166.414306\
+64 C51.64716136 \
+167.63073295 49.\
+82118144 168.856\
+67129 47.9963378\
+9 170.08496094 C\
+46.56245728 171.\
+03242188 46.5624\
+5728 171.0324218\
+8 45.09960938 17\
+1.99902344 C44.3\
+1038086 172.5263\
+3057 43.52115234\
+ 173.0536377 42.\
+70800781 173.596\
+92383 C38.260694\
+13 175.89724207 \
+34.23518114 175.\
+95310029 29.4277\
+3438 174.7763671\
+9 C20.94803887 1\
+70.6463757 13.11\
+230166 165.03648\
+864 5.30273438 1\
+59.77636719 C4.2\
+9597656 159.1034\
+7656 3.28921875 \
+158.43058594 2.2\
+5195312 157.7373\
+0469 C-4.0785455\
+4 153.49513353 -\
+10.34760574 149.\
+17226493 -16.572\
+26562 144.776367\
+19 C-17.56226563\
+ 145.27136719 -1\
+7.56226563 145.2\
+7136719 -18.5722\
+6562 145.7763671\
+9 C-9.30044291 1\
+53.67757263 0.06\
+747014 161.45568\
+815 9.48730469 1\
+69.1796875 C11.2\
+1073533 170.5978\
+0984 12.92670846\
+ 172.0241313 14.\
+63867188 173.456\
+05469 C23.155996\
+33 181.58268933 \
+23.15599633 181.\
+58268933 33.4277\
+3438 185.7763671\
+9 C33.42249756 1\
+86.61594971 33.4\
+1726074 187.4555\
+3223 33.41186523\
+ 188.32055664 C3\
+3.32622221 204.1\
+6885203 33.29927\
+994 219.95785416\
+ 34.42773438 235\
+.77636719 C35.08\
+773437 235.77636\
+719 35.74773437 \
+235.77636719 36.\
+42773438 235.776\
+36719 C37.143585\
+38 228.09279628 \
+37.4753657 220.5\
+5792537 37.32226\
+562 212.85058594\
+ C37.30081706 21\
+0.51164643 37.28\
+506323 208.17273\
+655 37.27124023 \
+205.83374023 C37\
+.25044761 204.24\
+449642 37.209845\
+71 202.65539691 \
+37.15014648 201.\
+06713867 C36.684\
+24658 187.789670\
+5 36.68424658 18\
+7.7896705 40.966\
+06445 182.845214\
+84 C44.02005654 \
+180.56044805 47.\
+10716833 178.646\
+08804 50.4277343\
+8 176.77636719 C\
+51.59130194 175.\
+89403062 52.7358\
+6775 174.9844657\
+6 53.83789062 17\
+4.02636719 C65.5\
+4918753 164.0915\
+9986 77.50467089\
+ 154.45471885 89\
+.42773438 144.77\
+636719 C88.43773\
+437 144.28136719\
+ 88.43773437 144\
+.28136719 87.427\
+73438 143.776367\
+19 Z \x22 fill=\x22#51\
+5151\x22 transform=\
+\x22translate(477.5\
+72265625,278.223\
+6328125)\x22/>\x0a<pat\
+h d=\x22M0 0 C4.986\
+69007 2.49334503\
+ 8.49675474 5.99\
+350949 11 11 C11\
+.5072965 16.5553\
+1248 11.76260422\
+ 21.41830236 9.3\
+125 26.5 C4.9697\
+7076 31.19484242\
+ 1.80302742 33.7\
+624553 -4.6875 3\
+4.3125 C-9.44875\
+46 34.23358418 -\
+13.15436044 32.7\
+8830186 -17 30 C\
+-21.19659702 24.\
+72735246 -22.447\
+01486 20.7052228\
+5 -22 14 C-20.10\
+71201 8.22173504\
+ -17.43710909 4.\
+06226545 -12.144\
+53125 0.88671875\
+ C-8.20033205 -0\
+.744125 -4.18280\
+747 -0.53608767 \
+0 0 Z \x22 fill=\x22#5\
+15151\x22 transform\
+=\x22translate(283,\
+390)\x22/>\x0a<path d=\
+\x22M0 0 C5.0709502\
+4 2.39195766 8.4\
+662244 6.0434907\
+5 11 11 C12.6245\
+8637 15.97342698\
+ 12.19405374 20.\
+32229053 10.1562\
+5 25.10546875 C7\
+.52659553 29.414\
+19313 3.75234935\
+ 32.41588355 -1 \
+34 C-7.282566 34\
+.53242085 -11.81\
+968006 33.756019\
+12 -17 30 C-20.7\
+892098 25.239197\
+94 -22.39359041 \
+21.32278933 -22.\
+26953125 15.1875\
+ C-21.68201286 1\
+0.41923483 -19.7\
+8272463 6.696463\
+76 -16.3046875 3\
+.38671875 C-11.1\
+7165099 -0.30200\
+182 -6.1940886 -\
+1.10348469 0 0 Z\
+ \x22 fill=\x22#515151\
+\x22 transform=\x22tra\
+nslate(752,390)\x22\
+/>\x0a<path d=\x22M0 0\
+ C5.76886726 3.8\
+6687015 10.20843\
+441 8.29123991 1\
+4.74609375 13.53\
+125 C17.46316508\
+ 16.50731427 20.\
+41405554 19.0263\
+5596 23.56640625\
+ 21.52734375 C25\
+ 23 25 23 25 26 \
+C21.89948553 26.\
+8678228 18.79413\
+335 27.71686767 \
+15.6875 28.5625 \
+C14.80642578 28.\
+80935547 13.9253\
+5156 29.05621094\
+ 13.01757812 29.\
+31054688 C11.746\
+24023 29.6537597\
+7 11.74624023 29\
+.65375977 10.449\
+21875 30.0039062\
+5 C9.27879028 30\
+.32597046 9.2787\
+9028 30.32597046\
+ 8.0847168 30.65\
+454102 C6 31 6 3\
+1 3 30 C-2.14349\
+177 21.95235982 \
+-0.10276935 9.20\
+356602 0 0 Z \x22 f\
+ill=\x22#515151\x22 tr\
+ansform=\x22transla\
+te(373,422)\x22/>\x0a<\
+path d=\x22M0 0 C0.\
+31607409 24.0567\
+5037 0.31607409 \
+24.05675037 -4 3\
+1 C-11.11120489 \
+29.68882339 -18.\
+04699943 27.9827\
+9484 -25 26 C-25\
+ 23 -25 23 -23.5\
+4663086 21.47241\
+211 C-22.8802661\
+1 20.93366455 -2\
+2.21390137 20.39\
+491699 -21.52734\
+375 19.83984375 \
+C-16.93541468 15\
+.99282537 -12.75\
+64943 11.8346675\
+4 -8.5625 7.5625\
+ C-7.14941047 6.\
+12406358 -5.7341\
+7027 4.68773558 \
+-4.31640625 3.25\
+390625 C-3.70224\
+854 2.62814697 -\
+3.08809082 2.002\
+3877 -2.45532227\
+ 1.35766602 C-1 \
+0 -1 0 0 0 Z \x22 f\
+ill=\x22#515151\x22 tr\
+ansform=\x22transla\
+te(652,422)\x22/>\x0a<\
+path d=\x22M0 0 C2.\
+07284525 2.64757\
+337 2.89874672 5\
+.55521764 3.9748\
+5352 8.72412109 \
+C4.61293945 10.5\
+8037109 4.612939\
+45 10.58037109 5\
+.26391602 12.474\
+12109 C5.9599493\
+6 14.55721371 6.\
+65532222 16.6405\
+272 7.34985352 1\
+8.72412109 C9.17\
+00155 19.7804760\
+8 9.1700155 19.7\
+8047608 11.34985\
+352 20.72412109 \
+C12.90044611 21.\
+7186853 14.43436\
+936 22.73948304 \
+15.95532227 23.7\
+7880859 C16.8479\
+9805 24.38764893\
+ 17.74067383 24.\
+99648926 18.6604\
+0039 25.6237793 \
+C20.08449219 26.\
+60157349 20.0844\
+9219 26.60157349\
+ 21.53735352 27.\
+59912109 C23.009\
+78516 28.6068859\
+9 23.00978516 28\
+.60688599 24.511\
+96289 29.6350097\
+7 C36.11915093 3\
+7.59656784 47.59\
+0111 45.74501641\
+ 59.03881836 53.\
+93188477 C65.797\
+93068 58.7632696\
+8 72.57006773 63\
+.57523905 79.378\
+17383 68.3374023\
+4 C81.18788639 6\
+9.61020662 82.98\
+458241 70.899398\
+26 84.77954102 7\
+2.19287109 C92.8\
+2155495 78.11279\
+62 92.82155495 7\
+8.1127962 102.34\
+985352 79.724121\
+09 C112.21960683\
+ 76.66919745 120\
+.77140849 69.388\
+36558 129.028564\
+45 63.39794922 C\
+132.98110877 60.\
+54786047 136.979\
+16912 57.7632407\
+2 140.97485352 5\
+4.97412109 C141.\
+80090088 54.3961\
+377 142.62694824\
+ 53.8181543 143.\
+47802734 53.2226\
+5625 C150.956666\
+67 47.99110976 1\
+58.4510147 42.78\
+217714 165.94897\
+461 37.57836914 \
+C170.4748207 34.\
+43402812 174.990\
+66043 31.2776337\
+5 179.47875977 2\
+8.07958984 C180.\
+65595581 27.2416\
+1865 180.6559558\
+1 27.24161865 18\
+1.85693359 26.38\
+671875 C183.3109\
+978 25.34939026 \
+184.76280667 24.\
+3088902 186.2119\
+1406 23.26464844\
+ C188.90784904 2\
+1.34126467 191.1\
+8820189 19.77800\
+497 194.34985352\
+ 18.72412109 C19\
+5.27392863 16.96\
+819702 195.27392\
+863 16.96819702 \
+195.84985352 14.\
+78662109 C196.09\
+348633 13.984824\
+22 196.33711914 \
+13.18302734 196.\
+58813477 12.3569\
+3359 C196.839501\
+95 11.48810547 1\
+97.09086914 10.6\
+1927734 197.3498\
+5352 9.72412109 \
+C197.91227424 7.\
+86993038 198.474\
+77199 6.01576303\
+ 199.03735352 4.\
+16162109 C199.47\
+625255 2.6828689\
+5 199.91427436 1\
+.20385454 200.34\
+985352 -0.275878\
+91 C250.95999916\
+ -3.1199649 311.\
+18472444 31.5363\
+8348 353.6623535\
+2 56.53662109 C3\
+54.25855499 56.8\
+8500031 354.8547\
+5647 57.23337952\
+ 355.46902466 57\
+.59231567 C357.1\
+3891806 58.57146\
+314 358.80124701\
+ 59.56347777 360\
+.46313477 60.556\
+15234 C361.88299\
+683 61.40270386 \
+361.88299683 61.\
+40270386 363.331\
+54297 62.2663574\
+2 C363.99758545 \
+62.74741943 364.\
+66362793 63.2284\
+8145 365.3498535\
+2 63.72412109 C3\
+65.34985352 64.3\
+8412109 365.3498\
+5352 65.04412109\
+ 365.34985352 65\
+.72412109 C327.4\
+8095446 75.63743\
+852 289.61976169\
+ 85.45876106 251\
+.34985352 93.724\
+12109 C249.65348\
+755 94.09156433 \
+249.65348755 94.\
+09156433 247.922\
+85156 94.4664306\
+6 C205.0682544 1\
+03.73177368 162.\
+01007396 111.730\
+31802 118.796173\
+1 119.12937927 C\
+116.53088948 119\
+.52030614 114.26\
+733769 119.92143\
+027 112.00582886\
+ 120.33363342 C9\
+4.76509499 123.4\
+0684072 77.02445\
+452 119.52862684\
+ 59.84985352 117\
+.16162109 C58.54\
+366058 116.98228\
+027 57.23746765 \
+116.80293945 55.\
+89169312 116.618\
+16406 C17.478440\
+47 111.33179573 \
+-20.55854767 104\
+.68426955 -58.58\
+664322 97.132537\
+84 C-61.23986647\
+ 96.60612088 -63\
+.89350656 96.081\
+84804 -66.547210\
+69 95.55786133 C\
+-91.5047745 90.6\
+2036073 -115.818\
+3809 85.18484821\
+ -139.75268555 7\
+6.39990234 C-142\
+.33511609 75.452\
+11134 -144.92186\
+259 74.51690853 \
+-147.50952148 73\
+.58349609 C-149.\
+1738354 72.98002\
+235 -150.8379080\
+2 72.37588263 -1\
+52.50170898 71.7\
+7099609 C-153.64\
+683456 71.355364\
+07 -153.64683456\
+ 71.35536407 -15\
+4.81509399 70.93\
+133545 C-158.188\
+99726 69.69127 -\
+161.48733584 68.\
+44175622 -164.65\
+014648 66.724121\
+09 C-163.4530646\
+8 63.13287567 -1\
+62.6921142 62.86\
+199934 -159.5134\
+2773 61.00927734\
+ C-158.63775146 \
+60.49421631 -157\
+.7620752 59.9791\
+5527 -156.859863\
+28 59.44848633 C\
+-155.42574097 58\
+.62586304 -155.4\
+2574097 58.62586\
+304 -153.9626464\
+8 57.78662109 C-\
+152.97240479 57.\
+21177979 -151.98\
+216309 56.636938\
+48 -150.96191406\
+ 56.04467773 C-1\
+47.86588317 54.2\
+5693243 -144.760\
+32911 52.4871176\
+ -141.65014648 5\
+0.72412109 C-140\
+.72814453 50.200\
+43945 -139.80614\
+258 49.67675781 \
+-138.85620117 49\
+.13720703 C-98.3\
+4297481 26.26279\
+346 -55.70700354\
+ 9.89938828 -10.\
+21264648 0.09912\
+109 C-9.3842627 \
+-0.08996826 -8.5\
+5587891 -0.27905\
+762 -7.70239258 \
+-0.47387695 C-2.\
+0859071 -1.61280\
+523 -2.0859071 -\
+1.61280523 0 0 Z\
+ \x22 fill=\x22#515151\
+\x22 transform=\x22tra\
+nslate(411.65014\
+6484375,461.2758\
+7890625)\x22/>\x0a<pat\
+h d=\x22M0 0 C1.753\
+97346 0.00848969\
+ 1.75397346 0.00\
+848969 3.5433807\
+4 0.01715088 C7.\
+272829 0.0395156\
+4 11.00131155 0.\
+089715 14.730468\
+75 0.140625 C17.\
+26105382 0.16068\
+975 19.79165397 \
+0.17894055 22.32\
+226562 0.1953125\
+ C28.52116203 0.\
+23938091 34.7194\
+9639 0.30629529 \
+40.91796875 0.39\
+0625 C40.4499893\
+5 3.733335 39.97\
+899838 7.0625806\
+8 39.36157227 10\
+.38134766 C38.85\
+667537 13.806421\
+47 38.80551838 1\
+7.07723764 38.82\
+03125 20.5390625\
+ C38.82243492 21\
+.52514999 38.822\
+43492 21.5251499\
+9 38.82460022 22\
+.53115845 C38.83\
+015113 24.609362\
+31 38.8426941 26\
+.68745427 38.855\
+46875 28.765625 \
+C38.86049011 30.\
+18359218 38.8650\
+519 31.60156107 \
+38.86914062 33.0\
+1953125 C38.8801\
+0438 36.47659822\
+ 38.89733454 39.\
+93360067 38.9179\
+6875 43.390625 C\
+28.26335174 43.1\
+0370961 17.60980\
+515 42.79096628 \
+6.95666504 42.45\
+379639 C5.134937\
+55 42.39734803 3\
+.31308049 42.345\
+11734 1.49121094\
+ 42.29345703 C-1\
+.17982991 42.215\
+36416 -3.8494019\
+2 42.11975488 -6\
+.51953125 42.015\
+625 C-7.26759033\
+ 41.99701416 -8.\
+01564941 41.9784\
+0332 -8.78637695\
+ 41.95922852 C-1\
+3.51849477 41.74\
+590693 -13.51849\
+477 41.74590693 \
+-15.75610352 40.\
+33520508 C-17.78\
+645641 37.357528\
+63 -17.54980075 \
+34.28472905 -17.\
+55078125 30.8007\
+8125 C-17.558394\
+78 30.05984726 -\
+17.5660083 29.31\
+891327 -17.57385\
+254 28.55552673 \
+C-17.58464978 26\
+.98960741 -17.58\
+750813 25.423616\
+1 -17.58300781 2\
+3.85766602 C-17.\
+58203584 21.4644\
+326 -17.62364451\
+ 19.07441058 -17\
+.66796875 16.681\
+64062 C-17.67317\
+631 15.15886084 \
+-17.67586393 13.\
+63606993 -17.675\
+78125 12.1132812\
+5 C-17.69217651 \
+11.39962906 -17.\
+70857178 10.6859\
+7687 -17.7254638\
+7 9.95069885 C-1\
+7.67899955 6.601\
+62238 -17.277043\
+38 4.65964502 -1\
+5.30004883 1.932\
+37305 C-10.28712\
+422 -0.46931263 \
+-5.48460653 -0.0\
+9989421 0 0 Z \x22 \
+fill=\x22#515151\x22 t\
+ransform=\x22transl\
+ate(170.08203125\
+,527.609375)\x22/>\x0a\
+<path d=\x22M0 0 C1\
+.04811356 -0.009\
+60754 2.09622711\
+ -0.01921509 3.1\
+7610168 -0.02911\
+377 C4.31770248 \
+-0.03336365 5.45\
+930328 -0.037613\
+53 6.63549805 -0\
+.04199219 C7.800\
+98679 -0.0476922\
+6 8.96647552 -0.\
+05339233 10.1672\
+821 -0.05926514 \
+C12.63966967 -0.\
+06873309 15.1120\
+6995 -0.07525621\
+ 17.58447266 -0.\
+07910156 C21.370\
+5854 -0.08879898\
+ 25.15615369 -0.\
+11980293 28.9421\
+3867 -0.15136719\
+ C31.33992189 -0\
+.15789763 33.737\
+70901 -0.1631479\
+4 36.13549805 -0\
+.16699219 C37.27\
+102615 -0.179338\
+99 38.40655426 -\
+0.19168579 39.57\
+649231 -0.204406\
+74 C41.16284737 \
+-0.19990509 41.1\
+6284737 -0.19990\
+509 42.78125 -0.\
+1953125 C43.7108\
+9066 -0.19895813\
+ 44.64053131 -0.\
+20260376 45.5983\
+429 -0.20635986 \
+C48.58693456 0.2\
+3536193 49.94761\
+988 1.04471039 5\
+2.0847168 3.1611\
+3281 C52.5610051\
+9 5.81716575 52.\
+78334283 8.08221\
+532 52.8347168 1\
+0.75097656 C52.8\
+7375122 11.86237\
+755 52.87375122 \
+11.86237755 52.9\
+1357422 12.99623\
+108 C52.96318441\
+ 14.56190858 53.\
+00290519 16.1279\
+2629 53.03344727\
+ 17.6940918 C53.\
+08449092 20.0880\
+3913 53.17813106\
+ 22.47768476 53.\
+27612305 24.8701\
+1719 C53.3190635\
+6 26.39283319 53\
+.35951107 27.915\
+62195 53.3972168\
+ 29.43847656 C53\
+.4271875 30.1521\
+2875 53.4571582 \
+30.86578094 53.4\
+8803711 31.60105\
+896 C53.52531461\
+ 34.97429331 53.\
+31892379 36.8354\
+6767 51.32666016\
+ 39.60571289 C48\
+.92145212 41.274\
+4029 47.78735638\
+ 41.68608654 44.\
+90112305 41.7705\
+0781 C44.0691943\
+4 41.80281494 43\
+.23726562 41.835\
+12207 42.3801269\
+5 41.8684082 C41\
+.02733643 41.889\
+55688 41.0273364\
+3 41.88955688 39\
+.6472168 41.9111\
+3281 C38.7066845\
+7 41.94005615 37\
+.76615234 41.968\
+97949 36.7971191\
+4 41.9987793 C23\
+.89997755 42.340\
+80409 10.9846326\
+2 42.24963762 -1\
+.9152832 42.1611\
+3281 C-1.9351025\
+4 41.29423828 -1\
+.95492187 40.427\
+34375 -1.9753418\
+ 39.53417969 C-2\
+.05395627 36.283\
+62313 -2.1406649\
+1 33.03340624 -2\
+.23266602 29.783\
+20312 C-2.270686\
+33 28.38289547 -\
+2.30558354 26.98\
+249907 -2.337158\
+2 25.58203125 C-\
+2.5337849 16.967\
+3243 -3.17900924\
+ 9.36995469 -5.9\
+152832 1.1611328\
+1 C-4.25606051 -\
+0.49808988 -2.28\
+228803 0.0168060\
+4 0 0 Z \x22 fill=\x22\
+#515151\x22 transfo\
+rm=\x22translate(81\
+8.915283203125,5\
+27.8388671875)\x22/\
+>\x0a<path d=\x22M0 0 \
+C1.05598389 0.04\
+455322 2.1119677\
+7 0.08910645 3.1\
+9995117 0.135009\
+77 C4.34439697 0\
+.20002686 5.4888\
+4277 0.26504395 \
+6.66796875 0.332\
+03125 C7.8452856\
+4 0.38738037 9.0\
+2260254 0.442729\
+49 10.2355957 0.\
+49975586 C24.119\
+42353 1.18561313\
+ 37.99122578 2.1\
+4455908 51.85546\
+875 3.14453125 C\
+49.98046875 9.01\
+953125 49.980468\
+75 9.01953125 48\
+.85546875 10.144\
+53125 C48.814277\
+13 11.61670862 4\
+8.84506363 13.09\
+101803 48.90625 \
+14.5625 C48.9634\
+1187 15.94091064\
+ 48.96341187 15.\
+94091064 49.0217\
+2852 17.34716797\
+ C49.06998779 18\
+.33217285 49.118\
+24707 19.3171777\
+3 49.16796875 20\
+.33203125 C49.21\
+429443 21.324770\
+51 49.26062012 2\
+2.31750977 49.30\
+834961 23.340332\
+03 C49.70821617 \
+31.03448837 50.5\
+2080796 38.55121\
+841 51.85546875 \
+46.14453125 C45.\
+23223826 46.2229\
+571 38.68981498 \
+46.02087597 32.0\
+859375 45.523437\
+5 C31.2019075 45\
+.45922104 30.317\
+8775 45.39500458\
+ 29.40705872 45.\
+32884216 C27.557\
+45621 45.1935752\
+1 25.70798378 45\
+.05651832 23.858\
+64258 44.9177246\
+1 C21.03306696 4\
+4.70629031 18.20\
+702673 44.502182\
+97 15.38085938 4\
+4.29882812 C13.5\
+7418671 44.16579\
+902 11.76754488 \
+44.03235032 9.96\
+09375 43.8984375\
+ C9.12128952 43.\
+83797745 8.28164\
+154 43.7775174 7\
+.41654968 43.715\
+22522 C3.4913773\
+ 43.41649475 -0.\
+30071511 43.0460\
+7113 -4.14453125\
+ 42.14453125 C-6\
+.1708599 36.0655\
+4529 -6.7674886 \
+30.13971177 -7.2\
+6953125 23.76953\
+125 C-7.35589844\
+ 22.77953125 -7.\
+44226563 21.7895\
+3125 -7.53125 20\
+.76953125 C-7.77\
+011549 17.895562\
+39 -7.97126625 1\
+5.02316204 -8.14\
+453125 12.144531\
+25 C-8.19706055 \
+11.27795898 -8.2\
+4958984 10.41138\
+672 -8.30371094 \
+9.51855469 C-8.5\
+0491472 3.669442\
+41 -8.50491472 3\
+.66944241 -6.950\
+92773 1.40600586\
+ C-4.4918923 -0.\
+31123108 -2.9806\
+1378 -0.1446799 \
+0 0 Z \x22 fill=\x22#5\
+15151\x22 transform\
+=\x22translate(161.\
+14453125,586.855\
+46875)\x22/>\x0a<path \
+d=\x22M0 0 C1.66031\
+493 1.41818567 3\
+.3196114 2.83757\
+603 4.97460938 4\
+.26196289 C6.198\
+95206 5.31260122\
+ 7.42807436 6.35\
+775323 8.6660156\
+2 7.39233398 C16\
+.32123137 13.897\
+33423 23.2435826\
+2 21.18370479 30\
+.30029297 28.320\
+80078 C38.942029\
+17 37.06316533 3\
+8.94202917 37.06\
+316533 48.068359\
+38 45.29101562 C\
+53.15583528 49.7\
+9206862 57.81343\
+784 54.78030811 \
+62.578125 59.617\
+1875 C66.2611988\
+7 63.33415469 69\
+.92642129 67.006\
+04763 73.90625 7\
+0.40625 C79.9459\
+6586 75.58488187\
+ 85.42566454 81.\
+37030314 91.0092\
+7734 87.02978516\
+ C96.82322954 92\
+.91553786 102.69\
+511874 98.634203\
+79 109 104 C114.\
+34227331 108.887\
+61175 114.342273\
+31 108.88761175 \
+115 113 C115.083\
+32859 115.691603\
+2 115.11629936 1\
+18.3560833 115.0\
+9765625 121.0468\
+75 C115.09553383\
+ 122.20367767 11\
+5.09553383 122.2\
+0367767 115.0933\
+6853 123.3838501\
+ C115.08778534 1\
+25.83927338 115.\
+07523595 128.294\
+60442 115.0625 1\
+30.75 C115.05748\
+283 132.41796743\
+ 115.0529203 134\
+.08593629 115.04\
+882812 135.75390\
+625 C115.0378214\
+1 139.83597287 1\
+15.02056836 143.\
+91797081 115 148\
+ C109.67074014 1\
+50.42986077 104.\
+29870896 152.711\
+34448 98.859375 \
+154.8828125 C63.\
+17642345 169.131\
+87097 25.5557098\
+7 185.28279769 -\
+2 213 C-2.846269\
+53 213.83624405 \
+-3.69253906 214.\
+6724881 -4.56445\
+312 215.53407288\
+ C-7.81488553 21\
+9.4854658 -7.668\
+18671 223.098440\
+92 -7.55175781 2\
+28.04711914 C-7.\
+55044357 229.382\
+37892 -7.5504435\
+7 229.38237892 -\
+7.54910278 230.7\
+4461365 C-7.5405\
+4925 233.6754468\
+ -7.49681661 236\
+.60465448 -7.453\
+125 239.53515625\
+ C-7.44125102 24\
+1.57725319 -7.43\
+174393 243.61936\
+515 -7.42449951 \
+245.66148376 C-7\
+.39977753 251.03\
+073838 -7.345910\
+04 256.39929804 \
+-7.28503418 261.\
+76824951 C-7.204\
+54405 269.336705\
+48 -7.16364186 2\
+76.90549517 -7.1\
+1834717 284.4742\
+2791 C-7.0941393\
+2 288.50317196 -\
+7.05894214 292.5\
+3178771 -7.01495\
+361 296.56056213\
+ C-6.99853661 29\
+8.40113287 -6.98\
+215684 300.24170\
+394 -6.96582031 \
+302.08227539 C-6\
+.94864456 303.33\
+157333 -6.948644\
+56 303.33157333 \
+-6.93112183 304.\
+60610962 C-6.906\
+66232 307.834575\
+16 -6.94417326 3\
+10.7213315 -7.58\
+050537 313.89768\
+982 C-8.25024046\
+ 316.14439388 -8\
+.25024046 316.14\
+439388 -6.746093\
+75 318.5546875 C\
+-6.16988281 319.\
+36164063 -5.5936\
+7188 320.1685937\
+5 -5 321 C-4.537\
+22656 321.662578\
+12 -4.07445312 3\
+22.32515625 -3.5\
+9765625 323.0078\
+125 C-3.09105469\
+ 323.70648437 -2\
+.58445313 324.40\
+515625 -2.0625 3\
+25.125 C1.292085\
+77 329.88024788 \
+4.41010755 334.7\
+5871251 7.5 339.\
+6875 C18.9968119\
+4 358.01082931 3\
+0.95961024 376.0\
+3065171 43 394 C\
+44.23564697 393.\
+87882812 45.4712\
+9395 393.7576562\
+5 46.74438477 39\
+3.6328125 C51.34\
+920116 393.18214\
+944 55.9544392 3\
+92.73592824 60.5\
+5981445 392.2910\
+1562 C62.5491892\
+5 392.09820851 6\
+4.53844928 391.9\
+0421313 66.52758\
+789 391.70898438\
+ C69.3943968 391\
+.42782623 72.261\
+59762 391.151009\
+51 75.12890625 3\
+90.875 C76.01147\
+598 390.78750488\
+ 76.89404572 390\
+.70000977 77.803\
+35999 390.609863\
+28 C82.56228523 \
+390.15634715 87.\
+21957965 389.909\
+3222 92 390 C84.\
+91063537 377.683\
+45407 77.4043676\
+2 365.6715492 69\
+.73291016 353.71\
+044922 C66.63645\
+86 348.8672814 6\
+3.57786012 344.0\
+001869 60.521972\
+66 339.13134766 \
+C60.08804199 338\
+.44218262 59.654\
+11133 337.753017\
+58 59.20703125 3\
+37.04296875 C58.\
+51275024 335.873\
+74878 58.5127502\
+4 335.87374878 5\
+7.80444336 334.6\
+809082 C56.35393\
+655 332.52585269\
+ 54.96908274 330\
+.8582289 53.2131\
+3477 328.9812011\
+7 C41.17167037 3\
+15.04262713 43.7\
+4424742 296.8019\
+6322 44.24468994\
+ 279.52911377 C4\
+4.35853216 275.1\
+7820976 44.40773\
+115 270.82658282\
+ 44.46289062 266\
+.47460938 C44.57\
+981256 257.98111\
+004 44.76677902 \
+249.49109949 45 \
+241 C50.15795385\
+ 241.55581399 54\
+.90987984 242.39\
+038162 59.90625 \
+243.84765625 C61\
+.14375 244.20537\
+109 62.38125 244\
+.56308594 63.656\
+25 244.93164062 \
+C64.93753893 245\
+.30846141 66.218\
+78847 245.685416\
+15 67.5 246.0625\
+ C68.81233874 24\
+6.44391466 70.12\
+483765 246.82477\
+866 71.4375 247.\
+20507812 C74.626\
+61361 248.131328\
+03 77.81399933 2\
+49.06310952 81 2\
+50 C82.23987055 \
+253.55677392 81.\
+74101339 255.874\
+54553 80.75 259.\
+46484375 C80.471\
+5625 260.5122070\
+3 80.193125 261.\
+55957031 79.9062\
+5 262.63867188 C\
+79.30308109 264.\
+83425872 78.6989\
+176 267.02957258\
+ 78.09375 269.22\
+460938 C77.81531\
+25 270.27326172 \
+77.536875 271.32\
+191406 77.25 272\
+.40234375 C76.98\
+703125 273.35616\
+943 76.7240625 2\
+74.30999512 76.4\
+53125 275.292724\
+61 C75.94540547 \
+278.32618465 75.\
+94340433 280.107\
+54714 77 283 C79\
+.01579398 285.02\
+244729 79.015793\
+98 285.02244729 \
+81.6796875 286.7\
+3046875 C82.6783\
+8867 287.4180224\
+6 83.67708984 28\
+8.10557617 84.70\
+605469 288.81396\
+484 C85.79305664\
+ 289.53535645 86\
+.88005859 290.25\
+674805 88 291 C8\
+9.11622994 291.7\
+4818128 90.23244\
+063 292.49639129\
+ 91.34863281 293\
+.24462891 C96.21\
+399739 296.48577\
+481 101.11362798\
+ 299.67172656 10\
+6.04418945 302.8\
+1274414 C116.989\
+27759 309.813245\
+57 116.98927759 \
+309.81324557 121\
+.47265625 313.82\
+03125 C128.05615\
+997 319.51261808\
+ 133.09551006 32\
+1.45774988 141.9\
+1796875 320.8710\
+9375 C149.387878\
+06 320.2375317 1\
+56.75258976 318.\
+98334373 164.125\
+ 317.65478516 C1\
+67.34016558 317.\
+11149672 170.470\
+94686 316.722492\
+54 173.71875 316\
+.48046875 C186.2\
+3093309 315.4543\
+2062 194.7441494\
+2 309.87722997 2\
+04.77099609 302.\
+58300781 C208.08\
+353432 300.23048\
+888 211.52513661\
+ 298.10268891 21\
+5 296 C214.56687\
+5 294.64455078 2\
+14.566875 294.64\
+455078 214.125 2\
+93.26171875 C213\
+.75375 292.08222\
+656 213.3825 290\
+.90273438 213 28\
+9.6875 C212.6287\
+5 288.51574219 2\
+12.2575 287.3439\
+8437 211.875 286\
+.13671875 C211 2\
+83 211 283 211 2\
+80 C217.36804598\
+ 280.37878748 22\
+3.57810125 281.2\
+1678366 229.8359\
+375 282.4453125 \
+C230.52778137 28\
+2.57983826 231.2\
+1962524 282.7143\
+6401 231.9324340\
+8 282.85296631 C\
+234.79869781 283\
+.41350529 237.66\
+367156 283.97875\
+915 240.52441406\
+ 284.56689453 C2\
+57.06084593 287.\
+94437206 271.446\
+1544 285.5661112\
+5 287.8125 282.4\
+375 C289.5838650\
+6 282.10418298 2\
+91.35534883 281.\
+77149623 293.126\
+95312 281.439453\
+12 C297.41936981\
+ 280.63354998 30\
+1.71009739 279.8\
+1917578 306 279 \
+C305.30859767 28\
+3.3918655 304.29\
+722363 287.01826\
+895 302.5234375 \
+291.0703125 C301\
+.84558953 293.56\
+924456 302.01436\
+239 294.59319113\
+ 303 297 C305.35\
+751411 299.00443\
+509 305.35751411\
+ 299.00443509 30\
+8.35546875 300.8\
+203125 C309.4531\
+0547 301.5202734\
+4 310.55074219 3\
+02.22023438 311.\
+68164062 302.941\
+40625 C312.25760\
+986 303.29992676\
+ 312.8335791 303\
+.65844727 313.42\
+700195 304.02783\
+203 C315.1721074\
+1 305.11540712 3\
+16.90395322 306.\
+22188487 318.634\
+76562 307.332031\
+25 C327.23746604\
+ 312.76584436 33\
+4.24448349 315.2\
+1868151 344.2539\
+0625 316.5429687\
+5 C345.23238022 \
+316.6756868 346.\
+21085419 316.808\
+40485 347.218978\
+88 316.94514465 \
+C349.28027127 31\
+7.22283602 351.3\
+419748 317.49749\
+045 353.40405273\
+ 317.76928711 C3\
+56.55666921 318.\
+18672794 359.706\
+98784 318.619165\
+87 362.85742188 \
+319.05273438 C36\
+4.86446162 319.3\
+2122393 366.8716\
+195 319.58883212\
+ 368.87890625 31\
+9.85546875 C369.\
+81859756 319.985\
+5986 370.7582888\
+8 320.11572845 3\
+71.72645569 320.\
+24980164 C378.35\
+939847 321.10598\
+678 382.78666646\
+ 321.09282236 38\
+8.5 317.3125 C38\
+9.45003906 316.6\
+8859375 390.4000\
+7813 316.0646875\
+ 391.37890625 31\
+5.421875 C392.58\
+616831 314.61492\
+855 393.79316857\
+ 313.80759034 39\
+5 313 C396.65473\
+102 311.90071511\
+ 398.30969826 31\
+0.80178575 399.9\
+6484375 309.7031\
+25 C403.63295084\
+ 307.26512322 40\
+7.29661957 304.8\
+2063313 410.9570\
+3125 302.3710937\
+5 C413.84499023 \
+300.43848549 416\
+.73523636 298.50\
+990165 419.63671\
+875 296.59765625\
+ C425.50311795 2\
+92.72506593 431.\
+20575223 288.700\
+01281 436.820312\
+5 284.46875 C439\
+ 283 439 283 441\
+ 283 C440.279028\
+88 275.79028884 \
+438.55237467 269\
+.04616503 436.64\
+0625 262.0703125\
+ C436.41632812 2\
+61.21695312 436.\
+19203125 260.363\
+59375 435.960937\
+5 259.484375 C43\
+5.64842041 258.3\
+3533691 435.6484\
+2041 258.3353369\
+1 435.32958984 2\
+57.16308594 C434\
+.74176559 253.30\
+52171 434.741765\
+59 253.3052171 4\
+36 251 C438.5336\
+0996 249.9146361\
+8 440.82426665 2\
+49.13619718 443.\
+46484375 248.421\
+875 C444.5876046\
+ 248.09742401 44\
+4.5876046 248.09\
+742401 445.73304\
+749 247.76641846\
+ C448.13028507 2\
+47.07821508 450.\
+53353843 246.414\
+28727 452.9375 2\
+45.75 C454.55446\
+721 245.28796315\
+ 456.17101036 24\
+4.82443947 457.7\
+8710938 244.3593\
+75 C469.56447095\
+ 241 469.5644709\
+5 241 472 241 C4\
+72.28065057 250.\
+31964601 472.492\
+54109 259.637793\
+13 472.62174606 \
+268.96077442 C47\
+2.6838278 273.29\
+220302 472.76770\
+004 277.62069889\
+ 472.90527344 28\
+1.95043945 C474.\
+01524732 317.841\
+83599 474.015247\
+32 317.84183599 \
+461.49969482 332\
+.22964478 C459.3\
+0654021 334.8186\
+1332 457.6257953\
+9 337.58599152 4\
+55.85546875 340.\
+48046875 C454.63\
+302524 342.38294\
+921 453.41037018\
+ 344.28529376 45\
+2.1875 346.1875 \
+C446.6618073 354\
+.80440461 441.18\
+017139 363.44756\
+337 435.75 372.1\
+25 C435.13020264\
+ 373.11395264 43\
+4.51040527 374.1\
+0290527 433.8718\
+2617 375.1218261\
+7 C430.80973258 \
+380.02736882 427\
+.82388187 384.95\
+335963 425 390 C\
+425.86496094 390\
+.04898437 426.72\
+992187 390.09796\
+875 427.62109375\
+ 390.1484375 C43\
+7.47038116 390.7\
+3314443 447.2987\
+557 391.48654284\
+ 457.12866211 39\
+2.33935547 C459.\
+15088077 392.508\
+6069 461.1747891\
+9 392.65897279 4\
+63.19995117 392.\
+78833008 C466 39\
+3 466 393 468.49\
+731445 393.42065\
+43 C470.99322775\
+ 393.72724435 47\
+2.6049408 393.78\
+628728 475 393 C\
+478.11504334 389\
+.97421976 480.14\
+436108 386.42591\
+405 482.3125 382\
+.6875 C483.27941\
+772 381.11331299\
+ 483.27941772 38\
+1.11331299 484.2\
+6586914 379.5073\
+2422 C485.581777\
+73 377.36188115 \
+486.88483532 375\
+.20850196 488.17\
+480469 373.04736\
+328 C490.6849853\
+2 368.85634206 4\
+93.31078485 364.\
+74348005 495.937\
+5 360.625 C496.8\
+9812578 359.1008\
+8418 497.8577327\
+9 357.57612584 4\
+98.81640625 356.\
+05078125 C502.65\
+163923 349.96011\
+013 506.50819609\
+ 343.88315658 51\
+0.375 337.8125 C\
+511.04136475 336\
+.76078613 511.70\
+772949 335.70907\
+227 512.39428711\
+ 334.62548828 C5\
+13.03503174 333.\
+62114746 513.675\
+77637 332.616806\
+64 514.3359375 3\
+31.58203125 C515\
+.17970947 330.25\
+522339 515.17970\
+947 330.25522339\
+ 516.04052734 32\
+8.90161133 C518 \
+326 518 326 519.\
+4726553 324.3108\
+12 C523.97547362\
+ 319.00038917 52\
+4.8964353 315.06\
+946692 524.88745\
+117 308.21020508\
+ C524.90920914 3\
+07.26431519 524.\
+9309671 306.3184\
+2529 524.9533844\
+ 305.34387207 C5\
+25.01517042 302.\
+2353041 525.0320\
+3964 299.1286676\
+3 525.04296875 2\
+96.01953125 C525\
+.06481428 293.84\
+24965 525.087393\
+95 291.665469 52\
+5.110672 289.488\
+4491 C525.151040\
+37 284.92987527 \
+525.16622198 280\
+.37197556 525.16\
+674805 275.81323\
+242 C525.1717197\
+9 269.99913363 5\
+25.26391998 264.\
+19003215 525.378\
+58105 258.377202\
+03 C525.45317815\
+ 253.88056419 52\
+5.46814446 249.3\
+851125 525.46703\
+529 244.88791466\
+ C525.47590446 2\
+42.74653568 525.\
+50577054 240.605\
+12818 525.557882\
+31 238.46436501 \
+C526.02882523 22\
+4.64382517 526.0\
+2882523 224.6438\
+2517 519.4796342\
+8 213.01048565 C\
+516.79261862 210\
+.46507577 513.97\
+021297 208.20275\
+068 511 206 C509\
+.40228849 204.68\
+496297 507.80461\
+748 203.36987672\
+ 506.20703125 20\
+2.0546875 C504.7\
+5222655 200.9810\
+5363 503.2873288\
+7 199.92095707 5\
+01.8125 198.875 \
+C501.01497314 19\
+8.29862793 500.2\
+1744629 197.7222\
+5586 499.3957519\
+5 197.12841797 C\
+491.83847678 191\
+.74130376 484.00\
+700011 186.85484\
+591 475.99609375\
+ 182.17578125 C4\
+74.24246002 181.\
+14281892 472.509\
+96128 180.074150\
+7 470.78125 179 \
+C452.84529976 16\
+8.12972713 432.6\
+5208473 160.3658\
+2355 413.0361328\
+1 153.07080078 C\
+412.02131836 152\
+.69294434 411.00\
+650391 152.31508\
+789 409.9609375 \
+151.92578125 C40\
+9.07196777 151.6\
+0005127 408.1829\
+9805 151.2743212\
+9 407.26708984 1\
+50.9387207 C405 \
+150 405 150 402 \
+148 C401.6435546\
+9 144.9465332 40\
+1.64355469 144.9\
+465332 401.67187\
+5 141.05078125 C\
+401.67374817 140\
+.35993942 401.67\
+562134 139.66909\
+76 401.67755127 \
+138.95732117 C40\
+1.68428034 137.4\
+9208773 401.6982\
+119 136.02687252\
+ 401.71875 134.5\
+6176758 C401.749\
+63834 132.338531\
+05 401.75969651 \
+130.11600708 401\
+.765625 127.8925\
+7812 C401.875725\
+5 110.78841762 4\
+01.8757255 110.7\
+8841762 404.1799\
+3164 107.1230468\
+8 C404.66840576 \
+106.65962891 405\
+.15687988 106.19\
+621094 405.66015\
+625 105.71875 C4\
+06.20736328 105.\
+18636719 406.754\
+57031 104.653984\
+37 407.31835938 \
+104.10546875 C40\
+7.89392578 103.5\
+7566406 408.4694\
+9219 103.0458593\
+8 409.0625 102.5\
+ C409.61099609 1\
+01.97019531 410.\
+15949219 101.440\
+39063 410.724609\
+38 100.89453125 \
+C413.56843401 98\
+.17263189 416.49\
+478281 95.577128\
+04 419.49609375 \
+93.03125 C426.35\
+14784 87.0724846\
+7 432.61382188 8\
+0.45105946 439 7\
+4 C454.17177075 \
+58.67408934 454.\
+17177075 58.6740\
+8934 460.2460937\
+5 53.53125 C463.\
+67389923 50.5386\
+0023 466.8153598\
+3 47.24684017 47\
+0 44 C473.809060\
+05 40.11654425 4\
+77.60394115 36.2\
+8803794 481.7460\
+9375 32.7578125 \
+C485.25140456 29\
+.73956441 488.53\
+399667 26.529317\
+68 491.78515625 \
+23.2421875 C492.\
+29476898 22.7270\
+6604 492.8043817\
+1 22.21194458 49\
+3.32943726 21.68\
+121338 C495.4427\
+9316 19.54025483\
+ 497.55245445 17\
+.39574144 499.65\
+74707 15.2465820\
+3 C510.61341207 \
+4.07654549 510.6\
+1341207 4.076545\
+49 517 0 C544.41\
+046135 34.424314\
+7 557.67423491 7\
+8.94829731 563 1\
+22 C563.13148438\
+ 122.99257813 56\
+3.26296875 123.9\
+8515625 563.3984\
+375 125.0078125 \
+C563.7003338 127\
+.67592308 563.87\
+125242 130.31775\
+87 564 133 C564.\
+06477539 133.977\
+91504 564.064775\
+39 133.97791504 \
+564.13085938 134\
+.97558594 C564.9\
+4923213 148.3601\
+3166 562.4583102\
+7 159.40792723 5\
+58 172 C555.7650\
+5374 168.3342648\
+9 555.35799694 1\
+64.53820474 554.\
+8515625 160.3593\
+75 C554.70540245\
+ 159.23190102 55\
+4.70540245 159.2\
+3190102 554.5562\
+8967 158.0816497\
+8 C554.3479275 1\
+56.47183411 554.\
+14260124 154.861\
+62311 553.940032\
+96 153.25106812 \
+C553.41242932 14\
+9.06238692 552.8\
+6134663 144.8768\
+3266 552.3085937\
+5 140.69140625 C\
+552.19927017 139\
+.86159744 552.08\
+994659 139.03178\
+864 551.97731018\
+ 138.17683411 C5\
+50.58747287 127.\
+74033745 548.846\
+2337 117.3649031\
+7 547 107 C546.9\
+0098253 117.1657\
+9355 546.9304773\
+ 127.30619193 54\
+7.35961914 137.4\
+6484375 C547.587\
+78959 142.906014\
+43 547.7693097 1\
+48.34834039 547.\
+93310547 153.791\
+80908 C547.98010\
+937 155.34340957\
+ 548.02875806 15\
+6.89496068 548.0\
+7861328 158.4464\
+7217 C548.248043\
+77 163.81612496 \
+548.37324398 169\
+.18448017 548.45\
+19043 174.556243\
+9 C548.48371864 \
+176.33810978 548\
+.52795572 178.11\
+980139 548.58520\
+508 179.90103149\
+ C549.08247048 1\
+95.86516627 549.\
+08247048 195.865\
+16627 544.46875 \
+201.171875 C542.\
+51367188 202.909\
+17969 542.513671\
+88 202.90917969 \
+541 204 C541.577\
+5 203.71125 542.\
+155 203.4225 542\
+.75 203.125 C544\
+.83333333 202.08\
+333333 546.91666\
+667 201.04166667\
+ 549 200 C549.18\
+018001 209.11277\
+763 549.34580567\
+ 218.22568697 54\
+9.49477577 227.3\
+3902836 C549.564\
+42784 231.574563\
+07 549.6383831 2\
+35.80991425 549.\
+72363281 240.045\
+16602 C550.22182\
+502 265.02163077\
+ 549.81972617 28\
+9.61791748 546.9\
+4099426 314.4678\
+6499 C541.264099\
+45 363.69538847 \
+541.60763828 413\
+.02814141 541.78\
+391868 462.49756\
+753 C541.8181703\
+2 472.28562188 5\
+41.83412511 482.\
+07368447 541.849\
+02918 491.861784\
+34 C541.87993815\
+ 511.90792315 54\
+1.93229866 531.9\
+5395371 542 552 \
+C544.73223615 55\
+1.36392191 547.4\
+6404949 550.7261\
+1575 550.1956481\
+9 550.08731079 C\
+550.96566634 549\
+.90823464 551.73\
+568449 549.72915\
+85 552.52903652 \
+549.5446558 C557\
+.66748255 548.34\
+11459 562.720486\
+81 547.01398652 \
+567.7265625 545.\
+3359375 C568.796\
+84441 544.985435\
+87 568.79684441 \
+544.98543587 569\
+.88874817 544.62\
+785339 C572.1375\
+4843 543.8866307\
+8 574.38167504 5\
+43.13261929 576.\
+625 542.375 C577\
+.39949493 542.11\
+53244 578.173989\
+87 541.8556488 5\
+78.97195435 541.\
+58810425 C588.93\
+273285 538.23722\
+441 598.77463856\
+ 534.70645756 60\
+8.4375 530.5625 \
+C609.81059326 52\
+9.98024658 609.8\
+1059326 529.9802\
+4658 611.2114257\
+8 529.38623047 C\
+616.04638951 527\
+.22628424 619.48\
+176516 525.08330\
+507 623 521 C623\
+.7425 520.175 62\
+4.485 519.35 625\
+.25 518.5 C628.8\
+9434467 513.2937\
+9333 628.1424811\
+ 507.09072382 62\
+8.12939453 500.9\
+7167969 C628.131\
+14685 499.964378\
+05 628.13289917 \
+498.95707642 628\
+.13470459 497.91\
+925049 C628.1391\
+0693 494.5867744\
+7 628.13618811 4\
+91.25435157 628.\
+1328125 487.9218\
+75 C628.13348663\
+ 485.59320058 62\
+8.13445758 483.2\
+6452623 628.1357\
+1167 480.9358520\
+5 C628.13718698 \
+476.04674614 628\
+.13504176 471.15\
+765848 628.13037\
+109 466.26855469\
+ C628.12471187 4\
+60.04542944 628.\
+12792953 453.822\
+34769 628.133943\
+56 447.59922409 \
+C628.13758623 44\
+2.78265058 628.1\
+3639305 437.9660\
+8708 628.1338157\
+7 433.14951324 C\
+628.13315472 430\
+.85812627 628.13\
+394572 428.56673\
+834 628.13629532\
+ 426.27535248 C6\
+28.14556738 414.\
+6776995 628.0544\
+3305 403.1564599\
+1 627.16296387 3\
+91.58914185 C626\
+.88047256 385.36\
+750887 627.62446\
+975 379.30108474\
+ 628.375 373.125\
+ C628.66494183 3\
+70.5199166 628.9\
+5140301 367.9144\
+4345 629.234375 \
+365.30859375 C62\
+9.37037109 364.0\
+6190918 629.5063\
+6719 362.8152246\
+1 629.64648438 3\
+61.53076172 C630\
+.19671569 356.03\
+52885 630.495754\
+44 350.53957042 \
+630.70849609 345\
+.02197266 C631.1\
+8888328 332.8492\
+5243 631.1888832\
+8 332.84925243 6\
+32.48458862 328.\
+29776001 C634.76\
+569019 318.12836\
+095 634.16794196\
+ 306.72153697 63\
+4.203125 296.371\
+09375 C634.20736\
+607 295.3722198 \
+634.20736607 295\
+.3722198 634.211\
+69281 294.353166\
+58 C634.2265334 \
+290.81722778 634\
+.23585346 287.28\
+132806 634.24023\
+438 283.74536133\
+ C634.2445794 28\
+0.90017597 634.2\
+5833758 278.0553\
+0064 634.28125 2\
+75.21020508 C634\
+.46799415 251.51\
+156858 633.07876\
+47 228.41358319 \
+629.28326416 204\
+.9684906 C629.02\
+119762 202.22214\
+22 629.1666592 2\
+00.58071742 630 \
+198 C630.0776608\
+4 196.55901569 6\
+30.10796367 195.\
+11491371 630.097\
+65625 193.671875\
+ C630.09443359 1\
+92.87265625 630.\
+09121094 192.073\
+4375 630.0878906\
+2 191.25 C630.07\
+951172 190.425 6\
+30.07113281 189.\
+6 630.0625 188.7\
+5 C630.05573242 \
+187.48929687 630\
+.05573242 187.48\
+929687 630.04882\
+812 186.203125 C\
+630.03707961 184\
+.13538599 630.01\
+914522 182.06768\
+376 630 180 C629\
+.33677734 181.64\
+548828 629.33677\
+734 181.64548828\
+ 628.66015625 18\
+3.32421875 C627.\
+16003668 187.046\
+08975 624.996400\
+61 189.31092253 \
+622 192 C621.34 \
+192.66 620.68 19\
+3.32 620 194 C61\
+7.35913086 194.1\
+6699219 617.3591\
+3086 194.1669921\
+9 613.96484375 1\
+94.046875 C612.6\
+9511719 194.0055\
+4443 611.4253906\
+2 193.96421387 6\
+10.1171875 193.9\
+2163086 C608.723\
+93855 193.864904\
+43 607.33070971 \
+193.80768206 605\
+.9375 193.75 C60\
+4.51433841 193.6\
+9822147 603.0911\
+6098 193.6468765\
+7 601.66796875 1\
+93.59594727 C586\
+.09730168 193.01\
+223423 570.54628\
+572 192.03411099\
+ 555 191 C556.40\
+379722 187.40993\
+663 557.97950953\
+ 184.1088484 559\
+.875 180.75 C567\
+.60636574 166.68\
+268576 569.32006\
+248 154.74501613\
+ 569.625 138.937\
+5 C569.66324919 \
+137.2922986 569.\
+70230477 135.647\
+11574 569.742187\
+5 134.00195312 C\
+569.83743071 130\
+.00145543 569.92\
+173259 126.00086\
+435 570 122 C576\
+.89822869 124.59\
+311976 583.37643\
+922 127.60234576\
+ 589.8125 131.18\
+75 C590.68197266\
+ 131.67089844 59\
+1.55144531 132.1\
+5429688 592.4472\
+6562 132.6523437\
+5 C613.39109769 \
+144.45168576 627\
+.79298286 156.51\
+671435 635.8125 \
+179.625 C636.237\
+00439 180.837927\
+25 636.66150879 \
+182.05085449 637\
+.09887695 183.30\
+053711 C658.3490\
+4399 244.771747 \
+665.03818246 309\
+.19927144 664 37\
+4 C663.98211426 \
+375.19963379 663\
+.96422852 376.39\
+926758 663.94580\
+078 377.63525391\
+ C663.15130745 4\
+24.1392105 657.5\
+3266424 469.6636\
+649 645.5 514.68\
+75 C645.23977051\
+ 515.69675537 64\
+4.97954102 516.7\
+0601074 644.7114\
+2578 517.7458496\
+1 C640.48963122 \
+532.90360262 630\
+.69505118 540.87\
+953503 617.50781\
+25 548.48046875 \
+C606.64811701 55\
+4.60651368 595.6\
+4715871 560.6770\
+4653 584.1484375\
+ 565.51953125 C5\
+83.22828857 565.\
+90947266 582.308\
+13965 566.299414\
+06 581.36010742 \
+566.70117188 C57\
+9.62284965 567.4\
+2356133 577.8757\
+6632 568.1229073\
+3 576.1184082 56\
+8.79492188 C573.\
+88676526 569.717\
+81824 571.947126\
+89 570.56996087 \
+570 572 C569.273\
+73397 574.315475\
+45 568.60997686 \
+576.65120943 568\
+ 579 C565.692695\
+65 581.44181257 \
+562.99994141 583\
+.27309005 560.25\
+ 585.1875 C558.7\
+0068383 586.3182\
+7741 557.1538460\
+6 587.45245758 5\
+55.609375 588.58\
+984375 C554.8340\
+0391 589.1568701\
+2 554.05863281 5\
+89.72389648 553.\
+25976562 590.308\
+10547 C544.19367\
+144 597.09592231\
+ 535.81297116 60\
+4.81498259 528 6\
+13 C522.76464654\
+ 610.38232327 51\
+8.55201649 607.0\
+6135622 514.1062\
+0117 603.2658691\
+4 C509.70973198 \
+599.53526775 505\
+.16431776 596.03\
+531791 500.5625 \
+592.5625 C494.12\
+29998 587.695694\
+87 487.91655346 \
+582.64286769 481\
+.83203125 577.33\
+984375 C479.0793\
+3607 574.9148432\
+1 479.07933607 5\
+74.91484321 475.\
+87046623 573.291\
+93497 C473 571 4\
+73 571 472.24609\
+566 567.82162094\
+ C472.24333028 5\
+65.92457098 472.\
+24333028 565.924\
+57098 472.240509\
+03 563.98919678 \
+C472.23129893 56\
+3.28340807 472.2\
+2208883 562.5776\
+1937 472.2125996\
+4 561.85044312 C\
+472.18900182 559\
+.48515023 472.20\
+813134 557.12214\
+246 472.22705078\
+ 554.75683594 C4\
+72.21888104 553.\
+06167188 472.208\
+07924 551.366518\
+76 472.19483948 \
+549.67138672 C47\
+2.16636034 545.0\
+682387 472.17476\
+934 540.46580476\
+ 472.18970728 53\
+5.86262035 C472.\
+19907459 531.052\
+56329 472.174648\
+41 526.24268201 \
+472.15377808 521\
+.43267822 C472.1\
+1940441 512.3237\
+583 472.11550535\
+ 503.21508932 47\
+2.12250316 494.1\
+0611749 C472.128\
+9898 483.7361335\
+1 472.10158228 4\
+73.36632628 472.\
+07130075 462.996\
+39463 C472.00976\
+886 441.6642436 \
+471.99088898 420\
+.33223012 472 39\
+9 C471.2531727 3\
+99.02978156 470.\
+50634541 399.059\
+56312 469.736886\
+98 399.09024715 \
+C466.3202388 399\
+.22588014 462.90\
+352918 399.35990\
+117 459.48681641\
+ 399.49389648 C4\
+58.31200211 399.\
+54077354 457.137\
+18781 399.587650\
+6 455.92677307 3\
+99.63594818 C448\
+.06977298 399.94\
+259434 440.23839\
+636 400.13358773\
+ 432.375 400.062\
+5 C430.83392578 \
+400.05573242 430\
+.83392578 400.05\
+573242 429.26171\
+875 400.04882812\
+ C426.84106767 4\
+00.03751667 424.\
+42057818 400.021\
+45317 422 400 C4\
+22.33 400.66 422\
+.66 401.32 423 4\
+02 C423.09471334\
+ 404.29312353 42\
+3.1218962 406.58\
+91077 423.120254\
+52 408.88418579 \
+C423.12110894 40\
+9.6005163 423.12\
+196337 410.31684\
+682 423.12284368\
+ 411.05488431 C4\
+23.12449732 413.\
+46711589 423.118\
+97901 415.879278\
+68 423.11352539 \
+418.29150391 C42\
+3.11324347 420.0\
+159149 423.11340\
+135 421.74032601\
+ 423.1139679 423\
+.46473694 C423.1\
+1425567 428.1566\
+2808 423.1083621\
+3 432.84849383 4\
+23.10139394 437.\
+54037905 C423.09\
+515711 442.43979\
+038 423.09455634\
+ 447.33920225 42\
+3.09336853 452.2\
+3861694 C423.090\
+25619 461.521081\
+ 423.0820441 470\
+.80353333 423.07\
+201904 480.08599\
+222 C423.0608549\
+ 490.65173683 42\
+3.05534669 501.2\
+1748198 423.0503\
+2361 511.7832310\
+2 C423.03986142 \
+533.52216057 423\
+.02226384 555.26\
+107955 423 577 C\
+425.24652324 577\
+.33187986 427.49\
+349857 577.66070\
+055 429.74066162\
+ 577.98822021 C4\
+30.99189693 578.\
+17165859 432.243\
+13225 578.355096\
+97 433.53228378 \
+578.54409409 C43\
+7.27055618 579.0\
+3557043 440.7514\
+1676 579.1941342\
+ 444.515625 579.\
+140625 C461.1131\
+1105 579.2815690\
+5 471.78915304 5\
+81.03767438 483.\
+95410156 593.064\
+45312 C487.46694\
+271 596.38781883\
+ 491.36839621 59\
+9.18874095 495.2\
+5 602.0625 C499.\
+92812138 605.598\
+59338 504.576851\
+46 609.14691564 \
+509 613 C509 613\
+.33 509 613.66 5\
+09 614 C503.1511\
+0437 614.2502324\
+9 497.30542603 6\
+14.43003228 491.\
+45239258 614.549\
+31641 C489.46876\
+67 614.59911186 \
+487.48549821 614\
+.66698028 485.50\
+317383 614.75439\
+453 C471.8275122\
+2 615.34162931 4\
+63.2996384 614.0\
+8338021 452.6391\
+9067 605.3033447\
+3 C450.12307986 \
+603.30274784 447\
+.4128092 601.661\
+41696 444.671875\
+ 599.98828125 C4\
+43.68703125 599.\
+37533203 442.702\
+1875 598.7623828\
+1 441.6875 598.1\
+3085938 C440.718\
+125 597.53080078\
+ 439.74875 596.9\
+3074219 438.75 5\
+96.3125 C416.483\
+16062 582.483160\
+62 416.48316062 \
+582.48316062 415\
+ 581 C414.763212\
+84 578.30764224 \
+414.57801975 575\
+.63501844 414.43\
+75 572.9375 C414\
+.37272461 571.79\
+958008 414.37272\
+461 571.79958008\
+ 414.30664062 57\
+0.63867188 C414.\
+20026367 568.759\
+34562 414.099600\
+66 566.87969756 \
+414 565 C406.631\
+7823 570.7449072\
+4 399.30540938 5\
+76.53511439 392.\
+0625 582.4375 C3\
+89.37509905 584.\
+62512171 386.687\
+63672 586.812667\
+96 384 589 C383.\
+39075684 589.496\
+12793 382.781513\
+67 589.99225586 \
+382.15380859 590\
+.50341797 C367.0\
+961159 602.74009\
+303 351.47323716\
+ 614.22810209 33\
+5.82714844 625.6\
+9677734 C335.075\
+94727 626.248012\
+7 334.32474609 6\
+26.79924805 333.\
+55078125 627.367\
+1875 C332.555584\
+72 628.09591064 \
+332.55558472 628\
+.09591064 331.54\
+02832 628.839355\
+47 C330.03904716\
+ 629.91455605 33\
+0.03904716 629.9\
+1455605 329 631 \
+C327.48071962 63\
+1.07179964 325.9\
+5832518 631.0839\
+2007 324.4375 63\
+1.0625 C323.6112\
+1094 631.0534765\
+6 322.78492188 6\
+31.04445313 321.\
+93359375 631.035\
+15625 C321.29550\
+781 631.02355469\
+ 320.65742187 63\
+1.01195312 320 6\
+31 C319.97607178\
+ 630.39043457 31\
+9.95214355 629.7\
+8086914 319.9274\
+9023 629.1528320\
+3 C319.03320455 \
+609.258189 315.4\
+2359311 590.3463\
+7584 311 571 C31\
+0.79705322 570.1\
+0740479 310.5941\
+0645 569.2148095\
+7 310.38500977 5\
+68.29516602 C308\
+.86346158 561.60\
+788929 307.31443\
+078 554.92736408\
+ 305.75 548.25 C\
+305.53585449 547\
+.32896484 305.32\
+170898 546.40792\
+969 305.10107422\
+ 545.45898438 C3\
+04.48716779 542.\
+82997602 303.862\
+55937 540.203753\
+77 303.234375 53\
+7.578125 C303.05\
+332214 536.79834\
+29 302.87226929 \
+536.01856079 302\
+.68572998 535.21\
+514893 C301.0181\
+643 528.34350765\
+ 299.07828856 52\
+3.10284478 293 5\
+19 C289.91566411\
+ 517.97188804 28\
+7.80130431 517.8\
+7323212 284.5698\
+2422 517.8706054\
+7 C283.45791718 \
+517.86745331 282\
+.34601013 517.86\
+430115 281.20040\
+894 517.86105347\
+ C279.99732086 5\
+17.8630777 278.7\
+9423279 517.8651\
+0193 277.5546875\
+ 517.8671875 C27\
+5.69531052 517.8\
+6575241 275.6953\
+1052 517.8657524\
+1 273.79837036 5\
+17.86428833 C270\
+.49741882 517.86\
+34325 267.196514\
+15 517.86746 263\
+.89556885 517.87\
+304688 C261.8860\
+9291 517.8749892\
+8 259.87666099 5\
+17.87306485 257.\
+8671875 517.8696\
+2891 C253.992167\
+14 517.86341894 \
+250.11721065 517\
+.8642105 246.242\
+1875 517.8671875\
+ C245.05124481 5\
+17.86516327 243.\
+86030212 517.863\
+13904 242.633270\
+26 517.86105347 \
+C239.42000998 51\
+7.87001043 236.2\
+1214258 517.9171\
+0983 233 518 C23\
+2.13828186 518.0\
+1838928 231.2765\
+6372 518.0367785\
+6 230.38873291 5\
+18.0557251 C224.\
+67296775 518.397\
+67867 221.882427\
+32 519.72721 218\
+ 524 C216.421303\
+48 527.08050641 \
+216.42130348 527\
+.08050641 215.50\
+78125 530.664062\
+5 C215.31156281 \
+531.34433502 215\
+.11531311 532.02\
+460754 214.91311\
+646 532.72549438\
+ C212.12901489 5\
+42.6735927 209.9\
+1208446 552.7836\
+2614 207.6606445\
+3 562.86230469 C\
+206.8776001 566.\
+36337471 206.082\
+14427 569.861455\
+89 205.28515625 \
+573.359375 C199.\
+71227584 597.509\
+18718 199.712275\
+84 597.50918718 \
+197.3125 622.125\
+ C197.27833984 6\
+22.99769531 197.\
+24417969 623.870\
+39063 197.208984\
+38 624.76953125 \
+C197.1291207 626\
+.84598687 197.06\
+287489 628.92296\
+055 197 631 C188\
+.87609487 631.79\
+788354 185.23852\
+783 629.8481508 \
+179 624.8125 C17\
+8.18184814 624.1\
+8045654 177.3636\
+9629 623.5484130\
+9 176.52075195 6\
+22.8972168 C174.\
+82812429 621.587\
+40071 173.142322\
+95 620.26871687 \
+171.46337891 618\
+.94140625 C168.4\
+4391962 616.5617\
+4914 165.3809216\
+1 614.24332031 1\
+62.31445312 611.\
+92480469 C158.85\
+907136 609.30550\
+474 155.42888243\
+ 606.65384343 15\
+2 604 C151.39881\
+348 603.53529297\
+ 150.79762695 60\
+3.07058594 150.1\
+7822266 602.5917\
+9688 C142.476647\
+63 596.62624141 \
+134.92491721 590\
+.49327725 127.41\
+52832 584.288330\
+08 C122.52599271\
+ 580.25061098 11\
+7.62334991 576.2\
+3072062 112.6875\
+ 572.25 C112.071\
+40869 571.748635\
+25 111.45531738 \
+571.24727051 110\
+.82055664 570.73\
+071289 C108.0066\
+8916 568.4707284\
+6 105.33601269 5\
+66.41677576 102 \
+565 C102.1044140\
+6 566.08539062 1\
+02.20882812 567.\
+17078125 102.316\
+40625 568.289062\
+5 C102.4008644 5\
+69.73423521 102.\
+48276027 571.179\
+55926 102.5625 5\
+72.625 C102.6379\
+1016 573.3378515\
+6 102.71332031 5\
+74.05070313 102.\
+79101562 574.785\
+15625 C102.88783\
+901 577.13043386\
+ 102.79202189 57\
+8.7831623 102 58\
+1 C99.33380783 5\
+83.58877793 96.2\
+4494157 585.2260\
+8638 93 587 C91.\
+40537143 587.983\
+16672 89.8155105\
+5 588.97410753 8\
+8.23046875 589.9\
+7265625 C86.5500\
+5538 591.0035440\
+2 84.86904496 59\
+2.03345908 83.18\
+75 593.0625 C74.\
+78089832 598.231\
+83787 66.4734625\
+6 603.53701024 5\
+8.22143555 608.9\
+4946289 C57.4329\
+3213 609.4662963\
+9 56.64442871 60\
+9.98312988 55.83\
+203125 610.51562\
+5 C54.79139526 6\
+11.20060059 54.7\
+9139526 611.2006\
+0059 53.72973633\
+ 611.89941406 C5\
+0.90369085 613.6\
+9755281 49.24024\
+304 614.12347378\
+ 45.91748047 614\
+.11352539 C44.65\
+639969 614.11341\
+209 44.65639969 \
+614.11341209 43.\
+36984253 614.113\
+29651 C42.007278\
+29 614.10555458 \
+42.00727829 614.\
+10555458 40.6171\
+875 614.09765625\
+ C39.68778351 61\
+4.0962413 38.758\
+37952 614.094826\
+35 37.80081177 6\
+14.09336853 C34.\
+82550876 614.087\
+76053 31.8502803\
+6 614.07520668 2\
+8.875 614.0625 C\
+26.86067817 614.\
+05748603 24.8463\
+5516 614.0529229\
+5 22.83203125 61\
+4.04882812 C17.8\
+8799198 614.0377\
+885 12.94400865 \
+614.02051849 8 6\
+14 C13.26429527 \
+608.66192971 13.\
+26429527 608.661\
+92971 16.2070312\
+5 606.30859375 C\
+16.78598145 605.\
+84453125 17.3649\
+3164 605.3804687\
+5 17.96142578 60\
+4.90234375 C18.5\
+7228027 604.4189\
+4531 19.18313477\
+ 603.93554688 19\
+.8125 603.4375 C\
+20.77905518 602.\
+66792969 20.7790\
+5518 602.6679296\
+9 21.76513672 60\
+1.8828125 C28.47\
+31454 596.571969\
+13 35.32101018 5\
+91.44943858 42.2\
+0166016 586.3652\
+3438 C44.1367798\
+3 584.94293498 4\
+4.13677983 584.9\
+4293498 46.27685\
+547 582.88525391\
+ C49.69577891 58\
+0.51830691 51.89\
+785607 580.41035\
+672 56.03125 580\
+.2421875 C57.039\
+80042 580.191204\
+07 57.03980042 5\
+80.19120407 58.0\
+6872559 580.1391\
+9067 C60.2121040\
+7 580.03355867 6\
+2.35544916 579.9\
+5286935 64.5 579\
+.875 C66.6155432\
+7 579.78591937 6\
+8.73061235 579.6\
+9121127 70.84558\
+105 579.58938599\
+ C72.78524863 57\
+9.49789494 74.72\
+563438 579.42201\
+125 76.66601562 \
+579.34716797 C82\
+.47812371 578.88\
+159689 88.237076\
+19 577.88660366 \
+94 577 C94.33 51\
+8.59 94.66 460.1\
+8 95 400 C78.5 4\
+00 62 400 45 400\
+ C45.02618408 40\
+5.09332764 45.05\
+236816 410.18665\
+527 45.0793457 4\
+15.43432617 C45.\
+16208982 432.238\
+00823 45.2176364\
+2 449.04169817 4\
+5.25906086 465.8\
+4553051 C45.2848\
+5082 476.0365302\
+ 45.32001652 486\
+.227337 45.37719\
+727 496.41821289\
+ C45.42700793 50\
+5.29980592 45.45\
+928525 514.18125\
+927 45.47044247 \
+523.0629881 C45.\
+4769652 527.7665\
+8086 45.49231182\
+ 532.46977399 45\
+.52865028 537.17\
+323875 C45.56257\
+29 541.59984733 \
+45.57306058 546.\
+02589143 45.5655\
+3841 550.4526176\
+5 C45.56691463 5\
+52.07761896 45.5\
+768697 553.70263\
+903 45.59602737 \
+555.327528 C45.6\
+2090916 557.5466\
+5703 45.61492568\
+ 559.76365549 45\
+.60127258 561.98\
+283386 C45.60818\
+603 563.84531659\
+ 45.60818603 563\
+.84531659 45.615\
+23914 565.745425\
+22 C44.57840195 \
+571.23022605 40.\
+32506023 573.900\
+64751 36.0625 57\
+7.125 C35.281328\
+12 577.723125 34\
+.50015625 578.32\
+125 33.6953125 5\
+78.9375 C32.8058\
+5938 579.618125 \
+31.91640625 580.\
+29875 31 581 C22\
+.15668965 587.88\
+058062 13.418749\
+7 594.8810168 4.\
+734375 601.96093\
+75 C0.181063 605\
+.67181716 -4.403\
+52744 609.342710\
+53 -9 613 C-12.8\
+5051776 611.3963\
+726 -15.42575812\
+ 608.91078234 -1\
+8.4375 606.0625 \
+C-22.68292424 60\
+2.10722123 -26.9\
+6391679 598.2078\
+4087 -31.375 594\
+.4375 C-31.90311\
+279 593.98407227\
+ -32.43122559 59\
+3.53064453 -32.9\
+753418 593.06347\
+656 C-35.8465700\
+8 590.6478688 -3\
+8.76762468 588.4\
+3738916 -41.8984\
+375 586.3671875 \
+C-42.54119629 58\
+5.93736572 -43.1\
+8395508 585.5075\
+4395 -43.8461914\
+1 585.06469727 C\
+-45.08076161 584\
+.25268001 -46.33\
+005442 583.46245\
+657 -47.59521484\
+ 582.69897461 C-\
+50.03795617 581.\
+09559705 -51.772\
+08749 579.780655\
+3 -52.60742188 5\
+76.91943359 C-52\
+.890625 574.6992\
+1875 -52.890625 \
+574.69921875 -53\
+ 571 C-53.524245\
+61 570.84144531 \
+-54.04849121 570\
+.68289063 -54.58\
+862305 570.51953\
+125 C-60.9279799\
+ 568.51464128 -6\
+6.83377465 565.8\
+9489187 -72.8125\
+ 563 C-73.808623\
+05 562.51942139 \
+-74.80474609 562\
+.03884277 -75.83\
+105469 561.54370\
+117 C-119.425608\
+15 540.29602276 \
+-119.42560815 54\
+0.29602276 -126.\
+78222656 520.534\
+42383 C-128.6365\
+8832 515.1523879\
+2 -130.09168614 \
+509.71611786 -13\
+1.4375 504.1875 \
+C-131.87799683 5\
+02.3916748 -131.\
+87799683 502.391\
+6748 -132.327392\
+58 500.55957031 \
+C-137.06185009 4\
+80.81630902 -140\
+.68034755 460.88\
+622261 -143.25 4\
+40.75 C-143.4010\
+6201 439.5824316\
+4 -143.55212402 \
+438.41486328 -14\
+3.70776367 437.2\
+1191406 C-146.54\
+136778 413.62891\
+223 -147.3790708\
+1 390.01675289 -\
+147.31785583 366\
+.28768539 C-147.\
+31240554 364.086\
+85891 -147.31004\
+517 361.88604322\
+ -147.3079834 35\
+9.68521118 C-147\
+.2749153 337.009\
+44075 -146.61825\
+985 314.54162455\
+ -144 292 C-143.\
+85546387 290.691\
+11816 -143.71092\
+773 289.38223633\
+ -143.56201172 2\
+88.03369141 C-13\
+9.7154546 253.83\
+213318 -132.2145\
+585 220.37237544\
+ -121.5 187.6875\
+ C-121.27865387 \
+187.00311859 -12\
+1.05730774 186.3\
+1873718 -120.829\
+25415 185.613616\
+94 C-111.6957943\
+9 157.53728118 -\
+95.20380145 142.\
+64060518 -69.384\
+76562 129.203613\
+28 C-65.30026823\
+ 127.14212964 -6\
+1.16877908 125.1\
+9709707 -57 123.\
+3125 C-56.228173\
+83 122.96106934 \
+-55.45634766 122\
+.60963867 -54.66\
+113281 122.24755\
+859 C-52.8014417\
+3 121.43284079 -\
+50.90313845 120.\
+7073048 -49 120 \
+C-48.34 120.33 -\
+47.68 120.66 -47\
+ 121 C-46.885192\
+87 120.38406982 \
+-46.77038574 119\
+.76813965 -46.65\
+209961 119.13354\
+492 C-38.5213580\
+7 75.96951546 -2\
+6.45890495 35.67\
+614642 0 0 Z M-1\
+7.0703125 63.460\
+9375 C-24.568326\
+39 73.6569815 -2\
+6.78098714 83.47\
+528037 -26 96 C-\
+24.4687051 105.1\
+6181525 -19.4648\
+3446 111.7460828\
+3 -14 119 C-13.0\
+1 118.505 -13.01\
+ 118.505 -12 118\
+ C-12.72896484 1\
+16.53820312 -12.\
+72896484 116.538\
+20312 -13.472656\
+25 115.046875 C-\
+15.30242962 110.\
+75547959 -15.499\
+5091 106.8711546\
+1 -15.4375 102.2\
+5 C-15.42992676 \
+101.45867676 -15\
+.42235352 100.66\
+735352 -15.41455\
+078 99.85205078 \
+C-15.13630583 89\
+.90631693 -12.10\
+400059 81.166867\
+85 -5 74 C5.0642\
+5942 65.91920777\
+ 15.18906153 63.\
+13634123 28 64 C\
+40.34981382 66.0\
+9078627 47.98933\
+762 74.02154875 \
+55.0390625 83.83\
+984375 C62.48738\
+673 95.12391547 \
+66.6827234 107.3\
+8594964 67 121 C\
+70.69602627 115.\
+45596059 69.4832\
+1887 108.7892127\
+4 68.3828125 102\
+.4375 C63.925855\
+37 83.82082951 5\
+4.27810489 66.70\
+607795 38 56 C34\
+.41965485 54.064\
+14442 30.7974777\
+7 52.45875118 27\
+ 51 C25.88625 50\
+.566875 24.7725 \
+50.13375 23.625 \
+49.6875 C7.61177\
+926 46.65050986 \
+-6.48849655 50.8\
+825525 -17.07031\
+25 63.4609375 Z \
+M466.19140625 66\
+.37890625 C454.8\
+9246163 79.89333\
+021 447.71316187\
+ 96.06600373 447\
+.9375 113.875 C4\
+47.94201172 114.\
+56335938 447.946\
+52344 115.251718\
+75 447.95117188 \
+115.9609375 C447\
+.96283664 117.64\
+066335 447.98076\
+729 119.32034375\
+ 448 121 C448.33\
+ 121 448.66 121 \
+449 121 C449.158\
+55469 119.984218\
+75 449.31710937 \
+118.9684375 449.\
+48046875 117.921\
+875 C452.3737578\
+6 100.4341187 45\
+9.27267015 82.90\
+830001 473 71 C4\
+82.66620498 64.9\
+5400428 491.9456\
+9111 62.37937542\
+ 503.22265625 64\
+.6484375 C514.05\
+589422 67.613323\
+68 522.31128672 \
+73.17875641 528 \
+83 C534.04127152\
+ 95.195464 532.4\
+5912118 106.2341\
+9565 529 119 C53\
+7.84480497 110.9\
+1332117 542.3524\
+747 101.0773423 \
+543.05859375 89.\
+1484375 C542.845\
+12341 77.6779646\
+ 537.99299204 68\
+.11236964 530.37\
+5 59.75 C521.905\
+69659 51.6894467\
+6 511.9718552 48\
+.59892939 500.57\
+421875 48.726562\
+5 C486.9899582 4\
+9.76579555 475.4\
+1365964 56.59572\
+869 466.19140625\
+ 66.37890625 Z M\
+0.47265625 82.85\
+15625 C-5.001864\
+91 90.83826445 -\
+6.38524907 98.32\
+440533 -5 108 C-\
+2.5041248 115.57\
+581906 1.2308647\
+3 121.67407704 8\
+ 126 C8.61746094\
+ 126.39832031 9.\
+23492187 126.796\
+64063 9.87109375\
+ 127.20703125 C1\
+6.60227756 131.0\
+3987837 23.57279\
+993 131.8883056 \
+31.0625 129.9375\
+ C39.06043143 12\
+7.15834458 46.09\
+310757 122.69169\
+446 50 115 C53.4\
+4797934 107.1342\
+9714 53.73903243\
+ 99.80930833 51.\
+27734375 91.5859\
+375 C47.93867781\
+ 83.17423369 42.\
+25307961 76.5783\
+619 33.9375 72.8\
+515625 C20.94008\
+909 69.08369604 \
+8.82653141 72.22\
+653925 0.4726562\
+5 82.8515625 Z M\
+469.6953125 82.7\
+03125 C464.68397\
+302 89.49268172 \
+462.75963622 97.\
+68828393 464 106\
+ C466.05004962 1\
+14.66115636 469.\
+82429061 121.802\
+06554 477.535156\
+25 126.56640625 \
+C485.48367313 13\
+0.67528611 492.0\
+6622969 132.1916\
+1437 500.9375 12\
+9.875 C509.77077\
+835 127.02468796\
+ 515.93341269 12\
+1.18607751 520.2\
+5 113.0625 C523.\
+1556202 106.1167\
+9433 523.4058622\
+5 98.18980292 52\
+1.01171875 91.05\
+46875 C519.81602\
+405 88.57445392 \
+518.50890948 86.\
+30075703 517 84 \
+C516.443125 83.0\
+925 515.88625 82\
+.185 515.3125 81\
+.25 C507.7786031\
+3 73.91972196 49\
+9.92405363 71.55\
+819718 489.64453\
+125 71.6640625 C\
+481.43871896 72.\
+42043962 475.216\
+38166 76.7573582\
+1 469.6953125 82\
+.703125 Z M-30 1\
+03 C-31.61030034\
+ 107.46247535 -3\
+2.63074739 111.8\
+788687 -33.40234\
+375 116.546875 C\
+-33.52475937 117\
+.26798462 -33.64\
+717499 117.98909\
+424 -33.77330017\
+ 118.73205566 C-\
+34.16744157 121.\
+07040167 -34.553\
+15656 123.410024\
+96 -34.9375 125.\
+75 C-35.06972961\
+ 126.54547241 -3\
+5.20195923 127.3\
+4094482 -35.3381\
+958 128.16052246\
+ C-37.69745815 1\
+42.3933673 -39.5\
+7489573 156.6408\
+1935 -41 171 C-4\
+1.8175507 168.45\
+986091 -42.62915\
+186 165.91806769\
+ -43.4375 163.37\
+5 C-43.66759766 \
+162.66214844 -43\
+.89769531 161.94\
+929688 -44.13476\
+562 161.21484375\
+ C-45.41873606 1\
+57.15824149 -46.\
+41945974 153.230\
+60375 -47 149 C-\
+47.33 149 -47.66\
+ 149 -48 149 C-4\
+9.92787347 163.2\
+1806685 -49.9652\
+939 173.23298597\
+ -41.875 185.246\
+09375 C-40.78832\
+031 186.86342407\
+ -40.78832031 18\
+6.86342407 -39.6\
+796875 188.51342\
+773 C-39.1253906\
+2 189.33399658 -\
+38.57109375 190.\
+15456543 -38 191\
+ C-38.85940186 1\
+91.02505615 -39.\
+71880371 191.050\
+1123 -40.6042480\
+5 191.07592773 C\
+-44.63205972 191\
+.19449558 -48.65\
+98005 191.315187\
+25 -52.6875 191.\
+4375 C-53.415296\
+63 191.45956512 \
+-54.14309326 191\
+.48163025 -54.89\
+294434 191.50436\
+401 C-63.8501887\
+5 191.77839132 -\
+72.79991307 192.\
+10527004 -81.75 \
+192.5625 C-83.39\
+320874 192.63716\
+969 -85.03643692\
+ 192.71141314 -8\
+6.6796875 192.78\
+515625 C-89.3627\
+3157 192.9075386\
+6 -92.0166992 19\
+3.08490406 -94.6\
+953125 193.30859\
+375 C-101.758410\
+89 193.73376798 \
+-101.75841089 19\
+3.73376798 -105.\
+16796875 191.718\
+75 C-109.4795907\
+1 187.80717544 -\
+111.35819909 183\
+.50486187 -113 1\
+78 C-113.33 178 \
+-113.66 178 -114\
+ 178 C-114.02724\
+423 180.83339965\
+ -114.04695589 1\
+83.66653117 -114\
+.0625 186.5 C-11\
+4.07087891 187.2\
+9148437 -114.079\
+25781 188.082968\
+75 -114.08789062\
+ 188.8984375 C-1\
+14.10306593 192.\
+60121125 -114.00\
+340415 195.98002\
+471 -113.3789062\
+5 199.64453125 C\
+-112.46996683 20\
+6.13557065 -113.\
+94610742 212.751\
+82002 -114.875 2\
+19.1875 C-115.16\
+017149 221.21075\
+515 -115.4422107\
+4 223.23437277 -\
+115.72024536 225\
+.25862122 C-115.\
+97535061 227.108\
+38477 -116.23908\
+077 228.95695306\
+ -116.50341797 2\
+30.80541992 C-11\
+7.84947253 241.4\
+4915358 -118.149\
+64504 252.059411\
+36 -118.1328125 \
+262.77734375 C-1\
+18.13348904 264.\
+16012082 -118.13\
+446195 265.54289\
+777 -118.1357116\
+7 266.92567444 C\
+-118.1371727 269\
+.80226796 -118.1\
+3508641 272.6788\
+301 -118.1303710\
+9 275.55541992 C\
+-118.12468023 27\
+9.20031459 -118.\
+12795903 282.845\
+13547 -118.13394\
+356 286.49002743\
+ C-118.1375973 2\
+89.33944735 -118\
+.13638868 292.18\
+885045 -118.1338\
+1577 295.0382709\
+5 C-118.13284567\
+ 297.02201003 -1\
+18.13582617 299.\
+00574983 -118.13\
+894653 300.98948\
+669 C-118.112353\
+38 311.43647448 \
+-117.82665424 32\
+1.84456576 -115.\
+96484375 332.144\
+53125 C-114.9157\
+1902 338.0112833\
+3 -114.67722333 \
+343.73875776 -11\
+4.5625 349.6875 \
+C-114.31550119 3\
+58.61522479 -113\
+.5671431 367.337\
+89807 -112.375 3\
+76.1875 C-111.38\
+314068 383.72517\
+028 -110.7129503\
+ 390.75197958 -1\
+11.60742188 398.\
+34765625 C-113.5\
+1033966 416.0514\
+1872 -113.157124\
+35 433.94379142 \
+-113.13037109 45\
+1.7253418 C-113.\
+12582081 454.778\
+096 -113.1258003\
+7 457.83079075 -\
+113.13037109 460\
+.88354492 C-113.\
+14532207 470.923\
+1807 -113.112389\
+24 480.9609389 -\
+113 491 C-112.98\
+707916 492.20209\
+106 -112.9741583\
+3 493.40418213 -\
+112.96084595 494\
+.6427002 C-112.9\
+1441843 497.8476\
+5994 -112.837831\
+86 501.04996173 \
+-112.74609375 50\
+4.25390625 C-112\
+.73301178 505.16\
+215652 -112.7199\
+2981 506.0704068\
+ -112.70645142 5\
+07.00617981 C-11\
+2.44661306 513.9\
+1326548 -110.599\
+28627 517.883687\
+6 -105.71484375 \
+522.9140625 C-99\
+.2625736 527.871\
+63409 -92.649932\
+53 531.22725301 \
+-85.0625 534.125\
+ C-84.09320557 5\
+34.49898926 -83.\
+12391113 534.872\
+97852 -82.125244\
+14 535.25830078 \
+C-73.13381832 53\
+8.67025999 -64.0\
+4907648 541.8021\
+0649 -54.9375 54\
+4.875 C-54.24802\
+277 545.10979065\
+ -53.55854553 54\
+5.3445813 -52.84\
+817505 545.58648\
+682 C-43.6485853\
+8 548.70786669 -\
+34.55904519 551.\
+1812725 -25 553 \
+C-23.5994751 550\
+.1989502 -23.867\
+56146 547.888414\
+41 -23.85955811 \
+544.75357056 C-2\
+3.85658698 544.1\
+0503691 -23.8536\
+1586 543.4565032\
+6 -23.8505547 54\
+2.78831708 C-23.\
+84184746 540.603\
+16855 -23.840357\
+46 538.4180747 -\
+23.83886719 536.\
+23291016 C-23.83\
+423865 534.66855\
+757 -23.82921394\
+ 533.1042061 -23\
+.82382202 531.53\
+985596 C-23.8106\
+5733 527.2685616\
+6 -23.80423955 5\
+22.99728314 -23.\
+79981136 518.725\
+9717 C-23.796873\
+57 516.03775481 \
+-23.79276639 513\
+.34954213 -23.78\
+830719 510.66132\
+736 C-23.7745919\
+2 502.19729051 -\
+23.76495766 493.\
+73326338 -23.761\
+1053 485.2692161\
+8 C-23.75711627 \
+476.55686958 -23\
+.74505703 467.84\
+463358 -23.71875\
+ 459.13232422 C-\
+23.34297622 402.\
+02132372 -23.342\
+97622 402.021323\
+72 -26.64306641 \
+345.0357666 C-27\
+.14544537 339.57\
+376777 -27.45332\
+854 334.10132546\
+ -27.76544189 32\
+8.6257019 C-28.2\
+546799 321.06326\
+375 -29.10253457\
+ 313.53182454 -2\
+9.89453125 305.9\
+9609375 C-30.298\
+66303 301.999679\
+49 -30.66821939 \
+298.00298859 -31\
+ 294 C-31.055983\
+58 293.33158081 \
+-31.11196716 292\
+.66316162 -31.16\
+964722 291.97448\
+73 C-32.56774913\
+ 274.13204381 -3\
+1.90692821 256.1\
+975272 -31.60510\
+254 238.32312012\
+ C-31.53338539 2\
+33.9915278 -31.4\
+6919543 229.6598\
+2389 -31.4042968\
+8 225.328125 C-3\
+1.27673247 216.8\
+8529283 -31.1410\
+6991 208.4426172\
+8 -31 200 C-30.3\
+8125 200.66 -29.\
+7625 201.32 -29.\
+125 202 C-27.243\
+62573 204.228454\
+9 -27.24362573 2\
+04.2284549 -25 2\
+04 C-25.97430702\
+ 201.82654587 -2\
+6.75534074 200.2\
+2262456 -28.5309\
+1431 198.6069641\
+1 C-33.05096787 \
+193.66268898 -31\
+.04626224 181.67\
+542002 -30.91406\
+25 175.3828125 C\
+-30.89282318 174\
+.17221161 -30.87\
+158386 172.96161\
+072 -30.84970093\
+ 171.71432495 C-\
+30.80357387 169.\
+15080795 -30.754\
+65738 166.587339\
+82 -30.703125 16\
+4.02392578 C-30.\
+62649544 160.199\
+63175 -30.558528\
+08 156.37526607 \
+-30.4921875 152.\
+55078125 C-30.19\
+175424 136.02534\
+973 -29.67592591\
+ 119.51420763 -2\
+9 103 C-29.33 10\
+3 -29.66 103 -30\
+ 103 Z M-14 131 \
+C-11.06588728 14\
+0.21911553 -1.49\
+803264 147.33903\
+752 6.71484375 1\
+51.85546875 C17.\
+08925948 157.051\
+54364 28.8589241\
+5 159.22736723 4\
+0.26953125 156.1\
+0546875 C42.5845\
+1196 155.1682161\
+9 44.80198433 15\
+4.1835469 47 153\
+ C44.3234047 150\
+.79574504 41.681\
+76537 148.798043\
+41 38.75 146.937\
+5 C36 145 36 145\
+ 35 142 C30.2833\
+7621 141.8875072\
+3 30.28337621 14\
+1.88750723 25.62\
+5 142.5 C11.0300\
+9778 145.2799813\
+7 -2.10172539 13\
+8.93218307 -14 1\
+31 Z M529 132 C5\
+28.50113281 132.\
+38671875 528.002\
+26562 132.773437\
+5 527.48828125 1\
+33.171875 C519.1\
+3063486 139.2337\
+9446 508.3804951\
+1 143.16524276 4\
+97.9375 143.125 \
+C497.16792969 14\
+3.12371094 496.3\
+9835938 143.1224\
+2187 495.6054687\
+5 143.12109375 C\
+493 143 493 143 \
+489.92578125 142\
+.59765625 C483.6\
+2517287 141.5454\
+0013 483.6251728\
+7 141.54540013 4\
+78.125 144.125 C\
+477.42375 145.07\
+375 476.7225 146\
+.0225 476 147 C4\
+74.92012567 147.\
+96538163 473.815\
+26092 148.903519\
+49 472.6875 149.\
+8125 C471.800625\
+ 150.534375 470.\
+91375 151.25625 \
+470 152 C470.956\
+02515 154.439748\
+47 470.95602515 \
+154.43974847 474\
+.625 155.625 C48\
+6.8645825 159.41\
+34422 499.778226\
+18 157.26754357 \
+510.97265625 151\
+.45703125 C518.6\
+0349367 146.8701\
+3173 524.7695150\
+3 141.19191683 5\
+30 134 C529.505 \
+133.01 529.505 1\
+33.01 529 132 Z \
+M60 309 C58.35 3\
+10.32 56.7 311.6\
+4 55 313 C59.385\
+7667 325.7162732\
+8 69.26019469 33\
+5.88616529 79.23\
+925781 344.46093\
+75 C82.44612771 \
+347.26405838 85.\
+52497097 350.204\
+94477 88.625 353\
+.125 C98.2666427\
+7 362.97656217 9\
+8.26664277 362.9\
+7656217 109.0874\
+0234 371.1999511\
+7 C111.89953151 \
+373.84659763 111\
+.6474864 375.984\
+52548 111.871093\
+75 379.7890625 C\
+111.91816971 380\
+.47144989 111.96\
+524567 381.15383\
+728 112.01374817\
+ 381.85690308 C1\
+12.11540409 383.\
+33567623 112.209\
+44502 384.814988\
+14 112.29675293 \
+386.29467773 C11\
+2.53782945 390.2\
+8613554 112.8522\
+9449 394.2716609\
+7 113.16796875 3\
+98.2578125 C113.\
+23219025 399.075\
+54138 113.296411\
+74 399.89327026 \
+113.36257935 400\
+.73577881 C117.4\
+7051356 451.0855\
+1897 130.4009485\
+4 500.94503492 1\
+49.875 547.4375 \
+C150.53483887 54\
+9.01724609 150.5\
+3483887 549.0172\
+4609 151.2080078\
+1 550.62890625 C\
+155.13076046 559\
+.76906906 158.65\
+723908 566.78204\
+995 167 572.4375\
+ C167.6506543 57\
+2.89415039 168.3\
+0130859 573.3508\
+0078 168.9716796\
+9 573.82128906 C\
+170.31216807 574\
+.75982605 171.65\
+691412 575.69231\
+143 173.00585938\
+ 576.61865234 C1\
+74.94776423 577.\
+96381611 176.859\
+07095 579.343597\
+7 178.765625 580\
+.73828125 C179.9\
+2665565 581.5761\
+1381 181.0880943\
+5 582.4133813 18\
+2.25 583.25 C183\
+.28640625 583.99\
+765625 184.32281\
+25 584.7453125 1\
+85.390625 585.51\
+5625 C186.251718\
+75 586.00546875 \
+187.1128125 586.\
+4953125 188 587 \
+C188.99 586.67 1\
+89.98 586.34 191\
+ 586 C191.812868\
+56 583.47088178 \
+192.41471017 581\
+.0878047 192.945\
+3125 578.4960937\
+5 C193.11645065 \
+577.7179985 193.\
+28758881 576.939\
+90326 193.463912\
+96 576.13822937 \
+C193.83404779 57\
+4.45390118 194.1\
+987752 572.76837\
+773 194.55874634\
+ 571.08184814 C1\
+95.51277954 566.\
+62660821 196.514\
+62021 562.182280\
+77 197.51953125 \
+557.73828125 C19\
+7.72303696 556.8\
+3676331 197.9265\
+4266 555.9352453\
+6 198.13621521 5\
+55.00640869 C200\
+.11978158 546.30\
+997267 202.39300\
+155 537.7091687 \
+204.8125 529.125\
+ C204.99500305 5\
+28.46708466 205.\
+1775061 527.8091\
+6931 205.3655395\
+5 527.13131714 C\
+211.43166245 505\
+.32794808 211.43\
+166245 505.32794\
+808 220 500 C226\
+.51447671 496.55\
+115939 233.37187\
+429 494.48447329\
+ 240.5 492.75 C2\
+41.16306152 492.\
+58677246 241.826\
+12305 492.423544\
+92 242.50927734 \
+492.25537109 C25\
+3.14136474 489.8\
+4447274 262.7224\
+8395 489.7621860\
+8 273.375 492.06\
+25 C275.00646973\
+ 492.40486694 27\
+5.00646973 492.4\
+0486694 276.6708\
+9844 492.7541503\
+9 C298.56160135 \
+497.58375 298.56\
+160135 497.58375\
+ 305 507 C306.14\
+428525 509.65153\
+037 307.08130818\
+ 512.11632056 30\
+7.92578125 514.8\
+5546875 C308.173\
+30643 515.628357\
+39 308.4208316 5\
+16.40124603 308.\
+67585754 517.197\
+55554 C311.97975\
+651 527.77441203\
+ 314.55734438 53\
+8.55337682 317.1\
+875 549.3125 C31\
+7.71225016 551.4\
+331013 318.23763\
+807 553.55354488\
+ 318.76367188 55\
+5.67382812 C321.\
+26053274 565.763\
+20237 323.721098\
+21 575.85882547 \
+326 586 C330.458\
+78903 586 331.40\
+189391 585.38051\
+428 334.95703125\
+ 582.9296875 C33\
+5.90513672 582.2\
+8 336.85324219 5\
+81.6303125 337.8\
+3007812 580.9609\
+375 C338.8142773\
+4 580.27257812 3\
+39.79847656 579.\
+58421875 340.812\
+5 578.875 C342.2\
+7139648 577.8772\
+6563 342.2713964\
+8 577.87726563 3\
+43.75976562 576.\
+859375 C346.5350\
+7289 574.9427782\
+4 349.27579957 5\
+72.98844281 352 \
+571 C352.6962548\
+8 570.49509033 3\
+53.39250977 569.\
+99018066 354.109\
+86328 569.469970\
+7 C358.79729048 \
+565.80223148 360\
+.99329681 561.88\
+607176 363.25 55\
+6.4375 C363.6185\
+9131 555.5818042\
+ 363.98718262 55\
+4.7261084 364.36\
+694336 553.84448\
+242 C387.0834525\
+1 500.25766627 4\
+07.54824717 435.\
+62095734 404.746\
+58203 376.524902\
+34 C405.13315437\
+ 372.6733309 407\
+.05692904 370.97\
+275868 409.9375 \
+368.57421875 C41\
+0.618125 368.054\
+72656 411.29875 \
+367.53523438 412\
+ 367 C413.339796\
+82 365.84076173 \
+414.67310849 364\
+.673988 416 363.\
+5 C416.6703125 3\
+62.9225 417.3406\
+25 362.345 418.0\
+3125 361.75 C419\
+.93023071 360.06\
+201714 421.72005\
+988 358.31230266\
+ 423.5 356.5 C42\
+7.97735015 351.9\
+6228109 432.6954\
+5653 347.7364767\
+3 437.7890625 34\
+3.8984375 C448.6\
+3900329 335.5156\
+6671 455.3643262\
+5 324.84283441 4\
+62 313 C460.35 3\
+11.68 458.7 310.\
+36 457 309 C452.\
+4558366 310.2780\
+4596 449.6831438\
+5 312.87813228 4\
+46.26953125 315.\
+96875 C443.01854\
+637 318.87840945\
+ 439.62690485 32\
+1.60362792 436.2\
+421875 324.35546\
+875 C433.8208201\
+1 326.3254077 43\
+1.41213464 328.3\
+1007534 429.0078\
+125 330.30078125\
+ C421.62243383 3\
+36.41305167 414.\
+21218599 342.478\
+93096 406.641357\
+42 348.36083984 \
+C404.03885708 35\
+0.38451855 401.6\
+930684 352.32594\
+197 399.42602539\
+ 354.73339844 C3\
+97.46431427 356.\
+3533576 396.4388\
+2178 356.9752116\
+4 393.87818909 3\
+57.11985779 C391\
+.2496491 356.779\
+20557 388.717002\
+8 356.2580671 38\
+6.1328125 355.66\
+796875 C384.0578\
+8473 355.2504585\
+5 381.98267277 3\
+54.83435898 379.\
+90722656 354.419\
+43359 C378.79238\
+892 354.1868988 \
+377.67755127 353\
+.95436401 376.52\
+893066 353.71478\
+271 C370.9353263\
+6 352.58180164 3\
+65.31254104 351.\
+62344599 359.689\
+31007 350.650266\
+65 C356.26893248\
+ 350.05544251 35\
+2.8512068 349.44\
+578171 349.43334\
+961 348.83666992\
+ C348.73713595 3\
+48.71269994 348.\
+0409223 348.5887\
+2995 347.3236112\
+6 348.4610033 C3\
+45.89783067 348.\
+2071128 344.4720\
+6256 347.9531522\
+ 343.04630661 34\
+7.69912338 C340.\
+84820885 347.307\
+72956 338.649958\
+55 346.91720102 \
+336.45169067 346\
+.52676392 C321.5\
+9625877 343.8859\
+073 306.7530674 \
+341.21775332 291\
+.97265625 338.17\
+96875 C290.92444\
+702 337.96477158\
+ 289.87623779 33\
+7.74985565 288.7\
+9626465 337.5284\
+2712 C284.018073\
+33 336.54387124 \
+279.24538127 335\
+.53890624 274.47\
+802734 334.50317\
+383 C272.8070114\
+8 334.1516399 27\
+1.13595304 333.8\
+0030826 269.4648\
+4375 333.4492187\
+5 C268.74490738 \
+333.28529633 268\
+.02497101 333.12\
+13739 267.283218\
+38 332.95248413 \
+C255.51764005 33\
+0.51905976 243.0\
+7376957 334.3714\
+8313 231.4882812\
+5 336.5703125 C2\
+29.55583863 336.\
+93367277 227.623\
+31632 337.296609\
+38 225.6907196 3\
+37.65914917 C220\
+.59394858 338.61\
+62146 215.498089\
+72 339.57804671 \
+210.40246582 340\
+.54119873 C206.3\
+6042387 341.3048\
+8007 202.3180474\
+2 342.06677573 1\
+98.2755146 342.8\
+2785416 C196.282\
+90194 343.203099\
+22 194.29038248 \
+343.57883946 192\
+.29795647 343.95\
+507431 C187.3417\
+1259 344.8898324\
+5 182.38392415 3\
+45.81419705 177.\
+42190552 346.717\
+83447 C168.77570\
+312 348.29956176\
+ 160.16188101 34\
+9.91696727 151.5\
+9917545 351.9082\
+5844 C148.066474\
+15 352.72428524 \
+144.5234332 353.\
+48803959 140.978\
+04832 354.246791\
+84 C139.34258044\
+ 354.61211371 13\
+7.7125554 355.00\
+295304 136.08999\
+062 355.42187881\
+ C124.10803509 3\
+58.50787755 124.\
+10803509 358.507\
+87755 118.874027\
+25 355.96857452 \
+C114.68126426 35\
+3.24539283 111.0\
+6882306 349.9862\
+1945 107.5228214\
+3 346.47793961 C\
+105.49315694 344\
+.50809503 103.30\
+360445 342.78446\
+219 101.0625 341\
+.0625 C97.463388\
+63 338.18559838 \
+93.88708197 335.\
+28173504 90.3156\
+7383 332.3706054\
+7 C84.36502297 3\
+27.52203118 78.3\
+9983597 322.6937\
+3531 72.375 317.\
+9375 C71.8197363\
+3 317.49688232 7\
+1.26447266 317.0\
+5626465 70.69238\
+281 316.60229492\
+ C67.23027684 31\
+3.88154265 63.68\
+784761 311.39765\
+468 60 309 Z M84\
+ 359 C84.66 359.\
+66 85.32 360.32 \
+86 361 C86 360.3\
+4 86 359.68 86 3\
+59 C85.34 359 84\
+.68 359 84 359 Z\
+ M431 359 C430.5\
+153125 359.49628\
+906 430.030625 3\
+59.99257813 429.\
+53125 360.503906\
+25 C425.38522681\
+ 364.7057413 421\
+.14738282 368.71\
+43932 416.664062\
+5 372.5546875 C4\
+13.43071718 375.\
+28087177 413.430\
+71718 375.280871\
+77 412.5859375 3\
+79.4765625 C412.\
+5061894 380.8588\
+6294 412.4362506\
+4 382.24175649 4\
+12.375 383.625 C\
+412.33632813 384\
+.33140625 412.29\
+765625 385.03781\
+25 412.2578125 3\
+85.765625 C412.1\
+6352276 387.5099\
+8524 412.0806710\
+9 389.25495691 4\
+12 391 C416.7602\
+9488 386.5927365\
+9 419.83586976 3\
+81.18179226 423.\
+19262695 375.699\
+70703 C424.31701\
+36 373.86764559 \
+425.45577239 372\
+.04507613 426.59\
+570312 370.22265\
+625 C427.3107803\
+9 369.063045 428\
+.02500416 367.90\
+290691 428.73828\
+125 366.7421875 \
+C429.38837158 36\
+5.6888623 430.03\
+846191 364.63553\
+711 430.70825195\
+ 363.55029297 C4\
+31.13452881 362.\
+70869629 431.560\
+80566 361.867099\
+61 432 361 C431.\
+67 360.34 431.34\
+ 359.68 431 359 \
+Z M86 361 C87.29\
+780567 364.44962\
+165 88.80405878 \
+367.53810472 90.\
+71484375 370.687\
+5 C91.23626953 3\
+71.55117188 91.7\
+5769531 372.4148\
+4375 92.29492188\
+ 373.3046875 C92\
+.83697266 374.19\
+414063 93.379023\
+44 375.08359375 \
+93.9375 376 C94.\
+47568359 376.889\
+45313 95.0138671\
+9 377.77890625 9\
+5.56835938 378.6\
+953125 C96.57374\
+644 380.35649458\
+ 97.58064828 382\
+.01676158 98.589\
+59961 383.675781\
+25 C99.2877478 3\
+84.82626953 99.2\
+877478 384.82626\
+953 100 386 C100\
+.5136058 386.672\
+50793 101.027211\
+61 387.34501587 \
+101.55638123 388\
+.03790283 C103.6\
+1571744 392.2633\
+6323 103.4760962\
+8 396.07219678 1\
+03.50830078 400.\
+71777344 C103.52\
+663971 401.69271\
+759 103.54497864\
+ 402.66766174 10\
+3.56387329 403.6\
+7214966 C103.621\
+29594 406.901159\
+33 103.6582247 4\
+10.13007305 103.\
+6953125 413.3593\
+75 C103.73211842\
+ 415.62406615 10\
+3.77029811 417.8\
+8873534 103.8097\
+8394 420.1533813\
+5 C103.91075916 \
+426.13429681 103\
+.99481334 432.11\
+532952 104.07482\
+91 438.09655762 \
+C104.18943357 44\
+6.44204939 104.3\
+2675881 454.7872\
+0131 104.4616394\
+ 463.13238525 C1\
+04.53327474 467.\
+56799142 104.598\
+72708 472.003614\
+06 104.65872192 \
+476.43939209 C10\
+4.73027472 481.5\
+7416263 104.8256\
+5355 486.7080279\
+2 104.93686676 4\
+91.84208679 C104\
+.98068396 494.03\
+381495 105.01651\
+294 496.22571163\
+ 105.0460434 498\
+.41767883 C105.0\
+9472719 501.8420\
+1949 105.1713407\
+6 505.26479221 1\
+05.25341797 508.\
+68847656 C105.26\
+27492 509.734106\
+41 105.27208042 \
+510.77973625 105\
+.28169441 511.85\
+705185 C105.4639\
+258 518.04371016\
+ 106.05248923 52\
+1.46867698 110.3\
+75 526 C112.2045\
+4038 527.3950572\
+6 114.08209272 5\
+28.72915995 116 \
+530 C117.9074294\
+6 531.54832268 1\
+19.80338508 533.\
+11088931 121.687\
+5 534.6875 C122.\
+60660156 535.420\
+97656 123.525703\
+13 536.15445313 \
+124.47265625 536\
+.91015625 C127.2\
+5747976 539.2129\
+0831 129.7284521\
+9 541.69355009 1\
+32.23046875 544.\
+29296875 C135.56\
+168538 547.50652\
+652 139.29458021\
+ 550.2356392 143\
+ 553 C143.33 552\
+.34 143.66 551.6\
+8 144 551 C143.4\
+2114832 549.1608\
+8583 143.4211483\
+2 549.16088583 1\
+42.41015625 547.\
+1328125 C142.041\
+80664 546.339636\
+23 141.67345703 \
+545.54645996 141\
+.29394531 544.72\
+924805 C140.8875\
+6836 543.8698461\
+9 140.48119141 5\
+43.01044434 140.\
+0625 542.125 C13\
+5.34066345 531.8\
+8477198 131.0079\
+2846 521.5397934\
+9 127 511 C126.3\
+0777344 509.1804\
+8828 126.3077734\
+4 509.18048828 1\
+25.6015625 507.3\
+2421875 C115.532\
+90988 479.010141\
+49 112.40059166 \
+448.52318006 108\
+.64404297 418.86\
+416626 C108.4236\
+9964 417.1267924\
+1 108.2017046 41\
+5.38962721 107.9\
+7802734 413.6526\
+7944 C105.948818\
+16 397.85434653 \
+105.94881816 397\
+.85434653 105.66\
+40625 390.183593\
+75 C105.43535841\
+ 379.54965862 10\
+5.43535841 379.5\
+4965862 99.87133\
+789 370.87231445\
+ C97.38764886 36\
+8.67435625 94.77\
+21122 366.817043\
+7 92 365 C90.869\
+39671 364.241473\
+78 89.73917256 3\
+63.48238205 88.6\
+09375 362.722656\
+25 C87.74828125 \
+362.15417969 86.\
+8871875 361.5857\
+0313 86 361 Z M4\
+12 399 C410.2302\
+5511 406.9695979\
+1 409.2161372 41\
+4.9620885 408.25\
+ 423.0625 C403.7\
+0814197 459.6633\
+9371 396.9860006\
+7 496.11990822 3\
+82 530 C381.4102\
+5391 531.3431225\
+6 381.41025391 5\
+31.34312256 380.\
+80859375 532.713\
+37891 C379.39221\
+644 535.93203632\
+ 377.97499256 53\
+9.14950982 376.5\
+1171875 542.3471\
+6797 C374.762620\
+11 546.17378643 \
+373.24986233 549\
+.98169261 372 55\
+4 C376.52731842 \
+551.15097002 380\
+.32789288 548.00\
+273292 384.1875 \
+544.3125 C389.00\
+837527 539.77304\
+989 393.94376464\
+ 535.49864787 39\
+9.171875 531.425\
+78125 C400.10515\
+625 530.62527344\
+ 401.0384375 529\
+.82476563 402 52\
+9 C402.72890945 \
+528.39998169 403\
+.45781891 527.79\
+996338 404.20881\
+653 527.1817627 \
+C408.35808548 52\
+3.47971009 411.5\
+0232016 520.6334\
+6896 412.0778808\
+6 514.92651367 C\
+412.10593464 512\
+.94462565 412.08\
+517527 510.96171\
+145 412.02734375\
+ 508.98046875 C4\
+12.03519142 507.\
+27808296 412.035\
+19142 507.278082\
+96 412.04319763 \
+505.54130554 C41\
+2.05360093 502.8\
+9659883 412.0474\
+5017 500.2559943\
+9 412.02215576 4\
+97.61175537 C411\
+.98294807 492.40\
+481346 412.06112\
+319 487.20090071\
+ 412.14111328 48\
+1.99462891 C412.\
+26398429 473.734\
+16854 412.366690\
+49 465.47391515 \
+412.44335938 457\
+.21289062 C412.4\
+5315134 456.1582\
+1657 412.4629433\
+1 455.10354252 4\
+12.473032 454.01\
+690865 C412.4928\
+4981 451.8683492\
+3 412.51258091 4\
+49.71978902 412.\
+53222656 447.571\
+22803 C412.58324\
+577 442.07935978\
+ 412.6385038 436\
+.58753416 412.69\
+335938 431.09570\
+312 C412.7996206\
+9 420.39717216 4\
+12.90133561 409.\
+69860355 413 399\
+ C412.67 399 412\
+.34 399 412 399 \
+Z \x22 fill=\x22#51515\
+1\x22 transform=\x22tr\
+anslate(254,307)\
+\x22/>\x0a<path d=\x22M0 \
+0 C0.79970215 -0\
+.02739258 1.5994\
+043 -0.05478516 \
+2.42333984 -0.08\
+300781 C3.504823\
+ -0.13013916 3.5\
+04823 -0.1301391\
+6 4.6081543 -0.1\
+7822266 C6.56005\
+859 0.12792969 6\
+.56005859 0.1279\
+2969 8.32324219 \
+1.18261719 C10.2\
+1894649 4.164253\
+95 9.7456673 7.0\
+752151 9.4858398\
+4 10.46386719 C9\
+.44194626 11.180\
+23346 9.39805267\
+ 11.89659973 9.3\
+5282898 12.63467\
+407 C9.25666058 \
+14.14984942 9.15\
+27714 15.6645515\
+9 9.04174805 17.\
+17871094 C8.8737\
+5526 19.4864906 \
+8.7315203 21.794\
+76064 8.59326172\
+ 24.10449219 C8.\
+49648106 25.5785\
+5155 8.39822159 \
+27.05251471 8.29\
+833984 28.526367\
+19 C8.25550369 2\
+9.21298431 8.212\
+66754 29.8996014\
+4 8.16853333 30.\
+60702515 C7.6080\
+1901 37.96345532\
+ 7.60801901 37.9\
+6345532 5.560058\
+59 41.12792969 C\
+0.27365147 43.31\
+983386 -5.178154\
+78 43.60579269 -\
+10.84619141 43.9\
+7949219 C-12.171\
+48865 44.0751295\
+5 -12.17148865 4\
+4.07512955 -13.5\
+2355957 44.17269\
+897 C-15.3823232\
+6 44.30545901 -1\
+7.24134259 44.43\
+468246 -19.10058\
+594 44.56054688 \
+C-21.93175101 44\
+.75237474 -24.76\
+200076 44.954805\
+74 -27.59228516 \
+45.15917969 C-29\
+.40604353 45.287\
+40359 -31.219844\
+42 45.41502786 -\
+33.03369141 45.5\
+4199219 C-34.291\
+79626 45.6310130\
+3 -34.29179626 4\
+5.63101303 -35.5\
+7531738 45.72183\
+228 C-40.2097833\
+3 46.03326567 -4\
+4.79505809 46.18\
+63412 -49.439941\
+41 46.12792969 C\
+-50.77421347 43.\
+45938557 -50.184\
+90324 42.2156621\
+2 -49.56494141 3\
+9.31542969 C-48.\
+32895259 32.9350\
+5499 -47.7774525\
+4 26.61296496 -4\
+7.43994141 20.12\
+792969 C-47.3858\
+0078 19.18046875\
+ -47.33166016 18\
+.23300781 -47.27\
+587891 17.256835\
+94 C-47.11258888\
+ 12.26164553 -47\
+.33465582 9.2683\
+1047 -50.4399414\
+1 5.12792969 C-5\
+0.43994141 4.467\
+92969 -50.439941\
+41 3.80792969 -5\
+0.43994141 3.127\
+92969 C-23.50616\
+304 1.12278169 -\
+23.50616304 1.12\
+278169 -11.25244\
+141 0.50292969 C\
+-10.48383789 0.4\
+6304932 -9.71523\
+438 0.42316895 -\
+8.92333984 0.382\
+08008 C-5.949131\
+85 0.24006066 -2\
+.97354103 0.1559\
+0709 0 0 Z \x22 fil\
+l=\x22#515151\x22 tran\
+sform=\x22translate\
+(862.43994140625\
+,586.8720703125)\
+\x22/>\x0a<path d=\x22M0 \
+0 C1.11658241 0.\
+08627907 1.11658\
+241 0.08627907 2\
+.25572205 0.1743\
+0115 C3.86914179\
+ 0.30002527 5.48\
+204457 0.4325251\
+6 7.09442139 0.5\
+7098389 C9.65186\
+254 0.78709613 1\
+2.20999535 0.977\
+82449 14.7700195\
+3 1.16064453 C20\
+.07841304 1.5402\
+0791 25.38490228\
+ 1.94264946 30.6\
+9140625 2.347656\
+25 C32.54100578 \
+2.48776021 34.39\
+061512 2.6277348\
+3 36.24023438 2.\
+76757812 C40.703\
+2389 3.10528659 \
+45.16610887 3.44\
+472183 49.628906\
+25 3.78515625 C5\
+0.12390625 5.270\
+15625 50.1239062\
+5 5.27015625 50.\
+62890625 6.78515\
+625 C50.1596875 \
+7.68492187 49.69\
+046875 8.5846875\
+ 49.20703125 9.5\
+1171875 C47.3471\
+0329 13.36968814\
+ 47.29244269 15.\
+8975028 47.37890\
+625 20.16015625 \
+C47.38986328 20.\
+84335937 47.4008\
+2031 21.5265625 \
+47.41210938 22.2\
+3046875 C47.5701\
+2074 29.76005374\
+ 48.06973135 37.\
+2762362 48.62890\
+625 44.78515625 \
+C38.51100591 45.\
+02109641 28.4594\
+7107 44.41716407\
+ 18.37133789 43.\
+72314453 C16.485\
+8022 43.59677474\
+ 14.59969093 43.\
+47874315 12.7131\
+3477 43.36865234\
+ C9.96348227 43.\
+20795375 7.21645\
+63 43.02285185 4\
+.46875 42.832031\
+25 C3.62505356 4\
+2.78705505 2.781\
+35712 42.7420788\
+6 1.91209412 42.\
+69573975 C-3.767\
+85976 42.2616199\
+2 -3.76785976 42\
+.26161992 -6.357\
+66602 40.2160644\
+5 C-7.77348671 3\
+6.8199366 -8.131\
+90292 33.4736419\
+1 -8.42578125 29\
+.84375 C-8.49523\
+956 29.07966324 \
+-8.56469788 28.3\
+1557648 -8.63626\
+099 27.52833557 \
+C-8.77874574 25.\
+91765312 -8.9145\
+0036 24.3063629 \
+-9.04394531 22.6\
+9458008 C-9.2458\
+5421 20.22558543\
+ -9.47898466 17.\
+76087776 -9.7148\
+4375 15.29492188\
+ C-9.84954975 13\
+.72802622 -9.982\
+42521 12.1609718\
+8 -10.11328125 1\
+0.59375 C-10.184\
+97528 9.8561998 \
+-10.25666931 9.1\
+186496 -10.33053\
+589 8.35874939 C\
+-10.53943364 5.5\
+2042135 -10.6624\
+5175 3.35508058 \
+-9.34790039 0.78\
+369141 C-6.26828\
+995 -0.77189791 \
+-3.33026202 -0.3\
+1594006 0 0 Z \x22 \
+fill=\x22#515151\x22 t\
+ransform=\x22transl\
+ate(168.37109375\
+,649.21484375)\x22/\
+>\x0a<path d=\x22M0 0 \
+C1.85721119 3.15\
+199473 1.2545085\
+3 6.28927935 0.9\
+1357422 9.796630\
+86 C0.84985626 1\
+0.55976089 0.786\
+13831 11.3228909\
+3 0.7204895 12.1\
+0914612 C0.58175\
+753 13.7228717 0\
+.43497384 15.335\
+9223 0.28076172 \
+16.94824219 C0.0\
+4773458 19.41129\
+046 -0.15399589 \
+21.87547377 -0.3\
+5205078 24.34155\
+273 C-0.49080626\
+ 25.91007861 -0.\
+63137194 27.4784\
+4563 -0.77392578\
+ 29.04663086 C-0\
+.83347443 29.782\
+15683 -0.8930230\
+7 30.5176828 -0.\
+95437622 31.2754\
+9744 C-1.2466377\
+3 34.17942017 -1\
+.71783973 36.726\
+97858 -2.8601074\
+2 39.41894531 C-\
+6.00131203 41.92\
+279276 -9.512738\
+07 41.8216722 -1\
+3.37939453 42.03\
+491211 C-14.6549\
+8482 42.12630463\
+ -14.65498482 42\
+.12630463 -15.95\
+63446 42.2195434\
+6 C-18.68373313 \
+42.40993544 -21.\
+41204343 42.5737\
+1949 -24.1411132\
+8 42.73803711 C-\
+25.93614794 42.8\
+6272603 -27.7310\
+7244 42.98901166\
+ -29.52587891 43\
+.11694336 C-39.3\
+0804776 43.78899\
+819 -49.02055562\
+ 44.17261112 -58\
+.82861328 43.988\
+03711 C-58.66707\
+764 43.30104736 \
+-58.50554199 42.\
+61405762 -58.339\
+11133 41.90625 C\
+-57.44394749 36.\
+78913217 -57.642\
+67626 31.6231657\
+2 -57.64331055 2\
+6.44042969 C-57.\
+64111607 24.4280\
+9135 -57.6229062\
+7 22.41629489 -5\
+7.60400391 20.40\
+405273 C-57.6020\
+7031 19.13110352\
+ -57.60013672 17\
+.8581543 -57.598\
+14453 16.5466308\
+6 C-57.59403564 \
+15.38446045 -57.\
+58992676 14.2222\
+9004 -57.5856933\
+6 13.02490234 C-\
+57.82362467 10.0\
+5040228 -58.4114\
+8526 8.54392245 \
+-59.82861328 5.9\
+8803711 C-59.828\
+61328 4.99803711\
+ -59.82861328 4.\
+00803711 -59.828\
+61328 2.98803711\
+ C-52.37235238 2\
+.41573045 -44.91\
+587075 1.8463692\
+4 -37.45922852 1\
+.27905273 C-34.9\
+2271839 1.085720\
+68 -32.38625951 \
+0.89171502 -29.8\
+4985352 0.697021\
+48 C-26.20358336\
+ 0.41725286 -22.\
+55713563 0.13990\
+908 -18.91064453\
+ -0.13696289 C-1\
+7.21038872 -0.26\
+820557 -17.21038\
+872 -0.26820557 \
+-15.4757843 -0.4\
+0209961 C-14.415\
+0621 -0.48218262\
+ -13.3543399 -0.\
+56226563 -12.261\
+47461 -0.6447753\
+9 C-11.33103836 \
+-0.71583496 -10.\
+40060211 -0.7868\
+9453 -9.44197083\
+ -0.86010742 C-2\
+.303726 -1.27489\
+242 -2.303726 -1\
+.27489242 0 0 Z \
+\x22 fill=\x22#515151\x22\
+ transform=\x22tran\
+slate(865.828613\
+28125,650.011962\
+890625)\x22/>\x0a<path\
+ d=\x22M0 0 C1.3023\
+8998 0.40086022 \
+2.60512334 0.800\
+60659 3.90820312\
+ 1.19921875 C7.6\
+7618889 2.357285\
+47 11.43251234 3\
+.55041331 15.187\
+5 4.75 C16.35974\
+121 5.11931641 1\
+7.53198242 5.488\
+63281 18.7397460\
+9 5.86914062 C19\
+.81949707 6.2165\
+4297 20.89924805\
+ 6.56394531 22.0\
+1171875 6.921875\
+ C23.44197388 7.\
+37965332 23.4419\
+7388 7.37965332 \
+24.90112305 7.84\
+667969 C27.1875 \
+8.75 27.1875 8.7\
+5 29.1875 10.75 \
+C29.3828125 13.3\
+515625 29.382812\
+5 13.3515625 29.\
+3125 16.375 C29.\
+29445313 17.3778\
+9062 29.27640625\
+ 18.38078125 29.\
+2578125 19.41406\
+25 C29.23460937 \
+20.18492187 29.2\
+1140625 20.95578\
+125 29.1875 21.7\
+5 C25.34084604 2\
+3.03221799 23.74\
+145042 22.224396\
+89 19.89453125 2\
+1.01953125 C18.9\
+6722198 20.73314\
+789 18.96722198 \
+20.73314789 18.0\
+211792 20.440979\
+ C16.69840396 20\
+.03217238 15.376\
+68344 19.6199402\
+1 14.05593872 19\
+.20462036 C11.98\
+989257 18.559343\
+2 9.91902326 17.\
+93291642 7.84545\
+898 17.31225586 \
+C-3.42938271 13.\
+93127758 -3.4293\
+8271 13.93127758\
+ -8.546875 12.04\
+6875 C-20.711172\
+56 7.99210915 -3\
+1.08191393 11.91\
+241444 -42.8125 \
+15.75 C-45.89726\
+103 16.74552112 \
+-48.98210545 17.\
+740751 -52.06787\
+109 18.7331543 C\
+-53.98596652 19.\
+35745363 -55.899\
+37466 19.9963911\
+6 -57.80712891 2\
+0.65161133 C-58.\
+66870605 20.9406\
+0303 -59.5302832\
+ 21.22959473 -60\
+.41796875 21.527\
+34375 C-61.17231\
+201 21.78765381 \
+-61.92665527 22.\
+04796387 -62.703\
+85742 22.3161621\
+1 C-64.8125 22.7\
+5 -64.8125 22.75\
+ -68.8125 21.75 \
+C-68.8125 18.12 \
+-68.8125 14.49 -\
+68.8125 10.75 C-\
+61.31205539 7.20\
+610061 -53.65393\
+388 4.62229348 -\
+45.75 2.125 C-44\
+.52216797 1.7305\
+4687 -43.2943359\
+4 1.33609375 -42\
+.02929688 0.9296\
+875 C-38.6304345\
+9 -0.15384857 -3\
+5.22551123 -1.21\
+198086 -31.8125 \
+-2.25 C-31.04180\
+176 -2.48686523 \
+-30.27110352 -2.\
+72373047 -29.477\
+05078 -2.9677734\
+4 C-18.90517891 \
+-5.94495488 -10.\
+15819229 -3.2115\
+506 0 0 Z \x22 fill\
+=\x22#515151\x22 trans\
+form=\x22translate(\
+531.8125,673.25)\
+\x22/>\x0a<path d=\x22M0 \
+0 C2.34326114 0.\
+69559857 4.69187\
+833 1.36983522 7\
+.04223633 2.0410\
+1562 C14.5503582\
+8 4.21219703 21.\
+7467392 6.495988\
+47 28.78637695 9\
+.94726562 C28.78\
+637695 13.907265\
+63 28.78637695 1\
+7.86726562 28.78\
+637695 21.947265\
+62 C24.88308471 \
+23.24836304 22.3\
+5416331 22.13540\
+772 18.59106445 \
+20.92773438 C17.\
+88418488 20.7091\
+0233 17.1773053 \
+20.49047028 16.4\
+4900513 20.26521\
+301 C14.18380451\
+ 19.56328671 11.\
+92249378 18.8497\
+2711 9.66137695 \
+18.13476562 C-8.\
+14742346 12.5502\
+9183 -19.9779473\
+5 9.37040292 -38\
+.33862305 14.697\
+26562 C-39.56838\
+867 15.0453125 -\
+40.7981543 15.39\
+335938 -42.06518\
+555 15.75195312 \
+C-45.78436165 16\
+.80676147 -49.49\
+915023 17.876025\
+23 -53.21362305 \
+18.94726562 C-55\
+.85641825 19.703\
+99553 -58.499850\
+68 20.45848638 -\
+61.14331055 21.2\
+1289062 C-62.891\
+0376 21.71224121\
+ -62.8910376 21.\
+71224121 -64.674\
+07227 22.2216796\
+9 C-65.51212402 \
+22.46112305 -66.\
+35017578 22.7005\
+6641 -67.2136230\
+5 22.94726562 C-\
+69.71425452 20.4\
+4663415 -69.5378\
+2447 19.46914864\
+ -69.58862305 16\
+.00976562 C-69.6\
+1698242 15.13449\
+219 -69.6453418 \
+14.25921875 -69.\
+67456055 13.3574\
+2188 C-69.213623\
+05 10.94726562 -\
+69.21362305 10.9\
+4726562 -67.5815\
+4297 9.43139648 \
+C-64.75049578 7.\
+65699336 -62.063\
+12934 6.7645334 \
+-58.8659668 5.79\
+101562 C-57.6200\
+8789 5.40816406 \
+-56.37420898 5.0\
+253125 -55.09057\
+617 4.63085938 C\
+-53.77743904 4.2\
+3628182 -52.4642\
+8793 3.84175081 \
+-51.15112305 3.4\
+4726562 C-49.865\
+10055 3.05343643\
+ -48.57929103 2.\
+65891107 -47.293\
+70117 2.26367188\
+ C-43.60591987 1\
+.13858605 -39.91\
+057953 0.0417492\
+1 -36.21362305 -\
+1.05273438 C-35.\
+21218262 -1.3659\
+7656 -34.2107421\
+9 -1.67921875 -3\
+3.17895508 -2.00\
+195312 C-21.0847\
+7746 -5.62956775\
+ -11.80418941 -3\
+.50851888 0 0 Z \
+\x22 fill=\x22#515151\x22\
+ transform=\x22tran\
+slate(532.213623\
+046875,708.05273\
+4375)\x22/>\x0a<path d\
+=\x22M0 0 C1.681289\
+98 0.15049553 1.\
+68128998 0.15049\
+553 3.39654541 0\
+.30403137 C5.202\
+97516 0.4913105 \
+5.20297516 0.491\
+3105 7.04589844 \
+0.68237305 C8.28\
+321716 0.7975981\
+1 9.52053589 0.9\
+1282318 10.79534\
+912 1.03153992 C\
+14.07801052 1.34\
+024291 17.358837\
+98 1.66331594 20\
+.6394043 1.99340\
+82 C23.98989965 \
+2.32695637 27.34\
+216758 2.6415562\
+7 30.69433594 2.\
+95776367 C37.266\
+42206 3.58158912\
+ 43.83644524 4.2\
+2439382 50.40527\
+344 4.8815918 C4\
+9.80033265 7.575\
+03445 49.0659930\
+3 9.5970041 47.8\
+6108398 12.13769\
+531 C46.17651648\
+ 15.98966244 46.\
+01838585 19.6247\
+2059 46.11230469\
+ 23.78393555 C46\
+.11867195 24.867\
+78282 46.1186719\
+5 24.86778282 46\
+.12516785 25.973\
+526 C46.14180926\
+ 28.25577873 46.\
+17943095 30.5371\
+1113 46.21777344\
+ 32.8190918 C46.\
+2328392 34.37702\
+165 46.24652428 \
+35.9349655 46.25\
+878906 37.492919\
+92 C46.29166462 \
+41.28949237 46.3\
+4334254 45.08538\
+667 46.40527344 \
+48.8815918 C35.6\
+2989913 48.30954\
+694 24.96002055 \
+47.25919248 14.2\
+5805664 45.88964\
+844 C12.54579887\
+ 45.67357977 10.\
+83252814 45.4654\
+0993 9.1184082 4\
+5.26464844 C6.60\
+357689 44.970028\
+81 4.09247119 44\
+.6531023 1.58105\
+469 44.33081055 \
+C0.81755203 44.2\
+4522385 0.054049\
+38 44.15963715 -\
+0.73258972 44.07\
+145691 C-4.03558\
+49 43.62349141 -\
+6.33523192 43.06\
+422747 -9.079101\
+56 41.13305664 C\
+-10.9591466 38.3\
+4024489 -11.0715\
+8072 36.7585847 \
+-11.02050781 33.\
+40893555 C-11.01\
+212891 32.343525\
+39 -11.00375 31.\
+27811523 -10.995\
+11719 30.1804199\
+2 C-10.96611328 \
+29.07118164 -10.\
+93710938 27.9619\
+4336 -10.9072265\
+6 26.8190918 C-1\
+0.89755859 25.73\
+692383 -10.88789\
+063 24.65475586 \
+-10.87792969 23.\
+53979492 C-10.83\
+345863 20.316610\
+36 -10.7279509 1\
+7.10225298 -10.5\
+9472656 13.88159\
+18 C-10.56040527\
+ 12.84019043 -10\
+.52608398 11.798\
+78906 -10.490722\
+66 10.72583008 C\
+-10.43609863 9.7\
+4727051 -10.3814\
+7461 8.76871094 \
+-10.32519531 7.7\
+6049805 C-10.281\
+60889 6.89110596\
+ -10.23802246 6.\
+02171387 -10.193\
+11523 5.12597656\
+ C-8.79884432 -0\
+.10353486 -4.775\
+53259 -0.4624952\
+7 0 0 Z \x22 fill=\x22\
+#515151\x22 transfo\
+rm=\x22translate(17\
+0.5947265625,711\
+.118408203125)\x22/\
+>\x0a<path d=\x22M0 0 \
+C0.70703125 2.32\
+8125 0.70703125 \
+2.328125 0.8125 \
+5.25 C0.85375 6.\
+38824219 0.895 7\
+.52648437 0.9375\
+ 8.69921875 C0.9\
+4652344 9.359702\
+15 0.95554687 10\
+.02018555 0.9648\
+4375 10.70068359\
+ C1.00630698 13.\
+41249412 1.10032\
+466 16.12131414 \
+1.1875 18.832031\
+25 C1.2323843 20\
+.90878712 1.2740\
+3316 22.98561535\
+ 1.3125 25.0625 \
+C1.3575769 26.57\
+98877 1.3575769 \
+26.5798877 1.403\
+56445 28.1279296\
+9 C1.41456177 29\
+.56700684 1.4145\
+6177 29.56700684\
+ 1.42578125 31.0\
+3515625 C1.44036\
+377 31.8950415 1\
+.45494629 32.754\
+92676 1.4699707 \
+33.64086914 C0.7\
+866355 37.071034\
+35 -0.09111701 3\
+8.01127663 -3 40\
+ C-6.44632891 40\
+.92002239 -9.920\
+95787 41.3070973\
+3 -13.4609375 41\
+.703125 C-14.995\
+92392 41.8943997\
+2 -14.99592392 4\
+1.89439972 -16.5\
+6192017 42.08953\
+857 C-19.8312176\
+3 42.49245888 -2\
+3.10284834 42.87\
+103829 -26.375 4\
+3.25 C-28.570496\
+41 43.5193384 -3\
+0.765812 43.7901\
+5517 -32.9609375\
+ 44.0625 C-50.31\
+896671 46.178611\
+4 -50.31896671 4\
+6.1786114 -56 46\
+ C-55.98428955 4\
+4.65421875 -55.9\
+8428955 44.65421\
+875 -55.96826172\
+ 43.28125 C-55.9\
+3396274 39.91908\
+138 -55.90899625\
+ 36.55710156 -55\
+.89013672 33.194\
+82422 C-55.88014\
+414 31.74590094 \
+-55.86654547 30.\
+29699749 -55.849\
+12109 28.8481445\
+3 C-55.73514427 \
+19.11988757 -56.\
+29496877 11.1332\
+4233 -60 2 C-52.\
+26098349 1.20888\
+265 -44.51965291\
+ 0.44461211 -36.\
+77612305 -0.3010\
+2539 C-34.142049\
+16 -0.55786179 -\
+31.50856708 -0.8\
+2084483 -28.8757\
+3242 -1.09008789\
+ C-25.09172008 -\
+1.47597869 -21.3\
+0613177 -1.83973\
+245 -17.51953125\
+ -2.19921875 C-1\
+5.7536541 -2.386\
+49788 -15.753654\
+1 -2.38649788 -1\
+3.95210266 -2.57\
+756042 C-12.3009\
+5711 -2.72805595\
+ -12.30095711 -2\
+.72805595 -10.61\
+645508 -2.881591\
+8 C-9.65048904 -\
+2.97707809 -8.68\
+452301 -3.072564\
+39 -7.68928528 -\
+3.17094421 C-4.3\
+7246123 -2.96011\
+055 -2.63494882 \
+-1.98586826 0 0 \
+Z \x22 fill=\x22#51515\
+1\x22 transform=\x22tr\
+anslate(864,714)\
+\x22/>\x0a<path d=\x22M0 \
+0 C1.19431641 0.\
+34804688 2.38863\
+281 0.69609375 3\
+.61914062 1.0546\
+875 C7.15072099 \
+2.09282217 10.66\
+973233 3.1660800\
+7 14.1875 4.25 C\
+15.31591309 4.58\
+580078 16.444326\
+17 4.92160156 17\
+.60693359 5.2675\
+7812 C19.1994897\
+5 5.76161133 19.\
+19948975 5.76161\
+133 20.82421875 \
+6.265625 C21.763\
+54248 6.55211914\
+ 22.70286621 6.8\
+3861328 23.67065\
+43 7.13378906 C2\
+6.558788 8.41466\
+473 28.17796076 \
+9.82658687 30.18\
+75 12.25 C30.578\
+125 14.828125 30\
+.578125 14.82812\
+5 30.4375 17.5 C\
+30.40140625 18.3\
+9203125 30.36531\
+25 19.2840625 30\
+.328125 20.20312\
+5 C30.28171875 2\
+0.87859375 30.23\
+53125 21.5540625\
+ 30.1875 22.25 C\
+26.09545858 23.9\
+3449466 22.54149\
+351 22.4601181 1\
+8.52734375 21.23\
+046875 C17.78223\
+038 21.0118367 1\
+7.037117 20.7932\
+0465 16.26942444\
+ 20.56794739 C13\
+.88505867 19.867\
+16867 11.5048755\
+5 19.15336618 9.\
+125 18.4375 C3.1\
+6011747 16.65533\
+567 -2.81292465 \
+14.91190802 -8.8\
+125 13.25 C-9.83\
+883545 12.960041\
+5 -10.8651709 12\
+.67008301 -11.92\
+260742 12.371337\
+89 C-19.49454289\
+ 10.57622843 -25\
+.63573031 12.160\
+72214 -33 14.312\
+5 C-34.18021729 \
+14.63742432 -35.\
+36043457 14.9623\
+4863 -36.5764160\
+2 15.29711914 C-\
+44.40038418 17.4\
+7458216 -52.1715\
+0228 19.81920141\
+ -59.87109375 22\
+.40234375 C-62.8\
+125 23.25 -62.81\
+25 23.25 -66.812\
+5 23.25 C-66.974\
+9969 21.33614764\
+ -67.09112512 19\
+.41831905 -67.18\
+75 17.5 C-67.257\
+10938 16.4326562\
+5 -67.32671875 1\
+5.3653125 -67.39\
+84375 14.265625 \
+C-66.8125 11.25 \
+-66.8125 11.25 -\
+64.25268555 9.22\
+045898 C-60.6559\
+1811 7.1603135 -\
+57.13808037 5.84\
+887094 -53.18359\
+375 4.70703125 C\
+-52.47147232 4.4\
+9310226 -51.7593\
+5089 4.27917328 \
+-51.02565002 4.0\
+587616 C-48.7697\
+8829 3.38389047 \
+-46.51002045 2.7\
+2329222 -44.25 2\
+.0625 C-42.72955\
+653 1.60829526 -\
+41.2093714 1.153\
+22476 -39.689453\
+12 0.69726562 C-\
+38.22939494 0.26\
+225394 -36.76911\
+563 -0.17201641 \
+-35.30859375 -0.\
+60546875 C-34.29\
+278481 -0.907011\
+18 -34.29278481 \
+-0.90701118 -33.\
+25645447 -1.2146\
+4539 C-20.957454\
+72 -4.80722836 -\
+12.15627772 -3.6\
+6442578 0 0 Z \x22 \
+fill=\x22#515151\x22 t\
+ransform=\x22transl\
+ate(530.8125,743\
+.75)\x22/>\x0a<path d=\
+\x22M0 0 C0.9659106\
+4 0.11158447 1.9\
+3182129 0.223168\
+95 2.92700195 0.\
+33813477 C4.0876\
+416 0.46559082 5\
+.24828125 0.5930\
+4688 6.4440918 0\
+.72436523 C7.851\
+46486 0.907057 9\
+.25850285 1.0923\
+3987 10.6652832 \
+1.27954102 C11.9\
+0281342 1.437038\
+27 11.90281342 1\
+.43703827 13.165\
+34424 1.59771729\
+ C19.94332647 2.\
+46192658 26.7106\
+8669 3.39694624 \
+33.4777832 4.342\
+04102 C35.538280\
+96 4.62690171 37\
+.59882752 4.9114\
+0971 39.65942383\
+ 5.19555664 C44.\
+66194859 5.88615\
+436 49.66378943 \
+6.58151739 54.66\
+52832 7.27954102\
+ C54.6652832 11.\
+17374282 53.9209\
+2594 12.93974493\
+ 52.36431885 16.\
+38101196 C51.203\
+95175 19.5324830\
+8 51.20473904 22\
+.72638189 51.188\
+7207 26.04125977\
+ C51.16535141 27\
+.110877 51.16535\
+141 27.110877 51\
+.14151001 28.202\
+10266 C51.094403\
+74 30.45707217 5\
+1.06636443 32.71\
+173918 51.040283\
+2 34.96704102 C5\
+1.00366422 37.23\
+284031 50.962975\
+41 39.49847296 5\
+0.91763306 41.76\
+411438 C50.87823\
+302 43.81168236 \
+50.85030659 45.8\
+5946162 50.82299\
+805 47.90722656 \
+C50.69804767 50.\
+57895955 50.4650\
+4236 52.74991162\
+ 49.6652832 55.2\
+7954102 C38.9457\
+295 54.03957764 \
+28.43951388 52.1\
+8989751 17.89038\
+086 49.93041992 \
+C15.3795595 49.3\
+9695087 12.86456\
+832 48.88714127 \
+10.34887695 48.3\
+7719727 C8.74049\
+962 48.03618194 \
+7.13241414 47.69\
+378656 5.5246582\
+ 47.34985352 C4.\
+77786804 47.2017\
+8253 4.03107788 \
+47.05371155 3.26\
+165771 46.901153\
+56 C0.31680981 4\
+6.24843308 -1.94\
+698503 45.596601\
+03 -4.30102539 4\
+3.67163086 C-5.8\
+2649079 40.14151\
+512 -5.76271731 \
+36.71416997 -5.7\
+331543 32.935791\
+02 C-5.73602448 \
+32.12968384 -5.7\
+3889465 31.32357\
+666 -5.74185181 \
+30.49304199 C-5.\
+74388971 28.7918\
+2226 -5.73837894\
+ 27.09057896 -5.\
+72583008 25.3894\
+043 C-5.70977178\
+ 22.78844711 -5.\
+72568722 20.1890\
+4374 -5.74487305\
+ 17.58813477 C-5\
+.74289057 15.933\
+18343 -5.7390467\
+9 14.27823305 -5\
+.7331543 12.6232\
+9102 C-5.7392269\
+9 11.84715454 -5\
+.74529968 11.071\
+01807 -5.7515564\
+ 10.2713623 C-5.\
+7103772 7.103151\
+72 -5.50372179 4\
+.63635233 -4.138\
+67188 1.75439453\
+ C-2.3347168 0.2\
+7954102 -2.33471\
+68 0.27954102 0 \
+0 Z \x22 fill=\x22#515\
+151\x22 transform=\x22\
+translate(165.33\
+4716796875,773.7\
+20458984375)\x22/>\x0a\
+<path d=\x22M0 0 C1\
+.63644974 3.5815\
+3273 1.60030931 \
+7.00100892 1.585\
+69336 10.8652343\
+8 C1.59093521 11\
+.67134155 1.5961\
+7706 12.47744873\
+ 1.60157776 13.3\
+079834 C1.607989\
+89 15.00918426 1\
+.6066714 16.7104\
+2951 1.59814453 \
+18.41162109 C1.5\
+8962789 21.01284\
+712 1.61841486 2\
+3.61188111 1.650\
+14648 26.2128906\
+2 C1.6517585 27.\
+86783788 1.65118\
+096 29.52278903 \
+1.64819336 31.17\
+773438 C1.665044\
+33 32.34193909 1\
+.66504433 32.341\
+93909 1.68223572\
+ 33.52966309 C1.\
+63677361 37.0555\
+5106 1.45692057 \
+39.11313472 -0.6\
+809082 41.977050\
+78 C-3.61959292 \
+44.07147614 -6.5\
+5612716 44.72833\
+826 -10.03540039\
+ 45.39648438 C-1\
+1.14999634 45.62\
+694458 -11.14999\
+634 45.62694458 \
+-12.28710938 45.\
+86206055 C-15.13\
+655061 46.438610\
+91 -17.99134654 \
+46.98122868 -20.\
+84790039 47.5214\
+8438 C-22.200461\
+82 47.78031933 -\
+23.55299933 48.0\
+3927931 -24.9055\
+1758 48.29833984\
+ C-29.40462551 4\
+9.15723678 -33.9\
+0698796 49.99799\
+086 -38.41040039\
+ 50.83398438 C-3\
+9.54063126 51.04\
+556183 -39.54063\
+126 51.04556183 \
+-40.69369507 51.\
+26141357 C-42.84\
+947037 51.662983\
+3 -45.0065651 52\
+.05641652 -47.16\
+430664 52.447265\
+62 C-48.42702393\
+ 52.67841064 -49\
+.68974121 52.909\
+55566 -50.990722\
+66 53.14770508 C\
+-51.93359131 53.\
+27105225 -52.876\
+45996 53.3943994\
+1 -53.84790039 5\
+3.52148438 C-55.\
+78231752 51.5870\
+6724 -55.0316757\
+6 47.94521609 -5\
+5.05883789 45.30\
+273438 C-55.0869\
+432 43.79751585 \
+-55.11560783 42.\
+29230769 -55.144\
+77539 40.7871093\
+8 C-55.18576839 \
+38.41537169 -55.\
+22264974 36.0438\
+1978 -55.2492675\
+8 33.671875 C-55\
+.29726352 19.435\
+21727 -55.297263\
+52 19.43521727 -\
+60.84790039 6.52\
+148438 C-59.2293\
+0751 4.90289149 \
+-57.28929007 5.0\
+6726724 -55.0561\
+5234 4.76538086 \
+C-54.03451492 4.\
+62531113 -53.012\
+8775 4.48524139 \
+-51.96028137 4.3\
+4092712 C-50.846\
+82846 4.19297195\
+ -49.73337555 4.\
+04501678 -48.586\
+18164 3.89257812\
+ C-47.44763229 3\
+.73862076 -46.30\
+908295 3.5846633\
+9 -45.1360321 3.\
+42604065 C-42.71\
+938568 3.1003859\
+3 -40.30244916 2\
+.77687797 -37.88\
+525391 2.4553222\
+7 C-34.19291374 \
+1.96331679 -30.5\
+0182541 1.462633\
+89 -26.81079102 \
+0.9609375 C-24.4\
+6515838 0.645958\
+99 -22.11945733 \
+0.33148946 -19.7\
+7368164 0.017578\
+12 C-18.67034988\
+ -0.13240128 -17\
+.56701813 -0.282\
+38068 -16.430252\
+08 -0.43690491 C\
+-15.39285385 -0.\
+57382248 -14.355\
+45563 -0.7107400\
+5 -13.28662109 -\
+0.85180664 C-12.\
+37918655 -0.9731\
+4468 -11.4717520\
+1 -1.09448273 -1\
+0.53681946 -1.21\
+949768 C-2.49264\
+133 -1.99437652 \
+-2.49264133 -1.9\
+9437652 0 0 Z \x22 \
+fill=\x22#515151\x22 t\
+ransform=\x22transl\
+ate(863.84790039\
+0625,775.4785156\
+25)\x22/>\x0a<path d=\x22\
+M0 0 C1.96356445\
+ -0.00505302 1.9\
+6356445 -0.00505\
+302 3.96679688 -\
+0.01020813 C6.73\
+092268 -0.014528\
+63 9.49387736 0.\
+002211 12.257812\
+5 0.03442383 C15\
+.78891628 0.0742\
+0776 19.31782556\
+ 0.06489891 22.8\
+4899902 0.040188\
+79 C26.23287383 \
+0.02254126 29.61\
+612655 0.0440035\
+5 33 0.0625 C34.\
+26263672 0.05551\
+59 35.52527344 0\
+.0485318 36.8261\
+7188 0.04133606 \
+C46.59397897 0.1\
+9832938 46.59397\
+897 0.19832938 5\
+0.26831055 2.760\
+98633 C53.217129\
+47 6.72597193 53\
+.51684996 9.6325\
+8959 53.70703125\
+ 14.47265625 C53\
+.76275803 15.317\
+84821 53.8184848\
+ 16.16304016 53.\
+87590027 17.0338\
+4399 C54.0478812\
+4 19.73396231 54\
+.1808839 22.4343\
+6259 54.3125 25.\
+13671875 C54.418\
+63152 26.9142191\
+9 54.52733233 28\
+.69156818 54.638\
+67188 30.46875 C\
+54.8524497 33.94\
+325792 55.050567\
+48 37.41805425 5\
+5.23413086 40.89\
+428711 C55.46535\
+599 45.23783762 \
+55.75109618 49.5\
+7497472 56.05468\
+75 53.9140625 C5\
+6.43818211 59.59\
+426258 56.740316\
+64 65.25635759 5\
+6.8125 70.949218\
+75 C56.85600586 \
+72.15674805 56.8\
+5600586 72.15674\
+805 56.90039062 \
+73.38867188 C56.\
+90876953 74.1653\
+3203 56.91714844\
+ 74.94199219 56.\
+92578125 75.7421\
+875 C56.94036377\
+ 76.42176514 56.\
+95494629 77.1013\
+4277 56.9699707 \
+77.80151367 C56.\
+25752601 80.7730\
+5572 54.87556907\
+ 81.87320448 52.\
+5 83.76171875 C4\
+9.35046387 84.26\
+965332 49.350463\
+87 84.26965332 4\
+5.59179688 84.27\
+929688 C44.90513\
+443 84.28630615 \
+44.21847198 84.2\
+9331543 43.51100\
+159 84.30053711 \
+C41.24650349 84.\
+31810888 38.9832\
+6028 84.3064987 \
+36.71875 84.2929\
+6875 C35.1422094\
+8 84.29566394 33\
+.56567058 84.299\
+54658 31.9891357\
+4 84.30456543 C2\
+8.68709466 84.31\
+045931 25.385486\
+77 84.30190153 2\
+2.08349609 84.28\
+320312 C17.85298\
+94 84.26041306 1\
+3.62349772 84.27\
+353682 9.3930282\
+6 84.29749298 C6\
+.13816697 84.311\
+95426 2.88354593\
+ 84.30734358 -0.\
+37132263 84.2969\
+8181 C-1.9310264\
+1 84.29431541 -3\
+.49075208 84.297\
+58129 -5.0504303\
+ 84.30690002 C-7\
+.23147262 84.317\
+07177 -9.4108764\
+7 84.30155916 -1\
+1.59179688 84.27\
+929688 C-12.8321\
+5698 84.2761145 \
+-14.07251709 84.\
+27293213 -15.350\
+46387 84.2696533\
+2 C-18.5 83.7617\
+1875 -18.5 83.76\
+171875 -20.90487\
+671 81.99633789 \
+C-22.67014786 79\
+.52335744 -22.98\
+653031 78.482581\
+9 -22.93017578 7\
+5.49023438 C-22.\
+923237 74.647388\
+92 -22.91629822 \
+73.80454346 -22.\
+90914917 72.9361\
+5723 C-22.879833\
+07 72.02265503 -\
+22.85051697 71.1\
+0915283 -22.8203\
+125 70.16796875 \
+C-22.80380646 69\
+.20322632 -22.78\
+730042 68.238483\
+89 -22.77029419 \
+67.24450684 C-22\
+.70594727 64.082\
+33333 -22.606755\
+53 60.92272979 -\
+22.5 57.76171875\
+ C-22.46773315 5\
+6.69566406 -22.4\
+3546631 55.62960\
+937 -22.40222168\
+ 54.53125 C-22.1\
+9340359 47.89685\
+791 -21.90143298\
+ 41.27029234 -21\
+.54785156 34.642\
+08984 C-21.43118\
+259 32.36045336 \
+-21.32698368 30.\
+07814981 -21.234\
+375 27.79541016 \
+C-21.09760908 24\
+.43847156 -20.92\
+411639 21.085226\
+15 -20.7421875 1\
+7.73046875 C-20.\
+70753387 16.7148\
+8892 -20.6728802\
+5 15.69930908 -2\
+0.63717651 14.65\
+29541 C-20.36378\
+529 10.29772422 \
+-20.012691 6.636\
+82949 -17.266113\
+28 3.1237793 C-1\
+2.42380583 -0.88\
+992015 -5.949191\
+87 -0.07200659 0\
+ 0 Z \x22 fill=\x22#51\
+5151\x22 transform=\
+\x22translate(495.5\
+,833.23828125)\x22/\
+>\x0a<path d=\x22M0 0 \
+C0.69320343 -0.0\
+0671722 1.386406\
+86 -0.01343445 2\
+.10061646 -0.020\
+35522 C4.3876262\
+2 -0.03932144 6.\
+6743423 -0.04325\
+87 8.96142578 -0\
+.04541016 C10.55\
+559407 -0.051839\
+15 12.14976118 -\
+0.05856759 13.74\
+3927 -0.06558228\
+ C17.08452082 -0\
+.07755165 20.425\
+01125 -0.0812634\
+6 23.765625 -0.0\
+8007812 C28.0384\
+5629 -0.07987498\
+ 32.31062216 -0.\
+10717383 36.5832\
+9582 -0.14162254\
+ C39.8759361 -0.\
+16390125 43.1684\
+1649 -0.16791537\
+ 46.46112442 -0.\
+16685867 C48.035\
+94378 -0.1692133\
+ 49.61076764 -0.\
+1780291 51.18551\
+254 -0.19352341 \
+C53.39237303 -0.\
+21320387 55.5978\
+021 -0.20733886 \
+57.8046875 -0.19\
+53125 C59.058371\
+28 -0.19816254 6\
+0.31205505 -0.20\
+101257 61.603729\
+25 -0.20394897 C\
+65.68087944 0.38\
+416331 67.851145\
+84 1.7173811 71.\
+03173828 4.29052\
+734 C72.14428711\
+ 6.66235352 72.1\
+4428711 6.662353\
+52 72.67626953 9\
+.39599609 C72.89\
+621582 10.457377\
+93 73.11616211 1\
+1.51875977 73.34\
+277344 12.612304\
+69 C73.57013184 \
+13.82611816 73.7\
+9749023 15.03993\
+164 74.03173828 \
+16.29052734 C74.\
+32228829 17.7034\
+0041 74.61589683\
+ 19.11564699 74.\
+91210938 20.5273\
+4375 C75.7204943\
+5 24.4100851 76.\
+49178439 28.2990\
+7879 77.2487793 \
+32.19213867 C77.\
+72209416 34.6176\
+6244 78.20584874\
+ 37.04096269 78.\
+68994141 39.4643\
+5547 C78.9959168\
+5 41.02738197 79\
+.30127744 42.590\
+52898 79.6059570\
+3 44.15380859 C7\
+9.82151497 45.22\
+43322 79.8215149\
+7 45.2243322 80.\
+04142761 46.3164\
+8254 C80.8803989\
+1 50.69895722 81\
+.3606018 54.8324\
+851 81.03173828 \
+59.29052734 C78.\
+580796 62.271403\
+09 76.2364583 64\
+.15404733 73.031\
+73828 66.2905273\
+4 C70.17014988 6\
+6.50599274 67.40\
+397263 66.604983\
+76 64.54052734 6\
+6.61279297 C63.6\
+7351196 66.62272\
+278 62.80649658 \
+66.63265259 61.9\
+1320801 66.64288\
+33 C59.04122758 \
+66.67212256 56.1\
+6946819 66.68573\
+059 53.29736328 \
+66.69677734 C51.\
+30059808 66.7082\
+8206 49.30383295\
+ 66.71979751 47.\
+30706787 66.7313\
+2324 C43.1172991\
+ 66.75234306 38.\
+92760706 66.7640\
+2797 34.73779297\
+ 66.77099609 C29\
+.37636617 66.781\
+95601 24.0159577\
+5 66.82998784 18\
+.65485001 66.886\
+94 C14.52835154 \
+66.92424523 10.4\
+0209687 66.93460\
+672 6.27544403 6\
+6.93766785 C4.29\
+950146 66.943711\
+96 2.32356274 66\
+.95973929 0.3477\
+8595 66.98603821\
+ C-2.42208011 67\
+.02027007 -5.189\
+47912 67.0163761\
+8 -7.95947266 67\
+.00341797 C-9.17\
+700226 67.031062\
+32 -9.17700226 6\
+7.03106232 -10.4\
+1912842 67.05926\
+514 C-15.8493787\
+ 66.97994849 -18\
+.66587596 65.568\
+49158 -22.650277\
+14 61.89186668 C\
+-24.97301231 59.\
+06976447 -25.024\
+6889 56.89118548\
+ -24.96826172 53\
+.29052734 C-24.5\
+1491287 49.71811\
+807 -23.79735032\
+ 46.23475288 -23\
+.01904297 42.720\
+21484 C-22.80515\
+427 41.72095978 \
+-22.59126556 40.\
+72170471 -22.370\
+89539 39.6921691\
+9 C-21.91690307 \
+37.58807578 -21.\
+45680368 35.4852\
+9188 -20.9909668\
+ 33.38378906 C-2\
+0.282402 30.1729\
+6018 -19.6017436\
+4 26.95706566 -1\
+8.92333984 23.73\
+974609 C-18.4777\
+4494 21.69120488\
+ -18.03053368 19\
+.64301445 -17.58\
+154297 17.595214\
+84 C-17.38031326\
+ 16.6367868 -17.\
+17908356 15.6783\
+5876 -16.9717559\
+8 14.69088745 C-\
+15.68767503 9.01\
+439722 -14.41315\
+812 4.53777199 -\
+9.27336121 1.184\
+87549 C-6.115465\
+28 -0.04034641 -\
+3.38561122 0.020\
+61392 0 0 Z \x22 fi\
+ll=\x22#515151\x22 tra\
+nsform=\x22translat\
+e(483.9682617187\
+5,925.7094726562\
+5)\x22/>\x0a</svg>\x0a\
 \x00\x00-\xf6\
 <\
 ?xml version=\x221.\
@@ -105689,6 +127977,10 @@ qt_resource_name = b"\
 \x05\x5c\xe9g\
 \x00r\
 \x00o\x00m\x00_\x00b\x00l\x00a\x00c\x00k\x00.\x00s\x00v\x00g\
+\x00\x0f\
+\x01K4\x87\
+\x00p\
+\x00i\x00l\x00o\x00t\x00_\x00b\x00l\x00a\x00c\x00k\x00.\x00s\x00v\x00g\
 \x00\x0d\
 \x02b\x80\xc7\
 \x00r\
@@ -105718,10 +128010,22 @@ qt_resource_name = b"\
 \x08\xd3j\x87\
 \x00t\
 \x00h\x00e\x00m\x00e\x00_\x00w\x00h\x00i\x00t\x00e\x00.\x00s\x00v\x00g\
+\x00\x0f\
+\x06u]'\
+\x00p\
+\x00i\x00l\x00o\x00t\x00_\x00w\x00h\x00i\x00t\x00e\x00.\x00s\x00v\x00g\
+\x00\x0f\
+\x02udG\
+\x00r\
+\x00o\x00b\x00o\x00t\x00_\x00w\x00h\x00i\x00t\x00e\x00.\x00s\x00v\x00g\
 \x00\x10\
 \x07CvG\
 \x00o\
 \x00p\x00t\x00i\x00o\x00n\x00_\x00b\x00l\x00a\x00c\x00k\x00.\x00s\x00v\x00g\
+\x00\x0f\
+\x05K\x0d\xe7\
+\x00r\
+\x00o\x00b\x00o\x00t\x00_\x00b\x00l\x00a\x00c\x00k\x00.\x00s\x00v\x00g\
 \x00\x0e\
 \x0cX\xf4G\
 \x00l\
@@ -105780,9 +128084,9 @@ qt_resource_name = b"\
 qt_resource_struct = b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x05\x00\x00\x00\x01\
 \x00\x00\x00\x00\x00\x00\x00\x00\
-\x00\x00\x006\x00\x02\x00\x00\x00\x02\x00\x00\x00\x1e\
+\x00\x00\x006\x00\x02\x00\x00\x00\x02\x00\x00\x00\x22\
 \x00\x00\x00\x00\x00\x00\x00\x00\
-\x00\x00\x00(\x00\x02\x00\x00\x00\x14\x00\x00\x00\x0a\
+\x00\x00\x00(\x00\x02\x00\x00\x00\x18\x00\x00\x00\x0a\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00\x12\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
 \x00\x00\x01\x9fV\xf8(*\
@@ -105790,58 +128094,66 @@ qt_resource_struct = b"\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00D\x00\x00\x00\x00\x00\x01\x00\x01i\xaf\
 \x00\x00\x01\x9a\xca\xd2\xd6\x8d\
-\x00\x00\x03J\x00\x00\x00\x00\x00\x01\x00\x0b\xce\xee\
+\x00\x00\x03\xda\x00\x00\x00\x00\x00\x01\x00\x11?d\
 \x00\x00\x01\x9fZ\xcb\x82y\
-\x00\x00\x03f\x00\x00\x00\x00\x00\x01\x00\x0f\x02\xd3\
+\x00\x00\x03\xf6\x00\x00\x00\x00\x00\x01\x00\x14sI\
 \x00\x00\x01\x9fZ\xcb\x82{\
-\x00\x00\x03\x9e\x00\x00\x00\x00\x00\x01\x00\x16C\x17\
+\x00\x00\x04.\x00\x00\x00\x00\x00\x01\x00\x1b\xb3\x8d\
 \x00\x00\x01\x9fZ\xcb\x82\x92\
-\x00\x00\x03\x82\x00\x00\x00\x00\x00\x01\x00\x131\xcf\
+\x00\x00\x04\x12\x00\x00\x00\x00\x00\x01\x00\x18\xa2E\
 \x00\x00\x01\x9fZ\xcb\x82\x97\
-\x00\x00\x01\x0a\x00\x00\x00\x00\x00\x01\x00\x0bz\xa5\
+\x00\x00\x01.\x00\x00\x00\x00\x00\x01\x00\x0c<\x1c\
 \x00\x00\x01\x98\x13:\xca\xf4\
-\x00\x00\x02\x9c\x00\x00\x00\x00\x00\x01\x00\x0b\xc5\x9b\
+\x00\x00\x00\xea\x00\x00\x00\x00\x00\x01\x00\x0b}\x9e\
+\x00\x00\x01\x9ftmc<\
+\x00\x00\x03,\x00\x00\x00\x00\x00\x01\x00\x116\x11\
 \x00\x00\x01\x98\x13:\xca\xf5\
-\x00\x00\x00\xea\x00\x00\x00\x00\x00\x01\x00\x0bx\xc2\
+\x00\x00\x01\x0e\x00\x00\x00\x00\x00\x01\x00\x0c:9\
 \x00\x00\x01\x9a\xd0\x00\x0a\xc1\
-\x00\x00\x02r\x00\x00\x00\x00\x00\x01\x00\x0b\xc3\xfc\
+\x00\x00\x02.\x00\x00\x00\x00\x00\x01\x00\x0d\x09\xf9\
+\x00\x00\x01\x9ftV\x95\xec\
+\x00\x00\x03\x02\x00\x00\x00\x00\x00\x01\x00\x114r\
 \x00\x00\x01\x9a\xcf\xff\xdd\xa5\
-\x00\x00\x010\x00\x00\x00\x00\x00\x01\x00\x0b\x82$\
+\x00\x00\x01T\x00\x00\x00\x00\x00\x01\x00\x0cC\x9b\
 \x00\x00\x01\x9a\xcf\xff~\x5c\
-\x00\x00\x00\xca\x00\x00\x00\x00\x00\x01\x00\x0bv\xdf\
+\x00\x00\x02x\x00\x00\x00\x00\x00\x01\x00\x0f\x0a\xaa\
+\x00\x00\x01\x9ftV\xbe\xe0\
+\x00\x00\x00\xca\x00\x00\x00\x00\x00\x01\x00\x0b{\xbb\
 \x00\x00\x01\x9a\xcd^\xacg\
-\x00\x00\x03\x04\x00\x00\x00\x00\x00\x01\x00\x0b\xcb\x15\
+\x00\x00\x02\x0a\x00\x00\x00\x00\x00\x01\x00\x0cM^\
+\x00\x00\x01\x9ftm\x5c2\
+\x00\x00\x03\x94\x00\x00\x00\x00\x00\x01\x00\x11;\x8b\
 \x00\x00\x01\x98\x13:\xca\xf5\
-\x00\x00\x01\xe6\x00\x00\x00\x00\x00\x01\x00\x0b\x8b\xe7\
+\x00\x00\x02R\x00\x00\x00\x00\x00\x01\x00\x0f\x03+\
 \x00\x00\x01\x98\x13:\xca\xf4\
-\x00\x00\x01Z\x00\x00\x00\x00\x00\x01\x00\x0b\x83\xc3\
+\x00\x00\x01~\x00\x00\x00\x00\x00\x01\x00\x0cE:\
 \x00\x00\x01\x98\x13:\xca\xee\
-\x00\x00\x01\xc2\x00\x00\x00\x00\x00\x01\x00\x0b\x8a\x8b\
+\x00\x00\x01\xe6\x00\x00\x00\x00\x00\x01\x00\x0cL\x02\
 \x00\x00\x01\x98\x13:\xca\xfb\
-\x00\x00\x01\xa0\x00\x00\x00\x00\x00\x01\x00\x0b\x89\x90\
+\x00\x00\x01\xc4\x00\x00\x00\x00\x00\x01\x00\x0cK\x07\
 \x00\x00\x01\x9a\xd3\x8e\xd8\x8d\
-\x00\x00\x02\xc0\x00\x00\x00\x00\x00\x01\x00\x0b\xc8\xe7\
+\x00\x00\x03P\x00\x00\x00\x00\x00\x01\x00\x119]\
 \x00\x00\x01\x98\x13:\xca\xfd\
-\x00\x00\x00\x86\x00\x00\x00\x00\x00\x01\x00\x0bDt\
+\x00\x00\x00\x86\x00\x00\x00\x00\x00\x01\x00\x0bIP\
 \x00\x00\x01\x9a\xce\xd7\xbc\x9b\
-\x00\x00\x03(\x00\x00\x00\x00\x00\x01\x00\x0b\xcea\
+\x00\x00\x03\xb8\x00\x00\x00\x00\x00\x01\x00\x11>\xd7\
 \x00\x00\x01\x9fQ\xec\xd6\x86\
-\x00\x00\x02P\x00\x00\x00\x00\x00\x01\x00\x0b\xc3\x01\
+\x00\x00\x02\xe0\x00\x00\x00\x00\x00\x01\x00\x113w\
 \x00\x00\x01\x9a\xd3\x8fD\x91\
-\x00\x00\x02\x0c\x00\x00\x00\x00\x00\x01\x00\x0b\x93f\
+\x00\x00\x02\x9c\x00\x00\x00\x00\x00\x01\x00\x11\x03\xdc\
 \x00\x00\x01\x9a\xce\xd7\xbc\x9b\
-\x00\x00\x02.\x00\x00\x00\x00\x00\x01\x00\x0b\xc1`\
+\x00\x00\x02\xbe\x00\x00\x00\x00\x00\x01\x00\x111\xd6\
 \x00\x00\x01\x98\x13:\xca\xfd\
-\x00\x00\x02\xe2\x00\x00\x00\x00\x00\x01\x00\x0b\xca\x88\
+\x00\x00\x03r\x00\x00\x00\x00\x00\x01\x00\x11:\xfe\
 \x00\x00\x01\x9fQ\xed\x07\xed\
-\x00\x00\x01|\x00\x00\x00\x00\x00\x01\x00\x0b\x884\
+\x00\x00\x01\xa0\x00\x00\x00\x00\x00\x01\x00\x0cI\xab\
 \x00\x00\x01\x98\x13:\xca\xfb\
-\x00\x00\x00\xa8\x00\x00\x00\x00\x00\x01\x00\x0brn\
+\x00\x00\x00\xa8\x00\x00\x00\x00\x00\x01\x00\x0bwJ\
 \x00\x00\x01\x98\x13:\xca\xee\
-\x00\x00\x00p\x00\x00\x00\x00\x00\x01\x00\x0a\xcbv\
-\x00\x00\x01\x9fs\xe9\xc1\xaf\
+\x00\x00\x00p\x00\x00\x00\x00\x00\x01\x00\x0a\xcd\xd4\
+\x00\x00\x01\x9ft,{\xfb\
 \x00\x00\x00Z\x00\x00\x00\x00\x00\x01\x00\x0aW\xde\
-\x00\x00\x01\x9fs\xe9\xadB\
+\x00\x00\x01\x9ft,v=\
 "
 
 def qInitResources():

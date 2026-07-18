@@ -13,6 +13,10 @@
         
         <file>icon/home_black.svg</file>
         <file>icon/home_white.svg</file>
+        <file>icon/robot_black.svg</file>
+        <file>icon/robot_white.svg</file>
+        <file>icon/pilot_black.svg</file>
+        <file>icon/pilot_white.svg</file>
         <file>icon/help_black.svg</file>
         <file>icon/help_white.svg</file>
         <file>icon/option_black.svg</file>

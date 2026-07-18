@@ -132,6 +132,9 @@ class BitComboBox(PanelEditor):
         menu = _StayOpenMenu(self.tr(""), self)
         menu.setObjectName("bitComboBoxMenu")
 
+        # 在添加 item 前设置最小宽度，确保 adjustSize → setFixedSize 正确锁定宽度
+        menu.view.setMinimumWidth(self._button.width())
+
         for i, v in enumerate(self._values):
             action = QAction(v)
             action.setCheckable(True)
@@ -140,9 +143,6 @@ class BitComboBox(PanelEditor):
             # 用闭包默认参数绑定当前 i，避免循环中的延时绑定问题
             action.triggered.connect(lambda checked, idx=i: self._on_bit_toggled(idx, checked))
             menu.addAction(action)
-
-        # 菜单宽度与按钮对齐
-        menu.view.setMinimumWidth(self._button.width())
 
         menu.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
         menu.closedSignal.connect(lambda: self._on_menu_closed(menu))

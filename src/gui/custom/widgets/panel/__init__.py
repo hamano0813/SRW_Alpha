@@ -1,8 +1,21 @@
 """
-面板控件包（待填充）
+面板编辑器控件子包
 
 用于编辑器右侧面板的控件子包，与 table/ 下的表格编辑器控件逻辑不同。
-控件操作模式为即时搜索、过滤、定位，而非表格内数据编辑。
+PanelEditor 操作整个数据字典，通过 field 键读写数据。
 
-当前为空，待后续添加具体控件。
+Classes:
+    PanelEditor:        面板编辑器基类
+    BitComboBox:        Bit 位多选下拉框
+    MappingCompSpin:    映射微调框
 """
+
+from .bit_combobox import BitComboBox
+from .mapping_compspin import MappingCompSpin
+from .panel_editor import PanelEditor
+
+__all__ = [
+    "PanelEditor",
+    "BitComboBox",
+    "MappingCompSpin",
+]

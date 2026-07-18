@@ -8,7 +8,6 @@ Classes:
     RobotFrame: 机体编辑框架
 """
 
-from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHBoxLayout
 
 from gui.custom.proxy_frame import ProxyFrame
@@ -44,7 +43,6 @@ class RobotFrame(ProxyFrame):
         # ========== 右侧面板 ==========
 
         self._robot_panel = UnitPanel(self)
-        self._robot_panel.panelDataChanged.connect(self._on_panel_data_changed)
 
         # ========== 布局 ==========
 
@@ -71,21 +69,6 @@ class RobotFrame(ProxyFrame):
         proxy = self._unit_frame.robot_view.proxy_model()
         self._current_source_row = proxy.mapToSource(proxy.index(row, 0)).row()
         self._robot_panel.set_row_data(data)
-
-    # ========== 面板编辑回写 ==========
-
-    def _on_panel_data_changed(self, field: str) -> None:
-        """面板编辑器修改数据后通知 model 刷新对应单元格
-
-        Args:
-            field: 被修改的字段名
-        """
-        model = self._unit_frame.robot_view.source_model()
-        for col, header in enumerate(model._headers):
-            if model._fields.get_field(header) == field:
-                idx = model.index(self._current_source_row, col)
-                model.dataChanged.emit(idx, idx, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
-                break
 
     # ========== 折叠联动 ==========
 

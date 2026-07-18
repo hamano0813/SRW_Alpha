@@ -11,7 +11,7 @@ Classes:
 from collections import Counter
 
 from PySide6.QtCore import QRegularExpression, Qt, Signal
-from PySide6.QtWidgets import QHBoxLayout
+from PySide6.QtWidgets import QHBoxLayout, QWidget
 
 from gui.custom.proxy_frame import ProxyFrame
 from gui.snmsg.msg_frame import MsgFrame
@@ -86,6 +86,13 @@ class SnmsgFrame(ProxyFrame):
         layout.addWidget(self._panel)
 
         self.setLayout(layout)
+
+    # ========== 焦点策略 ==========
+
+    def showEvent(self, event):
+        """每次显示时把焦点交给表格，右侧面板输入框不抢焦点"""
+        super().showEvent(event)
+        self._msg_frame._message_view.setFocus()
 
     # ========== 搜索过滤（互斥） ==========
 

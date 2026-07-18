@@ -17,6 +17,32 @@ from gui.custom import fonts
 from gui.custom.delegates import MultiLineDelegate
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.views.fixed_view import FixedTableView
+from qfluentwidgets import TableItemDelegate
+
+
+class _SingleColumnDelegate(TableItemDelegate):
+    """单列表格委托 — 一列时左右都画圆角
+
+    qfluentwidgets 的 _drawBackground 在第 0 列只画左圆角、末列只画右圆角，
+    但单列时第 0 列也是末列，右侧圆角缺失。本类补上右半圆角。
+    """
+
+    def _drawBackground(self, painter, option, index):
+        r = 5
+        n = index.model().columnCount(index.parent())
+        if n == 1:
+            # 只有一列：同时画左右圆角
+            rect = option.rect.adjusted(4, 0, -4, 0)
+            painter.drawRoundedRect(rect, r, r)
+        elif index.column() == 0:
+            rect = option.rect.adjusted(4, 0, r + 1, 0)
+            painter.drawRoundedRect(rect, r, r)
+        elif index.column() == n - 1:
+            rect = option.rect.adjusted(-r - 1, 0, -4, 0)
+            painter.drawRoundedRect(rect, r, r)
+        else:
+            rect = option.rect.adjusted(-1, 0, 1, 0)
+            painter.drawRect(rect)
 
 
 class MsgFrame(ProxyFrame):
@@ -45,12 +71,15 @@ class MsgFrame(ProxyFrame):
         self._name_delegate = MultiLineDelegate(font=fonts.JP_FONT, parent=self._message_view)
         self._message_view.setItemDelegateForColumn(0, self._name_delegate)
 
+        # 替换默认背景绘制的委托（单列时左右都画圆角）
+        self._message_view.setItemDelegate(_SingleColumnDelegate(self._message_view))
+
         # ========== 默认列宽 ==========
 
         self._message_view.setMinimumWidth(480)
         self._message_view.horizontalHeader().setSectionsClickable(False)
-        self._message_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
-        self._message_view.horizontalHeader().setMinimumSectionSize(200)
+        self._message_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
+        self._message_view.horizontalHeader().setStretchLastSection(False)
         self._message_view.verticalHeader().setDefaultSectionSize(66)
         self._message_view.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
         self._message_view.set_alignments({0: Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignTop})
@@ -63,6 +92,14 @@ class MsgFrame(ProxyFrame):
         layout.addWidget(self._message_view)
 
         self.setLayout(layout)
+
+    # ========== 列宽自适应 ==========
+
+    def resizeEvent(self, event):
+        """视图宽度变化时自动更新第一列宽度 = 视口宽度 - 70"""
+        super().resizeEvent(event)
+        vw = self._message_view.width()
+        self._message_view.setColumnWidth(0, max(200, vw - 70))
 
     # ========== 翻译 ==========
 

@@ -78,7 +78,7 @@ class MainWindow(FluentWindow):
         self.addSubInterface(self.home_frame, CustomIcon.HOME, self.tr("Home"))
 
         self.robot_frame = RobotFrame(self._field, self)
-        self.addSubInterface(self.robot_frame, CustomIcon.HELP, self.tr("Robot"))
+        self.addSubInterface(self.robot_frame, CustomIcon.ROBOT, self.tr("Robot"))
 
         self.message_frame = SnmsgFrame(self._field, self)
         self.addSubInterface(self.message_frame, CustomIcon.ROM, self.tr("Snmsg"))

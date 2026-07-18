@@ -10,12 +10,7 @@ Classes:
 
 from PySide6.QtCore import QModelIndex, Qt, QRect, Signal
 from PySide6.QtGui import QPainter, QPainterPath
-from PySide6.QtWidgets import (
-    QAbstractItemView,
-    QHeaderView,
-    QStyle,
-    QStyleOptionHeader,
-)
+from PySide6.QtWidgets import QAbstractItemView, QHeaderView, QStyle, QStyleOptionHeader
 
 from gui.custom import fonts
 from gui.custom.models.fixed_model import FixedTableModel
@@ -205,7 +200,8 @@ class FixedTableView(BaseTableView):
         if not proxy_index.isValid():
             return False
 
-        self.scrollTo(proxy_index)
+        self.scrollTo(proxy_index, QAbstractItemView.ScrollHint.PositionAtCenter)
+        self.setCurrentIndex(proxy_index)
         self.selectRow(proxy_index.row())
         return True
 

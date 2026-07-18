@@ -31,6 +31,7 @@ class BaseTableView(TableView):
     sClicked = Signal(int, dict)  # 单击某行 (视图行号, 行数据)
     dClicked = Signal(int, dict)  # 双击某行 (视图行号, 行数据)
     widthChanged = Signal(int, int)
+    foldToggled = Signal(bool, int)  # (列已折叠?, 释放的像素宽度)
 
     HORIZONTAL_QSS = (
         "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
@@ -81,20 +82,31 @@ class BaseTableView(TableView):
             hidden = self.isColumnHidden(col_idx)
             self.setColumnHidden(col_idx, not hidden)
 
-        if not hidden:
-            self._corner_button.setText("»")
-        else:
-            self._corner_button.setText("«")
-        self.changed_hidden(hidden)
+        # hidden 是切换前的状态，取反得到当前状态
+        folded = not hidden
+        self._corner_button.setText("«" if folded else "»")
+        self.changed_hidden(folded)
 
-    def changed_hidden(self, hidden: bool):
+    def changed_hidden(self, folded: bool):
+        """列折叠状态变更 — 计算折叠后宽度及释放空间
+
+        Args:
+            folded: True=列已折叠（仅显示第 0 列），False=全部展开
+        """
         vh_width = self.verticalHeader().width()
+        # 折叠后只保留第 0 列
         cols_width = self.columnWidth(0)
-        if hidden:
+        bd_width = 10
+        if not folded:
+            # 展开状态：累加所有列
             for col_idx in range(1, self._model.columnCount()):
                 cols_width += self.columnWidth(col_idx)
-        bd_width = 5
+            bd_width = 5
         target_width = vh_width + cols_width + bd_width
+        source_width = self.width()
+        freed_width = source_width - target_width
+        self.widthChanged.emit(source_width, target_width)
+        self.foldToggled.emit(folded, freed_width)
         source_width = self.width()
         self.widthChanged.emit(source_width, target_width)
 

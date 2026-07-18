@@ -57,24 +57,38 @@ class UnitPanel(ProxyFrame):
 
         # 地形适性微调框 × 4
         _adapt_mapping = EnumData().ROBOT["ADAPT"]
-        _adapt_fields = ["air", "grd", "wtr", "spc"]
-        _adapt_labels = [self.tr("air"), self.tr("ground"), self.tr("water"), self.tr("space")]
 
-        self._adapt_spins: dict[str, tuple[BodyLabel, MappingCompSpin]] = {}
-        for i, (field, label) in enumerate(zip(_adapt_fields, _adapt_labels)):
-            lbl = BodyLabel(label, self._terrain_card)
-            spin = MappingCompSpin(field, mapping=_adapt_mapping, parent=self._terrain_card)
-            spin.setFixedWidth(100)
-            spin.dataChanged.connect(lambda _, f=field: self.panelDataChanged.emit(f))
-            self._adapt_spins[field] = (lbl, spin)
+        self._air_label = BodyLabel(self.tr("air"), self._terrain_card)
+        self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self._terrain_card)
+        self._air_spin.setFixedWidth(100)
+        self._air_spin.dataChanged.connect(lambda _: self.panelDataChanged.emit("air"))
+
+        self._grd_label = BodyLabel(self.tr("ground"), self._terrain_card)
+        self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self._terrain_card)
+        self._grd_spin.setFixedWidth(100)
+        self._grd_spin.dataChanged.connect(lambda _: self.panelDataChanged.emit("grd"))
+
+        self._wtr_label = BodyLabel(self.tr("water"), self._terrain_card)
+        self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self._terrain_card)
+        self._wtr_spin.setFixedWidth(100)
+        self._wtr_spin.dataChanged.connect(lambda _: self.panelDataChanged.emit("wtr"))
+
+        self._spc_label = BodyLabel(self.tr("space"), self._terrain_card)
+        self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self._terrain_card)
+        self._spc_spin.setFixedWidth(100)
+        self._spc_spin.dataChanged.connect(lambda _: self.panelDataChanged.emit("spc"))
 
         _grid = QGridLayout()
         _grid.setSpacing(4)
         _grid.addWidget(self._move_combo, 0, 0, 1, 2, Qt.AlignmentFlag.AlignRight)
-        for i, field in enumerate(_adapt_fields, start=1):
-            lbl, spin = self._adapt_spins[field]
-            _grid.addWidget(lbl, i, 0)
-            _grid.addWidget(spin, i, 1)
+        _grid.addWidget(self._air_label, 1, 0)
+        _grid.addWidget(self._air_spin, 1, 1)
+        _grid.addWidget(self._grd_label, 2, 0)
+        _grid.addWidget(self._grd_spin, 2, 1)
+        _grid.addWidget(self._wtr_label, 3, 0)
+        _grid.addWidget(self._wtr_spin, 3, 1)
+        _grid.addWidget(self._spc_label, 4, 0)
+        _grid.addWidget(self._spc_spin, 4, 1)
         self._terrain_card.viewLayout.addLayout(_grid)
         self._terrain_card.viewLayout.addStretch()
 
@@ -99,8 +113,14 @@ class UnitPanel(ProxyFrame):
         # EnumData 在构造时缓存了 tr() 结果，每次刷新重新创建以获取新翻译
         _enum = EnumData()
         self._move_combo.set_values(_enum.ROBOT["MOVETYPE"])
-        for field, (lbl, spin) in self._adapt_spins.items():
-            spin.set_mapping(_enum.ROBOT["ADAPT"])
+        self._air_label.setText(self.tr("air"))
+        self._air_spin.set_mapping(_enum.ROBOT["ADAPT"])
+        self._grd_label.setText(self.tr("ground"))
+        self._grd_spin.set_mapping(_enum.ROBOT["ADAPT"])
+        self._wtr_label.setText(self.tr("water"))
+        self._wtr_spin.set_mapping(_enum.ROBOT["ADAPT"])
+        self._spc_label.setText(self.tr("space"))
+        self._spc_spin.set_mapping(_enum.ROBOT["ADAPT"])
 
     # ========== 主题刷新 ==========
 
@@ -118,8 +138,10 @@ class UnitPanel(ProxyFrame):
             data: 当前选中行的数据字典
         """
         self._move_combo.set_data(data)
-        for field, (_, spin) in self._adapt_spins.items():
-            spin.set_data(data)
+        self._air_spin.set_data(data)
+        self._grd_spin.set_data(data)
+        self._wtr_spin.set_data(data)
+        self._spc_spin.set_data(data)
 
     def open_panel(self, width: int) -> None:
         """展开面板至指定宽度

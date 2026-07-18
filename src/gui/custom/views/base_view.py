@@ -13,7 +13,7 @@ from tkinter import VERTICAL
 from typing import Any, Callable, cast
 
 from PySide6.QtCore import QSortFilterProxyModel, Signal
-from PySide6.QtWidgets import QAbstractButton, QPushButton, QVBoxLayout
+from PySide6.QtWidgets import QAbstractButton, QAbstractItemView, QPushButton, QVBoxLayout
 from qfluentwidgets import TableView, isDarkTheme
 
 from gui.custom.fields import FieldMapping
@@ -56,6 +56,7 @@ class BaseTableView(TableView):
         self.setModel(self._proxy)
 
         self.setSortingEnabled(False)
+        self.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
 
         # ========== 表头去边框 ==========
         self.verticalHeader().setStyleSheet(self.VERTICAL_QSS)

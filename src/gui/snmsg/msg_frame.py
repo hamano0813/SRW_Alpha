@@ -49,10 +49,10 @@ class MsgFrame(ProxyFrame):
 
         self._message_view.setMinimumWidth(480)
         self._message_view.horizontalHeader().setSectionsClickable(False)
-        self._message_view.set_column_width([800])
+        self._message_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        self._message_view.horizontalHeader().setMinimumSectionSize(200)
         self._message_view.verticalHeader().setDefaultSectionSize(66)
         self._message_view.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
-        self._message_view.horizontalHeader().setStretchLastSection(True)
         self._message_view.set_alignments({0: Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignTop})
 
         # ========== 布局 ==========

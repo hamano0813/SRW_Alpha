@@ -8,7 +8,7 @@ Classes:
     UnitPanel: 机体侧边栏面板
 """
 
-from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation
+from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation, Signal
 from PySide6.QtWidgets import QGridLayout, QVBoxLayout
 
 from gui.custom.enums import EnumData
@@ -19,6 +19,8 @@ from qfluentwidgets import BodyLabel, HeaderCardWidget
 
 class UnitPanel(ProxyFrame):
     """机体侧边栏面板 - 分组卡片编辑区"""
+
+    panelDataChanged = Signal(str)  # 字段名，供 RobotFrame 刷新 model
 
     def __init__(self, parent=None):
         """初始化机体侧边栏面板
@@ -51,6 +53,7 @@ class UnitPanel(ProxyFrame):
         # Bit 位多选下拉框 — 移动类型
         self._move_combo = BitComboBox("type", values=[], sep="")
         self._move_combo.setFixedWidth(144)
+        self._move_combo.dataChanged.connect(self.panelDataChanged)
 
         # 地形适性微调框 × 4
         _adapt_mapping = EnumData().ROBOT["ADAPT"]
@@ -58,18 +61,22 @@ class UnitPanel(ProxyFrame):
         self._air_label = BodyLabel(self.tr("air"), self._terrain_card)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self._terrain_card)
         self._air_spin.setFixedWidth(100)
+        self._air_spin.dataChanged.connect(self.panelDataChanged)
 
         self._grd_label = BodyLabel(self.tr("ground"), self._terrain_card)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self._terrain_card)
         self._grd_spin.setFixedWidth(100)
+        self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
         self._wtr_label = BodyLabel(self.tr("water"), self._terrain_card)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self._terrain_card)
         self._wtr_spin.setFixedWidth(100)
+        self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
         self._spc_label = BodyLabel(self.tr("space"), self._terrain_card)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self._terrain_card)
         self._spc_spin.setFixedWidth(100)
+        self._spc_spin.dataChanged.connect(self.panelDataChanged)
 
         _grid = QGridLayout()
         _grid.setSpacing(4)

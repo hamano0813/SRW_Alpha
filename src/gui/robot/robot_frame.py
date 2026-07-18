@@ -8,6 +8,7 @@ Classes:
     RobotFrame: 机体编辑框架
 """
 
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHBoxLayout
 
 from gui.custom.proxy_frame import ProxyFrame
@@ -43,6 +44,7 @@ class RobotFrame(ProxyFrame):
         # ========== 右侧面板 ==========
 
         self._robot_panel = UnitPanel(self)
+        self._robot_panel.panelDataChanged.connect(self._on_panel_data_changed)
 
         # ========== 布局 ==========
 
@@ -62,13 +64,29 @@ class RobotFrame(ProxyFrame):
     def _on_row_clicked(self, row: int, data: dict) -> None:
         """行点击时传递数据到右侧面板
 
+        注意：Signal(int, dict) 在 PySide6 内部传递时会复制 dict，
+        因此弃用信号的 data 参数，改为直接从 model 取源字典。
+
         Args:
-            row:  视图行号（转为源行号存储，供 model dataChanged 使用）
-            data: 该行的数据字典
+            row:  视图行号
+            data: （已废弃，从 model 重新取）
         """
         proxy = self._unit_frame.robot_view.proxy_model()
         self._current_source_row = proxy.mapToSource(proxy.index(row, 0)).row()
-        self._robot_panel.set_row_data(data)
+        model = self._unit_frame.robot_view.source_model()
+        model_data = model.get_row_data(self._current_source_row)
+        self._robot_panel.set_row_data(model_data)
+
+    # ========== 面板编辑回写 ==========
+
+    def _on_panel_data_changed(self, field: str) -> None:
+        """面板编辑器修改数据后通知 model 刷新对应单元格"""
+        model = self._unit_frame.robot_view.source_model()
+        for col, header in enumerate(model._headers):
+            if model._fields.get_field(header) == field:
+                idx = model.index(self._current_source_row, col)
+                model.dataChanged.emit(idx, idx, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
+                break
 
     # ========== 折叠联动 ==========
 

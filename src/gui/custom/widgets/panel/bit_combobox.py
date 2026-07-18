@@ -15,7 +15,7 @@ from PySide6.QtCore import Qt, QPoint, Signal
 from PySide6.QtGui import QAction, QFont
 from PySide6.QtWidgets import QVBoxLayout
 
-from qfluentwidgets import CheckableMenu, ComboBox, MenuAnimationType
+from qfluentwidgets import CheckableMenu, ComboBox, MenuAnimationType, setFont
 
 from .panel_editor import PanelEditor
 
@@ -215,7 +215,6 @@ class BitComboBox(PanelEditor):
         """
         self._button.setFont(font)
 
-    def translateUI(self):
-        """从全局配置刷新字体"""
-        from PySide6.QtWidgets import QApplication
-        self._button.setFont(QApplication.font())
+    def resetUI(self):
+        """从全局配置刷新主框字体"""
+        setFont(self._button)

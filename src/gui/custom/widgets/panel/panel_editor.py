@@ -31,7 +31,7 @@ class PanelEditor(QWidget):
         dataChanged: 编辑确认后发射，携带当前数据字典
     """
 
-    dataChanged = Signal(object)
+    dataChanged = Signal(str)
 
     def __init__(self, field: str = "", parent=None):
         """初始化面板编辑器
@@ -84,7 +84,7 @@ class PanelEditor(QWidget):
         """
         if self._data is not None:
             self._data[self._field] = self._value
-        self.dataChanged.emit(self._data)
+        self.dataChanged.emit(self._field)
 
     # ========== 子类扩展点 ==========
 

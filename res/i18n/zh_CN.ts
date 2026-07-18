@@ -2816,4 +2816,67 @@ Do you want to overwrite it?</source>
         <translation>移动类型</translation>
     </message>
 </context>
+<context>
+    <name>_FilterCard</name>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="27"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="51"/>
+        <source>Search</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="32"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="52"/>
+        <source>Enter text to filter messages</source>
+        <translation>输入文字过滤消息</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="35"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="53"/>
+        <source>filter...</source>
+        <translation>过滤...</translation>
+    </message>
+</context>
+<context>
+    <name>_GotoCard</name>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="64"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="119"/>
+        <source>Go to</source>
+        <translation>跳转</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="69"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="120"/>
+        <source>Enter hex row number to locate</source>
+        <translation>输入十六进制行号定位</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="72"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="121"/>
+        <source>hex row...</source>
+        <translation>十六进制行号...</translation>
+    </message>
+</context>
+<context>
+    <name>_SpeakerCard</name>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="168"/>
+        <source>Speaker</source>
+        <translation>说话人</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="136"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="169"/>
+        <source>Select a speaker to filter messages</source>
+        <translation>选择说话人过滤消息</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="139"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="170"/>
+        <source>all speakers</source>
+        <translation>全部说话人</translation>
+    </message>
+</context>
 </TS>

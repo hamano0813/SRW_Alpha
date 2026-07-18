@@ -12,7 +12,7 @@ Classes:
 from tkinter import VERTICAL
 from typing import Any, Callable, cast
 
-from PySide6.QtCore import QSortFilterProxyModel, Signal
+from PySide6.QtCore import QSortFilterProxyModel, Signal, Qt
 from PySide6.QtWidgets import QAbstractButton, QAbstractItemView, QPushButton, QVBoxLayout
 from qfluentwidgets import TableView, isDarkTheme
 
@@ -51,6 +51,7 @@ class BaseTableView(TableView):
         # ========== 内部状态 ==========
 
         self._proxy: QSortFilterProxyModel = QSortFilterProxyModel()
+        self._proxy.setSortRole(Qt.ItemDataRole.EditRole)
         self._model: BaseTableModel = model
         self._proxy.setSourceModel(model)
         self.setModel(self._proxy)

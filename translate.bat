@@ -2,6 +2,7 @@ uv run pyside6-lupdate ^
     src/gui/main_window.py ^
     src/gui/home/home_frame.py ^
     src/gui/robot/unit_frame.py ^
+    src/gui/robot/unit_panel.py ^
     src/gui/snmsg/msg_frame.py ^
     src/gui/snmsg/msg_panel.py ^
     src/gui/option/option_frame.py ^

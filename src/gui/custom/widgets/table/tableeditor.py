@@ -1,11 +1,12 @@
 """
-数据编辑控件基类 - 解耦原始值与格式化显示
+表格内编辑器基类 - 解耦原始值与格式化显示
 
 子类内嵌具体控件（QSpinBox / QComboBox / QLineEdit 等），
 通过 set_value / get_value 完成外部与子类的数据交换。
+放置于 widgets/table/ 子包，供 delegates 在表格编辑时实例化。
 
 Classes:
-    DataWidget: 数据编辑控件基类
+    TableEditor: 表格内编辑器基类
 """
 
 from typing import Any
@@ -15,8 +16,8 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QWidget
 
 
-class DataWidget(QWidget):
-    """数据编辑控件基类 - 解耦原始值与格式化显示
+class TableEditor(QWidget):
+    """表格内编辑器基类 - 解耦原始值与格式化显示
 
     set_value 存入原始值后自动调 format_value() 刷新控件显示，
     get_value 返回原始值供 Delegate 写回 model。

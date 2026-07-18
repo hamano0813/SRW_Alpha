@@ -1,5 +1,5 @@
 """
-数值编辑器 — 继承 QSpinBox + DataWidget，左右按钮步进
+数值编辑器 — 继承 QSpinBox + TableEditor，左右按钮步进
 
 接受取值范围 (min, max)，左减右加按钮布局，透明背景。
 与 MappingSpinBox 实现模式一致，但无映射表。
@@ -15,7 +15,7 @@ from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
 
-from .data_widget import DataWidget
+from .tableeditor import TableEditor
 
 
 class _ArrowButton(QToolButton):
@@ -71,7 +71,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class NumberSpinBox(QSpinBox, DataWidget):
+class NumberSpinBox(QSpinBox, TableEditor):
     """数值编辑器 — 左右按钮步进，右对齐
 
     接受取值范围 (min, max)，在范围内循环。
@@ -96,7 +96,7 @@ class NumberSpinBox(QSpinBox, DataWidget):
         self._show_buttons = show_buttons
 
         QSpinBox.__init__(self, parent)
-        DataWidget.__init__(self, parent)
+        TableEditor.__init__(self, parent)
 
         # ========== 基础样式 ==========
 
@@ -159,7 +159,7 @@ class NumberSpinBox(QSpinBox, DataWidget):
             self._btn_left.move(2, y)
             self._btn_right.move(self.width() - bw - 2, y)
 
-    # ========== DataWidget 数据协议 ==========
+    # ========== TableEditor 数据协议 ==========
 
     def set_value(self, value) -> None:
         """存入数值并刷新显示
@@ -167,7 +167,7 @@ class NumberSpinBox(QSpinBox, DataWidget):
         Args:
             value: 整数
         """
-        DataWidget.set_value(self, value)
+        TableEditor.set_value(self, value)
 
     def get_value(self) -> int:
         """返回当前数值"""

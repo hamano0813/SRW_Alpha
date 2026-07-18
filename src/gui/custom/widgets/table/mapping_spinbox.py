@@ -1,5 +1,5 @@
 """
-映射微调框 — 继承 QSpinBox + DataWidget，透明背景，左减右加按钮布局
+映射微调框 — 继承 QSpinBox + TableEditor，透明背景，左减右加按钮布局
 
 通过 mapping 字典实现 数字 ↔ 显示文本 的转换。
 步进时仅在 mapping 的有效 key 范围内循环。
@@ -16,7 +16,7 @@ from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
 
-from .data_widget import DataWidget
+from .tableeditor import TableEditor
 
 
 class _ArrowButton(QToolButton):
@@ -71,7 +71,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class MappingSpinBox(QSpinBox, DataWidget):
+class MappingSpinBox(QSpinBox, TableEditor):
     """映射微调框 — 透明背景，左右按钮，数值居中
 
     左侧步进-（左三角）、中间数值（居中）、右侧步进+（右三角）。
@@ -90,7 +90,7 @@ class MappingSpinBox(QSpinBox, DataWidget):
         self._sorted_keys: list[int] = sorted(self._mapping.keys())
 
         QSpinBox.__init__(self, parent)
-        DataWidget.__init__(self, parent)
+        TableEditor.__init__(self, parent)
 
         # ========== 基础样式 ==========
 
@@ -219,7 +219,7 @@ class MappingSpinBox(QSpinBox, DataWidget):
             flags |= QSpinBox.StepEnabledFlag.StepUpEnabled
         return flags
 
-    # ========== DataWidget 数据协议 ==========
+    # ========== TableEditor 数据协议 ==========
 
     def set_value(self, value) -> None:
         """存入数值并刷新显示
@@ -227,7 +227,7 @@ class MappingSpinBox(QSpinBox, DataWidget):
         Args:
             value: 整数数值
         """
-        DataWidget.set_value(self, value)
+        TableEditor.set_value(self, value)
 
     def get_value(self) -> int:
         """返回当前数值"""

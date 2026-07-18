@@ -1,5 +1,5 @@
 """
-多行文本编辑器 — 继承 QPlainTextEdit + DataWidget，自绘透明背景
+多行文本编辑器 — 继承 QPlainTextEdit + TableEditor，自绘透明背景
 
 与 SingleLineEdit 对应，使用 QPlainTextEdit 实现多行文本编辑。
 适用于表格中需换行显示的字段。由表格 delegate 控制形状和圆角。
@@ -15,11 +15,11 @@ from PySide6.QtGui import QColor, QFont, QTextCursor
 from PySide6.QtWidgets import QPlainTextEdit, QFrame
 from qfluentwidgets import isDarkTheme
 
-from .data_widget import DataWidget
+from .tableeditor import TableEditor
 
 
-class MultiLineEdit(QPlainTextEdit, DataWidget):
-    """多行文本编辑器 — 透明背景 + 纯文字绘制 + DataWidget 数据协议
+class MultiLineEdit(QPlainTextEdit, TableEditor):
+    """多行文本编辑器 — 透明背景 + 纯文字绘制 + TableEditor 数据协议
 
     无边框、无焦点指示线，仅通过 palette 控制文字颜色。
     获得焦点时光标自动定位到末尾。
@@ -32,7 +32,7 @@ class MultiLineEdit(QPlainTextEdit, DataWidget):
             parent: 父 QWidget
         """
         QPlainTextEdit.__init__(self, parent)
-        DataWidget.__init__(self, parent)
+        TableEditor.__init__(self, parent)
 
         self.setFrameShape(QFrame.Shape.NoFrame)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
@@ -72,7 +72,7 @@ class MultiLineEdit(QPlainTextEdit, DataWidget):
         self.setPalette(palette)
         QPlainTextEdit.paintEvent(self, e)
 
-    # ========== DataWidget 数据协议 ==========
+    # ========== TableEditor 数据协议 ==========
 
     def set_value(self, value) -> None:
         """存入文本值并刷新显示
@@ -80,7 +80,7 @@ class MultiLineEdit(QPlainTextEdit, DataWidget):
         Args:
             value: 字符串文本
         """
-        DataWidget.set_value(self, value)
+        TableEditor.set_value(self, value)
 
     def get_value(self) -> str:
         """返回当前文本值"""

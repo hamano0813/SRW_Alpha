@@ -11,7 +11,7 @@ Classes:
 from typing import Any, Callable
 
 from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Signal
-from PySide6.QtWidgets import QVBoxLayout
+from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
 from gui.custom import fonts
 from gui.custom.delegates import MappingSpinDelegate, NumberSpinDelegate, SingleLineDelegate
@@ -84,7 +84,8 @@ class UnitFrame(ProxyFrame):
 
         # ========== 默认列宽 ==========
 
-        self._robot_view.set_column_width([200] + [84] * 8 + [120])
+        self._robot_view.set_column_width([200] + [80] * 5 + [84] * 3)
+        self._robot_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
 
         # ========== 布局 ==========
 
@@ -128,7 +129,6 @@ class UnitFrame(ProxyFrame):
                 self.tr("size"): [self._size_delegate.format_display, self._size_delegate.parse_display],
                 self.tr("parts slot"): [self._slot_delegate.format_display, self._slot_delegate.parse_display],
                 self.tr("movement"): [self._move_delegate.format_display, self._move_delegate.parse_display],
-                self.tr("movement type"): [lambda x: x, lambda x: x],
             }
         )
         if self._robot_view._widths:

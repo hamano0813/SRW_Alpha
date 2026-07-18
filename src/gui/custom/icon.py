@@ -27,6 +27,7 @@ class CustomIcon(FluentIconBase, Enum):
     HOME = "icon/home"
     ROBOT = "icon/robot"
     PILOT = "icon/pilot"
+    SNMSG = "icon/snmsg"
     HELP = "icon/help"
     OPTION = "icon/option"
 

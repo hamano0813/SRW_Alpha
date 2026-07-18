@@ -27,7 +27,7 @@ from qfluentwidgets import (
 import config
 import utils
 from core.rom import Rom
-from gui import HomeFrame, SnmsgFrame, OptionFrame, RobotFrame
+from gui import HomeFrame, PilotFrame, SnmsgFrame, OptionFrame, RobotFrame
 from gui.custom.fields import FieldMapping
 
 from .custom import CustomIcon
@@ -36,7 +36,7 @@ from .custom import CustomIcon
 class MainWindow(FluentWindow):
     """主窗口类 - 集成导航栏、启动画面和界面刷新"""
 
-    _SIZE = utils.best_resolution()
+    _SIZE = utils.best_resolution(config.option.dpi.value)
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -80,8 +80,11 @@ class MainWindow(FluentWindow):
         self.robot_frame = RobotFrame(self._field, self)
         self.addSubInterface(self.robot_frame, CustomIcon.ROBOT, self.tr("Robot"))
 
+        self.pilot_frame = PilotFrame(self._field, self)
+        self.addSubInterface(self.pilot_frame, CustomIcon.PILOT, self.tr("Pilot"))
+
         self.message_frame = SnmsgFrame(self._field, self)
-        self.addSubInterface(self.message_frame, CustomIcon.ROM, self.tr("Snmsg"))
+        self.addSubInterface(self.message_frame, CustomIcon.SNMSG, self.tr("Snmsg"))
 
         self.option_frame = OptionFrame(self)
         self.addSubInterface(self.option_frame, CustomIcon.OPTION, self.tr("Options"), position=NavigationItemPosition.BOTTOM)
@@ -122,6 +125,7 @@ class MainWindow(FluentWindow):
         self.home_frame.resetUI()
         self.robot_frame.resetUI()
         self.message_frame.resetUI()
+        self.pilot_frame.resetUI()
         self.option_frame.resetUI()
 
         for panel_item in self.navigationInterface.panel.items.values():
@@ -143,10 +147,12 @@ class MainWindow(FluentWindow):
         self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.2.0")
         self.translate_frame("EditorFrame", "Home")
         self.translate_frame("RobotFrame", "Robot")
+        self.translate_frame("PilotFrame", "Pilot")
         self.translate_frame("MessageFrame", "Snmsg")
         self.translate_frame("OptionFrame", "Options")
         self.home_frame.translateUI()
         self.robot_frame.translateUI()
+        self.pilot_frame.translateUI()
         self.message_frame.translateUI()
         self.option_frame.translateUI()
 

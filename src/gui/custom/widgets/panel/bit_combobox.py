@@ -207,25 +207,10 @@ class BitComboBox(PanelEditor):
 
     # ========== 字体 ==========
 
-    def apply_font(self, font: QFont | dict) -> None:
-        """设置编辑器字体，同时应用到内部按钮
+    def apply_font(self, font: QFont) -> None:
+        """设置编辑器字体，应用到内部按钮
 
         Args:
-            font: QFont 实例或字体属性字典
+            font: 要应用的 QFont
         """
-        if isinstance(font, dict):
-            qfont = QFont()
-            family = font.get("family")
-            size = font.get("size")
-            weight = font.get("weight")
-            italic = font.get("italic")
-            if family:
-                qfont.setFamily(family)
-            if size:
-                qfont.setPixelSize(size)
-            if weight:
-                qfont.setWeight(weight)
-            if italic:
-                qfont.setItalic(italic)
-            font = qfont
         self._button.setFont(font)

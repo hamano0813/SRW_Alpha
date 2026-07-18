@@ -11,7 +11,6 @@ Classes:
 from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation, Signal
 from PySide6.QtWidgets import QGridLayout, QVBoxLayout
 
-from gui.custom import fonts
 from gui.custom.enums import EnumData
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.widgets import BitComboBox, MappingCompSpin
@@ -54,7 +53,6 @@ class UnitPanel(ProxyFrame):
         # Bit 位多选下拉框 — 移动类型
         self._move_combo = BitComboBox("type", values=[], sep="")
         self._move_combo.setFixedWidth(144)
-        self._move_combo.apply_font(fonts.JP_QFONT)
         self._move_combo.dataChanged.connect(lambda _: self.panelDataChanged.emit("type"))
 
         # 地形适性微调框 × 4

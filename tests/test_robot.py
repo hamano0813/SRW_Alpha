@@ -61,7 +61,7 @@ def print_robot(robot: dict, index: int):
             continue
         print(
             f"         W{wi:02d} [{wname}]  damage={w['damage']}  "
-            f"hitrate={w['hitrate']} crt={w['crt']}  "
+            f"hit={w['hit']} crt={w['crt']}  "
             f"morale={w['morale']} en={w['encost']}  "
             f"ammo={w['ammod']}/{w['ammom']}  "
             f"rng={w['rngs']}-{w['rngl']}"

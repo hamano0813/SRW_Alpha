@@ -78,7 +78,10 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 5):
     for _ in range(iterations):
         buf = bytearray(data)
         t0 = time.perf_counter()
-        parsed = mod.parse(buf, extra=extra)
+        if extra is not None:
+            parsed = mod.parse(buf, extra=extra)
+        else:
+            parsed = mod.parse(buf)
         t1 = time.perf_counter()
         parse_times.append(t1 - t0)
     parse_avg = sum(parse_times) / iterations
@@ -90,7 +93,10 @@ def _run_bench(name: str, path: str, mod, extra=None, iterations: int = 5):
     rebuilt = None
     for _ in range(iterations):
         t0 = time.perf_counter()
-        rebuilt = mod.build(parsed, extra=extra)
+        if extra is not None:
+            rebuilt = mod.build(parsed, extra=extra)
+        else:
+            rebuilt = mod.build(parsed)
         t1 = time.perf_counter()
         build_times.append(t1 - t0)
     build_avg = sum(build_times) / iterations

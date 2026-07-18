@@ -19,6 +19,12 @@ class EnumData(QObject):
         super().__init__(parent=None)
         self.ROBOT = {
             "SIZE": {0x0: "SS", 0x1: "S", 0x2: "M", 0x3: "L", 0x4: "LL"},
+            "MOVETYPE": [
+                self.tr("air"),   # 空 / 空
+                self.tr("lnd"),   # 陆 / 陸
+                self.tr("sea"),   # 海 / 海
+                self.tr("wall"),  # 地 / 地
+            ],
         }
         self.SCENARIO = {
             0x00: ("[00]", self.tr("Unified"), self.tr("Stage 0"), self.tr("Prologue")),  # '共通', '第０話', 'プロローグ'),

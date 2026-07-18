@@ -226,7 +226,7 @@ class FieldMapping(QObject):
     def _init_snmsg(self):
         """SNMSG.BIN 消息数据结构字段"""
         mapping = {
-            self.tr("message"): "msg",  # 剧情文本 / シナリオメッセージ
+            self.tr("message"): "snmsgs",  # 剧情文本 / シナリオメッセージ
         }
         return mapping
 

@@ -42,6 +42,6 @@ def best_resolution(scale: float = 1.0) -> tuple[int, int]:
     multiplier = int(max_height // _BASE_HEIGHT)
     if multiplier < 1:
         multiplier = 1
-    elif multiplier > 3:
-        multiplier = 3
+    elif multiplier > 4:
+        multiplier = 4
     return (multiplier * _BASE_WIDTH, multiplier * _BASE_HEIGHT)

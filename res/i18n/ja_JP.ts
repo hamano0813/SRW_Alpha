@@ -2526,16 +2526,21 @@ Do you want to overwrite it?</source>
         <translation>テキスト</translation>
     </message>
     <message>
+        <location filename="../../src/gui/main_window.py" line="87"/>
+        <source>Pilot</source>
+        <translation>パイロット</translation>
+    </message>
+    <message>
         <source>Message</source>
         <translation type="vanished">テキスト</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="87"/>
+        <location filename="../../src/gui/main_window.py" line="90"/>
         <source>Options</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="143"/>
+        <location filename="../../src/gui/main_window.py" line="147"/>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>スーパーロボット大戦α ROMエディター</translation>
     </message>
@@ -2862,19 +2867,19 @@ Do you want to overwrite it?</source>
     <name>_SpeakerCard</name>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="168"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="174"/>
         <source>Speaker</source>
         <translation>話者</translation>
     </message>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="136"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="169"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="175"/>
         <source>Select a speaker to filter messages</source>
         <translation>話者を選択してメッセージをフィルタ</translation>
     </message>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="139"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="170"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="176"/>
         <source>all speakers</source>
         <translation>全話者</translation>
     </message>

@@ -2522,16 +2522,21 @@ Do you want to overwrite it?</source>
         <translation>文本</translation>
     </message>
     <message>
+        <location filename="../../src/gui/main_window.py" line="87"/>
+        <source>Pilot</source>
+        <translation>机师</translation>
+    </message>
+    <message>
         <source>Message</source>
         <translation type="vanished">文本</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="87"/>
+        <location filename="../../src/gui/main_window.py" line="90"/>
         <source>Options</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="143"/>
+        <location filename="../../src/gui/main_window.py" line="147"/>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>超级机器人大战α 静态修改器</translation>
     </message>
@@ -2862,19 +2867,19 @@ Do you want to overwrite it?</source>
     <name>_SpeakerCard</name>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="168"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="174"/>
         <source>Speaker</source>
         <translation>说话人</translation>
     </message>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="136"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="169"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="175"/>
         <source>Select a speaker to filter messages</source>
         <translation>选择说话人过滤消息</translation>
     </message>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="139"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="170"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="176"/>
         <source>all speakers</source>
         <translation>全部说话人</translation>
     </message>

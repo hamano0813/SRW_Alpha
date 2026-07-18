@@ -12,6 +12,7 @@ from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation, Signal
 from PySide6.QtWidgets import QGridLayout, QVBoxLayout
 
 from gui.custom.enums import EnumData
+from gui.custom.models.base_model import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.widgets import BitComboBox, MappingCompSpin
 from qfluentwidgets import BodyLabel, HeaderCardWidget
@@ -131,17 +132,25 @@ class UnitPanel(ProxyFrame):
 
     # ========== 行数据 ==========
 
-    def set_row_data(self, data: dict) -> None:
-        """选中行数据变更时刷新所有子编辑器
+    def set_model(self, model: BaseTableModel) -> None:
+        """注入数据模型，转发至各子编辑器"""
+        self._move_combo.set_model(model)
+        self._air_spin.set_model(model)
+        self._grd_spin.set_model(model)
+        self._wtr_spin.set_model(model)
+        self._spc_spin.set_model(model)
+
+    def set_row(self, row: int) -> None:
+        """切换行并刷新所有子编辑器
 
         Args:
-            data: 当前选中行的数据字典
+            row: 源模型行号
         """
-        self._move_combo.set_data(data)
-        self._air_spin.set_data(data)
-        self._grd_spin.set_data(data)
-        self._wtr_spin.set_data(data)
-        self._spc_spin.set_data(data)
+        self._move_combo.set_row(row)
+        self._air_spin.set_row(row)
+        self._grd_spin.set_row(row)
+        self._wtr_spin.set_row(row)
+        self._spc_spin.set_row(row)
 
     def open_panel(self, width: int) -> None:
         """展开面板至指定宽度

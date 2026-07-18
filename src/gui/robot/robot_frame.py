@@ -11,6 +11,7 @@ Classes:
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHBoxLayout
 
+from gui.custom.models.base_model import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
 from gui.robot.unit_panel import UnitPanel
 from gui.robot.unit_frame import UnitFrame
@@ -44,6 +45,7 @@ class RobotFrame(ProxyFrame):
         # ========== 右侧面板 ==========
 
         self._robot_panel = UnitPanel(self)
+        self._robot_panel.set_model(self._unit_frame.robot_view.source_model())
         self._robot_panel.panelDataChanged.connect(self._on_panel_data_changed)
 
         # ========== 布局 ==========
@@ -61,21 +63,18 @@ class RobotFrame(ProxyFrame):
 
     # ========== 行点击 ==========
 
-    def _on_row_clicked(self, row: int, data: dict) -> None:
-        """行点击时传递数据到右侧面板
+    def _on_row_clicked(self, source_row: int, model: BaseTableModel) -> None:
+        """行点击时通知面板切换行
 
-        注意：Signal(int, dict) 在 PySide6 内部传递时会复制 dict，
-        因此弃用信号的 data 参数，改为直接从 model 取源字典。
+        model 为 QObject 实例，跨信号不复制，仅用于
+        set_rom_data 首次调用时的初始化路径。
 
         Args:
-            row:  视图行号
-            data: （已废弃，从 model 重新取）
+            source_row: 源模型行号（已在 _single_click 中完成代理映射）
+            model:      BaseTableModel 实例
         """
-        proxy = self._unit_frame.robot_view.proxy_model()
-        self._current_source_row = proxy.mapToSource(proxy.index(row, 0)).row()
-        model = self._unit_frame.robot_view.source_model()
-        model_data = model.get_row_data(self._current_source_row)
-        self._robot_panel.set_row_data(model_data)
+        self._current_source_row = source_row
+        self._robot_panel.set_row(source_row)
 
     # ========== 面板编辑回写 ==========
 
@@ -116,6 +115,7 @@ class RobotFrame(ProxyFrame):
         self._unit_frame.set_data(robots["robots"])
 
         # 默认选中第一行
-        if robots["robots"]:
+        model = self._unit_frame.robot_view.source_model()
+        if model.rowCount() > 0:
             self._unit_frame.robot_view.selectRow(0)
-            self._on_row_clicked(0, robots["robots"][0])
+            self._on_row_clicked(0, model)

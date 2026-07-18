@@ -28,8 +28,8 @@ class BaseTableView(TableView):
 
     # ========== 交互信号 ==========
 
-    sClicked = Signal(int, dict)  # 单击某行 (视图行号, 行数据)
-    dClicked = Signal(int, dict)  # 双击某行 (视图行号, 行数据)
+    sClicked = Signal(int, BaseTableModel)  # 单击某行 (源行号, model 实例)
+    dClicked = Signal(int, BaseTableModel)  # 双击某行 (源行号, model 实例)
 
     HORIZONTAL_QSS = (
         "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"

@@ -224,15 +224,18 @@ class FixedTableView(BaseTableView):
     def _single_click(self, index: QModelIndex) -> None:
         """单击行时发射 sClicked 信号
 
-        通过 get_row_data 获取该行数据一并传出。
+        代理行号经 proxy 映射为源模型行号后，与 model 引用一同传出。
+        model 继承自 QObject，跨信号传递时不会复制。
 
         Args:
             index: 被单击的单元格索引
         """
         if not index.isValid():
             return
-        row_data = self.get_row_data(index.row())
-        self.sClicked.emit(index.row(), row_data)
+        source_row = self._proxy.mapToSource(
+            self._proxy.index(index.row(), 0)
+        ).row()
+        self.sClicked.emit(source_row, self._model)
 
     # ========== 列宽查询 ==========
 

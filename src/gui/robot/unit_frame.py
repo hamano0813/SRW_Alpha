@@ -16,6 +16,7 @@ from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 from gui.custom import fonts
 from gui.custom.delegates import MappingSpinDelegate, NumberSpinDelegate, SingleLineDelegate
 from gui.custom.enums import EnumData
+from gui.custom.models.base_model import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.views.fixed_view import FixedTableView
 
@@ -28,7 +29,7 @@ class UnitFrame(ProxyFrame):
     折叠/展开列时自动动画自身宽度，带动右侧面板平滑腾出空间。
     """
 
-    sClicked = Signal(int, dict)
+    sClicked = Signal(int, BaseTableModel)
 
     def __init__(self, parent=None):
         """初始化机体列表子框架

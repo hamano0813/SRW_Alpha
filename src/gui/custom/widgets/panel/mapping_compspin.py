@@ -69,9 +69,9 @@ class MappingCompSpin(PanelEditor):
 
     # ========== PanelEditor 数据协议 ==========
 
-    def set_data(self, data: dict | None) -> None:
-        """存入数据字典并刷新显示"""
-        super().set_data(data)
+    def set_row(self, row: int) -> None:
+        """切换行并刷新控件"""
+        super().set_row(row)
         self._spin.blockSignals(True)
         if self._value is not None:
             self._spin.setValue(int(self._value))

@@ -2783,57 +2783,57 @@ Do you want to overwrite it?</source>
 <context>
     <name>UnitFrame</name>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="131"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="165"/>
         <source>robot name</source>
         <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="132"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="166"/>
         <source>hit points</source>
         <translation>HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="133"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="167"/>
         <source>energy</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="134"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="168"/>
         <source>mobility</source>
         <translation>運動性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="135"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="169"/>
         <source>armor</source>
         <translation>装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="136"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="170"/>
         <source>limit</source>
         <translation>限界</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="137"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="171"/>
         <source>size</source>
         <translation>サイズ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="138"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="172"/>
         <source>parts slot</source>
         <translation>パーツスロット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="139"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="173"/>
         <source>movement</source>
         <translation>移動力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="140"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="174"/>
         <source>repair cost</source>
         <translation>修理費</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="141"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="175"/>
         <source>cost</source>
         <translation>資金</translation>
     </message>
@@ -2852,23 +2852,39 @@ Do you want to overwrite it?</source>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
-        <source>Air</source>
+        <source>air</source>
         <translation>空</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
-        <source>Grd</source>
+        <source>ground</source>
         <translation>陸</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
-        <source>Wtr</source>
+        <source>water</source>
         <translation>海</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
-        <source>Spc</source>
+        <source>space</source>
         <translation>宇</translation>
+    </message>
+    <message>
+        <source>Air</source>
+        <translation type="vanished">空</translation>
+    </message>
+    <message>
+        <source>Grd</source>
+        <translation type="vanished">陸</translation>
+    </message>
+    <message>
+        <source>Wtr</source>
+        <translation type="vanished">海</translation>
+    </message>
+    <message>
+        <source>Spc</source>
+        <translation type="vanished">宇</translation>
     </message>
     <message>
         <source>movement type</source>

@@ -7,7 +7,7 @@
  *
  * Python API (via _snmsg_bin.pyd):
  *   parse(data: bytearray | bytes, extra=None, trans=None) -> dict
- *       {'snmsgs': [{'snmsgs': str}, ...], 'count': int, 'name': str}
+ *       {'snmsgs': [{'snmsg': str}, ...], 'count': int, 'name': str}
  *   build(data: dict, extra=None, trans=None) -> bytearray
  */
 
@@ -27,8 +27,8 @@
  *
  *   parse(data, extra=None, trans=None) -> dict
  *
- * 解析 SNMSG.BIN，每条消息解码为 {"snmsgs": str}。
- * 返回格式：{'snmsgs': [{'snmsgs': str}, ...], 'count': int, 'name': str}
+ * 解析 SNMSG.BIN，每条消息解码为 {"snmsg": str}。
+ * 返回格式：{'snmsgs': [{'snmsg': str}, ...], 'count': int, 'name': str}
  * =================================================================== */
 
 static PyObject *
@@ -85,7 +85,7 @@ snmsg_bin_parse(PyObject *self, PyObject *args, PyObject *kwargs)
             return NULL;
         }
 
-        /* 每条消息包装为 {"snmsgs": text} */
+        /* 每条消息包装为 {"snmsg": text} */
         PyObject *item = PyDict_New();
         if (!item)
         {
@@ -94,7 +94,7 @@ snmsg_bin_parse(PyObject *self, PyObject *args, PyObject *kwargs)
             PyBuffer_Release(&view);
             return NULL;
         }
-        PyDict_SetItemString(item, "snmsgs", decoded);
+        PyDict_SetItemString(item, "snmsg", decoded);
         Py_DECREF(decoded);
 
         PyList_SetItem(msgs_list, (Py_ssize_t)i, item);
@@ -169,16 +169,16 @@ snmsg_bin_build(PyObject *self, PyObject *args, PyObject *kwargs)
             return NULL;
         }
 
-        /* 从 {"snmsgs": text} 中提取文本 */
+        /* 从 {"snmsg": text} 中提取文本 */
         PyObject *text = item;
         if (PyDict_Check(item))
         {
-            text = PyDict_GetItemString(item, "snmsgs");
+            text = PyDict_GetItemString(item, "snmsg");
             if (!text)
             {
                 free(raw);
                 PyErr_SetString(PyExc_KeyError,
-                                "Each item must have a 'snmsgs' key");
+                                "Each item must have a 'snmsg' key");
                 return NULL;
             }
         }

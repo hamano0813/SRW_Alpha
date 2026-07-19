@@ -22,14 +22,14 @@ def _extract_speakers(data: list[dict]) -> list[str]:
     """从消息数据中提取说话人列表（按出现次数降序）
 
     Args:
-        data: [{"snmsgs": str}, ...]
+        data: [{"snmsg": str}, ...]
 
     Returns:
         说话人名列表
     """
     counter = Counter()
     for item in data:
-        text = item["snmsgs"]
+        text = item["snmsg"]
         first_line = text.split("\n")[0]
         if "「" in first_line:
             idx = first_line.index("「")
@@ -151,7 +151,7 @@ class SnmsgFrame(ProxyFrame):
     def set_rom_data(self, data: dict) -> None:
         """装入 ROM 的消息数据
 
-        取 snmsgs 列表填入主表格，并初始化说话人列表。
+        取 snmsgs 消息列表填入主表格，并初始化说话人列表。
 
         Args:
             data: Rom().parse_messages() 返回的 dict

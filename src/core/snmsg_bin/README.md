@@ -51,7 +51,7 @@ from core.codec.extra import SNMSG_TEXT_EXTRA
 from core.snmsg_bin import parse
 
 data = parse(open("SNMSG.BIN", "rb").read(), extra=SNMSG_TEXT_EXTRA)
-# data["snmsgs"][0] → "ｼｭｳｶﾞﾝｾﾞﾝﾄﾓﾀﾞﾁ..."  (str)
+# data["snmsgs"][0] → {"snmsg": "ｼｭｳｶﾞﾝｾﾞﾝﾄﾓﾀﾞﾁ..."}  (dict)
 ```
 
 返回结构：
@@ -61,8 +61,8 @@ data = parse(open("SNMSG.BIN", "rb").read(), extra=SNMSG_TEXT_EXTRA)
     "name": "snmsg",
     "count": 32544,
     "snmsgs": [
-        "ｼｭｳｶﾞﾝｾﾞﾝﾄﾓﾀﾞﾁ...",     # 第 0 条消息
-        "ﾑｶｼ､ﾊﾙｶﾅﾙｷﾞﾝｶﾞ...",       # 第 1 条消息
+        {"snmsg": "ｼｭｳｶﾞﾝｾﾞﾝﾄﾓﾀﾞﾁ..."},     # 第 0 条消息
+        {"snmsg": "ﾑｶｼ､ﾊﾙｶﾅﾙｷﾞﾝｶﾞ..."},       # 第 1 条消息
         ...
     ]
 }
@@ -72,8 +72,8 @@ data = parse(open("SNMSG.BIN", "rb").read(), extra=SNMSG_TEXT_EXTRA)
 
 将 Python dict 重建为 SNMSG.BIN 二进制数据。
 
-- snmsgs 中的项为 `str` → 经 `codec.encode()` 编码，超出 0x100 截断，不足 00 填充
-- snmsgs 中的项为 `bytes` → 直接写入，超出 0x100 截断，不足 00 填充
+- snmsgs 中的项为 `dict`（`{"snmsg": str}`） → 经 `codec.encode()` 编码，超出 0x100 截断，不足 00 填充
+- snmsgs 中的项为 `dict`（`{"snmsg": bytes}`）→ 直接写入，超出 0x100 截断，不足 00 填充
 
 ```python
 from core.snmsg_bin import build

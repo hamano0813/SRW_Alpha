@@ -28,18 +28,21 @@ class CustomIcon(FluentIconBase, Enum):
     ROBOT = "icon/robot"
     PILOT = "icon/pilot"
     SNMSG = "icon/snmsg"
+    SNDATA = "icon/sndata"
+    SCRIPT = "icon/script"
+    DICTIONARY = "icon/dictionary"
     HELP = "icon/help"
     OPTION = "icon/option"
 
     # 界面设置
-    LANGUAGE = "icon/language"
-    FONT = "icon/font"
-    THEME = "icon/theme"
-    COLOR = "icon/color"
-    ZOOM = "icon/zoom"
+    LANGUAGE = "icon/option_language"
+    FONT = "icon/option_font"
+    THEME = "icon/option_theme"
+    COLOR = "icon/option_color"
+    ZOOM = "icon/option_zoom"
 
     # ROM 文件
-    ROM = "icon/rom"
+    ROM = "icon/option_rom"
 
     def path(self, theme=Theme.AUTO):
         """

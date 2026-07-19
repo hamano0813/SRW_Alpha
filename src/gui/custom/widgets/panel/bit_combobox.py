@@ -123,7 +123,7 @@ class BitComboBox(PanelEditor):
 
         self._button = _ComboButton(self)
         self._button.setObjectName("bitComboBoxButton")
-        self._button.setFixedHeight(30)
+        self._button.setFixedHeight(32)
         self._button.setCursor(Qt.CursorShape.PointingHandCursor)
         self._button.clicked.connect(self._show_menu)
 

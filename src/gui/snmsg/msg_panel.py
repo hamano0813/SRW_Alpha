@@ -62,7 +62,7 @@ class _FilterCard(HeaderCardWidget):
     def resetUI(self):
         """刷新卡片标题、说明标签及过滤输入框字体"""
         setFont(self)
-        setFont(self.headerLabel, 15, QFont.DemiBold)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         self._info_label.setFont(self._info_label.getFont())
         self._filter_edit.setFont(fonts.JP_QFONT)
 
@@ -141,7 +141,7 @@ class _GotoCard(HeaderCardWidget):
     def resetUI(self):
         """刷新卡片标题、说明标签及跳转输入框字体"""
         setFont(self)
-        setFont(self.headerLabel, 15, QFont.DemiBold)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         self._info_label.setFont(self._info_label.getFont())
         self._goto_edit.setFont(fonts.EN_QFONT)
 
@@ -209,7 +209,7 @@ class _SpeakerCard(HeaderCardWidget):
     def resetUI(self):
         """刷新卡片标题、说明标签及说话人下拉框字体"""
         setFont(self)
-        setFont(self.headerLabel, 15, QFont.DemiBold)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         self._info_label.setFont(self._info_label.getFont())
         self._speaker_combo.setFont(fonts.JP_QFONT)
 

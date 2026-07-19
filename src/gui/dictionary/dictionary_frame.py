@@ -16,7 +16,7 @@ class DictionaryFrame(ProxyFrame):
     """图鉴编辑框架 - 占位"""
 
     def __init__(self, fields, parent=None):
-        """初始化字典编辑框架
+        """初始化图鉴编辑框架
 
         Args:
             fields: FieldMapping 字段映射实例

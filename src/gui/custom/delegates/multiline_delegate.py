@@ -90,6 +90,4 @@ class MultiLineDelegate(DataWidgetDelegate):
         Raises:
             NotImplementedError: 多行文本不支持反解析
         """
-        raise NotImplementedError(
-            f"{type(self).__name__} does not implement parse_display"
-        )
+        raise NotImplementedError(f"{type(self).__name__} does not implement parse_display")

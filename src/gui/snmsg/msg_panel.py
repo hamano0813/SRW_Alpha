@@ -11,7 +11,12 @@ Classes:
 from PySide6.QtCore import QRegularExpression, Qt, Signal
 from PySide6.QtGui import QRegularExpressionValidator, QStandardItem, QStandardItemModel
 from PySide6.QtWidgets import QVBoxLayout
-from qfluentwidgets import BodyLabel, EditableModelComboBox, HeaderCardWidget, SearchLineEdit
+from qfluentwidgets import (
+    BodyLabel,
+    EditableModelComboBox,
+    HeaderCardWidget,
+    SearchLineEdit,
+)
 
 from gui.custom.proxy_frame import ProxyFrame
 
@@ -19,8 +24,8 @@ from gui.custom.proxy_frame import ProxyFrame
 class _FilterCard(HeaderCardWidget):
     """搜索过滤卡片 - 点击搜索按钮过滤表格"""
 
-    filterChanged = Signal(str)   # 过滤文字
-    filterCleared = Signal()      # 清除过滤
+    filterChanged = Signal(str)  # 过滤文字
+    filterCleared = Signal()  # 清除过滤
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -28,16 +33,13 @@ class _FilterCard(HeaderCardWidget):
 
         self.viewLayout.setContentsMargins(20, 16, 20, 16)
 
-        self._info_label = BodyLabel(
-            self.tr("Enter text to filter messages"), self
-        )
+        self._info_label = BodyLabel(self.tr("Enter text to filter messages"), self)
         self._filter_edit = SearchLineEdit(self)
         self._filter_edit.setPlaceholderText(self.tr("filter..."))
         self._filter_edit.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self._filter_edit.searchSignal.connect(self.filterChanged)
         self._filter_edit.clearSignal.connect(self.filterCleared)
-        self._filter_edit.returnPressed.connect(
-            lambda: self.filterChanged.emit(self._filter_edit.text()))
+        self._filter_edit.returnPressed.connect(lambda: self.filterChanged.emit(self._filter_edit.text()))
 
         layout = QVBoxLayout()
         layout.setSpacing(8)
@@ -62,8 +64,8 @@ class _FilterCard(HeaderCardWidget):
 class _GotoCard(HeaderCardWidget):
     """行号跳转卡片 - 点击搜索按钮跳转到指定行"""
 
-    gotoRequested = Signal(int)   # 源行号
-    gotoCleared = Signal()        # 清除输入
+    gotoRequested = Signal(int)  # 源行号
+    gotoCleared = Signal()  # 清除输入
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -71,18 +73,14 @@ class _GotoCard(HeaderCardWidget):
 
         self.viewLayout.setContentsMargins(20, 16, 20, 16)
 
-        self._info_label = BodyLabel(
-            self.tr("Enter hex row number to locate"), self
-        )
+        self._info_label = BodyLabel(self.tr("Enter hex row number to locate"), self)
         self._goto_edit = SearchLineEdit(self)
         self._goto_edit.setPlaceholderText(self.tr("hex row..."))
         self._goto_edit.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
-        self._goto_edit.setValidator(
-            QRegularExpressionValidator(QRegularExpression("[0-9A-Fa-f]*"), self._goto_edit))
+        self._goto_edit.setValidator(QRegularExpressionValidator(QRegularExpression("[0-9A-Fa-f]*"), self._goto_edit))
         self._goto_edit.searchSignal.connect(self._on_search)
         self._goto_edit.clearSignal.connect(self.gotoCleared)
-        self._goto_edit.returnPressed.connect(
-            lambda: self._on_search(self._goto_edit.text()))
+        self._goto_edit.returnPressed.connect(lambda: self._on_search(self._goto_edit.text()))
         self._goto_edit.textChanged.connect(self._on_text_changed)
 
         layout = QVBoxLayout()
@@ -136,7 +134,7 @@ class _GotoCard(HeaderCardWidget):
 class _SpeakerCard(HeaderCardWidget):
     """说话人过滤卡片 - 下拉选择说话人过滤表格"""
 
-    speakerChanged = Signal(str)   # 选中的说话人名，空文本清除过滤
+    speakerChanged = Signal(str)  # 选中的说话人名，空文本清除过滤
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -144,9 +142,7 @@ class _SpeakerCard(HeaderCardWidget):
 
         self.viewLayout.setContentsMargins(20, 16, 20, 16)
 
-        self._info_label = BodyLabel(
-            self.tr("Select a speaker to filter messages"), self
-        )
+        self._info_label = BodyLabel(self.tr("Select a speaker to filter messages"), self)
         self._speaker_combo = EditableModelComboBox(self)
         self._speaker_combo.setPlaceholderText(self.tr("all speakers"))
         self._speaker_combo.setClearButtonEnabled(True)

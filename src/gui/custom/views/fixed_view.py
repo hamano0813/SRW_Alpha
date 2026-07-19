@@ -10,9 +10,17 @@ Classes:
 
 from typing import Any, cast
 
-from PySide6.QtCore import QModelIndex, Qt, QRect, Signal
+from PySide6.QtCore import QModelIndex, QRect, Qt, Signal
 from PySide6.QtGui import QPainter, QPainterPath
-from PySide6.QtWidgets import QAbstractButton, QAbstractItemView, QHeaderView, QPushButton, QStyle, QStyleOptionHeader, QVBoxLayout
+from PySide6.QtWidgets import (
+    QAbstractButton,
+    QAbstractItemView,
+    QHeaderView,
+    QPushButton,
+    QStyle,
+    QStyleOptionHeader,
+    QVBoxLayout,
+)
 from qfluentwidgets import isDarkTheme
 
 from gui.custom.models.fixed_model import FixedTableModel
@@ -81,8 +89,7 @@ class _SortHeader(QHeaderView):
                 opt.rect = rect
                 opt.section = logicalIndex
 
-                label_rect = self.style().subElementRect(
-                    QStyle.SubElement.SE_HeaderLabel, opt, self)
+                label_rect = self.style().subElementRect(QStyle.SubElement.SE_HeaderLabel, opt, self)
 
                 # 三角尺寸
                 aw, ah = 8, 5
@@ -96,13 +103,9 @@ class _SortHeader(QHeaderView):
                 painter.setBrush(color)
 
                 if self._sort_order == Qt.SortOrder.AscendingOrder:
-                    pts = [(cx, by - ah),
-                           (cx + aw // 2, by),
-                           (cx - aw // 2, by)]
+                    pts = [(cx, by - ah), (cx + aw // 2, by), (cx - aw // 2, by)]
                 else:
-                    pts = [(cx, by),
-                           (cx + aw // 2, by - ah),
-                           (cx - aw // 2, by - ah)]
+                    pts = [(cx, by), (cx + aw // 2, by - ah), (cx - aw // 2, by - ah)]
 
                 path = QPainterPath()
                 path.moveTo(*pts[0])
@@ -232,9 +235,7 @@ class FixedTableView(BaseTableView):
         """
         if not index.isValid():
             return
-        source_row = self._proxy.mapToSource(
-            self._proxy.index(index.row(), 0)
-        ).row()
+        source_row = self._proxy.mapToSource(self._proxy.index(index.row(), 0)).row()
         self.sClicked.emit(source_row, self._model)
 
     # ========== 列宽查询 ==========

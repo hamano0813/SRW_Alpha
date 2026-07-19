@@ -10,7 +10,7 @@ Classes:
 
 from typing import Any, cast
 
-from PySide6.QtCore import Qt, QPointF
+from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
@@ -202,7 +202,7 @@ class NumberSpinBox(QSpinBox, TableEditor):
         try:
             v = int(value)
             return self._min <= v <= self._max
-        except (ValueError, TypeError):
+        except ValueError, TypeError:
             return False
 
     def format_display(self, value) -> str:
@@ -223,7 +223,7 @@ class NumberSpinBox(QSpinBox, TableEditor):
             if self._show_sign and v >= 0:
                 return f"+{v}"
             return str(v)
-        except (ValueError, TypeError):
+        except ValueError, TypeError:
             return str(value)
 
     # ========== 内部槽 ==========

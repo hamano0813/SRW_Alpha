@@ -133,7 +133,6 @@ class Rom:
             details = "; ".join(f"{k}: {v}" for k, v in errors.items())
             raise RuntimeError(f"Failed to parse files: {details}")
 
-
     def build_cache(self) -> None:
         """将所有已修改的数据构建并写回缓存目录
 
@@ -430,4 +429,3 @@ class Rom:
         path = os.path.join(self.cache_dir, self._FILE_PATHS["snmsgs"])
         with open(path, "wb") as f:
             f.write(raw)
-

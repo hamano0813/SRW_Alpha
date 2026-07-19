@@ -103,9 +103,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
         else:
             super().paint(painter, option, index)
 
-    def _paint_background_only(
-        self, painter: QPainter, option: QStyleOptionViewItem, index: QModelIndex
-    ) -> None:
+    def _paint_background_only(self, painter: QPainter, option: QStyleOptionViewItem, index: QModelIndex) -> None:
         """只绘制单元格背景效果，不绘制文字
 
         镜像 qfluentwidgets TableItemDelegate.paint 的背景绘制部分
@@ -172,11 +170,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
         td._drawBackground(painter, option, index)
 
         # 首列选中指示器（与 TableItemDelegate 一致：仅首列且未水平滚动时绘制）
-        if (
-            index.row() in td.selectedRows
-            and index.column() == 0
-            and view.horizontalScrollBar().value() == 0
-        ):
+        if index.row() in td.selectedRows and index.column() == 0 and view.horizontalScrollBar().value() == 0:
             td._drawIndicator(painter, option, index)
 
         painter.restore()

@@ -12,7 +12,7 @@ Classes:
 from tkinter import VERTICAL
 from typing import Any, Callable
 
-from PySide6.QtCore import QSortFilterProxyModel, Signal, Qt
+from PySide6.QtCore import QSortFilterProxyModel, Qt, Signal
 from PySide6.QtWidgets import QAbstractItemView
 from qfluentwidgets import TableView
 
@@ -31,9 +31,7 @@ class BaseTableView(TableView):
     sClicked = Signal(int, BaseTableModel)  # 单击某行 (源行号, model 实例)
     dClicked = Signal(int, BaseTableModel)  # 双击某行 (源行号, model 实例)
 
-    HORIZONTAL_QSS = (
-        "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
-    )
+    HORIZONTAL_QSS = "QHeaderView::section { border: none; font-size: 14px; font-weight: 800; }"
     VERTICAL_QSS = "QHeaderView::section { border: none; font-size: 13px; }"
 
     def __init__(self, model: BaseTableModel, parent=None):

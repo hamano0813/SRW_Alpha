@@ -15,10 +15,9 @@ from typing import Any
 
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QVBoxLayout
-from qfluentwidgets.components.widgets.spin_box import SpinBoxBase
 
-from .spin_box import VerticalSpinBox
 from .panel_editor import PanelEditor
+from .spin_box import VerticalSpinBox
 
 
 class MappingCompSpin(PanelEditor):

@@ -10,9 +10,9 @@ Classes:
 from typing import Any
 
 from PySide6.QtGui import QFont
+from qfluentwidgets import setFont
 
 from gui.custom.widgets import MappingSpinBox
-from qfluentwidgets import setFont
 
 from .base_delegate import DataWidgetDelegate
 
@@ -46,7 +46,7 @@ class MappingSpinDelegate(DataWidgetDelegate):
             return ""
         try:
             return self._value_mapping.get(int(value), str(value))
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             return str(value)
 
     def parse_display(self, text: str) -> Any:

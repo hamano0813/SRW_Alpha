@@ -13,9 +13,9 @@ from typing import Any
 from PySide6.QtCore import QModelIndex
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
+from qfluentwidgets import setFont
 
 from gui.custom.widgets import NumberSpinBox
-from qfluentwidgets import setFont
 
 from .base_delegate import DataWidgetDelegate
 
@@ -25,7 +25,14 @@ class NumberSpinDelegate(DataWidgetDelegate):
 
     widget_class = NumberSpinBox
 
-    def __init__(self, value_range: tuple[int, int] | None = None, show_sign: bool = False, show_buttons: bool = True, font: QFont | dict | None = None, parent=None):
+    def __init__(
+        self,
+        value_range: tuple[int, int] | None = None,
+        show_sign: bool = False,
+        show_buttons: bool = True,
+        font: QFont | dict | None = None,
+        parent=None,
+    ):
         """初始化数值列委托
 
         Args:
@@ -95,7 +102,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
             if self._show_sign and v >= 0:
                 return f"+{v}"
             return str(v)
-        except (ValueError, TypeError):
+        except ValueError, TypeError:
             return str(value)
 
     def parse_display(self, text: str) -> Any:
@@ -111,5 +118,5 @@ class NumberSpinDelegate(DataWidgetDelegate):
         """
         try:
             return int(text.lstrip("+"))
-        except (ValueError, TypeError):
+        except ValueError, TypeError:
             return 0

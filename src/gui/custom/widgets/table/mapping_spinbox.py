@@ -11,7 +11,7 @@ Classes:
 
 from typing import Any
 
-from PySide6.QtCore import Qt, QPointF
+from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
@@ -260,7 +260,7 @@ class MappingSpinBox(QSpinBox, TableEditor):
         try:
             int(value)
             return True
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             return False
 
     def format_display(self, value) -> str:

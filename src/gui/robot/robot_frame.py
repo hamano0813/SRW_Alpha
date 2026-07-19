@@ -13,8 +13,8 @@ from PySide6.QtWidgets import QHBoxLayout
 
 from gui.custom.models.base_model import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
-from gui.robot.unit_panel import UnitPanel
 from gui.robot.unit_frame import UnitFrame
+from gui.robot.unit_panel import UnitPanel
 
 
 class RobotFrame(ProxyFrame):

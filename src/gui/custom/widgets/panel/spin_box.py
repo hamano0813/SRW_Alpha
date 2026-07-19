@@ -12,10 +12,8 @@ Classes:
 from PySide6.QtCore import QEvent, QRectF, Qt
 from PySide6.QtGui import QPainter
 from PySide6.QtWidgets import QSpinBox, QToolButton, QVBoxLayout, QWidget
-from qfluentwidgets.common.icon import FluentIcon as FIF
-from qfluentwidgets.common.style_sheet import isDarkTheme
+from qfluentwidgets import FluentIcon, isDarkTheme, setFont
 from qfluentwidgets.components.widgets.spin_box import SpinBoxBase
-from qfluentwidgets import setFont
 
 
 class SpinArrowButton(QToolButton):
@@ -65,15 +63,15 @@ class SpinArrowButton(QToolButton):
             painter.translate(x + s / 2, y + s / 2)
             painter.rotate(180)
             if isDarkTheme():
-                FIF.ARROW_DOWN.render(painter, QRectF(-s / 2, -s / 2, s, s))
+                FluentIcon.ARROW_DOWN.render(painter, QRectF(-s / 2, -s / 2, s, s))
             else:
-                FIF.ARROW_DOWN.render(painter, QRectF(-s / 2, -s / 2, s, s), fill="#646464")
+                FluentIcon.ARROW_DOWN.render(painter, QRectF(-s / 2, -s / 2, s, s), fill="#646464")
             painter.restore()
         else:
             if isDarkTheme():
-                FIF.ARROW_DOWN.render(painter, QRectF(x, y, s, s))
+                FluentIcon.ARROW_DOWN.render(painter, QRectF(x, y, s, s))
             else:
-                FIF.ARROW_DOWN.render(painter, QRectF(x, y, s, s), fill="#646464")
+                FluentIcon.ARROW_DOWN.render(painter, QRectF(x, y, s, s), fill="#646464")
 
 
 class VerticalSpinBox(SpinBoxBase, QSpinBox):
@@ -126,10 +124,7 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         """非编辑模式下拦截 lineedit 的鼠标事件，禁止选中文字"""
         if obj == self.lineEdit() and not self._editable:
             t = e.type()
-            if t in (QEvent.Type.MouseButtonPress,
-                     QEvent.Type.MouseButtonRelease,
-                     QEvent.Type.MouseButtonDblClick,
-                     QEvent.Type.MouseMove):
+            if t in (QEvent.Type.MouseButtonPress, QEvent.Type.MouseButtonRelease, QEvent.Type.MouseButtonDblClick, QEvent.Type.MouseMove):
                 return True
         return super().eventFilter(obj, e)
 

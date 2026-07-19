@@ -12,7 +12,7 @@ from typing import Any
 
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QColor, QFont, QTextCursor
-from PySide6.QtWidgets import QPlainTextEdit, QFrame
+from PySide6.QtWidgets import QFrame, QPlainTextEdit
 from qfluentwidgets import isDarkTheme
 
 from .table_editor import TableEditor

@@ -16,7 +16,7 @@ class SndataFrame(ProxyFrame):
     """场景数据编辑框架 - 占位"""
 
     def __init__(self, fields, parent=None):
-        """初始化音乐数据编辑框架
+        """初始化场景数据编辑框架
 
         Args:
             fields: FieldMapping 字段映射实例

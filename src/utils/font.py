@@ -49,7 +49,7 @@ def get_font_info(font_obj: TTFont | str, langID=1033) -> str:
         if record.platformID == 3 and record.langID == langID and record.nameID == 1:
             try:
                 return record.toUnicode()
-            except (UnicodeDecodeError, AttributeError):
+            except UnicodeDecodeError, AttributeError:
                 continue
 
     return ""

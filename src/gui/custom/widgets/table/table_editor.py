@@ -123,6 +123,4 @@ class TableEditor(QWidget):
         Raises:
             NotImplementedError: 子类未实现
         """
-        raise NotImplementedError(
-            f"{type(self).__name__} does not implement parse_display"
-        )
+        raise NotImplementedError(f"{type(self).__name__} does not implement parse_display")

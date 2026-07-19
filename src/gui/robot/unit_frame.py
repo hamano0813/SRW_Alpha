@@ -10,11 +10,15 @@ Classes:
 
 from typing import Any, Callable
 
-from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation, Signal
+from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Qt, Signal
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
 from gui.custom import fonts
-from gui.custom.delegates import MappingSpinDelegate, NumberSpinDelegate, SingleLineDelegate
+from gui.custom.delegates import (
+    MappingSpinDelegate,
+    NumberSpinDelegate,
+    SingleLineDelegate,
+)
 from gui.custom.enums import EnumData
 from gui.custom.models.base_model import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
@@ -47,21 +51,21 @@ class UnitFrame(ProxyFrame):
         # ========== 模型字体与对齐 ==========
 
         _model = self._robot_view.source_model()
-        _model.set_font({
-            0: fonts.JP_FONT,
-        })
-        _model.set_alignments({
-            1: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-            2: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-            3: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-            4: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-            5: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-            6: Qt.AlignmentFlag.AlignCenter,
-            7: Qt.AlignmentFlag.AlignCenter,
-            8: Qt.AlignmentFlag.AlignCenter,
-            9: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-            10: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-        })
+        _model.set_font({0: fonts.JP_FONT})
+        _model.set_alignments(
+            {
+                1: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+                2: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+                3: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+                4: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+                5: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+                6: Qt.AlignmentFlag.AlignCenter,
+                7: Qt.AlignmentFlag.AlignCenter,
+                8: Qt.AlignmentFlag.AlignCenter,
+                9: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+                10: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            }
+        )
 
         # ========== 委托编辑器 ==========
 
@@ -159,17 +163,17 @@ class UnitFrame(ProxyFrame):
         """刷新列标题与格式化函数"""
         self._robot_view.set_title(
             {
-                self.tr("robot name"): [self._name_delegate.format_display, self._name_delegate.parse_display],
-                self.tr("hit points"): [self._hp_delegate.format_display, self._hp_delegate.parse_display],
-                self.tr("energy"): [self._en_delegate.format_display, self._en_delegate.parse_display],
-                self.tr("mobility"): [self._mobility_delegate.format_display, self._mobility_delegate.parse_display],
-                self.tr("armor"): [self._armor_delegate.format_display, self._armor_delegate.parse_display],
-                self.tr("limit"): [self._limit_delegate.format_display, self._limit_delegate.parse_display],
-                self.tr("size"): [self._size_delegate.format_display, self._size_delegate.parse_display],
-                self.tr("parts slot"): [self._slot_delegate.format_display, self._slot_delegate.parse_display],
-                self.tr("movement"): [self._move_delegate.format_display, self._move_delegate.parse_display],
-                self.tr("repair cost"): [self._rep_delegate.format_display, self._rep_delegate.parse_display],
-                self.tr("cost"): [self._cost_delegate.format_display, self._cost_delegate.parse_display],
+                self.tr("Robot name"): [self._name_delegate.format_display, self._name_delegate.parse_display],
+                self.tr("Hit points"): [self._hp_delegate.format_display, self._hp_delegate.parse_display],
+                self.tr("Energy"): [self._en_delegate.format_display, self._en_delegate.parse_display],
+                self.tr("Mobility"): [self._mobility_delegate.format_display, self._mobility_delegate.parse_display],
+                self.tr("Armor"): [self._armor_delegate.format_display, self._armor_delegate.parse_display],
+                self.tr("Limit"): [self._limit_delegate.format_display, self._limit_delegate.parse_display],
+                self.tr("Size"): [self._size_delegate.format_display, self._size_delegate.parse_display],
+                self.tr("Parts slot"): [self._slot_delegate.format_display, self._slot_delegate.parse_display],
+                self.tr("Movement"): [self._move_delegate.format_display, self._move_delegate.parse_display],
+                self.tr("Repair cost"): [self._rep_delegate.format_display, self._rep_delegate.parse_display],
+                self.tr("Cost"): [self._cost_delegate.format_display, self._cost_delegate.parse_display],
             }
         )
         if self._robot_view.column_widths:

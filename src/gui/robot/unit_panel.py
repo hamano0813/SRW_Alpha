@@ -8,14 +8,14 @@ Classes:
     UnitPanel: 机体侧边栏面板
 """
 
-from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation, Signal
+from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Qt, Signal
 from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
+from qfluentwidgets import BodyLabel, HeaderCardWidget, setFont
 
 from gui.custom.enums import EnumData
 from gui.custom.models.base_model import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.widgets import BitComboBox, MappingCompSpin
-from qfluentwidgets import BodyLabel, HeaderCardWidget, setFont
 
 
 class UnitPanel(ProxyFrame):
@@ -62,22 +62,22 @@ class UnitPanel(ProxyFrame):
         # 地形适性微调框 × 4
         _adapt_mapping = EnumData().ROBOT["ADAPT"]
 
-        self._air_label = BodyLabel(self.tr("air"), self._terrain_card)
+        self._air_label = BodyLabel(self.tr("Air"), self._terrain_card)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self._terrain_card)
         self._air_spin.setFixedWidth(70)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._grd_label = BodyLabel(self.tr("ground"), self._terrain_card)
+        self._grd_label = BodyLabel(self.tr("Ground"), self._terrain_card)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self._terrain_card)
         self._grd_spin.setFixedWidth(70)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._wtr_label = BodyLabel(self.tr("water"), self._terrain_card)
+        self._wtr_label = BodyLabel(self.tr("Water"), self._terrain_card)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self._terrain_card)
         self._wtr_spin.setFixedWidth(70)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._spc_label = BodyLabel(self.tr("space"), self._terrain_card)
+        self._spc_label = BodyLabel(self.tr("Space"), self._terrain_card)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self._terrain_card)
         self._spc_spin.setFixedWidth(70)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)
@@ -123,13 +123,13 @@ class UnitPanel(ProxyFrame):
         # EnumData 在构造时缓存了 tr() 结果，每次刷新重新创建以获取新翻译
         _enum = EnumData()
         self._move_combo.set_values(_enum.ROBOT["MOVETYPE"])
-        self._air_label.setText(self.tr("air"))
+        self._air_label.setText(self.tr("Air"))
         self._air_spin.set_mapping(_enum.ROBOT["ADAPT"])
-        self._grd_label.setText(self.tr("ground"))
+        self._grd_label.setText(self.tr("Ground"))
         self._grd_spin.set_mapping(_enum.ROBOT["ADAPT"])
-        self._wtr_label.setText(self.tr("water"))
+        self._wtr_label.setText(self.tr("Water"))
         self._wtr_spin.set_mapping(_enum.ROBOT["ADAPT"])
-        self._spc_label.setText(self.tr("space"))
+        self._spc_label.setText(self.tr("Space"))
         self._spc_spin.set_mapping(_enum.ROBOT["ADAPT"])
 
     # ========== 主题刷新 ==========

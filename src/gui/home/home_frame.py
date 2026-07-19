@@ -32,6 +32,7 @@ MKPSXISO = os.path.join(config.current_path, "tools", "mkpsxiso.exe")
 
 class HomeFrame(QFrame):
     """概览框架 - ROM 编辑器首页"""
+
     parseClicked = Signal()
     buildClicked = Signal()
 
@@ -121,7 +122,7 @@ class HomeFrame(QFrame):
             self.tr("Intermission"): [
                 "SCRIPT.BIN",
             ],
-            self.tr("Dictionary"): ["DR.BIN"],
+            self.tr("Dictionary"): ["DR.BIN", "DC.BIN"],
         }
 
         self.tree = XmlTreeView(self._headers, self._datas, self)
@@ -245,8 +246,7 @@ class HomeFrame(QFrame):
     # ========== 重建 ROM ==========
 
     def _on_rebuild_rom(self):
-        """重建 ROM —— 调用 mkpsxiso 从缓存目录重建镜像
-        """
+        """重建 ROM —— 调用 mkpsxiso 从缓存目录重建镜像"""
 
         target_rom = config.option.target_rom.value
         if not target_rom:
@@ -352,7 +352,7 @@ class HomeFrame(QFrame):
             self.tr("Intermission"): [
                 "SCRIPT.BIN",
             ],
-            self.tr("Dictionary"): ["DR.BIN"],
+            self.tr("Dictionary"): ["DR.BIN", "DC.BIN"],
         }
         self.tree.setHeaderLabels(self._headers)
 

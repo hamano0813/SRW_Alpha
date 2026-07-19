@@ -12,12 +12,12 @@ from typing import Any, Callable
 
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
+from qfluentwidgets import TableItemDelegate
 
 from gui.custom import fonts
 from gui.custom.delegates import MultiLineDelegate
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.views.fixed_view import FixedTableView
-from qfluentwidgets import TableItemDelegate
 
 
 class _SingleColumnDelegate(TableItemDelegate):
@@ -65,9 +65,11 @@ class MsgFrame(ProxyFrame):
 
         # ========== 模型字体 ==========
 
-        self._message_view.source_model().set_font({
-            0: fonts.JP_FONT,
-        })
+        self._message_view.source_model().set_font(
+            {
+                0: fonts.JP_FONT,
+            }
+        )
 
         # ========== 委托编辑器 ==========
 
@@ -110,7 +112,7 @@ class MsgFrame(ProxyFrame):
         """刷新列标题与格式化函数"""
         self._message_view.set_title(
             {
-                self.tr("message"): [self._name_delegate.format_display, self._name_delegate.parse_display],
+                self.tr("Message"): [self._name_delegate.format_display, self._name_delegate.parse_display],
             }
         )
         if self._message_view._widths:

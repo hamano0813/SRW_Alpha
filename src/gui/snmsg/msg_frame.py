@@ -65,11 +65,7 @@ class MsgFrame(ProxyFrame):
 
         # ========== 模型字体 ==========
 
-        self._message_view.source_model().set_font(
-            {
-                0: fonts.JP_FONT,
-            }
-        )
+        self._message_view.source_model().set_font({0: fonts.JP_FONT})
 
         # ========== 委托编辑器 ==========
 
@@ -110,11 +106,7 @@ class MsgFrame(ProxyFrame):
 
     def translateUI(self):
         """刷新列标题与格式化函数"""
-        self._message_view.set_title(
-            {
-                self.tr("Message"): [self._name_delegate.format_display, self._name_delegate.parse_display],
-            }
-        )
+        self._message_view.set_title({self.tr("Scenario Message"): [self._name_delegate.format_display, self._name_delegate.parse_display]})
         if self._message_view._widths:
             self._message_view.set_column_width(self._message_view._widths)
 

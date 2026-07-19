@@ -1921,7 +1921,7 @@
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="229"/>
-        <source>Message</source>
+        <source>Scenario Message</source>
         <translation>シナリオメッセージ</translation>
     </message>
     <message>
@@ -2318,37 +2318,37 @@
 <context>
     <name>HomeFrame</name>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="47"/>
+        <location filename="../../src/gui/home/home_frame.py" line="48"/>
         <location filename="../../src/gui/home/home_frame.py" line="299"/>
         <source>Extract ROM</source>
         <translation>ROMを展開</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="48"/>
+        <location filename="../../src/gui/home/home_frame.py" line="49"/>
         <location filename="../../src/gui/home/home_frame.py" line="300"/>
         <source>Rebuild ROM</source>
         <translation>ROMを再構築</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="53"/>
+        <location filename="../../src/gui/home/home_frame.py" line="54"/>
         <location filename="../../src/gui/home/home_frame.py" line="305"/>
         <source>ROM Path Not Configured</source>
         <translation>ROMパスが設定されていません</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="54"/>
+        <location filename="../../src/gui/home/home_frame.py" line="55"/>
         <location filename="../../src/gui/home/home_frame.py" line="306"/>
         <source>Please configure the ROM file path in Settings first.</source>
         <translation>先に設定画面でROMファイルのパスを設定してください。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="55"/>
+        <location filename="../../src/gui/home/home_frame.py" line="56"/>
         <location filename="../../src/gui/home/home_frame.py" line="307"/>
         <source>File Not Found</source>
         <translation>ファイルが見つかりません</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="56"/>
+        <location filename="../../src/gui/home/home_frame.py" line="57"/>
         <location filename="../../src/gui/home/home_frame.py" line="308"/>
         <source>ROM file does not exist:
 {}</source>
@@ -2356,93 +2356,93 @@
 {}</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="57"/>
+        <location filename="../../src/gui/home/home_frame.py" line="58"/>
         <location filename="../../src/gui/home/home_frame.py" line="309"/>
         <source>OK</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="46"/>
+        <location filename="../../src/gui/home/home_frame.py" line="47"/>
         <location filename="../../src/gui/home/home_frame.py" line="303"/>
         <source>Close</source>
         <translation>閉じる</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="49"/>
+        <location filename="../../src/gui/home/home_frame.py" line="50"/>
         <location filename="../../src/gui/home/home_frame.py" line="301"/>
         <source>Parse Cache</source>
         <translation>キャッシュを解析</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="50"/>
-        <location filename="../../src/gui/home/home_frame.py" line="66"/>
+        <location filename="../../src/gui/home/home_frame.py" line="51"/>
+        <location filename="../../src/gui/home/home_frame.py" line="67"/>
         <location filename="../../src/gui/home/home_frame.py" line="302"/>
         <location filename="../../src/gui/home/home_frame.py" line="318"/>
         <source>Build Cache</source>
         <translation>キャッシュを構築</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="58"/>
+        <location filename="../../src/gui/home/home_frame.py" line="59"/>
         <location filename="../../src/gui/home/home_frame.py" line="310"/>
         <source>Target ROM Not Configured</source>
         <translation>出力先 ROM が設定されていません</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="59"/>
+        <location filename="../../src/gui/home/home_frame.py" line="60"/>
         <location filename="../../src/gui/home/home_frame.py" line="311"/>
         <source>Please configure the target ROM path in Settings first.</source>
         <translation>先に設定画面で出力先 ROM パスを設定してください。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="60"/>
+        <location filename="../../src/gui/home/home_frame.py" line="61"/>
         <location filename="../../src/gui/home/home_frame.py" line="312"/>
         <source>Cache project file not found. Please extract a ROM first.</source>
         <translation>キャッシュプロジェクトファイルが見つかりません。先に ROM を展開してください。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="61"/>
+        <location filename="../../src/gui/home/home_frame.py" line="62"/>
         <location filename="../../src/gui/home/home_frame.py" line="313"/>
         <source>Cache directory not found. Please extract a ROM first.</source>
         <translation>キャッシュがありません。先に ROM を展開してください。</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="62"/>
+        <location filename="../../src/gui/home/home_frame.py" line="63"/>
         <location filename="../../src/gui/home/home_frame.py" line="314"/>
         <source>Cache already exists. Overwrite?</source>
         <translation>キャッシュは既に存在します。上書きしますか？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="63"/>
+        <location filename="../../src/gui/home/home_frame.py" line="64"/>
         <location filename="../../src/gui/home/home_frame.py" line="315"/>
         <source>The cache directory already exists. Do you want to overwrite it?</source>
         <translation>キャッシュディレクトリは既に存在します。上書きしますか？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="64"/>
+        <location filename="../../src/gui/home/home_frame.py" line="65"/>
         <location filename="../../src/gui/home/home_frame.py" line="316"/>
         <source>Overwrite</source>
         <translation>上書き</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="65"/>
+        <location filename="../../src/gui/home/home_frame.py" line="66"/>
         <location filename="../../src/gui/home/home_frame.py" line="317"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="67"/>
+        <location filename="../../src/gui/home/home_frame.py" line="68"/>
         <location filename="../../src/gui/home/home_frame.py" line="319"/>
         <source>Are you sure you want to build modified data to cache files?</source>
         <translation>変更データをキャッシュファイルに構築しますか？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="68"/>
+        <location filename="../../src/gui/home/home_frame.py" line="69"/>
         <location filename="../../src/gui/home/home_frame.py" line="320"/>
         <source>File Already Exists</source>
         <translation>ファイルは既に存在します</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="69"/>
+        <location filename="../../src/gui/home/home_frame.py" line="70"/>
         <location filename="../../src/gui/home/home_frame.py" line="321"/>
         <source>The output file already exists:
 {}
@@ -2454,66 +2454,66 @@ Do you want to overwrite it?</source>
 上書きしますか？</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="70"/>
+        <location filename="../../src/gui/home/home_frame.py" line="71"/>
         <location filename="../../src/gui/home/home_frame.py" line="322"/>
         <source>Yes</source>
         <translation>はい</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="71"/>
+        <location filename="../../src/gui/home/home_frame.py" line="72"/>
         <location filename="../../src/gui/home/home_frame.py" line="323"/>
         <source>No</source>
         <translation>いいえ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="97"/>
+        <location filename="../../src/gui/home/home_frame.py" line="98"/>
         <location filename="../../src/gui/home/home_frame.py" line="332"/>
         <source>File</source>
         <translation>ファイル</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="98"/>
-        <location filename="../../src/gui/home/home_frame.py" line="106"/>
+        <location filename="../../src/gui/home/home_frame.py" line="99"/>
+        <location filename="../../src/gui/home/home_frame.py" line="107"/>
         <location filename="../../src/gui/home/home_frame.py" line="333"/>
         <location filename="../../src/gui/home/home_frame.py" line="341"/>
         <source>Robot</source>
         <translation>ロボット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="99"/>
-        <location filename="../../src/gui/home/home_frame.py" line="109"/>
+        <location filename="../../src/gui/home/home_frame.py" line="100"/>
+        <location filename="../../src/gui/home/home_frame.py" line="110"/>
         <location filename="../../src/gui/home/home_frame.py" line="334"/>
         <location filename="../../src/gui/home/home_frame.py" line="342"/>
         <source>Pilot</source>
         <translation>パイロット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="100"/>
-        <location filename="../../src/gui/home/home_frame.py" line="112"/>
+        <location filename="../../src/gui/home/home_frame.py" line="101"/>
+        <location filename="../../src/gui/home/home_frame.py" line="113"/>
         <location filename="../../src/gui/home/home_frame.py" line="335"/>
         <location filename="../../src/gui/home/home_frame.py" line="343"/>
         <source>Message</source>
         <translation>メッセージ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="101"/>
-        <location filename="../../src/gui/home/home_frame.py" line="113"/>
+        <location filename="../../src/gui/home/home_frame.py" line="102"/>
+        <location filename="../../src/gui/home/home_frame.py" line="114"/>
         <location filename="../../src/gui/home/home_frame.py" line="336"/>
         <location filename="../../src/gui/home/home_frame.py" line="344"/>
         <source>Scenario</source>
         <translation>シナリオ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="102"/>
-        <location filename="../../src/gui/home/home_frame.py" line="121"/>
+        <location filename="../../src/gui/home/home_frame.py" line="103"/>
+        <location filename="../../src/gui/home/home_frame.py" line="122"/>
         <location filename="../../src/gui/home/home_frame.py" line="337"/>
         <location filename="../../src/gui/home/home_frame.py" line="352"/>
         <source>Intermission</source>
         <translation>インターミッション</translation>
     </message>
     <message>
-        <location filename="../../src/gui/home/home_frame.py" line="103"/>
-        <location filename="../../src/gui/home/home_frame.py" line="124"/>
+        <location filename="../../src/gui/home/home_frame.py" line="104"/>
+        <location filename="../../src/gui/home/home_frame.py" line="125"/>
         <location filename="../../src/gui/home/home_frame.py" line="338"/>
         <location filename="../../src/gui/home/home_frame.py" line="355"/>
         <source>Dictionary</source>
@@ -2575,8 +2575,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>MsgFrame</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_frame.py" line="113"/>
-        <source>Message</source>
+        <location filename="../../src/gui/snmsg/msg_frame.py" line="109"/>
+        <source>Scenario Message</source>
         <translation>シナリオメッセージ</translation>
     </message>
 </context>
@@ -2798,57 +2798,57 @@ Do you want to overwrite it?</source>
 <context>
     <name>UnitFrame</name>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="162"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="166"/>
         <source>Robot name</source>
         <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="163"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="167"/>
         <source>Hit points</source>
         <translation>HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="164"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="168"/>
         <source>Energy</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="165"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="169"/>
         <source>Mobility</source>
         <translation>運動性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="166"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="170"/>
         <source>Armor</source>
         <translation>装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="167"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="171"/>
         <source>Limit</source>
         <translation>限界</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="168"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="172"/>
         <source>Size</source>
         <translation>サイズ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="169"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="173"/>
         <source>Parts slot</source>
         <translation>パーツスロット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="170"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="174"/>
         <source>Movement</source>
         <translation>移動力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="171"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="175"/>
         <source>Repair cost</source>
         <translation>修理費</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="172"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="176"/>
         <source>Cost</source>
         <translation>資金</translation>
     </message>
@@ -2909,20 +2909,20 @@ Do you want to overwrite it?</source>
 <context>
     <name>_FilterCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="27"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="57"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="32"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="59"/>
         <source>Search</source>
         <translation>検索</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="32"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="58"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="36"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="60"/>
         <source>Enter text to filter messages</source>
         <translation>文字を入力してメッセージをフィルタ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="35"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="59"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="38"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="61"/>
         <source>filter...</source>
         <translation>フィルタ...</translation>
     </message>
@@ -2930,20 +2930,20 @@ Do you want to overwrite it?</source>
 <context>
     <name>_GotoCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="70"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="72"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="129"/>
         <source>Go to</source>
         <translation>行指定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="75"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="132"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="76"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="130"/>
         <source>Enter hex row number to locate</source>
         <translation>16進数の行番号を入力</translation>
     </message>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="78"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="133"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
         <source>hex row...</source>
         <translation>16進行...</translation>
     </message>
@@ -2951,20 +2951,20 @@ Do you want to overwrite it?</source>
 <context>
     <name>_SpeakerCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="143"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="192"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="141"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="188"/>
         <source>Speaker</source>
         <translation>話者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="148"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="193"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="145"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="189"/>
         <source>Select a speaker to filter messages</source>
         <translation>話者を選択してメッセージをフィルタ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="151"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="194"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="147"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="190"/>
         <source>all speakers</source>
         <translation>全話者</translation>
     </message>

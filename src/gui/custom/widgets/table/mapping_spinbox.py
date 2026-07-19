@@ -9,7 +9,7 @@ Classes:
     MappingSpinBox: 映射微调框
 """
 
-from typing import Any
+from typing import Any, cast
 
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
@@ -34,10 +34,11 @@ class _ArrowButton(QToolButton):
         Args:
             e: 鼠标事件
         """
+        parent = cast(MappingSpinBox, self.parent())
         if self._right:
-            self.parent().stepUp()
+            parent.stepUp()
         else:
-            self.parent().stepDown()
+            parent.stepDown()
 
     def paintEvent(self, e):
         """自绘三角形箭头

@@ -126,6 +126,7 @@ class _ProxySpin(VerticalSpinBox):
             sorted_keys: 排序后的 key 列表
             parent: 父 QWidget
         """
+        super().__init__(parent, editable=False)
         self._map_mapping = mapping
         self._sorted_keys = sorted_keys
 

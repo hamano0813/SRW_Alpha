@@ -19,7 +19,7 @@ from qfluentwidgets import fontStyleSheet
 # ========== 日文字体 ==========
 
 JP_FONT = {
-    "family": "Yu Gothic UI",
+    "family": "Yu Gothic UI Semibold",
     "size": 14,
     "weight": QFont.Weight.Normal,
     "italic": False,

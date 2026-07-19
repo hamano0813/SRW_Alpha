@@ -2731,32 +2731,32 @@ Do you want to overwrite it?</source>
 <context>
     <name>UnitPanel</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="49"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="122"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="50"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="123"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="65"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="126"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="66"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="127"/>
         <source>Air</source>
         <translation>空</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="70"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="128"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="71"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="129"/>
         <source>Ground</source>
         <translation>陆</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="75"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="130"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="76"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="131"/>
         <source>Water</source>
         <translation>海</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="80"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="132"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="81"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="133"/>
         <source>Space</source>
         <translation>宇</translation>
     </message>
@@ -2764,64 +2764,46 @@ Do you want to overwrite it?</source>
 <context>
     <name>_FilterCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="32"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="59"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="34"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="71"/>
         <source>Search</source>
         <translation>搜索</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="36"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="60"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="38"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="72"/>
         <source>Enter text to filter messages</source>
         <translation>输入文字过滤消息</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="38"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="61"/>
-        <source>filter...</source>
-        <translation>过滤...</translation>
     </message>
 </context>
 <context>
     <name>_GotoCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="72"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="129"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="83"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="150"/>
         <source>Go to</source>
         <translation>跳转</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="76"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="130"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="87"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="151"/>
         <source>Enter hex row number to locate</source>
         <translation>输入十六进制行号定位</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="78"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
-        <source>hex row...</source>
-        <translation>十六进制行号...</translation>
     </message>
 </context>
 <context>
     <name>_SpeakerCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="141"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="188"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="161"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="218"/>
         <source>Speaker</source>
         <translation>说话人</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="145"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="189"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="165"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="219"/>
         <source>Select a speaker to filter messages</source>
         <translation>选择说话人过滤消息</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="147"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="190"/>
-        <source>all speakers</source>
-        <translation>全部说话人</translation>
     </message>
 </context>
 </TS>

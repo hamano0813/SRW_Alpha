@@ -78,5 +78,6 @@ class ProgressDialog(QDialog):
         """显示时刷新主题背景色"""
         self.resetUI()
 
-    def set_button_text(self, text: str):
+    def set_button_text(self, text: str) -> None:
+        """设置按钮文本（进程结束后用户点击确认）"""
         self._button.setText(text)

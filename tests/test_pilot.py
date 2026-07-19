@@ -66,7 +66,7 @@ def print_pilot(pilot: dict, index: int):
         )
 
 
-def main():
+def main() -> int:
     """执行往返测试：解析 → 重建 → 再解析 → 对比数据及字节码"""
     print()
     print("  ╔═══════════════════════════════════════════╗")

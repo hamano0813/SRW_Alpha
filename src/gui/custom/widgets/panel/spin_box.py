@@ -23,6 +23,12 @@ class SpinArrowButton(QToolButton):
     """
 
     def __init__(self, up: bool, parent=None):
+        """初始化方向箭头按钮
+
+        Args:
+            up: True 为上箭头（递增），False 为下箭头（递减）
+            parent: 父 QWidget
+        """
         super().__init__(parent=parent)
         self._up = up
         self._hovered = False
@@ -30,17 +36,19 @@ class SpinArrowButton(QToolButton):
         self.setCursor(Qt.CursorShape.PointingHandCursor)
 
     def enterEvent(self, e):
+        """鼠标进入时标记悬停状态并刷新"""
         self._hovered = True
         self.update()
         super().enterEvent(e)
 
     def leaveEvent(self, e):
+        """鼠标离开时清除悬停状态并刷新"""
         self._hovered = False
         self.update()
         super().leaveEvent(e)
 
     def paintEvent(self, e):
-        painter = QPainter(self)
+        """自绘箭头图标，根据悬停/按下/禁用状态调整透明度"""
         painter.setRenderHints(QPainter.RenderHint.Antialiasing)
 
         if not self.isEnabled():
@@ -83,7 +91,12 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
     """
 
     def __init__(self, parent=None, editable=True):
-        super().__init__(parent)
+        """初始化垂直微调框
+
+        Args:
+            parent: 父 QWidget
+            editable: 是否允许键盘输入（默认 True）。False 时禁用输入框和文字选中。
+        """
         self._editable = editable
         self.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         self.lineEdit().setTextMargins(0, 0, 26, 0)
@@ -129,7 +142,11 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         return super().eventFilter(obj, e)
 
     def setSymbolVisible(self, isVisible: bool):
-        super().setSymbolVisible(isVisible)
+        """显示/隐藏步进箭头
+
+        Args:
+            isVisible: True 显示上下箭头，False 隐藏
+        """
         self._up_btn.setVisible(isVisible)
         self._dn_btn.setVisible(isVisible)
 

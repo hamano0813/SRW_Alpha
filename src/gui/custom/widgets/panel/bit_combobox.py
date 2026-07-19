@@ -66,6 +66,7 @@ class _ComboButton(ComboBox):
     """继承 qfluentwidgets ComboBox 完整样式，替换点击行为"""
 
     def __init__(self, parent=None):
+        """初始化 Combo 按钮，继承 qfluentwidgets ComboBox 样式"""
         super().__init__(parent)
         self.setText("")
 
@@ -84,7 +85,7 @@ class _StayOpenMenu(RoundMenu):
         return RoundMenu.exec(self, pos, ani, aniType)
 
     def _onItemClicked(self, item):
-        action = item.data(Qt.ItemDataRole.UserRole)
+        """点击菜单项时触发对应 action（不自动关闭菜单）"""
         if action not in self._actions or not action.isEnabled():
             return
         if self.view.itemWidget(item) and not action.property("selectable"):

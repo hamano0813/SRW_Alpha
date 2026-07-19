@@ -10,6 +10,6 @@ Classes:
     (none, C extension with parse/build functions)
 """
 
-from core.sndata_bin._sndata import build, parse
+from ._sndata import build, parse
 
 __all__ = ["build", "parse"]

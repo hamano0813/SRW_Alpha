@@ -105,7 +105,7 @@ def test_field_counts() -> bool:
             print(f"[ERROR] {name}: 预期 {expected} 个字段，实际 {actual}")
             all_ok = False
         else:
-            print(f"[INFO] {name}: {actual} 个字段 [OK]")
+            print(f"[INFO] {name}: {actual} 个字段")
 
     return all_ok
 

@@ -37,7 +37,7 @@ def best_resolution(scale: float = 1.0) -> tuple[int, int]:
         (width, height): 缩放后的最佳分辨率
     """
     user32 = ctypes.windll.user32
-    screen_height = user32.GetSystemMetrics(1)  # SM_CYSCREEN
+    screen_height = user32.GetSystemMetrics(1)  # 获取屏幕垂直高度（SM_CYSCREEN）
     max_height = screen_height / scale - 50
     multiplier = int(max_height // _BASE_HEIGHT)
     if multiplier < 1:

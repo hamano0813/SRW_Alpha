@@ -16,6 +16,7 @@ class EnumData(QObject):
     """游戏枚举数据 — SCENARIO 按关卡 ID 索引，ROBOT 按字段名索引"""
 
     def __init__(self) -> None:
+        """初始化游戏枚举数据，包括关卡和机体映射表"""
         super().__init__(parent=None)
         self.ROBOT = {
             "SIZE": {0x0: "SS", 0x1: "S", 0x2: "M", 0x3: "L", 0x4: "LL"},

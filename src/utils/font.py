@@ -45,11 +45,11 @@ def get_font_info(font_obj: TTFont | str, langID=1033) -> str:
         return ""
 
     for record in font_obj["name"].names:  # type: ignore
-        # platformID=3(Microsoft), nameID=1(Font Family name)
+        # platformID=3(Microsoft)、nameID=1(Font Family name) 标识字体系列名称，langID 匹配目标语言
         if record.platformID == 3 and record.langID == langID and record.nameID == 1:
             try:
                 return record.toUnicode()
-            except UnicodeDecodeError, AttributeError:
+            except (UnicodeDecodeError, AttributeError) as e:
                 continue
 
     return ""

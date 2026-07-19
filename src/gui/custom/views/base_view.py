@@ -9,7 +9,6 @@ Classes:
     BaseTableView: 基础表格视图
 """
 
-from tkinter import VERTICAL
 from typing import Any, Callable
 
 from PySide6.QtCore import QSortFilterProxyModel, Qt, Signal
@@ -74,7 +73,7 @@ class BaseTableView(TableView):
         if old_sel is not None:
             try:
                 old_sel.selectionChanged.disconnect()
-            except TypeError, RuntimeError:
+            except (TypeError, RuntimeError) as e:
                 pass
 
         self._model = model

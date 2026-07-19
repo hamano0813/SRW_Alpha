@@ -23,6 +23,12 @@ class _ArrowButton(QToolButton):
     """单方向箭头按钮 — 左箭头（步进-）或右箭头（步进+）"""
 
     def __init__(self, right: bool, parent=None):
+        """初始化箭头按钮
+
+        Args:
+            right: True 为右箭头（递增），False 为左箭头（递减）
+            parent: 父 QWidget
+        """
         super().__init__(parent)
         self._right = right
         self.setFixedSize(24, 26)

@@ -200,7 +200,8 @@ def test_file(name: str, spec: dict) -> bool:
     return ok
 
 
-def main():
+def main() -> int:
+    """执行所有文件的 LZSS 往返测试"""
     print()
     print("  ╔══════════════════════════════════════════════════════╗")
     print("  ║              SRW Alpha - LZSS 综合测试               ║")

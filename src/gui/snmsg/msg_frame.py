@@ -28,6 +28,7 @@ class _SingleColumnDelegate(TableItemDelegate):
     """
 
     def _drawBackground(self, painter, option, index):
+        """根据列位置决定圆角绘制区域：单列时左右都画圆角"""
         r = 5
         n = index.model().columnCount(index.parent())
         if n == 1:

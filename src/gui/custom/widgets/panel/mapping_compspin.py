@@ -119,7 +119,13 @@ class _ProxySpin(VerticalSpinBox):
     """映射步进微调框 - 代理 VerticalSpinBox 的 textFromValue / stepBy"""
 
     def __init__(self, mapping: dict[int, str], sorted_keys: list[int], parent=None):
-        super().__init__(parent, editable=False)
+        """初始化映射步进微调框
+
+        Args:
+            mapping: {数值: 显示文本} 字典
+            sorted_keys: 排序后的 key 列表
+            parent: 父 QWidget
+        """
         self._map_mapping = mapping
         self._sorted_keys = sorted_keys
 

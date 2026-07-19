@@ -36,6 +36,7 @@ class _SortHeader(QHeaderView):
     _painting: bool = False  # 重入保护
 
     def __init__(self, parent=None):
+        """初始化自定义表头，禁用内置排序箭头"""
         super().__init__(Qt.Orientation.Horizontal, parent)
         self._sort_section: int = -1
         self._sort_order: Qt.SortOrder = Qt.SortOrder.AscendingOrder
@@ -155,8 +156,6 @@ class FixedTableView(BaseTableView):
         sort_header.style().unpolish(sort_header)
         sort_header.style().polish(sort_header)
         sort_header.sortChanged.connect(self._on_sort_changed)
-
-        # ========== 行交互 ==========
 
         self.clicked.connect(self._single_click)
 

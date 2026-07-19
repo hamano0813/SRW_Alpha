@@ -11,6 +11,7 @@ Classes:
 
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import Callable
 
 import config
 
@@ -56,8 +57,12 @@ class Rom:
     }
 
     def __init__(self):
-        """初始化数据存储字典"""
+        """初始化数据存储字典与观察者注册表"""
         self.data: dict[str, dict] = {}
+        self._observers: dict[str, list[tuple[Callable, dict | None]]] = {}
+        self._cached: dict[str, dict[int, str] | list[str]] = {}
+        self._suspended: set[str] = set()
+        self._pending: set[str] = set()
 
     # ========== 路径管理 ==========
 
@@ -100,8 +105,106 @@ class Rom:
         return self.data.keys()
 
     def clear(self):
-        """清空所有已解析的数据"""
+        """清空所有已解析的数据及缓存"""
         self.data.clear()
+        self._cached.clear()
+        self._observers.clear()
+        self._suspended.clear()
+        self._pending.clear()
+
+    # ========== 全局索引观察者模式 ==========
+
+    def observe(self, data_type: str, callback: Callable, extras: dict | None = None) -> None:
+        """注册观察者，在指定数据类型更新时接收推送
+
+        Args:
+            data_type: 数据类型 "robots" | "pilots" | "snmsgs"
+            callback: 接收合并后 dict/list 的回调函数
+            extras: dict 类型的额外键值对（仅 robots/pilots 有效）
+        """
+        self._observers.setdefault(data_type, []).append((callback, extras))
+
+    def unobserve(self, data_type: str, callback: Callable) -> None:
+        """取消注册观察者"""
+        self._observers[data_type] = [
+            (cb, ex) for cb, ex in self._observers.get(data_type, []) if cb is not callback
+        ]
+
+    def suspend(self, data_type: str) -> None:
+        """暂停指定数据类型的推送通知（批量操作时使用）"""
+        self._suspended.add(data_type)
+
+    def resume(self, data_type: str) -> None:
+        """恢复推送通知，如有暂挂请求则合并推送一次"""
+        self._suspended.discard(data_type)
+        if data_type in self._pending:
+            self._pending.discard(data_type)
+            self.notify(data_type)
+
+    def notify(self, data_type: str) -> None:
+        """触发指定数据类型的全量重建与推送
+
+        暂停期间调用此方法仅标记暂挂，不实际推送。
+        """
+        if data_type in self._suspended:
+            self._pending.add(data_type)
+            return
+        self._rebuild(data_type)
+        self._dispatch(data_type)
+
+    def _rebuild(self, data_type: str) -> None:
+        """全量重建静态缓存字典/列表"""
+        raw_data = self.data.get(data_type)
+        if raw_data is None:
+            self._cached[data_type] = {} if data_type != "snmsgs" else []
+            return
+
+        if data_type == "robots":
+            self._cached["robots"] = {
+                i: f"[{i:03X}]{r['rname']}" for i, r in enumerate(raw_data["robots"])
+            }
+        elif data_type == "pilots":
+            self._cached["pilots"] = {
+                i: f"[{i:03X}]{p['nname']}" for i, p in enumerate(raw_data["pilots"])
+            }
+        elif data_type == "snmsgs":
+            self._cached["snmsgs"] = [item["snmsg"] for item in raw_data["snmsgs"]]
+
+    def _dispatch(self, data_type: str) -> None:
+        """遍历观察者，合并 extras 后推送，自动清理已销毁的观察者"""
+        cached = self._cached.get(data_type)
+        if cached is None:
+            return
+
+        survivors: list[tuple[Callable, dict | None]] = []
+        for cb, extras in self._observers.get(data_type, []):
+            try:
+                if extras and isinstance(cached, dict):
+                    merged = cached | extras
+                else:
+                    merged = cached
+                cb(merged)
+                survivors.append((cb, extras))
+            except RuntimeError:
+                pass  # 观察者所属 widget 已销毁，自动清理
+        self._observers[data_type] = survivors
+
+    # ========== 全局索引属性 ==========
+
+    @property
+    def robots(self) -> dict[int, str]:
+        """{索引: "[索引(3位16进制)]机体名", ...} — 静态缓存的全局机体名称字典"""
+        return self._cached.get("robots", {})
+
+    @property
+    def pilots(self) -> dict[int, str]:
+        """{索引: "[索引(3位16进制)]驾驶员名", ...} — 静态缓存的全局驾驶员名称字典"""
+        return self._cached.get("pilots", {})
+
+    @property
+    def snmsgs(self) -> list[str]:
+        """静态缓存的消息文本列表，不含序号前缀"""
+        return self._cached.get("snmsgs", [])
 
     # ========== 缓存批量解析/构建（供 UI 槽函数调用） ==========
 
@@ -270,6 +373,7 @@ class Rom:
 
         data = pilot_bin.parse(raw, extra=extra)
         self.data["pilots"] = data
+        self._rebuild("pilots")
         return data
 
     def build_pilots(self, extra: dict | None = None) -> None:
@@ -320,6 +424,7 @@ class Rom:
 
         data = robot_raf.parse(raw, extra=extra)
         self.data["robots"] = data
+        self._rebuild("robots")
         return data
 
     def build_robots(self, extra: dict | None = None) -> None:
@@ -407,6 +512,7 @@ class Rom:
 
         data = snmsg_bin.parse(bytearray(raw), extra=extra)
         self.data["snmsgs"] = data
+        self._rebuild("snmsgs")
         return data
 
     def build_snmsgs(self, extra: dict | None = None) -> None:

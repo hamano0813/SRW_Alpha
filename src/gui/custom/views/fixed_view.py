@@ -128,6 +128,10 @@ class FixedTableView(BaseTableView):
     # ========== 列折叠信号 ==========
 
     foldToggled = Signal(bool, int)  # (列已折叠?, 释放的像素宽度)
+
+    # ========== 名称列编辑转发 ==========
+
+    columnZeroEdited = Signal()  # 第 0 列编辑完成，转发自 FixedTableModel
     widthChanged = Signal(int, int)
 
     CORNER_QSS = "QTableView QTableCornerButton::section { background-color: transparent; border: none; }"
@@ -141,6 +145,10 @@ class FixedTableView(BaseTableView):
         """
         model = FixedTableModel()
         super().__init__(model, parent)
+
+        # ========== 名称列编辑转发 ==========
+
+        model.columnZeroEdited.connect(self.columnZeroEdited)
 
         # ========== 自定义表头 ==========
 

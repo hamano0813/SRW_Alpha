@@ -10,13 +10,15 @@ Classes:
 
 from typing import Any
 
-from PySide6.QtCore import QModelIndex, Qt
+from PySide6.QtCore import QModelIndex, Qt, Signal
 
 from .base_model import BaseTableModel
 
 
 class FixedTableModel(BaseTableModel):
     """固定行数表格模型 - 行数不可增删，支持原地编辑"""
+
+    columnZeroEdited = Signal()  # 第 0 列（名称列）编辑完成，供观察者通知用
 
     # ========== Qt 模型接口重写 ==========
 
@@ -79,6 +81,8 @@ class FixedTableModel(BaseTableModel):
         key = self._fields.get_field(header)
         self._data[index.row()][key] = value
         self.dataChanged.emit(index, index, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
+        if index.column() == 0:
+            self.columnZeroEdited.emit()
         return True
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlag:

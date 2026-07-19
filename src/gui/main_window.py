@@ -67,7 +67,7 @@ class MainWindow(FluentWindow):
 
     def init_core(self):
         """初始化核心数据：ROM 实例和字段映射"""
-        self._rom = Rom()
+        self.rom = Rom()
         self._field = FieldMapping()
 
     def init_ui(self):
@@ -205,9 +205,9 @@ class MainWindow(FluentWindow):
 
     def parse_data(self):
         """解析缓存数据并设置到各个编辑器"""
-        self._rom.parse_cache()
-        self.robot_frame.set_rom_data(self._rom.data)
-        self.snmsg_frame.set_rom_data(self._rom.data)
+        self.rom.parse_cache()
+        self.robot_frame.set_rom_data(self.rom.data)
+        self.snmsg_frame.set_rom_data(self.rom.data)
         self._enable_features()
 
     def build_data(self):

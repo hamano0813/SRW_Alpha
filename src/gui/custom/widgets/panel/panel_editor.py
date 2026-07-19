@@ -121,3 +121,11 @@ class PanelEditor(QWidget):
                 qfont.setItalic(italic)
             font = qfont
         self.setFont(font)
+
+    # ========== 主题刷新 ==========
+
+    def resetUI(self):
+        """从全局配置刷新字体，并传播至内嵌控件"""
+        for child in self.children():
+            if isinstance(child, QWidget) and hasattr(child, "resetUI"):
+                child.resetUI()

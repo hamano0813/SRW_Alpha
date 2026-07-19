@@ -15,6 +15,7 @@ from PySide6.QtWidgets import QSpinBox, QToolButton, QVBoxLayout, QWidget
 from qfluentwidgets.common.icon import FluentIcon as FIF
 from qfluentwidgets.common.style_sheet import isDarkTheme
 from qfluentwidgets.components.widgets.spin_box import SpinBoxBase
+from qfluentwidgets import setFont
 
 
 class SpinArrowButton(QToolButton):
@@ -136,3 +137,8 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         super().setSymbolVisible(isVisible)
         self._up_btn.setVisible(isVisible)
         self._dn_btn.setVisible(isVisible)
+
+    def resetUI(self):
+        """从全局配置刷新字体"""
+        setFont(self)
+        setFont(self.lineEdit())

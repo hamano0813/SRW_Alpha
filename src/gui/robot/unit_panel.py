@@ -128,6 +128,10 @@ class UnitPanel(ProxyFrame):
     def resetUI(self):
         """刷新主框字体"""
         self._move_combo.resetUI()
+        self._air_spin.resetUI()
+        self._grd_spin.resetUI()
+        self._wtr_spin.resetUI()
+        self._spc_spin.resetUI()
         setFont(self._terrain_card)
         setFont(self._air_label)
         setFont(self._grd_label)

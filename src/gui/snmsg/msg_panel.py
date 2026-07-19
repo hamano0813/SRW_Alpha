@@ -9,15 +9,17 @@ Classes:
 """
 
 from PySide6.QtCore import QRegularExpression, Qt, Signal
-from PySide6.QtGui import QRegularExpressionValidator, QStandardItem, QStandardItemModel
+from PySide6.QtGui import QFont, QRegularExpressionValidator, QStandardItem, QStandardItemModel
 from PySide6.QtWidgets import QVBoxLayout
 from qfluentwidgets import (
     BodyLabel,
     EditableModelComboBox,
     HeaderCardWidget,
     SearchLineEdit,
+    setFont,
 )
 
+from gui.custom import fonts
 from gui.custom.proxy_frame import ProxyFrame
 
 
@@ -35,7 +37,6 @@ class _FilterCard(HeaderCardWidget):
 
         self._info_label = BodyLabel(self.tr("Enter text to filter messages"), self)
         self._filter_edit = SearchLineEdit(self)
-        self._filter_edit.setPlaceholderText(self.tr("filter..."))
         self._filter_edit.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self._filter_edit.searchSignal.connect(self.filterChanged)
         self._filter_edit.clearSignal.connect(self.filterCleared)
@@ -54,11 +55,21 @@ class _FilterCard(HeaderCardWidget):
         self.setFocus()
         super().mousePressEvent(e)
 
+    def clear(self) -> None:
+        """清空过滤输入"""
+        self._filter_edit.clear()
+
+    def resetUI(self):
+        """刷新卡片标题、说明标签及过滤输入框字体"""
+        setFont(self)
+        setFont(self.headerLabel, 15, QFont.DemiBold)
+        self._info_label.setFont(self._info_label.getFont())
+        self._filter_edit.setFont(fonts.JP_QFONT)
+
     def translateUI(self):
         """刷新卡片标题和提示文本"""
         self.setTitle(self.tr("Search"))
         self._info_label.setText(self.tr("Enter text to filter messages"))
-        self._filter_edit.setPlaceholderText(self.tr("filter..."))
 
 
 class _GotoCard(HeaderCardWidget):
@@ -75,7 +86,6 @@ class _GotoCard(HeaderCardWidget):
 
         self._info_label = BodyLabel(self.tr("Enter hex row number to locate"), self)
         self._goto_edit = SearchLineEdit(self)
-        self._goto_edit.setPlaceholderText(self.tr("hex row..."))
         self._goto_edit.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self._goto_edit.setValidator(QRegularExpressionValidator(QRegularExpression("[0-9A-Fa-f]*"), self._goto_edit))
         self._goto_edit.searchSignal.connect(self._on_search)
@@ -124,11 +134,21 @@ class _GotoCard(HeaderCardWidget):
             return
         self.gotoRequested.emit(row)
 
+    def clear(self) -> None:
+        """清空跳转输入"""
+        self._goto_edit.clear()
+
+    def resetUI(self):
+        """刷新卡片标题、说明标签及跳转输入框字体"""
+        setFont(self)
+        setFont(self.headerLabel, 15, QFont.DemiBold)
+        self._info_label.setFont(self._info_label.getFont())
+        self._goto_edit.setFont(fonts.EN_QFONT)
+
     def translateUI(self):
         """刷新卡片标题和提示文本"""
         self.setTitle(self.tr("Go to"))
         self._info_label.setText(self.tr("Enter hex row number to locate"))
-        self._goto_edit.setPlaceholderText(self.tr("hex row..."))
 
 
 class _SpeakerCard(HeaderCardWidget):
@@ -143,8 +163,7 @@ class _SpeakerCard(HeaderCardWidget):
         self.viewLayout.setContentsMargins(20, 16, 20, 16)
 
         self._info_label = BodyLabel(self.tr("Select a speaker to filter messages"), self)
-        self._speaker_combo = EditableModelComboBox(self)
-        self._speaker_combo.setPlaceholderText(self.tr("all speakers"))
+        self._speaker_combo = _SpeakerComboBox(self)
         self._speaker_combo.setClearButtonEnabled(True)
         self._speaker_combo.setMaxVisibleItems(10)
         self._speaker_combo.setReadOnly(True)
@@ -183,11 +202,37 @@ class _SpeakerCard(HeaderCardWidget):
         # 同步最终状态（清空或维持选中），确保过滤条件与界面一致
         self.speakerChanged.emit(self._speaker_combo.text())
 
+    def clear(self) -> None:
+        """清空说话人选择"""
+        self._speaker_combo.setCurrentIndex(-1)
+
+    def resetUI(self):
+        """刷新卡片标题、说明标签及说话人下拉框字体"""
+        setFont(self)
+        setFont(self.headerLabel, 15, QFont.DemiBold)
+        self._info_label.setFont(self._info_label.getFont())
+        self._speaker_combo.setFont(fonts.JP_QFONT)
+
     def translateUI(self):
         """刷新卡片标题和提示文本"""
         self.setTitle(self.tr("Speaker"))
         self._info_label.setText(self.tr("Select a speaker to filter messages"))
-        self._speaker_combo.setPlaceholderText(self.tr("all speakers"))
+
+
+class _SpeakerComboBox(EditableModelComboBox):
+    """说话人下拉框 - 固定 JP_QFONT 至下拉菜单视图"""
+
+    _VIEW_QSS = "QListWidget{{font-family: '{family}' !important; font-size: {size}px !important;}}"
+
+    def _createComboMenu(self):
+        """创建下拉菜单后立即将视图字体强制设为 JP_QFONT（QSS 覆盖父级）"""
+        menu = super()._createComboMenu()
+        qss = self._VIEW_QSS.format(
+            family=fonts.JP_QFONT.family(),
+            size=fonts.JP_QFONT.pixelSize(),
+        )
+        menu.view.setStyleSheet(qss)
+        return menu
 
 
 class MsgPanel(ProxyFrame):
@@ -242,6 +287,13 @@ class MsgPanel(ProxyFrame):
             focused.clearFocus()
         super().mousePressEvent(e)
 
+    def resetUI(self):
+        """刷新三个卡片及各自控件的字体"""
+        self._filter_card.resetUI()
+        self._goto_card.resetUI()
+        self._speaker_card.resetUI()
+        super().resetUI()
+
     def set_speakers(self, speakers: list[str]) -> None:
         """设置说话人下拉列表
 
@@ -252,12 +304,12 @@ class MsgPanel(ProxyFrame):
 
     def clear_filter(self) -> None:
         """清空过滤文本"""
-        self._filter_card._filter_edit.clear()
+        self._filter_card.clear()
 
     def clear_speaker(self) -> None:
         """清空说话人选择"""
-        self._speaker_card._speaker_combo.setCurrentIndex(-1)
+        self._speaker_card.clear()
 
     def clear_goto(self) -> None:
         """清空跳转输入"""
-        self._goto_card._goto_edit.clear()
+        self._goto_card.clear()

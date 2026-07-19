@@ -9,6 +9,7 @@ Classes:
 """
 
 from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Qt, Signal
+from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
 from qfluentwidgets import BodyLabel, HeaderCardWidget, setFont
 
@@ -142,6 +143,7 @@ class UnitPanel(ProxyFrame):
         self._wtr_spin.resetUI()
         self._spc_spin.resetUI()
         setFont(self._terrain_card)
+        setFont(self._terrain_card.headerLabel, 15, QFont.DemiBold)
         setFont(self._air_label)
         setFont(self._grd_label)
         setFont(self._wtr_label)

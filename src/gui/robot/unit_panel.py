@@ -7,7 +7,6 @@
 各类卡片拆分为独立子类，UnitPanel 只负责编排和接口转发。
 
 Classes:
-    _BaseCard:      面板卡片基类
     TransformCard:  变形·合体卡片
     TerrainCard:    地形适性卡片
     UnitPanel:      机体侧边栏面板
@@ -15,58 +14,23 @@ Classes:
 
 from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Qt, Signal
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
-from qfluentwidgets import BodyLabel, HeaderCardWidget, setFont
+from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QVBoxLayout
+from qfluentwidgets import BodyLabel, setFont
 
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
-from gui.custom.proxy_frame import ProxyFrame
+from gui.custom.widgets.proxy_frame import ProxyFrame
 from gui.custom.widgets import BitComboBox, MappingCompSpin
+from gui.custom.widgets.card_header import CardHeader
 
 
-class _BaseCard(HeaderCardWidget):
-    """面板卡片基类 - 统一卡片的样式和接口"""
-
-    panelDataChanged = Signal(str)  # 字段名，供 UnitPanel 转发
-
-    def __init__(self, title: str, parent=None):
-        """初始化卡片
-
-        Args:
-            title: 卡片标题（tr 键）
-            parent: 父 QWidget
-        """
-        super().__init__(parent)
-        self.setTitle(self.tr(title))
-        self.setBorderRadius(8)
-        self.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
-        self.viewLayout.setContentsMargins(12, 8, 12, 8)
-
-    # ========== UnitPanel 转发接口 ==========
-
-    def set_model(self, model: BaseTableModel) -> None:
-        """子类重写 - 注入数据模型"""
-        raise NotImplementedError
-
-    def set_row(self, row: int) -> None:
-        """子类重写 - 切换行数据"""
-        raise NotImplementedError
-
-    def translateUI(self) -> None:
-        """子类重写 - 刷新翻译"""
-        raise NotImplementedError
-
-    def resetUI(self) -> None:
-        """子类重写 - 刷新字体"""
-        raise NotImplementedError
-
-
-class TransformCard(_BaseCard):
+class TransformCard(CardHeader):
     """变形·合体卡片 - （待实现）"""
 
     def __init__(self, parent=None):
         """初始化变形·合体卡片"""
-        super().__init__("Transform & Combine", parent)
+        super().__init__(parent)
+        self.setTitle(self.tr("Transform & Combine"))
 
     def set_model(self, model: BaseTableModel) -> None:
         """注入数据模型（待实现）"""
@@ -86,12 +50,13 @@ class TransformCard(_BaseCard):
         setFont(self.headerLabel, 15, QFont.DemiBold)
 
 
-class TerrainCard(_BaseCard):
+class TerrainCard(CardHeader):
     """地形适性卡片 - 移动类型 + 四项地形适性"""
 
     def __init__(self, parent=None):
         """初始化地形适性卡片"""
-        super().__init__("Terrain", parent)
+        super().__init__(parent)
+        self.setTitle(self.tr("Terrain"))
 
         # ========== 控件 ==========
 

@@ -8,7 +8,7 @@ Classes:
     PilotFrame: 驾驶员编辑框架
 """
 
-from gui.custom.proxy_frame import ProxyFrame
+from gui.custom.widgets.proxy_frame import ProxyFrame
 
 
 class PilotFrame(ProxyFrame):

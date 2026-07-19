@@ -13,7 +13,7 @@ from collections import Counter
 from PySide6.QtCore import QRegularExpression, Qt
 from PySide6.QtWidgets import QHBoxLayout, QWidget
 
-from gui.custom.proxy_frame import ProxyFrame
+from gui.custom.widgets.proxy_frame import ProxyFrame
 from gui.snmsg.msg_frame import MsgFrame
 from gui.snmsg.msg_panel import MsgPanel
 

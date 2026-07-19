@@ -21,7 +21,7 @@ from gui.custom.delegates import (
 )
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
-from gui.custom.proxy_frame import ProxyFrame
+from gui.custom.widgets.proxy_frame import ProxyFrame
 from gui.custom.views import FixedTableView
 
 

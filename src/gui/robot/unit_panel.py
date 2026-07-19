@@ -15,7 +15,7 @@ from gui.custom.enums import EnumData
 from gui.custom.models.base_model import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
 from gui.custom.widgets import BitComboBox, MappingCompSpin
-from qfluentwidgets import BodyLabel, HeaderCardWidget
+from qfluentwidgets import BodyLabel, HeaderCardWidget, setFont
 
 
 class UnitPanel(ProxyFrame):
@@ -128,6 +128,11 @@ class UnitPanel(ProxyFrame):
     def resetUI(self):
         """刷新主框字体"""
         self._move_combo.resetUI()
+        setFont(self._terrain_card)
+        setFont(self._air_label)
+        setFont(self._grd_label)
+        setFont(self._wtr_label)
+        setFont(self._spc_label)
         super().resetUI()
 
     # ========== 行数据 ==========

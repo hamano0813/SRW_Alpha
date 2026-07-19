@@ -46,6 +46,7 @@ class MainWindow(FluentWindow):
     """主窗口类 - 集成导航栏、启动画面和界面刷新"""
 
     _SIZE = utils.best_resolution(config.option.dpi.value)
+    _FEATURE_ROUTES = ["RobotFrame", "PilotFrame", "MessageFrame", "SndataFrame", "ScriptFrame", "DictionaryFrame"]
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -111,6 +112,7 @@ class MainWindow(FluentWindow):
 
         self.translateUI()
         self.resetUI()
+        self._disable_features()
 
         loop.exec()
 
@@ -187,11 +189,26 @@ class MainWindow(FluentWindow):
         """更新导航栏中指定框架的显示标题"""
         self.navigationInterface.panel.items[frame].widget.itemWidget.setText(self.tr(title))  # type: ignore
 
+    def _disable_features(self):
+        """禁用功能导航项（加载缓存前不可访问）"""
+        for route in self._FEATURE_ROUTES:
+            item = self.navigationInterface.panel.items.get(route)
+            if item:
+                item.widget.setEnabled(False)
+
+    def _enable_features(self):
+        """启用功能导航项（加载缓存成功后）"""
+        for route in self._FEATURE_ROUTES:
+            item = self.navigationInterface.panel.items.get(route)
+            if item:
+                item.widget.setEnabled(True)
+
     def parse_data(self):
-        """解析缓存数据并设置到机器人编辑器"""
+        """解析缓存数据并设置到各个编辑器"""
         self._rom.parse_cache()
         self.robot_frame.set_rom_data(self._rom.data)
         self.snmsg_frame.set_rom_data(self._rom.data)
+        self._enable_features()
 
     def build_data(self):
         """构建缓存数据（暂未实现）"""

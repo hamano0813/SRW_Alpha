@@ -20,34 +20,107 @@ from qfluentwidgets import BodyLabel, setFont
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
-from gui.custom.widgets import BitComboBox, MappingCompSpin
+from gui.custom.widgets import BitComboBox, MappingCompSpin, NumberCompSpin
 from gui.custom.widgets.card_header import CardHeader
 
 
 class TransformCard(CardHeader):
-    """变形·合体卡片 - （待实现）"""
+    """变形·合体卡片 - 变形组与变形序号"""
 
     def __init__(self, parent=None):
         """初始化变形·合体卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Transform & Combine"))
 
+        # ========== 控件 ==========
+
+        self._lbl_tgrp = BodyLabel(self.tr("Tran Grp"), self)
+        self._tgrp_spin = NumberCompSpin("tgrp", value_range=(0, 99), parent=self)
+        self._tgrp_spin.setFixedWidth(70)
+        self._tgrp_spin.dataChanged.connect(self.panelDataChanged)
+        self._lbl_tsn = BodyLabel(self.tr("Tran Seq"), self)
+        self._tsn_spin = NumberCompSpin("tsn", value_range=(0, 2), parent=self)
+        self._tsn_spin.setFixedWidth(70)
+        self._tsn_spin.dataChanged.connect(self.panelDataChanged)
+
+        self._lbl_cgrp = BodyLabel(self.tr("Comb Grp"), self)
+        self._cgrp_spin = NumberCompSpin("cgrp", value_range=(0, 99), parent=self)
+        self._cgrp_spin.setFixedWidth(70)
+        self._cgrp_spin.dataChanged.connect(self.panelDataChanged)
+        self._lbl_csn = BodyLabel(self.tr("Comb Seq"), self)
+        self._csn_spin = NumberCompSpin("csn", value_range=(0, 2), parent=self)
+        self._csn_spin.setFixedWidth(70)
+        self._csn_spin.dataChanged.connect(self.panelDataChanged)
+
+        self._lbl_cnt = BodyLabel(self.tr("Comb Cnt"), self)
+        self._cnt_spin = NumberCompSpin("count", value_range=(0, 5), parent=self)
+        self._cnt_spin.setFixedWidth(70)
+        self._cnt_spin.dataChanged.connect(self.panelDataChanged)
+
+        self._lbl_core = BodyLabel(self.tr("Core Unit"), self)
+
+        # ========== 网格布局 ==========
+
+        _grid = QGridLayout()
+        _grid.setSpacing(4)
+        _grid.setHorizontalSpacing(8)
+        _grid.addWidget(self._lbl_tgrp, 0, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._tgrp_spin, 0, 1)
+        _grid.addWidget(self._lbl_tsn, 0, 2, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._tsn_spin, 0, 3)
+        _grid.addWidget(self._lbl_cgrp, 1, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._cgrp_spin, 1, 1)
+        _grid.addWidget(self._lbl_csn, 1, 2, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._csn_spin, 1, 3)
+        _grid.addWidget(self._lbl_core, 2, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._lbl_cnt, 2, 2, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._cnt_spin, 2, 3)
+        self.viewLayout.addLayout(_grid)
+        self.viewLayout.addStretch()
+
+    # ========== UnitPanel 转发接口 ==========
+
     def set_model(self, model: BaseTableModel) -> None:
-        """注入数据模型（待实现）"""
-        pass
+        """注入数据模型，转发至各子编辑器"""
+        self._tgrp_spin.set_model(model)
+        self._tsn_spin.set_model(model)
+        self._cgrp_spin.set_model(model)
+        self._csn_spin.set_model(model)
+        self._cnt_spin.set_model(model)
 
     def set_row(self, row: int) -> None:
-        """切换行数据（待实现）"""
-        pass
+        """切换行并刷新所有子编辑器"""
+        self._tgrp_spin.set_row(row)
+        self._tsn_spin.set_row(row)
+        self._cgrp_spin.set_row(row)
+        self._csn_spin.set_row(row)
+        self._cnt_spin.set_row(row)
 
     def translateUI(self) -> None:
-        """刷新卡片标题"""
+        """刷新卡片标题与标签"""
         self.setTitle(self.tr("Transform & Combine"))
+        self._lbl_tgrp.setText(self.tr("Tran Grp"))
+        self._lbl_tsn.setText(self.tr("Tran Seq"))
+        self._lbl_cgrp.setText(self.tr("Comb Grp"))
+        self._lbl_csn.setText(self.tr("Comb Seq"))
+        self._lbl_cnt.setText(self.tr("Comb Cnt"))
+        self._lbl_core.setText(self.tr("Core Unit"))
 
     def resetUI(self) -> None:
-        """刷新卡片字体"""
+        """刷新所有控件字体"""
+        self._tgrp_spin.resetUI()
+        self._tsn_spin.resetUI()
+        self._cgrp_spin.resetUI()
+        self._csn_spin.resetUI()
+        self._cnt_spin.resetUI()
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+        setFont(self._lbl_tgrp)
+        setFont(self._lbl_tsn)
+        setFont(self._lbl_cgrp)
+        setFont(self._lbl_csn)
+        setFont(self._lbl_cnt)
+        setFont(self._lbl_core)
 
 
 class TerrainCard(CardHeader):

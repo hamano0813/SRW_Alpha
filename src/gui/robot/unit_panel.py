@@ -35,29 +35,35 @@ class TransformCard(CardHeader):
         # ========== 控件 ==========
 
         self._lbl_tgrp = BodyLabel(self.tr("Tran Grp"), self)
+        self._lbl_tgrp.setFixedWidth(80)
         self._tgrp_spin = NumberCompSpin("tgrp", value_range=(0, 99), parent=self)
         self._tgrp_spin.setFixedWidth(70)
         self._tgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_tsn = BodyLabel(self.tr("Tran Seq"), self)
+        self._lbl_tsn.setFixedWidth(80)
         self._tsn_spin = NumberCompSpin("tsn", value_range=(0, 2), parent=self)
         self._tsn_spin.setFixedWidth(70)
         self._tsn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cgrp = BodyLabel(self.tr("Comb Grp"), self)
+        self._lbl_cgrp.setFixedWidth(80)
         self._cgrp_spin = NumberCompSpin("cgrp", value_range=(0, 99), parent=self)
         self._cgrp_spin.setFixedWidth(70)
         self._cgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_csn = BodyLabel(self.tr("Comb Seq"), self)
+        self._lbl_csn.setFixedWidth(80)
         self._csn_spin = NumberCompSpin("csn", value_range=(0, 2), parent=self)
         self._csn_spin.setFixedWidth(70)
         self._csn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cnt = BodyLabel(self.tr("Comb Cnt"), self)
+        self._lbl_cnt.setFixedWidth(80)
         self._cnt_spin = NumberCompSpin("count", value_range=(0, 5), parent=self)
         self._cnt_spin.setFixedWidth(70)
         self._cnt_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_core = BodyLabel(self.tr("Core Unit"), self)
+        self._lbl_core.setFixedWidth(80)
 
         # ========== 网格布局 ==========
 

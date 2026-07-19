@@ -15,6 +15,7 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 
 from gui.custom.widgets import NumberSpinBox
+from qfluentwidgets import setFont
 
 from .base_delegate import DataWidgetDelegate
 
@@ -53,6 +54,8 @@ class NumberSpinDelegate(DataWidgetDelegate):
         editor = NumberSpinBox(self._value_range, self._show_sign, self._show_buttons, parent)
         if self._font is not None:
             editor.apply_font(self._font)
+        else:
+            setFont(editor, 13)
         return editor
 
     # ========== 编辑器几何 ==========

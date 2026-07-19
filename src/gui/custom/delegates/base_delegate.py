@@ -18,7 +18,7 @@ from typing import cast
 from PySide6.QtCore import QModelIndex, Qt
 from PySide6.QtGui import QColor, QFont, QPainter
 from PySide6.QtWidgets import QStyledItemDelegate, QStyleOptionViewItem, QWidget
-from qfluentwidgets import isDarkTheme
+from qfluentwidgets import isDarkTheme, setFont
 
 from gui.custom.views.base_view import BaseTableView
 from gui.custom.widgets import TableEditor
@@ -203,6 +203,8 @@ class DataWidgetDelegate(QStyledItemDelegate):
         editor = self.widget_class(parent)
         if self._font is not None:
             editor.apply_font(self._font)
+        else:
+            setFont(editor, 13)
         return editor
 
     def setEditorData(self, editor: QWidget, index: QModelIndex) -> None:

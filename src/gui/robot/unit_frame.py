@@ -49,10 +49,6 @@ class UnitFrame(ProxyFrame):
         _model = self._robot_view.source_model()
         _model.set_font({
             0: fonts.JP_FONT,
-            1: fonts.EN_FONT, 2: fonts.EN_FONT, 3: fonts.EN_FONT,
-            4: fonts.EN_FONT, 5: fonts.EN_FONT, 6: fonts.EN_FONT,
-            7: fonts.EN_FONT, 8: fonts.EN_FONT,
-            9: fonts.EN_FONT, 10: fonts.EN_FONT,
         })
         _model.set_alignments({
             1: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
@@ -74,37 +70,37 @@ class UnitFrame(ProxyFrame):
 
         # ========== 数值列：纯键盘输入，无按钮 ==========
 
-        self._hp_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._hp_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(1, self._hp_delegate)
 
-        self._en_delegate = NumberSpinDelegate(value_range=(50, 400), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._en_delegate = NumberSpinDelegate(value_range=(50, 400), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(2, self._en_delegate)
 
-        self._mobility_delegate = NumberSpinDelegate(value_range=(40, 200), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._mobility_delegate = NumberSpinDelegate(value_range=(40, 200), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(3, self._mobility_delegate)
 
-        self._armor_delegate = NumberSpinDelegate(value_range=(100, 4000), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._armor_delegate = NumberSpinDelegate(value_range=(100, 4000), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(4, self._armor_delegate)
 
-        self._limit_delegate = NumberSpinDelegate(value_range=(200, 999), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._limit_delegate = NumberSpinDelegate(value_range=(200, 999), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(5, self._limit_delegate)
 
         # 步进列：有按钮，键盘只读
-        self._slot_delegate = NumberSpinDelegate(value_range=(1, 4), show_buttons=True, font=fonts.EN_FONT, parent=self._robot_view)
+        self._slot_delegate = NumberSpinDelegate(value_range=(1, 4), show_buttons=True, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(7, self._slot_delegate)
-        self._move_delegate = NumberSpinDelegate(value_range=(3, 9), show_buttons=True, font=fonts.EN_FONT, parent=self._robot_view)
+        self._move_delegate = NumberSpinDelegate(value_range=(3, 9), show_buttons=True, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(8, self._move_delegate)
 
         _enum = EnumData()
-        self._size_delegate = MappingSpinDelegate(mapping=_enum.ROBOT["SIZE"], font=fonts.EN_FONT, parent=self._robot_view)
+        self._size_delegate = MappingSpinDelegate(mapping=_enum.ROBOT["SIZE"], parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(6, self._size_delegate)
 
         # ========== 资金列：无按钮 ==========
 
-        self._rep_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._rep_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(9, self._rep_delegate)
 
-        self._cost_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, font=fonts.EN_FONT, parent=self._robot_view)
+        self._cost_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(10, self._cost_delegate)
 
         # ========== 宽度折叠动画 ==========

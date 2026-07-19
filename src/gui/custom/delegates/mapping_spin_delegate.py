@@ -12,6 +12,7 @@ from typing import Any
 from PySide6.QtGui import QFont
 
 from gui.custom.widgets import MappingSpinBox
+from qfluentwidgets import setFont
 
 from .base_delegate import DataWidgetDelegate
 
@@ -90,4 +91,6 @@ class MappingSpinDelegate(DataWidgetDelegate):
         editor = MappingSpinBox(self._value_mapping, parent)
         if self._font is not None:
             editor.apply_font(self._font)
+        else:
+            setFont(editor, 13)
         return editor

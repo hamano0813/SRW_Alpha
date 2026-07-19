@@ -273,7 +273,7 @@ class FixedTableView(BaseTableView):
 
         # hidden 是切换前的状态，取反得到当前状态
         folded = not hidden
-        self._corner_button.setText("«" if folded else "»")
+        self._corner_button.setText("»" if folded else "«")
         self.changed_hidden(folded)
 
     def changed_hidden(self, folded: bool):

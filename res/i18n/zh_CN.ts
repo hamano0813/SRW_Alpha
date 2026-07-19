@@ -15,17 +15,9 @@
         <source>Clear cache after ROM is rebuilt</source>
         <translation>ROM 重建后自动清理缓存（下次修改需重新解包）</translation>
     </message>
-    <message>
-        <source>Clear cache after ROM rebuilt</source>
-        <translation type="vanished">ROM 重建后自动清理缓存（下次修改需重新解包）</translation>
-    </message>
 </context>
 <context>
     <name>ColorCard</name>
-    <message>
-        <source>Choose color</source>
-        <translation type="vanished">选择颜色</translation>
-    </message>
     <message>
         <location filename="../../src/gui/option/color_card.py" line="25"/>
         <location filename="../../src/gui/option/color_card.py" line="56"/>
@@ -105,18 +97,6 @@
         <location filename="../../src/gui/custom/enums.py" line="151"/>
         <source>Air</source>
         <translation>空</translation>
-    </message>
-    <message>
-        <source>lnd</source>
-        <translation type="vanished">陆</translation>
-    </message>
-    <message>
-        <source>sea</source>
-        <translation type="vanished">海</translation>
-    </message>
-    <message>
-        <source>wall</source>
-        <translation type="vanished">地</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="31"/>
@@ -1668,14 +1648,6 @@
         <translation>消耗EN</translation>
     </message>
     <message>
-        <source>hit rate</source>
-        <translation type="vanished">命中</translation>
-    </message>
-    <message>
-        <source>critical rate</source>
-        <translation type="vanished">会心补正</translation>
-    </message>
-    <message>
         <location filename="../../src/gui/custom/fields.py" line="121"/>
         <source>Default ammo</source>
         <translation>初始弹药</translation>
@@ -2291,14 +2263,6 @@
         <source>OK</source>
         <translation>确定</translation>
     </message>
-    <message>
-        <source>Path Conflict</source>
-        <translation type="vanished">路径冲突</translation>
-    </message>
-    <message>
-        <source>The save path is the same as the load path. This would overwrite the original ROM file.</source>
-        <translation type="vanished">保存路径与加载路径相同，这将覆盖原始ROM文件。</translation>
-    </message>
 </context>
 <context>
     <name>FontCard</name>
@@ -2567,10 +2531,6 @@ Do you want to overwrite it?</source>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>超级机器人大战α 静态修改器</translation>
     </message>
-    <message>
-        <source>Super Robot Wars α Rom Editor</source>
-        <translation type="vanished">超级机器人大战α 静态修改器</translation>
-    </message>
 </context>
 <context>
     <name>MsgFrame</name>
@@ -2659,10 +2619,6 @@ Do you want to overwrite it?</source>
         <translation>ROM设置</translation>
     </message>
     <message>
-        <source>Rom Settings</source>
-        <translation type="vanished">ROM设置</translation>
-    </message>
-    <message>
         <location filename="../../src/gui/option/option_frame.py" line="46"/>
         <location filename="../../src/gui/option/option_frame.py" line="172"/>
         <source>Interface scaling adjusted to</source>
@@ -2688,73 +2644,7 @@ Do you want to overwrite it?</source>
     </message>
 </context>
 <context>
-    <name>ProgressDialog</name>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">关闭</translation>
-    </message>
-</context>
-<context>
-    <name>RobotFrame</name>
-    <message>
-        <source>Robot name</source>
-        <translation type="vanished">机体</translation>
-    </message>
-    <message>
-        <source>Hit points</source>
-        <translation type="vanished">HP</translation>
-    </message>
-    <message>
-        <source>Energy</source>
-        <translation type="vanished">EN</translation>
-    </message>
-    <message>
-        <source>Movement type</source>
-        <translation type="vanished">移动类型</translation>
-    </message>
-    <message>
-        <source>Movement</source>
-        <translation type="vanished">移动力</translation>
-    </message>
-    <message>
-        <source>Mobility</source>
-        <translation type="vanished">运动性</translation>
-    </message>
-    <message>
-        <source>Armor</source>
-        <translation type="vanished">装甲</translation>
-    </message>
-    <message>
-        <source>Limit</source>
-        <translation type="vanished">限界</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation type="vanished">体积</translation>
-    </message>
-    <message>
-        <source>Parts slot</source>
-        <translation type="vanished">零件插槽</translation>
-    </message>
-</context>
-<context>
     <name>RomCard</name>
-    <message>
-        <source>Rom Files</source>
-        <translation type="vanished">ROM文件</translation>
-    </message>
-    <message>
-        <source>Configure the ROM file paths</source>
-        <translation type="vanished">配置ROM文件路径</translation>
-    </message>
-    <message>
-        <source>Load ROM</source>
-        <translation type="vanished">加载ROM</translation>
-    </message>
-    <message>
-        <source>Save ROM</source>
-        <translation type="vanished">保存ROM</translation>
-    </message>
     <message>
         <location filename="../../src/gui/option/rom_card.py" line="164"/>
         <location filename="../../src/gui/option/rom_card.py" line="188"/>
@@ -2774,25 +2664,10 @@ Do you want to overwrite it?</source>
         <translation>输出 ROM 文件</translation>
     </message>
     <message>
-        <source>Rom Settings</source>
-        <translation type="vanished">ROM设置</translation>
-    </message>
-    <message>
         <location filename="../../src/gui/option/rom_card.py" line="164"/>
         <location filename="../../src/gui/option/rom_card.py" line="189"/>
         <source>Configure the ROM settings</source>
         <translation>配置ROM设置</translation>
-    </message>
-</context>
-<context>
-    <name>SnmsgFrame</name>
-    <message>
-        <source>snmsgs</source>
-        <translation type="vanished">文本</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation type="vanished">剧情文本</translation>
     </message>
 </context>
 <context>
@@ -2852,10 +2727,6 @@ Do you want to overwrite it?</source>
         <source>Cost</source>
         <translation>资金</translation>
     </message>
-    <message>
-        <source>Movement type</source>
-        <translation type="vanished">移动类型</translation>
-    </message>
 </context>
 <context>
     <name>UnitPanel</name>
@@ -2888,22 +2759,6 @@ Do you want to overwrite it?</source>
         <location filename="../../src/gui/robot/unit_panel.py" line="132"/>
         <source>Space</source>
         <translation>宇</translation>
-    </message>
-    <message>
-        <source>Grd</source>
-        <translation type="vanished">陆</translation>
-    </message>
-    <message>
-        <source>Wtr</source>
-        <translation type="vanished">海</translation>
-    </message>
-    <message>
-        <source>Spc</source>
-        <translation type="vanished">宇</translation>
-    </message>
-    <message>
-        <source>Movement type</source>
-        <translation type="vanished">移动类型</translation>
     </message>
 </context>
 <context>

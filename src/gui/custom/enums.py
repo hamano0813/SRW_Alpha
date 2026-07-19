@@ -26,7 +26,8 @@ class EnumData(QObject):
                 self.tr("Sea"),   # 海 / 海
                 self.tr("Wall"),  # 地 / 地
             ],
-            "ADAPT": {0x0: 'ー', 0x1: 'D', 0x2: 'C', 0x3: 'B', 0x4: 'A'}
+            "ADAPT": {0x0: 'ー', 0x1: 'D', 0x2: 'C', 0x3: 'B', 0x4: 'A'},
+            "OPTION": {0x0: 'V2ガンダム', 0x1: 'ヒュッケバインMK-Ⅲ', 0xFF: '一一'},
         }
         self.SCENARIO = {
             0x00: ("[00]", self.tr("Unified"), self.tr("Stage 0"), self.tr("Prologue")),  # '共通', '第０話', 'プロローグ'),

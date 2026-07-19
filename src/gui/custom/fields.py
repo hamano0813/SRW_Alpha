@@ -86,12 +86,12 @@ class FieldMapping(QObject):
             self.tr("Comb Seq"): "csn",  # 合体序 / 合体番
             self.tr("Core Unit"): "core",  # 核心机体 / コアユニット
             self.tr("Comb Cnt"): "count",  # 合体数量 / 合体数
-            self.tr("Option parts system"): "option",  # 机体换装 / ユニット換装
+            self.tr("Option Parts"): "option",  # 机体换装 / ユニット換装
             self.tr("Background music"): "bgm",  # BGM / BGM
             self.tr("Air"): "air",  # 空 / 空
-            self.tr("Ground"): "grd",  # 陆 / 陸
-            self.tr("Water"): "wtr",  # 海 / 海
-            self.tr("Space"): "spc",  # 宇 / 宇
+            self.tr("Lnd"): "grd",  # 陆 / 陸
+            self.tr("Sea"): "wtr",  # 海 / 海
+            self.tr("Spc"): "spc",  # 宇 / 宇
             self.tr("Weapons"): "weapons",  # 武器列表 / 武器リスト
         }
         return mapping
@@ -121,9 +121,9 @@ class FieldMapping(QObject):
             self.tr("Default ammo"): "ammod",  # 初始弹药 / 初期弾数
             self.tr("Maximum ammo"): "ammom",  # 最大弹药 / 最大弾数
             self.tr("Air"): "air",  # 空 / 空
-            self.tr("Ground"): "grd",  # 陆 / 陸
-            self.tr("Water"): "wtr",  # 海 / 海
-            self.tr("Space"): "spc",  # 宇 / 宇
+            self.tr("Lnd"): "grd",  # 陆 / 陸
+            self.tr("Sea"): "wtr",  # 海 / 海
+            self.tr("Spc"): "spc",  # 宇 / 宇
         }
         return mapping
 
@@ -149,9 +149,9 @@ class FieldMapping(QObject):
             self.tr("Nature"): "nature",  # 性格 / 性格
             self.tr("Friendship group"): "fsg",  # 气力组 / 気力グループ
             self.tr("Air"): "air",  # 空 / 空
-            self.tr("Ground"): "grd",  # 陆 / 陸
-            self.tr("Water"): "wtr",  # 海 / 海
-            self.tr("Space"): "spc",  # 宇 / 宇
+            self.tr("Lnd"): "grd",  # 陆 / 陸
+            self.tr("Sea"): "wtr",  # 海 / 海
+            self.tr("Spc"): "spc",  # 宇 / 宇
         }
         return mapping
 

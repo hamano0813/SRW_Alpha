@@ -25,13 +25,14 @@ class NumberCompSpin(PanelEditor):
     """
 
     def __init__(self, field: str, value_range: tuple[int, int] | None = None,
-                 show_sign: bool = False, parent=None):
+                 show_sign: bool = False, editable: bool = True, parent=None):
         """初始化数值微调框
 
         Args:
             field: 数据字典中对应的键名
             value_range: (最小值, 最大值)，None 默认 (0, 9999)
             show_sign: 是否强制显示正号
+            editable: 是否允许键盘输入
             parent: 父 QWidget
         """
         super().__init__(field, parent)
@@ -40,7 +41,7 @@ class NumberCompSpin(PanelEditor):
 
         # ========== 内嵌微调框 ==========
 
-        self._spin = _ProxySpin(min_val, max_val, show_sign, self)
+        self._spin = _ProxySpin(min_val, max_val, show_sign, editable, self)
         self._spin.setRange(min_val, max_val)
         self._spin.valueChanged.connect(self._on_value_changed)
 
@@ -108,16 +109,17 @@ class NumberCompSpin(PanelEditor):
 class _ProxySpin(VerticalSpinBox):
     """数值步进微调框 - 代理 VerticalSpinBox，添加符号显示"""
 
-    def __init__(self, min_val: int, max_val: int, show_sign: bool, parent=None):
+    def __init__(self, min_val: int, max_val: int, show_sign: bool, editable: bool, parent=None):
         """初始化数值步进微调框
 
         Args:
             min_val: 最小值
             max_val: 最大值
             show_sign: 是否强制显示正号
+            editable: 是否允许键盘输入
             parent: 父 QWidget
         """
-        super().__init__(parent, editable=False)
+        super().__init__(parent, editable=editable)
         self._show_sign = show_sign
 
     def textFromValue(self, value: int) -> str:

@@ -16,12 +16,7 @@ from qfluentwidgets import fontStyleSheet
 
 # ========== 日文字体 ==========
 
-JP_FONT = {
-    "family": "Yu Gothic UI Semibold",
-    "size": 14,
-    "weight": QFont.Weight.Normal,
-    "italic": False,
-}
+JP_FONT = {"family": "Yu Gothic UI Semibold", "size": 14, "weight": QFont.Weight.Normal, "italic": False}
 
 # 预编译为 QFont 并生成 QSS
 _jp_qfont = QFont(JP_FONT["family"])
@@ -35,12 +30,7 @@ JP_QFONT = _jp_qfont
 
 # ========== 西文字体 ==========
 
-EN_FONT = {
-    "family": "Segoe UI",
-    "size": 14,
-    "weight": QFont.Weight.DemiBold,
-    "italic": False,
-}
+EN_FONT = {"family": "Segoe UI Semibold", "size": 14, "weight": QFont.Weight.Normal, "italic": False}
 
 _en_qfont = QFont(EN_FONT["family"])
 _en_qfont.setPixelSize(EN_FONT["size"])

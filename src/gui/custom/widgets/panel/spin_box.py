@@ -97,6 +97,7 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
             parent: 父 QWidget
             editable: 是否允许键盘输入（默认 True）。False 时禁用输入框和文字选中。
         """
+        super().__init__(parent)
         self._editable = editable
         self.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         self.lineEdit().setTextMargins(0, 0, 26, 0)

@@ -27,7 +27,16 @@ from qfluentwidgets import (
 import config
 import utils
 from core.rom import Rom
-from gui import HomeFrame, PilotFrame, SnmsgFrame, OptionFrame, RobotFrame
+from gui import (
+    DictionaryFrame,
+    HomeFrame,
+    OptionFrame,
+    PilotFrame,
+    RobotFrame,
+    ScriptFrame,
+    SndataFrame,
+    SnmsgFrame,
+)
 from gui.custom.fields import FieldMapping
 
 from .custom import CustomIcon
@@ -63,7 +72,7 @@ class MainWindow(FluentWindow):
     def init_ui(self):
         """初始化界面：启动画面 → 注册导航页 → 加载语言"""
         loop = QEventLoop(self)
-        QTimer.singleShot(3000, loop.quit)
+        QTimer.singleShot(5000, loop.quit)
 
         self.resize(*self._SIZE)
         self.setResizeEnabled(False)
@@ -83,8 +92,17 @@ class MainWindow(FluentWindow):
         self.pilot_frame = PilotFrame(self._field, self)
         self.addSubInterface(self.pilot_frame, CustomIcon.PILOT, self.tr("Pilot"))
 
-        self.message_frame = SnmsgFrame(self._field, self)
-        self.addSubInterface(self.message_frame, CustomIcon.SNMSG, self.tr("Snmsg"))
+        self.snmsg_frame = SnmsgFrame(self._field, self)
+        self.addSubInterface(self.snmsg_frame, CustomIcon.SNMSG, self.tr("Message"))
+
+        self.sndata_frame = SndataFrame(self._field, self)
+        self.addSubInterface(self.sndata_frame, CustomIcon.SNDATA, self.tr("Scenario"))
+
+        self.script_frame = ScriptFrame(self._field, self)
+        self.addSubInterface(self.script_frame, CustomIcon.SCRIPT, self.tr("Script"))
+
+        self.dictionary_frame = DictionaryFrame(self._field, self)
+        self.addSubInterface(self.dictionary_frame, CustomIcon.DICTIONARY, self.tr("Dictionary"))
 
         self.option_frame = OptionFrame(self)
         self.addSubInterface(self.option_frame, CustomIcon.OPTION, self.tr("Options"), position=NavigationItemPosition.BOTTOM)
@@ -124,8 +142,11 @@ class MainWindow(FluentWindow):
 
         self.home_frame.resetUI()
         self.robot_frame.resetUI()
-        self.message_frame.resetUI()
         self.pilot_frame.resetUI()
+        self.snmsg_frame.resetUI()
+        self.sndata_frame.resetUI()
+        self.script_frame.resetUI()
+        self.dictionary_frame.resetUI()
         self.option_frame.resetUI()
 
         for panel_item in self.navigationInterface.panel.items.values():
@@ -148,12 +169,18 @@ class MainWindow(FluentWindow):
         self.translate_frame("EditorFrame", "Home")
         self.translate_frame("RobotFrame", "Robot")
         self.translate_frame("PilotFrame", "Pilot")
-        self.translate_frame("MessageFrame", "Snmsg")
+        self.translate_frame("MessageFrame", "Message")
+        self.translate_frame("SndataFrame", "Scenario")
+        self.translate_frame("ScriptFrame", "Script")
+        self.translate_frame("DictionaryFrame", "Dictionary")
         self.translate_frame("OptionFrame", "Options")
         self.home_frame.translateUI()
         self.robot_frame.translateUI()
         self.pilot_frame.translateUI()
-        self.message_frame.translateUI()
+        self.snmsg_frame.translateUI()
+        self.sndata_frame.translateUI()
+        self.script_frame.translateUI()
+        self.dictionary_frame.translateUI()
         self.option_frame.translateUI()
 
     def translate_frame(self, frame: str, title: str):
@@ -164,7 +191,7 @@ class MainWindow(FluentWindow):
         """解析缓存数据并设置到机器人编辑器"""
         self._rom.parse_cache()
         self.robot_frame.set_rom_data(self._rom.data)
-        self.message_frame.set_rom_data(self._rom.data)
+        self.snmsg_frame.set_rom_data(self._rom.data)
 
     def build_data(self):
         """构建缓存数据（暂未实现）"""

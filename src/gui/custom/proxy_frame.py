@@ -22,10 +22,10 @@ class ProxyFrame(QFrame):
         """遍历所有直接子控件，调用实现了 resetUI 的子控件"""
         for child in self.children():
             if isinstance(child, QWidget) and hasattr(child, "resetUI"):
-                child.resetUI()
+                child.resetUI()  # type:ignore
 
     def translateUI(self):
         """遍历所有直接子控件，调用实现了 translateUI 的子控件"""
         for child in self.children():
             if isinstance(child, QWidget) and hasattr(child, "translateUI"):
-                child.translateUI()
+                child.translateUI()  # type:ignore

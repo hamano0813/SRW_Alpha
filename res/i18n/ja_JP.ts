@@ -2523,36 +2523,47 @@ Do you want to overwrite it?</source>
         <translation type="vanished">スーパーロボット大戦α ROMエディター</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="78"/>
+        <location filename="../../src/gui/main_window.py" line="87"/>
         <source>Home</source>
         <translation>概要</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="81"/>
+        <location filename="../../src/gui/main_window.py" line="90"/>
         <source>Robot</source>
         <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="87"/>
-        <source>Snmsg</source>
-        <translation>テキスト</translation>
+        <location filename="../../src/gui/main_window.py" line="96"/>
+        <source>Message</source>
+        <translation>メッセージ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="84"/>
+        <location filename="../../src/gui/main_window.py" line="99"/>
+        <source>Scenario</source>
+        <translation>シナリオ</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/main_window.py" line="102"/>
+        <source>Script</source>
+        <translation>脚本</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/main_window.py" line="105"/>
+        <source>Dictionary</source>
+        <translation>図鑑</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/main_window.py" line="93"/>
         <source>Pilot</source>
         <translation>パイロット</translation>
     </message>
     <message>
-        <source>Message</source>
-        <translation type="vanished">テキスト</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/main_window.py" line="90"/>
+        <location filename="../../src/gui/main_window.py" line="108"/>
         <source>Options</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/main_window.py" line="147"/>
+        <location filename="../../src/gui/main_window.py" line="168"/>
         <source>Super Robot Wars α ROM Editor</source>
         <translation>スーパーロボット大戦α ROMエディター</translation>
     </message>
@@ -2560,7 +2571,7 @@ Do you want to overwrite it?</source>
 <context>
     <name>MsgFrame</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_frame.py" line="110"/>
+        <location filename="../../src/gui/snmsg/msg_frame.py" line="113"/>
         <source>message</source>
         <translation>シナリオメッセージ</translation>
     </message>
@@ -2783,57 +2794,57 @@ Do you want to overwrite it?</source>
 <context>
     <name>UnitFrame</name>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="165"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="162"/>
         <source>robot name</source>
         <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="166"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="163"/>
         <source>hit points</source>
         <translation>HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="167"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="164"/>
         <source>energy</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="168"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="165"/>
         <source>mobility</source>
         <translation>運動性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="169"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="166"/>
         <source>armor</source>
         <translation>装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="170"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="167"/>
         <source>limit</source>
         <translation>限界</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="171"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="168"/>
         <source>size</source>
         <translation>サイズ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="172"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="169"/>
         <source>parts slot</source>
         <translation>パーツスロット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="173"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="170"/>
         <source>movement</source>
         <translation>移動力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="174"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="171"/>
         <source>repair cost</source>
         <translation>修理費</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="175"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="172"/>
         <source>cost</source>
         <translation>資金</translation>
     </message>
@@ -2845,28 +2856,32 @@ Do you want to overwrite it?</source>
 <context>
     <name>UnitPanel</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="48"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="98"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="49"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="122"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="65"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="126"/>
         <source>air</source>
         <translation>空</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="70"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="128"/>
         <source>ground</source>
         <translation>陸</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="75"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="130"/>
         <source>water</source>
         <translation>海</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="80"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="132"/>
         <source>space</source>
         <translation>宇</translation>
     </message>
@@ -2895,19 +2910,19 @@ Do you want to overwrite it?</source>
     <name>_FilterCard</name>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="27"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="51"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="57"/>
         <source>Search</source>
         <translation>検索</translation>
     </message>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="32"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="52"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="58"/>
         <source>Enter text to filter messages</source>
         <translation>文字を入力してメッセージをフィルタ</translation>
     </message>
     <message>
         <location filename="../../src/gui/snmsg/msg_panel.py" line="35"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="53"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="59"/>
         <source>filter...</source>
         <translation>フィルタ...</translation>
     </message>
@@ -2915,20 +2930,20 @@ Do you want to overwrite it?</source>
 <context>
     <name>_GotoCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="64"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="119"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="70"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
         <source>Go to</source>
         <translation>行指定</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="69"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="120"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="75"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="132"/>
         <source>Enter hex row number to locate</source>
         <translation>16進数の行番号を入力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="72"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="121"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="78"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="133"/>
         <source>hex row...</source>
         <translation>16進行...</translation>
     </message>
@@ -2936,20 +2951,20 @@ Do you want to overwrite it?</source>
 <context>
     <name>_SpeakerCard</name>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="131"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="174"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="143"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="192"/>
         <source>Speaker</source>
         <translation>話者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="136"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="175"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="148"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="193"/>
         <source>Select a speaker to filter messages</source>
         <translation>話者を選択してメッセージをフィルタ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="139"/>
-        <location filename="../../src/gui/snmsg/msg_panel.py" line="176"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="151"/>
+        <location filename="../../src/gui/snmsg/msg_panel.py" line="194"/>
         <source>all speakers</source>
         <translation>全話者</translation>
     </message>

@@ -86,6 +86,7 @@ class _StayOpenMenu(RoundMenu):
 
     def _onItemClicked(self, item):
         """点击菜单项时触发对应 action（不自动关闭菜单）"""
+        action = item.data(Qt.ItemDataRole.UserRole)
         if action not in self._actions or not action.isEnabled():
             return
         if self.view.itemWidget(item) and not action.property("selectable"):

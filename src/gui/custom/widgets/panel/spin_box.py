@@ -49,6 +49,7 @@ class SpinArrowButton(QToolButton):
 
     def paintEvent(self, e):
         """自绘箭头图标，根据悬停/按下/禁用状态调整透明度"""
+        painter = QPainter(self)
         painter.setRenderHints(QPainter.RenderHint.Antialiasing)
 
         if not self.isEnabled():
@@ -148,6 +149,7 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         Args:
             isVisible: True 显示上下箭头，False 隐藏
         """
+        super().setSymbolVisible(isVisible)
         self._up_btn.setVisible(isVisible)
         self._dn_btn.setVisible(isVisible)
 

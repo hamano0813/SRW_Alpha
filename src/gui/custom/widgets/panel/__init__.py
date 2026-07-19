@@ -12,6 +12,7 @@ Classes:
 """
 
 from .bit_combobox import BitComboBox
+from .mapping_combobox import MappingComboBox
 from .mapping_compspin import MappingCompSpin
 from .number_compspin import NumberCompSpin
 from .panel_editor import PanelEditor
@@ -19,6 +20,7 @@ from .panel_editor import PanelEditor
 __all__ = [
     "PanelEditor",
     "BitComboBox",
+    "MappingComboBox",
     "MappingCompSpin",
     "NumberCompSpin",
 ]

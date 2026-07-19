@@ -114,15 +114,15 @@ class Rom:
 
     # ========== 全局索引观察者模式 ==========
 
-    def observe(self, data_type: str, callback: Callable, extras: dict | None = None) -> None:
+    def observe(self, data_type: str, callback: Callable, supplements: dict | None = None) -> None:
         """注册观察者，在指定数据类型更新时接收推送
 
         Args:
             data_type: 数据类型 "robots" | "pilots" | "snmsgs"
             callback: 接收合并后 dict/list 的回调函数
-            extras: dict 类型的额外键值对（仅 robots/pilots 有效）
+            supplements: dict 类型的额外键值对（仅 robots/pilots 有效）
         """
-        self._observers.setdefault(data_type, []).append((callback, extras))
+        self._observers.setdefault(data_type, []).append((callback, supplements))
 
     def unobserve(self, data_type: str, callback: Callable) -> None:
         """取消注册观察者"""
@@ -171,20 +171,20 @@ class Rom:
             self._cached["snmsgs"] = [item["snmsg"] for item in raw_data["snmsgs"]]
 
     def _dispatch(self, data_type: str) -> None:
-        """遍历观察者，合并 extras 后推送，自动清理已销毁的观察者"""
+        """遍历观察者，合并 supplements 后推送，自动清理已销毁的观察者"""
         cached = self._cached.get(data_type)
         if cached is None:
             return
 
         survivors: list[tuple[Callable, dict | None]] = []
-        for cb, extras in self._observers.get(data_type, []):
+        for cb, supplements in self._observers.get(data_type, []):
             try:
-                if extras and isinstance(cached, dict):
-                    merged = cached | extras
+                if supplements and isinstance(cached, dict):
+                    merged = cached | supplements
                 else:
                     merged = cached
                 cb(merged)
-                survivors.append((cb, extras))
+                survivors.append((cb, supplements))
             except RuntimeError:
                 pass  # 观察者所属 widget 已销毁，自动清理
         self._observers[data_type] = survivors

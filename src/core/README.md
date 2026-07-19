@@ -33,7 +33,7 @@ Frame 槽函数 → rom.notify("robots")  /  "pilots"  /  "snmsgs"
     │
     ▼
 Rom._rebuild(<type>)  ── 全量重建静态缓存字典/列表
-    │  base | extras 合并
+    │  base | supplements 合并
     ▼
 遍历该类型的所有观察者，逐一推送
     │ try/except 自动清理失效观察者
@@ -47,7 +47,7 @@ Rom._rebuild(<type>)  ── 全量重建静态缓存字典/列表
 
 ```python
 rom.observe("robots", self._on_robot_list)
-rom.observe("pilots", self._on_pilot_list, extras={
+rom.observe("pilots", self._on_pilot_list, supplements={
     0x7D0: "[7D0]主人公",
     0x7D1: "[7D1]恋人",
     0x7FA: "[7FA]？？？",
@@ -59,9 +59,9 @@ rom.observe("snmsgs", self._on_snmsg_list)
 
 - `data_type: str` — 观察的数据类型，可选 `"robots"` / `"pilots"` / `"snmsgs"`
 - `callback: Callable` — 推送时调用的函数，接收一个参数（合并后的完整 dict/list）
-- `extras: dict | None` — **仅 dict 类型使用**。调用者可在此传入一些不在原始数据中的特殊键值对，
-  推送时通过 `base | extras` 合并到完整 dict 中返回。
-  `extras` 优先级更高，可用于替换或扩充真实条目。
+- `supplements: dict | None` — **仅 dict 类型使用**。调用者可在此传入一些不在原始数据中的特殊键值对，
+  推送时通过 `base | supplements` 合并到完整 dict 中返回。
+  `supplements` 优先级更高，可用于替换或扩充真实条目。
 
 ### 取消注册
 
@@ -138,17 +138,17 @@ def snmsgs(self) -> list[str]:
 | pilots | 同 robots | `{0: "[000]アムロ", 0x7D0: "[7D0]主人公"}` |
 | snmsgs | 直出文本，无序号前缀 | `["１．敵の全滅。", "１．ヱクセリヲンの撃墜。", ...]` |
 
-`robots` 和 `pilots` 使用 `dict` 是因为存在 `extras` 等**不在原始数据中的特殊键**（如程序内存中指定的驾驶员），
-`snmsgs` 使用 `list` 且不支持 `extras`。
+`robots` 和 `pilots` 使用 `dict` 是因为存在 `supplements` 等**不在原始数据中的特殊键**（如程序内存中指定的驾驶员），
+`snmsgs` 使用 `list` 且不支持 `supplements`。
 
 ## 合并顺序
 
 观察者推送时的合并操作：
 ```python
-merged = cached | extras   # Python 3.9+ dict 合并运算符
+merged = cached | supplements   # Python 3.9+ dict 合并运算符
 ```
 
-`extras` 的键会覆盖缓存中的同名键（当调用者需要替换某条真实条目时有用）。
+`supplements` 的键会覆盖缓存中的同名键（当调用者需要替换某条真实条目时有用）。
 
 ## 信号连线（Qt → Rom 的桥梁）
 
@@ -217,10 +217,10 @@ Frame 通过 `self.window().rom` 获取 MainWindow 上的唯一 Rom 实例。
 ```python
 def _notify(self, data_type: str, merged) -> None:
     survivors = []
-    for cb, extras in self._observers.get(data_type, []):
+    for cb, supplements in self._observers.get(data_type, []):
         try:
             cb(merged)
-            survivors.append((cb, extras))
+            survivors.append((cb, supplements))
         except RuntimeError:
             pass  # widget 已销毁，自动清理
     self._observers[data_type] = survivors
@@ -237,6 +237,6 @@ def _notify(self, data_type: str, merged) -> None:
    - 逻辑简单，不存在"某条数据忘记更新"的竞态风险
    - `suspend/resume` 可在批量操作时聚合成一次推送
 
-3. **为什么用 `base | extras` 而不是 `{**base, **extras}`？**  
+3. **为什么用 `base | supplements` 而不是 `{**base, **supplements}`？**  
    Python 3.12 下 `|` 运算符由 C 层单字节码完成，对大量观察者推送时性能略优。
    详情见 [PEP 584](https://peps.python.org/pep-0584/)。

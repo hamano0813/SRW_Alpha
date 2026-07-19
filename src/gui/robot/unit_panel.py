@@ -44,6 +44,17 @@ class UnitPanel(ProxyFrame):
         self._width_anim.setDuration(250)
         self._width_anim.setEasingCurve(QEasingCurve.Type.OutCubic)
 
+        # ========== 变形·合体卡片 ==========
+
+        self._transform_card = HeaderCardWidget(self)
+        self._transform_card.setTitle(self.tr("Transform & Combine"))
+        self._transform_card.setBorderRadius(8)
+        self._transform_card.setSizePolicy(
+            QSizePolicy.Policy.Fixed,
+            QSizePolicy.Policy.Preferred,
+        )
+        self._transform_card.viewLayout.setContentsMargins(12, 8, 12, 8)
+
         # ========== 地形适性卡片 ==========
 
         self._terrain_card = HeaderCardWidget(self)
@@ -106,6 +117,7 @@ class UnitPanel(ProxyFrame):
 
         # 卡片水平包裹，避免卡片被撑宽到面板宽度
         card_hbox = QHBoxLayout()
+        card_hbox.addWidget(self._transform_card)
         card_hbox.addWidget(self._terrain_card)
         card_hbox.addStretch()
         layout.addLayout(card_hbox)
@@ -120,6 +132,7 @@ class UnitPanel(ProxyFrame):
 
     def translateUI(self):
         """刷新卡片标题、标签文本及下拉选项"""
+        self._transform_card.setTitle(self.tr("Transform & Combine"))
         self._terrain_card.setTitle(self.tr("Terrain"))
         # EnumData 在构造时缓存了 tr() 结果，每次刷新重新创建以获取新翻译
         _enum = EnumData()
@@ -142,6 +155,8 @@ class UnitPanel(ProxyFrame):
         self._grd_spin.resetUI()
         self._wtr_spin.resetUI()
         self._spc_spin.resetUI()
+        setFont(self._transform_card)
+        setFont(self._transform_card.headerLabel, 15, QFont.DemiBold)
         setFont(self._terrain_card)
         setFont(self._terrain_card.headerLabel, 15, QFont.DemiBold)
         setFont(self._air_label)

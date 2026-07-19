@@ -8,14 +8,17 @@ Classes:
     PanelEditor:        面板编辑器基类
     BitComboBox:        Bit 位多选下拉框
     MappingCompSpin:    映射微调框
+    NumberCompSpin:     数值微调框
 """
 
 from .bit_combobox import BitComboBox
 from .mapping_compspin import MappingCompSpin
+from .number_compspin import NumberCompSpin
 from .panel_editor import PanelEditor
 
 __all__ = [
     "PanelEditor",
     "BitComboBox",
     "MappingCompSpin",
+    "NumberCompSpin",
 ]

@@ -9,7 +9,7 @@ Classes:
 """
 
 from PySide6.QtCore import Qt, QEasingCurve, QPropertyAnimation, Signal
-from PySide6.QtWidgets import QGridLayout, QVBoxLayout
+from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
 
 from gui.custom.enums import EnumData
 from gui.custom.models.base_model import BaseTableModel
@@ -48,12 +48,15 @@ class UnitPanel(ProxyFrame):
         self._terrain_card = HeaderCardWidget(self)
         self._terrain_card.setTitle(self.tr("Terrain"))
         self._terrain_card.setBorderRadius(8)
-        self._terrain_card.setMaximumWidth(220)
+        self._terrain_card.setSizePolicy(
+            QSizePolicy.Policy.Fixed,
+            QSizePolicy.Policy.Preferred,
+        )
         self._terrain_card.viewLayout.setContentsMargins(12, 8, 12, 8)
 
         # Bit 位多选下拉框 — 移动类型
         self._move_combo = BitComboBox("type", values=[], sep="")
-        self._move_combo.setFixedWidth(144)
+        self._move_combo.setMinimumWidth(100)
         self._move_combo.dataChanged.connect(self.panelDataChanged)
 
         # 地形适性微调框 × 4
@@ -61,34 +64,35 @@ class UnitPanel(ProxyFrame):
 
         self._air_label = BodyLabel(self.tr("air"), self._terrain_card)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self._terrain_card)
-        self._air_spin.setFixedWidth(100)
+        self._air_spin.setFixedWidth(70)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
         self._grd_label = BodyLabel(self.tr("ground"), self._terrain_card)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self._terrain_card)
-        self._grd_spin.setFixedWidth(100)
+        self._grd_spin.setFixedWidth(70)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
         self._wtr_label = BodyLabel(self.tr("water"), self._terrain_card)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self._terrain_card)
-        self._wtr_spin.setFixedWidth(100)
+        self._wtr_spin.setFixedWidth(70)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
         self._spc_label = BodyLabel(self.tr("space"), self._terrain_card)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self._terrain_card)
-        self._spc_spin.setFixedWidth(100)
+        self._spc_spin.setFixedWidth(70)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)
 
         _grid = QGridLayout()
         _grid.setSpacing(4)
-        _grid.addWidget(self._move_combo, 0, 0, 1, 2, Qt.AlignmentFlag.AlignRight)
-        _grid.addWidget(self._air_label, 1, 0)
+        _grid.setHorizontalSpacing(8)
+        _grid.addWidget(self._move_combo, 0, 0, 1, 2)
+        _grid.addWidget(self._air_label, 1, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._air_spin, 1, 1)
-        _grid.addWidget(self._grd_label, 2, 0)
+        _grid.addWidget(self._grd_label, 2, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._grd_spin, 2, 1)
-        _grid.addWidget(self._wtr_label, 3, 0)
+        _grid.addWidget(self._wtr_label, 3, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._wtr_spin, 3, 1)
-        _grid.addWidget(self._spc_label, 4, 0)
+        _grid.addWidget(self._spc_label, 4, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._spc_spin, 4, 1)
         self._terrain_card.viewLayout.addLayout(_grid)
         self._terrain_card.viewLayout.addStretch()
@@ -98,7 +102,12 @@ class UnitPanel(ProxyFrame):
         layout = QVBoxLayout(self)
         layout.setSpacing(8)
         layout.setContentsMargins(8, 8, 8, 8)
-        layout.addWidget(self._terrain_card)
+
+        # 卡片水平包裹，避免卡片被撑宽到面板宽度
+        card_hbox = QHBoxLayout()
+        card_hbox.addWidget(self._terrain_card)
+        card_hbox.addStretch()
+        layout.addLayout(card_hbox)
         layout.addStretch()
 
         self.setLayout(layout)

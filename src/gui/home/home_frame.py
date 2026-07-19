@@ -100,6 +100,7 @@ class HomeFrame(QFrame):
             self.tr("Message"),
             self.tr("Scenario"),
             self.tr("Intermission"),
+            self.tr("Dictionary"),
         ]
         self._datas = {
             self.tr("Robot"): [
@@ -120,6 +121,7 @@ class HomeFrame(QFrame):
             self.tr("Intermission"): [
                 "SCRIPT.BIN",
             ],
+            self.tr("Dictionary"): ["DR.BIN"],
         }
 
         self.tree = XmlTreeView(self._headers, self._datas, self)
@@ -333,6 +335,7 @@ class HomeFrame(QFrame):
             self.tr("Message"),
             self.tr("Scenario"),
             self.tr("Intermission"),
+            self.tr("Dictionary"),
         ]
         self._datas = {
             self.tr("Robot"): ["ROBOT.RAF"],
@@ -349,6 +352,7 @@ class HomeFrame(QFrame):
             self.tr("Intermission"): [
                 "SCRIPT.BIN",
             ],
+            self.tr("Dictionary"): ["DR.BIN"],
         }
         self.tree.setHeaderLabels(self._headers)
 

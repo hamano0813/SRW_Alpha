@@ -80,7 +80,7 @@ class MainWindow(FluentWindow):
         self.init_pos()
         self.show()
 
-        self.navigationInterface.setExpandWidth(150)
+        self.navigationInterface.setExpandWidth(160)
         self.navigationInterface.setReturnButtonVisible(False)
 
         self.home_frame = HomeFrame(self)
@@ -99,7 +99,7 @@ class MainWindow(FluentWindow):
         self.addSubInterface(self.sndata_frame, CustomIcon.SNDATA, self.tr("Scenario"))
 
         self.script_frame = ScriptFrame(self._field, self)
-        self.addSubInterface(self.script_frame, CustomIcon.SCRIPT, self.tr("Script"))
+        self.addSubInterface(self.script_frame, CustomIcon.SCRIPT, self.tr("Intermission"))
 
         self.dictionary_frame = DictionaryFrame(self._field, self)
         self.addSubInterface(self.dictionary_frame, CustomIcon.DICTIONARY, self.tr("Dictionary"))
@@ -171,7 +171,7 @@ class MainWindow(FluentWindow):
         self.translate_frame("PilotFrame", "Pilot")
         self.translate_frame("MessageFrame", "Message")
         self.translate_frame("SndataFrame", "Scenario")
-        self.translate_frame("ScriptFrame", "Script")
+        self.translate_frame("ScriptFrame", "Intermission")
         self.translate_frame("DictionaryFrame", "Dictionary")
         self.translate_frame("OptionFrame", "Options")
         self.home_frame.translateUI()

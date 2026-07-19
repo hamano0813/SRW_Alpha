@@ -2497,7 +2497,7 @@ Do you want to overwrite it?</source>
         <location filename="../../src/gui/home/home_frame.py" line="333"/>
         <location filename="../../src/gui/home/home_frame.py" line="340"/>
         <source>Message</source>
-        <translation>テキスト</translation>
+        <translation>メッセージ</translation>
     </message>
     <message>
         <location filename="../../src/gui/home/home_frame.py" line="101"/>
@@ -2514,6 +2514,12 @@ Do you want to overwrite it?</source>
         <location filename="../../src/gui/home/home_frame.py" line="349"/>
         <source>Intermission</source>
         <translation>インターミッション</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="103"/>
+        <location filename="../../src/gui/home/home_frame.py" line="336"/>
+        <source>Dictionary</source>
+        <translation>図鑑</translation>
     </message>
 </context>
 <context>
@@ -2544,8 +2550,8 @@ Do you want to overwrite it?</source>
     </message>
     <message>
         <location filename="../../src/gui/main_window.py" line="102"/>
-        <source>Script</source>
-        <translation>脚本</translation>
+        <source>Intermission</source>
+        <translation>インターミッション</translation>
     </message>
     <message>
         <location filename="../../src/gui/main_window.py" line="105"/>

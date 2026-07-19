@@ -2515,6 +2515,12 @@ Do you want to overwrite it?</source>
         <source>Intermission</source>
         <translation>幕间</translation>
     </message>
+    <message>
+        <location filename="../../src/gui/home/home_frame.py" line="103"/>
+        <location filename="../../src/gui/home/home_frame.py" line="336"/>
+        <source>Dictionary</source>
+        <translation>图鉴</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -2531,7 +2537,7 @@ Do you want to overwrite it?</source>
     <message>
         <location filename="../../src/gui/main_window.py" line="96"/>
         <source>Message</source>
-        <translation>消息</translation>
+        <translation>文本</translation>
     </message>
     <message>
         <location filename="../../src/gui/main_window.py" line="99"/>
@@ -2540,8 +2546,8 @@ Do you want to overwrite it?</source>
     </message>
     <message>
         <location filename="../../src/gui/main_window.py" line="102"/>
-        <source>Script</source>
-        <translation>剧本</translation>
+        <source>Intermission</source>
+        <translation>幕间</translation>
     </message>
     <message>
         <location filename="../../src/gui/main_window.py" line="105"/>

@@ -16,7 +16,7 @@ Classes:
 
 from typing import Any
 
-from PySide6.QtCore import Signal
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QWidget
 
@@ -47,6 +47,9 @@ class PanelEditor(QWidget):
         self._model: BaseTableModel | None = None
         self._row: int = -1
         self._value: Any = None
+
+        # 所有面板编辑器禁用右键菜单
+        self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
 
     # ========== 数据读写 ==========
 

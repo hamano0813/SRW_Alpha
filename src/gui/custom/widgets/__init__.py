@@ -4,6 +4,7 @@
 按用途拆分为两个子包：
   - table/    表格内的编辑器控件（TableEditor 子类，供 delegates 使用）
   - panel/    面板上的搜索/过滤/定位控件（待填充）
+  - spin_box  独立微调框组件（FluentIcon 箭头，可复用于映射/数值微调）
 
 顶层 re-export table 子包的所有导出，保持已有 imports 向后兼容。
 

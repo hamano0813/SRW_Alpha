@@ -47,7 +47,7 @@ class TransformCard(CardHeader):
     def resetUI(self) -> None:
         """刷新卡片字体"""
         setFont(self)
-        setFont(self.headerLabel, 15, QFont.DemiBold)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
 
 
 class TerrainCard(CardHeader):
@@ -145,7 +145,7 @@ class TerrainCard(CardHeader):
         self._wtr_spin.resetUI()
         self._spc_spin.resetUI()
         setFont(self)
-        setFont(self.headerLabel, 15, QFont.DemiBold)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         setFont(self._air_label)
         setFont(self._grd_label)
         setFont(self._wtr_label)

@@ -20,7 +20,7 @@ from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QWidget
 
-from gui.custom.models.base_model import BaseTableModel
+from gui.custom.models import BaseTableModel
 
 
 class PanelEditor(QWidget):

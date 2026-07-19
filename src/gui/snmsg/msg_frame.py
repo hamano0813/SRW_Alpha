@@ -17,7 +17,7 @@ from qfluentwidgets import TableItemDelegate
 from gui.custom import fonts
 from gui.custom.delegates import MultiLineDelegate
 from gui.custom.proxy_frame import ProxyFrame
-from gui.custom.views.fixed_view import FixedTableView
+from gui.custom.views import FixedTableView
 
 
 class _SingleColumnDelegate(TableItemDelegate):

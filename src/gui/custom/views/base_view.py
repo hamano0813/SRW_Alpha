@@ -17,7 +17,7 @@ from PySide6.QtWidgets import QAbstractItemView
 from qfluentwidgets import TableView
 
 from gui.custom.fields import FieldMapping
-from gui.custom.models.base_model import BaseTableModel
+from gui.custom.models import BaseTableModel
 
 
 class BaseTableView(TableView):

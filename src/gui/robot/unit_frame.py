@@ -20,9 +20,9 @@ from gui.custom.delegates import (
     SingleLineDelegate,
 )
 from gui.custom.enums import EnumData
-from gui.custom.models.base_model import BaseTableModel
+from gui.custom.models import BaseTableModel
 from gui.custom.proxy_frame import ProxyFrame
-from gui.custom.views.fixed_view import FixedTableView
+from gui.custom.views import FixedTableView
 
 
 class UnitFrame(ProxyFrame):

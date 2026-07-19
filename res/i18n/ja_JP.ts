@@ -2698,31 +2698,31 @@ Do you want to overwrite it?</source>
     <name>TerrainCard</name>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="145"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="214"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="224"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="157"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="217"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="159"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="227"/>
         <source>Air</source>
         <translation>空</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="162"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="219"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="166"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="229"/>
         <source>Ground</source>
         <translation>陸</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="167"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="221"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="173"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="231"/>
         <source>Water</source>
         <translation>海</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="172"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="223"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="180"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="233"/>
         <source>Space</source>
         <translation>宇</translation>
     </message>

@@ -81,8 +81,8 @@ class RobotFrame(ProxyFrame):
     def _on_panel_data_changed(self, field: str) -> None:
         """面板编辑器修改数据后通知 model 刷新对应单元格"""
         model = self._unit_frame.robot_view.source_model()
-        for col, header in enumerate(model._headers):
-            if model._fields.get_field(header) == field:
+        for col, header in enumerate(model.headers):
+            if model.fields.get_field(header) == field:
                 idx = model.index(self._current_source_row, col)
                 model.dataChanged.emit(idx, idx, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
                 break

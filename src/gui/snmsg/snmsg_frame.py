@@ -61,9 +61,9 @@ class SnmsgFrame(ProxyFrame):
         self._msg_frame.set_field(fields)
         # ========== 配置代理模型过滤 ==========
 
-        self._msg_frame._message_view.proxy_model().setFilterKeyColumn(0)
-        self._msg_frame._message_view.proxy_model().setFilterCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
-        self._msg_frame._message_view.source_model().dataChanged.connect(self._on_data_changed)
+        self._msg_frame.message_view.proxy_model().setFilterKeyColumn(0)
+        self._msg_frame.message_view.proxy_model().setFilterCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
+        self._msg_frame.message_view.source_model().dataChanged.connect(self._on_data_changed)
 
         # ========== 右侧面板 ==========
 
@@ -88,7 +88,7 @@ class SnmsgFrame(ProxyFrame):
     def showEvent(self, event):
         """每次显示时把焦点交给表格，右侧面板输入框不抢焦点"""
         super().showEvent(event)
-        self._msg_frame._message_view.setFocus()
+        self._msg_frame.message_view.setFocus()
 
     # ========== 搜索过滤（互斥） ==========
 
@@ -104,7 +104,7 @@ class SnmsgFrame(ProxyFrame):
         self._panel.clear_speaker()
         self._panel.clear_goto()
         self._mutex_guard = False
-        self._msg_frame._message_view.proxy_model().setFilterFixedString(text)
+        self._msg_frame.message_view.proxy_model().setFilterFixedString(text)
 
     def _on_goto(self, row: int) -> None:
         """跳转到十六进制行号指定的源行，同时清空文本过滤和说话人
@@ -118,9 +118,9 @@ class SnmsgFrame(ProxyFrame):
         self._panel.clear_filter()
         self._panel.clear_speaker()
         # 清理其他过滤（guard 阻止了对应的信号槽，需手动清除）
-        self._msg_frame._message_view.proxy_model().setFilterFixedString("")
+        self._msg_frame.message_view.proxy_model().setFilterFixedString("")
         self._mutex_guard = False
-        self._msg_frame._message_view.select_source_row(row)
+        self._msg_frame.message_view.select_source_row(row)
 
     def _on_speaker_filter(self, text: str) -> None:
         """按说话人过滤表格行，同时清空文本过滤和跳转
@@ -136,14 +136,14 @@ class SnmsgFrame(ProxyFrame):
         self._mutex_guard = False
         text = text.strip()
         if not text:
-            self._msg_frame._message_view.proxy_model().setFilterFixedString("")
+            self._msg_frame.message_view.proxy_model().setFilterFixedString("")
         else:
             pattern = QRegularExpression.escape(text) + "「"
-            self._msg_frame._message_view.proxy_model().setFilterRegularExpression(pattern)
+            self._msg_frame.message_view.proxy_model().setFilterRegularExpression(pattern)
 
     def _on_data_changed(self):
         """表格数据编辑后重新提取说话人列表"""
-        data = self._msg_frame._message_view.source_model()._data
+        data = self._msg_frame.message_view.source_model().get_data()
         self._panel.set_speakers(_extract_speakers(data))
 
     # ========== 数据解析 ==========

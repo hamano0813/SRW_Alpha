@@ -180,7 +180,27 @@ class BaseTableModel(QAbstractTableModel):
         """
         return Qt.ItemFlag.ItemIsSelectable
 
+    # ========== 只读属性 ==========
+
+    @property
+    def headers(self) -> list[str]:
+        """获取有序表头列表（列索引 → 表头）"""
+        return self._headers
+
+    @property
+    def fields(self) -> "FieldMapping | None":
+        """获取字段映射查询器"""
+        return self._fields
+
     # ========== 工具方法 ==========
+
+    def get_data(self) -> list[dict[str, Any]]:
+        """获取全部原始数据列表
+
+        Returns:
+            所有行的数据 dict 列表
+        """
+        return self._data
 
     def get_row_data(self, row: int) -> dict[str, Any]:
         """获取指定行的原始 dict 数据

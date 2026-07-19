@@ -32,9 +32,9 @@ class Option(QConfig):
     language = OptionsConfigItem("QFluentWidgets", "Language", "en_US", OptionsValidator(["en_US", "zh_CN", "ja_JP"]))
 
     # 各语言字体设置
-    en_font = ConfigItem("QFluentWidgets", "ENFont", "Segoe UI")
+    en_font = ConfigItem("QFluentWidgets", "ENFont", "Segoe UI Semibold")
     cn_font = ConfigItem("QFluentWidgets", "CNFont", "Microsoft YaHei UI")
-    jp_font = ConfigItem("QFluentWidgets", "JPFont", "Yu Gothic UI")
+    jp_font = ConfigItem("QFluentWidgets", "JPFont", "Yu Gothic UI Semibold")
 
     # ROM 文件配置
     source_rom = ConfigItem("Rom", "SourceRom", "")

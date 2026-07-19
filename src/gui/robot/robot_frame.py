@@ -57,6 +57,10 @@ class RobotFrame(ProxyFrame):
 
         self._unit_frame.sClicked.connect(self._on_row_clicked)
 
+        # ========== 名称编辑 → Rom 观察者通知 ==========
+
+        self._unit_frame.robot_view.columnZeroEdited.connect(self._on_robot_name_edited)
+
         # ========== 列折叠 ↔ 面板联动 ==========
 
         self._unit_frame.robot_view.foldToggled.connect(self._on_fold_toggled)
@@ -86,6 +90,13 @@ class RobotFrame(ProxyFrame):
                 idx = model.index(self._current_source_row, col)
                 model.dataChanged.emit(idx, idx, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
                 break
+
+    # ========== 名称编辑通知 ==========
+
+    def _on_robot_name_edited(self) -> None:
+        """机体名称列编辑后，通知 Rom 重建 robots 索引并推送观察者"""
+        rom = self.window().rom
+        rom.notify("robots")
 
     # ========== 折叠联动 ==========
 

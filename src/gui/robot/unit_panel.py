@@ -22,6 +22,7 @@ from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
 from gui.custom.widgets import BitComboBox, MappingCompSpin, NumberCompSpin
 from gui.custom.widgets.card_header import CardHeader
+from gui.custom.widgets.special import RobotComboBox
 
 
 class TransformCard(CardHeader):
@@ -72,6 +73,9 @@ class TransformCard(CardHeader):
         self._lbl_core.setFixedWidth(66)
         self._lbl_core.setAlignment(_align)
 
+        self._core_combo = RobotComboBox("core", parent=self, supplements={0xFFFF: "一一"})
+        self._core_combo.dataChanged.connect(self.panelDataChanged)
+
         # ========== 网格布局 ==========
 
         _grid = QGridLayout()
@@ -88,6 +92,7 @@ class TransformCard(CardHeader):
         _grid.addWidget(self._lbl_core, 2, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._lbl_cnt, 2, 2, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._cnt_spin, 2, 3)
+        _grid.addWidget(self._core_combo, 3, 0, 1, 4)
         self.viewLayout.addLayout(_grid)
         self.viewLayout.addStretch()
 
@@ -100,6 +105,7 @@ class TransformCard(CardHeader):
         self._cgrp_spin.set_model(model)
         self._csn_spin.set_model(model)
         self._cnt_spin.set_model(model)
+        self._core_combo.set_model(model)
 
     def set_row(self, row: int) -> None:
         """切换行并刷新所有子编辑器"""
@@ -108,6 +114,7 @@ class TransformCard(CardHeader):
         self._cgrp_spin.set_row(row)
         self._csn_spin.set_row(row)
         self._cnt_spin.set_row(row)
+        self._core_combo.set_row(row)
 
     def translateUI(self) -> None:
         """刷新卡片标题与标签"""

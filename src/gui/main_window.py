@@ -208,6 +208,10 @@ class MainWindow(FluentWindow):
         self.rom.parse_cache()
         self.robot_frame.set_rom_data(self.rom.data)
         self.snmsg_frame.set_rom_data(self.rom.data)
+        # 首次数据就绪，推送至所有观察者
+        for key in ("robots", "pilots", "snmsgs"):
+            if key in self.rom.data:
+                self.rom.notify(key)
         self._enable_features()
 
     def build_data(self):

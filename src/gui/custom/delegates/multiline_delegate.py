@@ -12,6 +12,7 @@ from typing import Any
 from PySide6.QtCore import QModelIndex
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
+from qfluentwidgets import setFont
 
 from gui.custom.widgets import MultiLineEdit
 
@@ -23,14 +24,36 @@ class MultiLineDelegate(DataWidgetDelegate):
 
     widget_class = MultiLineEdit
 
-    def __init__(self, font: QFont | dict | None = None, parent=None):
+    def __init__(self, font: QFont | dict | None = None, parent=None, max_lines: int = 0):
         """初始化多行文本列委托
 
         Args:
             font: 编辑器字体，QFont 实例或字体属性字典
             parent: 父对象
+            max_lines: 最大行数，0 表示不限，3 表示最多 3 行
         """
         super().__init__(parent=parent, font=font)
+        self._max_lines: int = max_lines
+
+    # ========== 编辑器创建 ==========
+
+    def createEditor(self, parent: QWidget, option, index) -> Any:
+        """创建 MultiLineEdit 并设置行数上限
+
+        Args:
+            parent: 编辑器父控件
+            option: 样式选项
+            index: 单元格索引
+
+        Returns:
+            MultiLineEdit 实例
+        """
+        editor = MultiLineEdit(parent, max_lines=self._max_lines)
+        if self._font is not None:
+            editor.apply_font(self._font)
+        else:
+            setFont(editor, 13)
+        return editor
 
     # ========== 编辑器几何 ==========
 

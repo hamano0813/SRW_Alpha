@@ -33,6 +33,7 @@ class _FilterCard(HeaderCardWidget):
         )
         self._filter_edit = SearchLineEdit(self)
         self._filter_edit.setPlaceholderText(self.tr("filter..."))
+        self._filter_edit.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self._filter_edit.searchSignal.connect(self.filterChanged)
         self._filter_edit.clearSignal.connect(self.filterCleared)
         self._filter_edit.returnPressed.connect(
@@ -45,6 +46,11 @@ class _FilterCard(HeaderCardWidget):
         layout.addWidget(self._filter_edit)
 
         self.viewLayout.addLayout(layout)
+
+    def mousePressEvent(self, e):
+        """点击卡片空白区域取消子控件焦点"""
+        self.setFocus()
+        super().mousePressEvent(e)
 
     def translateUI(self):
         """刷新卡片标题和提示文本"""
@@ -70,6 +76,7 @@ class _GotoCard(HeaderCardWidget):
         )
         self._goto_edit = SearchLineEdit(self)
         self._goto_edit.setPlaceholderText(self.tr("hex row..."))
+        self._goto_edit.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self._goto_edit.setValidator(
             QRegularExpressionValidator(QRegularExpression("[0-9A-Fa-f]*"), self._goto_edit))
         self._goto_edit.searchSignal.connect(self._on_search)
@@ -85,6 +92,11 @@ class _GotoCard(HeaderCardWidget):
         layout.addWidget(self._goto_edit)
 
         self.viewLayout.addLayout(layout)
+
+    def mousePressEvent(self, e):
+        """点击卡片空白区域取消子控件焦点"""
+        self.setFocus()
+        super().mousePressEvent(e)
 
     def _on_text_changed(self, text: str):
         """输入时过滤非法字符并自动转大写
@@ -140,6 +152,7 @@ class _SpeakerCard(HeaderCardWidget):
         self._speaker_combo.setClearButtonEnabled(True)
         self._speaker_combo.setMaxVisibleItems(10)
         self._speaker_combo.setReadOnly(True)
+        self._speaker_combo.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self._speaker_combo.currentTextChanged.connect(self.speakerChanged)
 
         layout = QVBoxLayout()
@@ -149,6 +162,11 @@ class _SpeakerCard(HeaderCardWidget):
         layout.addWidget(self._speaker_combo)
 
         self.viewLayout.addLayout(layout)
+
+    def mousePressEvent(self, e):
+        """点击卡片空白区域取消子控件焦点"""
+        self.setFocus()
+        super().mousePressEvent(e)
 
     def set_speakers(self, speakers: list[str]) -> None:
         """设置说话人下拉列表
@@ -220,6 +238,13 @@ class MsgPanel(ProxyFrame):
         layout.addStretch()
 
         self.setLayout(layout)
+
+    def mousePressEvent(self, e):
+        """点击面板空白区域取消子控件焦点"""
+        focused = self.focusWidget()
+        if focused:
+            focused.clearFocus()
+        super().mousePressEvent(e)
 
     def set_speakers(self, speakers: list[str]) -> None:
         """设置说话人下拉列表

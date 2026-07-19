@@ -25,14 +25,17 @@ class MultiLineEdit(QPlainTextEdit, TableEditor):
     获得焦点时光标自动定位到末尾。
     """
 
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, max_lines: int = 0):
         """初始化多行文本编辑器
 
         Args:
             parent: 父 QWidget
+            max_lines: 最大行数，0 表示不限，3 表示最多 3 行（即 2 个换行符）
         """
         QPlainTextEdit.__init__(self, parent)
         TableEditor.__init__(self, parent)
+
+        self._max_lines: int = max_lines
 
         self.setFrameShape(QFrame.Shape.NoFrame)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
@@ -52,6 +55,20 @@ class MultiLineEdit(QPlainTextEdit, TableEditor):
         cursor = self.textCursor()
         cursor.movePosition(QTextCursor.MoveOperation.End)
         self.setTextCursor(cursor)
+
+    # ========== 键盘事件 ==========
+
+    def keyPressEvent(self, e):
+        """拦截回车键，已达行数上限时不响应
+
+        Args:
+            e: 键盘事件
+        """
+        if self._max_lines > 0 and e.key() in (Qt.Key.Key_Return, Qt.Key.Key_Enter):
+            max_nl = self._max_lines - 1
+            if self.toPlainText().count("\n") >= max_nl:
+                return  # 已达上限，忽略回车
+        super().keyPressEvent(e)
 
     # ========== 主题色 ==========
 
@@ -88,8 +105,11 @@ class MultiLineEdit(QPlainTextEdit, TableEditor):
 
     def format_value(self) -> None:
         """将 _value 同步到显示，光标定位到末尾"""
+        text = str(self._value) if self._value is not None else ""
+        text = self._truncate_newlines(text)
+        self._value = text
         self.blockSignals(True)
-        self.setPlainText(str(self._value) if self._value is not None else "")
+        self.setPlainText(text)
         cursor = self.textCursor()
         cursor.movePosition(QTextCursor.MoveOperation.End)
         self.setTextCursor(cursor)
@@ -125,9 +145,46 @@ class MultiLineEdit(QPlainTextEdit, TableEditor):
         """
         return str(value) if value is not None else ""
 
+    # ========== 行数限制 ==========
+
+    def _truncate_newlines(self, text: str) -> str:
+        """将文本截断至行数上限，超出部分丢弃
+
+        Args:
+            text: 原始文本
+
+        Returns:
+            截断后的文本，不超过 _max_lines 行
+        """
+        if self._max_lines <= 0:
+            return text
+        max_nl = self._max_lines - 1
+        if text.count("\n") <= max_nl:
+            return text
+        # 找到第 (max_nl+1) 个换行符，在此截断
+        pos = -1
+        for _ in range(max_nl + 1):
+            pos = text.index("\n", pos + 1)
+        return text[:pos]
+
     # ========== 内部槽 ==========
 
     def _on_text_changed(self) -> None:
-        """用户输入时同步 _value 并发射 dataChanged"""
-        self._value = self.toPlainText()
+        """用户输入时同步 _value 并发射 dataChanged
+
+        输入时回车键已被 keyPressEvent 拦截，此处仅作为粘贴等操作的防护截断。
+        """
+        text = self.toPlainText()
+        text = self._truncate_newlines(text)
+        if text != self.toPlainText():
+            self.blockSignals(True)
+            self.setPlainText(text)
+            cursor = self.textCursor()
+            cursor.movePosition(QTextCursor.MoveOperation.End)
+            self.setTextCursor(cursor)
+            self.blockSignals(False)
+            self._value = text
+            self.dataChanged.emit(self._value)
+            return
+        self._value = text
         self.dataChanged.emit(self._value)

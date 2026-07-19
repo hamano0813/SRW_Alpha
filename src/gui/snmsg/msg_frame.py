@@ -10,7 +10,7 @@ Classes:
 
 from typing import Any, Callable
 
-from PySide6.QtCore import Qt, Signal
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
 from gui.custom import fonts
@@ -48,10 +48,8 @@ class _SingleColumnDelegate(TableItemDelegate):
 class MsgFrame(ProxyFrame):
     """消息列表子框架 - 表格显示 + 搜索过滤容器
 
-    封装 FixedTableView，对外暴露 set_field / set_data / set_title 和 sClicked 信号。
+    封装 FixedTableView，对外暴露 set_field / set_data / set_title。
     """
-
-    sClicked = Signal(int, dict)
 
     def __init__(self, parent=None):
         """初始化消息列表子框架
@@ -64,11 +62,16 @@ class MsgFrame(ProxyFrame):
         # ========== 消息表格 ==========
 
         self._message_view = FixedTableView()
-        self._message_view.sClicked.connect(self.sClicked.emit)
+
+        # ========== 模型字体 ==========
+
+        self._message_view.source_model().set_font({
+            0: fonts.JP_FONT,
+        })
 
         # ========== 委托编辑器 ==========
 
-        self._name_delegate = MultiLineDelegate(font=fonts.JP_FONT, parent=self._message_view)
+        self._name_delegate = MultiLineDelegate(font=fonts.JP_FONT, max_lines=3, parent=self._message_view)
         self._message_view.setItemDelegateForColumn(0, self._name_delegate)
 
         # 替换默认背景绘制的委托（单列时左右都画圆角）

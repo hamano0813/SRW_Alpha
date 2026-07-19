@@ -10,7 +10,7 @@ Classes:
 
 from collections import Counter
 
-from PySide6.QtCore import QRegularExpression, Qt, Signal
+from PySide6.QtCore import QRegularExpression, Qt
 from PySide6.QtWidgets import QHBoxLayout, QWidget
 
 from gui.custom.proxy_frame import ProxyFrame
@@ -42,8 +42,6 @@ def _extract_speakers(data: list[dict]) -> list[str]:
 class SnmsgFrame(ProxyFrame):
     """消息编辑框架 - 左表右面板布局"""
 
-    sClicked = Signal(int, dict)
-
     def __init__(self, fields, parent=None):
         """初始化消息编辑框架
 
@@ -61,8 +59,6 @@ class SnmsgFrame(ProxyFrame):
 
         self._msg_frame = MsgFrame()
         self._msg_frame.set_field(fields)
-        self._msg_frame.sClicked.connect(self.sClicked.emit)
-
         # ========== 配置代理模型过滤 ==========
 
         self._msg_frame._message_view.proxy_model().setFilterKeyColumn(0)

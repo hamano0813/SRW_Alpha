@@ -48,7 +48,7 @@ class RobotComboBox(MappingComboBox):
             return
         mw = self.window()
         if mw and hasattr(mw, "rom"):
-            mw.rom.observe("robots", self._cb, supplements=self._supplements)
+            mw.rom.observe("robots", self._cb, supplements=self._supplements)  # type: ignore
             self._registered = True
 
     def set_model(self, model) -> None:

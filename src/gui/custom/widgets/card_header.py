@@ -34,6 +34,13 @@ class CardHeader(HeaderCardWidget):
         self.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
         self.viewLayout.setContentsMargins(12, 8, 12, 8)
 
+    def mousePressEvent(self, e):
+        """点击卡片空白区域时交出焦点"""
+        focused = self.focusWidget()
+        if focused:
+            focused.clearFocus()
+        super().mousePressEvent(e)
+
     # ========== 外层面板转发接口 ==========
 
     def set_model(self, model: BaseTableModel) -> None:

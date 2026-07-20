@@ -103,6 +103,7 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         self.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         self.lineEdit().setTextMargins(0, 0, 26, 0)
         self.hBoxLayout.setContentsMargins(0, 0, 0, 0)
+        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
 
         # 禁用 SpinBoxBase 的右键菜单
         self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
@@ -136,12 +137,31 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
             le.installEventFilter(self)
 
     def eventFilter(self, obj, e):
-        """非编辑模式下拦截 lineedit 的鼠标事件，禁止选中文字"""
+        """监听 lineedit 事件 + 窗口鼠标点击交出焦点"""
+        # 非编辑模式下拦截 lineedit 的鼠标事件
         if obj == self.lineEdit() and not self._editable:
             t = e.type()
             if t in (QEvent.Type.MouseButtonPress, QEvent.Type.MouseButtonRelease, QEvent.Type.MouseButtonDblClick, QEvent.Type.MouseMove):
                 return True
+        # 窗口级鼠标点击 — 点击到 spin 范围外则交出焦点
+        if e.type() == QEvent.Type.MouseButtonPress and self.hasFocus():
+            pos = e.globalPosition().toPoint() if hasattr(e, 'globalPosition') else e.globalPos()
+            if not self.rect().contains(self.mapFromGlobal(pos)):
+                self.clearFocus()
+                return False
         return super().eventFilter(obj, e)
+
+    def focusInEvent(self, e):
+        """获得焦点时监听父窗口鼠标事件"""
+        super().focusInEvent(e)
+        if w := self.window():
+            w.installEventFilter(self)
+
+    def focusOutEvent(self, e):
+        """失去焦点时移除父窗口事件监听"""
+        if w := self.window():
+            w.removeEventFilter(self)
+        super().focusOutEvent(e)
 
     def setSymbolVisible(self, isVisible: bool):
         """显示/隐藏步进箭头

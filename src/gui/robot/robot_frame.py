@@ -54,6 +54,7 @@ class RobotFrame(SmoothScrollArea):
 
         self._container = ProxyFrame()
         self._container.resize(800, 32)  # 初始尺寸，第一次 resizeEvent 会修正
+        self.setWidget(self._container)  # 先挂入窗口树，set_model 才能通过 window() 访问 Rom
 
         # ========== 上层：机体主表（覆盖在左侧） ==========
 
@@ -71,8 +72,6 @@ class RobotFrame(SmoothScrollArea):
 
         # 默认隐藏右侧面板，仅在表格折叠后显示
         self._robot_panel.setVisible(False)
-
-        self.setWidget(self._container)
 
         # 初始状态：水平滚动条关闭，Panel 在 table_max_width 右侧（被遮挡）
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)

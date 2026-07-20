@@ -16,7 +16,7 @@ Classes:
     RobotFrame: 机体编辑框架（可平滑滚动）
 """
 
-from PySide6.QtCore import Qt
+from PySide6.QtCore import QTimer, Qt
 from qfluentwidgets import SmoothScrollArea
 
 from gui.custom.models import BaseTableModel
@@ -130,9 +130,9 @@ class RobotFrame(SmoothScrollArea):
         self._container.resize(total_w, vp_h)
 
     def resizeEvent(self, event):
-        """窗口缩放时重算布局"""
+        """窗口缩放后刷新布局（延后一帧确保 viewport 已更新）"""
         super().resizeEvent(event)
-        self._update_layout()
+        QTimer.singleShot(0, self._update_layout)
 
     # ========== 行点击 ==========
 

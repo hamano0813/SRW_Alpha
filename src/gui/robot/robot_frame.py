@@ -180,6 +180,7 @@ class RobotFrame(SmoothScrollArea):
             freed_width:  折叠释放的像素宽度（此方案中不使用）
         """
         self._folded = folded
+        self._robot_panel.setVisible(folded)
         if folded:
             self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         else:

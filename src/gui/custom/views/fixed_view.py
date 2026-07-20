@@ -132,7 +132,6 @@ class FixedTableView(BaseTableView):
     # ========== 名称列编辑转发 ==========
 
     columnZeroEdited = Signal()  # 第 0 列编辑完成，转发自 FixedTableModel
-    widthChanged = Signal(int, int)
 
     CORNER_QSS = "QTableView QTableCornerButton::section { background-color: transparent; border: none; }"
     BUTTON_QSS = "QPushButton {{color: {color}; background-color: transparent; border: none; font-size: 20px; font-weight: 800;}}"

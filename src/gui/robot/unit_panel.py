@@ -452,18 +452,4 @@ class UnitPanel(ProxyFrame):
         self._extra_bits_card.set_row(row)
         self._bottom_card.set_row(row)
 
-    # ========== 面板展开/收起 ==========
-
-    def set_fold_mode(self, folded: bool, target_width: int = 0) -> None:
-        """切换面板折叠状态
-
-        折叠时用 setFixedWidth 固定面板宽度，展开时设为 0（由外层 hide() 配合）。
-
-        Args:
-            folded:   True=面板展开显示，False=面板收起
-            target_width: 折叠状态下面板的目标宽度（仅 folded=True 有效）
-        """
-        if folded:
-            self.setFixedWidth(target_width)
-        else:
-            self.setFixedWidth(0)
+    # ========== 面板展开/收起（由 RobotFrame 直接控制 hide/show） ==========

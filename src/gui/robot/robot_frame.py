@@ -23,6 +23,7 @@ from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
 from gui.robot.unit_frame import UnitFrame
 from gui.robot.unit_panel import UnitPanel
+from gui.robot.weapon import WeaponFrame
 
 
 class RobotFrame(SmoothScrollArea):
@@ -69,6 +70,12 @@ class RobotFrame(SmoothScrollArea):
 
         # 确保 Panel 的 layout 已激活，sizeHint 准确
         self._robot_panel.layout().activate()
+
+        # ========== 武器编辑框架（右下角，折叠后显示） ==========
+
+        self._weapon_frame = WeaponFrame(self._container)
+        self._weapon_frame.set_field(fields)
+        self._weapon_frame.setVisible(False)
 
         # 默认隐藏右侧面板，仅在表格折叠后显示
         self._robot_panel.setVisible(False)
@@ -120,9 +127,14 @@ class RobotFrame(SmoothScrollArea):
         # Panel 固定缩进位置（始终在 table_max 处，从不移动）
         panel_x = table_max
 
+        # 右侧纵向分割：UnitPanel 在上，WeaponFrame 在下
+        panel_h = self._robot_panel.sizeHint().height()
+        weapon_h = max(120, vp_h - panel_h)
+
         # 设定几何
         self._unit_frame.setGeometry(0, 0, table_w, vp_h)
-        self._robot_panel.setGeometry(panel_x, 0, panel_w, vp_h)
+        self._robot_panel.setGeometry(panel_x, 0, panel_w, panel_h)
+        self._weapon_frame.setGeometry(panel_x, panel_h, panel_w, weapon_h)
 
         # 容器总宽：展开态只需填满视口（Panel 在视口右侧被遮挡），
         # 折叠态需容纳 Table + Panel 以便滚动条生效
@@ -151,6 +163,11 @@ class RobotFrame(SmoothScrollArea):
         """
         self._current_source_row = source_row
         self._robot_panel.set_row(source_row)
+
+        # 同步武器数据（引用传递，delegate 写回直接对准原位）
+        if self._rom_data is not None:
+            weapons = self._rom_data["robots"]["robots"][source_row]["weapons"]
+            self._weapon_frame.set_data(weapons)
 
     # ========== 面板编辑回写 ==========
 
@@ -184,6 +201,7 @@ class RobotFrame(SmoothScrollArea):
         """
         self._folded = folded
         self._robot_panel.setVisible(folded)
+        self._weapon_frame.setVisible(folded)
         if folded:
             self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         else:
@@ -210,6 +228,8 @@ class RobotFrame(SmoothScrollArea):
             self._unit_frame.robot_view.selectRow(0)
             self._on_row_clicked(0, model)
 
+        # 武器数据已在 _on_row_clicked 中同步
+
         # 数据加载后重新定位
         self._update_layout()
 
@@ -218,10 +238,12 @@ class RobotFrame(SmoothScrollArea):
     def resetUI(self):
         """刷新所有子控件并更新布局"""
         self._container.resetUI()
+        self._weapon_frame.resetUI()
         self._update_layout()
 
     def translateUI(self):
         """刷新所有子控件翻译并更新布局"""
         self._container.translateUI()
+        self._weapon_frame.translateUI()
         # 翻译可能导致列宽变化，重新计算定位
         self._update_layout()

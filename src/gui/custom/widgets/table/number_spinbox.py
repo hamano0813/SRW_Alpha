@@ -84,13 +84,14 @@ class NumberSpinBox(QSpinBox, TableEditor):
     禁止键盘手动输入，仅由按钮步进。
     """
 
-    def __init__(self, value_range: tuple[int, int] | None = None, show_sign: bool = False, show_buttons: bool = True, parent=None):
+    def __init__(self, value_range: tuple[int, int] | None = None, show_sign: bool = False, show_buttons: bool = True, read_only: bool = True, parent=None):
         """初始化数值编辑器
 
         Args:
             value_range: (最小值, 最大值)，None 表示无限制
             show_sign: 是否强制显示正号
             show_buttons: 是否显示左右微调按钮
+            read_only: 文本框是否只读（仅按钮步进），False 时可键盘输入
             parent: 父 QWidget
         """
         self._min: int = 0
@@ -100,6 +101,7 @@ class NumberSpinBox(QSpinBox, TableEditor):
 
         self._show_sign = show_sign
         self._show_buttons = show_buttons
+        self._read_only = read_only if show_buttons else False  # 无按钮时只能靠键盘输入
 
         QSpinBox.__init__(self, parent)
         TableEditor.__init__(self, parent)
@@ -116,15 +118,16 @@ class NumberSpinBox(QSpinBox, TableEditor):
         # ========== 行编辑：透明 ==========
 
         le = self.lineEdit()
-        le.setReadOnly(self._show_buttons)  # 有按钮时只读（仅按钮步进），无按钮时可键盘输入
+        le.setReadOnly(self._read_only)  # True=仅按钮步进，False=可键盘输入
         le.setFrame(False)
         le.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         # 有按钮时居中（与左右按钮对称），无按钮时右对齐
         if self._show_buttons:
             le.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            le.setStyleSheet("background: transparent; border: none; padding-right: 1px; ")
         else:
             le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-        le.setStyleSheet("background: transparent; border: none; ")
+            le.setStyleSheet("background: transparent; border: none; ")
         if self._show_buttons:
             # 按钮模式（只读）：禁止文字选中
             le.selectionChanged.connect(lambda: le.setSelection(0, 0))
@@ -138,7 +141,22 @@ class NumberSpinBox(QSpinBox, TableEditor):
 
         self.valueChanged.connect(self._on_value_changed)
 
-    # ========== 焦点 ==========
+    # ========== 显示格式 ==========
+
+    def textFromValue(self, value: int) -> str:
+        """将整数值格式化为显示文本
+
+        show_sign 时正值加 "+" 前缀，与 format_display 保持一致。
+
+        Args:
+            value: 整数值
+
+        Returns:
+            显示文本
+        """
+        if self._show_sign and value >= 0:
+            return f"+{value}"
+        return str(value)
 
     def focusInEvent(self, e):
         """获得焦点：按钮模式走默认，键盘模式光标移到末尾

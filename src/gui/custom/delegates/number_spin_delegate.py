@@ -30,6 +30,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
         value_range: tuple[int, int] | None = None,
         show_sign: bool = False,
         show_buttons: bool = True,
+        read_only: bool = True,
         font: QFont | dict | None = None,
         parent=None,
     ):
@@ -39,6 +40,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
             value_range: (最小值, 最大值)，None 表示无限制
             show_sign: 是否强制显示正号
             show_buttons: 是否显示左右微调按钮
+            read_only: 文本框是否只读（仅按钮步进），False 时可键盘输入
             font: 编辑器字体，QFont 实例或字体属性字典
             parent: 父对象
         """
@@ -46,6 +48,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
         self._value_range: tuple[int, int] | None = value_range
         self._show_sign = show_sign
         self._show_buttons = show_buttons
+        self._read_only = read_only
 
     def createEditor(self, parent, option, index) -> Any:
         """创建 NumberSpinBox 并注入取值范围
@@ -58,7 +61,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
         Returns:
             NumberSpinBox 实例
         """
-        editor = NumberSpinBox(self._value_range, self._show_sign, self._show_buttons, parent)
+        editor = NumberSpinBox(self._value_range, self._show_sign, self._show_buttons, self._read_only, parent)
         if self._font is not None:
             editor.apply_font(self._font)
         else:

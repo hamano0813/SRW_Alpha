@@ -61,6 +61,113 @@ class EnumData(QObject):
                 self.tr("Mass-Produced"),  # 量产 / 量産
                 self.tr("Capacity & Launch"),  # 搭载・出击 / 搭載・発進
             ],
+            "SERIES": [
+                self.tr("Gundam Series(UC)"),  # 高达系(UC) / ガンダム系(UC)
+                self.tr("Gundam Series(W)"),  # 高达系(W) / ガンダム系(W)
+                self.tr("Mazinger Series"),  # 魔神系 / マジンガー系
+                self.tr("Dunbine Series"),  # 丹拜因系 / ダンバイン系
+                self.tr("Dunbine Series(Fairy)"),  # 丹拜因系(妖精) / ダンバイン系(妖精)
+                self.tr("Macross Series"),  # 超时空要塞系 / マクロス系
+                self.tr("Original Series(Real)"),  # 原创系(真实) / オリジナル系(リアル)
+                self.tr("Raideen Series"),  # 莱汀系 / ライディーン系
+                self.tr("Zero System"),  # 零系统 / ゼロシステム
+                self.tr("Titan Series"),  # 泰坦系 / ダイターン系
+            ],
+        }
+        self.BGM = {
+            0x00: self.tr("Combattler V's Theme"),  # コン・バトラーVのテーマ
+            0x01: self.tr("Sirocco! Gale! Cybuster"),  # 熱風！疾風！サイバスター
+            0x02: self.tr("Dark Prison"),  # ダークプリズン
+            0x03: self.tr("Flapper Girl"),  # フラッパー・ガール
+            0x04: self.tr("Burning Love"),  # バーニング・ラブ
+            0x05: self.tr("Come Here! Daitarn 3"),  # カムヒア！ダイターン3
+            0x06: self.tr("Fly, Dunbine"),  # ダンバインとぶ
+            0x07: self.tr("To Afar"),  # 彼方へ
+            0x08: self.tr("Invisible"),  # Invisible
+            0x09: self.tr("[0x09]"),  # [0x09]
+            0x0A: self.tr("Twilight Battlefield"),  # 黄昏の戦場
+            0x0B: self.tr("Banquet of Despair"),  # 絶望の宴
+            0x0C: self.tr("The Almighty Arbitrator"),  # 全能なる調停者
+            0x0D: self.tr("Decisive Battle"),  # DECISIVE BATTLE
+            0x0E: self.tr("A Step Forward Into Terror"),  # A STEP FORWARD INTO TERROR
+            0x0F: self.tr("EVA-02"),  # EVA-02
+            0x10: self.tr("The Beast"),  # THE BEAST II
+            0x11: self.tr("Symphony No. 9 Presto 4th Movement"),  # 交響曲 第9番 ニ短調 第４楽章 より
+            0x12: self.tr("Cruel Angel's Thesis"),  # 残酷な天使のテーゼ
+            0x13: self.tr("Soul's Refrain"),  # 魂のルフラン
+            0x14: self.tr("The Winner"),  # THE WINNER
+            0x15: self.tr("Men Of Destiny"),  # MEN OF DESTINY
+            0x16: self.tr("Charge! It's Name is Giant Robo"),  # 出撃！その名はジャイアント・ロボ！
+            0x17: self.tr("Main Title"),  # メイン・タイトル
+            0x18: self.tr("Main Title"),  # MAIN TITLE
+            0x19: self.tr("Getter Robo!"),  # ゲッターロボ！
+            0x1A: self.tr("F91 Gundam, Sortie"),  # F91ガンダム出撃
+            0x1B: self.tr("The Red Comet"),  # 赤い彗星
+            0x1C: self.tr("Stand Up To The Victory"),  # STAND UP TO THE VICTORY
+            0x1D: self.tr("Don't Stop! Carry On!"),  # DON'T STOP! CARRY ON!
+            0x1E: self.tr("Just Communication"),  # JUST COMMUNICATION
+            0x1F: self.tr("Rhythm Emotion"),  # RHYTHM EMOTION
+            0x20: self.tr("White Reflection"),  # WHITE REFLECTION
+            0x21: self.tr("Mobile Suit Battle"),  # モビルスーツ戦 敵機襲来
+            0x22: self.tr("Ship-To-Ship Combat"),  # 艦隊戦
+            0x23: self.tr("Sailing Through Space ~ Zeta, Activate"),  # 宇宙を駆ける ゼータ発動
+            0x24: self.tr("Silent Voice"),  # サイレントヴォイス
+            0x25: self.tr("The Arrow of Fate"),  # 運命の矢
+            0x26: self.tr("Between Victory and Defeat"),  # 勝利と敗北の狭間で
+            0x27: self.tr("For This Planet's Tomorrow"),  # この星の明日のために
+            0x28: self.tr("Advance for Hope, Retreat for Despair"),  # 進路に光明、退路に絶望
+            0x29: self.tr("Swaying Crosshairs"),  # 揺れる照星
+            0x2A: self.tr("For Justice"),  # それぞれの大義のために
+            0x2B: self.tr("Messenger from the Void"),  # 虚空からの使者
+            0x2C: self.tr("Detestable Visitors"),  # 忌むべき訪問者
+            0x2D: self.tr("Dog Fighter"),  # ドッグ・ファイター
+            0x2E: self.tr("All-Out Attack"),  # 総攻撃
+            0x2F: self.tr("500,000 Years of Battle"),  # 50万年の戦い
+            0x30: self.tr("Dog Fight"),  # DOG FIGHT
+            0x31: self.tr("I Am Great Mazinger"),  # おれはグレートマジンガー
+            0x32: self.tr("Mazinger Z"),  # マジンガ-Z
+            0x33: self.tr("Theme of Mazinkaiser"),  # マジンカイザー
+            0x34: self.tr("Raideen the Brave"),  # 勇者ライディーン
+            0x35: self.tr("Ace Attacker"),  # ACE ATTACKER
+            0x36: self.tr("I'm Invincible"),  # 我ニ敵ナシ
+            0x37: self.tr("Vanishing Trooper"),  # VANISHING TROOPER
+            0x38: self.tr("Steel Cockpit"),  # 鋼鉄のコクピット
+            0x39: self.tr("Everywhere You Go"),  # EVERYWHERE YOU GO
+            0x3A: self.tr("Ice Man"),  # ICE MAN
+            0x3B: self.tr("Psychic Energy"),  # PSYCHIC ENERGY
+            0x3C: self.tr("BANPRESTO!"),  # BANPRESTO!
+            0x3D: self.tr("Marionette Messiah"),  # MARIONETTE MESSIAH
+            0x3E: self.tr("The Arrow of Destiny"),  # THE ARROW OF DESTINY
+            0x3F: self.tr("Spirits of Steel ～SUPER ROBOT SPIRITS"),  # 鋼の魂～SUPER ROBOT SPIRITS
+            0x40: self.tr("Time Diver"),  # TIME DIVER
+            0x41: self.tr("Raging Spirits!!"),  # 荒ぶる魂！！
+            0x42: self.tr("[0x42]"),  # [0x42]
+            0x43: self.tr("Peace on a Distant Day"),  # 遠い日の安息
+            0x44: self.tr("For Whom the Bell Dances"),  # 誰がために鐘は踊る
+            0x45: self.tr("What Awaits Before the Hardship"),  # 苦難の先に待つものは
+            0x46: self.tr("Opened Gunport"),  # 開かれた砲門
+            0x47: self.tr("End"),  # 一つの結末
+            0x48: self.tr("Approaching Disaster"),  # 災い来たりて
+            0x49: self.tr("Sad Memory"),  # 悲しい記憶
+            0x4A: self.tr("Premonition of Carnage"),  # 修羅の予感
+            0x4B: self.tr("Aim For the Top! ~Fly High~"),  # トップをねらえ！ ～Fly High～
+            0x4C: self.tr("Commence Operations"),  # 作戦开始
+            0x4D: self.tr("Crisis"),  # 危機
+            0x4E: self.tr("The Song of Voltes V"),  # ボルテスⅤの歌
+            0x4F: self.tr("Let's Combine!"),  # レッツ・コンバイン！
+            0x50: self.tr("In the Name of Daitarn 3"),  # ダイターン3の名のもとに
+            0x51: self.tr("Haram Banjo"),  # 破嵐万丈
+            0x52: self.tr("From the Aqueous Star with Love"),  # 水の星へ愛を込めて
+            0x53: self.tr("My Boyfriend is a Pilot"),  # 私の彼は机师
+            0x54: self.tr("Do You Remember Love?"),  # 愛・おぼえていますか
+            0x55: self.tr("Macross"),  # マクロス
+            0x56: self.tr("Do You Remember Love?"),  # 愛・おぼえていますか
+            0x57: self.tr("Do You Remember Love?"),  # 愛・おぼえていますか
+            0x58: self.tr("The Theme of Z"),  # Zのテーマ
+            0x59: self.tr("The Flying Mazinger Z"),  # 空飛ぶマジンガーZ
+            0x5A: self.tr("Theme of Mazinkaiser"),  # マジンカイザー
+            0x5B: self.tr("I'm Akira"),  # オレは洸だ
+            0x5C: self.tr("Gunbuster March"),  # ガンバスター
         }
         self.SCENARIO = {
             0x00: ("[00]", self.tr("Unified"), self.tr("Stage 0"), self.tr("Prologue")),  # '共通', '第０話', 'プロローグ'),

@@ -13,7 +13,7 @@ from typing import Any, Callable
 
 from PySide6.QtCore import QSortFilterProxyModel, Qt, Signal
 from PySide6.QtWidgets import QAbstractItemView
-from qfluentwidgets import TableView
+from qfluentwidgets import SmoothMode, TableView
 
 from gui.custom.fields import FieldMapping
 from gui.custom.models import BaseTableModel
@@ -57,6 +57,10 @@ class BaseTableView(TableView):
         self.verticalHeader().setStyleSheet(self.VERTICAL_QSS)
         self.verticalHeader().setMinimumSectionSize(28)
         self.horizontalHeader().setStyleSheet(self.HORIZONTAL_QSS)
+
+        self.scrollDelagate.verticalSmoothScroll.setSmoothMode(SmoothMode.NO_SMOOTH)
+        self.scrollDelagate.horizonSmoothScroll.setSmoothMode(SmoothMode.NO_SMOOTH)
+
 
     # ========== 模型绑定 ==========
 

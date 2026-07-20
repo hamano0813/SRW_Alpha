@@ -42,6 +42,7 @@ class RobotFrame(SmoothScrollArea):
         super().__init__(parent)
         self.setObjectName("RobotFrame")
         self.setWidgetResizable(False)
+        self.enableTransparentBackground()
 
         self._rom_data: dict | None = None
         self._current_source_row: int = -1
@@ -67,6 +68,9 @@ class RobotFrame(SmoothScrollArea):
 
         # 确保 Panel 的 layout 已激活，sizeHint 准确
         self._robot_panel.layout().activate()
+
+        # 默认隐藏右侧面板，仅在表格折叠后显示
+        self._robot_panel.setVisible(False)
 
         self.setWidget(self._container)
 

@@ -10,6 +10,8 @@ Classes:
     TransformCard:  变形·合体卡片
     TerrainCard:    地形适性卡片
     AbilitiesCard:  能力列表卡片
+    SeriesCard:     系列卡片
+    BgmCard:        BGM 卡片
     UnitPanel:      机体侧边栏面板
 """
 
@@ -18,6 +20,9 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
 from qfluentwidgets import BodyLabel, setFont
 
+from qfluentwidgets import qconfig
+
+from config import option
 from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
@@ -279,7 +284,7 @@ class AbilitiesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._abil_list)
-        self.setMinimumWidth(200)
+        self.setFixedWidth(240)
 
     # ========== UnitPanel 转发接口 ==========
 
@@ -303,46 +308,92 @@ class AbilitiesCard(CardHeader):
         self._abil_list.resetUI()
 
 
-class _ExtraBitsCard(CardHeader):
-    """占位卡片 - 待实现的额外 Bit 位多选列表（右侧纵向跨两行）"""
+class SeriesCard(CardHeader):
+    """系列卡片 - Bit 位多选系列列表"""
 
     def __init__(self, parent=None):
+        """初始化系列卡片"""
         super().__init__(parent)
-        self.setTitle(self.tr("Extra Bits"))
-        self.setMinimumWidth(160)
+        self.setTitle(self.tr("Series"))
+
+        # ========== Bit 位多选列表 ==========
+
+        self._series_list = BitCheckList("series", parent=self)
+        self._series_list.dataChanged.connect(self.panelDataChanged)
+
+        # 左右边距收窄以贴合滚动条
+        self.viewLayout.setContentsMargins(3, 8, 3, 8)
+        self.viewLayout.addWidget(self._series_list)
+        self.setFixedWidth(240)
+
+    # ========== UnitPanel 转发接口 ==========
 
     def set_model(self, model: BaseTableModel) -> None:
-        pass
+        """注入数据模型，转发至系列列表"""
+        self._series_list.set_model(model)
 
     def set_row(self, row: int) -> None:
-        pass
+        """切换行并刷新系列列表"""
+        self._series_list.set_row(row)
 
     def translateUI(self) -> None:
-        self.setTitle(self.tr("Extra Bits"))
+        """刷新卡片标题与系列列表选项"""
+        self.setTitle(self.tr("Series"))
+        self._series_list.set_values(EnumData().ROBOT["SERIES"])
 
     def resetUI(self) -> None:
+        """刷新所有控件字体"""
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+        self._series_list.resetUI()
 
 
-class _BottomCard(CardHeader):
-    """占位卡片 - 待实现的新卡片（底部横向跨两列）"""
+class BgmCard(CardHeader):
+    """BGM 卡片 - BGM 选择下拉框"""
 
     def __init__(self, parent=None):
+        """初始化 BGM 卡片"""
         super().__init__(parent)
-        self.setTitle(self.tr("New Card"))
-        self.setMinimumWidth(320)
+        self.setTitle("BGM")
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
+
+        # ========== BGM 下拉框 ==========
+
+        _bgm_mapping = EnumData().BGM
+        self._bgm_combo = MappingComboBox("bgm", mapping=_bgm_mapping, parent=self)
+        self._apply_bgm_font()
+        self._bgm_combo.setMinimumWidth(200)
+
+    # ========== 字体策略 ==========
+
+    def _apply_bgm_font(self):
+        """中日界面使用日语字体，英语界面使用默认字体"""
+        lang = qconfig.get(option.language)
+        if lang in ("zh_CN", "ja_JP"):
+            self._bgm_combo.apply_font(JP_FONT)
+            self._bgm_combo.set_dropdown_font(JP_QFONT)
+        self._bgm_combo.dataChanged.connect(self.panelDataChanged)
+
+        self.viewLayout.addWidget(self._bgm_combo)
+
+    # ========== UnitPanel 转发接口 ==========
 
     def set_model(self, model: BaseTableModel) -> None:
-        pass
+        """注入数据模型，转发至 BGM 下拉框"""
+        self._bgm_combo.set_model(model)
 
     def set_row(self, row: int) -> None:
-        pass
+        """切换行并刷新 BGM 下拉框"""
+        self._bgm_combo.set_row(row)
 
     def translateUI(self) -> None:
-        self.setTitle(self.tr("New Card"))
+        """刷新 BGM 映射"""
+        self._bgm_combo.set_mapping(EnumData().BGM)
 
     def resetUI(self) -> None:
+        """刷新所有控件字体（中日界面使用日语字体，英语界面使用默认字体）"""
+        self._bgm_combo.resetUI()  # 先让全局 setFont 刷一遍
+        self._apply_bgm_font()     # 再用 JP 字体覆盖（必要的话）
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
 
@@ -375,17 +426,17 @@ class UnitPanel(ProxyFrame):
         self._abilities_card = AbilitiesCard(self)
         self._abilities_card.panelDataChanged.connect(self.panelDataChanged)
 
-        self._extra_bits_card = _ExtraBitsCard(self)
-        self._extra_bits_card.panelDataChanged.connect(self.panelDataChanged)
+        self._series_card = SeriesCard(self)
+        self._series_card.panelDataChanged.connect(self.panelDataChanged)
 
-        self._bottom_card = _BottomCard(self)
-        self._bottom_card.panelDataChanged.connect(self.panelDataChanged)
+        self._bgm_card = BgmCard(self)
+        self._bgm_card.panelDataChanged.connect(self.panelDataChanged)
 
         # ========== 卡片网格布局 ==========
         #
-        #   (0,0) TransformCard  │  (0,1) TerrainCard  │  (0,2) AbilitiesCard  │  (0,3) [待添加]
+        #   (0,0) TransformCard  │  (0,1) TerrainCard  │  (0,2) AbilitiesCard  │  (0,3) SeriesCard
         #                         │                     │       row0-1          │       row0-1
-        #   (1,0) [待添加] col0-1 │                     │                       │
+        #   (1,0) BgmCard col0-1  │                     │                       │
         #                         │                     │                       │
         #
         # 四个纵向卡片列 + 底部横向跨列卡片
@@ -399,8 +450,8 @@ class UnitPanel(ProxyFrame):
         grid.addWidget(self._transform_card, 0, 0)             # (0,0)
         grid.addWidget(self._terrain_card, 0, 1)               # (0,1)
         grid.addWidget(self._abilities_card, 0, 2, 2, 1)       # (0,2) 跨 2 行
-        grid.addWidget(self._extra_bits_card, 0, 3, 2, 1)      # (0,3) 跨 2 行
-        grid.addWidget(self._bottom_card, 1, 0, 1, 2)           # (1,0) 跨 2 列
+        grid.addWidget(self._series_card, 0, 3, 2, 1)           # (0,3) 跨 2 行
+        grid.addWidget(self._bgm_card, 1, 0, 1, 2)              # (1,0) 跨 2 列
         layout.addLayout(grid)
         layout.addStretch()
 
@@ -416,8 +467,8 @@ class UnitPanel(ProxyFrame):
         self._transform_card.translateUI()
         self._terrain_card.translateUI()
         self._abilities_card.translateUI()
-        self._extra_bits_card.translateUI()
-        self._bottom_card.translateUI()
+        self._series_card.translateUI()
+        self._bgm_card.translateUI()
 
     # ========== 主题刷新 ==========
 
@@ -426,8 +477,8 @@ class UnitPanel(ProxyFrame):
         self._transform_card.resetUI()
         self._terrain_card.resetUI()
         self._abilities_card.resetUI()
-        self._extra_bits_card.resetUI()
-        self._bottom_card.resetUI()
+        self._series_card.resetUI()
+        self._bgm_card.resetUI()
         super().resetUI()
 
     # ========== 行数据 ==========
@@ -437,8 +488,8 @@ class UnitPanel(ProxyFrame):
         self._transform_card.set_model(model)
         self._terrain_card.set_model(model)
         self._abilities_card.set_model(model)
-        self._extra_bits_card.set_model(model)
-        self._bottom_card.set_model(model)
+        self._series_card.set_model(model)
+        self._bgm_card.set_model(model)
 
     def set_row(self, row: int) -> None:
         """切换行并刷新所有子编辑器
@@ -449,7 +500,7 @@ class UnitPanel(ProxyFrame):
         self._transform_card.set_row(row)
         self._terrain_card.set_row(row)
         self._abilities_card.set_row(row)
-        self._extra_bits_card.set_row(row)
-        self._bottom_card.set_row(row)
+        self._series_card.set_row(row)
+        self._bgm_card.set_row(row)
 
     # ========== 面板展开/收起（由 RobotFrame 直接控制 hide/show） ==========

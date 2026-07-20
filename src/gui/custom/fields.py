@@ -87,7 +87,7 @@ class FieldMapping(QObject):
             self.tr("Core Unit"): "core",  # 核心机体 / コアユニット
             self.tr("Comb Cnt"): "count",  # 合体数量 / 合体数
             self.tr("Unit Opt"): "option",  # 机体换装 / ユニット換装
-            self.tr("Background music"): "bgm",  # BGM / BGM
+            self.tr("BGM"): "bgm",  # BGM / BGM
             self.tr("Air"): "air",  # 空 / 空
             self.tr("Lnd"): "grd",  # 陆 / 陸
             self.tr("Sea"): "wtr",  # 海 / 海

@@ -45,10 +45,10 @@ class WeaponView(FixedTableView):
         self._rngl_delegate = NumberSpinDelegate(value_range=(0, 15), show_buttons=True, parent=self)
         self.setItemDelegateForColumn(3, self._rngl_delegate)
 
-        self._hit_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=False, parent=self)
+        self._hit_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=True, parent=self)
         self.setItemDelegateForColumn(4, self._hit_delegate)
 
-        self._crt_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=False, parent=self)
+        self._crt_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=True, parent=self)
         self.setItemDelegateForColumn(5, self._crt_delegate)
 
         self._damage_delegate = NumberSpinDelegate(show_buttons=False, parent=self)

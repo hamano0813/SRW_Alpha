@@ -121,8 +121,12 @@ class RobotFrame(SmoothScrollArea):
         self._unit_frame.setGeometry(0, 0, table_w, vp_h)
         self._robot_panel.setGeometry(panel_x, 0, panel_w, vp_h)
 
-        # 容器总宽：至少撑满视口，或能容纳 table_max + panel（以便滚动）
-        total_w = max(vp_w, table_max + panel_w)
+        # 容器总宽：展开态只需填满视口（Panel 在视口右侧被遮挡），
+        # 折叠态需容纳 Table + Panel 以便滚动条生效
+        if self._folded:
+            total_w = max(vp_w, table_max + panel_w)
+        else:
+            total_w = vp_w
         self._container.resize(total_w, vp_h)
 
     def resizeEvent(self, event):

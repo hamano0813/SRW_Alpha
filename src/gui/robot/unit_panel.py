@@ -284,7 +284,7 @@ class AbilitiesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._abil_list)
-        self.setFixedWidth(240)
+        self.setFixedWidth(235)
 
     # ========== UnitPanel 转发接口 ==========
 
@@ -324,7 +324,7 @@ class SeriesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._series_list)
-        self.setFixedWidth(240)
+        self.setFixedWidth(235)
 
     # ========== UnitPanel 转发接口 ==========
 

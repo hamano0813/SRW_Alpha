@@ -8,6 +8,8 @@ Classes:
     UnitFrame: 机体列表子框架
 """
 
+from typing import Callable
+
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
@@ -19,8 +21,8 @@ from gui.custom.delegates import (
 )
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
-from gui.custom.widgets.proxy_frame import ProxyFrame
 from gui.custom.views import FixedTableView
+from gui.custom.widgets.proxy_frame import ProxyFrame
 
 
 class UnitFrame(ProxyFrame):

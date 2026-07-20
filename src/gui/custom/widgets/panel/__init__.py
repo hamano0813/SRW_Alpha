@@ -6,11 +6,14 @@ PanelEditor 操作整个数据字典，通过 field 键读写数据。
 
 Classes:
     PanelEditor:        面板编辑器基类
+    BitCheckList:       Bit 位多选列表
     BitComboBox:        Bit 位多选下拉框
+    MappingComboBox:    映射下拉框
     MappingCompSpin:    映射微调框
     NumberCompSpin:     数值微调框
 """
 
+from .bit_checklist import BitCheckList
 from .bit_combobox import BitComboBox
 from .mapping_combobox import MappingComboBox
 from .mapping_compspin import MappingCompSpin
@@ -19,6 +22,7 @@ from .panel_editor import PanelEditor
 
 __all__ = [
     "PanelEditor",
+    "BitCheckList",
     "BitComboBox",
     "MappingComboBox",
     "MappingCompSpin",

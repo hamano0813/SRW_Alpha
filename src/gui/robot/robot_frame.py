@@ -5,11 +5,12 @@
 包含机体主列表和武器子列表的联动显示。
 
 Classes:
-    RobotFrame: 机体编辑框架
+    RobotFrame: 机体编辑框架（可平滑滚动）
 """
 
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHBoxLayout
+from qfluentwidgets import SmoothScrollArea
 
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
@@ -17,8 +18,8 @@ from gui.robot.unit_frame import UnitFrame
 from gui.robot.unit_panel import UnitPanel
 
 
-class RobotFrame(ProxyFrame):
-    """机体编辑框架 - 机体主列表 + 武器子列表联动"""
+class RobotFrame(SmoothScrollArea):
+    """机体编辑框架 - 机体主列表 + 武器子列表联动（可平滑滚动）"""
 
     def __init__(
         self,
@@ -33,6 +34,7 @@ class RobotFrame(ProxyFrame):
         """
         super().__init__(parent)
         self.setObjectName("RobotFrame")
+        self.setWidgetResizable(True)
 
         self._rom_data: dict | None = None
         self._current_source_row: int = -1
@@ -48,12 +50,15 @@ class RobotFrame(ProxyFrame):
         self._robot_panel.set_model(self._unit_frame.robot_view.source_model())
         self._robot_panel.panelDataChanged.connect(self._on_panel_data_changed)
 
-        # ========== 布局 ==========
+        # ========== 内容容器（ProxyFrame 自动传播 resetUI/translateUI） ==========
 
-        main_layout = QHBoxLayout(self)
+        self._container = ProxyFrame()
+        main_layout = QHBoxLayout(self._container)
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.addWidget(self._unit_frame)
         main_layout.addWidget(self._robot_panel)
+
+        self.setWidget(self._container)
 
         self._unit_frame.sClicked.connect(self._on_row_clicked)
 
@@ -130,3 +135,13 @@ class RobotFrame(ProxyFrame):
         if model.rowCount() > 0:
             self._unit_frame.robot_view.selectRow(0)
             self._on_row_clicked(0, model)
+
+    # ========== 主题与翻译（委托给容器 ProxyFrame 自动传播） ==========
+
+    def resetUI(self):
+        """刷新所有子控件"""
+        self._container.resetUI()
+
+    def translateUI(self):
+        """刷新所有子控件翻译"""
+        self._container.translateUI()

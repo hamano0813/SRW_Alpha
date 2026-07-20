@@ -13,7 +13,7 @@ Subpackages:
     panel: 面板控件（待实现）
 """
 
-from .panel import BitComboBox, MappingComboBox, MappingCompSpin, NumberCompSpin, PanelEditor
+from .panel import BitCheckList, BitComboBox, MappingComboBox, MappingCompSpin, NumberCompSpin, PanelEditor
 from .table import MappingSpinBox, MultiLineEdit, NumberSpinBox, SingleLineEdit, TableEditor
 
 __all__ = [
@@ -23,6 +23,7 @@ __all__ = [
     "NumberSpinBox",
     "MappingSpinBox",
     "PanelEditor",
+    "BitCheckList",
     "BitComboBox",
     "MappingCompSpin",
     "MappingComboBox",

@@ -9,6 +9,7 @@
 Classes:
     TransformCard:  变形·合体卡片
     TerrainCard:    地形适性卡片
+    AbilitiesCard:  能力列表卡片
     UnitPanel:      机体侧边栏面板
 """
 
@@ -21,7 +22,7 @@ from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
-from gui.custom.widgets import BitComboBox, MappingComboBox, MappingCompSpin, NumberCompSpin
+from gui.custom.widgets import BitCheckList, BitComboBox, MappingComboBox, MappingCompSpin, NumberCompSpin
 from gui.custom.widgets.card_header import CardHeader
 from gui.custom.widgets.special import RobotComboBox
 
@@ -262,6 +263,90 @@ class TerrainCard(CardHeader):
         setFont(self._spc_label)
 
 
+class AbilitiesCard(CardHeader):
+    """能力列表卡片 - Bit 位多选能力列表"""
+
+    def __init__(self, parent=None):
+        """初始化能力列表卡片"""
+        super().__init__(parent)
+        self.setTitle(self.tr("Abilities"))
+
+        # ========== Bit 位多选列表 ==========
+
+        self._abil_list = BitCheckList("abi", parent=self)
+        self._abil_list.dataChanged.connect(self.panelDataChanged)
+
+        # 左右边距收窄以贴合滚动条
+        self.viewLayout.setContentsMargins(3, 8, 3, 8)
+        self.viewLayout.addWidget(self._abil_list)
+        self.setMinimumWidth(200)
+
+    # ========== UnitPanel 转发接口 ==========
+
+    def set_model(self, model: BaseTableModel) -> None:
+        """注入数据模型，转发至能力列表"""
+        self._abil_list.set_model(model)
+
+    def set_row(self, row: int) -> None:
+        """切换行并刷新能力列表"""
+        self._abil_list.set_row(row)
+
+    def translateUI(self) -> None:
+        """刷新卡片标题与能力列表选项"""
+        self.setTitle(self.tr("Abilities"))
+        self._abil_list.set_values(EnumData().ROBOT["ABILITIES"])
+
+    def resetUI(self) -> None:
+        """刷新所有控件字体"""
+        setFont(self)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+        self._abil_list.resetUI()
+
+
+class _ExtraBitsCard(CardHeader):
+    """占位卡片 - 待实现的额外 Bit 位多选列表（右侧纵向跨两行）"""
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setTitle(self.tr("Extra Bits"))
+        self.setMinimumWidth(160)
+
+    def set_model(self, model: BaseTableModel) -> None:
+        pass
+
+    def set_row(self, row: int) -> None:
+        pass
+
+    def translateUI(self) -> None:
+        self.setTitle(self.tr("Extra Bits"))
+
+    def resetUI(self) -> None:
+        setFont(self)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+
+
+class _BottomCard(CardHeader):
+    """占位卡片 - 待实现的新卡片（底部横向跨两列）"""
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setTitle(self.tr("New Card"))
+        self.setMinimumWidth(320)
+
+    def set_model(self, model: BaseTableModel) -> None:
+        pass
+
+    def set_row(self, row: int) -> None:
+        pass
+
+    def translateUI(self) -> None:
+        self.setTitle(self.tr("New Card"))
+
+    def resetUI(self) -> None:
+        setFont(self)
+        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+
+
 class UnitPanel(ProxyFrame):
     """机体侧边栏面板 - 分组卡片编辑区，负责布局与接口转发"""
 
@@ -295,18 +380,36 @@ class UnitPanel(ProxyFrame):
         self._terrain_card = TerrainCard(self)
         self._terrain_card.panelDataChanged.connect(self.panelDataChanged)
 
-        # ========== 布局 ==========
+        self._abilities_card = AbilitiesCard(self)
+        self._abilities_card.panelDataChanged.connect(self.panelDataChanged)
+
+        self._extra_bits_card = _ExtraBitsCard(self)
+        self._extra_bits_card.panelDataChanged.connect(self.panelDataChanged)
+
+        self._bottom_card = _BottomCard(self)
+        self._bottom_card.panelDataChanged.connect(self.panelDataChanged)
+
+        # ========== 卡片网格布局 ==========
+        #
+        #   (0,0) TransformCard  │  (0,1) TerrainCard  │  (0,2) AbilitiesCard  │  (0,3) [待添加]
+        #                         │                     │       row0-1          │       row0-1
+        #   (1,0) [待添加] col0-1 │                     │                       │
+        #                         │                     │                       │
+        #
+        # 四个纵向卡片列 + 底部横向跨列卡片
 
         layout = QVBoxLayout(self)
         layout.setSpacing(8)
         layout.setContentsMargins(8, 8, 8, 8)
 
-        # 卡片水平包裹，避免卡片被撑宽到面板宽度
-        card_hbox = QHBoxLayout()
-        card_hbox.addWidget(self._transform_card)
-        card_hbox.addWidget(self._terrain_card)
-        card_hbox.addStretch()
-        layout.addLayout(card_hbox)
+        grid = QGridLayout()
+        grid.setSpacing(8)
+        grid.addWidget(self._transform_card, 0, 0)             # (0,0)
+        grid.addWidget(self._terrain_card, 0, 1)               # (0,1)
+        grid.addWidget(self._abilities_card, 0, 2, 2, 1)       # (0,2) 跨 2 行
+        grid.addWidget(self._extra_bits_card, 0, 3, 2, 1)      # (0,3) 跨 2 行
+        grid.addWidget(self._bottom_card, 1, 0, 1, 2)           # (1,0) 跨 2 列
+        layout.addLayout(grid)
         layout.addStretch()
 
         self.setLayout(layout)
@@ -320,6 +423,9 @@ class UnitPanel(ProxyFrame):
         """刷新卡片标题、标签文本及下拉选项"""
         self._transform_card.translateUI()
         self._terrain_card.translateUI()
+        self._abilities_card.translateUI()
+        self._extra_bits_card.translateUI()
+        self._bottom_card.translateUI()
 
     # ========== 主题刷新 ==========
 
@@ -327,6 +433,9 @@ class UnitPanel(ProxyFrame):
         """刷新主框字体"""
         self._transform_card.resetUI()
         self._terrain_card.resetUI()
+        self._abilities_card.resetUI()
+        self._extra_bits_card.resetUI()
+        self._bottom_card.resetUI()
         super().resetUI()
 
     # ========== 行数据 ==========
@@ -335,6 +444,9 @@ class UnitPanel(ProxyFrame):
         """注入数据模型，转发至各卡片"""
         self._transform_card.set_model(model)
         self._terrain_card.set_model(model)
+        self._abilities_card.set_model(model)
+        self._extra_bits_card.set_model(model)
+        self._bottom_card.set_model(model)
 
     def set_row(self, row: int) -> None:
         """切换行并刷新所有子编辑器
@@ -344,6 +456,9 @@ class UnitPanel(ProxyFrame):
         """
         self._transform_card.set_row(row)
         self._terrain_card.set_row(row)
+        self._abilities_card.set_row(row)
+        self._extra_bits_card.set_row(row)
+        self._bottom_card.set_row(row)
 
     # ========== 面板展开/收起 ==========
 

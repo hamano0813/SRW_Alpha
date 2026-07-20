@@ -39,6 +39,7 @@ class TransformCard(CardHeader):
         """初始化变形·合体卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Transform & Combine"))
+        self.setMinimumWidth(305)
 
         # ========== 控件 ==========
 
@@ -167,6 +168,7 @@ class TerrainCard(CardHeader):
         """初始化地形适性卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Terrain"))
+        self.setMinimumWidth(158)
 
         # ========== 控件 ==========
 
@@ -174,7 +176,7 @@ class TerrainCard(CardHeader):
 
         # Bit 位多选下拉框 — 移动类型
         self._move_combo = BitComboBox("type", values=[], sep="")
-        self._move_combo.setMinimumWidth(110)
+        self._move_combo.setMinimumWidth(130)
         self._move_combo.dataChanged.connect(self.panelDataChanged)
 
         # 地形适性微调框 × 4
@@ -284,7 +286,7 @@ class AbilitiesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._abil_list)
-        self.setFixedWidth(235)
+        self.setFixedWidth(225)
 
     # ========== UnitPanel 转发接口 ==========
 
@@ -324,7 +326,7 @@ class SeriesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._series_list)
-        self.setFixedWidth(235)
+        self.setFixedWidth(225)
 
     # ========== UnitPanel 转发接口 ==========
 

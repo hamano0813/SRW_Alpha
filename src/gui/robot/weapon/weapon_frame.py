@@ -11,17 +11,20 @@ WeaponFrame 自身不管理外层高度，由父级（RobotFrame）通过 setGeo
 Classes:
     WeaponAttrCard: 武器属性卡片（占位）
     WeaponMapCard:  地图武器卡片（占位）
-    WeaponAdaptCard: 地形适应卡片（占位）
+    WeaponAdaptCard: 地形适应卡片（空陆海宇）
     WeaponPanel:    右侧面板容器
     WeaponFrame:    武器编辑框架
 """
 
+from PySide6.QtCore import Qt
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QSizePolicy, QVBoxLayout
-from qfluentwidgets import setFont
+from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QVBoxLayout
+from qfluentwidgets import BodyLabel, setFont
 
+from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets.card_header import CardHeader
+from gui.custom.widgets.panel.mapping_compspin import MappingCompSpin
 from gui.custom.widgets.proxy_frame import ProxyFrame
 
 from .weapon_view import WeaponView
@@ -95,34 +98,88 @@ class WeaponMapCard(CardHeader):
 
 
 class WeaponAdaptCard(CardHeader):
-    """地形适应卡片 - 四项地形适性
-
-    待填充字段：air, grd, wtr, spc
-    """
+    """地形适应卡片 - 四项地形适性一字横排"""
 
     def __init__(self, parent=None):
         """初始化地形适应卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Terrain"))
 
+        # ========== 控件 ==========
+
+        _adapt_mapping = EnumData().WEAPON["ADAPT"]
+        _align = Qt.AlignmentFlag.AlignCenter
+
+        self._air_label = BodyLabel(self.tr("Air"), self)
+        self._air_label.setAlignment(_align)
+        self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self)
+        self._air_spin.setMinimumWidth(65)
+        self._air_spin.dataChanged.connect(self.panelDataChanged)
+
+        self._grd_label = BodyLabel(self.tr("Lnd"), self)
+        self._grd_label.setAlignment(_align)
+        self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self)
+        self._grd_spin.setMinimumWidth(65)
+        self._grd_spin.dataChanged.connect(self.panelDataChanged)
+
+        self._wtr_label = BodyLabel(self.tr("Sea"), self)
+        self._wtr_label.setAlignment(_align)
+        self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self)
+        self._wtr_spin.setMinimumWidth(65)
+        self._wtr_spin.dataChanged.connect(self.panelDataChanged)
+
+        self._spc_label = BodyLabel(self.tr("Spc"), self)
+        self._spc_label.setAlignment(_align)
+        self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self)
+        self._spc_spin.setMinimumWidth(65)
+        self._spc_spin.dataChanged.connect(self.panelDataChanged)
+
+        # ========== 一字横排布局 ==========
+
+        _hbox = QHBoxLayout()
+        _hbox.setSpacing(4)
+        for label, spin in [
+            (self._air_label, self._air_spin),
+            (self._grd_label, self._grd_spin),
+            (self._wtr_label, self._wtr_spin),
+            (self._spc_label, self._spc_spin),
+        ]:
+            _hbox.addWidget(label, 0, Qt.AlignmentFlag.AlignVCenter)
+            _hbox.addWidget(spin, 0, Qt.AlignmentFlag.AlignVCenter)
+        _hbox.addStretch()
+        self.viewLayout.addLayout(_hbox)
+        self.viewLayout.addStretch()
+
     # ========== UnitPanel 转发接口 ==========
 
     def set_model(self, model: BaseTableModel) -> None:
-        """注入数据模型"""
-        pass
+        """注入数据模型，转发至各子编辑器"""
+        self._air_spin.set_model(model)
+        self._grd_spin.set_model(model)
+        self._wtr_spin.set_model(model)
+        self._spc_spin.set_model(model)
 
     def set_row(self, row: int) -> None:
-        """切换行数据"""
-        pass
+        """切换行并刷新所有控件"""
+        self._air_spin.set_row(row)
+        self._grd_spin.set_row(row)
+        self._wtr_spin.set_row(row)
+        self._spc_spin.set_row(row)
 
     def translateUI(self) -> None:
-        """刷新卡片标题"""
+        """刷新卡片标题和标签"""
         self.setTitle(self.tr("Terrain"))
+        self._air_label.setText(self.tr("Air"))
+        self._grd_label.setText(self.tr("Lnd"))
+        self._wtr_label.setText(self.tr("Sea"))
+        self._spc_label.setText(self.tr("Spc"))
 
     def resetUI(self) -> None:
         """刷新字体"""
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+        for label in [self._air_label, self._grd_label, self._wtr_label, self._spc_label]:
+            setFont(label)
 
 
 # =============================================================================

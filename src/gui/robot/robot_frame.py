@@ -8,7 +8,7 @@
 - 下层：PanelFrame（固定缩进在 table_max_width 处，永远不会左右移动）
 - 上层：UnitFrame 覆盖在上面，x=0，宽度 = min(视口宽, table_max_width)
 
-常态：UnitFrame 宽度 = 视口宽（或最大列宽），遮挡右侧 Panel → Panel 不可见
+常态：UnitFrame 直接填满整个视口宽度（遮挡右侧 Panel）
 折叠：UnitFrame 宽度 = 第 0 列宽度，水平滚动条打开 → 露出右侧 Panel
 窗口缩放时 Panel 位置不变，没有任何左右飞舞。
 
@@ -108,11 +108,11 @@ class RobotFrame(SmoothScrollArea):
         # Panel 的自然宽度（始终保持不变）
         panel_w = self._robot_panel.sizeHint().width()
 
-        # Table 宽度：折叠=仅第 0 列，常态=填满视口
+        # Table 宽度：折叠=仅第 0 列，常态=填满整个视口
         if self._folded:
             table_w = self._unit_frame.robot_view.get_content_width(True)
         else:
-            table_w = min(vp_w, table_max)
+            table_w = vp_w
 
         # Panel 固定缩进位置（始终在 table_max 处，从不移动）
         panel_x = table_max

@@ -22,16 +22,18 @@ class MappingSpinDelegate(DataWidgetDelegate):
 
     widget_class = MappingSpinBox
 
-    def __init__(self, mapping: dict[int, str] | None = None, font: QFont | dict | None = None, parent=None):
+    def __init__(self, mapping: dict[int, str] | None = None, wrapping: bool = False, font: QFont | dict | None = None, parent=None):
         """初始化数值微调列委托
 
         Args:
             mapping: {数值: 显示文本} 字典
+            wrapping: 是否循环（最大值后回到最小值，反之亦然）
             font: 编辑器字体
             parent: 父对象
         """
         super().__init__(parent=parent, font=font)
         self._value_mapping: dict[int, str] = mapping or {}
+        self._wrapping = wrapping
 
     def format_display(self, value) -> str:
         """将数值格式化为映射文本
@@ -88,7 +90,7 @@ class MappingSpinDelegate(DataWidgetDelegate):
         Returns:
             MappingSpinBox 实例
         """
-        editor = MappingSpinBox(self._value_mapping, parent)
+        editor = MappingSpinBox(self._value_mapping, self._wrapping, parent)
         if self._font is not None:
             editor.apply_font(self._font)
         else:

@@ -86,15 +86,17 @@ class MappingSpinBox(QSpinBox, TableEditor):
     步进仅在 mapping 的有效 key 范围内循环。
     """
 
-    def __init__(self, mapping: dict[int, str] | None = None, parent=None):
+    def __init__(self, mapping: dict[int, str] | None = None, wrapping: bool = False, parent=None):
         """初始化映射微调框
 
         Args:
             mapping: {数值: 显示文本} 字典，按 key 排序后确定步进顺序
+            wrapping: 是否循环（最大值后回到最小值，反之亦然）
             parent: 父 QWidget
         """
         self._mapping: dict[int, str] = mapping or {}
         self._sorted_keys: list[int] = sorted(self._mapping.keys())
+        self._wrapping = wrapping
 
         QSpinBox.__init__(self, parent)
         TableEditor.__init__(self, parent)
@@ -190,7 +192,7 @@ class MappingSpinBox(QSpinBox, TableEditor):
         return self.value()
 
     def stepBy(self, steps: int) -> None:
-        """沿 mapping 的 key 顺序步进，不超出边界
+        """沿 mapping 的 key 顺序步进，wrapping 时循环
 
         Args:
             steps: 步数（正向/负向）
@@ -203,17 +205,23 @@ class MappingSpinBox(QSpinBox, TableEditor):
             idx = self._sorted_keys.index(current)
         except ValueError:
             idx = 0
-        new_idx = max(0, min(len(self._sorted_keys) - 1, idx + steps))
+        n = len(self._sorted_keys)
+        if self._wrapping:
+            new_idx = (idx + steps) % n
+        else:
+            new_idx = max(0, min(n - 1, idx + steps))
         self.setValue(self._sorted_keys[new_idx])
 
     def stepEnabled(self):
-        """允许步进方向 — 在边界处禁用对应方向
+        """允许步进方向 — wrapping 时始终双向可用，否则在边界处禁用
 
         Returns:
             StepEnabledFlag 组合
         """
         if not self._sorted_keys:
             return super().stepEnabled()
+        if self._wrapping:
+            return QSpinBox.StepEnabledFlag.StepUpEnabled | QSpinBox.StepEnabledFlag.StepDownEnabled
         current = self.value()
         try:
             idx = self._sorted_keys.index(current)

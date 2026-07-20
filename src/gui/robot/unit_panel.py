@@ -13,9 +13,9 @@ Classes:
     UnitPanel:      机体侧边栏面板
 """
 
-from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Qt, Signal
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QVBoxLayout
+from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
 from qfluentwidgets import BodyLabel, setFont
 
 from gui.custom.fonts import JP_FONT, JP_QFONT
@@ -360,17 +360,9 @@ class UnitPanel(ProxyFrame):
         """
         super().__init__(parent)
 
-        # ========== 面板尺寸（默认隐藏） ==========
+        # ========== 面板尺寸与策略 ==========
 
-        self._panel_open: bool = False
-        self.setMinimumWidth(0)
-        self.setMaximumWidth(0)
-
-        # ========== 展开/收起动画（由外部传入目标宽度） ==========
-
-        self._width_anim = QPropertyAnimation(self, b"maximumWidth")
-        self._width_anim.setDuration(250)
-        self._width_anim.setEasingCurve(QEasingCurve.Type.OutCubic)
+        self.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
 
         # ========== 创建卡片 ==========
 
@@ -462,26 +454,16 @@ class UnitPanel(ProxyFrame):
 
     # ========== 面板展开/收起 ==========
 
-    def open_panel(self, width: int) -> None:
-        """展开面板至指定宽度
+    def set_fold_mode(self, folded: bool, target_width: int = 0) -> None:
+        """切换面板折叠状态
+
+        折叠时用 setFixedWidth 固定面板宽度，展开时设为 0（由外层 hide() 配合）。
 
         Args:
-            width: 展开目标宽度（由列折叠释放的空间决定）
+            folded:   True=面板展开显示，False=面板收起
+            target_width: 折叠状态下面板的目标宽度（仅 folded=True 有效）
         """
-        if self._panel_open:
-            return
-        self._panel_open = True
-        self._width_anim.stop()
-        self._width_anim.setStartValue(self.width())
-        self._width_anim.setEndValue(width)
-        self._width_anim.start()
-
-    def close_panel(self) -> None:
-        """收起面板至 0"""
-        if not self._panel_open:
-            return
-        self._panel_open = False
-        self._width_anim.stop()
-        self._width_anim.setStartValue(self.width())
-        self._width_anim.setEndValue(0)
-        self._width_anim.start()
+        if folded:
+            self.setFixedWidth(target_width)
+        else:
+            self.setFixedWidth(0)

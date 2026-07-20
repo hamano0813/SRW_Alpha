@@ -8,9 +8,7 @@ Classes:
     UnitFrame: 机体列表子框架
 """
 
-from typing import Any, Callable
-
-from PySide6.QtCore import QEasingCurve, QPropertyAnimation, Qt, Signal
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
 from gui.custom import fonts
@@ -107,13 +105,6 @@ class UnitFrame(ProxyFrame):
         self._cost_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=self._robot_view)
         self._robot_view.setItemDelegateForColumn(10, self._cost_delegate)
 
-        # ========== 宽度折叠动画 ==========
-
-        self._width_anim = QPropertyAnimation(self, b"maximumWidth")
-        self._width_anim.setDuration(250)
-        self._width_anim.setEasingCurve(QEasingCurve.Type.OutCubic)
-        self._robot_view.widthChanged.connect(self._on_width_changed)
-
         # ========== 默认列宽 ==========
 
         self._robot_view.set_column_width([200] + [96] * 10)
@@ -127,24 +118,6 @@ class UnitFrame(ProxyFrame):
         layout.addWidget(self._robot_view)
 
         self.setLayout(layout)
-
-    # ========== 动画 ==========
-
-    def _on_width_changed(self, source: int, target: int):
-        """平滑动画自身宽度至目标值
-
-        锁定当前宽度为上限，再由动画过渡到 target，
-        让 QHBoxLayout 重新分配多余空间给右侧面板。
-
-        Args:
-            source: 变化前宽度（未使用，用 self.width() 取实时值）
-            target: 内容所需的目标宽度
-        """
-        self._width_anim.stop()
-        self.setMaximumWidth(self.width())
-        self._width_anim.setStartValue(self.width())
-        self._width_anim.setEndValue(target)
-        self._width_anim.start()
 
     # ========== 公开接口 ==========
 

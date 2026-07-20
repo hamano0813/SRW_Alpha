@@ -284,28 +284,34 @@ class FixedTableView(BaseTableView):
         self._corner_button.setText("»" if folded else "«")
         self.changed_hidden(folded)
 
+    def get_content_width(self, folded: bool) -> int:
+        """根据折叠状态计算表格视图所需的内容宽度
+
+        Args:
+            folded: True=仅计算第 0 列，False=计算所有列
+
+        Returns:
+            内容宽度像素值（行号列 + 数据列 + 边框）
+        """
+        vh_width = self.verticalHeader().width()
+        cols_width = self.columnWidth(0)
+        if not folded:
+            for col_idx in range(1, self._model.columnCount()):
+                cols_width += self.columnWidth(col_idx)
+        return vh_width + cols_width + 8
+
     def changed_hidden(self, folded: bool):
-        """列折叠状态变更 — 计算折叠后宽度及释放空间
+        """列折叠状态变更 — 计算释放空间并发出 foldToggled
+
+        freed_width 仅折叠时有效（展开时 close_panel 忽略该值）。
 
         Args:
             folded: True=列已折叠（仅显示第 0 列），False=全部展开
         """
-        vh_width = self.verticalHeader().width()
-        # 折叠后只保留第 0 列
-        cols_width = self.columnWidth(0)
-        bd_width = 10
-        if not folded:
-            # 展开状态：累加所有列
-            for col_idx in range(1, self._model.columnCount()):
-                cols_width += self.columnWidth(col_idx)
-            bd_width = 5
-        target_width = vh_width + cols_width + bd_width
-        source_width = self.width()
-        freed_width = source_width - target_width
-        self.widthChanged.emit(source_width, target_width)
+        old_width = self.width()
+        target_width = self.get_content_width(folded)
+        freed_width = old_width - target_width
         self.foldToggled.emit(folded, freed_width)
-        source_width = self.width()
-        self.widthChanged.emit(source_width, target_width)
 
     def setCornerButton(self, corner: QAbstractButton):
         """将按钮嵌入内置 corner widget 中

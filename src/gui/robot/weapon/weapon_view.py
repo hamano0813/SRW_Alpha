@@ -39,20 +39,20 @@ class WeaponView(FixedTableView):
         self._class_delegate = MappingSpinDelegate(mapping=_enum.WEAPON["CLASS"], wrapping=True, parent=self)
         self.setItemDelegateForColumn(1, self._class_delegate)
 
+        self._damage_delegate = NumberSpinDelegate(show_buttons=False, parent=self)
+        self.setItemDelegateForColumn(2, self._damage_delegate)
+
         self._rngs_delegate = NumberSpinDelegate(value_range=(0, 3), show_buttons=True, parent=self)
-        self.setItemDelegateForColumn(2, self._rngs_delegate)
+        self.setItemDelegateForColumn(3, self._rngs_delegate)
 
         self._rngl_delegate = NumberSpinDelegate(value_range=(0, 15), show_buttons=True, parent=self)
-        self.setItemDelegateForColumn(3, self._rngl_delegate)
+        self.setItemDelegateForColumn(4, self._rngl_delegate)
 
         self._hit_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=True, parent=self)
-        self.setItemDelegateForColumn(4, self._hit_delegate)
+        self.setItemDelegateForColumn(5, self._hit_delegate)
 
         self._crt_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=True, parent=self)
-        self.setItemDelegateForColumn(5, self._crt_delegate)
-
-        self._damage_delegate = NumberSpinDelegate(show_buttons=False, parent=self)
-        self.setItemDelegateForColumn(6, self._damage_delegate)
+        self.setItemDelegateForColumn(6, self._crt_delegate)
 
         # ========== 字体与对齐 ==========
 
@@ -61,17 +61,17 @@ class WeaponView(FixedTableView):
         _model.set_alignments(
             {
                 1: Qt.AlignmentFlag.AlignCenter,
-                2: Qt.AlignmentFlag.AlignCenter,
+                2: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
                 3: Qt.AlignmentFlag.AlignCenter,
                 4: Qt.AlignmentFlag.AlignCenter,
                 5: Qt.AlignmentFlag.AlignCenter,
-                6: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+                6: Qt.AlignmentFlag.AlignCenter,
             }
         )
 
         # ========== 默认列宽 ==========
 
-        self.set_column_width([180, 130, 110, 110, 125, 125, 120])
+        self.set_column_width([180, 130, 120, 110, 110, 125, 125])
         self.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
 
         # ========== 初始翻译 ==========
@@ -91,11 +91,11 @@ class WeaponView(FixedTableView):
             {
                 self.tr("Weapon name"): [self._name_delegate.format_display, self._name_delegate.parse_display],
                 self.tr("Weapon class"): [self._class_delegate.format_display, self._class_delegate.parse_display],
+                self.tr("Damage"): [self._damage_delegate.format_display, self._damage_delegate.parse_display],
                 self.tr("Short range"): [self._rngs_delegate.format_display, self._rngs_delegate.parse_display],
                 self.tr("Long range"): [self._rngl_delegate.format_display, self._rngl_delegate.parse_display],
                 self.tr("Accuracy"): [self._hit_delegate.format_display, self._hit_delegate.parse_display],
                 self.tr("Critical"): [self._crt_delegate.format_display, self._crt_delegate.parse_display],
-                self.tr("Damage"): [self._damage_delegate.format_display, self._damage_delegate.parse_display],
             }
         )
         if self._widths:

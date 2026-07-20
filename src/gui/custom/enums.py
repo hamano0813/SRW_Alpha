@@ -74,6 +74,12 @@ class EnumData(QObject):
                 self.tr("Titan Series"),  # 泰坦系 / ダイターン系
             ],
         }
+        self.WEAPON = {
+            "CLASS": {
+                0x0: self.tr("Melee"),  # 格斗 / 格斗
+                0x1: self.tr("Ranged"),  # 射击 / 射撃
+            }
+        }
         self.BGM = {
             0x00: self.tr("Combattler V's Theme"),  # コン・バトラーVのテーマ
             0x01: self.tr("Sirocco! Gale! Cybuster"),  # 熱風！疾風！サイバスター

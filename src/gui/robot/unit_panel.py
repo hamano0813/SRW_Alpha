@@ -17,6 +17,7 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QVBoxLayout
 from qfluentwidgets import BodyLabel, setFont
 
+from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
@@ -37,52 +38,45 @@ class TransformCard(CardHeader):
 
         _align = Qt.AlignmentFlag.AlignCenter
         self._lbl_tgrp = BodyLabel(self.tr("Tran Grp"), self)
-        self._lbl_tgrp.setMinimumWidth(80)
         self._lbl_tgrp.setAlignment(_align)
         self._tgrp_spin = NumberCompSpin("tgrp", value_range=(0, 99), parent=self)
-        self._tgrp_spin.setFixedWidth(75)
+        self._tgrp_spin.setMinimumWidth(70)
         self._tgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_tsn = BodyLabel(self.tr("Tran Seq"), self)
-        self._lbl_tsn.setMinimumWidth(80)
         self._lbl_tsn.setAlignment(_align)
         self._tsn_spin = NumberCompSpin("tsn", value_range=(0, 2), parent=self)
-        self._tsn_spin.setFixedWidth(75)
+        self._tsn_spin.setMinimumWidth(65)
         self._tsn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cgrp = BodyLabel(self.tr("Comb Grp"), self)
-        self._lbl_cgrp.setMinimumWidth(80)
         self._lbl_cgrp.setAlignment(_align)
         self._cgrp_spin = NumberCompSpin("cgrp", value_range=(0, 99), parent=self)
-        self._cgrp_spin.setFixedWidth(75)
+        self._cgrp_spin.setMinimumWidth(70)
         self._cgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_csn = BodyLabel(self.tr("Comb Seq"), self)
-        self._lbl_csn.setMinimumWidth(80)
         self._lbl_csn.setAlignment(_align)
         self._csn_spin = NumberCompSpin("csn", value_range=(0, 2), parent=self)
-        self._csn_spin.setFixedWidth(75)
+        self._csn_spin.setMinimumWidth(65)
         self._csn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cnt = BodyLabel(self.tr("Comb Cnt"), self)
-        self._lbl_cnt.setMinimumWidth(80)
         self._lbl_cnt.setAlignment(_align)
         self._cnt_spin = NumberCompSpin("count", value_range=(0, 5), parent=self)
-        self._cnt_spin.setFixedWidth(75)
+        self._cnt_spin.setMinimumWidth(65)
         self._cnt_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_core = BodyLabel(self.tr("Core Unit"), self)
-        self._lbl_core.setMinimumWidth(80)
         self._lbl_core.setAlignment(_align)
-
         self._core_combo = RobotComboBox("core", parent=self, supplements={0xFFFF: "一一"})
-        self._core_combo.setFixedWidth(250)
+        self._core_combo.setMinimumWidth(250)
         self._core_combo.dataChanged.connect(self.panelDataChanged)
 
-        self._lbl_option = BodyLabel(self.tr("Option Parts"), self)
-        self._lbl_option.setMinimumWidth(80)
+        self._lbl_option = BodyLabel(self.tr("Unit Opt"), self)
         self._lbl_option.setAlignment(_align)
         _option_mapping = EnumData().ROBOT["OPTION"]
         self._option_combo = MappingComboBox("option", mapping=_option_mapping, parent=self)
-        self._option_combo.setFixedWidth(250)
+        self._option_combo.apply_font(JP_FONT)
+        self._option_combo.set_dropdown_font(JP_QFONT)
         self._option_combo.dataChanged.connect(self.panelDataChanged)
 
         # ========== 网格布局 ==========
@@ -98,10 +92,10 @@ class TransformCard(CardHeader):
         _grid.addWidget(self._cgrp_spin, 1, 1)
         _grid.addWidget(self._lbl_csn, 1, 2, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._csn_spin, 1, 3)
-        _grid.addWidget(self._lbl_cnt, 2, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-        _grid.addWidget(self._cnt_spin, 2, 1)
-        _grid.addWidget(self._lbl_core, 3, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-        _grid.addWidget(self._core_combo, 3, 1, 1, 3)
+        _grid.addWidget(self._lbl_core, 2, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._lbl_cnt, 2, 2, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        _grid.addWidget(self._cnt_spin, 2, 3)
+        _grid.addWidget(self._core_combo, 3, 0, 1, 4)
         _grid.addWidget(self._lbl_option, 4, 0, Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._option_combo, 4, 1, 1, 3)
         self.viewLayout.addLayout(_grid)
@@ -138,7 +132,7 @@ class TransformCard(CardHeader):
         self._lbl_csn.setText(self.tr("Comb Seq"))
         self._lbl_cnt.setText(self.tr("Comb Cnt"))
         self._lbl_core.setText(self.tr("Core Unit"))
-        self._lbl_option.setText(self.tr("Option Parts"))
+        self._lbl_option.setText(self.tr("Unit Opt"))
         self._option_combo.set_mapping(EnumData().ROBOT["OPTION"])
 
     def resetUI(self) -> None:
@@ -174,38 +168,34 @@ class TerrainCard(CardHeader):
 
         # Bit 位多选下拉框 — 移动类型
         self._move_combo = BitComboBox("type", values=[], sep="")
-        self._move_combo.setMinimumWidth(100)
+        self._move_combo.setMinimumWidth(110)
         self._move_combo.dataChanged.connect(self.panelDataChanged)
 
         # 地形适性微调框 × 4
         _adapt_mapping = EnumData().ROBOT["ADAPT"]
 
         self._air_label = BodyLabel(self.tr("Air"), self)
-        self._air_label.setMinimumWidth(50)
         self._air_label.setAlignment(_align)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self)
-        self._air_spin.setFixedWidth(75)
+        self._air_spin.setMinimumWidth(65)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
         self._grd_label = BodyLabel(self.tr("Lnd"), self)
-        self._grd_label.setMinimumWidth(50)
         self._grd_label.setAlignment(_align)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self)
-        self._grd_spin.setFixedWidth(75)
+        self._grd_spin.setMinimumWidth(65)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
         self._wtr_label = BodyLabel(self.tr("Sea"), self)
-        self._wtr_label.setMinimumWidth(50)
         self._wtr_label.setAlignment(_align)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self)
-        self._wtr_spin.setFixedWidth(75)
+        self._wtr_spin.setMinimumWidth(65)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
         self._spc_label = BodyLabel(self.tr("Spc"), self)
-        self._spc_label.setMinimumWidth(50)
         self._spc_label.setAlignment(_align)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self)
-        self._spc_spin.setFixedWidth(75)
+        self._spc_spin.setMinimumWidth(65)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)
 
         # ========== 网格布局 ==========

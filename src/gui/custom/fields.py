@@ -80,13 +80,13 @@ class FieldMapping(QObject):
             self.tr("Abilities"): "abi",  # 特殊能力 / 特殊能力
             self.tr("Repair cost"): "rep",  # 修理费 / 修理費
             self.tr("Cost"): "cost",  # 资金 / 資金
-            self.tr("Tran Grp"): "tgrp",  # 变形组 / 変形組
-            self.tr("Tran Seq"): "tsn",  # 变形序 / 変形番
-            self.tr("Comb Grp"): "cgrp",  # 合体组 / 合体組
-            self.tr("Comb Seq"): "csn",  # 合体序 / 合体番
+            self.tr("Tran Grp"): "tgrp",  # 变形组号 / 変形グループ
+            self.tr("Tran Seq"): "tsn",  # 变形序号 / 変形番号
+            self.tr("Comb Grp"): "cgrp",  # 合体组号 / 合体グループ
+            self.tr("Comb Seq"): "csn",  # 合体序号 / 合体番号
             self.tr("Core Unit"): "core",  # 核心机体 / コアユニット
             self.tr("Comb Cnt"): "count",  # 合体数量 / 合体数
-            self.tr("Option Parts"): "option",  # 机体换装 / ユニット換装
+            self.tr("Unit Opt"): "option",  # 机体换装 / ユニット換装
             self.tr("Background music"): "bgm",  # BGM / BGM
             self.tr("Air"): "air",  # 空 / 空
             self.tr("Lnd"): "grd",  # 陆 / 陸

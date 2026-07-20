@@ -130,13 +130,14 @@ class MappingComboBox(PanelEditor):
     # ========== 映射接口 ==========
 
     def set_mapping(self, mapping: dict[int, str]) -> None:
-        """更新选项列表，保持当前选中值
+        """更新选项列表，保持当前选中值（全程阻塞信号避免触发 dataChanged）
 
         Args:
             mapping: {数值: 显示文本} 字典
         """
         current_value = self._value
         self._mapping = mapping
+        self._combo.blockSignals(True)
         self._populate_items()
 
         # 尝试恢复选中项
@@ -144,6 +145,7 @@ class MappingComboBox(PanelEditor):
             idx = self._combo.findData(current_value)
             if idx >= 0:
                 self._combo.setCurrentIndex(idx)
+        self._combo.blockSignals(False)
 
     def _populate_items(self) -> None:
         """按 mapping 填充下拉选项"""

@@ -1496,7 +1496,7 @@
     </message>
     <message>
         <source>Transform group number</source>
-        <translation type="vanished">变形组号</translation>
+        <translation type="vanished">变形组号号</translation>
     </message>
     <message>
         <source>Transform sequence number</source>
@@ -1504,7 +1504,7 @@
     </message>
     <message>
         <source>Combine group number</source>
-        <translation type="vanished">合体组号</translation>
+        <translation type="vanished">合体组号号</translation>
     </message>
     <message>
         <source>Combine sequence number</source>
@@ -1673,6 +1673,11 @@
         <translation>命中</translation>
     </message>
     <message>
+        <location filename="../../src/gui/custom/fields.py" line="89"/>
+        <source>Unit Opt</source>
+        <translation>机体换装</translation>
+    </message>
+    <message>
         <location filename="../../src/gui/custom/fields.py" line="141"/>
         <source>Reaction</source>
         <translation>反应</translation>
@@ -1778,22 +1783,22 @@
     <message>
         <location filename="../../src/gui/custom/fields.py" line="83"/>
         <source>Tran Grp</source>
-        <translation>变形组</translation>
+        <translation>变形组号</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="84"/>
         <source>Tran Seq</source>
-        <translation>变形序</translation>
+        <translation>变形序号</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="85"/>
         <source>Comb Grp</source>
-        <translation>合体组</translation>
+        <translation>合体组号</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="86"/>
         <source>Comb Seq</source>
-        <translation>合体序</translation>
+        <translation>合体序号</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="87"/>
@@ -1806,9 +1811,8 @@
         <translation>合体数量</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/fields.py" line="89"/>
         <source>Option Parts</source>
-        <translation>机体换装</translation>
+        <translation type="vanished">机体换装</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="92"/>
@@ -2713,32 +2717,32 @@ Do you want to overwrite it?</source>
 <context>
     <name>TerrainCard</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="169"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="248"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="160"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="235"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="183"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="251"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="174"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="238"/>
         <source>Air</source>
         <translation>空</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="190"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="253"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="180"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="240"/>
         <source>Lnd</source>
         <translation>陆</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="197"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="255"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="186"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="242"/>
         <source>Sea</source>
         <translation>海</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="204"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="257"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="192"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="244"/>
         <source>Spc</source>
         <translation>宇</translation>
     </message>
@@ -2759,51 +2763,55 @@ Do you want to overwrite it?</source>
     <name>TransformCard</name>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="34"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="134"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="125"/>
         <source>Transform &amp; Combine</source>
         <translation>变形与合体</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="39"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="135"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="126"/>
         <source>Tran Grp</source>
-        <translation>变形组</translation>
+        <translation>变形组号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="45"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="136"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="44"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="127"/>
         <source>Tran Seq</source>
-        <translation>变形序</translation>
+        <translation>变形序号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="52"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="137"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="50"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="128"/>
         <source>Comb Grp</source>
-        <translation>合体组</translation>
+        <translation>合体组号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="58"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="138"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="55"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="129"/>
         <source>Comb Seq</source>
-        <translation>合体序</translation>
+        <translation>合体序号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="65"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="139"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="61"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="130"/>
         <source>Comb Cnt</source>
         <translation>合体数量</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="72"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="140"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="67"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="131"/>
         <source>Core Unit</source>
         <translation>核心机体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="80"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="141"/>
-        <source>Option Parts</source>
+        <location filename="../../src/gui/robot/unit_panel.py" line="73"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="132"/>
+        <source>Unit Opt</source>
         <translation>机体换装</translation>
+    </message>
+    <message>
+        <source>Option Parts</source>
+        <translation type="vanished">机体换装</translation>
     </message>
 </context>
 <context>

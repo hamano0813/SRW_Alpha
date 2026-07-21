@@ -8,7 +8,7 @@ Classes:
     UnitFrame: 机体列表子框架
 """
 
-from typing import Callable
+from typing import Any, Callable
 
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
@@ -109,8 +109,8 @@ class UnitFrame(ProxyFrame):
 
         # ========== 默认列宽 ==========
 
-        self._robot_view.set_column_width([200] + [96] * 10)
-        self._robot_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
+        self._robot_view.set_column_width([210] + [95] * 10)
+        self._robot_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
 
         # ========== 布局 ==========
 

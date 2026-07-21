@@ -297,7 +297,8 @@ class FixedTableView(BaseTableView):
         if not folded:
             for col_idx in range(1, self._model.columnCount()):
                 cols_width += self.columnWidth(col_idx)
-        return vh_width + cols_width + 8
+            return vh_width + cols_width + 10
+        return vh_width + cols_width + 15
 
     def changed_hidden(self, folded: bool):
         """列折叠状态变更 — 计算释放空间并发出 foldToggled

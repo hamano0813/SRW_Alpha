@@ -38,7 +38,7 @@ class XmlTreeView(TreeWidget):
         # 列宽：首列 200，后续每列 100
         header = self.header()
         for i in range(len(headers)):
-            header.setSectionResizeMode(i, QHeaderView.ResizeMode.Fixed)
+            header.setSectionResizeMode(i, QHeaderView.ResizeMode.Interactive)
             self.setColumnWidth(i, 200 if i == 0 else 120)
 
         self.itemDoubleClicked.connect(self._on_item_double_clicked)

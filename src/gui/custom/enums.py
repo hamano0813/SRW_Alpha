@@ -91,9 +91,9 @@ class EnumData(QObject):
             ],
             "MCLASS": {
                 0x0: self.tr("一一"),  # 一一 / 一一
-                0x1: self.tr("Directional"),  # 方向指定 / 方向指定型
-                0x2: self.tr("Self Circle"),  # 自机中心 / 自機中心型
-                0x3: self.tr("Target Circle"),  # 着弹指定 / 着弾地点指定型
+                0x1: self.tr("Directional"),  # 方向指定型 / 方向指定型
+                0x2: self.tr("Self Circle"),  # 自机中心型 / 自機中心型
+                0x3: self.tr("Target Circle"),  # 着弹地点指定型 / 着弾地点指定型
             },
         }
         self.BGM = {

@@ -39,37 +39,37 @@ class TransformCard(CardHeader):
         """初始化变形·合体卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Transform & Combine"))
-        self.setMinimumWidth(300)
+        self.setMinimumWidth(295)
 
         # ========== 控件 ==========
 
-        _align = Qt.AlignmentFlag.AlignLeft
+        _align = Qt.AlignmentFlag.AlignCenter
         self._lbl_tgrp = BodyLabel(self.tr("Tran Grp"), self)
         self._lbl_tgrp.setAlignment(_align)
         self._tgrp_spin = NumberCompSpin("tgrp", value_range=(0, 99), parent=self)
-        self._tgrp_spin.setMinimumWidth(65)
+        self._tgrp_spin.setMinimumWidth(70)
         self._tgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_tsn = BodyLabel(self.tr("Tran Seq"), self)
         self._lbl_tsn.setAlignment(_align)
         self._tsn_spin = NumberCompSpin("tsn", value_range=(0, 2), parent=self)
-        self._tsn_spin.setMinimumWidth(60)
+        self._tsn_spin.setMinimumWidth(70)
         self._tsn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cgrp = BodyLabel(self.tr("Comb Grp"), self)
         self._lbl_cgrp.setAlignment(_align)
         self._cgrp_spin = NumberCompSpin("cgrp", value_range=(0, 99), parent=self)
-        self._cgrp_spin.setMinimumWidth(65)
+        self._cgrp_spin.setMinimumWidth(70)
         self._cgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_csn = BodyLabel(self.tr("Comb Seq"), self)
         self._lbl_csn.setAlignment(_align)
         self._csn_spin = NumberCompSpin("csn", value_range=(0, 2), parent=self)
-        self._csn_spin.setMinimumWidth(60)
+        self._csn_spin.setMinimumWidth(70)
         self._csn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cnt = BodyLabel(self.tr("Comb Cnt"), self)
         self._lbl_cnt.setAlignment(_align)
         self._cnt_spin = NumberCompSpin("count", value_range=(0, 5), parent=self)
-        self._cnt_spin.setMinimumWidth(60)
+        self._cnt_spin.setMinimumWidth(70)
         self._cnt_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_core = BodyLabel(self.tr("Core Unit"), self)
@@ -169,7 +169,7 @@ class TerrainCard(CardHeader):
         """初始化地形适性卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Terrain"))
-        self.setMinimumWidth(155)
+        self.setMinimumWidth(150)
 
         # ========== 控件 ==========
 
@@ -186,25 +186,25 @@ class TerrainCard(CardHeader):
         self._air_label = BodyLabel(self.tr("Air"), self)
         self._air_label.setAlignment(_align)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self)
-        self._air_spin.setMinimumWidth(60)
+        self._air_spin.setMinimumWidth(70)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
         self._grd_label = BodyLabel(self.tr("Lnd"), self)
         self._grd_label.setAlignment(_align)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self)
-        self._grd_spin.setMinimumWidth(60)
+        self._grd_spin.setMinimumWidth(70)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
         self._wtr_label = BodyLabel(self.tr("Sea"), self)
         self._wtr_label.setAlignment(_align)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self)
-        self._wtr_spin.setMinimumWidth(60)
+        self._wtr_spin.setMinimumWidth(70)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
         self._spc_label = BodyLabel(self.tr("Spc"), self)
         self._spc_label.setAlignment(_align)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self)
-        self._spc_spin.setMinimumWidth(60)
+        self._spc_spin.setMinimumWidth(70)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)
 
         # ========== 网格布局 ==========

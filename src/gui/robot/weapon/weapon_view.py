@@ -66,13 +66,13 @@ class WeaponView(FixedTableView):
 
         # ========== 默认列宽（暂存，数据加载后生效） ==========
 
-        self._widths = [188, 94, 68]
+        self._widths = [188, 94, 70]
         self.setShowGrid(False)
         self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.verticalHeader().setFixedWidth(24)
         self.setFrameShape(QFrame.Shape.NoFrame)
         self.setViewportMargins(0, 0, 0, 0)
-        self.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
+        self.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
 
         # 禁用折叠按钮（面板始终显示）
         self._corner_button.setVisible(False)

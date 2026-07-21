@@ -154,11 +154,10 @@ def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None
         draw2 = ImageDraw.Draw(resized)
         try:
             from PIL import ImageFont
-            font = ImageFont.truetype("segoeui.ttf", 14)
+            font = ImageFont.truetype("segoeuib.ttf", 14)
         except (OSError, ImportError):
             font = ImageFont.load_default()
-        # 黑色描边（偏移 +1px，模拟简单描边效果）
-        draw2.text((4, 4), label, fill="black", font=font)
+        # 加粗白色文字，无描边
         draw2.text((3, 3), label, fill="white", font=font)
 
     return resized.toqpixmap()
@@ -219,6 +218,34 @@ class RangeComboBox(PanelEditor):
         self._combo.blockSignals(True)
         self._combo.setCurrentIndex(idx)
         self._combo.blockSignals(False)
+
+    # ========== 启用/禁用（清空/恢复选项） ==========
+
+    def setEnabled(self, enabled: bool) -> None:
+        """禁用时保留占位项维持高度，恢复时重新填充
+
+        Args:
+            enabled: True=可用，False=禁用
+        """
+        if enabled and self._combo.count() <= 1:
+            # 恢复选项
+            self._key_list = []
+            self._combo.blockSignals(True)
+            self._combo.clear()
+            for key in sorted(MAP_RANGE):
+                self._key_list.append(key)
+                pixmap = _render_range_pixmap(MAP_RANGE[key], key)
+                self._combo.addItem(QIcon(pixmap), "", key)
+            self._combo.blockSignals(False)
+        elif not enabled and self._combo.count() > 1:
+            # 清空选项，保留一个占位项维持高度
+            self._combo.blockSignals(True)
+            self._combo.clear()
+            self._key_list = []
+            dummy = Image.new("RGBA", (150, 100), (0, 0, 0, 0))
+            self._combo.addItem(QIcon(dummy.toqpixmap()), "")
+            self._combo.blockSignals(False)
+        super().setEnabled(enabled)
 
     # ========== 字体 ==========
 

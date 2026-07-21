@@ -76,6 +76,7 @@ class MappingCompSpin(PanelEditor):
         if self._value is not None:
             self._spin.setValue(int(self._value))
         self._spin.blockSignals(False)
+        self._adjust_zero_margin()
 
     def format_value(self) -> None:
         """刷新显示"""
@@ -83,6 +84,7 @@ class MappingCompSpin(PanelEditor):
         if self._value is not None:
             self._spin.setValue(int(self._value))
         self._spin.blockSignals(False)
+        self._adjust_zero_margin()
 
     def apply_font(self, font: QFont | dict) -> None:
         """设置编辑器字体
@@ -109,9 +111,18 @@ class MappingCompSpin(PanelEditor):
 
     # ========== 内部槽 ==========
 
+    def _adjust_zero_margin(self) -> None:
+        """值为 0 时右缩进收窄 4px，使 '－' 符号视觉居中"""
+        le = self._spin.lineEdit()
+        if self._value == 0 or (hasattr(self._value, 'value') and self._value.value() == 0):
+            le.setTextMargins(0, 0, 18, 0)
+        else:
+            le.setTextMargins(0, 0, 21, 0)
+
     def _on_value_changed(self, value: int) -> None:
         """值改变时同步 _value 并写回字典"""
         self._value = value
+        self._adjust_zero_margin()
         self._emit_data_changed()
 
 

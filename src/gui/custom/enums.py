@@ -78,7 +78,23 @@ class EnumData(QObject):
             "CLASS": {
                 0x0: self.tr("Melee"),  # 格斗 / 格斗
                 0x1: self.tr("Ranged"),  # 射击 / 射撃
-            }
+            },
+            "ADAPT": {0x0: "ー", 0x1: "D", 0x2: "C", 0x3: "B", 0x4: "A"},
+            "ATTRIBUTE": [
+                self.tr("Ⓟ"),  # Ⓟ / Ⓟ
+                self.tr("Ⓑ"),  # Ⓑ / Ⓑ
+                self.tr("Parryable"),  # 可切返 / 切り払い可
+                self.tr("Eject"),  # 分离 / パージ
+                self.tr("Bits"),  # 诱导兵器 / ビット
+                self.tr("Charge"),  # 突击 / 突貫
+                self.tr("IFF"),  # 敌我识别 / 敵味方識別
+            ],
+            "MCLASS": {
+                0x0: self.tr("一一"),  # 一一 / 一一
+                0x1: self.tr("Directional"),  # 方向指定 / 方向指定型
+                0x2: self.tr("Self Circle"),  # 自机中心 / 自機中心型
+                0x3: self.tr("Target Circle"),  # 着弹指定 / 着弾地点指定型
+            },
         }
         self.BGM = {
             0x00: self.tr("Combattler V's Theme"),  # コン・バトラーVのテーマ

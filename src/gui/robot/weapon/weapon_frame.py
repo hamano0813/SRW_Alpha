@@ -18,11 +18,12 @@ Classes:
 
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QVBoxLayout
+from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
 from qfluentwidgets import BodyLabel, setFont
 
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
+from gui.custom.widgets import BitComboBox
 from gui.custom.widgets.card_header import CardHeader
 from gui.custom.widgets.panel.mapping_compspin import MappingCompSpin
 from gui.custom.widgets.proxy_frame import ProxyFrame
@@ -36,34 +37,53 @@ from .weapon_view import WeaponView
 
 
 class WeaponAttrCard(CardHeader):
-    """武器属性卡片 - 武器分类/改造/气力/EN/NT等级等
-
-    待填充字段：custom, bonus, morale, newtype, aura, encost, attr
-    """
+    """武器属性卡片 - 武器属性 + 其他参数"""
 
     def __init__(self, parent=None):
         """初始化武器属性卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Attributes"))
 
+        # ========== 控件 ==========
+
+        self._attr_label = BodyLabel(self.tr("Attribute"), self)
+        self._attr_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self._attr_label.setMinimumWidth(64)
+        self._attr_combo = BitComboBox("attr", values=EnumData().WEAPON["ATTRIBUTE"], sep=" / ", parent=self)
+        self._attr_combo.setMinimumWidth(400)
+        self._attr_combo.dataChanged.connect(self.panelDataChanged)
+
+        # ========== 网格布局 ==========
+
+        _grid = QGridLayout()
+        _grid.setSpacing(4)
+        _grid.addWidget(self._attr_label, 0, 0, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._attr_combo, 0, 1, 1, 5)
+        self.viewLayout.addLayout(_grid)
+        self.viewLayout.addStretch()
+
     # ========== UnitPanel 转发接口 ==========
 
     def set_model(self, model: BaseTableModel) -> None:
         """注入数据模型"""
-        pass
+        self._attr_combo.set_model(model)
 
     def set_row(self, row: int) -> None:
         """切换行数据"""
-        pass
+        self._attr_combo.set_row(row)
 
     def translateUI(self) -> None:
-        """刷新卡片标题"""
+        """刷新卡片标题和标签"""
         self.setTitle(self.tr("Attributes"))
+        self._attr_label.setText(self.tr("Attribute"))
+        self._attr_combo.set_values(EnumData().WEAPON["ATTRIBUTE"])
 
     def resetUI(self) -> None:
         """刷新字体"""
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+        setFont(self._attr_label)
+        self._attr_combo.resetUI()
 
 
 class WeaponMapCard(CardHeader):
@@ -112,24 +132,28 @@ class WeaponAdaptCard(CardHeader):
 
         self._air_label = BodyLabel(self.tr("Air"), self)
         self._air_label.setAlignment(_align)
+        self._air_label.setFixedWidth(60)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self)
         self._air_spin.setMinimumWidth(65)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
         self._grd_label = BodyLabel(self.tr("Lnd"), self)
         self._grd_label.setAlignment(_align)
+        self._grd_label.setFixedWidth(60)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self)
         self._grd_spin.setMinimumWidth(65)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
         self._wtr_label = BodyLabel(self.tr("Sea"), self)
         self._wtr_label.setAlignment(_align)
+        self._wtr_label.setFixedWidth(60)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self)
         self._wtr_spin.setMinimumWidth(65)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
         self._spc_label = BodyLabel(self.tr("Spc"), self)
         self._spc_label.setAlignment(_align)
+        self._spc_label.setFixedWidth(60)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self)
         self._spc_spin.setMinimumWidth(65)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)

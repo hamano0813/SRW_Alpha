@@ -312,9 +312,9 @@ class WeaponMapCard(CardHeader):
         self._mshow_label = BodyLabel(self.tr("Map show"), self)
         self._mshow_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self._mshow_label.setMinimumWidth(64)
-        self._mshow_spin = NumberCompSpin("mshow", value_range=(0, 79), parent=self)
-        self._mshow_spin.setFixedWidth(70)
-        self._mshow_spin.dataChanged.connect(self.panelDataChanged)
+        self._mshow_combo = MappingComboBox("mshow", mapping={i: f"[{i:02X}]" for i in range(80)}, parent=self)
+        self._mshow_combo.setFixedWidth(70)
+        self._mshow_combo.dataChanged.connect(self.panelDataChanged)
 
         self._radius_label = BodyLabel(self.tr("Blast radius"), self)
         self._radius_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -338,7 +338,7 @@ class WeaponMapCard(CardHeader):
         _grid.addWidget(self._mrng_label, 0, 2, Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._mcls_combo, 1, 0, 1, 2)
         _grid.addWidget(self._mshow_label, 2, 0, Qt.AlignmentFlag.AlignCenter)
-        _grid.addWidget(self._mshow_spin, 2, 1)
+        _grid.addWidget(self._mshow_combo, 2, 1)
         _grid.addWidget(self._radius_label, 3, 0, Qt.AlignmentFlag.AlignCenter)
         _grid.addWidget(self._radius_spin, 3, 1)
         _grid.addWidget(self._mrng_combo, 1, 2, 3, 1)
@@ -355,7 +355,7 @@ class WeaponMapCard(CardHeader):
         """注入数据模型"""
         self._model = model
         self._mcls_combo.set_model(model)
-        self._mshow_spin.set_model(model)
+        self._mshow_combo.set_model(model)
         self._radius_spin.set_model(model)
         self._mrng_combo.set_model(model)
 
@@ -363,10 +363,11 @@ class WeaponMapCard(CardHeader):
         """切换行数据"""
         self._row = row
         self._mcls_combo.set_row(row)
-        self._mshow_spin.set_row(row)
+        # 先更新启用状态（确保 combo 有选项），再设值
+        self._update_map_enable()
+        self._mshow_combo.set_row(row)
         self._radius_spin.set_row(row)
         self._mrng_combo.set_row(row)
-        self._update_map_enable()
 
     def _on_mcls_changed(self, _field: str) -> None:
         """地图分类变更时刷新各控件启用状态"""
@@ -383,7 +384,7 @@ class WeaponMapCard(CardHeader):
         if self._model is None or self._row < 0:
             return
         mcls = self._model.get_row_data(self._row).get("mcls", 0)
-        self._mshow_spin.setEnabled(mcls != 0)
+        self._mshow_combo.setEnabled(mcls != 0)
         self._radius_spin.setEnabled(mcls == 3)
         self._mrng_combo.setEnabled(mcls == 1)
 
@@ -405,7 +406,7 @@ class WeaponMapCard(CardHeader):
         setFont(self._radius_label)
         setFont(self._mrng_label)
         self._mcls_combo.resetUI()
-        self._mshow_spin.resetUI()
+        self._mshow_combo.resetUI()
         self._radius_spin.resetUI()
         self._mrng_combo.resetUI()
 

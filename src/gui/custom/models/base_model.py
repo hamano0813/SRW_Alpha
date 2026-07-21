@@ -67,7 +67,7 @@ class BaseTableModel(QAbstractTableModel):
         self.beginResetModel()
         self._data = data
         if self._index == BaseTableModel.IndexMode.HEX:
-            self._width = len(f"{len(data):0X}")
+            self._width = len(f"{len(data)-1:0X}")
         self.endResetModel()
 
     def set_title(self, titles: dict[str, list[Callable | None]]) -> None:

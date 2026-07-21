@@ -1,7 +1,8 @@
 """
-武器表格视图 - 7 列武器数据编辑
+武器表格视图 - 3 列武器数据编辑
 
-提供武器名称、分类、射程、攻击力、命中、会心等核心列的原地编辑。
+提供武器名称、分类、攻击力等核心列的原地编辑。
+射程/命中/会心移至右侧面板编辑。
 继承 FixedTableView，自动配置字段委托和列宽。
 
 Classes:
@@ -9,7 +10,7 @@ Classes:
 """
 
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QHeaderView
+from PySide6.QtWidgets import QFrame, QHeaderView
 
 from gui.custom.delegates import MappingSpinDelegate, NumberSpinDelegate, SingleLineDelegate
 from gui.custom.enums import EnumData
@@ -21,12 +22,12 @@ from gui.custom.views import FixedTableView
 class WeaponView(FixedTableView):
     """武器表格视图 - 武器核心数据编辑表格
 
-    第 0 列（武器名）使用日语字体，数值列右对齐。
+    第 0 列（武器名）使用日语字体。
     列折叠后仅显示第 0 列，折叠/展开信号由 FixedTableView 自带 foldToggled 发出。
     """
 
     def __init__(self, parent=None):
-        """初始化武器表格视图，配置 7 列委托"""
+        """初始化武器表格视图，配置 3 列委托"""
         super().__init__(parent)
 
         # ========== 委托编辑器 ==========
@@ -34,7 +35,6 @@ class WeaponView(FixedTableView):
         self._name_delegate = SingleLineDelegate(font=JP_FONT, parent=self)
         self.setItemDelegateForColumn(0, self._name_delegate)
 
-        # 非名称列先统一使用数值委托，后续逐步替换为 MappingSpinDelegate
         _enum = EnumData()
         self._class_delegate = MappingSpinDelegate(mapping=_enum.WEAPON["CLASS"], wrapping=True, parent=self)
         self.setItemDelegateForColumn(1, self._class_delegate)
@@ -42,17 +42,16 @@ class WeaponView(FixedTableView):
         self._damage_delegate = NumberSpinDelegate(show_buttons=False, parent=self)
         self.setItemDelegateForColumn(2, self._damage_delegate)
 
-        self._rngs_delegate = NumberSpinDelegate(value_range=(0, 3), show_buttons=True, parent=self)
-        self.setItemDelegateForColumn(3, self._rngs_delegate)
+        # ========== 禁止排序 ==========
 
-        self._rngl_delegate = NumberSpinDelegate(value_range=(0, 15), show_buttons=True, parent=self)
-        self.setItemDelegateForColumn(4, self._rngl_delegate)
-
-        self._hit_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=True, parent=self)
-        self.setItemDelegateForColumn(5, self._hit_delegate)
-
-        self._crt_delegate = NumberSpinDelegate(value_range=(-100, 100), show_sign=True, show_buttons=True, read_only=True, parent=self)
-        self.setItemDelegateForColumn(6, self._crt_delegate)
+        # FixedTableView 使用自定义 _SortHeader，有独立的排序信号链，
+        # 断掉所有排序相关信号让表头完全无响应
+        self.setSortingEnabled(False)
+        for signal_name in ("sectionClicked", "sortChanged"):
+            try:
+                getattr(self.horizontalHeader(), signal_name).disconnect()
+            except (TypeError, RuntimeError):
+                pass
 
         # ========== 字体与对齐 ==========
 
@@ -62,27 +61,38 @@ class WeaponView(FixedTableView):
             {
                 1: Qt.AlignmentFlag.AlignCenter,
                 2: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
-                3: Qt.AlignmentFlag.AlignCenter,
-                4: Qt.AlignmentFlag.AlignCenter,
-                5: Qt.AlignmentFlag.AlignCenter,
-                6: Qt.AlignmentFlag.AlignCenter,
             }
         )
 
-        # ========== 默认列宽 ==========
+        # ========== 默认列宽（暂存，数据加载后生效） ==========
 
-        self.set_column_width([180, 130, 120, 110, 110, 125, 125])
+        self._widths = [188, 94, 68]
+        self.setShowGrid(False)
+        self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.verticalHeader().setFixedWidth(24)
+        self.setFrameShape(QFrame.Shape.NoFrame)
+        self.setViewportMargins(0, 0, 0, 0)
         self.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
+
+        # 禁用折叠按钮（面板始终显示）
+        self._corner_button.setVisible(False)
 
         # ========== 初始翻译 ==========
 
         self.translateUI()
 
+    # ========== 数据装入后设定列宽 ==========
+
+    def set_data(self, data: list[dict]) -> None:
+        """装入数据后应用列宽设置"""
+        super().set_data(data)
+        if self._widths:
+            self.set_column_width(self._widths)
+
     # ========== 翻译 ==========
 
     def translateUI(self):
         """刷新列标题与格式化函数"""
-        # 武器分类映射需要在语言切换后刷新
         _enum = EnumData()
         self._class_delegate = MappingSpinDelegate(mapping=_enum.WEAPON["CLASS"], wrapping=True, parent=self)
         self.setItemDelegateForColumn(1, self._class_delegate)
@@ -90,13 +100,7 @@ class WeaponView(FixedTableView):
         self.set_title(
             {
                 self.tr("Weapon name"): [self._name_delegate.format_display, self._name_delegate.parse_display],
-                self.tr("Weapon class"): [self._class_delegate.format_display, self._class_delegate.parse_display],
+                self.tr("Class"): [self._class_delegate.format_display, self._class_delegate.parse_display],
                 self.tr("Damage"): [self._damage_delegate.format_display, self._damage_delegate.parse_display],
-                self.tr("Short range"): [self._rngs_delegate.format_display, self._rngs_delegate.parse_display],
-                self.tr("Long range"): [self._rngl_delegate.format_display, self._rngl_delegate.parse_display],
-                self.tr("Accuracy"): [self._hit_delegate.format_display, self._hit_delegate.parse_display],
-                self.tr("Critical"): [self._crt_delegate.format_display, self._crt_delegate.parse_display],
             }
         )
-        if self._widths:
-            self.set_column_width(self._widths)

@@ -26,8 +26,8 @@ class EnumData(QObject):
                 self.tr("Sea"),  # 海 / 海
                 self.tr("Wall"),  # 地 / 地
             ],
-            "ADAPT": {0x0: "ー", 0x1: "D", 0x2: "C", 0x3: "B", 0x4: "A"},
-            "OPTION": {0x0: "V2ガンダム", 0x1: "ヒュッケバインMK-Ⅲ", 0xFF: "一一"},
+            "ADAPT": {0x0: "－", 0x1: "D", 0x2: "C", 0x3: "B", 0x4: "A"},
+            "OPTION": {0x0: "V2ガンダム", 0x1: "ヒュッケバインMK-Ⅲ", 0xFF: "——"},
             "ABILITIES": [
                 self.tr("AT Field"),  # AT-力场 / A.T.フィールド
                 self.tr("Aura Barrier"),  # 奥拉护盾 / オーラバリア
@@ -36,7 +36,7 @@ class EnumData(QObject):
                 self.tr("Gravity Wall"),  # 重力护壁 / グラビティ・ウォール
                 self.tr("Telekinesis Field"),  # 念动力场 / 念動フィールド
                 self.tr("Inertial Canceller"),  # 惯性中和装置 / イナーシャルキャンセラー
-                self.tr("I Field (ν)"),  # I-力场（ν）/ Iフィールド（ν）
+                self.tr("I Field (ν)"),  # I-力场(ν) / Iフィールド(ν)
                 self.tr("I Field"),  # I-力场 / Iフィールド
                 self.tr("Beam Coat"),  # 光束表面涂层 / ビームコート
                 self.tr("Shield"),  # 盾装备 / 盾装備
@@ -59,7 +59,7 @@ class EnumData(QObject):
                 self.tr("Umbilical Cable"),  # 脐带电缆 / アンビリカルケーブル
                 self.tr("Hover VTOL"),  # 悬浮垂直起降 / ホバー VTOL
                 self.tr("Mass-Produced"),  # 量产 / 量産
-                self.tr("Capacity & Launch"),  # 搭载・出击 / 搭載・発進
+                self.tr("Capacity ＆ Launch"),  # 搭载・出击 / 搭載・発進
             ],
             "SERIES": [
                 self.tr("Gundam Series(UC)"),  # 高达系(UC) / ガンダム系(UC)
@@ -79,7 +79,7 @@ class EnumData(QObject):
                 0x0: self.tr("Melee"),  # 格斗 / 格斗
                 0x1: self.tr("Ranged"),  # 射击 / 射撃
             },
-            "ADAPT": {0x0: "ー", 0x1: "D", 0x2: "C", 0x3: "B", 0x4: "A"},
+            "ADAPT": {0x0: "－", 0x1: "C", 0x2: "B", 0x3: "A"},
             "ATTRIBUTE": [
                 self.tr("Ⓟ"),  # Ⓟ / Ⓟ
                 self.tr("Ⓑ"),  # Ⓑ / Ⓑ
@@ -90,7 +90,7 @@ class EnumData(QObject):
                 self.tr("IFF"),  # 敌我识别 / 敵味方識別
             ],
             "MCLASS": {
-                0x0: self.tr("一一"),  # 一一 / 一一
+                0x0: self.tr("——"),  # —— / ——
                 0x1: self.tr("Directional"),  # 方向指定型 / 方向指定型
                 0x2: self.tr("Self Circle"),  # 自机中心型 / 自機中心型
                 0x3: self.tr("Target Circle"),  # 着弹地点指定型 / 着弾地点指定型
@@ -106,7 +106,7 @@ class EnumData(QObject):
             0x06: self.tr("Fly, Dunbine"),  # ダンバインとぶ
             0x07: self.tr("To Afar"),  # 彼方へ
             0x08: self.tr("Invisible"),  # Invisible
-            0x09: self.tr("[0x09]"),  # [0x09]
+            0x09: self.tr("BANPRESTO!"),  # BANPRESTO！
             0x0A: self.tr("Twilight Battlefield"),  # 黄昏の戦場
             0x0B: self.tr("Banquet of Despair"),  # 絶望の宴
             0x0C: self.tr("The Almighty Arbitrator"),  # 全能なる調停者
@@ -163,7 +163,7 @@ class EnumData(QObject):
             0x3F: self.tr("Spirits of Steel ～SUPER ROBOT SPIRITS"),  # 鋼の魂～SUPER ROBOT SPIRITS
             0x40: self.tr("Time Diver"),  # TIME DIVER
             0x41: self.tr("Raging Spirits!!"),  # 荒ぶる魂！！
-            0x42: self.tr("[0x42]"),  # [0x42]
+            0x42: self.tr("The Universe in Eternal Harmony..."), # 宇宙のハーモニー永遠に...
             0x43: self.tr("Peace on a Distant Day"),  # 遠い日の安息
             0x44: self.tr("For Whom the Bell Dances"),  # 誰がために鐘は踊る
             0x45: self.tr("What Awaits Before the Hardship"),  # 苦難の先に待つものは

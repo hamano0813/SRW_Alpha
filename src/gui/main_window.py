@@ -215,5 +215,9 @@ class MainWindow(FluentWindow):
         self._enable_features()
 
     def build_data(self):
-        """构建缓存数据（暂未实现）"""
-        pass
+        """将所有已修改的数据构建并写回缓存目录"""
+        self.rom.build_cache()
+        # 推送给所有观察者（写回后数据可能已重置）
+        for key in ("robots", "pilots", "snmsgs"):
+            if key in self.rom.data:
+                self.rom.notify(key)

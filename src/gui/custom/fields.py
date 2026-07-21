@@ -104,18 +104,18 @@ class FieldMapping(QObject):
             self.tr("Required aura level"): "aura",  # 圣战士等级 / 聖戦士レベル
             self.tr("Required morale value"): "morale",  # 必要气力 / 必要気力
             self.tr("Custom type"): "custom",  # 改造类型 / 改造タイプ
-            self.tr("Short range"): "rngs",  # 近射程 / 近射程
-            self.tr("Long range"): "rngl",  # 远射程 / 遠射程
+            self.tr("Short rng"): "rngs",  # 近射程 / 近射程
+            self.tr("Long rng"): "rngl",  # 远射程 / 遠射程
             self.tr("Map weapon class"): "mcls",  # 地图武器分类 / マップ兵器分類
-            self.tr("Map weapon radius"): "radius",  # 着弹指定型半径 / 着弾指定型半径
+            self.tr("Target circle radius"): "radius",  # 着弹指定型半径 / 着弾指定型半径
             self.tr("Damage"): "damage",  # 攻击力 / 攻撃力
-            self.tr("Weapon class"): "class",  # 武器分类 / 武器分類
+            self.tr("Class"): "class",  # 武器分类 / 武器分類
             self.tr("Attribute"): "attr",  # 属性 / 属性
             self.tr("Custom bonus"): "bonus",  # 改造追加 / 改造ボーナス
             self.tr("Weapon name"): "wname",  # 武器名 / 武器名
             self.tr("Map weapon range"): "mrng",  # 方向指定型范围 / 方向指定型範囲
-            self.tr("Map weapon show"): "mshow",  # 地图武器演出 / マップ兵器演出
-            self.tr("Energy cost"): "encost",  # 消耗EN / 消費EN
+            self.tr("Map show"): "mshow",  # 地图武器演出 / マップ兵器演出
+            self.tr("EN cost"): "encost",  # 消耗EN / 消費EN
             self.tr("Accuracy"): "hit",  # 命中 / 命中
             self.tr("Critical"): "crt",  # 会心补正 / クリティカル補正
             self.tr("Default ammo"): "ammod",  # 初始弹药 / 初期弾数

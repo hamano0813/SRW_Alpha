@@ -39,7 +39,7 @@ class TransformCard(CardHeader):
         """初始化变形·合体卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Transform & Combine"))
-        self.setMinimumWidth(305)
+        self.setMinimumWidth(300)
 
         # ========== 控件 ==========
 
@@ -47,34 +47,34 @@ class TransformCard(CardHeader):
         self._lbl_tgrp = BodyLabel(self.tr("Tran Grp"), self)
         self._lbl_tgrp.setAlignment(_align)
         self._tgrp_spin = NumberCompSpin("tgrp", value_range=(0, 99), parent=self)
-        self._tgrp_spin.setMinimumWidth(70)
+        self._tgrp_spin.setMinimumWidth(65)
         self._tgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_tsn = BodyLabel(self.tr("Tran Seq"), self)
         self._lbl_tsn.setAlignment(_align)
         self._tsn_spin = NumberCompSpin("tsn", value_range=(0, 2), parent=self)
-        self._tsn_spin.setMinimumWidth(65)
+        self._tsn_spin.setMinimumWidth(60)
         self._tsn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cgrp = BodyLabel(self.tr("Comb Grp"), self)
         self._lbl_cgrp.setAlignment(_align)
         self._cgrp_spin = NumberCompSpin("cgrp", value_range=(0, 99), parent=self)
-        self._cgrp_spin.setMinimumWidth(70)
+        self._cgrp_spin.setMinimumWidth(65)
         self._cgrp_spin.dataChanged.connect(self.panelDataChanged)
         self._lbl_csn = BodyLabel(self.tr("Comb Seq"), self)
         self._lbl_csn.setAlignment(_align)
         self._csn_spin = NumberCompSpin("csn", value_range=(0, 2), parent=self)
-        self._csn_spin.setMinimumWidth(65)
+        self._csn_spin.setMinimumWidth(60)
         self._csn_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_cnt = BodyLabel(self.tr("Comb Cnt"), self)
         self._lbl_cnt.setAlignment(_align)
         self._cnt_spin = NumberCompSpin("count", value_range=(0, 5), parent=self)
-        self._cnt_spin.setMinimumWidth(65)
+        self._cnt_spin.setMinimumWidth(60)
         self._cnt_spin.dataChanged.connect(self.panelDataChanged)
 
         self._lbl_core = BodyLabel(self.tr("Core Unit"), self)
         self._lbl_core.setAlignment(_align)
-        self._core_combo = RobotComboBox("core", parent=self, supplements={0xFFFF: "一一"})
+        self._core_combo = RobotComboBox("core", parent=self, supplements={0xFFFF: "——"})
         self._core_combo.setMinimumWidth(250)
         self._core_combo.dataChanged.connect(self.panelDataChanged)
 
@@ -158,6 +158,7 @@ class TransformCard(CardHeader):
         setFont(self._lbl_cnt)
         setFont(self._lbl_core)
         self._option_combo.resetUI()
+        self._option_combo.apply_font(JP_FONT)  # resetUI 会覆盖字体，重新固定
         setFont(self._lbl_option)
 
 
@@ -168,7 +169,7 @@ class TerrainCard(CardHeader):
         """初始化地形适性卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Terrain"))
-        self.setMinimumWidth(158)
+        self.setMinimumWidth(155)
 
         # ========== 控件 ==========
 
@@ -185,25 +186,25 @@ class TerrainCard(CardHeader):
         self._air_label = BodyLabel(self.tr("Air"), self)
         self._air_label.setAlignment(_align)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self)
-        self._air_spin.setMinimumWidth(65)
+        self._air_spin.setMinimumWidth(60)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
         self._grd_label = BodyLabel(self.tr("Lnd"), self)
         self._grd_label.setAlignment(_align)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self)
-        self._grd_spin.setMinimumWidth(65)
+        self._grd_spin.setMinimumWidth(60)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
         self._wtr_label = BodyLabel(self.tr("Sea"), self)
         self._wtr_label.setAlignment(_align)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self)
-        self._wtr_spin.setMinimumWidth(65)
+        self._wtr_spin.setMinimumWidth(60)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
         self._spc_label = BodyLabel(self.tr("Spc"), self)
         self._spc_label.setAlignment(_align)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self)
-        self._spc_spin.setMinimumWidth(65)
+        self._spc_spin.setMinimumWidth(60)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)
 
         # ========== 网格布局 ==========
@@ -326,7 +327,7 @@ class SeriesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._series_list)
-        self.setFixedWidth(225)
+        self.setFixedWidth(220)
 
     # ========== UnitPanel 转发接口 ==========
 

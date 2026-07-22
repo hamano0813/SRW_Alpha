@@ -31,6 +31,7 @@ class XmlTreeView(TreeWidget):
         super().__init__(parent)
         self._headers = headers
         self._datas = datas
+        self._last_xml_path: str = ""
         self.setHeaderLabels(headers)
         self.setAnimated(True)
         self.setSelectionMode(TreeWidget.SelectionMode.SingleSelection)
@@ -59,6 +60,7 @@ class XmlTreeView(TreeWidget):
             加载成功返回 True，否则返回 False
         """
         self.clear()
+        self._last_xml_path = xml_path
 
         if not os.path.isfile(xml_path):
             return False
@@ -136,6 +138,6 @@ class XmlTreeView(TreeWidget):
         self.clear()
 
     def resetUI(self):
-        """刷新界面字体 — 用 QSS 覆盖 qfluentwidgets 默认表头字号"""
-        qss = "QHeaderView::section { font-size: 16px; font-weight: bold;}"
-        setCustomStyleSheet(self, qss, qss)
+        """刷新界面字体 — 重载 XML 树以使用最新字体"""
+        if self._last_xml_path:
+            self.load_xml(self._last_xml_path)

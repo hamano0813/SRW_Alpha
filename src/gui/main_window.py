@@ -207,6 +207,7 @@ class MainWindow(FluentWindow):
         """解析缓存数据并设置到各个编辑器"""
         self.rom.parse_cache()
         self.robot_frame.set_rom_data(self.rom.data)
+        self.pilot_frame.set_rom_data(self.rom.data)
         self.snmsg_frame.set_rom_data(self.rom.data)
         # 首次数据就绪，推送至所有观察者
         for key in ("robots", "pilots", "snmsgs"):

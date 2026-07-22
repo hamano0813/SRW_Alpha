@@ -1,5 +1,14 @@
 """
-pilot 包 - 驾驶员编辑模块（待实现）
+pilot 包 - 驾驶员编辑模块
 
 提供驾驶员数据的表格展示和编辑界面。
+
+Classes:
+    PilotFrame: 驾驶员编辑框架
+    PilotTable: 驾驶员表格子框架
+    PilotPanel: 驾驶员编辑面板
 """
+
+from .pilot_frame import PilotFrame
+from .pilot_panel import PilotPanel
+from .pilot_table import PilotTable

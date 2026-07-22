@@ -111,8 +111,8 @@
     <name>EnumData</name>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="24"/>
-        <location filename="../../src/gui/custom/enums.py" line="814"/>
-        <location filename="../../src/gui/custom/enums.py" line="815"/>
+        <location filename="../../src/gui/custom/enums.py" line="852"/>
+        <location filename="../../src/gui/custom/enums.py" line="853"/>
         <source>Air</source>
         <translation>空</translation>
     </message>
@@ -178,6 +178,7 @@
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="44"/>
+        <location filename="../../src/gui/custom/enums.py" line="123"/>
         <source>Resupply</source>
         <translation>補給装置</translation>
     </message>
@@ -312,180 +313,180 @@
         <translation>ダイターン系</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="195"/>
-        <location filename="../../src/gui/custom/enums.py" line="253"/>
-        <location filename="../../src/gui/custom/enums.py" line="256"/>
-        <location filename="../../src/gui/custom/enums.py" line="310"/>
-        <location filename="../../src/gui/custom/enums.py" line="311"/>
-        <location filename="../../src/gui/custom/enums.py" line="314"/>
-        <location filename="../../src/gui/custom/enums.py" line="318"/>
-        <location filename="../../src/gui/custom/enums.py" line="340"/>
-        <location filename="../../src/gui/custom/enums.py" line="346"/>
-        <location filename="../../src/gui/custom/enums.py" line="464"/>
-        <location filename="../../src/gui/custom/enums.py" line="581"/>
-        <location filename="../../src/gui/custom/enums.py" line="585"/>
-        <location filename="../../src/gui/custom/enums.py" line="665"/>
-        <location filename="../../src/gui/custom/enums.py" line="668"/>
-        <location filename="../../src/gui/custom/enums.py" line="745"/>
-        <location filename="../../src/gui/custom/enums.py" line="760"/>
-        <location filename="../../src/gui/custom/enums.py" line="766"/>
-        <location filename="../../src/gui/custom/enums.py" line="801"/>
+        <location filename="../../src/gui/custom/enums.py" line="233"/>
+        <location filename="../../src/gui/custom/enums.py" line="291"/>
+        <location filename="../../src/gui/custom/enums.py" line="294"/>
+        <location filename="../../src/gui/custom/enums.py" line="348"/>
+        <location filename="../../src/gui/custom/enums.py" line="349"/>
+        <location filename="../../src/gui/custom/enums.py" line="352"/>
+        <location filename="../../src/gui/custom/enums.py" line="356"/>
+        <location filename="../../src/gui/custom/enums.py" line="378"/>
+        <location filename="../../src/gui/custom/enums.py" line="384"/>
+        <location filename="../../src/gui/custom/enums.py" line="502"/>
+        <location filename="../../src/gui/custom/enums.py" line="619"/>
+        <location filename="../../src/gui/custom/enums.py" line="623"/>
+        <location filename="../../src/gui/custom/enums.py" line="703"/>
+        <location filename="../../src/gui/custom/enums.py" line="706"/>
+        <location filename="../../src/gui/custom/enums.py" line="783"/>
+        <location filename="../../src/gui/custom/enums.py" line="798"/>
         <location filename="../../src/gui/custom/enums.py" line="804"/>
-        <location filename="../../src/gui/custom/enums.py" line="810"/>
-        <location filename="../../src/gui/custom/enums.py" line="814"/>
-        <location filename="../../src/gui/custom/enums.py" line="815"/>
-        <location filename="../../src/gui/custom/enums.py" line="818"/>
-        <location filename="../../src/gui/custom/enums.py" line="869"/>
-        <location filename="../../src/gui/custom/enums.py" line="884"/>
-        <location filename="../../src/gui/custom/enums.py" line="890"/>
+        <location filename="../../src/gui/custom/enums.py" line="839"/>
+        <location filename="../../src/gui/custom/enums.py" line="842"/>
+        <location filename="../../src/gui/custom/enums.py" line="848"/>
+        <location filename="../../src/gui/custom/enums.py" line="852"/>
+        <location filename="../../src/gui/custom/enums.py" line="853"/>
+        <location filename="../../src/gui/custom/enums.py" line="856"/>
+        <location filename="../../src/gui/custom/enums.py" line="907"/>
+        <location filename="../../src/gui/custom/enums.py" line="922"/>
+        <location filename="../../src/gui/custom/enums.py" line="928"/>
         <source>Unified</source>
         <translation>共通</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="195"/>
+        <location filename="../../src/gui/custom/enums.py" line="233"/>
         <source>Stage 0</source>
         <translation>第０話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="195"/>
+        <location filename="../../src/gui/custom/enums.py" line="233"/>
         <source>Prologue</source>
         <translation>プロローグ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="198"/>
-        <location filename="../../src/gui/custom/enums.py" line="204"/>
-        <location filename="../../src/gui/custom/enums.py" line="210"/>
-        <location filename="../../src/gui/custom/enums.py" line="214"/>
-        <location filename="../../src/gui/custom/enums.py" line="217"/>
-        <location filename="../../src/gui/custom/enums.py" line="223"/>
-        <location filename="../../src/gui/custom/enums.py" line="262"/>
-        <location filename="../../src/gui/custom/enums.py" line="328"/>
-        <location filename="../../src/gui/custom/enums.py" line="334"/>
-        <location filename="../../src/gui/custom/enums.py" line="661"/>
-        <location filename="../../src/gui/custom/enums.py" line="872"/>
+        <location filename="../../src/gui/custom/enums.py" line="236"/>
+        <location filename="../../src/gui/custom/enums.py" line="242"/>
+        <location filename="../../src/gui/custom/enums.py" line="248"/>
+        <location filename="../../src/gui/custom/enums.py" line="252"/>
+        <location filename="../../src/gui/custom/enums.py" line="255"/>
+        <location filename="../../src/gui/custom/enums.py" line="261"/>
+        <location filename="../../src/gui/custom/enums.py" line="300"/>
+        <location filename="../../src/gui/custom/enums.py" line="366"/>
+        <location filename="../../src/gui/custom/enums.py" line="372"/>
+        <location filename="../../src/gui/custom/enums.py" line="699"/>
+        <location filename="../../src/gui/custom/enums.py" line="910"/>
         <source>Super</source>
         <translation>スーパー系</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="199"/>
-        <location filename="../../src/gui/custom/enums.py" line="230"/>
+        <location filename="../../src/gui/custom/enums.py" line="237"/>
+        <location filename="../../src/gui/custom/enums.py" line="268"/>
         <source>Stage 1</source>
         <translation>第１話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="200"/>
+        <location filename="../../src/gui/custom/enums.py" line="238"/>
         <source>Cockpit of Steel</source>
         <translation>鋼鉄のコクピット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="205"/>
-        <location filename="../../src/gui/custom/enums.py" line="233"/>
+        <location filename="../../src/gui/custom/enums.py" line="243"/>
+        <location filename="../../src/gui/custom/enums.py" line="271"/>
         <source>Stage 2</source>
         <translation>第２話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="206"/>
+        <location filename="../../src/gui/custom/enums.py" line="244"/>
         <source>Desperate Situation For Mazinger Z</source>
         <translation>マジンガーＺ絶体絶命</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="211"/>
-        <location filename="../../src/gui/custom/enums.py" line="237"/>
+        <location filename="../../src/gui/custom/enums.py" line="249"/>
+        <location filename="../../src/gui/custom/enums.py" line="275"/>
         <source>Stage 3</source>
         <translation>第３話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="212"/>
+        <location filename="../../src/gui/custom/enums.py" line="250"/>
         <source>Getter Team, Launch!</source>
         <translation>ゲッターチーム出撃せよ！</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="214"/>
-        <location filename="../../src/gui/custom/enums.py" line="243"/>
+        <location filename="../../src/gui/custom/enums.py" line="252"/>
+        <location filename="../../src/gui/custom/enums.py" line="281"/>
         <source>Stage 4</source>
         <translation>第４話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="214"/>
+        <location filename="../../src/gui/custom/enums.py" line="252"/>
         <source>Zeon&apos;s Second Coming</source>
         <translation>ジオン再臨</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="218"/>
-        <location filename="../../src/gui/custom/enums.py" line="246"/>
+        <location filename="../../src/gui/custom/enums.py" line="256"/>
+        <location filename="../../src/gui/custom/enums.py" line="284"/>
         <source>Stage 5</source>
         <translation>第５話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="219"/>
+        <location filename="../../src/gui/custom/enums.py" line="257"/>
         <source>Secret Numbers</source>
         <translation>シークレット・ナンバーズ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="224"/>
-        <location filename="../../src/gui/custom/enums.py" line="250"/>
+        <location filename="../../src/gui/custom/enums.py" line="262"/>
+        <location filename="../../src/gui/custom/enums.py" line="288"/>
         <source>Stage 6</source>
         <translation>第６話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="225"/>
+        <location filename="../../src/gui/custom/enums.py" line="263"/>
         <source>The Order To Shoot Down The Argama</source>
         <translation>アーガマ撃墜命令</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="229"/>
-        <location filename="../../src/gui/custom/enums.py" line="233"/>
-        <location filename="../../src/gui/custom/enums.py" line="236"/>
-        <location filename="../../src/gui/custom/enums.py" line="242"/>
-        <location filename="../../src/gui/custom/enums.py" line="246"/>
-        <location filename="../../src/gui/custom/enums.py" line="249"/>
-        <location filename="../../src/gui/custom/enums.py" line="266"/>
-        <location filename="../../src/gui/custom/enums.py" line="319"/>
-        <location filename="../../src/gui/custom/enums.py" line="322"/>
-        <location filename="../../src/gui/custom/enums.py" line="658"/>
-        <location filename="../../src/gui/custom/enums.py" line="878"/>
+        <location filename="../../src/gui/custom/enums.py" line="267"/>
+        <location filename="../../src/gui/custom/enums.py" line="271"/>
+        <location filename="../../src/gui/custom/enums.py" line="274"/>
+        <location filename="../../src/gui/custom/enums.py" line="280"/>
+        <location filename="../../src/gui/custom/enums.py" line="284"/>
+        <location filename="../../src/gui/custom/enums.py" line="287"/>
+        <location filename="../../src/gui/custom/enums.py" line="304"/>
+        <location filename="../../src/gui/custom/enums.py" line="357"/>
+        <location filename="../../src/gui/custom/enums.py" line="360"/>
+        <location filename="../../src/gui/custom/enums.py" line="696"/>
+        <location filename="../../src/gui/custom/enums.py" line="916"/>
         <source>Real</source>
         <translation>リアル系</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="155"/>
-        <location filename="../../src/gui/custom/enums.py" line="231"/>
+        <location filename="../../src/gui/custom/enums.py" line="193"/>
+        <location filename="../../src/gui/custom/enums.py" line="269"/>
         <source>Vanishing Trooper</source>
         <translation>バニシング・トルーパー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="233"/>
+        <location filename="../../src/gui/custom/enums.py" line="271"/>
         <source>Black Gundam</source>
         <translation>黒いガンダム</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="238"/>
+        <location filename="../../src/gui/custom/enums.py" line="276"/>
         <source>Rescue The White Base</source>
         <translation>ホワイトベース救出</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="244"/>
+        <location filename="../../src/gui/custom/enums.py" line="282"/>
         <source>The Man Called Death</source>
         <translation>死神と呼ばれたＧ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="246"/>
+        <location filename="../../src/gui/custom/enums.py" line="284"/>
         <source>The Ghosts Of Zeon</source>
         <translation>ジオンの亡霊</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="251"/>
+        <location filename="../../src/gui/custom/enums.py" line="289"/>
         <source>Showdown At The Far East Base</source>
         <translation>対決、極東基地</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="253"/>
+        <location filename="../../src/gui/custom/enums.py" line="291"/>
         <source>Stage 7</source>
         <translation>第７話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="179"/>
-        <location filename="../../src/gui/custom/enums.py" line="253"/>
+        <location filename="../../src/gui/custom/enums.py" line="217"/>
+        <location filename="../../src/gui/custom/enums.py" line="291"/>
         <source>Let&apos;s Combine!</source>
         <translation>レッツ！コンバイン</translation>
     </message>
@@ -499,425 +500,590 @@
         <translation type="vanished">一一</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="100"/>
+        <location filename="../../src/gui/custom/enums.py" line="138"/>
         <source>Combattler V&apos;s Theme</source>
         <translation>コン・バトラーVのテーマ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="101"/>
+        <location filename="../../src/gui/custom/enums.py" line="139"/>
         <source>Sirocco! Gale! Cybuster</source>
         <translation>熱風！疾風！サイバスター</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="102"/>
+        <location filename="../../src/gui/custom/enums.py" line="140"/>
         <source>Dark Prison</source>
         <translation>ダークプリズン</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="103"/>
+        <location filename="../../src/gui/custom/enums.py" line="141"/>
         <source>Flapper Girl</source>
         <translation>フラッパー・ガール</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="104"/>
+        <location filename="../../src/gui/custom/enums.py" line="142"/>
         <source>Burning Love</source>
         <translation>バーニング・ラブ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="105"/>
+        <location filename="../../src/gui/custom/enums.py" line="143"/>
         <source>Come Here! Daitarn 3</source>
         <translation>カムヒア！ダイターン3</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="106"/>
+        <location filename="../../src/gui/custom/enums.py" line="144"/>
         <source>Fly, Dunbine</source>
         <translation>ダンバインとぶ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="107"/>
+        <location filename="../../src/gui/custom/enums.py" line="145"/>
         <source>To Afar</source>
         <translation>彼方へ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="108"/>
+        <location filename="../../src/gui/custom/enums.py" line="146"/>
         <source>Invisible</source>
         <translation>Invisible</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="110"/>
+        <location filename="../../src/gui/custom/enums.py" line="148"/>
         <source>Twilight Battlefield</source>
         <translation>黄昏の戦場</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="111"/>
+        <location filename="../../src/gui/custom/enums.py" line="149"/>
         <source>Banquet of Despair</source>
         <translation>絶望の宴</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="112"/>
+        <location filename="../../src/gui/custom/enums.py" line="150"/>
         <source>The Almighty Arbitrator</source>
         <translation>全能なる調停者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="113"/>
+        <location filename="../../src/gui/custom/enums.py" line="151"/>
         <source>Decisive Battle</source>
         <translation>DECISIVE BATTLE</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="114"/>
+        <location filename="../../src/gui/custom/enums.py" line="152"/>
         <source>A Step Forward Into Terror</source>
         <translation>A STEP FORWARD INTO TERROR</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="115"/>
+        <location filename="../../src/gui/custom/enums.py" line="153"/>
         <source>EVA-02</source>
         <translation>EVA-02</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="116"/>
+        <location filename="../../src/gui/custom/enums.py" line="154"/>
         <source>The Beast</source>
         <translation>THE BEAST II</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="117"/>
+        <location filename="../../src/gui/custom/enums.py" line="155"/>
         <source>Symphony No. 9 Presto 4th Movement</source>
         <translation>交響曲 第9番 ニ短調 第４楽章 より</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="118"/>
+        <location filename="../../src/gui/custom/enums.py" line="156"/>
         <source>Cruel Angel&apos;s Thesis</source>
         <translation>残酷な天使のテーゼ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="119"/>
+        <location filename="../../src/gui/custom/enums.py" line="157"/>
         <source>Soul&apos;s Refrain</source>
         <translation>魂のルフラン</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="120"/>
+        <location filename="../../src/gui/custom/enums.py" line="158"/>
         <source>The Winner</source>
         <translation>THE WINNER</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="121"/>
+        <location filename="../../src/gui/custom/enums.py" line="159"/>
         <source>Men Of Destiny</source>
         <translation>MEN OF DESTINY</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="122"/>
+        <location filename="../../src/gui/custom/enums.py" line="160"/>
         <source>Charge! It&apos;s Name is Giant Robo</source>
         <translation>出撃！その名はジャイアント・ロボ！</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="123"/>
-        <location filename="../../src/gui/custom/enums.py" line="124"/>
+        <location filename="../../src/gui/custom/enums.py" line="161"/>
+        <location filename="../../src/gui/custom/enums.py" line="162"/>
         <source>Main Title</source>
         <translation>メイン・タイトル</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="125"/>
+        <location filename="../../src/gui/custom/enums.py" line="163"/>
         <source>Getter Robo!</source>
         <translation>ゲッターロボ！</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="126"/>
+        <location filename="../../src/gui/custom/enums.py" line="164"/>
         <source>F91 Gundam, Sortie</source>
         <translation>F91ガンダム出撃</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="127"/>
+        <location filename="../../src/gui/custom/enums.py" line="165"/>
         <source>The Red Comet</source>
         <translation>赤い彗星</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="128"/>
+        <location filename="../../src/gui/custom/enums.py" line="166"/>
         <source>Stand Up To The Victory</source>
         <translation>STAND UP TO THE VICTORY</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="129"/>
+        <location filename="../../src/gui/custom/enums.py" line="167"/>
         <source>Don&apos;t Stop! Carry On!</source>
         <translation>DON&apos;T STOP! CARRY ON!</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="130"/>
+        <location filename="../../src/gui/custom/enums.py" line="168"/>
         <source>Just Communication</source>
         <translation>JUST COMMUNICATION</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="131"/>
+        <location filename="../../src/gui/custom/enums.py" line="169"/>
         <source>Rhythm Emotion</source>
         <translation>RHYTHM EMOTION</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="132"/>
+        <location filename="../../src/gui/custom/enums.py" line="170"/>
         <source>White Reflection</source>
         <translation>WHITE REFLECTION</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="133"/>
+        <location filename="../../src/gui/custom/enums.py" line="171"/>
         <source>Mobile Suit Battle</source>
         <translation>モビルスーツ戦 敵機襲来</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="134"/>
+        <location filename="../../src/gui/custom/enums.py" line="172"/>
         <source>Ship-To-Ship Combat</source>
         <translation>艦隊戦</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="135"/>
+        <location filename="../../src/gui/custom/enums.py" line="173"/>
         <source>Sailing Through Space ~ Zeta, Activate</source>
         <translation>宇宙を駆ける ゼータ発動</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="136"/>
+        <location filename="../../src/gui/custom/enums.py" line="174"/>
         <source>Silent Voice</source>
         <translation>サイレントヴォイス</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="137"/>
+        <location filename="../../src/gui/custom/enums.py" line="175"/>
         <source>The Arrow of Fate</source>
         <translation>運命の矢</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="138"/>
+        <location filename="../../src/gui/custom/enums.py" line="176"/>
         <source>Between Victory and Defeat</source>
         <translation>勝利と敗北の狭間で</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="140"/>
+        <location filename="../../src/gui/custom/enums.py" line="178"/>
         <source>Advance for Hope, Retreat for Despair</source>
         <translation>進路に光明、退路に絶望</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="141"/>
+        <location filename="../../src/gui/custom/enums.py" line="179"/>
         <source>Swaying Crosshairs</source>
         <translation>揺れる照星</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="142"/>
+        <location filename="../../src/gui/custom/enums.py" line="180"/>
         <source>For Justice</source>
         <translation>それぞれの大義のために</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="143"/>
+        <location filename="../../src/gui/custom/enums.py" line="181"/>
         <source>Messenger from the Void</source>
         <translation>虚空からの使者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="144"/>
+        <location filename="../../src/gui/custom/enums.py" line="182"/>
         <source>Detestable Visitors</source>
         <translation>忌むべき訪問者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="145"/>
+        <location filename="../../src/gui/custom/enums.py" line="183"/>
         <source>Dog Fighter</source>
         <translation>ドッグ・ファイター</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="146"/>
+        <location filename="../../src/gui/custom/enums.py" line="184"/>
         <source>All-Out Attack</source>
         <translation>総攻撃</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="147"/>
+        <location filename="../../src/gui/custom/enums.py" line="185"/>
         <source>500,000 Years of Battle</source>
         <translation>50万年の戦い</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="148"/>
+        <location filename="../../src/gui/custom/enums.py" line="186"/>
         <source>Dog Fight</source>
         <translation>DOG FIGHT</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="149"/>
+        <location filename="../../src/gui/custom/enums.py" line="187"/>
         <source>I Am Great Mazinger</source>
         <translation>おれはグレートマジンガー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="150"/>
+        <location filename="../../src/gui/custom/enums.py" line="188"/>
         <source>Mazinger Z</source>
         <translation>マジンガ-Z</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="151"/>
-        <location filename="../../src/gui/custom/enums.py" line="190"/>
+        <location filename="../../src/gui/custom/enums.py" line="189"/>
+        <location filename="../../src/gui/custom/enums.py" line="228"/>
         <source>Theme of Mazinkaiser</source>
         <translation>マジンカイザー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="152"/>
+        <location filename="../../src/gui/custom/enums.py" line="190"/>
         <source>Raideen the Brave</source>
         <translation>勇者ライディーン</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="153"/>
+        <location filename="../../src/gui/custom/enums.py" line="191"/>
         <source>Ace Attacker</source>
         <translation>ACE ATTACKER</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="154"/>
+        <location filename="../../src/gui/custom/enums.py" line="192"/>
         <source>I&apos;m Invincible</source>
         <translation>我ニ敵ナシ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="156"/>
+        <location filename="../../src/gui/custom/enums.py" line="194"/>
         <source>Steel Cockpit</source>
         <translation>鋼鉄のコクピット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="157"/>
+        <location filename="../../src/gui/custom/enums.py" line="195"/>
         <source>Everywhere You Go</source>
         <translation>EVERYWHERE YOU GO</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="158"/>
+        <location filename="../../src/gui/custom/enums.py" line="196"/>
         <source>Ice Man</source>
         <translation>ICE MAN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="159"/>
+        <location filename="../../src/gui/custom/enums.py" line="197"/>
         <source>Psychic Energy</source>
         <translation>PSYCHIC ENERGY</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="109"/>
-        <location filename="../../src/gui/custom/enums.py" line="160"/>
+        <location filename="../../src/gui/custom/enums.py" line="147"/>
+        <location filename="../../src/gui/custom/enums.py" line="198"/>
         <source>BANPRESTO!</source>
         <translation>BANPRESTO!</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="161"/>
+        <location filename="../../src/gui/custom/enums.py" line="100"/>
+        <source>Valor</source>
+        <translation>熱血</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="101"/>
+        <source>Soul</source>
+        <translation>魂</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="102"/>
+        <source>Mercy</source>
+        <translation>てかげん</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="103"/>
+        <source>Snipe</source>
+        <translation>狙撃</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="104"/>
+        <source>Flash</source>
+        <translation>ひらめき</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="105"/>
+        <source>Gain</source>
+        <translation>努力</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="106"/>
+        <source>Fortune</source>
+        <translation>幸運</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="107"/>
+        <source>Focus</source>
+        <translation>集中</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="108"/>
+        <source>Bullseye</source>
+        <translation>必中</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="110"/>
+        <source>Cloak</source>
+        <translation>隠れ身</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="111"/>
+        <source>Accel</source>
+        <translation>加速</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="112"/>
+        <source>Zeal</source>
+        <translation>覚醒</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="113"/>
+        <source>Smash</source>
+        <translation>激闘</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="114"/>
+        <source>Sacrifice</source>
+        <translation>捨て身</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="115"/>
+        <source>Disrupt</source>
+        <translation>かく乱</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="116"/>
+        <source>Taunt</source>
+        <translation>挑発</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="117"/>
+        <source>Vigor</source>
+        <translation>根性</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="118"/>
+        <source>Guts</source>
+        <translation>ド根性</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="119"/>
+        <source>Spirit</source>
+        <translation>気合</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="120"/>
+        <source>Trust</source>
+        <translation>信頼</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="121"/>
+        <source>Faith</source>
+        <translation>友情</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="122"/>
+        <source>Love</source>
+        <translation>愛</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="124"/>
+        <source>Enable</source>
+        <translation>再動</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="125"/>
+        <source>Revive</source>
+        <translation>復活</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="126"/>
+        <source>Daunt</source>
+        <translation>脱力</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="127"/>
+        <source>Dread</source>
+        <translation>戦慄</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="128"/>
+        <source>Detonate</source>
+        <translation>自爆</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="129"/>
+        <source>Scan</source>
+        <translation>偵察</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="130"/>
+        <source>Rouse</source>
+        <translation>激励</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="131"/>
+        <source>Galvanize</source>
+        <translation>大激励</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="132"/>
+        <source>Prospect</source>
+        <translation>期待</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="133"/>
+        <source>Miracle</source>
+        <translation>奇跡</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="134"/>
+        <source>Raid</source>
+        <translation>奇襲</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="199"/>
         <source>Marionette Messiah</source>
         <translation>MARIONETTE MESSIAH</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="162"/>
+        <location filename="../../src/gui/custom/enums.py" line="200"/>
         <source>The Arrow of Destiny</source>
         <translation>THE ARROW OF DESTINY</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="163"/>
+        <location filename="../../src/gui/custom/enums.py" line="201"/>
         <source>Spirits of Steel ～SUPER ROBOT SPIRITS</source>
         <translation>鋼の魂～SUPER ROBOT SPIRITS</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="164"/>
+        <location filename="../../src/gui/custom/enums.py" line="202"/>
         <source>Time Diver</source>
         <translation>TIME DIVER</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="165"/>
+        <location filename="../../src/gui/custom/enums.py" line="203"/>
         <source>Raging Spirits!!</source>
         <translation>荒ぶる魂！！</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="166"/>
+        <location filename="../../src/gui/custom/enums.py" line="204"/>
         <source>The Universe in Eternal Harmony...</source>
         <translation>宇宙のハーモニー永遠に...</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="167"/>
+        <location filename="../../src/gui/custom/enums.py" line="205"/>
         <source>Peace on a Distant Day</source>
         <translation>遠い日の安息</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="168"/>
+        <location filename="../../src/gui/custom/enums.py" line="206"/>
         <source>For Whom the Bell Dances</source>
         <translation>誰がために鐘は踊る</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="169"/>
+        <location filename="../../src/gui/custom/enums.py" line="207"/>
         <source>What Awaits Before the Hardship</source>
         <translation>苦難の先に待つものは</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="170"/>
+        <location filename="../../src/gui/custom/enums.py" line="208"/>
         <source>Opened Gunport</source>
         <translation>開かれた砲門</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="171"/>
+        <location filename="../../src/gui/custom/enums.py" line="209"/>
         <source>End</source>
         <translation>一つの結末</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="172"/>
+        <location filename="../../src/gui/custom/enums.py" line="210"/>
         <source>Approaching Disaster</source>
         <translation>災い来たりて</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="173"/>
+        <location filename="../../src/gui/custom/enums.py" line="211"/>
         <source>Sad Memory</source>
         <translation>悲しい記憶</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="174"/>
+        <location filename="../../src/gui/custom/enums.py" line="212"/>
         <source>Premonition of Carnage</source>
         <translation>修羅の予感</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="175"/>
+        <location filename="../../src/gui/custom/enums.py" line="213"/>
         <source>Aim For the Top! ~Fly High~</source>
         <translation>トップをねらえ！ ～Fly High～</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="176"/>
+        <location filename="../../src/gui/custom/enums.py" line="214"/>
         <source>Commence Operations</source>
         <translation>作戦开始</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="177"/>
+        <location filename="../../src/gui/custom/enums.py" line="215"/>
         <source>Crisis</source>
         <translation>危機</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="178"/>
+        <location filename="../../src/gui/custom/enums.py" line="216"/>
         <source>The Song of Voltes V</source>
         <translation>ボルテスⅤの歌</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="180"/>
+        <location filename="../../src/gui/custom/enums.py" line="218"/>
         <source>In the Name of Daitarn 3</source>
         <translation>ダイターン3の名のもとに</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="181"/>
+        <location filename="../../src/gui/custom/enums.py" line="219"/>
         <source>Haram Banjo</source>
         <translation>破嵐万丈</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="182"/>
+        <location filename="../../src/gui/custom/enums.py" line="220"/>
         <source>From the Aqueous Star with Love</source>
         <translation>水の星へ愛を込めて</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="183"/>
+        <location filename="../../src/gui/custom/enums.py" line="221"/>
         <source>My Boyfriend is a Pilot</source>
         <translation>私の彼は机师</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="185"/>
+        <location filename="../../src/gui/custom/enums.py" line="223"/>
         <source>Macross</source>
         <translation>マクロス</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="188"/>
+        <location filename="../../src/gui/custom/enums.py" line="226"/>
         <source>The Theme of Z</source>
         <translation>Zのテーマ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="189"/>
+        <location filename="../../src/gui/custom/enums.py" line="227"/>
         <source>The Flying Mazinger Z</source>
         <translation>空飛ぶマジンガーZ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="191"/>
+        <location filename="../../src/gui/custom/enums.py" line="229"/>
         <source>I&apos;m Akira</source>
         <translation>オレは洸だ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="192"/>
+        <location filename="../../src/gui/custom/enums.py" line="230"/>
         <source>Gunbuster March</source>
         <translation>ガンバスター</translation>
     </message>
@@ -972,6 +1138,7 @@
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="93"/>
+        <location filename="../../src/gui/custom/enums.py" line="135"/>
         <source>——</source>
         <translation>——</translation>
     </message>
@@ -995,988 +1162,988 @@
         <translation type="vanished">[0x42]</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="257"/>
+        <location filename="../../src/gui/custom/enums.py" line="295"/>
         <source>Stage 8</source>
         <translation>第８話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="258"/>
+        <location filename="../../src/gui/custom/enums.py" line="296"/>
         <source>Sally Forth! Its Name Is Giant Robo</source>
         <translation>出撃！その名はジャイアント・ロボ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="263"/>
-        <location filename="../../src/gui/custom/enums.py" line="266"/>
+        <location filename="../../src/gui/custom/enums.py" line="301"/>
+        <location filename="../../src/gui/custom/enums.py" line="304"/>
         <source>Stage 9</source>
         <translation>第９話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="264"/>
+        <location filename="../../src/gui/custom/enums.py" line="302"/>
         <source>He Who Summons The Winds</source>
         <translation>風を呼ぶ者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="266"/>
+        <location filename="../../src/gui/custom/enums.py" line="304"/>
         <source>The Unknown Calamity</source>
         <translation>未知なる災い</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="267"/>
-        <location filename="../../src/gui/custom/enums.py" line="270"/>
-        <location filename="../../src/gui/custom/enums.py" line="276"/>
-        <location filename="../../src/gui/custom/enums.py" line="282"/>
+        <location filename="../../src/gui/custom/enums.py" line="305"/>
+        <location filename="../../src/gui/custom/enums.py" line="308"/>
+        <location filename="../../src/gui/custom/enums.py" line="314"/>
+        <location filename="../../src/gui/custom/enums.py" line="320"/>
         <source>Jaburo</source>
         <translation>ジャブロー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="267"/>
-        <location filename="../../src/gui/custom/enums.py" line="289"/>
+        <location filename="../../src/gui/custom/enums.py" line="305"/>
+        <location filename="../../src/gui/custom/enums.py" line="327"/>
         <source>Stage 10</source>
         <translation>第１０話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="267"/>
+        <location filename="../../src/gui/custom/enums.py" line="305"/>
         <source>Amuro Again</source>
         <translation>アムロ再び</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="271"/>
-        <location filename="../../src/gui/custom/enums.py" line="295"/>
+        <location filename="../../src/gui/custom/enums.py" line="309"/>
+        <location filename="../../src/gui/custom/enums.py" line="333"/>
         <source>Stage 11</source>
         <translation>第１１話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="272"/>
+        <location filename="../../src/gui/custom/enums.py" line="310"/>
         <source>The White Mobile Suit</source>
         <translation>白いモビルスーツ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="277"/>
-        <location filename="../../src/gui/custom/enums.py" line="301"/>
+        <location filename="../../src/gui/custom/enums.py" line="315"/>
+        <location filename="../../src/gui/custom/enums.py" line="339"/>
         <source>Stage 12</source>
         <translation>第１２話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="278"/>
+        <location filename="../../src/gui/custom/enums.py" line="316"/>
         <source>For Whom We Fight</source>
         <translation>戦いは誰のために</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="283"/>
-        <location filename="../../src/gui/custom/enums.py" line="307"/>
+        <location filename="../../src/gui/custom/enums.py" line="321"/>
+        <location filename="../../src/gui/custom/enums.py" line="345"/>
         <source>Stage 13</source>
         <translation>第１３話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="284"/>
+        <location filename="../../src/gui/custom/enums.py" line="322"/>
         <source>The Gundam That Had Wings</source>
         <translation>翼を持ったガンダム</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="288"/>
-        <location filename="../../src/gui/custom/enums.py" line="294"/>
-        <location filename="../../src/gui/custom/enums.py" line="300"/>
-        <location filename="../../src/gui/custom/enums.py" line="306"/>
+        <location filename="../../src/gui/custom/enums.py" line="326"/>
+        <location filename="../../src/gui/custom/enums.py" line="332"/>
+        <location filename="../../src/gui/custom/enums.py" line="338"/>
+        <location filename="../../src/gui/custom/enums.py" line="344"/>
         <source>South Ataria</source>
         <translation>南アタリア島</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="290"/>
+        <location filename="../../src/gui/custom/enums.py" line="328"/>
         <source>Awaken, Brave One</source>
         <translation>目覚めよ、勇者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="296"/>
+        <location filename="../../src/gui/custom/enums.py" line="334"/>
         <source>Gundam Theft</source>
         <translation>ガンダム強奪</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="302"/>
+        <location filename="../../src/gui/custom/enums.py" line="340"/>
         <source>A Man Of Ambitions</source>
         <translation>野望の男</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="308"/>
+        <location filename="../../src/gui/custom/enums.py" line="346"/>
         <source>The Shooting Star She Saw</source>
         <translation>少女が見た流星</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="310"/>
+        <location filename="../../src/gui/custom/enums.py" line="348"/>
         <source>Stage 14</source>
         <translation>第１４話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="310"/>
+        <location filename="../../src/gui/custom/enums.py" line="348"/>
         <source>A Promise With Father</source>
         <translation>父との約束</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="311"/>
+        <location filename="../../src/gui/custom/enums.py" line="349"/>
         <source>Stage 15</source>
         <translation>第１５話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="311"/>
+        <location filename="../../src/gui/custom/enums.py" line="349"/>
         <source>Angel Attack</source>
         <translation>使徒、襲来</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="315"/>
+        <location filename="../../src/gui/custom/enums.py" line="353"/>
         <source>Stage 16</source>
         <translation>第１６話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="316"/>
+        <location filename="../../src/gui/custom/enums.py" line="354"/>
         <source>Roar, EVA Unit-01</source>
         <translation>咆哮、ＥＶＡ初号機</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="318"/>
+        <location filename="../../src/gui/custom/enums.py" line="356"/>
         <source>Stage 17</source>
         <translation>第１７話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="318"/>
+        <location filename="../../src/gui/custom/enums.py" line="356"/>
         <source>GR vs. GR2</source>
         <translation>ＧＲ対ＧＲ２</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="319"/>
-        <location filename="../../src/gui/custom/enums.py" line="329"/>
+        <location filename="../../src/gui/custom/enums.py" line="357"/>
+        <location filename="../../src/gui/custom/enums.py" line="367"/>
         <source>Stage 18</source>
         <translation>第１８話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="319"/>
+        <location filename="../../src/gui/custom/enums.py" line="357"/>
         <source>The Sign Of Zeta</source>
         <translation>ゼータの鼓動</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="323"/>
-        <location filename="../../src/gui/custom/enums.py" line="335"/>
+        <location filename="../../src/gui/custom/enums.py" line="361"/>
+        <location filename="../../src/gui/custom/enums.py" line="373"/>
         <source>Stage 19</source>
         <translation>第１９話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="324"/>
+        <location filename="../../src/gui/custom/enums.py" line="362"/>
         <source>His Second Engagement</source>
         <translation>第二次直上会戦</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="330"/>
+        <location filename="../../src/gui/custom/enums.py" line="368"/>
         <source>With A Red Flash, Fly To The Sky, Mazinger</source>
         <translation>紅い稲妻 空飛ぶマジンガー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="336"/>
+        <location filename="../../src/gui/custom/enums.py" line="374"/>
         <source>Clash! Getter Robo vs. Getter Robo G</source>
         <translation>激突！ゲッターロボＶＳゲッターロボＧ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="341"/>
+        <location filename="../../src/gui/custom/enums.py" line="379"/>
         <source>Stage 20 Screen</source>
         <translation>第２０話幕前</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="342"/>
-        <location filename="../../src/gui/custom/enums.py" line="348"/>
+        <location filename="../../src/gui/custom/enums.py" line="380"/>
+        <location filename="../../src/gui/custom/enums.py" line="386"/>
         <source>A Decisive Battle In New Tokyo 2</source>
         <translation>決戦、第２新東京市</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="347"/>
+        <location filename="../../src/gui/custom/enums.py" line="385"/>
         <source>Stage 20</source>
         <translation>第２０話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="352"/>
-        <location filename="../../src/gui/custom/enums.py" line="358"/>
-        <location filename="../../src/gui/custom/enums.py" line="364"/>
-        <location filename="../../src/gui/custom/enums.py" line="370"/>
-        <location filename="../../src/gui/custom/enums.py" line="376"/>
-        <location filename="../../src/gui/custom/enums.py" line="382"/>
+        <location filename="../../src/gui/custom/enums.py" line="390"/>
+        <location filename="../../src/gui/custom/enums.py" line="396"/>
+        <location filename="../../src/gui/custom/enums.py" line="402"/>
+        <location filename="../../src/gui/custom/enums.py" line="408"/>
+        <location filename="../../src/gui/custom/enums.py" line="414"/>
+        <location filename="../../src/gui/custom/enums.py" line="420"/>
         <source>EVA Unit-02</source>
         <translation>ＥＶＡ弐号機</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="353"/>
+        <location filename="../../src/gui/custom/enums.py" line="391"/>
         <source>Stage 21 Screen</source>
         <translation>第２１話幕前</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="354"/>
-        <location filename="../../src/gui/custom/enums.py" line="360"/>
+        <location filename="../../src/gui/custom/enums.py" line="392"/>
+        <location filename="../../src/gui/custom/enums.py" line="398"/>
         <source>Aura Battlers</source>
         <translation>聖戦士たち</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="359"/>
-        <location filename="../../src/gui/custom/enums.py" line="389"/>
-        <location filename="../../src/gui/custom/enums.py" line="425"/>
+        <location filename="../../src/gui/custom/enums.py" line="397"/>
+        <location filename="../../src/gui/custom/enums.py" line="427"/>
+        <location filename="../../src/gui/custom/enums.py" line="463"/>
         <source>Stage 21</source>
         <translation>第２１話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="365"/>
-        <location filename="../../src/gui/custom/enums.py" line="395"/>
-        <location filename="../../src/gui/custom/enums.py" line="431"/>
+        <location filename="../../src/gui/custom/enums.py" line="403"/>
+        <location filename="../../src/gui/custom/enums.py" line="433"/>
+        <location filename="../../src/gui/custom/enums.py" line="469"/>
         <source>Stage 22</source>
         <translation>第２２話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="366"/>
+        <location filename="../../src/gui/custom/enums.py" line="404"/>
         <source>Elle&apos;s Aura</source>
         <translation>エレの霊力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="371"/>
-        <location filename="../../src/gui/custom/enums.py" line="437"/>
+        <location filename="../../src/gui/custom/enums.py" line="409"/>
+        <location filename="../../src/gui/custom/enums.py" line="475"/>
         <source>Stage 23</source>
         <translation>第２３話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="372"/>
+        <location filename="../../src/gui/custom/enums.py" line="410"/>
         <source>The Land Of Na&apos;s Queen</source>
         <translation>ナの国の女王</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="377"/>
-        <location filename="../../src/gui/custom/enums.py" line="413"/>
-        <location filename="../../src/gui/custom/enums.py" line="443"/>
+        <location filename="../../src/gui/custom/enums.py" line="415"/>
+        <location filename="../../src/gui/custom/enums.py" line="451"/>
+        <location filename="../../src/gui/custom/enums.py" line="481"/>
         <source>Stage 24</source>
         <translation>第２４話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="378"/>
+        <location filename="../../src/gui/custom/enums.py" line="416"/>
         <source>The Aura Road</source>
         <translation>オーラロード</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="383"/>
-        <location filename="../../src/gui/custom/enums.py" line="419"/>
-        <location filename="../../src/gui/custom/enums.py" line="449"/>
+        <location filename="../../src/gui/custom/enums.py" line="421"/>
+        <location filename="../../src/gui/custom/enums.py" line="457"/>
+        <location filename="../../src/gui/custom/enums.py" line="487"/>
         <source>Stage 25</source>
         <translation>第２５話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="384"/>
+        <location filename="../../src/gui/custom/enums.py" line="422"/>
         <source>The Skies Of Tokyo</source>
         <translation>東京上空</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="388"/>
-        <location filename="../../src/gui/custom/enums.py" line="394"/>
-        <location filename="../../src/gui/custom/enums.py" line="400"/>
-        <location filename="../../src/gui/custom/enums.py" line="406"/>
-        <location filename="../../src/gui/custom/enums.py" line="412"/>
-        <location filename="../../src/gui/custom/enums.py" line="418"/>
+        <location filename="../../src/gui/custom/enums.py" line="426"/>
+        <location filename="../../src/gui/custom/enums.py" line="432"/>
+        <location filename="../../src/gui/custom/enums.py" line="438"/>
+        <location filename="../../src/gui/custom/enums.py" line="444"/>
+        <location filename="../../src/gui/custom/enums.py" line="450"/>
+        <location filename="../../src/gui/custom/enums.py" line="456"/>
         <source>Far East Sector</source>
         <translation>極東基地</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="390"/>
+        <location filename="../../src/gui/custom/enums.py" line="428"/>
         <source>Beyond Beast, Beyond Man, Become God&apos;s Warrior</source>
         <translation>獣を超え、人を超え、いでよ神の戦士</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="396"/>
+        <location filename="../../src/gui/custom/enums.py" line="434"/>
         <source>Into The Sea Of Battle</source>
         <translation>戦いの海へ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="401"/>
+        <location filename="../../src/gui/custom/enums.py" line="439"/>
         <source>Stage 23 Act 1</source>
         <translation>第２３話第１幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="402"/>
-        <location filename="../../src/gui/custom/enums.py" line="408"/>
+        <location filename="../../src/gui/custom/enums.py" line="440"/>
+        <location filename="../../src/gui/custom/enums.py" line="446"/>
         <source>Mazinger Z vs. Ankoku Dai-Shogun</source>
         <translation>マジンガーＺ対暗黒大将軍</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="407"/>
+        <location filename="../../src/gui/custom/enums.py" line="445"/>
         <source>Stage 23 Act 2</source>
         <translation>第２３話第２幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="414"/>
+        <location filename="../../src/gui/custom/enums.py" line="452"/>
         <source>Voltes, Back From The Ashes</source>
         <translation>ボルテス起死回生</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="420"/>
+        <location filename="../../src/gui/custom/enums.py" line="458"/>
         <source>The Devil Sharkin&apos;s Battle</source>
         <translation>シャーキン悪魔の戦い</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="424"/>
-        <location filename="../../src/gui/custom/enums.py" line="430"/>
-        <location filename="../../src/gui/custom/enums.py" line="436"/>
-        <location filename="../../src/gui/custom/enums.py" line="442"/>
-        <location filename="../../src/gui/custom/enums.py" line="448"/>
-        <location filename="../../src/gui/custom/enums.py" line="460"/>
+        <location filename="../../src/gui/custom/enums.py" line="462"/>
+        <location filename="../../src/gui/custom/enums.py" line="468"/>
+        <location filename="../../src/gui/custom/enums.py" line="474"/>
+        <location filename="../../src/gui/custom/enums.py" line="480"/>
+        <location filename="../../src/gui/custom/enums.py" line="486"/>
+        <location filename="../../src/gui/custom/enums.py" line="498"/>
         <source>League Millitaire</source>
         <translation>リガ・ミリティア</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="426"/>
+        <location filename="../../src/gui/custom/enums.py" line="464"/>
         <source>Hong Kong City</source>
         <translation>ホンコン・シティ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="432"/>
+        <location filename="../../src/gui/custom/enums.py" line="470"/>
         <source>Gundam, Go To The Sea Of Stars</source>
         <translation>ガンダム、星の海へ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="438"/>
+        <location filename="../../src/gui/custom/enums.py" line="476"/>
         <source>Startup, Double Zeta</source>
         <translation>始動ダブルゼータ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="444"/>
+        <location filename="../../src/gui/custom/enums.py" line="482"/>
         <source>The Nightmare Of Solomon</source>
         <translation>ソロモンの悪夢</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="450"/>
+        <location filename="../../src/gui/custom/enums.py" line="488"/>
         <source>Crossbone Vanguard</source>
         <translation>クロスボーン・バンガード</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="454"/>
+        <location filename="../../src/gui/custom/enums.py" line="492"/>
         <source>EVA Unit-02 / Far East Sector</source>
         <translation>ＥＶＡ弐号機／極東基地</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="455"/>
-        <location filename="../../src/gui/custom/enums.py" line="461"/>
+        <location filename="../../src/gui/custom/enums.py" line="493"/>
+        <location filename="../../src/gui/custom/enums.py" line="499"/>
         <source>Stage 26</source>
         <translation>第２６話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="456"/>
+        <location filename="../../src/gui/custom/enums.py" line="494"/>
         <source>The Red Evangelion</source>
         <translation>紅いエヴァンゲリオン</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="462"/>
+        <location filename="../../src/gui/custom/enums.py" line="500"/>
         <source>Terror From The Sea</source>
         <translation>海からのマレビト</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="464"/>
+        <location filename="../../src/gui/custom/enums.py" line="502"/>
         <source>Stage 27</source>
         <translation>第２７話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="464"/>
+        <location filename="../../src/gui/custom/enums.py" line="502"/>
         <source>Machine Development</source>
         <translation>マシン展開</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="467"/>
+        <location filename="../../src/gui/custom/enums.py" line="505"/>
         <source>2 EVAs</source>
         <translation>ＥＶＡ２体同時攻撃</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="468"/>
-        <location filename="../../src/gui/custom/enums.py" line="897"/>
+        <location filename="../../src/gui/custom/enums.py" line="506"/>
+        <location filename="../../src/gui/custom/enums.py" line="935"/>
         <source>Stage 30</source>
         <translation>第３０話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="469"/>
+        <location filename="../../src/gui/custom/enums.py" line="507"/>
         <source>Moment And Heart Together</source>
         <translation>瞬間、心重ねて</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="473"/>
-        <location filename="../../src/gui/custom/enums.py" line="479"/>
-        <location filename="../../src/gui/custom/enums.py" line="485"/>
-        <location filename="../../src/gui/custom/enums.py" line="491"/>
-        <location filename="../../src/gui/custom/enums.py" line="497"/>
-        <location filename="../../src/gui/custom/enums.py" line="503"/>
-        <location filename="../../src/gui/custom/enums.py" line="509"/>
-        <location filename="../../src/gui/custom/enums.py" line="515"/>
-        <location filename="../../src/gui/custom/enums.py" line="521"/>
+        <location filename="../../src/gui/custom/enums.py" line="511"/>
+        <location filename="../../src/gui/custom/enums.py" line="517"/>
+        <location filename="../../src/gui/custom/enums.py" line="523"/>
+        <location filename="../../src/gui/custom/enums.py" line="529"/>
+        <location filename="../../src/gui/custom/enums.py" line="535"/>
+        <location filename="../../src/gui/custom/enums.py" line="541"/>
+        <location filename="../../src/gui/custom/enums.py" line="547"/>
+        <location filename="../../src/gui/custom/enums.py" line="553"/>
+        <location filename="../../src/gui/custom/enums.py" line="559"/>
         <source>Shoot Down</source>
         <translation>弾丸を撃ち落す</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="474"/>
-        <location filename="../../src/gui/custom/enums.py" line="528"/>
+        <location filename="../../src/gui/custom/enums.py" line="512"/>
+        <location filename="../../src/gui/custom/enums.py" line="566"/>
         <source>Stage 31</source>
         <translation>第３１話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="475"/>
+        <location filename="../../src/gui/custom/enums.py" line="513"/>
         <source>Booby Trap</source>
         <translation>ブービー・トラップ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="480"/>
-        <location filename="../../src/gui/custom/enums.py" line="534"/>
+        <location filename="../../src/gui/custom/enums.py" line="518"/>
+        <location filename="../../src/gui/custom/enums.py" line="572"/>
         <source>Stage 32</source>
         <translation>第３２話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="481"/>
+        <location filename="../../src/gui/custom/enums.py" line="519"/>
         <source>Count Down</source>
         <translation>カウント・ダウン</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="486"/>
-        <location filename="../../src/gui/custom/enums.py" line="540"/>
+        <location filename="../../src/gui/custom/enums.py" line="524"/>
+        <location filename="../../src/gui/custom/enums.py" line="578"/>
         <source>Stage 33</source>
         <translation>第３３話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="487"/>
+        <location filename="../../src/gui/custom/enums.py" line="525"/>
         <source>Trans-Formation</source>
         <translation>トランス・フォーメーション</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="492"/>
-        <location filename="../../src/gui/custom/enums.py" line="546"/>
+        <location filename="../../src/gui/custom/enums.py" line="530"/>
+        <location filename="../../src/gui/custom/enums.py" line="584"/>
         <source>Stage 34</source>
         <translation>第３４話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="493"/>
+        <location filename="../../src/gui/custom/enums.py" line="531"/>
         <source>Hidden Bloodlust</source>
         <translation>隠された殺意</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="498"/>
-        <location filename="../../src/gui/custom/enums.py" line="552"/>
+        <location filename="../../src/gui/custom/enums.py" line="536"/>
+        <location filename="../../src/gui/custom/enums.py" line="590"/>
         <source>Stage 35</source>
         <translation>第３５話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="499"/>
+        <location filename="../../src/gui/custom/enums.py" line="537"/>
         <source>Saturn Fight</source>
         <translation>サタン・ファイト</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="504"/>
-        <location filename="../../src/gui/custom/enums.py" line="558"/>
+        <location filename="../../src/gui/custom/enums.py" line="542"/>
+        <location filename="../../src/gui/custom/enums.py" line="596"/>
         <source>Stage 36</source>
         <translation>第３６話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="505"/>
+        <location filename="../../src/gui/custom/enums.py" line="543"/>
         <source>Lynn Minmay</source>
         <translation>リン・ミンメイ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="510"/>
-        <location filename="../../src/gui/custom/enums.py" line="564"/>
+        <location filename="../../src/gui/custom/enums.py" line="548"/>
+        <location filename="../../src/gui/custom/enums.py" line="602"/>
         <source>Stage 37</source>
         <translation>第３７話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="511"/>
+        <location filename="../../src/gui/custom/enums.py" line="549"/>
         <source>The Jupitorians</source>
         <translation>ジュピトリアン</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="516"/>
-        <location filename="../../src/gui/custom/enums.py" line="570"/>
+        <location filename="../../src/gui/custom/enums.py" line="554"/>
+        <location filename="../../src/gui/custom/enums.py" line="608"/>
         <source>Stage 38</source>
         <translation>第３８話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="517"/>
+        <location filename="../../src/gui/custom/enums.py" line="555"/>
         <source>The Queen Of The Empire</source>
         <translation>帝国の女王</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="522"/>
-        <location filename="../../src/gui/custom/enums.py" line="576"/>
+        <location filename="../../src/gui/custom/enums.py" line="560"/>
+        <location filename="../../src/gui/custom/enums.py" line="614"/>
         <source>Stage 39</source>
         <translation>第３９話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="523"/>
+        <location filename="../../src/gui/custom/enums.py" line="561"/>
         <source>Prelude To The End</source>
         <translation>終末への前奏曲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="527"/>
-        <location filename="../../src/gui/custom/enums.py" line="533"/>
-        <location filename="../../src/gui/custom/enums.py" line="539"/>
-        <location filename="../../src/gui/custom/enums.py" line="545"/>
-        <location filename="../../src/gui/custom/enums.py" line="551"/>
-        <location filename="../../src/gui/custom/enums.py" line="557"/>
-        <location filename="../../src/gui/custom/enums.py" line="563"/>
-        <location filename="../../src/gui/custom/enums.py" line="569"/>
-        <location filename="../../src/gui/custom/enums.py" line="575"/>
+        <location filename="../../src/gui/custom/enums.py" line="565"/>
+        <location filename="../../src/gui/custom/enums.py" line="571"/>
+        <location filename="../../src/gui/custom/enums.py" line="577"/>
+        <location filename="../../src/gui/custom/enums.py" line="583"/>
+        <location filename="../../src/gui/custom/enums.py" line="589"/>
+        <location filename="../../src/gui/custom/enums.py" line="595"/>
+        <location filename="../../src/gui/custom/enums.py" line="601"/>
+        <location filename="../../src/gui/custom/enums.py" line="607"/>
+        <location filename="../../src/gui/custom/enums.py" line="613"/>
         <source>Catch with EVA</source>
         <translation>ＥＶＡで受け止める</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="529"/>
+        <location filename="../../src/gui/custom/enums.py" line="567"/>
         <source>The Value Of A Miracle</source>
         <translation>奇跡の価値は</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="535"/>
+        <location filename="../../src/gui/custom/enums.py" line="573"/>
         <source>Space Fold</source>
         <translation>スペース・フォールド</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="541"/>
+        <location filename="../../src/gui/custom/enums.py" line="579"/>
         <source>Armed Attack</source>
         <translation>アームド・アタック</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="547"/>
+        <location filename="../../src/gui/custom/enums.py" line="585"/>
         <source>An Encounter With Our Natural Enemies</source>
         <translation>天敵との遭遇</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="553"/>
+        <location filename="../../src/gui/custom/enums.py" line="591"/>
         <source>Ingram&apos;s True Intentions</source>
         <translation>イングラムの真意</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="559"/>
+        <location filename="../../src/gui/custom/enums.py" line="597"/>
         <source>Miss Macross</source>
         <translation>ミス・マクロス</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="565"/>
+        <location filename="../../src/gui/custom/enums.py" line="603"/>
         <source>Fugitive From Jupiter</source>
         <translation>木星からの逃亡者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="571"/>
+        <location filename="../../src/gui/custom/enums.py" line="609"/>
         <source>The One Who Will Guide Humanity</source>
         <translation>人類を導く者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="577"/>
+        <location filename="../../src/gui/custom/enums.py" line="615"/>
         <source>First Contact</source>
         <translation>ファースト・コンタクト</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="582"/>
+        <location filename="../../src/gui/custom/enums.py" line="620"/>
         <source>Stage 40</source>
         <translation>第４０話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="583"/>
+        <location filename="../../src/gui/custom/enums.py" line="621"/>
         <source>The Big Escape</source>
         <translation>ビッグ・エスケープ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="585"/>
+        <location filename="../../src/gui/custom/enums.py" line="623"/>
         <source>Stage 41</source>
         <translation>第４１話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="585"/>
+        <location filename="../../src/gui/custom/enums.py" line="623"/>
         <source>Bye Bye Mars</source>
         <translation>バイバイ・マルス</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="588"/>
-        <location filename="../../src/gui/custom/enums.py" line="594"/>
-        <location filename="../../src/gui/custom/enums.py" line="600"/>
-        <location filename="../../src/gui/custom/enums.py" line="606"/>
+        <location filename="../../src/gui/custom/enums.py" line="626"/>
+        <location filename="../../src/gui/custom/enums.py" line="632"/>
+        <location filename="../../src/gui/custom/enums.py" line="638"/>
+        <location filename="../../src/gui/custom/enums.py" line="644"/>
         <source>Reinforce Jr</source>
         <translation>リーンホースＪｒ．隊</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="589"/>
-        <location filename="../../src/gui/custom/enums.py" line="613"/>
-        <location filename="../../src/gui/custom/enums.py" line="637"/>
+        <location filename="../../src/gui/custom/enums.py" line="627"/>
+        <location filename="../../src/gui/custom/enums.py" line="651"/>
+        <location filename="../../src/gui/custom/enums.py" line="675"/>
         <source>Stage 42</source>
         <translation>第４２話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="590"/>
+        <location filename="../../src/gui/custom/enums.py" line="628"/>
         <source>A Messenger From Axis</source>
         <translation>アクシズからの使者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="595"/>
-        <location filename="../../src/gui/custom/enums.py" line="619"/>
-        <location filename="../../src/gui/custom/enums.py" line="643"/>
+        <location filename="../../src/gui/custom/enums.py" line="633"/>
+        <location filename="../../src/gui/custom/enums.py" line="657"/>
+        <location filename="../../src/gui/custom/enums.py" line="681"/>
         <source>Stage 43</source>
         <translation>第４３話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="596"/>
+        <location filename="../../src/gui/custom/enums.py" line="634"/>
         <source>Puru, Axis and...</source>
         <translation>プルとアクシズと</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="601"/>
-        <location filename="../../src/gui/custom/enums.py" line="625"/>
-        <location filename="../../src/gui/custom/enums.py" line="649"/>
+        <location filename="../../src/gui/custom/enums.py" line="639"/>
+        <location filename="../../src/gui/custom/enums.py" line="663"/>
+        <location filename="../../src/gui/custom/enums.py" line="687"/>
         <source>Stage 44</source>
         <translation>第４４話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="602"/>
+        <location filename="../../src/gui/custom/enums.py" line="640"/>
         <source>Leina&apos;s Blood</source>
         <translation>リィナの血</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="607"/>
-        <location filename="../../src/gui/custom/enums.py" line="631"/>
-        <location filename="../../src/gui/custom/enums.py" line="655"/>
+        <location filename="../../src/gui/custom/enums.py" line="645"/>
+        <location filename="../../src/gui/custom/enums.py" line="669"/>
+        <location filename="../../src/gui/custom/enums.py" line="693"/>
         <source>Stage 45</source>
         <translation>第４５話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="608"/>
+        <location filename="../../src/gui/custom/enums.py" line="646"/>
         <source>The Coming Of The Black Angel</source>
         <translation>漆黒の天使来たりて</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="612"/>
-        <location filename="../../src/gui/custom/enums.py" line="618"/>
-        <location filename="../../src/gui/custom/enums.py" line="624"/>
-        <location filename="../../src/gui/custom/enums.py" line="630"/>
-        <location filename="../../src/gui/custom/enums.py" line="674"/>
-        <location filename="../../src/gui/custom/enums.py" line="686"/>
-        <location filename="../../src/gui/custom/enums.py" line="729"/>
-        <location filename="../../src/gui/custom/enums.py" line="735"/>
-        <location filename="../../src/gui/custom/enums.py" line="754"/>
+        <location filename="../../src/gui/custom/enums.py" line="650"/>
+        <location filename="../../src/gui/custom/enums.py" line="656"/>
+        <location filename="../../src/gui/custom/enums.py" line="662"/>
+        <location filename="../../src/gui/custom/enums.py" line="668"/>
+        <location filename="../../src/gui/custom/enums.py" line="712"/>
+        <location filename="../../src/gui/custom/enums.py" line="724"/>
+        <location filename="../../src/gui/custom/enums.py" line="767"/>
+        <location filename="../../src/gui/custom/enums.py" line="773"/>
+        <location filename="../../src/gui/custom/enums.py" line="792"/>
         <source>Gran-Garan</source>
         <translation>グラン・ガラン隊</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="614"/>
+        <location filename="../../src/gui/custom/enums.py" line="652"/>
         <source>The Jupiter Ghost</source>
         <translation>ジュピター・ゴースト</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="620"/>
+        <location filename="../../src/gui/custom/enums.py" line="658"/>
         <source>The Terrible Flower Blooming In Space</source>
         <translation>宇宙に咲く妖花</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="626"/>
+        <location filename="../../src/gui/custom/enums.py" line="664"/>
         <source>The Gundam Called Zero</source>
         <translation>ゼロと呼ばれたガンダム</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="632"/>
+        <location filename="../../src/gui/custom/enums.py" line="670"/>
         <source>Assault On The Final Safeguard</source>
         <translation>強襲、阻止限界点</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="636"/>
-        <location filename="../../src/gui/custom/enums.py" line="642"/>
-        <location filename="../../src/gui/custom/enums.py" line="648"/>
-        <location filename="../../src/gui/custom/enums.py" line="654"/>
-        <location filename="../../src/gui/custom/enums.py" line="698"/>
-        <location filename="../../src/gui/custom/enums.py" line="722"/>
-        <location filename="../../src/gui/custom/enums.py" line="726"/>
-        <location filename="../../src/gui/custom/enums.py" line="741"/>
-        <location filename="../../src/gui/custom/enums.py" line="748"/>
+        <location filename="../../src/gui/custom/enums.py" line="674"/>
+        <location filename="../../src/gui/custom/enums.py" line="680"/>
+        <location filename="../../src/gui/custom/enums.py" line="686"/>
+        <location filename="../../src/gui/custom/enums.py" line="692"/>
+        <location filename="../../src/gui/custom/enums.py" line="736"/>
+        <location filename="../../src/gui/custom/enums.py" line="760"/>
+        <location filename="../../src/gui/custom/enums.py" line="764"/>
+        <location filename="../../src/gui/custom/enums.py" line="779"/>
+        <location filename="../../src/gui/custom/enums.py" line="786"/>
         <source>Goraon</source>
         <translation>ゴラオン隊</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="638"/>
+        <location filename="../../src/gui/custom/enums.py" line="676"/>
         <source>Father, The Earth Is Near</source>
         <translation>父よ地球は近い</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="644"/>
+        <location filename="../../src/gui/custom/enums.py" line="682"/>
         <source>Within The Paralyzing Darkness</source>
         <translation>静止した闇の中で</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="650"/>
+        <location filename="../../src/gui/custom/enums.py" line="688"/>
         <source>The Red Haired Woman</source>
         <translation>赤い髪の女</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="656"/>
+        <location filename="../../src/gui/custom/enums.py" line="694"/>
         <source>A God, Or A Devil</source>
         <translation>神か、悪魔か・・・</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="658"/>
-        <location filename="../../src/gui/custom/enums.py" line="662"/>
+        <location filename="../../src/gui/custom/enums.py" line="696"/>
+        <location filename="../../src/gui/custom/enums.py" line="700"/>
         <source>Stage 46</source>
         <translation>第４６話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="658"/>
+        <location filename="../../src/gui/custom/enums.py" line="696"/>
         <source>The Third&apos;s Power</source>
         <translation>第三の力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="663"/>
+        <location filename="../../src/gui/custom/enums.py" line="701"/>
         <source>The Dragon And The Tiger</source>
         <translation>龍と虎</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="665"/>
+        <location filename="../../src/gui/custom/enums.py" line="703"/>
         <source>Stage 47</source>
         <translation>第４７話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="665"/>
+        <location filename="../../src/gui/custom/enums.py" line="703"/>
         <source>A Man&apos;s Fight</source>
         <translation>男の戦い</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="669"/>
+        <location filename="../../src/gui/custom/enums.py" line="707"/>
         <source>Stage 50</source>
         <translation>第５０話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="670"/>
+        <location filename="../../src/gui/custom/enums.py" line="708"/>
         <source>Variable Formation</source>
         <translation>ヴァリアブル・フォーメーション</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="675"/>
-        <location filename="../../src/gui/custom/enums.py" line="681"/>
-        <location filename="../../src/gui/custom/enums.py" line="723"/>
+        <location filename="../../src/gui/custom/enums.py" line="713"/>
+        <location filename="../../src/gui/custom/enums.py" line="719"/>
+        <location filename="../../src/gui/custom/enums.py" line="761"/>
         <source>Stage 51</source>
         <translation>第５１話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="676"/>
+        <location filename="../../src/gui/custom/enums.py" line="714"/>
         <source>The Glass Kingdom</source>
         <translation>ガラスの王国</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="680"/>
-        <location filename="../../src/gui/custom/enums.py" line="692"/>
-        <location filename="../../src/gui/custom/enums.py" line="704"/>
-        <location filename="../../src/gui/custom/enums.py" line="710"/>
-        <location filename="../../src/gui/custom/enums.py" line="716"/>
+        <location filename="../../src/gui/custom/enums.py" line="718"/>
+        <location filename="../../src/gui/custom/enums.py" line="730"/>
+        <location filename="../../src/gui/custom/enums.py" line="742"/>
+        <location filename="../../src/gui/custom/enums.py" line="748"/>
+        <location filename="../../src/gui/custom/enums.py" line="754"/>
         <source>Ra-Cailum</source>
         <translation>ラー・カイラム隊</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="682"/>
+        <location filename="../../src/gui/custom/enums.py" line="720"/>
         <source>Day Of Dakar</source>
         <translation>ダカールの日</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="687"/>
-        <location filename="../../src/gui/custom/enums.py" line="693"/>
-        <location filename="../../src/gui/custom/enums.py" line="726"/>
+        <location filename="../../src/gui/custom/enums.py" line="725"/>
+        <location filename="../../src/gui/custom/enums.py" line="731"/>
+        <location filename="../../src/gui/custom/enums.py" line="764"/>
         <source>Stage 52</source>
         <translation>第５２話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="688"/>
+        <location filename="../../src/gui/custom/enums.py" line="726"/>
         <source>Kingdom&apos;s Fall</source>
         <translation>王国崩壊</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="694"/>
+        <location filename="../../src/gui/custom/enums.py" line="732"/>
         <source>Vibrations</source>
         <translation>バイブレーション</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="699"/>
-        <location filename="../../src/gui/custom/enums.py" line="711"/>
-        <location filename="../../src/gui/custom/enums.py" line="736"/>
+        <location filename="../../src/gui/custom/enums.py" line="737"/>
+        <location filename="../../src/gui/custom/enums.py" line="749"/>
+        <location filename="../../src/gui/custom/enums.py" line="774"/>
         <source>Stage 54</source>
         <translation>第５４話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="700"/>
+        <location filename="../../src/gui/custom/enums.py" line="738"/>
         <source>Memories Taken To The Future</source>
         <translation>思い出を未来へ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="705"/>
-        <location filename="../../src/gui/custom/enums.py" line="730"/>
-        <location filename="../../src/gui/custom/enums.py" line="742"/>
+        <location filename="../../src/gui/custom/enums.py" line="743"/>
+        <location filename="../../src/gui/custom/enums.py" line="768"/>
+        <location filename="../../src/gui/custom/enums.py" line="780"/>
         <source>Stage 53</source>
         <translation>第５３話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="706"/>
+        <location filename="../../src/gui/custom/enums.py" line="744"/>
         <source>The Capture Of Solomon</source>
         <translation>ソロモン攻略戦</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="712"/>
+        <location filename="../../src/gui/custom/enums.py" line="750"/>
         <source>The Womens&apos; Battlefield</source>
         <translation>女たちの戦場</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="717"/>
-        <location filename="../../src/gui/custom/enums.py" line="749"/>
         <location filename="../../src/gui/custom/enums.py" line="755"/>
+        <location filename="../../src/gui/custom/enums.py" line="787"/>
+        <location filename="../../src/gui/custom/enums.py" line="793"/>
         <source>Stage 55</source>
         <translation>第５５話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="718"/>
+        <location filename="../../src/gui/custom/enums.py" line="756"/>
         <source>The Oncoming Storm</source>
         <translation>駆け抜ける嵐</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="724"/>
+        <location filename="../../src/gui/custom/enums.py" line="762"/>
         <source>The Fall Of Baron Ashura</source>
         <translation>あしゅら男爵、散る</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="726"/>
+        <location filename="../../src/gui/custom/enums.py" line="764"/>
         <source>The Demon Emperor</source>
         <translation>魔神皇帝</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="731"/>
+        <location filename="../../src/gui/custom/enums.py" line="769"/>
         <source>Cross Fight</source>
         <translation>クロス・ファイト</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="737"/>
+        <location filename="../../src/gui/custom/enums.py" line="775"/>
         <source>Foreigners&apos; Return</source>
         <translation>異邦人たちの帰還</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="743"/>
+        <location filename="../../src/gui/custom/enums.py" line="781"/>
         <source>Duel For The Earth</source>
         <translation>地球を賭けた一騎討ち</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="745"/>
+        <location filename="../../src/gui/custom/enums.py" line="783"/>
         <source>Stage 56</source>
         <translation>第５６話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="745"/>
+        <location filename="../../src/gui/custom/enums.py" line="783"/>
         <source>The Phantom Of Zeon</source>
         <translation>ジオンの幻像</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="750"/>
+        <location filename="../../src/gui/custom/enums.py" line="788"/>
         <source>The Cry Within Father&apos;s Breast!</source>
         <translation>父の胸の中で泣け！</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="756"/>
+        <location filename="../../src/gui/custom/enums.py" line="794"/>
         <source>Queen Relena</source>
         <translation>女王リリーナ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="761"/>
+        <location filename="../../src/gui/custom/enums.py" line="799"/>
         <source>Stage 57 Screen</source>
         <translation>第５７話第０幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="762"/>
-        <location filename="../../src/gui/custom/enums.py" line="768"/>
+        <location filename="../../src/gui/custom/enums.py" line="800"/>
+        <location filename="../../src/gui/custom/enums.py" line="806"/>
         <source>Above The Angel&apos;s Halo</source>
         <translation>天使の輪の上で</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="767"/>
+        <location filename="../../src/gui/custom/enums.py" line="805"/>
         <source>Stage 57</source>
         <translation>第５７話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="772"/>
-        <location filename="../../src/gui/custom/enums.py" line="776"/>
-        <location filename="../../src/gui/custom/enums.py" line="779"/>
+        <location filename="../../src/gui/custom/enums.py" line="810"/>
+        <location filename="../../src/gui/custom/enums.py" line="814"/>
+        <location filename="../../src/gui/custom/enums.py" line="817"/>
         <source>Axis</source>
         <translation>アクシズ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="773"/>
-        <location filename="../../src/gui/custom/enums.py" line="786"/>
+        <location filename="../../src/gui/custom/enums.py" line="811"/>
+        <location filename="../../src/gui/custom/enums.py" line="824"/>
         <source>Stage 58</source>
         <translation>第５８話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="774"/>
+        <location filename="../../src/gui/custom/enums.py" line="812"/>
         <source>The Temptation Of The Land Of God</source>
         <translation>神の国への誘惑</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="776"/>
-        <location filename="../../src/gui/custom/enums.py" line="792"/>
+        <location filename="../../src/gui/custom/enums.py" line="814"/>
+        <location filename="../../src/gui/custom/enums.py" line="830"/>
         <source>Stage 59</source>
         <translation>第５９話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="776"/>
+        <location filename="../../src/gui/custom/enums.py" line="814"/>
         <source>Cross Target</source>
         <translation>クロス・ターゲット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="780"/>
-        <location filename="../../src/gui/custom/enums.py" line="798"/>
+        <location filename="../../src/gui/custom/enums.py" line="818"/>
+        <location filename="../../src/gui/custom/enums.py" line="836"/>
         <source>Stage 60</source>
         <translation>第６０話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="781"/>
+        <location filename="../../src/gui/custom/enums.py" line="819"/>
         <source>Warriors, Again</source>
         <translation>戦士、再び・・・</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="785"/>
-        <location filename="../../src/gui/custom/enums.py" line="791"/>
-        <location filename="../../src/gui/custom/enums.py" line="797"/>
+        <location filename="../../src/gui/custom/enums.py" line="823"/>
+        <location filename="../../src/gui/custom/enums.py" line="829"/>
+        <location filename="../../src/gui/custom/enums.py" line="835"/>
         <source>Angel Halo</source>
         <translation>エンジェル・ハイロゥ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="787"/>
+        <location filename="../../src/gui/custom/enums.py" line="825"/>
         <source>Blessings Upon The Winner And Loser</source>
         <translation>勝者と敗者に祝福を</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="793"/>
+        <location filename="../../src/gui/custom/enums.py" line="831"/>
         <source>At Least, To Be Human</source>
         <translation>せめて、人間らしく</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="799"/>
+        <location filename="../../src/gui/custom/enums.py" line="837"/>
         <source>The Final Messenger</source>
         <translation>最後のシ者</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="801"/>
+        <location filename="../../src/gui/custom/enums.py" line="839"/>
         <source>Stage 61</source>
         <translation>第６１話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="801"/>
+        <location filename="../../src/gui/custom/enums.py" line="839"/>
         <source>Fate&apos;s Arrow</source>
         <translation>運命の矢</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="805"/>
+        <location filename="../../src/gui/custom/enums.py" line="843"/>
         <source>Stage 62 Act 1</source>
         <translation>第６２話第１幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="184"/>
-        <location filename="../../src/gui/custom/enums.py" line="186"/>
-        <location filename="../../src/gui/custom/enums.py" line="187"/>
-        <location filename="../../src/gui/custom/enums.py" line="806"/>
-        <location filename="../../src/gui/custom/enums.py" line="812"/>
+        <location filename="../../src/gui/custom/enums.py" line="222"/>
+        <location filename="../../src/gui/custom/enums.py" line="224"/>
+        <location filename="../../src/gui/custom/enums.py" line="225"/>
+        <location filename="../../src/gui/custom/enums.py" line="844"/>
+        <location filename="../../src/gui/custom/enums.py" line="850"/>
         <source>Do You Remember Love?</source>
         <translation>愛・おぼえていますか</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="811"/>
+        <location filename="../../src/gui/custom/enums.py" line="849"/>
         <source>Stage 62 Act 2</source>
         <translation>第６２話第２幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="814"/>
+        <location filename="../../src/gui/custom/enums.py" line="852"/>
         <source>Stage 64 Act 1</source>
         <translation>第６４話第１幕</translation>
     </message>
@@ -1992,149 +2159,150 @@
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="27"/>
+        <location filename="../../src/gui/custom/enums.py" line="109"/>
         <source>Wall</source>
         <translation>地</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="815"/>
+        <location filename="../../src/gui/custom/enums.py" line="853"/>
         <source>Stage 64 Act 2</source>
         <translation>第６４話第２幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="819"/>
+        <location filename="../../src/gui/custom/enums.py" line="857"/>
         <source>Stage 65</source>
         <translation>第６５話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="820"/>
+        <location filename="../../src/gui/custom/enums.py" line="858"/>
         <source>The Gear Of Destiny</source>
         <translation>ギア・オブ・デスティニー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="824"/>
-        <location filename="../../src/gui/custom/enums.py" line="830"/>
-        <location filename="../../src/gui/custom/enums.py" line="836"/>
-        <location filename="../../src/gui/custom/enums.py" line="842"/>
+        <location filename="../../src/gui/custom/enums.py" line="862"/>
+        <location filename="../../src/gui/custom/enums.py" line="868"/>
+        <location filename="../../src/gui/custom/enums.py" line="874"/>
+        <location filename="../../src/gui/custom/enums.py" line="880"/>
         <source>45 or More Points</source>
         <translation>熟練度４５以上</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="825"/>
-        <location filename="../../src/gui/custom/enums.py" line="850"/>
+        <location filename="../../src/gui/custom/enums.py" line="863"/>
+        <location filename="../../src/gui/custom/enums.py" line="888"/>
         <source>Stage 66</source>
         <translation>第６６話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="826"/>
+        <location filename="../../src/gui/custom/enums.py" line="864"/>
         <source>The Banquet Of Despair Begins Now</source>
         <translation>絶望の宴は今から始まる</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="831"/>
-        <location filename="../../src/gui/custom/enums.py" line="856"/>
+        <location filename="../../src/gui/custom/enums.py" line="869"/>
+        <location filename="../../src/gui/custom/enums.py" line="894"/>
         <source>Stage 67 Act 1</source>
         <translation>第６７話第１幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="139"/>
-        <location filename="../../src/gui/custom/enums.py" line="832"/>
-        <location filename="../../src/gui/custom/enums.py" line="838"/>
-        <location filename="../../src/gui/custom/enums.py" line="844"/>
+        <location filename="../../src/gui/custom/enums.py" line="177"/>
+        <location filename="../../src/gui/custom/enums.py" line="870"/>
+        <location filename="../../src/gui/custom/enums.py" line="876"/>
+        <location filename="../../src/gui/custom/enums.py" line="882"/>
         <source>For This Planet&apos;s Tomorrow</source>
         <translation>この星の明日のために</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="837"/>
-        <location filename="../../src/gui/custom/enums.py" line="862"/>
+        <location filename="../../src/gui/custom/enums.py" line="875"/>
+        <location filename="../../src/gui/custom/enums.py" line="900"/>
         <source>Stage 67 Act 2</source>
         <translation>第６７話第２幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="843"/>
+        <location filename="../../src/gui/custom/enums.py" line="881"/>
         <source>Stage 67 Act 3</source>
         <translation>第６７話第３幕</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="846"/>
-        <location filename="../../src/gui/custom/enums.py" line="865"/>
-        <location filename="../../src/gui/custom/enums.py" line="866"/>
-        <location filename="../../src/gui/custom/enums.py" line="867"/>
-        <location filename="../../src/gui/custom/enums.py" line="868"/>
+        <location filename="../../src/gui/custom/enums.py" line="884"/>
+        <location filename="../../src/gui/custom/enums.py" line="903"/>
+        <location filename="../../src/gui/custom/enums.py" line="904"/>
+        <location filename="../../src/gui/custom/enums.py" line="905"/>
+        <location filename="../../src/gui/custom/enums.py" line="906"/>
         <source>Dummy</source>
         <translation>ダミー</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="849"/>
-        <location filename="../../src/gui/custom/enums.py" line="855"/>
-        <location filename="../../src/gui/custom/enums.py" line="861"/>
+        <location filename="../../src/gui/custom/enums.py" line="887"/>
+        <location filename="../../src/gui/custom/enums.py" line="893"/>
+        <location filename="../../src/gui/custom/enums.py" line="899"/>
         <source>45 or Less Points</source>
         <translation>熟練度４５未満</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="851"/>
+        <location filename="../../src/gui/custom/enums.py" line="889"/>
         <source>No Escape For Humanity</source>
         <translation>人類に逃げ場なし</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="857"/>
-        <location filename="../../src/gui/custom/enums.py" line="863"/>
+        <location filename="../../src/gui/custom/enums.py" line="895"/>
+        <location filename="../../src/gui/custom/enums.py" line="901"/>
         <source>Spirits Of Steel</source>
         <translation>鋼の魂</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="869"/>
+        <location filename="../../src/gui/custom/enums.py" line="907"/>
         <source>Stage 28</source>
         <translation>第２８話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="869"/>
+        <location filename="../../src/gui/custom/enums.py" line="907"/>
         <source>The Island Of EOT</source>
         <translation>ＥＯＴの島</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="873"/>
-        <location filename="../../src/gui/custom/enums.py" line="879"/>
+        <location filename="../../src/gui/custom/enums.py" line="911"/>
+        <location filename="../../src/gui/custom/enums.py" line="917"/>
         <source>Stage 29</source>
         <translation>第２９話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="874"/>
+        <location filename="../../src/gui/custom/enums.py" line="912"/>
         <source>Within The Soul Lies An Unseen Blade</source>
         <translation>心に念じる見えない刃</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="880"/>
+        <location filename="../../src/gui/custom/enums.py" line="918"/>
         <source>The Black Super Warrior</source>
         <translation>黒い超闘士</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="885"/>
+        <location filename="../../src/gui/custom/enums.py" line="923"/>
         <source>Stage 48</source>
         <translation>第４８話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="886"/>
+        <location filename="../../src/gui/custom/enums.py" line="924"/>
         <source>For Whom The Bell Tolls</source>
         <translation>誰がために鐘は鳴る</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="891"/>
+        <location filename="../../src/gui/custom/enums.py" line="929"/>
         <source>Stage 49</source>
         <translation>第４９話</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="892"/>
+        <location filename="../../src/gui/custom/enums.py" line="930"/>
         <source>The Path Of Hope, The Path Of Despair</source>
         <translation>進路に光明、退路に絶望</translation>
     </message>
     <message>
-        <location filename="../../src/gui/custom/enums.py" line="896"/>
+        <location filename="../../src/gui/custom/enums.py" line="934"/>
         <source>Brute Force</source>
         <translation>力ずくで撃退</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="53"/>
-        <location filename="../../src/gui/custom/enums.py" line="898"/>
+        <location filename="../../src/gui/custom/enums.py" line="936"/>
         <source>Spirit Possession</source>
         <translation>精霊憑依</translation>
     </message>
@@ -3441,6 +3609,53 @@ Do you want to overwrite it?</source>
     </message>
 </context>
 <context>
+    <name>PilotDetailCard</name>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="32"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="42"/>
+        <source>Pilot Detail</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PilotTable</name>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_table.py" line="121"/>
+        <source>Nickname</source>
+        <translation>パイロット</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_table.py" line="122"/>
+        <source>Combat</source>
+        <translation>格闘</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_table.py" line="123"/>
+        <source>Ranged</source>
+        <translation>射撃</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_table.py" line="124"/>
+        <source>Evasion</source>
+        <translation>回避</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_table.py" line="125"/>
+        <source>Accuracy</source>
+        <translation>命中</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_table.py" line="126"/>
+        <source>Reaction</source>
+        <translation>反応</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_table.py" line="127"/>
+        <source>Skill</source>
+        <translation>技量</translation>
+    </message>
+</context>
+<context>
     <name>RomCard</name>
     <message>
         <location filename="../../src/gui/option/rom_card.py" line="164"/>
@@ -3472,8 +3687,28 @@ Do you want to overwrite it?</source>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="307"/>
         <location filename="../../src/gui/robot/unit_panel.py" line="331"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="98"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="108"/>
         <source>Series</source>
         <translation>のりかえ系</translation>
+    </message>
+</context>
+<context>
+    <name>SpecialSkillsCard</name>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="120"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="130"/>
+        <source>Special skills</source>
+        <translation>特殊技能</translation>
+    </message>
+</context>
+<context>
+    <name>SpiritsCard</name>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="54"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="64"/>
+        <source>Spirits</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3481,6 +3716,8 @@ Do you want to overwrite it?</source>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="164"/>
         <location filename="../../src/gui/robot/unit_panel.py" line="234"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="76"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="86"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
@@ -3659,6 +3896,15 @@ Do you want to overwrite it?</source>
     <message>
         <source>Space</source>
         <translation type="vanished">宇</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradedSkillsCard</name>
+    <message>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="142"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="152"/>
+        <source>Upgraded skills</source>
+        <translation type="unfinished">レベル制技能</translation>
     </message>
 </context>
 <context>

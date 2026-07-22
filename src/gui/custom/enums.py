@@ -96,6 +96,44 @@ class EnumData(QObject):
                 0x3: self.tr("Target Circle"),  # 着弹地点指定型 / 着弾地点指定型
             },
         }
+        self.SPIRIT = {
+            "Valor": self.tr("Valor"),  # 热血 / 熱血
+            "Soul": self.tr("Soul"),  # 魂 / 魂
+            "Mercy": self.tr("Mercy"),  # 手加减 / てかげん
+            "Snipe": self.tr("Snipe"),  # 狙击 / 狙撃
+            "Flash": self.tr("Flash"),  # 必闪 / ひらめき
+            "Gain": self.tr("Gain"),  # 努力 / 努力
+            "Fortune": self.tr("Fortune"),  # 幸运 / 幸運
+            "Focus": self.tr("Focus"),  # 集中 / 集中
+            "Bullseye": self.tr("Bullseye"),  # 必中 / 必中
+            "Wall": self.tr("Wall"),  # 铁壁 / 鉄壁
+            "Cloak": self.tr("Cloak"),  # 隐身 / 隠れ身
+            "Accel": self.tr("Accel"),  # 加速 / 加速
+            "Zeal": self.tr("Zeal"),  # 觉醒 / 覚醒
+            "Smash": self.tr("Smash"),  # 激斗 / 激闘
+            "Sacrifice": self.tr("Sacrifice"),  # 舍身 / 捨て身
+            "Disrupt": self.tr("Disrupt"),  # 扰乱 / かく乱
+            "Taunt": self.tr("Taunt"),  # 挑衅 / 挑発
+            "Vigor": self.tr("Vigor"),  # 根性 / 根性
+            "Guts": self.tr("Guts"),  # 大根性 / ド根性
+            "Spirit": self.tr("Spirit"),  # 气合 / 気合
+            "Trust": self.tr("Trust"),  # 信赖 / 信頼
+            "Faith": self.tr("Faith"),  # 友情 / 友情
+            "Love": self.tr("Love"),  # 爱 / 愛
+            "Resupply": self.tr("Resupply"),  # 补给 / 補給
+            "Enable": self.tr("Enable"),  # 再动 / 再動
+            "Revive": self.tr("Revive"),  # 复活 / 復活
+            "Daunt": self.tr("Daunt"),  # 脱力 / 脱力
+            "Dread": self.tr("Dread"),  # 战慄 / 戦慄
+            "Detonate": self.tr("Detonate"),  # 自爆 / 自爆
+            "Scan": self.tr("Scan"),  # 侦察 / 偵察
+            "Rouse": self.tr("Rouse"),  # 激励 / 激励
+            "Galvanize": self.tr("Galvanize"),  # 大激励 / 大激励
+            "Prospect": self.tr("Prospect"),  # 期待 / 期待
+            "Miracle": self.tr("Miracle"),  # 奇迹 / 奇跡
+            "Raid": self.tr("Raid"),  # 奇袭 / 奇襲
+            "——": self.tr("——"),  # —— / ——
+        }
         self.BGM = {
             0x00: self.tr("Combattler V's Theme"),  # コン・バトラーVのテーマ
             0x01: self.tr("Sirocco! Gale! Cybuster"),  # 熱風！疾風！サイバスター
@@ -163,7 +201,7 @@ class EnumData(QObject):
             0x3F: self.tr("Spirits of Steel ～SUPER ROBOT SPIRITS"),  # 鋼の魂～SUPER ROBOT SPIRITS
             0x40: self.tr("Time Diver"),  # TIME DIVER
             0x41: self.tr("Raging Spirits!!"),  # 荒ぶる魂！！
-            0x42: self.tr("The Universe in Eternal Harmony..."), # 宇宙のハーモニー永遠に...
+            0x42: self.tr("The Universe in Eternal Harmony..."),  # 宇宙のハーモニー永遠に...
             0x43: self.tr("Peace on a Distant Day"),  # 遠い日の安息
             0x44: self.tr("For Whom the Bell Dances"),  # 誰がために鐘は踊る
             0x45: self.tr("What Awaits Before the Hardship"),  # 苦難の先に待つものは

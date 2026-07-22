@@ -1,9 +1,8 @@
 """
-精神等级微调框 - 简化版 NumberSpin
+精神等级微调框 - 继承 VerticalSpinBox
 
-提供数值步进功能，用于编辑精神指令的习得等级。
-0 值显示为 "－"，发射信号时映射为 0xFF（255）。
-支持键盘输入编辑。
+0 值显示为 "－"，编辑后发射 valueChanged(int)，
+其中 0 值发射 0xFF（255），与数据格式一致。
 
 Classes:
     LevelSpin: 精神等级微调框
@@ -11,16 +10,24 @@ Classes:
 
 from PySide6.QtCore import Signal
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QHBoxLayout, QWidget
 
 from gui.widget.abstract import VerticalSpinBox
 
 _EMPTY_CHAR = "－"
-_EMPTY_VALUE = 0xFF  # 值为 0 时发射此数值
+_EMPTY_VALUE = 0xFF
 
 
-class _LevelSpinBox(VerticalSpinBox):
-    """内部微调框 — 0 值显示为 "－" """
+class LevelSpin(VerticalSpinBox):
+    """精神等级微调框 - 范围 0~99，0 显示 "－"，数据值为 0xFF"""
+
+    valueChanged = Signal(int)
+
+    def __init__(self, parent=None):
+        super().__init__(parent, editable=True)
+        self.setRange(0, 99)
+        super().valueChanged.connect(self._on_value_changed)
+
+    # ========== 显示映射 ==========
 
     def textFromValue(self, value: int) -> str:
         """数值 → 显示文本，0 显示为 "－" """
@@ -37,60 +44,23 @@ class _LevelSpinBox(VerticalSpinBox):
         except ValueError:
             return 0
 
-
-class LevelSpin(QWidget):
-    """精神等级微调框 - 数值步进，编辑后发射 valueChanged
-
-    0 值显示 "－"，实际发送的信号值为 0xFF（255）。
-    """
-
-    valueChanged = Signal(int)
-
-    def __init__(self, parent=None):
-        """初始化精神等级微调框
-
-        Args:
-            parent: 父 QWidget
-        """
-        super().__init__(parent)
-
-        self._spin = _LevelSpinBox(self, editable=True)
-        self._spin.setRange(0, 99)
-        self._spin.valueChanged.connect(self._on_value_changed)
-
-        layout = QHBoxLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._spin)
-
-    # ========== 数据接口 ==========
+    # ========== 数据接口（0 ↔ 0xFF 映射） ==========
 
     def set_value(self, value: int) -> None:
-        """设置当前值
+        """设置当前值，0xFF 显示为 "－" """
+        self.blockSignals(True)
+        self.setValue(0 if value == _EMPTY_VALUE else value)
+        self.blockSignals(False)
 
-        Args:
-            value: 等级数值，0xFF 显示为 "－"
-        """
-        self._spin.blockSignals(True)
-        self._spin.setValue(0 if value == _EMPTY_VALUE else value)
-        self._spin.blockSignals(False)
-
-    def data_value(self) -> int:
-        """获取当前值（已映射）
-
-        Returns:
-            当前值，0 时返回 0xFF
-        """
-        v = self._spin.value()
+    def value(self) -> int:
+        """获取当前数据值，显示 0 时返回 0xFF"""
+        v = super().value()
         return _EMPTY_VALUE if v == 0 else v
 
     # ========== 字体 ==========
 
     def apply_font(self, font: QFont | dict) -> None:
-        """设置微调框字体
-
-        Args:
-            font: QFont 实例或字体属性字典
-        """
+        """设置微调框字体"""
         if isinstance(font, dict):
             qfont = QFont()
             family = font.get("family")
@@ -106,14 +76,10 @@ class LevelSpin(QWidget):
             if italic:
                 qfont.setItalic(italic)
             font = qfont
-        self._spin.setFont(font)
-
-    def resetUI(self) -> None:
-        """从全局配置刷新字体"""
-        self._spin.resetUI()
+        self.setFont(font)
 
     # ========== 内部槽 ==========
 
-    def _on_value_changed(self, value: int) -> None:
-        """值改变时发射映射后的 valueChanged"""
-        self.valueChanged.emit(_EMPTY_VALUE if value == 0 else value)
+    def _on_value_changed(self, spin_value: int) -> None:
+        """spin 值改变时发射数据格式的 valueChanged"""
+        self.valueChanged.emit(_EMPTY_VALUE if spin_value == 0 else spin_value)

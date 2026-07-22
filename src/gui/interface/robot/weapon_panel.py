@@ -19,16 +19,15 @@ from qfluentwidgets import setFont
 from gui.custom.enums import EnumData
 from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.widget import (
-    AmmoSpin,
     BaseTableModel,
-    CommonBitCombo,
     CardHeader,
+    CommonBitCombo,
     CommonMappingCombo,
     CommonMappingSpin,
     CommonNumberSpin,
+    CommonStretchLabel,
     ProxyFrame,
     RangeCombo,
-    CommonStretchLabel,
 )
 
 from .weapon_frame import WeaponView
@@ -87,7 +86,7 @@ class WeaponAttrCard(CardHeader):
 
         self._ammo_label = CommonStretchLabel(self.tr("Ammo cnt"), self)
         self._ammo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._ammo_spin = AmmoSpin(value_range=(0, 99), parent=self)
+        self._ammo_spin = CommonNumberSpin(value_range=(0, 99), parent=self)
         self._ammo_spin.valueChanged.connect(self._on_ammo_changed)
 
         self._custom_label = CommonStretchLabel(self.tr("Type"), self)

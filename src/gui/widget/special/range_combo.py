@@ -8,17 +8,10 @@ Classes:
     RangeCombo: 地图武器范围选择下拉框
 """
 
-import os
-import sys
-
-_src = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
-if _src not in sys.path:
-    sys.path.insert(0, _src)
-
 from PIL import Image, ImageDraw
-from PySide6.QtCore import QSize, Qt, Signal
+from PySide6.QtCore import QSize, Signal
 from PySide6.QtGui import QFont, QIcon
-from PySide6.QtWidgets import QComboBox, QVBoxLayout, QWidget
+from PySide6.QtWidgets import QComboBox
 
 MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {
     0x00: ((2, 7), (3, 7), (3, 8), (4, 8), (5, 8), (5, 7)),
@@ -142,35 +135,27 @@ def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None
     return resized.toqpixmap()
 
 
-class RangeCombo(QWidget):
+class RangeCombo(QComboBox):
     """地图武器范围选择下拉框 - 带覆盖区域图标预览
 
-    每项显示一个 220×140 的棋盘点阵图，红点标出覆盖范围。
+    继承 QComboBox，每项显示一个 220×140 的棋盘点阵图。
     选中后发射 valueChanged(int)。
     """
 
     valueChanged = Signal(int)
 
     def __init__(self, parent=None):
-        """初始化地图武器范围选择下拉框"""
         super().__init__(parent)
+        self.setIconSize(QSize(220, 140))
+        self.setMaxVisibleItems(5)
 
-        self._combo = QComboBox(self)
-        self._combo.setIconSize(QSize(220, 140))
-        self._combo.setMaxVisibleItems(5)
-
-        # 预生成图标 + 填充选项
         self._key_list: list[int] = []
         for key in sorted(MAP_RANGE):
             self._key_list.append(key)
             pixmap = _render_range_pixmap(MAP_RANGE[key], key)
-            self._combo.addItem(QIcon(pixmap), "", key)
+            self.addItem(QIcon(pixmap), "", key)
 
-        self._combo.currentIndexChanged.connect(self._on_index_changed)
-
-        layout = QVBoxLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._combo)
+        self.currentIndexChanged.connect(self._on_index_changed)
 
     # ========== 数据接口 ==========
 
@@ -180,13 +165,13 @@ class RangeCombo(QWidget):
             idx = self._key_list.index(int(value))
         except (ValueError, TypeError):
             idx = -1
-        self._combo.blockSignals(True)
-        self._combo.setCurrentIndex(idx)
-        self._combo.blockSignals(False)
+        self.blockSignals(True)
+        self.setCurrentIndex(idx)
+        self.blockSignals(False)
 
     def value(self) -> int:
         """获取当前选中值"""
-        idx = self._combo.currentIndex()
+        idx = self.currentIndex()
         if idx >= 0:
             return self._key_list[idx]
         return -1
@@ -195,22 +180,22 @@ class RangeCombo(QWidget):
 
     def setEnabled(self, enabled: bool) -> None:
         """禁用时保留占位项维持高度，恢复时重新填充"""
-        if enabled and self._combo.count() <= 1:
+        if enabled and self.count() <= 1:
             self._key_list = []
-            self._combo.blockSignals(True)
-            self._combo.clear()
+            self.blockSignals(True)
+            self.clear()
             for key in sorted(MAP_RANGE):
                 self._key_list.append(key)
                 pixmap = _render_range_pixmap(MAP_RANGE[key], key)
-                self._combo.addItem(QIcon(pixmap), "", key)
-            self._combo.blockSignals(False)
-        elif not enabled and self._combo.count() > 1:
-            self._combo.blockSignals(True)
-            self._combo.clear()
+                self.addItem(QIcon(pixmap), "", key)
+            self.blockSignals(False)
+        elif not enabled and self.count() > 1:
+            self.blockSignals(True)
+            self.clear()
             self._key_list = []
             dummy = Image.new("RGBA", (220, 140), (0, 0, 0, 0))
-            self._combo.addItem(QIcon(dummy.toqpixmap()), "")
-            self._combo.blockSignals(False)
+            self.addItem(QIcon(dummy.toqpixmap()), "")
+            self.blockSignals(False)
         super().setEnabled(enabled)
 
     # ========== 字体 ==========
@@ -232,12 +217,11 @@ class RangeCombo(QWidget):
             if italic:
                 qfont.setItalic(italic)
             font = qfont
-        self._combo.setFont(font)
+        self.setFont(font)
 
     def resetUI(self) -> None:
         """刷新字体"""
-        font = self.font()
-        self._combo.setFont(font)
+        self.setFont(self.font())
 
     # ========== 内部槽 ==========
 
@@ -246,28 +230,3 @@ class RangeCombo(QWidget):
         if index < 0:
             return
         self.valueChanged.emit(self._key_list[index])
-
-
-if __name__ == "__main__":
-    from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget
-
-    app = QApplication(sys.argv)
-    w = QMainWindow()
-    w.setWindowTitle("RangeCombo 测试")
-    w.setCentralWidget(QWidget())
-    w.setGeometry(100, 100, 400, 200)
-
-    combo = RangeCombo(w)
-    combo.set_value(0x05)
-    combo.setParent(w.centralWidget())
-
-    layout = QVBoxLayout(w.centralWidget())
-    layout.addWidget(combo)
-    layout.addStretch()
-
-    def on_changed(v):
-        print(f"[TEST] valueChanged: {v:#04x}")
-    combo.valueChanged.connect(on_changed)
-
-    w.show()
-    sys.exit(app.exec())

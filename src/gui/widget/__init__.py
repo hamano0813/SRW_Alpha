@@ -22,7 +22,6 @@ from .common import (
 )
 from .proxy import CardHeader, ProxyFrame
 from .special import (
-    AmmoSpin,
     LevelSpin,
     RangeCombo,
     RobotCombo,

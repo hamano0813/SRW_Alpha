@@ -1,7 +1,7 @@
 [project]
 name = "SRW_Alpha"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.3.0"
+description = "Super Robot Wars α ROM Editor — 超级机器人大战α ROM 编辑器"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

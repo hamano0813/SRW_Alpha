@@ -6,7 +6,6 @@ PilotPanel 只负责编排和接口转发。
 
 Classes:
     PilotDetailCard:   驾驶员详细信息卡片（占位）
-    SpiritsCard:       精神指令卡片
     TerrainCard:       地形适性卡片
     SeriesCard:        系列卡片
     SpecialSkillsCard: 特殊技能卡片（占位）
@@ -45,53 +44,6 @@ class PilotDetailCard(CardHeader):
     def resetUI(self) -> None:
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
-
-
-class SpiritsCard(CardHeader):
-    """精神指令卡片 - 精神组合与习得等级编辑"""
-
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.setTitle(self.tr("Spirits"))
-        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self._spirits_editor = SpiritsEditor(self)
-        self._spirits_editor.spiritChanged.connect(self._on_spirit_changed)
-        self._spirits_editor.levelChanged.connect(self._on_level_changed)
-        self.viewLayout.addWidget(self._spirits_editor)
-
-    def set_row(self, row: int) -> None:
-        super().set_row(row)
-        spi_list = self._read("spi") or [0] * 6
-        spl_list = self._read("spl") or [0] * 6
-        for i in range(6):
-            self._spirits_editor.set_spirit(i, int(spi_list[i]) if i < len(spi_list) else 0)
-            self._spirits_editor.set_level(i, int(spl_list[i]) if i < len(spl_list) else 0)
-
-    def _on_spirit_changed(self, idx: int, value: int) -> None:
-        if self._model is not None and self._row >= 0:
-            row_data = self._model.get_row_data(self._row)
-            spi_list = row_data.get("spi", [0] * 6)
-            if idx < len(spi_list):
-                spi_list[idx] = value
-        self.panelDataChanged.emit("spi")
-
-    def _on_level_changed(self, idx: int, value: int) -> None:
-        if self._model is not None and self._row >= 0:
-            row_data = self._model.get_row_data(self._row)
-            spl_list = row_data.get("spl", [0] * 6)
-            if idx < len(spl_list):
-                spl_list[idx] = value
-        self.panelDataChanged.emit("spl")
-
-    def translateUI(self) -> None:
-        self.setTitle(self.tr("Spirits"))
-        self._spirits_editor.translateUI()
-
-    def resetUI(self) -> None:
-        setFont(self)
-        setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
-        self._spirits_editor.resetUI()
 
 
 class TerrainCard(CardHeader):
@@ -238,7 +190,9 @@ class PilotPanel(ProxyFrame):
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
 
         self._detail_card = PilotDetailCard(self)
-        self._spirits_card = SpiritsCard(self)
+        self._spirits_card = SpiritsEditor(self)
+        self._spirits_card.setTitle(self.tr("Spirits"))
+        self._spirits_card.panelDataChanged.connect(self.panelDataChanged)
         self._terrain_card = TerrainCard(self)
         self._series_card = SeriesCard(self)
         self._skills_card = SpecialSkillsCard(self)
@@ -259,6 +213,7 @@ class PilotPanel(ProxyFrame):
 
     def translateUI(self):
         self._detail_card.translateUI()
+        self._spirits_card.setTitle(self.tr("Spirits"))
         self._spirits_card.translateUI()
         self._terrain_card.translateUI()
         self._series_card.translateUI()

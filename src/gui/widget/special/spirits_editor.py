@@ -1,59 +1,46 @@
 """
-精神指令编辑器 - 精神组合与习得等级编辑
+精神指令卡片 - 精神组合与习得等级编辑
 
 两行六列布局，奇数列为精神指令下拉框，偶数列为习得等级微调框。
 第一行：spi[0..2] / spl[0..2]，第二行：spi[3..5] / spl[3..5]。
-纯布局容器，数据读写由卡片层负责。
+继承 CardHeader，自行读写 model 数据。
 
 Classes:
-    SpiritsEditor: 精神指令编辑器
+    SpiritsEditor: 精神指令卡片
 """
 
-from PySide6.QtCore import Signal
+from PySide6.QtWidgets import QGridLayout
 
 from gui.custom.enums import EnumData
-from gui.widget.proxy import ProxyFrame
+from gui.widget.proxy import CardHeader
 from .level_spin import LevelSpin
 from .spirit_combo import SpiritCombo
 
 
-class SpiritsEditor(ProxyFrame):
-    """精神指令编辑器 - 6 组精神 × 等级，纯布局容器
-
-    卡片层通过 set_spirit(idx, value) / set_level(idx, value) 写入显示，
-    通过 spiritChanged(idx, value) / levelChanged(idx, value) 信号接收编辑回写。
-    """
-
-    spiritChanged = Signal(int, int)  # idx, value
-    levelChanged = Signal(int, int)   # idx, value
+class SpiritsEditor(CardHeader):
+    """精神指令卡片 - 6 组精神 × 等级，网格布局"""
 
     _SPIRIT_COUNT = 6
 
     def __init__(self, parent=None):
         super().__init__(parent)
-
-        # ========== 精神名称映射 ==========
-
         self._spirit_mapping: dict[int, str] = {}
         self._refresh_mapping()
-
-        # ========== 6 组控件（spi + spl） ==========
 
         self._spi_combos: list[SpiritCombo] = []
         self._spl_spins: list[LevelSpin] = []
 
-        from PySide6.QtWidgets import QGridLayout
-        grid = QGridLayout(self)
+        grid = QGridLayout()
         grid.setContentsMargins(0, 0, 0, 0)
         grid.setSpacing(4)
 
         for i in range(self._SPIRIT_COUNT):
             combo = SpiritCombo(self._spirit_mapping, self)
-            combo.valueChanged.connect(lambda v, idx=i: self.spiritChanged.emit(idx, v))
+            combo.valueChanged.connect(lambda v, idx=i: self._on_spirit(idx, v))
             self._spi_combos.append(combo)
 
             spin = LevelSpin(parent=self)
-            spin.valueChanged.connect(lambda v, idx=i: self.levelChanged.emit(idx, v))
+            spin.valueChanged.connect(lambda v, idx=i: self._on_level(idx, v))
             self._spl_spins.append(spin)
 
             row = 0 if i < 3 else 1
@@ -61,36 +48,47 @@ class SpiritsEditor(ProxyFrame):
             grid.addWidget(combo, row, col)
             grid.addWidget(spin, row, col + 1)
 
-        self.setLayout(grid)
+        self.viewLayout.addLayout(grid)
 
     # ========== 映射刷新 ==========
 
     def _refresh_mapping(self) -> None:
-        """从 EnumData().SPIRIT 重建 {数值: 显示文本} 映射"""
         self._spirit_mapping = dict(EnumData().SPIRIT)
 
-    # ========== 数据接口（由卡片层调用） ==========
+    # ========== 数据接口 ==========
 
-    def set_spirit(self, idx: int, value: int) -> None:
-        """设置第 idx 位的精神指令值"""
-        if idx < len(self._spi_combos):
-            self._spi_combos[idx].set_value(value)
+    def set_row(self, row: int) -> None:
+        super().set_row(row)
+        spi_list = self._read("spi") or [0] * self._SPIRIT_COUNT
+        spl_list = self._read("spl") or [0] * self._SPIRIT_COUNT
+        for i in range(self._SPIRIT_COUNT):
+            self._spi_combos[i].set_value(int(spi_list[i]) if i < len(spi_list) else 0)
+            self._spl_spins[i].set_value(int(spl_list[i]) if i < len(spl_list) else 0)
 
-    def set_level(self, idx: int, value: int) -> None:
-        """设置第 idx 位的习得等级"""
-        if idx < len(self._spl_spins):
-            self._spl_spins[idx].set_value(value)
+    def _on_spirit(self, idx: int, value: int) -> None:
+        row_data = self._model.get_row_data(self._row) if self._model and self._row >= 0 else None
+        if row_data is not None:
+            spi_list = row_data.get("spi", [0] * self._SPIRIT_COUNT)
+            if idx < len(spi_list):
+                spi_list[idx] = value
+        self.panelDataChanged.emit("spi")
+
+    def _on_level(self, idx: int, value: int) -> None:
+        row_data = self._model.get_row_data(self._row) if self._model and self._row >= 0 else None
+        if row_data is not None:
+            spl_list = row_data.get("spl", [0] * self._SPIRIT_COUNT)
+            if idx < len(spl_list):
+                spl_list[idx] = value
+        self.panelDataChanged.emit("spl")
 
     # ========== 翻译与字体 ==========
 
     def translateUI(self) -> None:
-        """刷新精神名称映射（语言切换后）"""
         self._refresh_mapping()
         for combo in self._spi_combos:
             combo.set_mapping(self._spirit_mapping)
 
     def resetUI(self) -> None:
-        """刷新所有控件字体"""
         for combo in self._spi_combos:
             combo.resetUI()
         for spin in self._spl_spins:

@@ -23,13 +23,18 @@ from qfluentwidgets import setFont
 
 from gui.custom.enums import EnumData
 from gui.custom.fonts import JP_FONT, JP_QFONT
-from gui.custom.models import BaseTableModel
-from gui.custom.widgets import BitComboBox, MappingComboBox, NumberCompSpin
-from gui.custom.widgets.special import AmmoSpin, RangeComboBox
-from gui.custom.widgets.stretch_label import StretchLabel
-from gui.custom.widgets.card_header import CardHeader
-from gui.custom.widgets.panel.mapping_compspin import MappingCompSpin
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget import (
+    AmmoSpin,
+    BaseTableModel,
+    BitComboBox,
+    CardHeader,
+    MappingComboBox,
+    MappingCompSpin,
+    NumberCompSpin,
+    ProxyFrame,
+    RangeComboBox,
+    StretchLabel,
+)
 
 from .weapon_frame import WeaponView
 

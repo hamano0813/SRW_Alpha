@@ -13,10 +13,11 @@ Classes:
 from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QGridLayout
 
-from gui.custom.common import LevelSpin, SpiritCombo
+from .level_spin import LevelSpin
+from .spirit_combo import SpiritCombo
 from gui.custom.enums import EnumData
-from gui.custom.models import BaseTableModel
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget.table import BaseTableModel
+from gui.widget.proxy import ProxyFrame
 
 
 class SpiritsEditor(ProxyFrame):

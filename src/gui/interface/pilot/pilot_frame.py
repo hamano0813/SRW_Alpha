@@ -15,8 +15,7 @@ from PySide6.QtCore import Qt, QTimer
 from PySide6.QtWidgets import QHBoxLayout
 from qfluentwidgets import SmoothScrollArea
 
-from gui.custom.models import BaseTableModel
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget import BaseTableModel, ProxyFrame
 from gui.interface.pilot.pilot_panel import PilotPanel
 from gui.interface.pilot.pilot_table import PilotTable
 

@@ -15,7 +15,7 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 from qfluentwidgets import setFont
 
-from gui.custom.widgets import NumberSpinBox
+from .number_spinbox import NumberSpinBox
 
 from .base_delegate import DataWidgetDelegate
 

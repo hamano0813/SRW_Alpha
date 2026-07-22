@@ -13,7 +13,7 @@ from PySide6.QtCore import QModelIndex
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 
-from gui.custom.widgets import SingleLineEdit
+from .single_lineedit import SingleLineEdit
 
 from .base_delegate import DataWidgetDelegate
 

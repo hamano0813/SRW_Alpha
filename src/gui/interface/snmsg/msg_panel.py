@@ -20,7 +20,7 @@ from qfluentwidgets import (
 )
 
 from gui.custom import fonts
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget import ProxyFrame
 
 
 class _FilterCard(HeaderCardWidget):

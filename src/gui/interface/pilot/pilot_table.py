@@ -14,10 +14,13 @@ from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
 from gui.custom import fonts
-from gui.custom.delegates import NumberSpinDelegate, SingleLineDelegate
-from gui.custom.models import BaseTableModel
-from gui.custom.views import FixedTableView
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget import (
+    BaseTableModel,
+    FixedTableView,
+    NumberSpinDelegate,
+    ProxyFrame,
+    SingleLineDelegate,
+)
 
 
 class PilotTable(ProxyFrame):

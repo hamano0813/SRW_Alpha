@@ -13,7 +13,7 @@ Classes:
 from typing import Any
 
 from gui.custom.fonts import JP_FONT, JP_QFONT
-from gui.custom.widgets.panel.mapping_combobox import MappingComboBox
+from gui.widget.common import MappingComboBox
 
 
 class RobotComboBox(MappingComboBox):

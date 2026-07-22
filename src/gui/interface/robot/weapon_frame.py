@@ -12,13 +12,15 @@ Classes:
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QFrame, QHeaderView, QSizePolicy
 
-from gui.custom.widgets.card_header import CardHeader
-
-from gui.custom.delegates import MappingSpinDelegate, NumberSpinDelegate, SingleLineDelegate
 from gui.custom.enums import EnumData
 from gui.custom.fonts import JP_FONT
-
-from gui.custom.views import FixedTableView
+from gui.widget import (
+    CardHeader,
+    FixedTableView,
+    MappingSpinDelegate,
+    NumberSpinDelegate,
+    SingleLineDelegate,
+)
 
 
 class WeaponView(FixedTableView):

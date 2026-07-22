@@ -20,12 +20,15 @@ from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QVBoxLayout
 from qfluentwidgets import setFont
 
 from gui.custom.enums import EnumData
-from gui.custom.models import BaseTableModel
-from gui.custom.special import SpiritsEditor
-from gui.custom.widgets import BitCheckList, MappingCompSpin
-from gui.custom.widgets.stretch_label import StretchLabel
-from gui.custom.widgets.card_header import CardHeader
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget import (
+    BaseTableModel,
+    BitCheckList,
+    CardHeader,
+    MappingCompSpin,
+    ProxyFrame,
+    SpiritsEditor,
+    StretchLabel,
+)
 
 
 class PilotDetailCard(CardHeader):

@@ -9,7 +9,7 @@ Classes:
     AmmoSpin: 弹药微调框
 """
 
-from gui.custom.widgets.panel.number_compspin import NumberCompSpin
+from gui.widget.common import NumberCompSpin
 
 
 class AmmoSpin(NumberCompSpin):

@@ -11,7 +11,7 @@ from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QSizePolicy
 from qfluentwidgets import HeaderCardWidget
 
-from gui.custom.models import BaseTableModel
+from gui.widget.table import BaseTableModel
 
 
 class CardHeader(HeaderCardWidget):

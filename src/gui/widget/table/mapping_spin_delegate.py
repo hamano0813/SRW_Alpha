@@ -12,7 +12,7 @@ from typing import Any
 from PySide6.QtGui import QFont
 from qfluentwidgets import setFont
 
-from gui.custom.widgets import MappingSpinBox
+from .mapping_spinbox import MappingSpinBox
 
 from .base_delegate import DataWidgetDelegate
 

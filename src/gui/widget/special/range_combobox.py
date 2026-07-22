@@ -25,7 +25,7 @@ from PySide6.QtCore import QSize, Qt
 from PySide6.QtGui import QFont, QIcon
 from PySide6.QtWidgets import QComboBox, QVBoxLayout
 
-from gui.custom.widgets.panel.panel_editor import PanelEditor
+from gui.widget.common import PanelEditor
 
 MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {
     0x00: ((2, 7), (3, 7), (3, 8), (4, 8), (5, 8), (5, 7)),

@@ -15,9 +15,7 @@ from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 from qfluentwidgets import TableItemDelegate
 
 from gui.custom import fonts
-from gui.custom.delegates import MultiLineDelegate
-from gui.custom.widgets.proxy_frame import ProxyFrame
-from gui.custom.views import FixedTableView
+from gui.widget import FixedTableView, MultiLineDelegate, ProxyFrame
 
 
 class _SingleColumnDelegate(TableItemDelegate):

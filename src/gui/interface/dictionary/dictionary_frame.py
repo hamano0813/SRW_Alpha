@@ -9,7 +9,7 @@ Classes:
 
 from PySide6.QtWidgets import QVBoxLayout
 
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget import ProxyFrame
 
 
 class DictionaryFrame(ProxyFrame):

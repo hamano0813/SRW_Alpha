@@ -13,7 +13,7 @@ from PySide6.QtCore import Signal
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QHBoxLayout, QWidget
 
-from gui.custom.widgets.panel.spin_box import VerticalSpinBox
+from gui.widget.common import VerticalSpinBox
 
 _EMPTY_CHAR = "－"
 _EMPTY_VALUE = 0xFF  # 值为 0 时发射此数值

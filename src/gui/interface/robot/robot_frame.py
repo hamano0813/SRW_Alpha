@@ -25,8 +25,7 @@ from PySide6.QtWidgets import (
 )
 from qfluentwidgets import SmoothScrollArea
 
-from gui.custom.models import BaseTableModel
-from gui.custom.widgets.proxy_frame import ProxyFrame
+from gui.widget import BaseTableModel, ProxyFrame
 from gui.interface.robot.unit_frame import UnitFrame
 from gui.interface.robot.unit_panel import (
     AbilitiesCard,

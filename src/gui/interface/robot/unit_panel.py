@@ -25,12 +25,18 @@ from qfluentwidgets import qconfig
 from config import option
 from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.custom.enums import EnumData
-from gui.custom.models import BaseTableModel
-from gui.custom.widgets.stretch_label import StretchLabel
-from gui.custom.widgets.proxy_frame import ProxyFrame
-from gui.custom.widgets import BitCheckList, BitComboBox, MappingComboBox, MappingCompSpin, NumberCompSpin
-from gui.custom.widgets.card_header import CardHeader
-from gui.custom.widgets.special import RobotComboBox
+from gui.widget import (
+    BaseTableModel,
+    BitCheckList,
+    BitComboBox,
+    CardHeader,
+    MappingComboBox,
+    MappingCompSpin,
+    NumberCompSpin,
+    ProxyFrame,
+    RobotComboBox,
+    StretchLabel,
+)
 
 
 class TransformCard(CardHeader):

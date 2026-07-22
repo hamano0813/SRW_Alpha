@@ -14,15 +14,15 @@ from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 
 from gui.custom import fonts
-from gui.custom.delegates import (
+from gui.custom.enums import EnumData
+from gui.widget import (
+    BaseTableModel,
+    FixedTableView,
     MappingSpinDelegate,
     NumberSpinDelegate,
+    ProxyFrame,
     SingleLineDelegate,
 )
-from gui.custom.enums import EnumData
-from gui.custom.models import BaseTableModel
-from gui.custom.views import FixedTableView
-from gui.custom.widgets.proxy_frame import ProxyFrame
 
 
 class UnitFrame(ProxyFrame):

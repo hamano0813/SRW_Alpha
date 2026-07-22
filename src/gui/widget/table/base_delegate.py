@@ -20,8 +20,8 @@ from PySide6.QtGui import QColor, QFont, QPainter
 from PySide6.QtWidgets import QStyledItemDelegate, QStyleOptionViewItem, QWidget
 from qfluentwidgets import isDarkTheme, setFont
 
-from gui.custom.views import BaseTableView
-from gui.custom.widgets import TableEditor
+from .base_view import BaseTableView
+from .table_editor import TableEditor
 
 
 def _font_from_dict(font_dict: dict) -> QFont | None:

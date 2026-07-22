@@ -109,8 +109,9 @@ class UnitFrame(ProxyFrame):
 
         # ========== 默认列宽 ==========
 
-        self._robot_view.set_column_width([210] + [95] * 10)
+        self._robot_view.set_column_width([210, 120] + [110] * 7 + [115] * 2)
         self._robot_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
+        self._robot_view.verticalHeader().setFixedWidth(45)
 
         # ========== 布局 ==========
 

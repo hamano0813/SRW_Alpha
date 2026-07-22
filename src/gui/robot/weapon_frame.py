@@ -10,7 +10,9 @@ Classes:
 """
 
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QFrame, QHeaderView
+from PySide6.QtWidgets import QFrame, QHeaderView, QSizePolicy
+
+from gui.custom.widgets.card_header import CardHeader
 
 from gui.custom.delegates import MappingSpinDelegate, NumberSpinDelegate, SingleLineDelegate
 from gui.custom.enums import EnumData
@@ -66,15 +68,13 @@ class WeaponView(FixedTableView):
 
         # ========== 默认列宽（暂存，数据加载后生效） ==========
 
-        self._widths = [188, 94, 70]
+        self._widths = [220, 140, 100]
         self.setShowGrid(False)
         self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.verticalHeader().setFixedWidth(24)
         self.setFrameShape(QFrame.Shape.NoFrame)
-        self.setViewportMargins(0, 0, 0, 0)
         self.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
 
-        # 禁用折叠按钮（面板始终显示）
+        # 禁用折叠按钮（武器表格始终保持展开）
         self._corner_button.setVisible(False)
 
         # ========== 初始翻译 ==========
@@ -104,3 +104,22 @@ class WeaponView(FixedTableView):
                 self.tr("Damage"): [self._damage_delegate.format_display, self._damage_delegate.parse_display],
             }
         )
+
+
+class WeaponListCard(CardHeader):
+    """武器列表卡片 - 只显示标题，内容由外层填入"""
+
+    def __init__(self, parent=None):
+        """初始化武器列表卡片"""
+        super().__init__(parent)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        self.setTitle(self.tr("Weapon list"))
+        self.viewLayout.setContentsMargins(0, 0, 0, 0)
+
+    def translateUI(self):
+        """刷新标题翻译"""
+        self.setTitle(self.tr("Weapon list"))
+
+    def resetUI(self):
+        """空实现，字体由子控件自行管理"""
+        pass

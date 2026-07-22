@@ -18,7 +18,7 @@ Classes:
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
-from qfluentwidgets import BodyLabel, setFont
+from qfluentwidgets import setFont
 
 from qfluentwidgets import qconfig
 
@@ -26,6 +26,7 @@ from config import option
 from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.custom.enums import EnumData
 from gui.custom.models import BaseTableModel
+from gui.custom.widgets.stretch_label import StretchLabel
 from gui.custom.widgets.proxy_frame import ProxyFrame
 from gui.custom.widgets import BitCheckList, BitComboBox, MappingComboBox, MappingCompSpin, NumberCompSpin
 from gui.custom.widgets.card_header import CardHeader
@@ -39,46 +40,38 @@ class TransformCard(CardHeader):
         """初始化变形·合体卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Transform & Combine"))
-        self.setMinimumWidth(295)
-
         # ========== 控件 ==========
 
         _align = Qt.AlignmentFlag.AlignCenter
-        self._lbl_tgrp = BodyLabel(self.tr("Tran Grp"), self)
+        self._lbl_tgrp = StretchLabel(self.tr("Tran Grp"), self)
         self._lbl_tgrp.setAlignment(_align)
         self._tgrp_spin = NumberCompSpin("tgrp", value_range=(0, 99), parent=self)
-        self._tgrp_spin.setMinimumWidth(70)
         self._tgrp_spin.dataChanged.connect(self.panelDataChanged)
-        self._lbl_tsn = BodyLabel(self.tr("Tran Seq"), self)
+        self._lbl_tsn = StretchLabel(self.tr("Tran Seq"), self)
         self._lbl_tsn.setAlignment(_align)
         self._tsn_spin = NumberCompSpin("tsn", value_range=(0, 2), parent=self)
-        self._tsn_spin.setMinimumWidth(70)
         self._tsn_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._lbl_cgrp = BodyLabel(self.tr("Comb Grp"), self)
+        self._lbl_cgrp = StretchLabel(self.tr("Comb Grp"), self)
         self._lbl_cgrp.setAlignment(_align)
         self._cgrp_spin = NumberCompSpin("cgrp", value_range=(0, 99), parent=self)
-        self._cgrp_spin.setMinimumWidth(70)
         self._cgrp_spin.dataChanged.connect(self.panelDataChanged)
-        self._lbl_csn = BodyLabel(self.tr("Comb Seq"), self)
+        self._lbl_csn = StretchLabel(self.tr("Comb Seq"), self)
         self._lbl_csn.setAlignment(_align)
         self._csn_spin = NumberCompSpin("csn", value_range=(0, 2), parent=self)
-        self._csn_spin.setMinimumWidth(70)
         self._csn_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._lbl_cnt = BodyLabel(self.tr("Comb Cnt"), self)
+        self._lbl_cnt = StretchLabel(self.tr("Comb Cnt"), self)
         self._lbl_cnt.setAlignment(_align)
         self._cnt_spin = NumberCompSpin("count", value_range=(0, 5), parent=self)
-        self._cnt_spin.setMinimumWidth(70)
         self._cnt_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._lbl_core = BodyLabel(self.tr("Core Unit"), self)
+        self._lbl_core = StretchLabel(self.tr("Core Unit"), self)
         self._lbl_core.setAlignment(_align)
         self._core_combo = RobotComboBox("core", parent=self, supplements={0xFFFF: "——"})
-        self._core_combo.setMinimumWidth(250)
         self._core_combo.dataChanged.connect(self.panelDataChanged)
 
-        self._lbl_option = BodyLabel(self.tr("Unit Opt"), self)
+        self._lbl_option = StretchLabel(self.tr("Unit Opt"), self)
         self._lbl_option.setAlignment(_align)
         _option_mapping = EnumData().ROBOT["OPTION"]
         self._option_combo = MappingComboBox("option", mapping=_option_mapping, parent=self)
@@ -169,42 +162,36 @@ class TerrainCard(CardHeader):
         """初始化地形适性卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Terrain"))
-        self.setMinimumWidth(150)
-
         # ========== 控件 ==========
 
         _align = Qt.AlignmentFlag.AlignCenter
 
         # Bit 位多选下拉框 — 移动类型
         self._move_combo = BitComboBox("type", values=[], sep="")
-        self._move_combo.setMinimumWidth(130)
         self._move_combo.dataChanged.connect(self.panelDataChanged)
 
         # 地形适性微调框 × 4
         _adapt_mapping = EnumData().ROBOT["ADAPT"]
 
-        self._air_label = BodyLabel(self.tr("Air"), self)
-        self._air_label.setAlignment(_align)
+        self._air_label = StretchLabel(self.tr("Air"), self)
+        self._air_label.setFixedWidth(60)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self)
-        self._air_spin.setMinimumWidth(70)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._grd_label = BodyLabel(self.tr("Lnd"), self)
-        self._grd_label.setAlignment(_align)
+        self._grd_label = StretchLabel(self.tr("Lnd"), self)
+        self._grd_label.setFixedWidth(60)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self)
-        self._grd_spin.setMinimumWidth(70)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._wtr_label = BodyLabel(self.tr("Sea"), self)
-        self._wtr_label.setAlignment(_align)
+        self._wtr_label = StretchLabel(self.tr("Sea"), self)
+        self._wtr_label.setFixedWidth(60)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self)
-        self._wtr_spin.setMinimumWidth(70)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._spc_label = BodyLabel(self.tr("Spc"), self)
+        self._spc_label = StretchLabel(self.tr("Spc"), self)
+        self._spc_label.setFixedWidth(60)
         self._spc_label.setAlignment(_align)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self)
-        self._spc_spin.setMinimumWidth(70)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)
 
         # ========== 网格布局 ==========
@@ -278,6 +265,7 @@ class AbilitiesCard(CardHeader):
         """初始化能力列表卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Abilities"))
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         # ========== Bit 位多选列表 ==========
 
@@ -287,7 +275,6 @@ class AbilitiesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._abil_list)
-        self.setFixedWidth(225)
 
     # ========== UnitPanel 转发接口 ==========
 
@@ -318,6 +305,7 @@ class SeriesCard(CardHeader):
         """初始化系列卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Series"))
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         # ========== Bit 位多选列表 ==========
 
@@ -327,7 +315,6 @@ class SeriesCard(CardHeader):
         # 左右边距收窄以贴合滚动条
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._series_list)
-        self.setFixedWidth(220)
 
     # ========== UnitPanel 转发接口 ==========
 
@@ -358,14 +345,13 @@ class BgmCard(CardHeader):
         """初始化 BGM 卡片"""
         super().__init__(parent)
         self.setTitle("BGM")
-        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         # ========== BGM 下拉框 ==========
 
         _bgm_mapping = EnumData().BGM
         self._bgm_combo = MappingComboBox("bgm", mapping=_bgm_mapping, parent=self)
         self._apply_bgm_font()
-        self._bgm_combo.setMinimumWidth(200)
 
     # ========== 字体策略 ==========
 
@@ -416,7 +402,7 @@ class UnitPanel(ProxyFrame):
 
         # ========== 面板尺寸与策略 ==========
 
-        self.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
 
         # ========== 创建卡片 ==========
 

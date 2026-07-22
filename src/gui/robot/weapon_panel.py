@@ -16,21 +16,22 @@ Classes:
     WeaponFrame:    武器编辑框架
 """
 
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QSizePolicy, QVBoxLayout
-from qfluentwidgets import BodyLabel, setFont
+from qfluentwidgets import setFont
 
 from gui.custom.enums import EnumData
 from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets import BitComboBox, MappingComboBox, NumberCompSpin
 from gui.custom.widgets.special import AmmoSpin, RangeComboBox
+from gui.custom.widgets.stretch_label import StretchLabel
 from gui.custom.widgets.card_header import CardHeader
 from gui.custom.widgets.panel.mapping_compspin import MappingCompSpin
 from gui.custom.widgets.proxy_frame import ProxyFrame
 
-from .weapon_view import WeaponView
+from .weapon_frame import WeaponView
 
 
 # =============================================================================
@@ -51,100 +52,76 @@ class WeaponAttrCard(CardHeader):
         self._model = None
         self._row = -1
         self._attr_combo = BitComboBox("attr", values=EnumData().WEAPON["ATTRIBUTE"], sep=" / ", parent=self)
-        self._attr_combo.setMinimumWidth(479)
         self._attr_combo.dataChanged.connect(self.panelDataChanged)
 
-        self._rngs_label = BodyLabel(self.tr("Short rng"), self)
+        self._rngs_label = StretchLabel(self.tr("Short rng"), self)
         self._rngs_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._rngs_label.setMinimumWidth(70)
         self._rngs_spin = NumberCompSpin("rngs", value_range=(0, 3), parent=self)
-        self._rngs_spin.setFixedWidth(70)
         self._rngs_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._rngl_label = BodyLabel(self.tr("Long rng"), self)
+        self._rngl_label = StretchLabel(self.tr("Long rng"), self)
         self._rngl_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._rngl_label.setMinimumWidth(70)
         self._rngl_spin = NumberCompSpin("rngl", value_range=(0, 15), parent=self)
-        self._rngl_spin.setFixedWidth(72)
         self._rngl_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._hit_label = BodyLabel(self.tr("Accuracy"), self)
-        self._hit_label.setMinimumWidth(70)
+        self._hit_label = StretchLabel(self.tr("Accuracy"), self)
         self._hit_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self._hit_spin = NumberCompSpin("hit", value_range=(-99, 99), show_sign=True, parent=self)
-        self._hit_spin.setFixedWidth(65)
         self._hit_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._crt_label = BodyLabel(self.tr("Critical"), self)
-        self._crt_label.setMinimumWidth(70)
+        self._crt_label = StretchLabel(self.tr("Critical"), self)
         self._crt_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self._crt_spin = NumberCompSpin("crt", value_range=(-99, 99), show_sign=True, parent=self)
-        self._crt_spin.setFixedWidth(65)
         self._crt_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._morale_label = BodyLabel(self.tr("Morale"), self)
-        self._morale_label.setMinimumWidth(70)
+        self._morale_label = StretchLabel(self.tr("Morale"), self)
         self._morale_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self._morale_spin = NumberCompSpin("morale", value_range=(0, 150), parent=self)
-        self._morale_spin.setFixedWidth(65)
         self._morale_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._newtype_label = BodyLabel(self.tr("Newtype"), self)
-        self._newtype_label.setMinimumWidth(70)
+        self._newtype_label = StretchLabel(self.tr("Newtype"), self)
         self._newtype_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         _nt_map = {0: "－", 1: "1", 2: "2", 3: "3"}
         self._newtype_spin = MappingCompSpin("newtype", mapping=_nt_map, parent=self)
-        self._newtype_spin.setMinimumWidth(70)
         self._newtype_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._aura_label = BodyLabel(self.tr("Aura"), self)
-        self._aura_label.setMinimumWidth(70)
+        self._aura_label = StretchLabel(self.tr("Aura"), self)
         self._aura_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self._aura_spin = MappingCompSpin("aura", mapping=_nt_map, parent=self)
-        self._aura_spin.setMinimumWidth(72)
         self._aura_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._encost_label = BodyLabel(self.tr("EN cost"), self)
-        self._encost_label.setMinimumWidth(70)
+        self._encost_label = StretchLabel(self.tr("EN cost"), self)
         self._encost_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self._encost_spin = NumberCompSpin("encost", value_range=(0, 250), parent=self)
-        self._encost_spin.setFixedWidth(65)
         self._encost_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._ammo_label = BodyLabel(self.tr("Ammo cnt"), self)
-        self._ammo_label.setMinimumWidth(70)
+        self._ammo_label = StretchLabel(self.tr("Ammo cnt"), self)
         self._ammo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self._ammo_spin = AmmoSpin(value_range=(0, 99), parent=self)
-        self._ammo_spin.setFixedWidth(65)
         self._ammo_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._custom_label = BodyLabel(self.tr("Type"), self)
-        self._custom_label.setMinimumWidth(70)
+        self._custom_label = StretchLabel(self.tr("Type"), self)
         self._custom_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self._custom_combo = MappingComboBox("custom", mapping={0: "[A]", 1: "[B]", 2: "[C]", 3: "[D]"}, parent=self)
-        self._custom_combo.setFixedWidth(65)
+        self._custom_combo = MappingCompSpin("custom", mapping={0: "[A]", 1: "[B]", 2: "[C]", 3: "[D]"}, parent=self)
         self._custom_combo.dataChanged.connect(self.panelDataChanged)
 
-        self._bonus_label = BodyLabel(self.tr("Bonus"), self)
-        self._bonus_label.setMinimumWidth(70)
+        self._bonus_label = StretchLabel(self.tr("Bonus"), self)
         self._bonus_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self._bonus_combo = MappingComboBox("bonus", mapping={i: f"[{i:X}]" for i in range(16)}, parent=self)
-        self._bonus_combo.setFixedWidth(207)
         self._bonus_combo.apply_font(JP_FONT)
         self._bonus_combo.set_dropdown_font(JP_QFONT)
         self._bonus_combo.dataChanged.connect(self.panelDataChanged)
 
-        self._attr_label = BodyLabel(self.tr("Attribute"), self)
+        self._attr_label = StretchLabel(self.tr("Attribute"), self)
         self._attr_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._attr_label.setMinimumWidth(70)
 
         # ========== 网格布局 ==========
 
@@ -181,7 +158,6 @@ class WeaponAttrCard(CardHeader):
         _grid.addWidget(self._bonus_combo, 3, 5, 1, 3)
         self.viewLayout.addLayout(_grid)
         self.viewLayout.addStretch()
-        self.setFixedWidth(564)
 
     # ========== UnitPanel 转发接口 ==========
 
@@ -300,33 +276,25 @@ class WeaponMapCard(CardHeader):
         """初始化地图武器卡片"""
         super().__init__(parent)
         self.setTitle(self.tr("Map Weapon"))
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         # ========== 控件 ==========
 
-        self._mcls_label = BodyLabel(self.tr("Map class"), self)
-        self._mcls_label.setMinimumWidth(64)
+        self._mcls_label = StretchLabel(self.tr("Map class"), self)
         self._mcls_combo = MappingComboBox("mcls", mapping=EnumData().WEAPON["MCLASS"], parent=self)
-        self._mcls_combo.setMinimumWidth(160)
         self._mcls_combo.dataChanged.connect(self.panelDataChanged)
 
-        self._mshow_label = BodyLabel(self.tr("Map show"), self)
+        self._mshow_label = StretchLabel(self.tr("Map show"), self)
         self._mshow_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._mshow_label.setMinimumWidth(64)
         self._mshow_combo = MappingComboBox("mshow", mapping={i: f"[{i:02X}]" for i in range(80)}, parent=self)
-        self._mshow_combo.setFixedWidth(70)
         self._mshow_combo.dataChanged.connect(self.panelDataChanged)
 
-        self._radius_label = BodyLabel(self.tr("Blast radius"), self)
+        self._radius_label = StretchLabel(self.tr("Blast radius"), self)
         self._radius_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._radius_label.setMinimumWidth(64)
         self._radius_spin = NumberCompSpin("radius", value_range=(0, 4), parent=self)
-        self._radius_spin.setFixedWidth(70)
         self._radius_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._mrng_label = BodyLabel(self.tr("Directional range"), self)
-        self._mrng_label.setMinimumWidth(64)
         self._mrng_combo = RangeComboBox("mrng", parent=self)
-        self._mrng_combo.setMinimumWidth(200)
         self._mrng_combo.dataChanged.connect(self.panelDataChanged)
 
         # ========== 网格布局 ==========
@@ -335,13 +303,12 @@ class WeaponMapCard(CardHeader):
         _grid.setSpacing(4)
         _grid.setHorizontalSpacing(9)
         _grid.addWidget(self._mcls_label, 0, 0, 1, 2, Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter)
-        _grid.addWidget(self._mrng_label, 0, 2, Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter)
         _grid.addWidget(self._mcls_combo, 1, 0, 1, 2)
         _grid.addWidget(self._mshow_label, 2, 0, Qt.AlignmentFlag.AlignCenter)
         _grid.addWidget(self._mshow_combo, 2, 1)
         _grid.addWidget(self._radius_label, 3, 0, Qt.AlignmentFlag.AlignCenter)
         _grid.addWidget(self._radius_spin, 3, 1)
-        _grid.addWidget(self._mrng_combo, 1, 2, 3, 1)
+        _grid.addWidget(self._mrng_combo, 0, 2, 4, 1)
         self.viewLayout.addLayout(_grid)
         self.viewLayout.addStretch()
 
@@ -395,7 +362,6 @@ class WeaponMapCard(CardHeader):
         self._mcls_combo.set_mapping(EnumData().WEAPON["MCLASS"])
         self._mshow_label.setText(self.tr("Map show"))
         self._radius_label.setText(self.tr("Blast radius"))
-        self._mrng_label.setText(self.tr("Directional range"))
 
     def resetUI(self) -> None:
         """刷新字体"""
@@ -404,7 +370,6 @@ class WeaponMapCard(CardHeader):
         setFont(self._mcls_label)
         setFont(self._mshow_label)
         setFont(self._radius_label)
-        setFont(self._mrng_label)
         self._mcls_combo.resetUI()
         self._mshow_combo.resetUI()
         self._radius_spin.resetUI()
@@ -424,32 +389,24 @@ class WeaponAdaptCard(CardHeader):
         _adapt_mapping = EnumData().WEAPON["ADAPT"]
         _align = Qt.AlignmentFlag.AlignCenter
 
-        self._air_label = BodyLabel(self.tr("Air"), self)
-        self._air_label.setAlignment(_align)
-        self._air_label.setFixedWidth(55)
+        self._air_label = StretchLabel(self.tr("Air"), self)
+        self._air_label.setFixedWidth(40)
         self._air_spin = MappingCompSpin("air", mapping=_adapt_mapping, parent=self)
-        self._air_spin.setMinimumWidth(70)
         self._air_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._grd_label = BodyLabel(self.tr("Lnd"), self)
-        self._grd_label.setAlignment(_align)
-        self._grd_label.setFixedWidth(55)
+        self._grd_label = StretchLabel(self.tr("Lnd"), self)
+        self._grd_label.setFixedWidth(40)
         self._grd_spin = MappingCompSpin("grd", mapping=_adapt_mapping, parent=self)
-        self._grd_spin.setMinimumWidth(70)
         self._grd_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._wtr_label = BodyLabel(self.tr("Sea"), self)
-        self._wtr_label.setAlignment(_align)
-        self._wtr_label.setFixedWidth(55)
+        self._wtr_label = StretchLabel(self.tr("Sea"), self)
+        self._wtr_label.setFixedWidth(40)
         self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt_mapping, parent=self)
-        self._wtr_spin.setMinimumWidth(70)
         self._wtr_spin.dataChanged.connect(self.panelDataChanged)
 
-        self._spc_label = BodyLabel(self.tr("Spc"), self)
-        self._spc_label.setAlignment(_align)
-        self._spc_label.setFixedWidth(55)
+        self._spc_label = StretchLabel(self.tr("Spc"), self)
+        self._spc_label.setFixedWidth(40)
         self._spc_spin = MappingCompSpin("spc", mapping=_adapt_mapping, parent=self)
-        self._spc_spin.setMinimumWidth(70)
         self._spc_spin.dataChanged.connect(self.panelDataChanged)
 
         # ========== 竖直布局 ==========
@@ -508,16 +465,21 @@ class WeaponAdaptCard(CardHeader):
 class WeaponPanel(ProxyFrame):
     """武器右侧面板 - 3 张卡片上下 hbox 布局"""
 
+    panelDataChanged = Signal(str)
+
     def __init__(self, parent=None):
         """初始化武器面板"""
         super().__init__(parent)
-        self.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
 
         # ========== 创建卡片 ==========
 
         self._attr_card = WeaponAttrCard(self)
+        self._attr_card.panelDataChanged.connect(self.panelDataChanged)
         self._map_card = WeaponMapCard(self)
+        self._map_card.panelDataChanged.connect(self.panelDataChanged)
         self._adapt_card = WeaponAdaptCard(self)
+        self._adapt_card.panelDataChanged.connect(self.panelDataChanged)
 
         # ========== 上下两行 hbox 布局 ==========
 
@@ -532,7 +494,7 @@ class WeaponPanel(ProxyFrame):
 
         layout = QVBoxLayout(self)
         layout.setSpacing(8)
-        layout.setContentsMargins(8, 8, 8, 8)
+        layout.setContentsMargins(0, 0, 0, 0)
         layout.addLayout(_top)
         layout.addLayout(_bottom)
         layout.addStretch()
@@ -584,34 +546,17 @@ class WeaponFrame(ProxyFrame):
         """初始化武器编辑框架"""
         super().__init__(parent)
 
-        # ========== 武器表格 ==========
+        # ========== 水平布局 ==========
+
+        layout = QHBoxLayout(self)
+        layout.setSpacing(8)
 
         self._weapon_view = WeaponView(self)
         self._weapon_view.sClicked.connect(self._on_weapon_row_clicked)
-
-        # ========== 右侧面板 ==========
+        layout.addWidget(self._weapon_view)
 
         self._weapon_panel = WeaponPanel(self)
-
-    # ========== 布局 ==========
-
-    def _update_layout(self):
-        """重算表格和面板的位置"""
-        w = self.width()
-        h = self.height()
-        if w <= 0 or h <= 0:
-            return
-
-        # 表格占据左侧（所有列），面板占据右侧剩余空间
-        table_w = self._weapon_view.get_content_width(False) - 10
-        panel_w = max(0, w - table_w)
-        self._weapon_view.setGeometry(0, 0, table_w, h)
-        self._weapon_panel.setGeometry(table_w, 0, panel_w, h)
-
-    def resizeEvent(self, event):
-        """尺寸变化时刷新布局"""
-        super().resizeEvent(event)
-        self._update_layout()
+        layout.addWidget(self._weapon_panel)
 
     # ========== 行选择 ==========
 
@@ -643,8 +588,6 @@ class WeaponFrame(ProxyFrame):
             self._weapon_view.select_source_row(0)
             self._on_weapon_row_clicked(0, model)
 
-        self._update_layout()
-
     def set_field(self, fields) -> None:
         """设置字段映射，代理至武器表格模型
 
@@ -659,8 +602,6 @@ class WeaponFrame(ProxyFrame):
         """刷新子控件翻译"""
         self._weapon_view.translateUI()
         self._weapon_panel.translateUI()
-        # 翻译后列宽可能变化，重新布局
-        self._update_layout()
 
     def resetUI(self) -> None:
         """刷新子控件字体"""

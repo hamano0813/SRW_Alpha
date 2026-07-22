@@ -27,16 +27,16 @@ from qfluentwidgets import SmoothScrollArea
 
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
-from gui.robot.unit_frame import UnitFrame
-from gui.robot.unit_panel import (
+from gui.interface.robot.unit_frame import UnitFrame
+from gui.interface.robot.unit_panel import (
     AbilitiesCard,
     BgmCard,
     SeriesCard,
     TerrainCard,
     TransformCard,
 )
-from gui.robot.weapon_frame import WeaponListCard, WeaponView
-from gui.robot.weapon_panel import WeaponPanel
+from gui.interface.robot.weapon_frame import WeaponListCard, WeaponView
+from gui.interface.robot.weapon_panel import WeaponPanel
 
 
 class RobotFrame(SmoothScrollArea):

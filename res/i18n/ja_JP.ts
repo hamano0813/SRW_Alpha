@@ -178,7 +178,6 @@
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="44"/>
-        <location filename="../../src/gui/custom/enums.py" line="123"/>
         <source>Resupply</source>
         <translation>補給装置</translation>
     </message>
@@ -951,6 +950,16 @@
         <location filename="../../src/gui/custom/enums.py" line="134"/>
         <source>Raid</source>
         <translation>奇襲</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="109"/>
+        <source>Guard</source>
+        <translation>鉄壁</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/custom/enums.py" line="123"/>
+        <source>Supply</source>
+        <translation>補給</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="199"/>
@@ -2159,7 +2168,6 @@
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="27"/>
-        <location filename="../../src/gui/custom/enums.py" line="109"/>
         <source>Wall</source>
         <translation>地</translation>
     </message>
@@ -3611,8 +3619,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>PilotDetailCard</name>
     <message>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="32"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="42"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="33"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="43"/>
         <source>Pilot Detail</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3687,8 +3695,8 @@ Do you want to overwrite it?</source>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="307"/>
         <location filename="../../src/gui/robot/unit_panel.py" line="331"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="98"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="108"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="105"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="115"/>
         <source>Series</source>
         <translation>のりかえ系</translation>
     </message>
@@ -3696,8 +3704,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>SpecialSkillsCard</name>
     <message>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="120"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="130"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="127"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="137"/>
         <source>Special skills</source>
         <translation>特殊技能</translation>
     </message>
@@ -3705,8 +3713,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>SpiritsCard</name>
     <message>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="54"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="64"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="55"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="69"/>
         <source>Spirits</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3716,8 +3724,8 @@ Do you want to overwrite it?</source>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="164"/>
         <location filename="../../src/gui/robot/unit_panel.py" line="234"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="76"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="86"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="83"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="93"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
@@ -3901,8 +3909,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>UpgradedSkillsCard</name>
     <message>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="142"/>
-        <location filename="../../src/gui/pilot/pilot_panel.py" line="152"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="149"/>
+        <location filename="../../src/gui/pilot/pilot_panel.py" line="159"/>
         <source>Upgraded skills</source>
         <translation type="unfinished">レベル制技能</translation>
     </message>

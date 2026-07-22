@@ -14,7 +14,7 @@ import sys
 from PySide6.QtWidgets import QApplication
 
 import config
-from gui.main_window import MainWindow
+from gui import MainWindow
 
 sys.path.append(os.path.dirname(__file__))
 

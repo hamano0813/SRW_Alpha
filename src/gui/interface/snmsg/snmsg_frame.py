@@ -14,8 +14,8 @@ from PySide6.QtCore import QRegularExpression, Qt
 from PySide6.QtWidgets import QHBoxLayout, QWidget
 
 from gui.custom.widgets.proxy_frame import ProxyFrame
-from gui.snmsg.msg_frame import MsgFrame
-from gui.snmsg.msg_panel import MsgPanel
+from gui.interface.snmsg.msg_frame import MsgFrame
+from gui.interface.snmsg.msg_panel import MsgPanel
 
 
 def _extract_speakers(data: list[dict]) -> list[str]:

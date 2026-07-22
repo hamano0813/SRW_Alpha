@@ -74,6 +74,21 @@ class EnumData(QObject):
                 self.tr("Titan Series"),  # 泰坦系 / ダイターン系
             ],
         }
+        self.PILOT = {
+            "SERIES": [
+                self.tr("Gundam Series(UC)"),  # 高达系(UC) / ガンダム系(UC)
+                self.tr("Gundam Series(W)"),  # 高达系(W) / ガンダム系(W)
+                self.tr("Mazinger Series"),  # 魔神系 / マジンガー系
+                self.tr("Dunbine Series"),  # 丹拜因系 / ダンバイン系
+                self.tr("Dunbine Series(Fairy)"),  # 丹拜因系(妖精) / ダンバイン系(妖精)
+                self.tr("Macross Series"),  # 超时空要塞系 / マクロス系
+                self.tr("Original Series(Real)"),  # 原创系(真实) / オリジナル系(リアル)
+                self.tr("Raideen Series"),  # 莱汀系 / ライディーン系
+                self.tr("Zero System"),  # 零系统 / ゼロシステム
+                self.tr("Titan Series"),  # 泰坦系 / ダイターン系
+            ],
+            "ADAPT": {0x0: "－", 0x1: "D", 0x2: "C", 0x3: "B", 0x4: "A"},
+        }
         self.WEAPON = {
             "CLASS": {
                 0x0: self.tr("Melee"),  # 格斗 / 格斗
@@ -97,42 +112,42 @@ class EnumData(QObject):
             },
         }
         self.SPIRIT = {
-            "Valor": self.tr("Valor"),  # 热血 / 熱血
-            "Soul": self.tr("Soul"),  # 魂 / 魂
-            "Mercy": self.tr("Mercy"),  # 手加减 / てかげん
-            "Snipe": self.tr("Snipe"),  # 狙击 / 狙撃
-            "Flash": self.tr("Flash"),  # 必闪 / ひらめき
-            "Gain": self.tr("Gain"),  # 努力 / 努力
-            "Fortune": self.tr("Fortune"),  # 幸运 / 幸運
-            "Focus": self.tr("Focus"),  # 集中 / 集中
-            "Bullseye": self.tr("Bullseye"),  # 必中 / 必中
-            "Wall": self.tr("Wall"),  # 铁壁 / 鉄壁
-            "Cloak": self.tr("Cloak"),  # 隐身 / 隠れ身
-            "Accel": self.tr("Accel"),  # 加速 / 加速
-            "Zeal": self.tr("Zeal"),  # 觉醒 / 覚醒
-            "Smash": self.tr("Smash"),  # 激斗 / 激闘
-            "Sacrifice": self.tr("Sacrifice"),  # 舍身 / 捨て身
-            "Disrupt": self.tr("Disrupt"),  # 扰乱 / かく乱
-            "Taunt": self.tr("Taunt"),  # 挑衅 / 挑発
-            "Vigor": self.tr("Vigor"),  # 根性 / 根性
-            "Guts": self.tr("Guts"),  # 大根性 / ド根性
-            "Spirit": self.tr("Spirit"),  # 气合 / 気合
-            "Trust": self.tr("Trust"),  # 信赖 / 信頼
-            "Faith": self.tr("Faith"),  # 友情 / 友情
-            "Love": self.tr("Love"),  # 爱 / 愛
-            "Resupply": self.tr("Resupply"),  # 补给 / 補給
-            "Enable": self.tr("Enable"),  # 再动 / 再動
-            "Revive": self.tr("Revive"),  # 复活 / 復活
-            "Daunt": self.tr("Daunt"),  # 脱力 / 脱力
-            "Dread": self.tr("Dread"),  # 战慄 / 戦慄
-            "Detonate": self.tr("Detonate"),  # 自爆 / 自爆
-            "Scan": self.tr("Scan"),  # 侦察 / 偵察
-            "Rouse": self.tr("Rouse"),  # 激励 / 激励
-            "Galvanize": self.tr("Galvanize"),  # 大激励 / 大激励
-            "Prospect": self.tr("Prospect"),  # 期待 / 期待
-            "Miracle": self.tr("Miracle"),  # 奇迹 / 奇跡
-            "Raid": self.tr("Raid"),  # 奇袭 / 奇襲
-            "——": self.tr("——"),  # —— / ——
+            0x00: self.tr("Valor"),  # 热血 / 熱血
+            0x01: self.tr("Soul"),  # 魂 / 魂
+            0x02: self.tr("Mercy"),  # 手加减 / てかげん
+            0x03: self.tr("Snipe"),  # 狙击 / 狙撃
+            0x04: self.tr("Flash"),  # 必闪 / ひらめき
+            0x05: self.tr("Gain"),  # 努力 / 努力
+            0x06: self.tr("Fortune"),  # 幸运 / 幸運
+            0x07: self.tr("Focus"),  # 集中 / 集中
+            0x08: self.tr("Bullseye"),  # 必中 / 必中
+            0x09: self.tr("Guard"),  # 铁壁 / 鉄壁
+            0x0A: self.tr("Cloak"),  # 隐身 / 隠れ身
+            0x0B: self.tr("Accel"),  # 加速 / 加速
+            0x0C: self.tr("Zeal"),  # 觉醒 / 覚醒
+            0x0D: self.tr("Smash"),  # 激斗 / 激闘
+            0x0E: self.tr("Sacrifice"),  # 舍身 / 捨て身
+            0x0F: self.tr("Disrupt"),  # 扰乱 / かく乱
+            0x10: self.tr("Taunt"),  # 挑衅 / 挑発
+            0x11: self.tr("Vigor"),  # 根性 / 根性
+            0x12: self.tr("Guts"),  # 大根性 / ド根性
+            0x13: self.tr("Spirit"),  # 气合 / 気合
+            0x14: self.tr("Trust"),  # 信赖 / 信頼
+            0x15: self.tr("Faith"),  # 友情 / 友情
+            0x16: self.tr("Love"),  # 爱 / 愛
+            0x17: self.tr("Supply"),  # 补给 / 補給
+            0x18: self.tr("Enable"),  # 再动 / 再動
+            0x19: self.tr("Revive"),  # 复活 / 復活
+            0x1A: self.tr("Daunt"),  # 脱力 / 脱力
+            0x1B: self.tr("Dread"),  # 战慄 / 戦慄
+            0x1C: self.tr("Detonate"),  # 自爆 / 自爆
+            0x1D: self.tr("Scan"),  # 侦察 / 偵察
+            0x1E: self.tr("Rouse"),  # 激励 / 激励
+            0x1F: self.tr("Galvanize"),  # 大激励 / 大激励
+            0x20: self.tr("Prospect"),  # 期待 / 期待
+            0x21: self.tr("Miracle"),  # 奇迹 / 奇跡
+            0x22: self.tr("Raid"),  # 奇袭 / 奇襲
+            0xFF: self.tr("——"),  # —— / ——
         }
         self.BGM = {
             0x00: self.tr("Combattler V's Theme"),  # コン・バトラーVのテーマ

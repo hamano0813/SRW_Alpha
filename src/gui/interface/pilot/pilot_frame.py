@@ -17,8 +17,8 @@ from qfluentwidgets import SmoothScrollArea
 
 from gui.custom.models import BaseTableModel
 from gui.custom.widgets.proxy_frame import ProxyFrame
-from gui.pilot.pilot_panel import PilotPanel
-from gui.pilot.pilot_table import PilotTable
+from gui.interface.pilot.pilot_panel import PilotPanel
+from gui.interface.pilot.pilot_table import PilotTable
 
 
 class PilotFrame(SmoothScrollArea):

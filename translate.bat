@@ -5,6 +5,8 @@ uv run pyside6-lupdate ^
     src/gui/robot/unit_panel.py ^
     src/gui/robot/weapon_frame.py ^
     src/gui/robot/weapon_panel.py ^
+    src/gui/pilot/pilot_table.py ^
+    src/gui/pilot/pilot_panel.py ^
     src/gui/snmsg/msg_frame.py ^
     src/gui/snmsg/msg_panel.py ^
     src/gui/option/option_frame.py ^

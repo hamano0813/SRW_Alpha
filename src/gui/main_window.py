@@ -27,7 +27,8 @@ from qfluentwidgets import (
 import config
 import utils
 from core.rom import Rom
-from gui import (
+from gui.custom.fields import FieldMapping
+from gui.interface import (
     DictionaryFrame,
     HomeFrame,
     OptionFrame,
@@ -37,7 +38,6 @@ from gui import (
     SndataFrame,
     SnmsgFrame,
 )
-from gui.custom.fields import FieldMapping
 
 from .custom import CustomIcon
 

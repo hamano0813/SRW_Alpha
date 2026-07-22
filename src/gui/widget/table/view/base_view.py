@@ -16,7 +16,7 @@ from PySide6.QtWidgets import QAbstractItemView
 from qfluentwidgets import SmoothMode, TableView
 
 from gui.custom.fields import FieldMapping
-from .base_model import BaseTableModel
+from ..model.base_model import BaseTableModel
 
 
 class BaseTableView(TableView):

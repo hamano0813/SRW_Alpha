@@ -6,7 +6,7 @@
 放置于 widgets/table/ 子包，供 delegates 在表格编辑时实例化。
 
 Classes:
-    TableEditor: 表格内编辑器基类
+    CellEditor: 表格内编辑器基类
 """
 
 from typing import Any
@@ -16,7 +16,7 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QWidget
 
 
-class TableEditor(QWidget):
+class CellEditor(QWidget):
     """表格内编辑器基类 - 解耦原始值与格式化显示
 
     set_value 存入原始值后自动调 format_value() 刷新控件显示，

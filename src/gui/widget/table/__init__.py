@@ -1,29 +1,26 @@
 """
 表格体系 - 模型、视图、委托与编辑器
 
-提供 BaseTableModel、BaseTableView、DataWidgetDelegate 三件套，
-以及表格内编辑器控件。供各 frame/table 模块使用。
-
-Classes:
-    BaseTableModel / FixedTableModel / MutableTableModel
-    BaseTableView / FixedTableView
-    DataWidgetDelegate / SingleLineDelegate / MultiLineDelegate /
-    NumberSpinDelegate / MappingSpinDelegate
-    TableEditor / SingleLineEdit / MultiLineEdit / NumberSpinBox / MappingSpinBox
+Subpackages:
+    model:    表格模型（BaseTableModel / FixedTableModel / MutableTableModel）
+    view:     表格视图（BaseTableView / FixedTableView）
+    delegate: 单元格委托（DataWidgetDelegate + 4 个具体委托）
+    editor:   表格内编辑器（CellEditor + 4 个具体编辑器）
 """
 
-from .base_delegate import DataWidgetDelegate
-from .base_model import BaseTableModel
-from .base_view import BaseTableView
-from .fixed_model import FixedTableModel
-from .fixed_view import FixedTableView
-from .mapping_spin_delegate import MappingSpinDelegate
-from .mapping_spinbox import MappingSpinBox
-from .multiline_delegate import MultiLineDelegate
-from .multiline_edit import MultiLineEdit
-from .mutable_model import MutableTableModel
-from .number_spin_delegate import NumberSpinDelegate
-from .number_spinbox import NumberSpinBox
-from .single_line_delegate import SingleLineDelegate
-from .single_lineedit import SingleLineEdit
-from .table_editor import TableEditor
+from .delegate import (
+    DataWidgetDelegate,
+    MappingSpinDelegate,
+    MultiLineDelegate,
+    NumberSpinDelegate,
+    SingleLineDelegate,
+)
+from .editor import (
+    CellEditor,
+    CellMappingStepper,
+    CellMultiLine,
+    CellNumberStepper,
+    CellSingleLine,
+)
+from .model import BaseTableModel, FixedTableModel, MutableTableModel
+from .view import BaseTableView, FixedTableView

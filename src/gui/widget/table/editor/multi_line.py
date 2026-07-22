@@ -1,11 +1,11 @@
 """
-多行文本编辑器 — 继承 QPlainTextEdit + TableEditor，自绘透明背景
+多行文本编辑器 — 继承 QPlainTextEdit + CellEditor，自绘透明背景
 
-与 SingleLineEdit 对应，使用 QPlainTextEdit 实现多行文本编辑。
+与 CellSingleLine 对应，使用 QPlainTextEdit 实现多行文本编辑。
 适用于表格中需换行显示的字段。由表格 delegate 控制形状和圆角。
 
 Classes:
-    MultiLineEdit: 多行文本编辑器
+    CellMultiLine: 多行文本编辑器
 """
 
 from typing import Any
@@ -15,11 +15,11 @@ from PySide6.QtGui import QColor, QFont, QTextCursor
 from PySide6.QtWidgets import QFrame, QPlainTextEdit
 from qfluentwidgets import isDarkTheme
 
-from .table_editor import TableEditor
+from .cell_editor import CellEditor
 
 
-class MultiLineEdit(QPlainTextEdit, TableEditor):
-    """多行文本编辑器 — 透明背景 + 纯文字绘制 + TableEditor 数据协议
+class CellMultiLine(QPlainTextEdit, CellEditor):
+    """多行文本编辑器 — 透明背景 + 纯文字绘制 + CellEditor 数据协议
 
     无边框、无焦点指示线，仅通过 palette 控制文字颜色。
     获得焦点时光标自动定位到末尾。
@@ -33,7 +33,7 @@ class MultiLineEdit(QPlainTextEdit, TableEditor):
             max_lines: 最大行数，0 表示不限，3 表示最多 3 行（即 2 个换行符）
         """
         QPlainTextEdit.__init__(self, parent)
-        TableEditor.__init__(self, parent)
+        CellEditor.__init__(self, parent)
 
         self._max_lines: int = max_lines
 
@@ -89,7 +89,7 @@ class MultiLineEdit(QPlainTextEdit, TableEditor):
         self.setPalette(palette)
         QPlainTextEdit.paintEvent(self, e)
 
-    # ========== TableEditor 数据协议 ==========
+    # ========== CellEditor 数据协议 ==========
 
     def set_value(self, value) -> None:
         """存入文本值并刷新显示
@@ -97,7 +97,7 @@ class MultiLineEdit(QPlainTextEdit, TableEditor):
         Args:
             value: 字符串文本
         """
-        TableEditor.set_value(self, value)
+        CellEditor.set_value(self, value)
 
     def get_value(self) -> str:
         """返回当前文本值"""

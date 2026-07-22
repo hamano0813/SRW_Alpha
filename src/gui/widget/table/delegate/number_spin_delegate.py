@@ -1,5 +1,5 @@
 """
-数值列委托 - 配合 NumberSpinBox 使用
+数值列委托 - 配合 CellNumberStepper 使用
 
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 与 SingleLineDelegate 类似，但编辑器仅接受数值输入并右对齐。
@@ -15,15 +15,15 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 from qfluentwidgets import setFont
 
-from .number_spinbox import NumberSpinBox
+from ..editor.number_stepper import CellNumberStepper
 
 from .base_delegate import DataWidgetDelegate
 
 
 class NumberSpinDelegate(DataWidgetDelegate):
-    """数值列委托 - 编辑器为 NumberSpinBox"""
+    """数值列委托 - 编辑器为 CellNumberStepper"""
 
-    widget_class = NumberSpinBox
+    widget_class = CellNumberStepper
 
     def __init__(
         self,
@@ -51,7 +51,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
         self._read_only = read_only
 
     def createEditor(self, parent, option, index) -> Any:
-        """创建 NumberSpinBox 并注入取值范围
+        """创建 CellNumberStepper 并注入取值范围
 
         Args:
             parent: 编辑器父控件
@@ -59,9 +59,9 @@ class NumberSpinDelegate(DataWidgetDelegate):
             index: 单元格索引
 
         Returns:
-            NumberSpinBox 实例
+            CellNumberStepper 实例
         """
-        editor = NumberSpinBox(self._value_range, self._show_sign, self._show_buttons, self._read_only, parent)
+        editor = CellNumberStepper(self._value_range, self._show_sign, self._show_buttons, self._read_only, parent)
         if self._font is not None:
             editor.apply_font(self._font)
         else:
@@ -76,7 +76,7 @@ class NumberSpinDelegate(DataWidgetDelegate):
         有按钮时留出左侧间隙，无按钮时扩大编辑区域。
 
         Args:
-            editor: NumberSpinBox 实例
+            editor: CellNumberStepper 实例
             option: 样式选项
             index: 单元格索引
         """

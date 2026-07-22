@@ -1,12 +1,12 @@
 """
-映射微调框 — 继承 QSpinBox + TableEditor，透明背景，左减右加按钮布局
+映射微调框 — 继承 QSpinBox + CellEditor，透明背景，左减右加按钮布局
 
 通过 mapping 字典实现 数字 ↔ 显示文本 的转换。
 步进时仅在 mapping 的有效 key 范围内循环。
 无焦点横线、无文本选中、仅按钮步进。
 
 Classes:
-    MappingSpinBox: 映射微调框
+    CellMappingStepper: 映射微调框
 """
 
 from typing import Any, cast
@@ -16,7 +16,7 @@ from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
 
-from .table_editor import TableEditor
+from .cell_editor import CellEditor
 
 
 class _ArrowButton(QToolButton):
@@ -40,7 +40,7 @@ class _ArrowButton(QToolButton):
         Args:
             e: 鼠标事件
         """
-        parent = cast(MappingSpinBox, self.parent())
+        parent = cast(CellMappingStepper, self.parent())
         if self._right:
             parent.stepUp()
         else:
@@ -78,7 +78,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class MappingSpinBox(QSpinBox, TableEditor):
+class CellMappingStepper(QSpinBox, CellEditor):
     """映射微调框 — 透明背景，左右按钮，数值居中
 
     左侧步进-（左三角）、中间数值（居中）、右侧步进+（右三角）。
@@ -99,7 +99,7 @@ class MappingSpinBox(QSpinBox, TableEditor):
         self._wrapping = wrapping
 
         QSpinBox.__init__(self, parent)
-        TableEditor.__init__(self, parent)
+        CellEditor.__init__(self, parent)
 
         # ========== 基础样式 ==========
 
@@ -234,7 +234,7 @@ class MappingSpinBox(QSpinBox, TableEditor):
             flags |= QSpinBox.StepEnabledFlag.StepUpEnabled
         return flags
 
-    # ========== TableEditor 数据协议 ==========
+    # ========== CellEditor 数据协议 ==========
 
     def set_value(self, value) -> None:
         """存入数值并刷新显示
@@ -242,7 +242,7 @@ class MappingSpinBox(QSpinBox, TableEditor):
         Args:
             value: 整数数值
         """
-        TableEditor.set_value(self, value)
+        CellEditor.set_value(self, value)
 
     def get_value(self) -> int:
         """返回当前数值"""

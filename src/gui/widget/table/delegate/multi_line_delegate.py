@@ -1,5 +1,5 @@
 """
-多行文本列委托 - 配合 MultiLineEdit 使用
+多行文本列委托 - 配合 CellMultiLine 使用
 
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 
@@ -14,15 +14,15 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 from qfluentwidgets import setFont
 
-from .multiline_edit import MultiLineEdit
+from ..editor.multi_line import CellMultiLine
 
 from .base_delegate import DataWidgetDelegate
 
 
 class MultiLineDelegate(DataWidgetDelegate):
-    """多行文本列委托 - 编辑器为 MultiLineEdit"""
+    """多行文本列委托 - 编辑器为 CellMultiLine"""
 
-    widget_class = MultiLineEdit
+    widget_class = CellMultiLine
 
     def __init__(self, font: QFont | dict | None = None, parent=None, max_lines: int = 0):
         """初始化多行文本列委托
@@ -38,7 +38,7 @@ class MultiLineDelegate(DataWidgetDelegate):
     # ========== 编辑器创建 ==========
 
     def createEditor(self, parent: QWidget, option, index) -> Any:
-        """创建 MultiLineEdit 并设置行数上限
+        """创建 CellMultiLine 并设置行数上限
 
         Args:
             parent: 编辑器父控件
@@ -46,9 +46,9 @@ class MultiLineDelegate(DataWidgetDelegate):
             index: 单元格索引
 
         Returns:
-            MultiLineEdit 实例
+            CellMultiLine 实例
         """
-        editor = MultiLineEdit(parent, max_lines=self._max_lines)
+        editor = CellMultiLine(parent, max_lines=self._max_lines)
         if self._font is not None:
             editor.apply_font(self._font)
         else:
@@ -61,7 +61,7 @@ class MultiLineDelegate(DataWidgetDelegate):
         """将编辑器位置设为单元格区域，左边缩进 5px
 
         Args:
-            editor: MultiLineEdit 实例
+            editor: CellMultiLine 实例
             option: 样式选项
             index: 单元格索引
         """

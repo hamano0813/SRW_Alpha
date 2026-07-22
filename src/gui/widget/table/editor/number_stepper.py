@@ -1,11 +1,11 @@
 """
-数值编辑器 — 继承 QSpinBox + TableEditor，左右按钮步进
+数值编辑器 — 继承 QSpinBox + CellEditor，左右按钮步进
 
 接受取值范围 (min, max)，左减右加按钮布局，透明背景。
-与 MappingSpinBox 实现模式一致，但无映射表。
+与 CellMappingStepper 实现模式一致，但无映射表。
 
 Classes:
-    NumberSpinBox: 数值编辑器
+    CellNumberStepper: 数值编辑器
 """
 
 from typing import Any, cast
@@ -15,7 +15,7 @@ from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
 from qfluentwidgets import isDarkTheme
 
-from .table_editor import TableEditor
+from .cell_editor import CellEditor
 
 
 class _ArrowButton(QToolButton):
@@ -39,7 +39,7 @@ class _ArrowButton(QToolButton):
         Args:
             e: 鼠标事件
         """
-        parent = cast(NumberSpinBox, self.parent())
+        parent = cast(CellNumberStepper, self.parent())
         if self._right:
             parent.stepUp()
         else:
@@ -77,7 +77,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class NumberSpinBox(QSpinBox, TableEditor):
+class CellNumberStepper(QSpinBox, CellEditor):
     """数值编辑器 — 左右按钮步进，右对齐
 
     接受取值范围 (min, max)，在范围内循环。
@@ -104,7 +104,7 @@ class NumberSpinBox(QSpinBox, TableEditor):
         self._read_only = read_only if show_buttons else False  # 无按钮时只能靠键盘输入
 
         QSpinBox.__init__(self, parent)
-        TableEditor.__init__(self, parent)
+        CellEditor.__init__(self, parent)
 
         # ========== 基础样式 ==========
 
@@ -183,7 +183,7 @@ class NumberSpinBox(QSpinBox, TableEditor):
             self._btn_left.move(2, y)
             self._btn_right.move(self.width() - bw - 2, y)
 
-    # ========== TableEditor 数据协议 ==========
+    # ========== CellEditor 数据协议 ==========
 
     def set_value(self, value) -> None:
         """存入数值并刷新显示
@@ -191,7 +191,7 @@ class NumberSpinBox(QSpinBox, TableEditor):
         Args:
             value: 整数
         """
-        TableEditor.set_value(self, value)
+        CellEditor.set_value(self, value)
 
     def get_value(self) -> int:
         """返回当前数值"""

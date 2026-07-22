@@ -1,5 +1,5 @@
 """
-单行文本列委托 - 配合 SingleLineEdit 使用
+单行文本列委托 - 配合 CellSingleLine 使用
 
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 
@@ -13,15 +13,15 @@ from PySide6.QtCore import QModelIndex
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QStyleOptionViewItem, QWidget
 
-from .single_lineedit import SingleLineEdit
+from ..editor.single_line import CellSingleLine
 
 from .base_delegate import DataWidgetDelegate
 
 
 class SingleLineDelegate(DataWidgetDelegate):
-    """单行文本列委托 - 编辑器为 SingleLineEdit"""
+    """单行文本列委托 - 编辑器为 CellSingleLine"""
 
-    widget_class = SingleLineEdit
+    widget_class = CellSingleLine
 
     def __init__(self, font: QFont | dict | None = None, parent=None):
         """初始化单行文本列委托
@@ -38,7 +38,7 @@ class SingleLineDelegate(DataWidgetDelegate):
         """将编辑器位置设为单元格区域，上下各缩 1px 并锁定高度
 
         Args:
-            editor: SingleLineEdit 实例
+            editor: CellSingleLine 实例
             option: 样式选项
             index: 单元格索引
         """

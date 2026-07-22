@@ -23,7 +23,7 @@ from PySide6.QtWidgets import (
 )
 from qfluentwidgets import isDarkTheme
 
-from .fixed_model import FixedTableModel
+from ..model.fixed_model import FixedTableModel
 
 from .base_view import BaseTableView
 

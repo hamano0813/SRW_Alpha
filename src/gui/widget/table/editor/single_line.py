@@ -1,12 +1,12 @@
 """
-表格编辑器 — 继承 QLineEdit + TableEditor，自绘透明背景
+表格编辑器 — 继承 QLineEdit + CellEditor，自绘透明背景
 
-集 QLineEdit 的文本编辑与 TableEditor 的数据协议于一身，
+集 QLineEdit 的文本编辑与 CellEditor 的数据协议于一身，
 不再需要额外的 LineTextWidget 包装层。
 适用于表格任意列（形状由表格 delegate 的背景圆角决定）。
 
 Classes:
-    SingleLineEdit: 表格编辑器
+    CellSingleLine: 表格编辑器
 """
 
 from typing import Any
@@ -16,11 +16,11 @@ from PySide6.QtGui import QColor, QFont
 from PySide6.QtWidgets import QLineEdit
 from qfluentwidgets import isDarkTheme
 
-from .table_editor import TableEditor
+from .cell_editor import CellEditor
 
 
-class SingleLineEdit(QLineEdit, TableEditor):
-    """表格编辑器 — 透明背景 + 纯文字绘制 + TableEditor 数据协议
+class CellSingleLine(QLineEdit, CellEditor):
+    """表格编辑器 — 透明背景 + 纯文字绘制 + CellEditor 数据协议
 
     无边框、无焦点指示线，仅通过 palette 控制文字颜色。
     获得焦点时光标自动定位到末尾。
@@ -33,7 +33,7 @@ class SingleLineEdit(QLineEdit, TableEditor):
             parent: 父 QWidget
         """
         QLineEdit.__init__(self, parent)
-        TableEditor.__init__(self, parent)
+        CellEditor.__init__(self, parent)
 
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
@@ -70,7 +70,7 @@ class SingleLineEdit(QLineEdit, TableEditor):
         self.setPalette(palette)
         QLineEdit.paintEvent(self, e)
 
-    # ========== TableEditor 数据协议 ==========
+    # ========== CellEditor 数据协议 ==========
 
     def set_value(self, value) -> None:
         """存入文本值并刷新显示
@@ -78,7 +78,7 @@ class SingleLineEdit(QLineEdit, TableEditor):
         Args:
             value: 字符串文本
         """
-        TableEditor.set_value(self, value)
+        CellEditor.set_value(self, value)
 
     def get_value(self) -> str:
         """返回当前文本值"""

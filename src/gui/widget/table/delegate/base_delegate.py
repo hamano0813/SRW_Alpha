@@ -1,11 +1,11 @@
 """
-单元格委托基类 - 封装 TableEditor 与 QStyledItemDelegate 的标准交互
+单元格委托基类 - 封装 CellEditor 与 QStyledItemDelegate 的标准交互
 
-子类只需覆盖 widget_class 类属性即可绑定对应的 TableEditor 类型。
+子类只需覆盖 widget_class 类属性即可绑定对应的 CellEditor 类型。
 不涉及按列号分发——每列使用独立的 Delegate 实例。
 
 编辑期间透明背景处理：
-  SingleLineEdit 设为 background: transparent，让表格行背景效果
+  CellSingleLine 设为 background: transparent，让表格行背景效果
   （交替行、悬浮、选中、明暗主题）自然透出。为避免底层单元格文字
   也透出，编辑期间 paint() 跳过文字绘制，只画背景。
 
@@ -20,8 +20,8 @@ from PySide6.QtGui import QColor, QFont, QPainter
 from PySide6.QtWidgets import QStyledItemDelegate, QStyleOptionViewItem, QWidget
 from qfluentwidgets import isDarkTheme, setFont
 
-from .base_view import BaseTableView
-from .table_editor import TableEditor
+from ..view.base_view import BaseTableView
+from ..editor.cell_editor import CellEditor
 
 
 def _font_from_dict(font_dict: dict) -> QFont | None:
@@ -65,8 +65,8 @@ class DataWidgetDelegate(QStyledItemDelegate):
     未设置 widget_class 的列将返回 None（只读）。
     """
 
-    # 子类覆盖此属性指定 TableEditor 类型
-    widget_class: type[TableEditor] | None = None
+    # 子类覆盖此属性指定 CellEditor 类型
+    widget_class: type[CellEditor] | None = None
 
     def __init__(self, parent=None, font: QFont | dict | None = None):
         """初始化委托
@@ -181,7 +181,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
     def createEditor(self, parent: QWidget, option, index: QModelIndex) -> QWidget | None:
         """创建编辑器实例
 
-        依据 widget_class 创建对应的 TableEditor。
+        依据 widget_class 创建对应的 CellEditor。
         widget_class 为 None 时返回 None（只读列）。
 
         Args:
@@ -190,7 +190,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
             index: 单元格索引
 
         Returns:
-            TableEditor 实例或 None
+            CellEditor 实例或 None
         """
         if self.widget_class is None:
             return None
@@ -205,10 +205,10 @@ class DataWidgetDelegate(QStyledItemDelegate):
         """从 Model 读取数据填入编辑器
 
         Args:
-            editor: createEditor 返回的 TableEditor 实例
+            editor: createEditor 返回的 CellEditor 实例
             index: 单元格索引
         """
-        if not isinstance(editor, TableEditor):
+        if not isinstance(editor, CellEditor):
             return
         self._editing_index = index  # 标记编辑中，paint 跳过文字绘制
         value = index.data(self.getItemRole())
@@ -218,11 +218,11 @@ class DataWidgetDelegate(QStyledItemDelegate):
         """编辑器确认后将数据写回 Model
 
         Args:
-            editor: TableEditor 实例
+            editor: CellEditor 实例
             model: 表格 Model
             index: 单元格索引
         """
-        if not isinstance(editor, TableEditor):
+        if not isinstance(editor, CellEditor):
             return
         value = editor.get_value()
         model.setData(index, value, self.setItemRole())
@@ -232,7 +232,7 @@ class DataWidgetDelegate(QStyledItemDelegate):
         """编辑器销毁时清除编辑标记
 
         Args:
-            editor: TableEditor 实例
+            editor: CellEditor 实例
             index: 单元格索引
         """
         self._editing_index = None  # 编辑取消/关闭，恢复文字绘制

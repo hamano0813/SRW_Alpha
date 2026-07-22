@@ -1,5 +1,5 @@
 """
-数值微调列委托 - 配合 MappingSpinBox 使用
+数值微调列委托 - 配合 CellMappingStepper 使用
 
 每列一个委托实例，通过 setItemDelegateForColumn 绑定。
 
@@ -12,15 +12,15 @@ from typing import Any
 from PySide6.QtGui import QFont
 from qfluentwidgets import setFont
 
-from .mapping_spinbox import MappingSpinBox
+from ..editor.mapping_stepper import CellMappingStepper
 
 from .base_delegate import DataWidgetDelegate
 
 
 class MappingSpinDelegate(DataWidgetDelegate):
-    """数值微调列委托 - 编辑器为 MappingSpinBox"""
+    """数值微调列委托 - 编辑器为 CellMappingStepper"""
 
-    widget_class = MappingSpinBox
+    widget_class = CellMappingStepper
 
     def __init__(self, mapping: dict[int, str] | None = None, wrapping: bool = False, font: QFont | dict | None = None, parent=None):
         """初始化数值微调列委托
@@ -71,7 +71,7 @@ class MappingSpinDelegate(DataWidgetDelegate):
         """微调编辑器几何，右扩 1px 使文字视觉居中
 
         Args:
-            editor: MappingSpinBox 实例
+            editor: CellMappingStepper 实例
             option: 样式选项
             index: 单元格索引
         """
@@ -80,7 +80,7 @@ class MappingSpinDelegate(DataWidgetDelegate):
         editor.setFixedHeight(rect.height())
 
     def createEditor(self, parent, option, index) -> Any:
-        """创建 MappingSpinBox 并注入映射表
+        """创建 CellMappingStepper 并注入映射表
 
         Args:
             parent: 编辑器父控件
@@ -88,9 +88,9 @@ class MappingSpinDelegate(DataWidgetDelegate):
             index: 单元格索引
 
         Returns:
-            MappingSpinBox 实例
+            CellMappingStepper 实例
         """
-        editor = MappingSpinBox(self._value_mapping, self._wrapping, parent)
+        editor = CellMappingStepper(self._value_mapping, self._wrapping, parent)
         if self._font is not None:
             editor.apply_font(self._font)
         else:

@@ -1,31 +1,24 @@
 """
-RangeComboBox 地图武器范围选择下拉框 - 带覆盖区域图标预览
+地图武器范围选择下拉框 - 带覆盖区域图标预览
 
 每项显示一个 220×140 的缩略图，用红色高亮标出武器在地图上的覆盖范围。
-MAP_RANGE 数据写死在此模块内。
-
-放置于 widgets/special/ 子包。
+MAP_RANGE 数据写死在此模块内。纯信号槽收发。
 
 Classes:
-    RangeComboBox: 地图武器范围选择下拉框
+    RangeCombo: 地图武器范围选择下拉框
 """
 
 import os
 import sys
 
-# 将 src 目录加入模块搜索路径，支持直接 python path/to/file.py 运行
 _src = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 if _src not in sys.path:
     sys.path.insert(0, _src)
 
-from typing import Any
-
 from PIL import Image, ImageDraw
-from PySide6.QtCore import QSize, Qt
+from PySide6.QtCore import QSize, Qt, Signal
 from PySide6.QtGui import QFont, QIcon
-from PySide6.QtWidgets import QComboBox, QVBoxLayout
-
-from gui.widget.common import PanelEditor
+from PySide6.QtWidgets import QComboBox, QVBoxLayout, QWidget
 
 MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {
     0x00: ((2, 7), (3, 7), (3, 8), (4, 8), (5, 8), (5, 7)),
@@ -118,37 +111,24 @@ MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {
 
 
 def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None = None) -> QPixmap:
-    """将地图武器覆盖范围数据渲染为 QPixmap 图标
-
-    Args:
-        rect_list: 覆盖坐标列表，每项 (x, y)
-        key:      可选，在图片左上角绘制此标识文字
-
-    Returns:
-        220×140 的 QPixmap，45° 俯视棋盘格
-    """
+    """将地图武器覆盖范围数据渲染为 QPixmap 图标"""
     img = Image.new("RGBA", (131, 131), 0xA0804040)
     draw = ImageDraw.Draw(img)
 
-    # 棋盘网格线
     for line in range(14):
         draw.line([(0, line * 10), (130, line * 10)], fill="black", width=1)
         draw.line([(line * 10, 0), (line * 10, 130)], fill="black", width=1)
 
-    # 自机中心（金色）
     draw.rectangle(((1, 61), (9, 69)), fill="gold")
 
-    # 覆盖范围（红色）
     for rect in rect_list:
         x0 = 10 * rect[0] + 1
         y0 = 10 * rect[1] + 1
         draw.rectangle(((x0, y0), (x0 + 8, y0 + 8)), fill="red")
 
-    # 45° 旋转 + 缩放到 220×140
     rotated = img.rotate(45, resample=Image.BICUBIC, expand=True)
     resized = rotated.resize((220, 140))
 
-    # 在左上角叠加标识文字
     if key is not None:
         label = f"[0x{key:02X}]"
         draw2 = ImageDraw.Draw(resized)
@@ -157,27 +137,23 @@ def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None
             font = ImageFont.truetype("segoeuib.ttf", 14)
         except (OSError, ImportError):
             font = ImageFont.load_default()
-        # 加粗白色文字，无描边
         draw2.text((3, 3), label, fill="white", font=font)
 
     return resized.toqpixmap()
 
 
-class RangeComboBox(PanelEditor):
+class RangeCombo(QWidget):
     """地图武器范围选择下拉框 - 带覆盖区域图标预览
 
     每项显示一个 220×140 的棋盘点阵图，红点标出覆盖范围。
-    继承 PanelEditor，通过 set_model/set_row 读写数据。
+    选中后发射 valueChanged(int)。
     """
 
-    def __init__(self, field: str = "", parent=None):
-        """初始化地图武器范围选择下拉框
+    valueChanged = Signal(int)
 
-        Args:
-            field:  数据字典中对应的键名
-            parent: 父 QWidget
-        """
-        super().__init__(field, parent)
+    def __init__(self, parent=None):
+        """初始化地图武器范围选择下拉框"""
+        super().__init__(parent)
 
         self._combo = QComboBox(self)
         self._combo.setIconSize(QSize(220, 140))
@@ -190,44 +166,36 @@ class RangeComboBox(PanelEditor):
             pixmap = _render_range_pixmap(MAP_RANGE[key], key)
             self._combo.addItem(QIcon(pixmap), "", key)
 
-        # 选择变更 → 写回数据
         self._combo.currentIndexChanged.connect(self._on_index_changed)
-
-        # ========== 布局 ==========
 
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         layout.addWidget(self._combo)
 
-    # ========== PanelEditor 数据协议 ==========
+    # ========== 数据接口 ==========
 
-    def set_row(self, row: int) -> None:
-        """切换行并刷新下拉选中项"""
-        super().set_row(row)
-
-    def format_value(self) -> None:
-        """将 self._value 同步到下拉框选中项"""
-        if self._value is None:
-            self._combo.setCurrentIndex(-1)
-            return
+    def set_value(self, value: int) -> None:
+        """设置当前选中项"""
         try:
-            idx = self._key_list.index(int(self._value))
+            idx = self._key_list.index(int(value))
         except (ValueError, TypeError):
             idx = -1
         self._combo.blockSignals(True)
         self._combo.setCurrentIndex(idx)
         self._combo.blockSignals(False)
 
-    # ========== 启用/禁用（清空/恢复选项） ==========
+    def value(self) -> int:
+        """获取当前选中值"""
+        idx = self._combo.currentIndex()
+        if idx >= 0:
+            return self._key_list[idx]
+        return -1
+
+    # ========== 启用/禁用 ==========
 
     def setEnabled(self, enabled: bool) -> None:
-        """禁用时保留占位项维持高度，恢复时重新填充
-
-        Args:
-            enabled: True=可用，False=禁用
-        """
+        """禁用时保留占位项维持高度，恢复时重新填充"""
         if enabled and self._combo.count() <= 1:
-            # 恢复选项
             self._key_list = []
             self._combo.blockSignals(True)
             self._combo.clear()
@@ -237,7 +205,6 @@ class RangeComboBox(PanelEditor):
                 self._combo.addItem(QIcon(pixmap), "", key)
             self._combo.blockSignals(False)
         elif not enabled and self._combo.count() > 1:
-            # 清空选项，保留一个占位项维持高度
             self._combo.blockSignals(True)
             self._combo.clear()
             self._key_list = []
@@ -249,11 +216,7 @@ class RangeComboBox(PanelEditor):
     # ========== 字体 ==========
 
     def apply_font(self, font: QFont | dict) -> None:
-        """设置编辑器字体
-
-        Args:
-            font: QFont 实例或字体属性字典
-        """
+        """设置编辑器字体"""
         if isinstance(font, dict):
             qfont = QFont()
             family = font.get("family")
@@ -279,48 +242,32 @@ class RangeComboBox(PanelEditor):
     # ========== 内部槽 ==========
 
     def _on_index_changed(self, index: int) -> None:
-        """下拉选择变更时写回数据
-
-        Args:
-            index: 当前选中项索引，-1 表示无选中
-        """
+        """下拉选择变更时发射 valueChanged"""
         if index < 0:
-            self._value = None
-        else:
-            self._value = self._key_list[index]
-        self._emit_data_changed()
+            return
+        self.valueChanged.emit(self._key_list[index])
 
-
-# =============================================================================
-# 原地测试
-# =============================================================================
 
 if __name__ == "__main__":
     from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget
 
     app = QApplication(sys.argv)
-
     w = QMainWindow()
-    w.setWindowTitle("RangeComboBox 测试")
+    w.setWindowTitle("RangeCombo 测试")
     w.setCentralWidget(QWidget())
     w.setGeometry(100, 100, 400, 200)
 
-    combo = RangeComboBox("mrng", w)
-    # 模拟数据
-    combo._value = 0x05
-    combo.format_value()
+    combo = RangeCombo(w)
+    combo.set_value(0x05)
     combo.setParent(w.centralWidget())
 
-    # 布局
     layout = QVBoxLayout(w.centralWidget())
     layout.addWidget(combo)
     layout.addStretch()
 
-    # 测试回调
-    def on_changed(field):
-        print(f"[TEST] dataChanged: field={field}, value={combo._value:#04x}")
-
-    combo.dataChanged.connect(on_changed)
+    def on_changed(v):
+        print(f"[TEST] valueChanged: {v:#04x}")
+    combo.valueChanged.connect(on_changed)
 
     w.show()
     sys.exit(app.exec())

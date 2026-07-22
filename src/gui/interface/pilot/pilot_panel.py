@@ -1,14 +1,14 @@
 """
 驾驶员侧边栏面板 - 分组卡片布局与数据编辑
 
-提供驾驶员数据的编辑功能。各类卡片拆分为独立子类（均为占位，等待填充）。
+提供驾驶员数据的编辑功能。各类卡片拆分为独立子类。
 PilotPanel 只负责编排和接口转发。
 
 Classes:
     PilotDetailCard:   驾驶员详细信息卡片（占位）
-    SpiritsCard:       精神指令卡片（占位）
-    TerrainCard:       地形适性卡片（占位）
-    SeriesCard:        系列卡片（占位）
+    SpiritsCard:       精神指令卡片
+    TerrainCard:       地形适性卡片
+    SeriesCard:        系列卡片
     SpecialSkillsCard: 特殊技能卡片（占位）
     UpgradedSkillsCard:等级制技能卡片（占位）
     PilotPanel:        驾驶员侧边栏面板
@@ -24,7 +24,7 @@ from gui.widget import (
     BaseTableModel,
     BitCheckList,
     CardHeader,
-    MappingCompSpin,
+    MappingSpin,
     ProxyFrame,
     SpiritsEditor,
     StretchLabel,
@@ -38,12 +38,6 @@ class PilotDetailCard(CardHeader):
         super().__init__(parent)
         self.setTitle(self.tr("Pilot Detail"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-    def set_model(self, model: BaseTableModel) -> None:
-        """占位 - 待实现"""
-
-    def set_row(self, row: int) -> None:
-        """占位 - 待实现"""
 
     def translateUI(self) -> None:
         self.setTitle(self.tr("Pilot Detail"))
@@ -62,14 +56,33 @@ class SpiritsCard(CardHeader):
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self._spirits_editor = SpiritsEditor(self)
-        self._spirits_editor.panelDataChanged.connect(self.panelDataChanged)
+        self._spirits_editor.spiritChanged.connect(self._on_spirit_changed)
+        self._spirits_editor.levelChanged.connect(self._on_level_changed)
         self.viewLayout.addWidget(self._spirits_editor)
 
-    def set_model(self, model: BaseTableModel) -> None:
-        self._spirits_editor.set_model(model)
-
     def set_row(self, row: int) -> None:
-        self._spirits_editor.set_row(row)
+        super().set_row(row)
+        spi_list = self._read("spi") or [0] * 6
+        spl_list = self._read("spl") or [0] * 6
+        for i in range(6):
+            self._spirits_editor.set_spirit(i, int(spi_list[i]) if i < len(spi_list) else 0)
+            self._spirits_editor.set_level(i, int(spl_list[i]) if i < len(spl_list) else 0)
+
+    def _on_spirit_changed(self, idx: int, value: int) -> None:
+        if self._model is not None and self._row >= 0:
+            row_data = self._model.get_row_data(self._row)
+            spi_list = row_data.get("spi", [0] * 6)
+            if idx < len(spi_list):
+                spi_list[idx] = value
+        self.panelDataChanged.emit("spi")
+
+    def _on_level_changed(self, idx: int, value: int) -> None:
+        if self._model is not None and self._row >= 0:
+            row_data = self._model.get_row_data(self._row)
+            spl_list = row_data.get("spl", [0] * 6)
+            if idx < len(spl_list):
+                spl_list[idx] = value
+        self.panelDataChanged.emit("spl")
 
     def translateUI(self) -> None:
         self.setTitle(self.tr("Spirits"))
@@ -89,28 +102,27 @@ class TerrainCard(CardHeader):
         self.setTitle(self.tr("Terrain"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        _align = Qt.AlignmentFlag.AlignCenter
         _adapt = EnumData().PILOT["ADAPT"]
 
         self._air_label = StretchLabel(self.tr("Air"), self)
         self._air_label.setFixedWidth(60)
-        self._air_spin = MappingCompSpin("air", mapping=_adapt, parent=self)
-        self._air_spin.dataChanged.connect(self.panelDataChanged)
+        self._air_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._air_spin.valueChanged.connect(lambda v: self._write("air", v))
 
         self._grd_label = StretchLabel(self.tr("Lnd"), self)
         self._grd_label.setFixedWidth(60)
-        self._grd_spin = MappingCompSpin("grd", mapping=_adapt, parent=self)
-        self._grd_spin.dataChanged.connect(self.panelDataChanged)
+        self._grd_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._grd_spin.valueChanged.connect(lambda v: self._write("grd", v))
 
         self._wtr_label = StretchLabel(self.tr("Sea"), self)
         self._wtr_label.setFixedWidth(60)
-        self._wtr_spin = MappingCompSpin("wtr", mapping=_adapt, parent=self)
-        self._wtr_spin.dataChanged.connect(self.panelDataChanged)
+        self._wtr_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._wtr_spin.valueChanged.connect(lambda v: self._write("wtr", v))
 
         self._spc_label = StretchLabel(self.tr("Spc"), self)
         self._spc_label.setFixedWidth(60)
-        self._spc_spin = MappingCompSpin("spc", mapping=_adapt, parent=self)
-        self._spc_spin.dataChanged.connect(self.panelDataChanged)
+        self._spc_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._spc_spin.valueChanged.connect(lambda v: self._write("spc", v))
 
         row = QHBoxLayout()
         row.setSpacing(8)
@@ -124,17 +136,12 @@ class TerrainCard(CardHeader):
         row.addWidget(self._spc_spin)
         self.viewLayout.addLayout(row)
 
-    def set_model(self, model: BaseTableModel) -> None:
-        self._air_spin.set_model(model)
-        self._grd_spin.set_model(model)
-        self._wtr_spin.set_model(model)
-        self._spc_spin.set_model(model)
-
     def set_row(self, row: int) -> None:
-        self._air_spin.set_row(row)
-        self._grd_spin.set_row(row)
-        self._wtr_spin.set_row(row)
-        self._spc_spin.set_row(row)
+        super().set_row(row)
+        self._air_spin.set_value(self._read("air"))
+        self._grd_spin.set_value(self._read("grd"))
+        self._wtr_spin.set_value(self._read("wtr"))
+        self._spc_spin.set_value(self._read("spc"))
 
     def translateUI(self) -> None:
         self.setTitle(self.tr("Terrain"))
@@ -169,17 +176,15 @@ class SeriesCard(CardHeader):
         self.setTitle(self.tr("Series"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self._series_list = BitCheckList("series", parent=self)
-        self._series_list.dataChanged.connect(self.panelDataChanged)
+        self._series_list = BitCheckList(parent=self)
+        self._series_list.valueChanged.connect(lambda v: self._write("series", v))
 
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
         self.viewLayout.addWidget(self._series_list)
 
-    def set_model(self, model: BaseTableModel) -> None:
-        self._series_list.set_model(model)
-
     def set_row(self, row: int) -> None:
-        self._series_list.set_row(row)
+        super().set_row(row)
+        self._series_list.set_value(self._read("series"))
 
     def translateUI(self) -> None:
         self.setTitle(self.tr("Series"))
@@ -199,12 +204,6 @@ class SpecialSkillsCard(CardHeader):
         self.setTitle(self.tr("Special skills"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-    def set_model(self, model: BaseTableModel) -> None:
-        """占位 - 待实现"""
-
-    def set_row(self, row: int) -> None:
-        """占位 - 待实现"""
-
     def translateUI(self) -> None:
         self.setTitle(self.tr("Special skills"))
 
@@ -220,12 +219,6 @@ class UpgradedSkillsCard(CardHeader):
         super().__init__(parent)
         self.setTitle(self.tr("Upgraded skills"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-    def set_model(self, model: BaseTableModel) -> None:
-        """占位 - 待实现"""
-
-    def set_row(self, row: int) -> None:
-        """占位 - 待实现"""
 
     def translateUI(self) -> None:
         self.setTitle(self.tr("Upgraded skills"))
@@ -263,8 +256,6 @@ class PilotPanel(ProxyFrame):
         layout.addStretch()
         self.setLayout(layout)
         self.translateUI()
-
-    # ========== 翻译 ==========
 
     def translateUI(self):
         self._detail_card.translateUI()

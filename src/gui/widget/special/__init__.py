@@ -5,12 +5,12 @@
 
 Classes:
     LevelSpin / SpiritCombo / SpiritsEditor
-    AmmoSpin / RangeComboBox / RobotComboBox
+    AmmoSpin / RangeCombo / RobotCombo
 """
 
 from .ammo_spin import AmmoSpin
 from .level_spin import LevelSpin
-from .range_combobox import RangeComboBox
-from .robot_combobox import RobotComboBox
+from .range_combo import RangeCombo
+from .robot_combo import RobotCombo
 from .spirit_combo import SpiritCombo
 from .spirits_editor import SpiritsEditor

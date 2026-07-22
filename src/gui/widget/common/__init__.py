@@ -1,20 +1,18 @@
 """
-通用面板控件 - 信号槽收发，供卡片层编排
+通用面板控件 - 纯信号槽收发，供卡片层编排
 
-所有控件继承 PanelEditor，通过 set_model/set_row 读写数据。
-PanelEditor 负责持有 model 引用并按 field 键读写。
-VerticalSpinBox 和 StretchLabel 为辅助组件。
+所有控件通过 set_value / value / valueChanged 信号 与外部交互，
+不持有 model 引用。
 
 Classes:
-    PanelEditor / BitCheckList / BitComboBox / MappingComboBox /
-    MappingCompSpin / NumberCompSpin / VerticalSpinBox / StretchLabel
+    BitCheckList / BitCombo / MappingCombo / MappingSpin / NumberSpin /
+    VerticalSpinBox / StretchLabel
 """
 
-from .bit_checklist import BitCheckList
-from .bit_combobox import BitComboBox
-from .mapping_combobox import MappingComboBox
-from .mapping_compspin import MappingCompSpin
-from .number_compspin import NumberCompSpin
-from .panel_editor import PanelEditor
+from .bit_list import BitCheckList
+from .bit_combo import BitCombo
+from .mapping_combo import MappingCombo
+from .mapping_spin import MappingSpin
+from .number_spin import NumberSpin
 from .spin_box import VerticalSpinBox
 from .stretch_label import StretchLabel

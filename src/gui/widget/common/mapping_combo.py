@@ -1,24 +1,18 @@
 """
-MappingComboBox 映射下拉框 - 数值与文本映射单选
+映射下拉框 - 数值与文本映射单选
 
 通过 mapping 字典实现 数值 ↔ 显示文本 的映射。
 下拉选项显示文本，选中后存储对应的数值。
-内嵌 qfluentwidgets ComboBox，外观与程序其他位置一致。
-
-放置于 widgets/panel/ 子包，供面板编辑器使用。
+内嵌 qfluentwidgets ComboBox，纯信号槽收发。
 
 Classes:
-    MappingComboBox: 映射下拉框
+    MappingCombo: 映射下拉框
 """
 
-from typing import Any
-
-from PySide6.QtCore import Qt, QPoint
+from PySide6.QtCore import QPoint, Qt, Signal
 from PySide6.QtGui import QAction, QFont
-from PySide6.QtWidgets import QHBoxLayout, QSizePolicy
+from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QWidget
 from qfluentwidgets import ComboBox, MenuAnimationType, setFont
-
-from .panel_editor import PanelEditor
 
 
 class _MappingCombo(ComboBox):
@@ -60,13 +54,9 @@ class _MappingCombo(ComboBox):
         if self.currentIndex() >= 0 and self.items:
             menu.setDefaultAction(menu.actions()[self.currentIndex()])
 
-        # ========== 追加字体 QSS（保留原有样式，仅覆盖字体） ==========
-
         if self._VIEW_QSS:
             existing = menu.view.styleSheet()
             menu.view.setStyleSheet(existing + "\n" + self._VIEW_QSS)
-
-        # ========== 定位并显示 ==========
 
         x = -menu.width() // 2 + menu.layout().contentsMargins().left() + self.width() // 2
         pd = self.mapToGlobal(QPoint(x, self.height()))
@@ -83,21 +73,22 @@ class _MappingCombo(ComboBox):
             menu.exec(pu, aniType=MenuAnimationType.PULL_UP)
 
 
-class MappingComboBox(PanelEditor):
+class MappingCombo(QWidget):
     """映射下拉框 - 显示文本，存储数值
 
-    通过 mapping 字典配置选项，选中时自动将数值写回数据字典。
+    通过 mapping 字典配置选项，选中后发射 valueChanged(int)。
     """
 
-    def __init__(self, field: str, mapping: dict[int, str] | None = None, parent=None):
+    valueChanged = Signal(int)
+
+    def __init__(self, mapping: dict[int, str] | None = None, parent=None):
         """初始化映射下拉框
 
         Args:
-            field:   数据字典中对应的键名
-            mapping: {数值: 显示文本} 字典，键按插入顺序排列
+            mapping: {数值: 显示文本} 字典
             parent:  父 QWidget
         """
-        super().__init__(field, parent)
+        super().__init__(parent)
         self._mapping: dict[int, str] = mapping or {}
 
         # ========== 内嵌下拉框 ==========
@@ -117,31 +108,42 @@ class MappingComboBox(PanelEditor):
         layout.setContentsMargins(0, 0, 0, 0)
         layout.addWidget(self._combo)
 
+    # ========== 数据接口 ==========
+
+    def set_value(self, value: int) -> None:
+        """设置当前选中项"""
+        self._combo.blockSignals(True)
+        idx = self._combo.findData(value)
+        if idx >= 0:
+            self._combo.setCurrentIndex(idx)
+        self._combo.blockSignals(False)
+
+    def value(self) -> int:
+        """获取当前选中项数值"""
+        idx = self._combo.currentIndex()
+        if idx >= 0:
+            return self._combo.itemData(idx)
+        return -1
+
     # ========== 下拉菜单字体 ==========
 
     def set_dropdown_font(self, font: QFont) -> None:
-        """设置下拉菜单项的字体（QSS + !important 覆盖 delegate）
-
-        Args:
-            font: QFont 实例（如 fonts.JP_QFONT）
-        """
+        """设置下拉菜单项的字体（QSS + !important 覆盖 delegate）"""
         self._combo.set_view_font_qss(font.family(), font.pixelSize())
 
     # ========== 映射接口 ==========
 
     def set_mapping(self, mapping: dict[int, str]) -> None:
-        """更新选项列表，保持当前选中值（全程阻塞信号避免触发 dataChanged）
+        """更新选项列表，保持当前选中值（全程阻塞信号）
 
         Args:
             mapping: {数值: 显示文本} 字典
         """
-        current_value = self._value
+        current_value = self.value()
         self._mapping = mapping
         self._combo.blockSignals(True)
         self._populate_items()
-
-        # 尝试恢复选中项
-        if current_value is not None:
+        if current_value >= 0:
             idx = self._combo.findData(current_value)
             if idx >= 0:
                 self._combo.setCurrentIndex(idx)
@@ -153,32 +155,10 @@ class MappingComboBox(PanelEditor):
         for value, text in self._mapping.items():
             self._combo.addItem(text, userData=value)
 
-    # ========== PanelEditor 数据协议 ==========
-
-    def set_row(self, row: int) -> None:
-        """切换行并刷新控件"""
-        super().set_row(row)
-        self._sync_combo()
-
-    def format_value(self) -> None:
-        """刷新显示"""
-        self._sync_combo()
-
-    def _sync_combo(self) -> None:
-        """将当前 _value 同步到下拉框选中项"""
-        self._combo.blockSignals(True)
-        if self._value is not None:
-            idx = self._combo.findData(self._value)
-            if idx >= 0:
-                self._combo.setCurrentIndex(idx)
-        self._combo.blockSignals(False)
+    # ========== 字体 ==========
 
     def apply_font(self, font: QFont | dict) -> None:
-        """设置编辑器字体
-
-        Args:
-            font: QFont 实例或字体属性字典
-        """
+        """设置编辑器字体"""
         if isinstance(font, dict):
             qfont = QFont()
             family = font.get("family")
@@ -203,8 +183,7 @@ class MappingComboBox(PanelEditor):
     # ========== 内部槽 ==========
 
     def _on_index_changed(self, index: int) -> None:
-        """选中项变化时同步 _value 并写回字典"""
+        """选中项变化时发射 valueChanged"""
         if index < 0:
             return
-        self._value = self._combo.itemData(index)
-        self._emit_data_changed()
+        self.valueChanged.emit(self._combo.itemData(index))

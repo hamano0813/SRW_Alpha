@@ -1,44 +1,42 @@
 """
-MappingCompSpin 映射微调框 - 数值与文本映射单选
+映射微调框 - 数值与文本映射单选
 
 通过 mapping 字典实现 数值 ↔ 显示文本 的转换。
 步进时仅在 mapping 的有效 key 范围内循环。
-内嵌 VerticalSpinBox，使用 FluentIcon 箭头直接步进，无 flyout。
-
-放置于 widgets/panel/ 子包，供面板编辑器使用。
+内嵌 VerticalSpinBox，纯信号槽收发。
 
 Classes:
-    MappingCompSpin: 映射微调框
+    MappingSpin: 映射微调框
 """
 
-from typing import Any
-
+from PySide6.QtCore import Signal
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QVBoxLayout
+from PySide6.QtWidgets import QVBoxLayout, QWidget
 
-from .panel_editor import PanelEditor
 from .spin_box import VerticalSpinBox
 
 
-class MappingCompSpin(PanelEditor):
+class MappingSpin(QWidget):
     """映射微调框 - 数值与文本映射单选
 
     步进仅在 mapping 的有效 key 范围内循环。
-    显示文本为 mapping 中对应的值。
+    编辑后发射 valueChanged(int)，外部通过 set_value 控制显示。
     """
 
-    def __init__(self, field: str, mapping: dict[int, str] | None = None, parent=None):
+    valueChanged = Signal(int)
+
+    def __init__(self, mapping: dict[int, str] | None = None, parent=None):
         """初始化映射微调框
 
         Args:
-            field:   数据字典中对应的键名
             mapping: {数值: 显示文本} 字典
             parent:  父 QWidget
         """
-        super().__init__(field, parent)
+        super().__init__(parent)
 
         self._map_mapping: dict[int, str] = mapping or {}
         self._sorted_keys: list[int] = sorted(self._map_mapping.keys())
+        self._current_value: int = 0
 
         # ========== 内嵌微调框 ==========
 
@@ -53,45 +51,44 @@ class MappingCompSpin(PanelEditor):
         layout.setContentsMargins(0, 0, 0, 0)
         layout.addWidget(self._spin)
 
+    # ========== 数据接口 ==========
+
+    def set_value(self, value: int) -> None:
+        """设置当前值并刷新显示"""
+        self._current_value = value
+        self._spin.blockSignals(True)
+        self._spin.setValue(int(value))
+        self._spin.blockSignals(False)
+        self._adjust_zero_margin()
+
+    def value(self) -> int:
+        """获取当前值"""
+        return self._current_value
+
     # ========== 映射接口 ==========
 
     def set_mapping(self, mapping: dict[int, str]) -> None:
-        """更新映射表并调整范围
+        """更新映射表并调整范围（保持当前选中值）
 
         Args:
             mapping: {数值: 显示文本} 字典
         """
+        old_value = self._current_value
         self._map_mapping = mapping
         self._sorted_keys = sorted(self._map_mapping.keys())
         if self._sorted_keys:
             self._spin.setRange(self._sorted_keys[0], self._sorted_keys[-1])
         self._spin.set_mapping(mapping, self._sorted_keys)
+        # 恢复选中值
+        if old_value in self._sorted_keys:
+            self._spin.blockSignals(True)
+            self._spin.setValue(old_value)
+            self._spin.blockSignals(False)
 
-    # ========== PanelEditor 数据协议 ==========
-
-    def set_row(self, row: int) -> None:
-        """切换行并刷新控件"""
-        super().set_row(row)
-        self._spin.blockSignals(True)
-        if self._value is not None:
-            self._spin.setValue(int(self._value))
-        self._spin.blockSignals(False)
-        self._adjust_zero_margin()
-
-    def format_value(self) -> None:
-        """刷新显示"""
-        self._spin.blockSignals(True)
-        if self._value is not None:
-            self._spin.setValue(int(self._value))
-        self._spin.blockSignals(False)
-        self._adjust_zero_margin()
+    # ========== 字体 ==========
 
     def apply_font(self, font: QFont | dict) -> None:
-        """设置编辑器字体
-
-        Args:
-            font: QFont 实例或字体属性字典
-        """
+        """设置编辑器字体"""
         if isinstance(font, dict):
             qfont = QFont()
             family = font.get("family")
@@ -109,45 +106,37 @@ class MappingCompSpin(PanelEditor):
             font = qfont
         self._spin.setFont(font)
 
+    def resetUI(self) -> None:
+        """从全局配置刷新字体"""
+        self._spin.resetUI()
+
     # ========== 内部槽 ==========
 
     def _adjust_zero_margin(self) -> None:
         """值为 0 时右缩进收窄 4px，使 '－' 符号视觉居中"""
         le = self._spin.lineEdit()
-        if self._value == 0 or (hasattr(self._value, 'value') and self._value.value() == 0):
+        if self._current_value == 0:
             le.setTextMargins(0, 0, 18, 0)
         else:
             le.setTextMargins(0, 0, 21, 0)
 
     def _on_value_changed(self, value: int) -> None:
-        """值改变时同步 _value 并写回字典"""
-        self._value = value
+        """值改变时更新内部状态并发射信号"""
+        self._current_value = value
         self._adjust_zero_margin()
-        self._emit_data_changed()
+        self.valueChanged.emit(value)
 
 
 class _ProxySpin(VerticalSpinBox):
     """映射步进微调框 - 代理 VerticalSpinBox 的 textFromValue / stepBy"""
 
     def __init__(self, mapping: dict[int, str], sorted_keys: list[int], parent=None):
-        """初始化映射步进微调框
-
-        Args:
-            mapping: {数值: 显示文本} 字典
-            sorted_keys: 排序后的 key 列表
-            parent: 父 QWidget
-        """
         super().__init__(parent, editable=False)
         self._map_mapping = mapping
         self._sorted_keys = sorted_keys
 
     def set_mapping(self, mapping: dict[int, str], sorted_keys: list[int]) -> None:
-        """更新映射表
-
-        Args:
-            mapping: {数值: 显示文本} 字典
-            sorted_keys: 排序后的 key 列表
-        """
+        """更新映射表"""
         self._map_mapping = mapping
         self._sorted_keys = sorted_keys
 

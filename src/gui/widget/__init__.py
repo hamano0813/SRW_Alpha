@@ -6,18 +6,17 @@
 
 Subpackages:
     table:   表格体系（模型、视图、委托、表格内编辑器）
-    common:  通用面板控件（信号槽收发，供卡片层编排）
+    common:  通用面板控件（纯信号槽，供卡片层编排）
     proxy:   数据代理框体（ProxyFrame / CardHeader）
     special: 专用编辑器控件（特定数据类型的定制控件）
 """
 
 from .common import (
     BitCheckList,
-    BitComboBox,
-    MappingComboBox,
-    MappingCompSpin,
-    NumberCompSpin,
-    PanelEditor,
+    BitCombo,
+    MappingCombo,
+    MappingSpin,
+    NumberSpin,
     StretchLabel,
     VerticalSpinBox,
 )
@@ -25,8 +24,8 @@ from .proxy import CardHeader, ProxyFrame
 from .special import (
     AmmoSpin,
     LevelSpin,
-    RangeComboBox,
-    RobotComboBox,
+    RangeCombo,
+    RobotCombo,
     SpiritCombo,
     SpiritsEditor,
 )

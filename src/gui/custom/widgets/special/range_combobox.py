@@ -1,7 +1,7 @@
 """
 RangeComboBox 地图武器范围选择下拉框 - 带覆盖区域图标预览
 
-每项显示一个 150×100 的缩略图，用红色高亮标出武器在地图上的覆盖范围。
+每项显示一个 220×140 的缩略图，用红色高亮标出武器在地图上的覆盖范围。
 MAP_RANGE 数据写死在此模块内。
 
 放置于 widgets/special/ 子包。
@@ -125,7 +125,7 @@ def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None
         key:      可选，在图片左上角绘制此标识文字
 
     Returns:
-        150×100 的 QPixmap，45° 俯视棋盘格
+        220×140 的 QPixmap，45° 俯视棋盘格
     """
     img = Image.new("RGBA", (131, 131), 0xA0804040)
     draw = ImageDraw.Draw(img)
@@ -144,9 +144,9 @@ def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None
         y0 = 10 * rect[1] + 1
         draw.rectangle(((x0, y0), (x0 + 8, y0 + 8)), fill="red")
 
-    # 45° 旋转 + 缩放到 150×100
+    # 45° 旋转 + 缩放到 220×140
     rotated = img.rotate(45, resample=Image.BICUBIC, expand=True)
-    resized = rotated.resize((150, 100))
+    resized = rotated.resize((220, 140))
 
     # 在左上角叠加标识文字
     if key is not None:
@@ -166,7 +166,7 @@ def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None
 class RangeComboBox(PanelEditor):
     """地图武器范围选择下拉框 - 带覆盖区域图标预览
 
-    每项显示一个 150×100 的棋盘点阵图，红点标出覆盖范围。
+    每项显示一个 220×140 的棋盘点阵图，红点标出覆盖范围。
     继承 PanelEditor，通过 set_model/set_row 读写数据。
     """
 
@@ -180,9 +180,8 @@ class RangeComboBox(PanelEditor):
         super().__init__(field, parent)
 
         self._combo = QComboBox(self)
-        self._combo.setIconSize(QSize(150, 100))
+        self._combo.setIconSize(QSize(220, 140))
         self._combo.setMaxVisibleItems(5)
-        self._combo.setMinimumWidth(200)
 
         # 预生成图标 + 填充选项
         self._key_list: list[int] = []
@@ -242,7 +241,7 @@ class RangeComboBox(PanelEditor):
             self._combo.blockSignals(True)
             self._combo.clear()
             self._key_list = []
-            dummy = Image.new("RGBA", (150, 100), (0, 0, 0, 0))
+            dummy = Image.new("RGBA", (220, 140), (0, 0, 0, 0))
             self._combo.addItem(QIcon(dummy.toqpixmap()), "")
             self._combo.blockSignals(False)
         super().setEnabled(enabled)

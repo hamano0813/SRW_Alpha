@@ -179,13 +179,17 @@ class FixedTableView(BaseTableView):
     # ========== 列宽设置 ==========
 
     def set_column_width(self, widths: list[int]) -> None:
-        """批量设置列宽，按顺序依次设定各列
+        """批量设置最小列宽，按顺序依次设定各列
+
+        所有列设为 Interactive 模式，允许用户拖拽调整宽度。
 
         Args:
-            widths: 每列的宽度值列表
+            widths: 每列的最小宽度值列表
         """
         self._widths = widths
+        header = self.horizontalHeader()
         for col, width in enumerate(widths):
+            header.setSectionResizeMode(col, QHeaderView.ResizeMode.Interactive)
             self.setColumnWidth(col, width)
 
     # ========== 行定位 ==========

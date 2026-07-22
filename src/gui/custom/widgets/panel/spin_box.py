@@ -100,6 +100,7 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         """
         super().__init__(parent)
         self._editable = editable
+        self.setMinimumWidth(70)
         self.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         self.lineEdit().setTextMargins(0, 0, 21, 0)
         self.hBoxLayout.setContentsMargins(0, 0, 0, 0)

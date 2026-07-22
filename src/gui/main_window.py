@@ -213,6 +213,8 @@ class MainWindow(FluentWindow):
             if key in self.rom.data:
                 self.rom.notify(key)
         self._enable_features()
+        # 解析成功后窗口宽度固定为 1440
+        self.resize(1440, self._SIZE[1])
 
     def build_data(self):
         """将所有已修改的数据构建并写回缓存目录"""

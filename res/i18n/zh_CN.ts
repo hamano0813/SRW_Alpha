@@ -4,8 +4,8 @@
 <context>
     <name>AbilitiesCard</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="280"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="304"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="266"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="290"/>
         <source>Abilities</source>
         <translation>特殊能力</translation>
     </message>
@@ -3461,8 +3461,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>SeriesCard</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="320"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="344"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="306"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="330"/>
         <source>Series</source>
         <translation>换乘系</translation>
     </message>
@@ -3470,32 +3470,32 @@ Do you want to overwrite it?</source>
 <context>
     <name>TerrainCard</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="171"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="247"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="164"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="233"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="186"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="250"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="176"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="236"/>
         <source>Air</source>
         <translation>空适应</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="192"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="252"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="181"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="238"/>
         <source>Lnd</source>
         <translation>陆适应</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="198"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="254"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="186"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="240"/>
         <source>Sea</source>
         <translation>海适应</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="204"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="256"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="191"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="242"/>
         <source>Spc</source>
         <translation>宇适应</translation>
     </message>
@@ -3515,44 +3515,44 @@ Do you want to overwrite it?</source>
 <context>
     <name>TransformCard</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="41"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="135"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="42"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="128"/>
         <source>Transform &amp; Combine</source>
         <translation>变形与合体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="47"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="136"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="46"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="129"/>
         <source>Tran Grp</source>
         <translation>变形组号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="52"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="137"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="50"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="130"/>
         <source>Tran Seq</source>
         <translation>变形序号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="58"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="138"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="55"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="131"/>
         <source>Comb Grp</source>
         <translation>合体组号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="63"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="139"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="59"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="132"/>
         <source>Comb Seq</source>
         <translation>合体序号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="69"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="140"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="64"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="133"/>
         <source>Comb Cnt</source>
         <translation>合体数量</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="75"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="141"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="69"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="134"/>
         <source>Core Unit</source>
         <translation>核心机体</translation>
     </message>
@@ -3561,8 +3561,8 @@ Do you want to overwrite it?</source>
         <translation type="vanished">一一</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="81"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="142"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="74"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="135"/>
         <source>Unit Opt</source>
         <translation>机体换装</translation>
     </message>
@@ -3655,32 +3655,32 @@ Do you want to overwrite it?</source>
 <context>
     <name>WeaponAdaptCard</name>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="386"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="451"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="385"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="446"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="393"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="452"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="392"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="447"/>
         <source>Air</source>
         <translation>空</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="399"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="453"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="397"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="448"/>
         <source>Lnd</source>
         <translation>陆</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="405"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="454"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="402"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="449"/>
         <source>Sea</source>
         <translation>海</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="411"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="455"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="407"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="450"/>
         <source>Spc</source>
         <translation>宇</translation>
     </message>
@@ -3692,89 +3692,98 @@ Do you want to overwrite it?</source>
         <translation type="vanished">基础属性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="47"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="222"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="48"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="201"/>
         <source>Weapon Details</source>
         <translation>武器详情</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="57"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="225"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="57"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="204"/>
         <source>Short rng</source>
         <translation>近射程</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="64"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="226"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="62"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="205"/>
         <source>Long rng</source>
         <translation>远射程</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="71"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="227"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="67"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="206"/>
         <source>Accuracy</source>
         <translation>命中</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="79"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="228"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="73"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="207"/>
         <source>Critical</source>
         <translation>会心补正</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="87"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="229"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="79"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="208"/>
         <source>Morale</source>
         <translation>气力需求</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="95"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="230"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="85"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="209"/>
         <source>Newtype</source>
         <translation>新人类</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="103"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="231"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="92"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="210"/>
         <source>Aura</source>
         <translation>圣战士</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="111"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="232"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="98"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="211"/>
         <source>EN cost</source>
         <translation>消耗EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="119"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="233"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="104"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="212"/>
         <source>Ammo cnt</source>
         <translation>弹药数</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="127"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="234"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="110"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="213"/>
         <source>Type</source>
         <translation>改造类型</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="134"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="235"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="116"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="214"/>
         <source>Bonus</source>
         <translation>改造追加</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="143"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="223"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="123"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="202"/>
         <source>Attribute</source>
         <translation>武器属性</translation>
     </message>
 </context>
 <context>
+    <name>WeaponListCard</name>
+    <message>
+        <location filename="../../src/gui/robot/weapon_frame.py" line="116"/>
+        <location filename="../../src/gui/robot/weapon_frame.py" line="121"/>
+        <source>Weapon list</source>
+        <translation>武器列表</translation>
+    </message>
+</context>
+<context>
     <name>WeaponMapCard</name>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="298"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="359"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="278"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="360"/>
         <source>Map Weapon</source>
         <translation>地图武器</translation>
     </message>
@@ -3787,39 +3796,37 @@ Do you want to overwrite it?</source>
         <translation type="vanished">地图武器演出</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="302"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="360"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="283"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="361"/>
         <source>Map class</source>
         <translation>地图武器分类</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="308"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="362"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="287"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="363"/>
         <source>Map show</source>
         <translation>地图演出</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="314"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="363"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="292"/>
+        <location filename="../../src/gui/robot/weapon_panel.py" line="364"/>
         <source>Blast radius</source>
         <translation>杀伤半径</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="320"/>
-        <location filename="../../src/gui/robot/weapon/weapon_frame.py" line="364"/>
         <source>Directional range</source>
-        <translation>方向指定型范围</translation>
+        <translation type="vanished">方向指定型范围</translation>
     </message>
 </context>
 <context>
     <name>WeaponView</name>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_view.py" line="102"/>
+        <location filename="../../src/gui/robot/weapon_frame.py" line="102"/>
         <source>Weapon name</source>
         <translation>武器名</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_view.py" line="103"/>
+        <location filename="../../src/gui/robot/weapon_frame.py" line="103"/>
         <source>Class</source>
         <translation>分类</translation>
     </message>
@@ -3836,7 +3843,7 @@ Do you want to overwrite it?</source>
         <translation type="vanished">远射程</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/weapon/weapon_view.py" line="104"/>
+        <location filename="../../src/gui/robot/weapon_frame.py" line="104"/>
         <source>Damage</source>
         <translation>攻击力</translation>
     </message>

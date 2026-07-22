@@ -350,6 +350,8 @@ class BgmCard(CardHeader):
         # ========== BGM 下拉框 ==========
 
         _bgm_mapping = EnumData().BGM
+        self._bgm_label = StretchLabel(self.tr("Music"), self)
+        self._bgm_label.setFixedWidth(60)
         self._bgm_combo = MappingComboBox("bgm", mapping=_bgm_mapping, parent=self)
         self._apply_bgm_font()
 
@@ -363,7 +365,12 @@ class BgmCard(CardHeader):
             self._bgm_combo.set_dropdown_font(JP_QFONT)
         self._bgm_combo.dataChanged.connect(self.panelDataChanged)
 
-        self.viewLayout.addWidget(self._bgm_combo)
+        row = QHBoxLayout()
+        row.setContentsMargins(0, 0, 0, 0)
+        row.setSpacing(8)
+        row.addWidget(self._bgm_label)
+        row.addWidget(self._bgm_combo, 1)
+        self.viewLayout.addLayout(row)
 
     # ========== UnitPanel 转发接口 ==========
 
@@ -376,7 +383,8 @@ class BgmCard(CardHeader):
         self._bgm_combo.set_row(row)
 
     def translateUI(self) -> None:
-        """刷新 BGM 映射"""
+        """刷新 BGM 映射与标签"""
+        self._bgm_label.setText(self.tr("Music"))
         self._bgm_combo.set_mapping(EnumData().BGM)
 
     def resetUI(self) -> None:
@@ -385,6 +393,7 @@ class BgmCard(CardHeader):
         self._apply_bgm_font()     # 再用 JP 字体覆盖（必要的话）
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
+        setFont(self._bgm_label)
 
 
 class UnitPanel(ProxyFrame):

@@ -15,7 +15,7 @@ Classes:
     RobotFrame: 机体编辑框架（可平滑滚动）
 """
 
-from PySide6.QtCore import Qt, QTimer
+from PySide6.QtCore import QEasingCurve, Qt, QTimer, QVariantAnimation
 from PySide6.QtWidgets import (
     QGridLayout,
     QHBoxLayout,
@@ -83,7 +83,8 @@ class RobotFrame(SmoothScrollArea):
         self._right_panel = ProxyFrame(self._container)
         right_grid = QGridLayout(self._right_panel)
         right_grid.setContentsMargins(0, 0, 0, 0)
-        right_grid.setSpacing(8)
+        right_grid.setHorizontalSpacing(8)
+        right_grid.setVerticalSpacing(24)
 
         # (0,0) 左列卡片：变形 + 地形（横排）+ BGM（下）
         left_cards = ProxyFrame(self._right_panel)
@@ -242,25 +243,79 @@ class RobotFrame(SmoothScrollArea):
         rom = self.window().rom
         rom.notify("robots")
 
-    # ========== 折叠联动 ==========
+    # ========== 折叠联动（带动画） ==========
 
     def _on_fold_toggled(self, folded: bool, freed_width: int) -> None:
-        """列折叠时切换格局
+        """列折叠时带动画切换格局
 
         折叠：Table 缩窄 → 露出右侧面板 → 打开水平滚动条
         展开：Table 撑满视口 → 遮住面板 → 关闭滚动条并归零滚动位置
         """
         self._folded = folded
-        self._right_panel.setVisible(folded)
+        start_w = self._unit_frame.width()
+
         if folded:
-            folded_w = self._unit_frame.robot_view.get_content_width(True)
-            self._unit_frame.setFixedWidth(folded_w)
-            self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+            # 折叠：先显示面板，再缩窄表格
+            self._right_panel.setVisible(True)
+            end_w = self._unit_frame.robot_view.get_content_width(True)
+            self._kill_anim()
+            self._anim = QVariantAnimation(self)
+            self._anim.valueChanged.connect(lambda v: self._unit_frame.setFixedWidth(v))
+            self._anim.finished.connect(lambda: self._on_fold_anim_done(end_w))
+            self._anim.setDuration(200)
+            self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
+            self._anim.setStartValue(start_w)
+            self._anim.setEndValue(end_w)
+            self._anim.start(QVariantAnimation.DeletionPolicy.KeepWhenStopped)
         else:
-            self._unit_frame.setMinimumWidth(0)
-            self._unit_frame.setMaximumWidth(16777215)
-            self.horizontalScrollBar().setValue(0)
-            self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+            # 展开：先隐藏面板，再撑宽表格
+            self._right_panel.setVisible(False)
+            end_w = self.viewport().width()
+            self._kill_anim()
+            self._anim = QVariantAnimation(self)
+            self._anim.valueChanged.connect(lambda v: self._unit_frame.setFixedWidth(v))
+            self._anim.finished.connect(lambda: self._on_unfold_anim_done())
+            self._anim.setDuration(200)
+            self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
+            self._anim.setStartValue(start_w)
+            self._anim.setEndValue(end_w)
+            self._anim.start(QVariantAnimation.DeletionPolicy.KeepWhenStopped)
+
+    def _kill_anim(self) -> None:
+        """停止并清理进行中的动画"""
+        anim = getattr(self, '_anim', None)
+        if anim is not None:
+            try:
+                anim.stop()
+            except RuntimeError:
+                pass  # C++ 对象已销毁
+            self._anim = None
+
+    def _on_fold_anim_done(self, target_w: int) -> None:
+        """折叠动画完成后的收尾工作"""
+        anim = getattr(self, '_anim', None)
+        if anim is not None:
+            try:
+                anim.deleteLater()
+            except RuntimeError:
+                pass
+        self._anim = None
+        self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        self._unit_frame.setFixedWidth(target_w)
+
+    def _on_unfold_anim_done(self) -> None:
+        """展开动画完成后的收尾工作"""
+        anim = getattr(self, '_anim', None)
+        if anim is not None:
+            try:
+                anim.deleteLater()
+            except RuntimeError:
+                pass
+        self._anim = None
+        self._unit_frame.setMinimumWidth(0)
+        self._unit_frame.setMaximumWidth(16777215)
+        self.horizontalScrollBar().setValue(0)
+        self._update_layout()
         self._update_layout()
 
     # ========== 数据解析 ==========

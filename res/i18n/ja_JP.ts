@@ -4,10 +4,19 @@
 <context>
     <name>AbilitiesCard</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="266"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="290"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="267"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="291"/>
         <source>Abilities</source>
         <translation>特殊能力</translation>
+    </message>
+</context>
+<context>
+    <name>BgmCard</name>
+    <message>
+        <location filename="../../src/gui/robot/unit_panel.py" line="353"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="387"/>
+        <source>Music</source>
+        <translation>音楽</translation>
     </message>
 </context>
 <context>
@@ -3461,8 +3470,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>SeriesCard</name>
     <message>
-        <location filename="../../src/gui/robot/unit_panel.py" line="306"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="330"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="307"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="331"/>
         <source>Series</source>
         <translation>のりかえ系</translation>
     </message>
@@ -3471,31 +3480,31 @@ Do you want to overwrite it?</source>
     <name>TerrainCard</name>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="164"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="233"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="234"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="176"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="236"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="237"/>
         <source>Air</source>
         <translation>空適応</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="181"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="238"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="239"/>
         <source>Lnd</source>
         <translation>陸適応</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="186"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="240"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="241"/>
         <source>Sea</source>
         <translation>海適応</translation>
     </message>
     <message>
         <location filename="../../src/gui/robot/unit_panel.py" line="191"/>
-        <location filename="../../src/gui/robot/unit_panel.py" line="242"/>
+        <location filename="../../src/gui/robot/unit_panel.py" line="243"/>
         <source>Spc</source>
         <translation>宇適応</translation>
     </message>
@@ -3574,57 +3583,57 @@ Do you want to overwrite it?</source>
 <context>
     <name>UnitFrame</name>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="141"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="142"/>
         <source>Robot name</source>
         <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="142"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="143"/>
         <source>Hit points</source>
         <translation>HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="143"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="144"/>
         <source>Energy</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="144"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="145"/>
         <source>Mobility</source>
         <translation>運動性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="145"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="146"/>
         <source>Armor</source>
         <translation>装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="146"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="147"/>
         <source>Limit</source>
         <translation>限界</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="147"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="148"/>
         <source>Size</source>
         <translation>サイズ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="148"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="149"/>
         <source>Parts slot</source>
         <translation>パーツスロット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="149"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="150"/>
         <source>Movement</source>
         <translation>移動力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="150"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="151"/>
         <source>Repair cost</source>
         <translation>修理費</translation>
     </message>
     <message>
-        <location filename="../../src/gui/robot/unit_frame.py" line="151"/>
+        <location filename="../../src/gui/robot/unit_frame.py" line="152"/>
         <source>Cost</source>
         <translation>資金</translation>
     </message>

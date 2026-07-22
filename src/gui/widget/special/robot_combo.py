@@ -1,7 +1,7 @@
 """
 机体选择下拉框 - 绑定 robots 观察者，自动同步选项
 
-继承 MappingCombo，自动注册为 Rom.robots 的观察者。
+继承 CommonMappingCombo，自动注册为 Rom.robots 的观察者。
 当机体数据变更时，下拉选项自动同步刷新。
 
 Classes:
@@ -11,10 +11,10 @@ Classes:
 from typing import Any
 
 from gui.custom.fonts import JP_FONT, JP_QFONT
-from gui.widget.common import MappingCombo
+from gui.widget.common import CommonMappingCombo
 
 
-class RobotCombo(MappingCombo):
+class RobotCombo(CommonMappingCombo):
     """机体选择下拉框 - 自动同步 robots 索引
 
     通过 self.window().rom 获取 Rom 实例并注册为 robots 观察者。

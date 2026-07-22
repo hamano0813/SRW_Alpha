@@ -5,17 +5,17 @@
 纯信号槽收发，不感知 model。
 
 Classes:
-    NumberSpin: 数值微调框
+    CommonNumberSpin: 数值微调框
 """
 
 from PySide6.QtCore import Signal
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QVBoxLayout, QWidget
 
-from .spin_box import VerticalSpinBox
+from gui.widget.abstract import VerticalSpinBox
 
 
-class NumberSpin(QWidget):
+class CommonNumberSpin(QWidget):
     """数值微调框 - 在 [min, max] 范围内步进
 
     编辑后发射 valueChanged(int)，外部通过 set_value 控制显示。

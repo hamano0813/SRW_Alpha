@@ -6,17 +6,17 @@
 内嵌 VerticalSpinBox，纯信号槽收发。
 
 Classes:
-    MappingSpin: 映射微调框
+    CommonMappingSpin: 映射微调框
 """
 
 from PySide6.QtCore import Signal
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QVBoxLayout, QWidget
 
-from .spin_box import VerticalSpinBox
+from gui.widget.abstract import VerticalSpinBox
 
 
-class MappingSpin(QWidget):
+class CommonMappingSpin(QWidget):
     """映射微调框 - 数值与文本映射单选
 
     步进仅在 mapping 的有效 key 范围内循环。

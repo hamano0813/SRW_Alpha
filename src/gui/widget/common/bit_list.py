@@ -5,7 +5,7 @@ Bit 位多选列表 - 用复选框列表编辑二进制 bit 位数据
 纯信号槽收发，不感知 model。
 
 Classes:
-    BitCheckList: Bit 位多选列表
+    CommonBitList: Bit 位多选列表
 """
 
 from PySide6.QtCore import QSize, Qt, Signal
@@ -36,7 +36,7 @@ class _CheckBoxItemWidget(QWidget):
         self._check.setText(text)
 
 
-class BitCheckList(QWidget):
+class CommonBitList(QWidget):
     """Bit 位多选列表 - 用 ListWidget + CheckBox 编辑二进制 bit 位数据
 
     显示一个带 qfluentwidgets 风格的列表，每个选项对应一个 bit 位。

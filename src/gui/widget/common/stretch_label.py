@@ -1,11 +1,11 @@
 """
-StretchLabel BodyLabel子类 - 水平拉伸填充剩余空间
+CommonStretchLabel BodyLabel子类 - 水平拉伸填充剩余空间
 
 默认水平策略为 Expanding，在有富余宽度时会尽量吃满分配的空间。
 适合作为网格布局中的标签使用，无需再手动设置 minWidth/fixedWidth。
 
 Classes:
-    StretchLabel: 水平拉伸标签
+    CommonStretchLabel: 水平拉伸标签
 """
 
 from PySide6.QtCore import Qt
@@ -13,7 +13,7 @@ from PySide6.QtWidgets import QSizePolicy
 from qfluentwidgets import BodyLabel
 
 
-class StretchLabel(BodyLabel):
+class CommonStretchLabel(BodyLabel):
     """水平拉伸标签 - 默认尽量吃满分配的水平空间"""
 
     def __init__(self, text: str = "", parent=None):

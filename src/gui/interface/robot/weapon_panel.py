@@ -21,14 +21,14 @@ from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.widget import (
     AmmoSpin,
     BaseTableModel,
-    BitCombo,
+    CommonBitCombo,
     CardHeader,
-    MappingCombo,
-    MappingSpin,
-    NumberSpin,
+    CommonMappingCombo,
+    CommonMappingSpin,
+    CommonNumberSpin,
     ProxyFrame,
     RangeCombo,
-    StretchLabel,
+    CommonStretchLabel,
 )
 
 from .weapon_frame import WeaponView
@@ -41,68 +41,68 @@ class WeaponAttrCard(CardHeader):
         super().__init__(parent)
         self.setTitle(self.tr("Weapon Details"))
 
-        self._attr_combo = BitCombo(values=EnumData().WEAPON["ATTRIBUTE"], sep=" / ", parent=self)
+        self._attr_combo = CommonBitCombo(values=EnumData().WEAPON["ATTRIBUTE"], sep=" / ", parent=self)
         self._attr_combo.valueChanged.connect(lambda v: self._write("attr", v))
 
-        self._rngs_label = StretchLabel(self.tr("Short rng"), self)
+        self._rngs_label = CommonStretchLabel(self.tr("Short rng"), self)
         self._rngs_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._rngs_spin = NumberSpin(value_range=(0, 3), parent=self)
+        self._rngs_spin = CommonNumberSpin(value_range=(0, 3), parent=self)
         self._rngs_spin.valueChanged.connect(lambda v: self._write("rngs", v))
 
-        self._rngl_label = StretchLabel(self.tr("Long rng"), self)
+        self._rngl_label = CommonStretchLabel(self.tr("Long rng"), self)
         self._rngl_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._rngl_spin = NumberSpin(value_range=(0, 15), parent=self)
+        self._rngl_spin = CommonNumberSpin(value_range=(0, 15), parent=self)
         self._rngl_spin.valueChanged.connect(lambda v: self._write("rngl", v))
 
-        self._hit_label = StretchLabel(self.tr("Accuracy"), self)
+        self._hit_label = CommonStretchLabel(self.tr("Accuracy"), self)
         self._hit_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._hit_spin = NumberSpin(value_range=(-99, 99), show_sign=True, parent=self)
+        self._hit_spin = CommonNumberSpin(value_range=(-99, 99), show_sign=True, parent=self)
         self._hit_spin.valueChanged.connect(lambda v: self._write("hit", v))
 
-        self._crt_label = StretchLabel(self.tr("Critical"), self)
+        self._crt_label = CommonStretchLabel(self.tr("Critical"), self)
         self._crt_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._crt_spin = NumberSpin(value_range=(-99, 99), show_sign=True, parent=self)
+        self._crt_spin = CommonNumberSpin(value_range=(-99, 99), show_sign=True, parent=self)
         self._crt_spin.valueChanged.connect(lambda v: self._write("crt", v))
 
-        self._morale_label = StretchLabel(self.tr("Morale"), self)
+        self._morale_label = CommonStretchLabel(self.tr("Morale"), self)
         self._morale_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._morale_spin = NumberSpin(value_range=(0, 150), parent=self)
+        self._morale_spin = CommonNumberSpin(value_range=(0, 150), parent=self)
         self._morale_spin.valueChanged.connect(lambda v: self._write("morale", v))
 
-        self._newtype_label = StretchLabel(self.tr("Newtype"), self)
+        self._newtype_label = CommonStretchLabel(self.tr("Newtype"), self)
         self._newtype_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         _nt_map = {0: "－", 1: "1", 2: "2", 3: "3"}
-        self._newtype_spin = MappingSpin(mapping=_nt_map, parent=self)
+        self._newtype_spin = CommonMappingSpin(mapping=_nt_map, parent=self)
         self._newtype_spin.valueChanged.connect(lambda v: self._write("newtype", v))
 
-        self._aura_label = StretchLabel(self.tr("Aura"), self)
+        self._aura_label = CommonStretchLabel(self.tr("Aura"), self)
         self._aura_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._aura_spin = MappingSpin(mapping=_nt_map, parent=self)
+        self._aura_spin = CommonMappingSpin(mapping=_nt_map, parent=self)
         self._aura_spin.valueChanged.connect(lambda v: self._write("aura", v))
 
-        self._encost_label = StretchLabel(self.tr("EN cost"), self)
+        self._encost_label = CommonStretchLabel(self.tr("EN cost"), self)
         self._encost_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._encost_spin = NumberSpin(value_range=(0, 250), parent=self)
+        self._encost_spin = CommonNumberSpin(value_range=(0, 250), parent=self)
         self._encost_spin.valueChanged.connect(lambda v: self._write("encost", v))
 
-        self._ammo_label = StretchLabel(self.tr("Ammo cnt"), self)
+        self._ammo_label = CommonStretchLabel(self.tr("Ammo cnt"), self)
         self._ammo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self._ammo_spin = AmmoSpin(value_range=(0, 99), parent=self)
         self._ammo_spin.valueChanged.connect(self._on_ammo_changed)
 
-        self._custom_label = StretchLabel(self.tr("Type"), self)
+        self._custom_label = CommonStretchLabel(self.tr("Type"), self)
         self._custom_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._custom_combo = MappingSpin(mapping={0: "[A]", 1: "[B]", 2: "[C]", 3: "[D]"}, parent=self)
+        self._custom_combo = CommonMappingSpin(mapping={0: "[A]", 1: "[B]", 2: "[C]", 3: "[D]"}, parent=self)
         self._custom_combo.valueChanged.connect(lambda v: self._write("custom", v))
 
-        self._bonus_label = StretchLabel(self.tr("Bonus"), self)
+        self._bonus_label = CommonStretchLabel(self.tr("Bonus"), self)
         self._bonus_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._bonus_combo = MappingCombo(mapping={i: f"[{i:X}]" for i in range(16)}, parent=self)
+        self._bonus_combo = CommonMappingCombo(mapping={i: f"[{i:X}]" for i in range(16)}, parent=self)
         self._bonus_combo.apply_font(JP_FONT)
         self._bonus_combo.set_dropdown_font(JP_QFONT)
         self._bonus_combo.valueChanged.connect(lambda v: self._write("bonus", v))
 
-        self._attr_label = StretchLabel(self.tr("Attribute"), self)
+        self._attr_label = CommonStretchLabel(self.tr("Attribute"), self)
         self._attr_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         _grid = QGridLayout()
@@ -230,16 +230,16 @@ class WeaponMapCard(CardHeader):
         self.setTitle(self.tr("Map Weapon"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self._mcls_label = StretchLabel(self.tr("Map class"), self)
-        self._mcls_combo = MappingCombo(mapping=EnumData().WEAPON["MCLASS"], parent=self)
+        self._mcls_label = CommonStretchLabel(self.tr("Map class"), self)
+        self._mcls_combo = CommonMappingCombo(mapping=EnumData().WEAPON["MCLASS"], parent=self)
 
-        self._mshow_label = StretchLabel(self.tr("Map show"), self)
+        self._mshow_label = CommonStretchLabel(self.tr("Map show"), self)
         self._mshow_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._mshow_combo = MappingCombo(mapping={i: f"[{i:02X}]" for i in range(80)}, parent=self)
+        self._mshow_combo = CommonMappingCombo(mapping={i: f"[{i:02X}]" for i in range(80)}, parent=self)
 
-        self._radius_label = StretchLabel(self.tr("Blast radius"), self)
+        self._radius_label = CommonStretchLabel(self.tr("Blast radius"), self)
         self._radius_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._radius_spin = NumberSpin(value_range=(0, 4), parent=self)
+        self._radius_spin = CommonNumberSpin(value_range=(0, 4), parent=self)
 
         self._mrng_combo = RangeCombo(parent=self)
 
@@ -311,24 +311,24 @@ class WeaponAdaptCard(CardHeader):
 
         _adapt_mapping = EnumData().WEAPON["ADAPT"]
 
-        self._air_label = StretchLabel(self.tr("Air"), self)
+        self._air_label = CommonStretchLabel(self.tr("Air"), self)
         self._air_label.setFixedWidth(40)
-        self._air_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._air_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._air_spin.valueChanged.connect(lambda v: self._write("air", v))
 
-        self._grd_label = StretchLabel(self.tr("Lnd"), self)
+        self._grd_label = CommonStretchLabel(self.tr("Lnd"), self)
         self._grd_label.setFixedWidth(40)
-        self._grd_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._grd_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._grd_spin.valueChanged.connect(lambda v: self._write("grd", v))
 
-        self._wtr_label = StretchLabel(self.tr("Sea"), self)
+        self._wtr_label = CommonStretchLabel(self.tr("Sea"), self)
         self._wtr_label.setFixedWidth(40)
-        self._wtr_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._wtr_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._wtr_spin.valueChanged.connect(lambda v: self._write("wtr", v))
 
-        self._spc_label = StretchLabel(self.tr("Spc"), self)
+        self._spc_label = CommonStretchLabel(self.tr("Spc"), self)
         self._spc_label.setFixedWidth(40)
-        self._spc_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._spc_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._spc_spin.valueChanged.connect(lambda v: self._write("spc", v))
 
         _grid = QGridLayout()

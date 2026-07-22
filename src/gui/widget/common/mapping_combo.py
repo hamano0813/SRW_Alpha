@@ -6,7 +6,7 @@
 内嵌 qfluentwidgets ComboBox，纯信号槽收发。
 
 Classes:
-    MappingCombo: 映射下拉框
+    CommonMappingCombo: 映射下拉框
 """
 
 from PySide6.QtCore import QPoint, Qt, Signal
@@ -15,7 +15,7 @@ from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QWidget
 from qfluentwidgets import ComboBox, MenuAnimationType, setFont
 
 
-class _MappingCombo(ComboBox):
+class _CommonMappingCombo(ComboBox):
     """内部 ComboBox — 支持为下拉菜单项设置字体"""
 
     _VIEW_QSS: str = ""
@@ -73,7 +73,7 @@ class _MappingCombo(ComboBox):
             menu.exec(pu, aniType=MenuAnimationType.PULL_UP)
 
 
-class MappingCombo(QWidget):
+class CommonMappingCombo(QWidget):
     """映射下拉框 - 显示文本，存储数值
 
     通过 mapping 字典配置选项，选中后发射 valueChanged(int)。
@@ -93,7 +93,7 @@ class MappingCombo(QWidget):
 
         # ========== 内嵌下拉框 ==========
 
-        self._combo = _MappingCombo(self)
+        self._combo = _CommonMappingCombo(self)
         self._combo.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         self._combo.setMinimumHeight(30)
         self._combo.setMaxVisibleItems(10)

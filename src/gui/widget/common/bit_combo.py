@@ -6,7 +6,7 @@ Bit 位多选下拉框 - 用下拉复选框编辑二进制 bit 位数据
 纯信号槽收发，不感知 model。
 
 Classes:
-    BitCombo: Bit 位多选下拉框
+    CommonBitCombo: Bit 位多选下拉框
 """
 
 from PySide6.QtCore import QPoint, QSize, Qt, Signal
@@ -50,7 +50,7 @@ class _ComboButton(ComboBox):
         self.setText("")
 
     def mouseReleaseEvent(self, e):
-        """跳过 ComboBox._toggleComboMenu，由 BitCombo._show_menu 接管"""
+        """跳过 ComboBox._toggleComboMenu，由 CommonBitCombo._show_menu 接管"""
         super(ComboBox, self).mouseReleaseEvent(e)
 
 
@@ -71,7 +71,7 @@ class _StayOpenMenu(RoundMenu):
         action.trigger()
 
 
-class BitCombo(QWidget):
+class CommonBitCombo(QWidget):
     """Bit 位多选下拉框 - 用下拉复选框编辑二进制 bit 位数据
 
     显示一个下拉按钮，点击弹出带 CheckBox 控件的菜单。

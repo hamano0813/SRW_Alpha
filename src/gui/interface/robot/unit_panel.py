@@ -25,15 +25,15 @@ from gui.custom.enums import EnumData
 from gui.custom.fonts import JP_FONT, JP_QFONT
 from gui.widget import (
     BaseTableModel,
-    BitCheckList,
-    BitCombo,
+    CommonBitList,
+    CommonBitCombo,
     CardHeader,
-    MappingCombo,
-    MappingSpin,
-    NumberSpin,
+    CommonMappingCombo,
+    CommonMappingSpin,
+    CommonNumberSpin,
     ProxyFrame,
     RobotCombo,
-    StretchLabel,
+    CommonStretchLabel,
 )
 
 
@@ -46,40 +46,40 @@ class TransformCard(CardHeader):
 
         _align = Qt.AlignmentFlag.AlignCenter
 
-        self._lbl_tgrp = StretchLabel(self.tr("Tran Grp"), self)
+        self._lbl_tgrp = CommonStretchLabel(self.tr("Tran Grp"), self)
         self._lbl_tgrp.setAlignment(_align)
-        self._tgrp_spin = NumberSpin(value_range=(0, 99), parent=self)
+        self._tgrp_spin = CommonNumberSpin(value_range=(0, 99), parent=self)
         self._tgrp_spin.valueChanged.connect(lambda v: self._write("tgrp", v))
 
-        self._lbl_tsn = StretchLabel(self.tr("Tran Seq"), self)
+        self._lbl_tsn = CommonStretchLabel(self.tr("Tran Seq"), self)
         self._lbl_tsn.setAlignment(_align)
-        self._tsn_spin = NumberSpin(value_range=(0, 2), parent=self)
+        self._tsn_spin = CommonNumberSpin(value_range=(0, 2), parent=self)
         self._tsn_spin.valueChanged.connect(lambda v: self._write("tsn", v))
 
-        self._lbl_cgrp = StretchLabel(self.tr("Comb Grp"), self)
+        self._lbl_cgrp = CommonStretchLabel(self.tr("Comb Grp"), self)
         self._lbl_cgrp.setAlignment(_align)
-        self._cgrp_spin = NumberSpin(value_range=(0, 99), parent=self)
+        self._cgrp_spin = CommonNumberSpin(value_range=(0, 99), parent=self)
         self._cgrp_spin.valueChanged.connect(lambda v: self._write("cgrp", v))
 
-        self._lbl_csn = StretchLabel(self.tr("Comb Seq"), self)
+        self._lbl_csn = CommonStretchLabel(self.tr("Comb Seq"), self)
         self._lbl_csn.setAlignment(_align)
-        self._csn_spin = NumberSpin(value_range=(0, 2), parent=self)
+        self._csn_spin = CommonNumberSpin(value_range=(0, 2), parent=self)
         self._csn_spin.valueChanged.connect(lambda v: self._write("csn", v))
 
-        self._lbl_cnt = StretchLabel(self.tr("Comb Cnt"), self)
+        self._lbl_cnt = CommonStretchLabel(self.tr("Comb Cnt"), self)
         self._lbl_cnt.setAlignment(_align)
-        self._cnt_spin = NumberSpin(value_range=(0, 5), parent=self)
+        self._cnt_spin = CommonNumberSpin(value_range=(0, 5), parent=self)
         self._cnt_spin.valueChanged.connect(lambda v: self._write("count", v))
 
-        self._lbl_core = StretchLabel(self.tr("Core Unit"), self)
+        self._lbl_core = CommonStretchLabel(self.tr("Core Unit"), self)
         self._lbl_core.setAlignment(_align)
         self._core_combo = RobotCombo(parent=self, supplements={0xFFFF: "——"})
         self._core_combo.valueChanged.connect(lambda v: self._write("core", v))
 
-        self._lbl_option = StretchLabel(self.tr("Unit Opt"), self)
+        self._lbl_option = CommonStretchLabel(self.tr("Unit Opt"), self)
         self._lbl_option.setAlignment(_align)
         _option_mapping = EnumData().ROBOT["OPTION"]
-        self._option_combo = MappingCombo(mapping=_option_mapping, parent=self)
+        self._option_combo = CommonMappingCombo(mapping=_option_mapping, parent=self)
         self._option_combo.apply_font(JP_FONT)
         self._option_combo.set_dropdown_font(JP_QFONT)
         self._option_combo.valueChanged.connect(lambda v: self._write("option", v))
@@ -162,28 +162,28 @@ class TerrainCard(CardHeader):
         _align = Qt.AlignmentFlag.AlignCenter
         _adapt_mapping = EnumData().ROBOT["ADAPT"]
 
-        self._move_combo = BitCombo(values=[], sep="")
+        self._move_combo = CommonBitCombo(values=[], sep="")
         self._move_combo.valueChanged.connect(lambda v: self._write("type", v))
 
-        self._air_label = StretchLabel(self.tr("Air"), self)
+        self._air_label = CommonStretchLabel(self.tr("Air"), self)
         self._air_label.setFixedWidth(60)
-        self._air_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._air_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._air_spin.valueChanged.connect(lambda v: self._write("air", v))
 
-        self._grd_label = StretchLabel(self.tr("Lnd"), self)
+        self._grd_label = CommonStretchLabel(self.tr("Lnd"), self)
         self._grd_label.setFixedWidth(60)
-        self._grd_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._grd_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._grd_spin.valueChanged.connect(lambda v: self._write("grd", v))
 
-        self._wtr_label = StretchLabel(self.tr("Sea"), self)
+        self._wtr_label = CommonStretchLabel(self.tr("Sea"), self)
         self._wtr_label.setFixedWidth(60)
-        self._wtr_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._wtr_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._wtr_spin.valueChanged.connect(lambda v: self._write("wtr", v))
 
-        self._spc_label = StretchLabel(self.tr("Spc"), self)
+        self._spc_label = CommonStretchLabel(self.tr("Spc"), self)
         self._spc_label.setFixedWidth(60)
         self._spc_label.setAlignment(_align)
-        self._spc_spin = MappingSpin(mapping=_adapt_mapping, parent=self)
+        self._spc_spin = CommonMappingSpin(mapping=_adapt_mapping, parent=self)
         self._spc_spin.valueChanged.connect(lambda v: self._write("spc", v))
 
         _grid = QGridLayout()
@@ -244,7 +244,7 @@ class AbilitiesCard(CardHeader):
         self.setTitle(self.tr("Abilities"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self._abil_list = BitCheckList(parent=self)
+        self._abil_list = CommonBitList(parent=self)
         self._abil_list.valueChanged.connect(lambda v: self._write("abi", v))
 
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
@@ -272,7 +272,7 @@ class SeriesCard(CardHeader):
         self.setTitle(self.tr("Series"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self._series_list = BitCheckList(parent=self)
+        self._series_list = CommonBitList(parent=self)
         self._series_list.valueChanged.connect(lambda v: self._write("series", v))
 
         self.viewLayout.setContentsMargins(3, 8, 3, 8)
@@ -301,9 +301,9 @@ class BgmCard(CardHeader):
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         _bgm_mapping = EnumData().BGM
-        self._bgm_label = StretchLabel(self.tr("Music"), self)
+        self._bgm_label = CommonStretchLabel(self.tr("Music"), self)
         self._bgm_label.setFixedWidth(60)
-        self._bgm_combo = MappingCombo(mapping=_bgm_mapping, parent=self)
+        self._bgm_combo = CommonMappingCombo(mapping=_bgm_mapping, parent=self)
         self._apply_bgm_font()
 
     def _apply_bgm_font(self):

@@ -11,14 +11,14 @@ Subpackages:
     special: 专用编辑器控件（特定数据类型的定制控件）
 """
 
+from .abstract import VerticalSpinBox
 from .common import (
-    BitCheckList,
-    BitCombo,
-    MappingCombo,
-    MappingSpin,
-    NumberSpin,
-    StretchLabel,
-    VerticalSpinBox,
+    CommonBitCombo,
+    CommonBitList,
+    CommonMappingCombo,
+    CommonMappingSpin,
+    CommonNumberSpin,
+    CommonStretchLabel,
 )
 from .proxy import CardHeader, ProxyFrame
 from .special import (

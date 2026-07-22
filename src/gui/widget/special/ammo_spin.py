@@ -1,5 +1,5 @@
 """
-弹药微调框 - NumberSpin 的特化版本
+弹药微调框 - CommonNumberSpin 的特化版本
 
 内嵌 VerticalSpinBox，常用于武器弹数编辑。
 双字段写回逻辑已移至卡片层处理。
@@ -8,11 +8,11 @@ Classes:
     AmmoSpin: 弹药微调框
 """
 
-from gui.widget.common import NumberSpin
+from gui.widget.common import CommonNumberSpin
 
 
-class AmmoSpin(NumberSpin):
-    """弹药微调框 - NumberSpin 的特化子类，预设弹药范围"""
+class AmmoSpin(CommonNumberSpin):
+    """弹药微调框 - CommonNumberSpin 的特化子类，预设弹药范围"""
 
     def __init__(self, value_range: tuple[int, int] | None = None, parent=None):
         """初始化弹药微调框

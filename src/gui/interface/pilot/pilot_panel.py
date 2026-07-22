@@ -22,12 +22,12 @@ from qfluentwidgets import setFont
 from gui.custom.enums import EnumData
 from gui.widget import (
     BaseTableModel,
-    BitCheckList,
+    CommonBitList,
     CardHeader,
-    MappingSpin,
+    CommonMappingSpin,
     ProxyFrame,
     SpiritsEditor,
-    StretchLabel,
+    CommonStretchLabel,
 )
 
 
@@ -104,24 +104,24 @@ class TerrainCard(CardHeader):
 
         _adapt = EnumData().PILOT["ADAPT"]
 
-        self._air_label = StretchLabel(self.tr("Air"), self)
+        self._air_label = CommonStretchLabel(self.tr("Air"), self)
         self._air_label.setFixedWidth(60)
-        self._air_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._air_spin = CommonMappingSpin(mapping=_adapt, parent=self)
         self._air_spin.valueChanged.connect(lambda v: self._write("air", v))
 
-        self._grd_label = StretchLabel(self.tr("Lnd"), self)
+        self._grd_label = CommonStretchLabel(self.tr("Lnd"), self)
         self._grd_label.setFixedWidth(60)
-        self._grd_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._grd_spin = CommonMappingSpin(mapping=_adapt, parent=self)
         self._grd_spin.valueChanged.connect(lambda v: self._write("grd", v))
 
-        self._wtr_label = StretchLabel(self.tr("Sea"), self)
+        self._wtr_label = CommonStretchLabel(self.tr("Sea"), self)
         self._wtr_label.setFixedWidth(60)
-        self._wtr_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._wtr_spin = CommonMappingSpin(mapping=_adapt, parent=self)
         self._wtr_spin.valueChanged.connect(lambda v: self._write("wtr", v))
 
-        self._spc_label = StretchLabel(self.tr("Spc"), self)
+        self._spc_label = CommonStretchLabel(self.tr("Spc"), self)
         self._spc_label.setFixedWidth(60)
-        self._spc_spin = MappingSpin(mapping=_adapt, parent=self)
+        self._spc_spin = CommonMappingSpin(mapping=_adapt, parent=self)
         self._spc_spin.valueChanged.connect(lambda v: self._write("spc", v))
 
         row = QHBoxLayout()
@@ -176,7 +176,7 @@ class SeriesCard(CardHeader):
         self.setTitle(self.tr("Series"))
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self._series_list = BitCheckList(parent=self)
+        self._series_list = CommonBitList(parent=self)
         self._series_list.valueChanged.connect(lambda v: self._write("series", v))
 
         self.viewLayout.setContentsMargins(3, 8, 3, 8)

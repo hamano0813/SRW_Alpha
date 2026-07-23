@@ -13,8 +13,8 @@
 <context>
     <name>BgmCard</name>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/bgm.py" line="26"/>
-        <location filename="../../src/gui/interface/unit/cards/bgm.py" line="50"/>
+        <location filename="../../src/gui/interface/unit/cards/bgm.py" line="25"/>
+        <location filename="../../src/gui/interface/unit/cards/bgm.py" line="49"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
@@ -105,6 +105,14 @@
         <location filename="../../src/gui/interface/option/color_card.py" line="72"/>
         <source>Change the theme color of the interface</source>
         <translation>更改界面显示的主题颜色</translation>
+    </message>
+</context>
+<context>
+    <name>CommonBitCombo</name>
+    <message>
+        <location filename="../../src/gui/widget/common/bit_combo.py" line="152"/>
+        <source></source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -262,10 +270,6 @@
         <location filename="../../src/gui/custom/enums.py" line="61"/>
         <source>Mass-Produced</source>
         <translation>量产</translation>
-    </message>
-    <message>
-        <source>Capacity &amp; Launch</source>
-        <translation type="vanished">搭载・出击</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="65"/>
@@ -503,10 +507,6 @@
         <location filename="../../src/gui/custom/enums.py" line="62"/>
         <source>Capacity ＆ Launch</source>
         <translation>搭载・出击</translation>
-    </message>
-    <message>
-        <source>--</source>
-        <translation type="vanished">一一</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="153"/>
@@ -1107,10 +1107,6 @@
         <translation>ガンバスター</translation>
     </message>
     <message>
-        <source>[0x09]</source>
-        <translation type="vanished">[0x09]</translation>
-    </message>
-    <message>
         <location filename="../../src/gui/custom/enums.py" line="94"/>
         <source>Melee</source>
         <translation>格斗</translation>
@@ -1175,10 +1171,6 @@
         <location filename="../../src/gui/custom/enums.py" line="111"/>
         <source>Target Circle</source>
         <translation>着弹指定</translation>
-    </message>
-    <message>
-        <source>[0x42]</source>
-        <translation type="vanished">[0x42]</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/enums.py" line="310"/>
@@ -2406,55 +2398,11 @@
         <translation>资金</translation>
     </message>
     <message>
-        <source>Transform group number</source>
-        <translation type="vanished">变形组号号</translation>
-    </message>
-    <message>
-        <source>Transform sequence number</source>
-        <translation type="vanished">变形序号</translation>
-    </message>
-    <message>
-        <source>Combine group number</source>
-        <translation type="vanished">合体组号号</translation>
-    </message>
-    <message>
-        <source>Combine sequence number</source>
-        <translation type="vanished">合体序号</translation>
-    </message>
-    <message>
-        <source>Core robot</source>
-        <translation type="vanished">核心机体</translation>
-    </message>
-    <message>
-        <source>Combine count</source>
-        <translation type="vanished">合体数</translation>
-    </message>
-    <message>
-        <source>Option parts system</source>
-        <translation type="vanished">机体换装</translation>
-    </message>
-    <message>
-        <source>Background music</source>
-        <translation type="vanished">BGM</translation>
-    </message>
-    <message>
         <location filename="../../src/gui/custom/fields.py" line="91"/>
         <location filename="../../src/gui/custom/fields.py" line="123"/>
         <location filename="../../src/gui/custom/fields.py" line="151"/>
         <source>Air</source>
         <translation>空</translation>
-    </message>
-    <message>
-        <source>Ground</source>
-        <translation type="vanished">陆</translation>
-    </message>
-    <message>
-        <source>Water</source>
-        <translation type="vanished">海</translation>
-    </message>
-    <message>
-        <source>Space</source>
-        <translation type="vanished">宇</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="95"/>
@@ -2482,30 +2430,14 @@
         <translation>改造类型</translation>
     </message>
     <message>
-        <source>Short range</source>
-        <translation type="vanished">近射程</translation>
-    </message>
-    <message>
-        <source>Long range</source>
-        <translation type="vanished">远射程</translation>
-    </message>
-    <message>
         <location filename="../../src/gui/custom/fields.py" line="109"/>
         <source>Map weapon class</source>
         <translation>地图武器分类</translation>
     </message>
     <message>
-        <source>Map weapon radius</source>
-        <translation type="vanished">着弹指定型半径</translation>
-    </message>
-    <message>
         <location filename="../../src/gui/custom/fields.py" line="111"/>
         <source>Damage</source>
         <translation>攻击力</translation>
-    </message>
-    <message>
-        <source>Weapon class</source>
-        <translation type="vanished">武器分类</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="113"/>
@@ -2526,14 +2458,6 @@
         <location filename="../../src/gui/custom/fields.py" line="116"/>
         <source>Map weapon range</source>
         <translation>方向指定型范围</translation>
-    </message>
-    <message>
-        <source>Map weapon show</source>
-        <translation type="vanished">地图武器演出</translation>
-    </message>
-    <message>
-        <source>Energy cost</source>
-        <translation type="vanished">消耗EN</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="121"/>
@@ -2718,10 +2642,6 @@
         <location filename="../../src/gui/custom/fields.py" line="88"/>
         <source>Comb Cnt</source>
         <translation>合体数量</translation>
-    </message>
-    <message>
-        <source>Option Parts</source>
-        <translation type="vanished">机体换装</translation>
     </message>
     <message>
         <location filename="../../src/gui/custom/fields.py" line="92"/>
@@ -3629,55 +3549,51 @@ Do you want to overwrite it?</source>
 <context>
     <name>PilotDetailCard</name>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="38"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="42"/>
+        <location filename="../../src/gui/interface/pilot/cards/detail.py" line="19"/>
+        <location filename="../../src/gui/interface/pilot/cards/detail.py" line="23"/>
         <source>Pilot Detail</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>PilotPanel</name>
+    <name>PilotFrame</name>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="194"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="216"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="85"/>
         <source>Spirits</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>PilotTable</name>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_table.py" line="124"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="178"/>
         <source>Nickname</source>
         <translation>机师</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_table.py" line="125"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="179"/>
         <source>Combat</source>
         <translation>格斗</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_table.py" line="126"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="180"/>
         <source>Ranged</source>
         <translation>射击</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_table.py" line="127"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="181"/>
         <source>Evasion</source>
         <translation>回避</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_table.py" line="128"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="182"/>
         <source>Accuracy</source>
         <translation>命中</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_table.py" line="129"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="183"/>
         <source>Reaction</source>
         <translation>反应</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_table.py" line="130"/>
+        <location filename="../../src/gui/interface/pilot/pilot_frame.py" line="184"/>
         <source>Skill</source>
         <translation>技量</translation>
     </message>
@@ -3712,10 +3628,10 @@ Do you want to overwrite it?</source>
 <context>
     <name>SeriesCard</name>
     <message>
+        <location filename="../../src/gui/interface/pilot/cards/series.py" line="20"/>
+        <location filename="../../src/gui/interface/pilot/cards/series.py" line="34"/>
         <location filename="../../src/gui/interface/unit/cards/series.py" line="20"/>
         <location filename="../../src/gui/interface/unit/cards/series.py" line="34"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="128"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="142"/>
         <source>Series</source>
         <translation>换乘系</translation>
     </message>
@@ -3723,8 +3639,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>SpecialSkillsCard</name>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="156"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="160"/>
+        <location filename="../../src/gui/interface/pilot/cards/special_skills.py" line="19"/>
+        <location filename="../../src/gui/interface/pilot/cards/special_skills.py" line="23"/>
         <source>Special skills</source>
         <translation>特殊技能</translation>
     </message>
@@ -3732,205 +3648,162 @@ Do you want to overwrite it?</source>
 <context>
     <name>TerrainCard</name>
     <message>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="20"/>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="65"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="26"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="79"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="54"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="99"/>
         <source>Terrain</source>
         <translation>地形</translation>
     </message>
     <message>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="25"/>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="67"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="34"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="82"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="59"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="101"/>
         <source>Air</source>
         <translation>空适应</translation>
     </message>
     <message>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="30"/>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="69"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="39"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="84"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="64"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="103"/>
         <source>Lnd</source>
         <translation>陆适应</translation>
     </message>
     <message>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="35"/>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="71"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="44"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="86"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="69"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="105"/>
         <source>Sea</source>
         <translation>海适应</translation>
     </message>
     <message>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="40"/>
+        <location filename="../../src/gui/interface/pilot/cards/terrain.py" line="73"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="49"/>
         <location filename="../../src/gui/interface/unit/cards/terrain.py" line="88"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="74"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="107"/>
         <source>Spc</source>
         <translation>宇适应</translation>
-    </message>
-    <message>
-        <source>Ground</source>
-        <translation type="vanished">陆</translation>
-    </message>
-    <message>
-        <source>Water</source>
-        <translation type="vanished">海</translation>
-    </message>
-    <message>
-        <source>Space</source>
-        <translation type="vanished">宇</translation>
     </message>
 </context>
 <context>
     <name>TransformCard</name>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="29"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="106"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="28"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="105"/>
         <source>Transform &amp; Combine</source>
         <translation>变形与合体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="33"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="107"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="32"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="106"/>
         <source>Tran Grp</source>
         <translation>变形组号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="38"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="108"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="37"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="107"/>
         <source>Tran Seq</source>
         <translation>变形序号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="43"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="109"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="42"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="108"/>
         <source>Comb Grp</source>
         <translation>合体组号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="48"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="110"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="47"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="109"/>
         <source>Comb Seq</source>
         <translation>合体序号</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="53"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="111"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="52"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="110"/>
         <source>Comb Cnt</source>
         <translation>合体数量</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="58"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="112"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="57"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="111"/>
         <source>Core Unit</source>
         <translation>核心机体</translation>
     </message>
     <message>
-        <source>--</source>
-        <translation type="vanished">一一</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="63"/>
-        <location filename="../../src/gui/interface/unit/cards/transform.py" line="113"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="62"/>
+        <location filename="../../src/gui/interface/unit/cards/transform.py" line="112"/>
         <source>Unit Opt</source>
         <translation>机体换装</translation>
-    </message>
-    <message>
-        <source>Option Parts</source>
-        <translation type="vanished">机体换装</translation>
     </message>
 </context>
 <context>
     <name>UnitFrame</name>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="271"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="270"/>
         <source>Robot name</source>
         <translation>机体</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="272"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="271"/>
         <source>Hit points</source>
         <translation>HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="273"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="272"/>
         <source>Energy</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="274"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="273"/>
         <source>Mobility</source>
         <translation>运动性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="275"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="274"/>
         <source>Armor</source>
         <translation>装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="276"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="275"/>
         <source>Limit</source>
         <translation>限界</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="277"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="276"/>
         <source>Size</source>
         <translation>体积</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="278"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="277"/>
         <source>Parts slot</source>
         <translation>零件插槽</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="279"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="278"/>
         <source>Movement</source>
         <translation>移动力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="280"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="279"/>
         <source>Repair cost</source>
         <translation>修理费</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="281"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="280"/>
         <source>Cost</source>
         <translation>资金</translation>
     </message>
 </context>
 <context>
-    <name>UnitPanel</name>
-    <message>
-        <source>Terrain</source>
-        <translation type="vanished">地形</translation>
-    </message>
-    <message>
-        <source>Air</source>
-        <translation type="vanished">空</translation>
-    </message>
-    <message>
-        <source>Ground</source>
-        <translation type="vanished">陆</translation>
-    </message>
-    <message>
-        <source>Water</source>
-        <translation type="vanished">海</translation>
-    </message>
-    <message>
-        <source>Space</source>
-        <translation type="vanished">宇</translation>
-    </message>
-</context>
-<context>
     <name>UpgradedSkillsCard</name>
     <message>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="172"/>
-        <location filename="../../src/gui/interface/pilot/pilot_panel.py" line="176"/>
+        <location filename="../../src/gui/interface/pilot/cards/upgraded_skills.py" line="19"/>
+        <location filename="../../src/gui/interface/pilot/cards/upgraded_skills.py" line="23"/>
         <source>Upgraded skills</source>
-        <translation type="unfinished">等级制技能</translation>
+        <translation>等级制技能</translation>
     </message>
 </context>
 <context>
@@ -3969,84 +3842,80 @@ Do you want to overwrite it?</source>
 <context>
     <name>WeaponAttrCard</name>
     <message>
-        <source>Attributes</source>
-        <translation type="vanished">基础属性</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="30"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="171"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="29"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="170"/>
         <source>Weapon Details</source>
         <translation>武器详情</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="35"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="174"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="34"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="173"/>
         <source>Short rng</source>
         <translation>近射程</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="40"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="175"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="39"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="174"/>
         <source>Long rng</source>
         <translation>远射程</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="45"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="176"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="44"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="175"/>
         <source>Accuracy</source>
         <translation>命中</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="50"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="177"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="49"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="176"/>
         <source>Critical</source>
         <translation>会心补正</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="55"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="178"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="54"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="177"/>
         <source>Morale</source>
         <translation>气力需求</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="60"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="179"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="59"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="178"/>
         <source>Newtype</source>
         <translation>新人类</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="66"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="180"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="65"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="179"/>
         <source>Aura</source>
         <translation>圣战士</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="71"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="181"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="70"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="180"/>
         <source>EN cost</source>
         <translation>消耗EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="76"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="182"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="75"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="181"/>
         <source>Ammo cnt</source>
         <translation>弹药数</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="81"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="183"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="80"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="182"/>
         <source>Type</source>
         <translation>改造类型</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="86"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="184"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="85"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="183"/>
         <source>Bonus</source>
         <translation>改造追加</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="93"/>
-        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="172"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="92"/>
+        <location filename="../../src/gui/interface/unit/cards/weapon_attr.py" line="171"/>
         <source>Attribute</source>
         <translation>武器属性</translation>
     </message>
@@ -4054,8 +3923,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>WeaponListCard</name>
     <message>
-        <location filename="../../src/gui/interface/unit/weapon_list.py" line="27"/>
-        <location filename="../../src/gui/interface/unit/weapon_list.py" line="54"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="26"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="53"/>
         <source>Weapon list</source>
         <translation>武器列表</translation>
     </message>
@@ -4067,14 +3936,6 @@ Do you want to overwrite it?</source>
         <location filename="../../src/gui/interface/unit/cards/weapon_map.py" line="80"/>
         <source>Map Weapon</source>
         <translation>地图武器</translation>
-    </message>
-    <message>
-        <source>Map weapon class</source>
-        <translation type="vanished">地图武器分类</translation>
-    </message>
-    <message>
-        <source>Map weapon show</source>
-        <translation type="vanished">地图武器演出</translation>
     </message>
     <message>
         <location filename="../../src/gui/interface/unit/cards/weapon_map.py" line="30"/>
@@ -4094,47 +3955,23 @@ Do you want to overwrite it?</source>
         <source>Blast radius</source>
         <translation>杀伤半径</translation>
     </message>
-    <message>
-        <source>Directional range</source>
-        <translation type="vanished">方向指定型范围</translation>
-    </message>
 </context>
 <context>
     <name>WeaponView</name>
     <message>
-        <location filename="../../src/gui/interface/unit/weapon_list.py" line="113"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="112"/>
         <source>Weapon name</source>
         <translation>武器名</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/weapon_list.py" line="114"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="113"/>
         <source>Class</source>
         <translation>分类</translation>
     </message>
     <message>
-        <source>Weapon class</source>
-        <translation type="vanished">武器分类</translation>
-    </message>
-    <message>
-        <source>Short range</source>
-        <translation type="vanished">近射程</translation>
-    </message>
-    <message>
-        <source>Long range</source>
-        <translation type="vanished">远射程</translation>
-    </message>
-    <message>
-        <location filename="../../src/gui/interface/unit/weapon_list.py" line="115"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="114"/>
         <source>Damage</source>
         <translation>攻击力</translation>
-    </message>
-    <message>
-        <source>Accuracy</source>
-        <translation type="vanished">命中</translation>
-    </message>
-    <message>
-        <source>Critical</source>
-        <translation type="vanished">会心补正</translation>
     </message>
 </context>
 <context>

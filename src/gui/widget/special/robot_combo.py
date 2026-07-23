@@ -10,7 +10,7 @@ Classes:
 
 from typing import Any
 
-from gui.custom.fonts import JP_FONT, JP_QFONT
+from gui.custom import JP_FONT, JP_QFONT
 from gui.widget.common import CommonMappingCombo
 
 

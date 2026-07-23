@@ -27,7 +27,7 @@ from qfluentwidgets import (
 import config
 import utils
 from core.rom import Rom
-from gui.custom.fields import FieldMapping
+from gui.custom import FieldMapping
 from gui.interface import (
     DictionaryFrame,
     HomeFrame,

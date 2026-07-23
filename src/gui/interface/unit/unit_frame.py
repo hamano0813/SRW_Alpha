@@ -26,8 +26,7 @@ from PySide6.QtWidgets import (
 )
 from qfluentwidgets import SmoothScrollArea
 
-from gui.custom import fonts
-from gui.custom.enums import EnumData
+from gui.custom import EnumData, JP_FONT
 from gui.widget import (
     BaseTableModel,
     FixedTableView,
@@ -217,7 +216,7 @@ class UnitFrame(SmoothScrollArea):
         view.set_field(fields)
 
         _model = view.source_model()
-        _model.set_font({0: fonts.JP_FONT})
+        _model.set_font({0: JP_FONT})
         _model.set_alignments({
             1: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
             2: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
@@ -231,7 +230,7 @@ class UnitFrame(SmoothScrollArea):
             10: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
         })
 
-        self._name_delegate = SingleLineDelegate(font=fonts.JP_FONT, parent=view)
+        self._name_delegate = SingleLineDelegate(font=JP_FONT, parent=view)
         view.setItemDelegateForColumn(0, self._name_delegate)
 
         self._hp_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=view)

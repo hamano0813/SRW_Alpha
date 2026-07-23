@@ -1,7 +1,7 @@
 """
-系列卡片
+驾驶员系列卡片
 
-BitCheckList 位编辑，每位对应一个换乘系列。
+提供换乘系列 Bit 位多选列表编辑。
 """
 
 from PySide6.QtGui import QFont
@@ -13,7 +13,7 @@ from gui.widget import CardHeader, CommonBitList
 
 
 class SeriesCard(CardHeader):
-    """系列卡片 - Bit 位多选系列列表"""
+    """系列卡片 - Bit 位多选换乘系列列表"""
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -32,7 +32,7 @@ class SeriesCard(CardHeader):
 
     def translateUI(self) -> None:
         self.setTitle(self.tr("Series"))
-        self._series_list.set_values(EnumData().ROBOT["SERIES"])
+        self._series_list.set_values(EnumData().PILOT["SERIES"])
 
     def resetUI(self) -> None:
         setFont(self)

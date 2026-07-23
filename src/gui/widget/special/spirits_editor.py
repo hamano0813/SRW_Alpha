@@ -11,7 +11,7 @@ Classes:
 
 from PySide6.QtWidgets import QGridLayout
 
-from gui.custom.enums import EnumData
+from gui.custom import EnumData
 from gui.widget.proxy import CardHeader
 from .level_spin import LevelSpin
 from .spirit_combo import SpiritCombo

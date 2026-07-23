@@ -9,7 +9,7 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QGridLayout
 from qfluentwidgets import setFont
 
-from gui.custom.enums import EnumData
+from gui.custom import EnumData
 from gui.widget import (
     CardHeader,
     CommonBitCombo,

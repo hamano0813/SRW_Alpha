@@ -9,8 +9,7 @@ from PySide6.QtWidgets import QHBoxLayout, QSizePolicy
 from qfluentwidgets import qconfig, setFont
 
 from config import option
-from gui.custom.enums import EnumData
-from gui.custom.fonts import JP_FONT, JP_QFONT
+from gui.custom import EnumData, JP_FONT, JP_QFONT
 from gui.widget import CardHeader, CommonMappingCombo, CommonStretchLabel
 
 

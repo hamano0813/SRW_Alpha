@@ -14,7 +14,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHeaderView, QVBoxLayout
 from qfluentwidgets import TableItemDelegate
 
-from gui.custom import fonts
+from gui.custom import JP_FONT
 from gui.widget import FixedTableView, MultiLineDelegate, ProxyFrame
 
 
@@ -64,11 +64,11 @@ class MsgFrame(ProxyFrame):
 
         # ========== 模型字体 ==========
 
-        self.message_view.source_model().set_font({0: fonts.JP_FONT})
+        self.message_view.source_model().set_font({0: JP_FONT})
 
         # ========== 委托编辑器 ==========
 
-        self._name_delegate = MultiLineDelegate(font=fonts.JP_FONT, max_lines=3, parent=self.message_view)
+        self._name_delegate = MultiLineDelegate(font=JP_FONT, max_lines=3, parent=self.message_view)
         self.message_view.setItemDelegateForColumn(0, self._name_delegate)
 
         # 替换默认背景绘制的委托（单列时左右都画圆角）

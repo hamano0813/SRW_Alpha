@@ -14,7 +14,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from gui.custom.fields import FieldMapping
+from gui.custom import FieldMapping
 
 # ========== 各类型预期字段数 ==========
 

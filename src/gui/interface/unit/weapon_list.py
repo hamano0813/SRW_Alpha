@@ -7,8 +7,7 @@
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QFrame, QHeaderView, QSizePolicy
 
-from gui.custom.enums import EnumData
-from gui.custom.fonts import JP_FONT
+from gui.custom import EnumData, JP_FONT
 from gui.widget import (
     CardHeader,
     FixedTableView,

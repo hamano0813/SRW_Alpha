@@ -19,7 +19,7 @@ from qfluentwidgets import (
     setFont,
 )
 
-from gui.custom import fonts
+from gui.custom import EN_QFONT, JP_QFONT
 from gui.widget import ProxyFrame
 
 
@@ -64,7 +64,7 @@ class _FilterCard(HeaderCardWidget):
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         self._info_label.setFont(self._info_label.getFont())
-        self._filter_edit.setFont(fonts.JP_QFONT)
+        self._filter_edit.setFont(JP_QFONT)
 
     def translateUI(self):
         """刷新卡片标题和提示文本"""
@@ -143,7 +143,7 @@ class _GotoCard(HeaderCardWidget):
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         self._info_label.setFont(self._info_label.getFont())
-        self._goto_edit.setFont(fonts.EN_QFONT)
+        self._goto_edit.setFont(EN_QFONT)
 
     def translateUI(self):
         """刷新卡片标题和提示文本"""
@@ -211,7 +211,7 @@ class _SpeakerCard(HeaderCardWidget):
         setFont(self)
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         self._info_label.setFont(self._info_label.getFont())
-        self._speaker_combo.setFont(fonts.JP_QFONT)
+        self._speaker_combo.setFont(JP_QFONT)
 
     def translateUI(self):
         """刷新卡片标题和提示文本"""
@@ -228,8 +228,8 @@ class _SpeakerComboBox(EditableModelComboBox):
         """创建下拉菜单后立即将视图字体强制设为 JP_QFONT（QSS 覆盖父级）"""
         menu = super()._createComboMenu()
         qss = self._VIEW_QSS.format(
-            family=fonts.JP_QFONT.family(),
-            size=fonts.JP_QFONT.pixelSize(),
+            family=JP_QFONT.family(),
+            size=JP_QFONT.pixelSize(),
         )
         menu.view.setStyleSheet(qss)
         return menu

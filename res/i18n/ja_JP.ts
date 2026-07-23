@@ -3846,57 +3846,57 @@ Do you want to overwrite it?</source>
 <context>
     <name>UnitFrame</name>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="266"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="271"/>
         <source>Robot name</source>
         <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="267"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="272"/>
         <source>Hit points</source>
         <translation>HP</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="268"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="273"/>
         <source>Energy</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="269"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="274"/>
         <source>Mobility</source>
         <translation>運動性</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="270"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="275"/>
         <source>Armor</source>
         <translation>装甲</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="271"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="276"/>
         <source>Limit</source>
         <translation>限界</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="272"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="277"/>
         <source>Size</source>
         <translation>サイズ</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="273"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="278"/>
         <source>Parts slot</source>
         <translation>パーツスロット</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="274"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="279"/>
         <source>Movement</source>
         <translation>移動力</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="275"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="280"/>
         <source>Repair cost</source>
         <translation>修理費</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/unit_frame.py" line="276"/>
+        <location filename="../../src/gui/interface/unit/unit_frame.py" line="281"/>
         <source>Cost</source>
         <translation>資金</translation>
     </message>
@@ -4054,8 +4054,8 @@ Do you want to overwrite it?</source>
 <context>
     <name>WeaponListCard</name>
     <message>
-        <location filename="../../src/gui/interface/unit/weapon_frame.py" line="118"/>
-        <location filename="../../src/gui/interface/unit/weapon_frame.py" line="123"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="27"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="54"/>
         <source>Weapon list</source>
         <translation>武器一覧</translation>
     </message>
@@ -4102,12 +4102,12 @@ Do you want to overwrite it?</source>
 <context>
     <name>WeaponView</name>
     <message>
-        <location filename="../../src/gui/interface/unit/weapon_frame.py" line="104"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="113"/>
         <source>Weapon name</source>
         <translation>武器名</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/weapon_frame.py" line="105"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="114"/>
         <source>Class</source>
         <translation>分類</translation>
     </message>
@@ -4124,7 +4124,7 @@ Do you want to overwrite it?</source>
         <translation type="vanished">遠射程</translation>
     </message>
     <message>
-        <location filename="../../src/gui/interface/unit/weapon_frame.py" line="106"/>
+        <location filename="../../src/gui/interface/unit/weapon_list.py" line="115"/>
         <source>Damage</source>
         <translation>攻撃力</translation>
     </message>

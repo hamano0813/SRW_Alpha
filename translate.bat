@@ -10,7 +10,7 @@ uv run pyside6-lupdate ^
     src/gui/interface/unit/cards/weapon_attr.py ^
     src/gui/interface/unit/cards/weapon_map.py ^
     src/gui/interface/unit/cards/weapon_adapt.py ^
-    src/gui/interface/unit/weapon_frame.py ^
+    src/gui/interface/unit/weapon_list.py ^
     src/gui/interface/pilot/pilot_table.py ^
     src/gui/interface/pilot/pilot_panel.py ^
     src/gui/interface/snmsg/msg_frame.py ^

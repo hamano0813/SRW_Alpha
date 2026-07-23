@@ -46,7 +46,7 @@ from gui.interface.unit.cards import (
     WeaponAttrCard,
     WeaponMapCard,
 )
-from gui.interface.unit.weapon_frame import WeaponListCard, WeaponView
+from gui.interface.unit.weapon_list import WeaponListCard
 
 
 class UnitFrame(SmoothScrollArea):
@@ -143,12 +143,10 @@ class UnitFrame(SmoothScrollArea):
 
         right_grid.addWidget(right_cards, 0, 1)
 
-        # (1,0) 左下：武器表格（外套卡片）
+        # (1,0) 左下：武器列表卡片
         self._weapon_card = WeaponListCard(self._right_panel)
-        self._weapon_view = WeaponView(self._weapon_card)
-        self._weapon_view.set_field(fields)
-        self._weapon_view.sClicked.connect(self._on_weapon_row_clicked)
-        self._weapon_card.viewLayout.addWidget(self._weapon_view)
+        self._weapon_card.set_field(fields)
+        self._weapon_card.table.sClicked.connect(self._on_weapon_row_clicked)
         right_grid.addWidget(self._weapon_card, 1, 0, 3, 1)
 
         # (1,1) 右下：武器编辑卡片
@@ -333,12 +331,12 @@ class UnitFrame(SmoothScrollArea):
         # 同步武器数据
         if self._rom_data is not None:
             weapons = self._rom_data["robots"]["robots"][source_row]["weapons"]
-            self._weapon_view.set_data(weapons)
-            w_model = self._weapon_view.source_model()
+            self._weapon_card.set_data(weapons)
+            w_model = self._weapon_card.source_model()
             for card in [self._weapon_attr_card, self._weapon_map_card, self._weapon_adapt_card]:
                 card.set_model(w_model)
             if w_model.rowCount() > 0:
-                self._weapon_view.select_source_row(0)
+                self._weapon_card.select_source_row(0)
                 self._on_weapon_row_clicked(0, w_model)
 
     # ========== 武器行点击 ==========
@@ -469,7 +467,7 @@ class UnitFrame(SmoothScrollArea):
         self._container.resetUI()
         for card in self._cards:
             card.resetUI()
-        self._weapon_view.resetUI()
+        self._weapon_card.resetUI()
         self._update_layout()
 
     def translateUI(self):
@@ -478,5 +476,5 @@ class UnitFrame(SmoothScrollArea):
         self._translate_unit_headers()
         for card in self._cards:
             card.translateUI()
-        self._weapon_view.translateUI()
+        self._weapon_card.translateUI()
         self._update_layout()

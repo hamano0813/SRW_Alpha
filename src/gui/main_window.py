@@ -88,7 +88,7 @@ class MainWindow(FluentWindow):
         self.addSubInterface(self.home_frame, CustomIcon.HOME, self.tr("Home"))
 
         self.unit_frame = UnitFrame(self._field, self)
-        self.addSubInterface(self.unit_frame, CustomIcon.ROBOT, self.tr("Unit"))
+        self.addSubInterface(self.unit_frame, CustomIcon.UNIT, self.tr("Unit"))
 
         self.pilot_frame = PilotFrame(self._field, self)
         self.addSubInterface(self.pilot_frame, CustomIcon.PILOT, self.tr("Pilot"))

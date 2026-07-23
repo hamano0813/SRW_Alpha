@@ -19,7 +19,7 @@ Classes:
     HomeFrame:       概览框架 - ROM 编辑器首页
     OptionFrame:     选项设置框架
     PilotFrame:      驾驶员编辑框架
-    RobotFrame:      机体编辑框架
+    UnitFrame:       机体编辑框架
     ScriptFrame:     幕间编辑框架
     SndataFrame:     场景数据编辑框架
     SnmsgFrame:      消息编辑框架
@@ -29,7 +29,7 @@ from .dictionary.dictionary_frame import DictionaryFrame
 from .home.home_frame import HomeFrame
 from .option.option_frame import OptionFrame
 from .pilot.pilot_frame import PilotFrame
-from .robot.robot_frame import RobotFrame
+from .unit.unit_frame import UnitFrame
 from .script.script_frame import ScriptFrame
 from .sndata.sndata_frame import SndataFrame
 from .snmsg.snmsg_frame import SnmsgFrame

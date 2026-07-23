@@ -1,18 +1,24 @@
 uv run pyside6-lupdate ^
     src/gui/main_window.py ^
-    src/gui/home/home_frame.py ^
-    src/gui/robot/unit_frame.py ^
-    src/gui/robot/unit_panel.py ^
-    src/gui/robot/weapon_frame.py ^
-    src/gui/robot/weapon_panel.py ^
-    src/gui/pilot/pilot_table.py ^
-    src/gui/pilot/pilot_panel.py ^
-    src/gui/snmsg/msg_frame.py ^
-    src/gui/snmsg/msg_panel.py ^
-    src/gui/option/option_frame.py ^
-    src/gui/option/color_card.py ^
-    src/gui/option/rom_card.py ^
-    src/gui/option/font_card.py ^
+    src/gui/interface/home/home_frame.py ^
+    src/gui/interface/unit/unit_frame.py ^
+    src/gui/interface/unit/cards/transform.py ^
+    src/gui/interface/unit/cards/terrain.py ^
+    src/gui/interface/unit/cards/abilities.py ^
+    src/gui/interface/unit/cards/series.py ^
+    src/gui/interface/unit/cards/bgm.py ^
+    src/gui/interface/unit/cards/weapon_attr.py ^
+    src/gui/interface/unit/cards/weapon_map.py ^
+    src/gui/interface/unit/cards/weapon_adapt.py ^
+    src/gui/interface/unit/weapon_frame.py ^
+    src/gui/interface/pilot/pilot_table.py ^
+    src/gui/interface/pilot/pilot_panel.py ^
+    src/gui/interface/snmsg/msg_frame.py ^
+    src/gui/interface/snmsg/msg_panel.py ^
+    src/gui/interface/option/option_frame.py ^
+    src/gui/interface/option/color_card.py ^
+    src/gui/interface/option/rom_card.py ^
+    src/gui/interface/option/font_card.py ^
     src/gui/custom/enums.py ^
     src/gui/custom/fields.py ^
 -ts ^

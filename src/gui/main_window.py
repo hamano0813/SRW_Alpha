@@ -33,7 +33,7 @@ from gui.interface import (
     HomeFrame,
     OptionFrame,
     PilotFrame,
-    RobotFrame,
+    UnitFrame,
     ScriptFrame,
     SndataFrame,
     SnmsgFrame,
@@ -46,7 +46,7 @@ class MainWindow(FluentWindow):
     """主窗口类 - 集成导航栏、启动画面和界面刷新"""
 
     _SIZE = utils.best_resolution(config.option.dpi.value)
-    _FEATURE_ROUTES = ["RobotFrame", "PilotFrame", "MessageFrame", "SndataFrame", "ScriptFrame", "DictionaryFrame"]
+    _FEATURE_ROUTES = ["UnitFrame", "PilotFrame", "MessageFrame", "SndataFrame", "ScriptFrame", "DictionaryFrame"]
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -87,8 +87,8 @@ class MainWindow(FluentWindow):
         self.home_frame = HomeFrame(self)
         self.addSubInterface(self.home_frame, CustomIcon.HOME, self.tr("Home"))
 
-        self.robot_frame = RobotFrame(self._field, self)
-        self.addSubInterface(self.robot_frame, CustomIcon.ROBOT, self.tr("Robot"))
+        self.unit_frame = UnitFrame(self._field, self)
+        self.addSubInterface(self.unit_frame, CustomIcon.ROBOT, self.tr("Unit"))
 
         self.pilot_frame = PilotFrame(self._field, self)
         self.addSubInterface(self.pilot_frame, CustomIcon.PILOT, self.tr("Pilot"))
@@ -143,7 +143,7 @@ class MainWindow(FluentWindow):
                 style.polish(widget)
 
         self.home_frame.resetUI()
-        self.robot_frame.resetUI()
+        self.unit_frame.resetUI()
         self.pilot_frame.resetUI()
         self.snmsg_frame.resetUI()
         self.sndata_frame.resetUI()
@@ -169,7 +169,7 @@ class MainWindow(FluentWindow):
 
         self.setWindowTitle(self.tr("Super Robot Wars α ROM Editor") + " - v0.3.0")
         self.translate_frame("EditorFrame", "Home")
-        self.translate_frame("RobotFrame", "Robot")
+        self.translate_frame("UnitFrame", "Unit")
         self.translate_frame("PilotFrame", "Pilot")
         self.translate_frame("MessageFrame", "Message")
         self.translate_frame("SndataFrame", "Scenario")
@@ -177,7 +177,7 @@ class MainWindow(FluentWindow):
         self.translate_frame("DictionaryFrame", "Dictionary")
         self.translate_frame("OptionFrame", "Options")
         self.home_frame.translateUI()
-        self.robot_frame.translateUI()
+        self.unit_frame.translateUI()
         self.pilot_frame.translateUI()
         self.snmsg_frame.translateUI()
         self.sndata_frame.translateUI()
@@ -206,7 +206,7 @@ class MainWindow(FluentWindow):
     def parse_data(self):
         """解析缓存数据并设置到各个编辑器"""
         self.rom.parse_cache()
-        self.robot_frame.set_rom_data(self.rom.data)
+        self.unit_frame.set_rom_data(self.rom.data)
         self.pilot_frame.set_rom_data(self.rom.data)
         self.snmsg_frame.set_rom_data(self.rom.data)
         # 首次数据就绪，推送至所有观察者

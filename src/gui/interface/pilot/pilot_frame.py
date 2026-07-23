@@ -2,7 +2,7 @@
 驾驶员编辑框架模块
 
 提供驾驶员数据的表格展示和编辑界面，配合 PILOT.BIN 解析模块使用。
-参照 robot_frame.py 的模式实现。
+参照 unit_frame.py 的模式实现。
 
 左侧：PilotTable 驾驶员表格
 右侧：PilotPanel 各编辑卡片
@@ -124,7 +124,8 @@ class PilotFrame(SmoothScrollArea):
         """
         model = self._pilot_table.pilot_view.source_model()
         for col, header in enumerate(model.headers):
-            if model.fields.get_field(header) == field:
+            mapped = model.fields.get_field(header)
+            if mapped == field:
                 idx = model.index(self._current_source_row, col)
                 model.dataChanged.emit(idx, idx, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
                 break

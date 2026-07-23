@@ -4,41 +4,52 @@
 提供机体数据的表格展示和编辑界面，配合 ROBOT.RAF 解析模块使用。
 包含机体主列表和武器子列表的联动显示。
 
-常态：UnitFrame 填满视口，右侧面板隐藏。
-折叠：UnitFrame 固定在首列宽度，右侧面板露出，水平滚动条出现。
+常态：机体表格填满视口，右侧面板隐藏。
+折叠：表格缩至首列宽度，右侧面板露出，水平滚动条出现。
 
 右侧面板内部分左右两列：
   左列：变形·合体 / 地形适性 / BGM 卡片 + 武器表格
-  右列：能力列表 / 系列卡片 + 武器编辑面板
+  右列：能力列表 / 系列卡片 + 武器编辑卡片
 
 Classes:
-    RobotFrame: 机体编辑框架（可平滑滚动）
+    UnitFrame: 机体编辑框架（可平滑滚动）
 """
 
 from PySide6.QtCore import QEasingCurve, Qt, QTimer, QVariantAnimation
 from PySide6.QtWidgets import (
     QGridLayout,
     QHBoxLayout,
+    QHeaderView,
     QSizePolicy,
     QSpacerItem,
     QVBoxLayout,
 )
 from qfluentwidgets import SmoothScrollArea
 
-from gui.widget import BaseTableModel, ProxyFrame
-from gui.interface.robot.unit_frame import UnitFrame
-from gui.interface.robot.unit_panel import (
+from gui.custom import fonts
+from gui.custom.enums import EnumData
+from gui.widget import (
+    BaseTableModel,
+    FixedTableView,
+    MappingSpinDelegate,
+    NumberSpinDelegate,
+    ProxyFrame,
+    SingleLineDelegate,
+)
+from gui.interface.unit.cards import (
     AbilitiesCard,
     BgmCard,
     SeriesCard,
     TerrainCard,
     TransformCard,
+    WeaponAdaptCard,
+    WeaponAttrCard,
+    WeaponMapCard,
 )
-from gui.interface.robot.weapon_frame import WeaponListCard, WeaponView
-from gui.interface.robot.weapon_panel import WeaponPanel
+from gui.interface.unit.weapon_frame import WeaponListCard, WeaponView
 
 
-class RobotFrame(SmoothScrollArea):
+class UnitFrame(SmoothScrollArea):
     """机体编辑框架 - 机体主列表 + 武器子列表联动（可平滑滚动）"""
 
     def __init__(
@@ -53,7 +64,7 @@ class RobotFrame(SmoothScrollArea):
             parent: 父 QWidget
         """
         super().__init__(parent)
-        self.setObjectName("RobotFrame")
+        self.setObjectName("UnitFrame")
         self.setWidgetResizable(False)
         self.enableTransparentBackground()
 
@@ -73,9 +84,8 @@ class RobotFrame(SmoothScrollArea):
 
         # ===== 左侧：机体主表 =====
 
-        self._unit_frame = UnitFrame(self._container)
-        self._unit_frame.set_field(fields)
-        layout.addWidget(self._unit_frame, 1)
+        self._unit_view = self._build_unit_table(fields)
+        layout.addWidget(self._unit_view, 1)
 
         # ===== 右侧面板组 =====
 
@@ -97,19 +107,19 @@ class RobotFrame(SmoothScrollArea):
         top_row_layout.setSpacing(8)
 
         self._transform_card = TransformCard(top_row)
-        self._transform_card.set_model(self._unit_frame.robot_view.source_model())
+        self._transform_card.set_model(self._unit_view.source_model())
         self._transform_card.panelDataChanged.connect(self._on_panel_data_changed)
         top_row_layout.addWidget(self._transform_card)
 
         self._terrain_card = TerrainCard(top_row)
-        self._terrain_card.set_model(self._unit_frame.robot_view.source_model())
+        self._terrain_card.set_model(self._unit_view.source_model())
         self._terrain_card.panelDataChanged.connect(self._on_panel_data_changed)
         top_row_layout.addWidget(self._terrain_card)
 
         left_cards_layout.addWidget(top_row)
 
         self._bgm_card = BgmCard(left_cards)
-        self._bgm_card.set_model(self._unit_frame.robot_view.source_model())
+        self._bgm_card.set_model(self._unit_view.source_model())
         self._bgm_card.panelDataChanged.connect(self._on_panel_data_changed)
         left_cards_layout.addWidget(self._bgm_card)
 
@@ -122,12 +132,12 @@ class RobotFrame(SmoothScrollArea):
         right_cards_layout.setSpacing(8)
 
         self._abilities_card = AbilitiesCard(right_cards)
-        self._abilities_card.set_model(self._unit_frame.robot_view.source_model())
+        self._abilities_card.set_model(self._unit_view.source_model())
         self._abilities_card.panelDataChanged.connect(self._on_panel_data_changed)
         right_cards_layout.addWidget(self._abilities_card)
 
         self._series_card = SeriesCard(right_cards)
-        self._series_card.set_model(self._unit_frame.robot_view.source_model())
+        self._series_card.set_model(self._unit_view.source_model())
         self._series_card.panelDataChanged.connect(self._on_panel_data_changed)
         right_cards_layout.addWidget(self._series_card)
 
@@ -141,10 +151,32 @@ class RobotFrame(SmoothScrollArea):
         self._weapon_card.viewLayout.addWidget(self._weapon_view)
         right_grid.addWidget(self._weapon_card, 1, 0, 3, 1)
 
-        # (1,1) 右下：武器编辑面板
-        self._weapon_panel = WeaponPanel(self._right_panel)
-        self._weapon_panel.panelDataChanged.connect(self._on_panel_data_changed)
-        right_grid.addWidget(self._weapon_panel, 1, 1)
+        # (1,1) 右下：武器编辑卡片
+        #   上排：武器属性卡片
+        #   下排：地图武器 + 地形适应（平行）
+        weapon_cards = ProxyFrame(self._right_panel)
+        weapon_layout = QVBoxLayout(weapon_cards)
+        weapon_layout.setContentsMargins(0, 0, 0, 0)
+        weapon_layout.setSpacing(8)
+
+        self._weapon_attr_card = WeaponAttrCard(weapon_cards)
+        self._weapon_attr_card.panelDataChanged.connect(self._on_panel_data_changed)
+        weapon_layout.addWidget(self._weapon_attr_card)
+
+        weapon_bottom = QHBoxLayout()
+        weapon_bottom.setSpacing(8)
+
+        self._weapon_map_card = WeaponMapCard(weapon_cards)
+        self._weapon_map_card.panelDataChanged.connect(self._on_panel_data_changed)
+        weapon_bottom.addWidget(self._weapon_map_card)
+
+        self._weapon_adapt_card = WeaponAdaptCard(weapon_cards)
+        self._weapon_adapt_card.panelDataChanged.connect(self._on_panel_data_changed)
+        weapon_bottom.addWidget(self._weapon_adapt_card)
+
+        weapon_layout.addLayout(weapon_bottom)
+
+        right_grid.addWidget(weapon_cards, 1, 1)
 
         # 右下角伸缩 spacer，把内容撑到左上角
         right_grid.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding), 2, 2)
@@ -159,9 +191,99 @@ class RobotFrame(SmoothScrollArea):
         self._right_panel.setVisible(False)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
-        self._unit_frame.sClicked.connect(self._on_row_clicked)
-        self._unit_frame.robot_view.columnZeroEdited.connect(self._on_robot_name_edited)
-        self._unit_frame.robot_view.foldToggled.connect(self._on_fold_toggled)
+        # ========== 卡片列表（统一 translateUI / resetUI） ==========
+
+        self._cards = [
+            self._transform_card,
+            self._terrain_card,
+            self._bgm_card,
+            self._abilities_card,
+            self._series_card,
+            self._weapon_attr_card,
+            self._weapon_map_card,
+            self._weapon_adapt_card,
+        ]
+
+        self._unit_view.sClicked.connect(self._on_row_clicked)
+        self._unit_view.columnZeroEdited.connect(self._on_robot_name_edited)
+        self._unit_view.foldToggled.connect(self._on_fold_toggled)
+
+        # 初始化列标题（后续 translateUI 会重新刷新）
+        self._translate_unit_headers()
+
+    # ========== 表格构建 ==========
+
+    def _build_unit_table(self, fields) -> FixedTableView:
+        """创建机体表格并配置委托、列宽、字体"""
+        view = FixedTableView()
+        view.set_field(fields)
+
+        _model = view.source_model()
+        _model.set_font({0: fonts.JP_FONT})
+        _model.set_alignments({
+            1: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            2: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            3: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            4: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            5: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            6: Qt.AlignmentFlag.AlignCenter,
+            7: Qt.AlignmentFlag.AlignCenter,
+            8: Qt.AlignmentFlag.AlignCenter,
+            9: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+            10: Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+        })
+
+        self._name_delegate = SingleLineDelegate(font=fonts.JP_FONT, parent=view)
+        view.setItemDelegateForColumn(0, self._name_delegate)
+
+        self._hp_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=view)
+        view.setItemDelegateForColumn(1, self._hp_delegate)
+        self._en_delegate = NumberSpinDelegate(value_range=(50, 400), show_buttons=False, parent=view)
+        view.setItemDelegateForColumn(2, self._en_delegate)
+        self._mobility_delegate = NumberSpinDelegate(value_range=(40, 200), show_buttons=False, parent=view)
+        view.setItemDelegateForColumn(3, self._mobility_delegate)
+        self._armor_delegate = NumberSpinDelegate(value_range=(100, 4000), show_buttons=False, parent=view)
+        view.setItemDelegateForColumn(4, self._armor_delegate)
+        self._limit_delegate = NumberSpinDelegate(value_range=(200, 999), show_buttons=False, parent=view)
+        view.setItemDelegateForColumn(5, self._limit_delegate)
+
+        self._slot_delegate = NumberSpinDelegate(value_range=(1, 4), show_buttons=True, parent=view)
+        view.setItemDelegateForColumn(7, self._slot_delegate)
+        self._move_delegate = NumberSpinDelegate(value_range=(3, 9), show_buttons=True, parent=view)
+        view.setItemDelegateForColumn(8, self._move_delegate)
+
+        _enum = EnumData()
+        self._size_delegate = MappingSpinDelegate(mapping=_enum.ROBOT["SIZE"], parent=view)
+        view.setItemDelegateForColumn(6, self._size_delegate)
+
+        self._rep_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=view)
+        view.setItemDelegateForColumn(9, self._rep_delegate)
+        self._cost_delegate = NumberSpinDelegate(value_range=(0, 65535), show_buttons=False, parent=view)
+        view.setItemDelegateForColumn(10, self._cost_delegate)
+
+        view.set_column_width([210, 120] + [110] * 7 + [115] * 2)
+        view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
+        view.verticalHeader().setFixedWidth(45)
+
+        return view
+
+    def _translate_unit_headers(self) -> None:
+        """刷新机体表格列标题与格式化函数"""
+        self._unit_view.set_title({
+            self.tr("Robot name"): [self._name_delegate.format_display, self._name_delegate.parse_display],
+            self.tr("Hit points"): [self._hp_delegate.format_display, self._hp_delegate.parse_display],
+            self.tr("Energy"): [self._en_delegate.format_display, self._en_delegate.parse_display],
+            self.tr("Mobility"): [self._mobility_delegate.format_display, self._mobility_delegate.parse_display],
+            self.tr("Armor"): [self._armor_delegate.format_display, self._armor_delegate.parse_display],
+            self.tr("Limit"): [self._limit_delegate.format_display, self._limit_delegate.parse_display],
+            self.tr("Size"): [self._size_delegate.format_display, self._size_delegate.parse_display],
+            self.tr("Parts slot"): [self._slot_delegate.format_display, self._slot_delegate.parse_display],
+            self.tr("Movement"): [self._move_delegate.format_display, self._move_delegate.parse_display],
+            self.tr("Repair cost"): [self._rep_delegate.format_display, self._rep_delegate.parse_display],
+            self.tr("Cost"): [self._cost_delegate.format_display, self._cost_delegate.parse_display],
+        })
+        if self._unit_view.column_widths:
+            self._unit_view.set_column_width(self._unit_view.column_widths)
 
     # ========== 全局定位 ==========
 
@@ -213,7 +335,8 @@ class RobotFrame(SmoothScrollArea):
             weapons = self._rom_data["robots"]["robots"][source_row]["weapons"]
             self._weapon_view.set_data(weapons)
             w_model = self._weapon_view.source_model()
-            self._weapon_panel.set_model(w_model)
+            for card in [self._weapon_attr_card, self._weapon_map_card, self._weapon_adapt_card]:
+                card.set_model(w_model)
             if w_model.rowCount() > 0:
                 self._weapon_view.select_source_row(0)
                 self._on_weapon_row_clicked(0, w_model)
@@ -221,16 +344,19 @@ class RobotFrame(SmoothScrollArea):
     # ========== 武器行点击 ==========
 
     def _on_weapon_row_clicked(self, source_row: int, model: BaseTableModel) -> None:
-        """武器行单击时刷新武器编辑面板"""
-        self._weapon_panel.set_row(source_row)
+        """武器行单击时刷新武器编辑卡片"""
+        self._weapon_attr_card.set_row(source_row)
+        self._weapon_map_card.set_row(source_row)
+        self._weapon_adapt_card.set_row(source_row)
 
     # ========== 面板编辑回写 ==========
 
     def _on_panel_data_changed(self, field: str) -> None:
         """面板编辑器修改数据后通知 model 刷新对应单元格"""
-        model = self._unit_frame.robot_view.source_model()
+        model = self._unit_view.source_model()
         for col, header in enumerate(model.headers):
-            if model.fields.get_field(header) == field:
+            mapped = model.fields.get_field(header)
+            if mapped == field:
                 idx = model.index(self._current_source_row, col)
                 model.dataChanged.emit(idx, idx, [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.EditRole])
                 break
@@ -251,15 +377,14 @@ class RobotFrame(SmoothScrollArea):
         展开：Table 撑满视口 → 遮住面板 → 关闭滚动条并归零滚动位置
         """
         self._folded = folded
-        start_w = self._unit_frame.width()
+        start_w = self._unit_view.width()
 
         if folded:
-            # 折叠：先显示面板，再缩窄表格
             self._right_panel.setVisible(True)
-            end_w = self._unit_frame.robot_view.get_content_width(True)
+            end_w = self._unit_view.get_content_width(True)
             self._kill_anim()
             self._anim = QVariantAnimation(self)
-            self._anim.valueChanged.connect(lambda v: self._unit_frame.setFixedWidth(v))
+            self._anim.valueChanged.connect(lambda v: self._unit_view.setFixedWidth(v))
             self._anim.finished.connect(lambda: self._on_fold_anim_done(end_w))
             self._anim.setDuration(200)
             self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
@@ -267,12 +392,11 @@ class RobotFrame(SmoothScrollArea):
             self._anim.setEndValue(end_w)
             self._anim.start(QVariantAnimation.DeletionPolicy.KeepWhenStopped)
         else:
-            # 展开：先隐藏面板，再撑宽表格
             self._right_panel.setVisible(False)
             end_w = self.viewport().width()
             self._kill_anim()
             self._anim = QVariantAnimation(self)
-            self._anim.valueChanged.connect(lambda v: self._unit_frame.setFixedWidth(v))
+            self._anim.valueChanged.connect(lambda v: self._unit_view.setFixedWidth(v))
             self._anim.finished.connect(lambda: self._on_unfold_anim_done())
             self._anim.setDuration(200)
             self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
@@ -287,7 +411,7 @@ class RobotFrame(SmoothScrollArea):
             try:
                 anim.stop()
             except RuntimeError:
-                pass  # C++ 对象已销毁
+                pass
             self._anim = None
 
     def _on_fold_anim_done(self, target_w: int) -> None:
@@ -300,7 +424,7 @@ class RobotFrame(SmoothScrollArea):
                 pass
         self._anim = None
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
-        self._unit_frame.setFixedWidth(target_w)
+        self._unit_view.setFixedWidth(target_w)
 
     def _on_unfold_anim_done(self) -> None:
         """展开动画完成后的收尾工作"""
@@ -311,8 +435,8 @@ class RobotFrame(SmoothScrollArea):
             except RuntimeError:
                 pass
         self._anim = None
-        self._unit_frame.setMinimumWidth(0)
-        self._unit_frame.setMaximumWidth(16777215)
+        self._unit_view.setMinimumWidth(0)
+        self._unit_view.setMaximumWidth(16777215)
         self.horizontalScrollBar().setValue(0)
         self._update_layout()
         self._update_layout()
@@ -328,12 +452,12 @@ class RobotFrame(SmoothScrollArea):
         """
         self._rom_data = data
         robots = data.get("robots", [])
-        self._unit_frame.set_data(robots["robots"])
+        self._unit_view.set_data(robots["robots"])
 
         # 默认选中第一行
-        model = self._unit_frame.robot_view.source_model()
+        model = self._unit_view.source_model()
         if model.rowCount() > 0:
-            self._unit_frame.robot_view.selectRow(0)
+            self._unit_view.selectRow(0)
             self._on_row_clicked(0, model)
 
         self._update_layout()
@@ -343,13 +467,16 @@ class RobotFrame(SmoothScrollArea):
     def resetUI(self):
         """刷新所有子控件并更新布局"""
         self._container.resetUI()
-        self._weapon_panel.resetUI()
+        for card in self._cards:
+            card.resetUI()
         self._weapon_view.resetUI()
         self._update_layout()
 
     def translateUI(self):
         """刷新所有子控件翻译并更新布局"""
         self._container.translateUI()
+        self._translate_unit_headers()
+        for card in self._cards:
+            card.translateUI()
         self._weapon_view.translateUI()
-        self._weapon_panel.translateUI()
         self._update_layout()

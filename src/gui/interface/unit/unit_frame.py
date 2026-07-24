@@ -5,17 +5,17 @@
 包含机体主列表和武器子列表的联动显示。
 
 常态：机体表格填满视口，右侧面板隐藏。
-折叠：表格缩至首列宽度，右侧面板露出，水平滚动条出现。
+折叠：表格缩至首列宽度，右侧面板露出。
 
 右侧面板内部分左右两列：
   左列：变形·合体 / 地形适性 / BGM 卡片 + 武器表格
   右列：能力列表 / 系列卡片 + 武器编辑卡片
 
 Classes:
-    UnitFrame: 机体编辑框架（可平滑滚动）
+    UnitFrame: 机体编辑框架
 """
 
-from PySide6.QtCore import QEasingCurve, Qt, QTimer, QVariantAnimation
+from PySide6.QtCore import QEasingCurve, Qt, QVariantAnimation
 from PySide6.QtWidgets import (
     QGridLayout,
     QHBoxLayout,
@@ -24,7 +24,6 @@ from PySide6.QtWidgets import (
     QSpacerItem,
     QVBoxLayout,
 )
-from qfluentwidgets import SmoothScrollArea
 
 from gui.custom import EnumData, JP_FONT
 from gui.widget import (
@@ -48,8 +47,8 @@ from gui.interface.unit.cards import (
 from gui.interface.unit.weapon_list import WeaponListCard
 
 
-class UnitFrame(SmoothScrollArea):
-    """机体编辑框架 - 机体主列表 + 武器子列表联动（可平滑滚动）"""
+class UnitFrame(ProxyFrame):
+    """机体编辑框架 - 机体主列表 + 武器子列表联动"""
 
     def __init__(
         self,
@@ -64,20 +63,14 @@ class UnitFrame(SmoothScrollArea):
         """
         super().__init__(parent)
         self.setObjectName("UnitFrame")
-        self.setWidgetResizable(False)
-        self.enableTransparentBackground()
 
         self._rom_data: dict | None = None
         self._current_source_row: int = -1
         self._folded: bool = False
 
-        # ========== 容器（水平布局：机体表格 | 右侧面板组） ==========
+        # ========== 水平布局：机体表格 | 右侧面板组 ==========
 
-        self._container = ProxyFrame()
-        self._container.resize(800, 32)
-        self.setWidget(self._container)
-
-        layout = QHBoxLayout(self._container)
+        layout = QHBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         layout.setSpacing(0)
 
@@ -88,7 +81,8 @@ class UnitFrame(SmoothScrollArea):
 
         # ===== 右侧面板组 =====
 
-        self._right_panel = ProxyFrame(self._container)
+        self._right_panel = ProxyFrame(self)
+        self._right_panel.setFixedWidth(0)  # 始终可见，折叠时动画展开到 1116
         right_grid = QGridLayout(self._right_panel)
         right_grid.setContentsMargins(0, 0, 0, 0)
         right_grid.setHorizontalSpacing(8)
@@ -149,8 +143,6 @@ class UnitFrame(SmoothScrollArea):
         right_grid.addWidget(self._weapon_card, 1, 0, 3, 1)
 
         # (1,1) 右下：武器编辑卡片
-        #   上排：武器属性卡片
-        #   下排：地图武器 + 地形适应（平行）
         weapon_cards = ProxyFrame(self._right_panel)
         weapon_layout = QVBoxLayout(weapon_cards)
         weapon_layout.setContentsMargins(0, 0, 0, 0)
@@ -182,11 +174,9 @@ class UnitFrame(SmoothScrollArea):
         right_grid.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding), 5, 4)
 
         layout.addWidget(self._right_panel)
-        layout.addStretch()
 
-        # 默认隐藏右侧面板组，仅在表格折叠后显示
-        self._right_panel.setVisible(False)
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        # 水平撑开 — 把表格 + 面板推到左侧
+        layout.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum))
 
         # ========== 卡片列表（统一 translateUI / resetUI） ==========
 
@@ -282,35 +272,6 @@ class UnitFrame(SmoothScrollArea):
         if self._unit_view.column_widths:
             self._unit_view.set_column_width(self._unit_view.column_widths)
 
-    # ========== 全局定位 ==========
-
-    def _update_layout(self):
-        """根据折叠状态调整容器尺寸"""
-        vp_w = self.viewport().width()
-        vp_h = self.viewport().height()
-        if vp_w <= 0 or vp_h <= 0:
-            win = self.window()
-            if win and win.isVisible():
-                vp_w = win.width() - 100
-                vp_h = win.height() - 100
-                if vp_w <= 0:
-                    vp_w = 1000
-                if vp_h <= 0:
-                    vp_h = 600
-            else:
-                return
-
-        if self._folded:
-            total_w = max(vp_w, self._container.layout().minimumSize().width())
-        else:
-            total_w = vp_w
-        self._container.resize(total_w, vp_h)
-
-    def resizeEvent(self, event):
-        """窗口缩放后刷新布局"""
-        super().resizeEvent(event)
-        QTimer.singleShot(0, self._update_layout)
-
     # ========== 行点击 ==========
 
     def _on_row_clicked(self, source_row: int, model: BaseTableModel) -> None:
@@ -370,36 +331,40 @@ class UnitFrame(SmoothScrollArea):
     def _on_fold_toggled(self, folded: bool, freed_width: int) -> None:
         """列折叠时带动画切换格局
 
-        折叠：Table 缩窄 → 露出右侧面板 → 打开水平滚动条
-        展开：Table 撑满视口 → 遮住面板 → 关闭滚动条并归零滚动位置
+        折叠/展开时同时动画收窄表格和展宽面板，避免布局跳变。
         """
         self._folded = folded
-        start_w = self._unit_view.width()
+        start_table_w = self._unit_view.width()
+        start_panel_w = self._right_panel.width()
 
         if folded:
-            self._right_panel.setVisible(True)
-            end_w = self._unit_view.get_content_width(True)
-            self._kill_anim()
-            self._anim = QVariantAnimation(self)
-            self._anim.valueChanged.connect(lambda v: self._unit_view.setFixedWidth(v))
-            self._anim.finished.connect(lambda: self._on_fold_anim_done(end_w))
-            self._anim.setDuration(200)
-            self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
-            self._anim.setStartValue(start_w)
-            self._anim.setEndValue(end_w)
-            self._anim.start(QVariantAnimation.DeletionPolicy.KeepWhenStopped)
+            end_table_w = self._unit_view.get_content_width(True)
+            end_panel_w = 1116
         else:
-            self._right_panel.setVisible(False)
-            end_w = self.viewport().width()
-            self._kill_anim()
-            self._anim = QVariantAnimation(self)
-            self._anim.valueChanged.connect(lambda v: self._unit_view.setFixedWidth(v))
-            self._anim.finished.connect(lambda: self._on_unfold_anim_done())
-            self._anim.setDuration(200)
-            self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
-            self._anim.setStartValue(start_w)
-            self._anim.setEndValue(end_w)
-            self._anim.start(QVariantAnimation.DeletionPolicy.KeepWhenStopped)
+            end_table_w = self.width()
+            end_panel_w = 0
+
+        self._kill_anim()
+        self._anim = QVariantAnimation(self)
+        self._anim.valueChanged.connect(
+            lambda v: self._on_fold_step(v, start_table_w, end_table_w, start_panel_w, end_panel_w)
+        )
+        if folded:
+            self._anim.finished.connect(lambda: self._on_fold_anim_done(end_table_w))
+        else:
+            self._anim.finished.connect(self._on_unfold_anim_done)
+        self._anim.setDuration(200)
+        self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
+        self._anim.setStartValue(0.0)
+        self._anim.setEndValue(1.0)
+        self._anim.start(QVariantAnimation.DeletionPolicy.KeepWhenStopped)
+
+    def _on_fold_step(self, t: float, start_tw: int, end_tw: int, start_pw: int, end_pw: int) -> None:
+        """动画中间帧 — 同时插值表格宽度和面板宽度"""
+        tw = int(start_tw + (end_tw - start_tw) * t)
+        pw = int(start_pw + (end_pw - start_pw) * t)
+        self._unit_view.setFixedWidth(tw)
+        self._right_panel.setFixedWidth(pw)
 
     def _kill_anim(self) -> None:
         """停止并清理进行中的动画"""
@@ -420,7 +385,6 @@ class UnitFrame(SmoothScrollArea):
             except RuntimeError:
                 pass
         self._anim = None
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         self._unit_view.setFixedWidth(target_w)
 
     def _on_unfold_anim_done(self) -> None:
@@ -434,9 +398,6 @@ class UnitFrame(SmoothScrollArea):
         self._anim = None
         self._unit_view.setMinimumWidth(0)
         self._unit_view.setMaximumWidth(16777215)
-        self.horizontalScrollBar().setValue(0)
-        self._update_layout()
-        self._update_layout()
 
     # ========== 数据解析 ==========
 
@@ -457,23 +418,19 @@ class UnitFrame(SmoothScrollArea):
             self._unit_view.selectRow(0)
             self._on_row_clicked(0, model)
 
-        self._update_layout()
-
     # ========== 主题与翻译 ==========
 
     def resetUI(self):
-        """刷新所有子控件并更新布局"""
-        self._container.resetUI()
+        """刷新所有子控件"""
+        super().resetUI()
         for card in self._cards:
             card.resetUI()
         self._weapon_card.resetUI()
-        self._update_layout()
 
     def translateUI(self):
-        """刷新所有子控件翻译并更新布局"""
-        self._container.translateUI()
+        """刷新所有子控件翻译"""
+        super().translateUI()
         self._translate_unit_headers()
         for card in self._cards:
             card.translateUI()
         self._weapon_card.translateUI()
-        self._update_layout()

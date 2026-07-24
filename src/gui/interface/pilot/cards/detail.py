@@ -12,7 +12,7 @@ from qfluentwidgets import BodyLabel, setFont
 from gui.custom import EnumData
 from gui.widget import CardHeader, CommonMappingCombo, CommonNumberSpin, LevelSpin
 
-_EMPTY_VALUE = 0xFF  # LevelSpin 的空值标记
+
 
 
 class PilotDetailCard(CardHeader):
@@ -55,13 +55,13 @@ class PilotDetailCard(CardHeader):
         self._daction_label.setMinimumWidth(80)
         self._daction_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self._daction_spin = LevelSpin(self)
-        self._daction_spin.setRange(0, 100)
-        self._daction_spin.valueChanged.connect(lambda v: self._write("daction", 0 if v == _EMPTY_VALUE else v))
+        self._daction_spin.setRange(1, 99)
+        self._daction_spin.valueChanged.connect(lambda v: self._write("daction", v))
 
         self._sp_label = BodyLabel(self.tr("SP"), self)
         self._sp_label.setMinimumWidth(80)
         self._sp_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._sp_spin = CommonNumberSpin(value_range=(0, 255), parent=self)
+        self._sp_spin = CommonNumberSpin(value_range=(1, 255), parent=self)
         self._sp_spin.valueChanged.connect(lambda v: self._write("sp", v))
 
         self._fsg_label = BodyLabel(self.tr("Friendship"), self)
@@ -96,8 +96,7 @@ class PilotDetailCard(CardHeader):
 
         self._pers_combo.set_value(self._read("pers") or 0)
 
-        daction = self._read("daction") or 0
-        self._daction_spin.set_value(_EMPTY_VALUE if daction == 0 else daction)
+        self._daction_spin.set_value(self._read("daction") or 1)
 
         self._sp_spin.set_value(self._read("sp") or 0)
         self._fsg_spin.set_value(self._read("fsg") or 0)

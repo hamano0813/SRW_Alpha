@@ -105,6 +105,7 @@ class UpgradedSkillsCard(CardHeader):
         self._table.verticalHeader().setVisible(False)
         self._table.setTextElideMode(Qt.TextElideMode.ElideNone)
         self._table.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Maximum)
+        self._table.horizontalHeader().setSectionsClickable(False)
         self._table.setFrameShape(QFrame.Shape.NoFrame)
         self._table.horizontalHeader().setStretchLastSection(False)
         self._table.verticalHeader().setFixedWidth(30)

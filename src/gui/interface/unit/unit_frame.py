@@ -241,7 +241,7 @@ class UnitFrame(SmoothScrollArea):
         view.setItemDelegateForColumn(3, self._mobility_delegate)
         self._armor_delegate = NumberSpinDelegate(value_range=(100, 4000), show_buttons=False, parent=view)
         view.setItemDelegateForColumn(4, self._armor_delegate)
-        self._limit_delegate = NumberSpinDelegate(value_range=(200, 999), show_buttons=False, parent=view)
+        self._limit_delegate = NumberSpinDelegate(value_range=(200, 600), show_buttons=False, parent=view)
         view.setItemDelegateForColumn(5, self._limit_delegate)
 
         self._slot_delegate = NumberSpinDelegate(value_range=(1, 4), show_buttons=True, parent=view)

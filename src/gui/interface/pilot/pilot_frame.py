@@ -92,14 +92,21 @@ class PilotFrame(SmoothScrollArea):
         self._terrain_card.panelDataChanged.connect(self._on_panel_data_changed)
         cards_layout.addWidget(self._terrain_card)
 
-        self._series_card = SeriesCard(self._right_panel)
-        self._series_card.set_model(_model)
-        self._series_card.panelDataChanged.connect(self._on_panel_data_changed)
-        cards_layout.addWidget(self._series_card)
+        # 特殊技能 + 系列 并排一行（系列在右）
+        self._skills_row_layout = QHBoxLayout()
+        self._skills_row_layout.setSpacing(8)
 
         self._skills_card = SpecialSkillsCard(self._right_panel)
         self._skills_card.set_model(_model)
-        cards_layout.addWidget(self._skills_card)
+        self._skills_card.panelDataChanged.connect(self._on_panel_data_changed)
+        self._skills_row_layout.addWidget(self._skills_card, 1)
+
+        self._series_card = SeriesCard(self._right_panel)
+        self._series_card.set_model(_model)
+        self._series_card.panelDataChanged.connect(self._on_panel_data_changed)
+        self._skills_row_layout.addWidget(self._series_card, 1)
+
+        cards_layout.addLayout(self._skills_row_layout)
 
         self._upgraded_card = UpgradedSkillsCard(self._right_panel)
         self._upgraded_card.set_model(_model)

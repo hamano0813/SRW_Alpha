@@ -88,6 +88,24 @@ class EnumData(QObject):
                 self.tr("Titan Series"),  # 泰坦系 / ダイターン系
             ],
             "ADAPT": {0x0: "－", 0x1: "D", 0x2: "C", 0x3: "B", 0x4: "A"},
+            "SKILL": [
+                self.tr("Potential"),  # 底力 / 底力
+                self.tr("Genius"),  # 天才 / 天才
+                self.tr("Guts"),  # 勇气 / ガッツ
+                self.tr("Aggressive Beast"),  # 野生化 / 野生化
+                self.tr("Meditate"),  # 集中力 / 集中力
+                self.tr("SP Regen"),  # SP回复 / SP回復
+                self.tr("President"),  # 社长 / 社長
+                self.tr("Brave"),  # 勇者 / 勇者
+                self.tr("Prince"),  # 王子 / 王子
+                self.tr("Princess"),  # 王女 / 王女
+                self.tr("Ace"),  # 王牌 / エース
+                self.tr("Double Action"),  # 两次行动 / 2回行動
+                self.tr("Protagonist"),  # 主人公 / 主人公
+                self.tr("AI"),  # AI / AI
+                self.tr("Children"),  # EVA适格者 / サードチルドレン
+                self.tr("Fairy"),  # 妖精 / フェラリオ
+            ],
         }
         self.WEAPON = {
             "CLASS": {
@@ -130,7 +148,7 @@ class EnumData(QObject):
             0x0F: self.tr("Disrupt"),  # 扰乱 / かく乱
             0x10: self.tr("Taunt"),  # 挑衅 / 挑発
             0x11: self.tr("Vigor"),  # 根性 / 根性
-            0x12: self.tr("Guts"),  # 大根性 / ド根性
+            0x12: self.tr("Resolve"),  # 大根性 / ド根性
             0x13: self.tr("Spirit"),  # 气合 / 気合
             0x14: self.tr("Trust"),  # 信赖 / 信頼
             0x15: self.tr("Faith"),  # 友情 / 友情

@@ -92,9 +92,13 @@ typedef struct
     uint8_t count;               /* 0x03A 合体数 */
     uint8_t option;              /* 0x03B 换装システム */
     uint8_t bgm;                 /* 0x03C BGM */
-    uint8_t unknown4;            /* 0x03D */
-    uint8_t unknown5;            /* 0x03E */
-    uint8_t unknown6;            /* 0x03F */
+    uint8_t unknown4;            /* 0x03D 用途不明 */
+    uint8_t rcls : 1;            /* 0x03E bit0 单位类别：0=超级系, 1=真实系 */
+    uint8_t uval : 2;            /* 0x03E bits1-2 单位价值：0=普通, 1=中等, 2=高 */
+    uint8_t unknown5 : 5;        /* 0x03E bits3-7 原剩余位 */
+    uint8_t u6_flag : 1;         /* 0x03F bit0 用途不明 */
+    uint8_t tech : 2;            /* 0x03F bits1-2 科技分类：0=超科技, 1=工程学, 2=灵力 */
+    uint8_t unknown6 : 5;        /* 0x03F bits3-7 剩余位 */
     uint8_t air;                 /* 0x040 空适应 */
     uint8_t grd;                 /* 0x041 陆适应 */
     uint8_t wtr;                 /* 0x042 海适应 */
@@ -493,7 +497,11 @@ robot_raf_parse(PyObject *self, PyObject *args, PyObject *kwargs)
         PyDict_SetItemString(rd, "option", PyLong_FromLong(r->option));
         PyDict_SetItemString(rd, "bgm", PyLong_FromLong(r->bgm));
         PyDict_SetItemString(rd, "unknown4", PyLong_FromLong(r->unknown4));
+        PyDict_SetItemString(rd, "rcls", PyLong_FromLong(r->rcls));
+        PyDict_SetItemString(rd, "uval", PyLong_FromLong(r->uval));
         PyDict_SetItemString(rd, "unknown5", PyLong_FromLong(r->unknown5));
+        PyDict_SetItemString(rd, "u6_flag", PyLong_FromLong(r->u6_flag));
+        PyDict_SetItemString(rd, "tech", PyLong_FromLong(r->tech));
         PyDict_SetItemString(rd, "unknown6", PyLong_FromLong(r->unknown6));
         PyDict_SetItemString(rd, "air", PyLong_FromLong(r->air));
         PyDict_SetItemString(rd, "grd", PyLong_FromLong(r->grd));
@@ -773,12 +781,25 @@ robot_raf_build(PyObject *self, PyObject *args, PyObject *kwargs)
         pv = PyDict_GetItemString(pr, "unknown4");
         if (pv)
             r->unknown4 = (uint8_t)PyLong_AsLong(pv);
+        /* 支持新旧两种格式：新格式用 rcls+uval+unknown5(高5位)，旧格式用 unknown5(全字节) */
+        pv = PyDict_GetItemString(pr, "rcls");
+        if (pv)
+            r->rcls = (uint8_t)(PyLong_AsLong(pv) & 1);
+        pv = PyDict_GetItemString(pr, "uval");
+        if (pv)
+            r->uval = (uint8_t)(PyLong_AsLong(pv) & 3);
         pv = PyDict_GetItemString(pr, "unknown5");
         if (pv)
-            r->unknown5 = (uint8_t)PyLong_AsLong(pv);
+            r->unknown5 = (uint8_t)(PyLong_AsLong(pv) & 0x1F);
+        pv = PyDict_GetItemString(pr, "u6_flag");
+        if (pv)
+            r->u6_flag = (uint8_t)(PyLong_AsLong(pv) & 1);
+        pv = PyDict_GetItemString(pr, "tech");
+        if (pv)
+            r->tech = (uint8_t)(PyLong_AsLong(pv) & 3);
         pv = PyDict_GetItemString(pr, "unknown6");
         if (pv)
-            r->unknown6 = (uint8_t)PyLong_AsLong(pv);
+            r->unknown6 = (uint8_t)(PyLong_AsLong(pv) & 0x1F);
         pv = PyDict_GetItemString(pr, "air");
         if (pv)
             r->air = (uint8_t)PyLong_AsLong(pv);

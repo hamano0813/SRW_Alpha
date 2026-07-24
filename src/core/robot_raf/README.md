@@ -50,8 +50,12 @@ typedef struct {
     uint8_t  option;             // 换装系统
     uint8_t  bgm;                // 机体BGM
     uint8_t  unknown4;
-    uint8_t  unknown5;
-    uint8_t  unknown6;
+    uint8_t  rcls : 1;           // bit0 单位类别：0=超级系, 1=真实系
+    uint8_t  uval : 2;           // bits1-2 单位价值：0=普通, 1=中等, 2=高
+    uint8_t  unknown5 : 5;       // bits3-7 原剩余位
+    uint8_t  u6_flag : 1;        // bit0 用途不明
+    uint8_t  tech : 2;           // bits1-2 科技分类：0=超科技, 1=工程学, 2=灵力
+    uint8_t  unknown6 : 5;       // bits3-7 剩余位
     uint8_t  air;                // 空适应
     uint8_t  grd;                // 陆适应
     uint8_t  wtr;                // 海适应
@@ -166,6 +170,11 @@ data = parse(raw, extra=HALF_TEXT_EXTRA, trans=my_trans)
             "rname": "ｶﾞﾝﾀﾞﾑ",       # str（已解码）
             "code": 0,
             "type": 1,
+            "rcls": 1,               # bit0 单位类别：0=超级系, 1=真实系
+            "uval": 0,               # bits1-2 单位价值：0=普通, 1=中等, 2=高
+            "unknown5": 0,           # bits3-7 原 unknown5 高 5 位
+            "u6_flag": 0,            # bit0 用途不明
+            "tech": 1,               # bits1-2 科技分类：0=超科技, 1=工程学, 2=灵力
             "weapons": [
                 {"wname": "ﾊﾞﾙｶﾝ", "damage": 800, ...},
                 ...

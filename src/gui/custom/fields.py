@@ -77,6 +77,9 @@ class FieldMapping(QObject):
             self.tr("Size"): "size",  # 体积 / サイズ
             self.tr("Parts slot"): "slot",  # 零件插槽 / パーツスロット
             self.tr("Series"): "series",  # 换乘系 / のりかえ系
+            self.tr("Unit Class"): "rcls",  # 单位类别 / ユニット分類 ：0=超级系, 1=真实系
+            self.tr("Unit Value"): "uval",  # 单位价值 / ユニット価値 ：0=普通, 1=中等, 2=高
+            self.tr("Tech Type"): "tech",  # 科技分类 / テック分類 ：0=超科技, 1=工程学, 2=灵力
             self.tr("Abilities"): "abi",  # 特殊能力 / 特殊能力
             self.tr("Repair cost"): "rep",  # 修理费 / 修理費
             self.tr("Cost"): "cost",  # 资金 / 資金

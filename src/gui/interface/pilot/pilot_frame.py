@@ -110,6 +110,9 @@ class PilotFrame(ProxyFrame):
 
         layout.addWidget(self._right_panel)
 
+        # 水平撑开 — 把表格 + 面板推到左侧
+        layout.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum))
+
         # ========== 卡片列表（统一 translateUI / resetUI） ==========
 
         self._cards = [

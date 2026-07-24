@@ -1,0 +1,1 @@
+.venv\Scripts\pythonw -B script\main.pyc

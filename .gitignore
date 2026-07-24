@@ -6,8 +6,10 @@ config.json
 cache/
 cache.xml
 CLAUDE.md
+dist/
 
 # Python C extension build artifacts
-build/
+src/core/*/build/
 *.pyd
 *.pyc
+*.zip

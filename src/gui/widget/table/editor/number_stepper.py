@@ -13,8 +13,8 @@ from typing import Any, cast
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
-from qfluentwidgets import SpinBox, isDarkTheme, setCustomStyleSheet
-import traceback
+from qfluentwidgets import FluentStyleSheet, isDarkTheme
+from gui.widget.abstract.spin_box_shim import SpinBox
 
 from .cell_editor import CellEditor
 
@@ -95,7 +95,6 @@ class CellNumberStepper(SpinBox, CellEditor):
             read_only: 文本框是否只读（仅按钮步进），False 时可键盘输入
             parent: 父 QWidget
         """
-        print("[DEBUG] CellNumberStepper.__init__ start", flush=True)
         self._min: int = 0
         self._max: int = 9999
         if value_range is not None:
@@ -103,37 +102,22 @@ class CellNumberStepper(SpinBox, CellEditor):
 
         self._show_sign = show_sign
         self._show_buttons = show_buttons
-        self._read_only = read_only if show_buttons else False
+        self._read_only = read_only if show_buttons else False  # 无按钮时只能靠键盘输入
 
-        # 走 QSpinBox.init 跳过 SpinBoxBase/InlineSpinBoxBase，避免 hBoxLayout 冲突
-        print("[DEBUG] before QSpinBox.__init__ (skip SpinBoxBase)", flush=True)
         QSpinBox.__init__(self, parent)
-        print("[DEBUG] after QSpinBox.__init__", flush=True)
-
-        print("[DEBUG] before CellEditor.__init__", flush=True)
         CellEditor.__init__(self, parent)
-        print("[DEBUG] after CellEditor.__init__", flush=True)
 
-        # SpinBox 在 MRO 中 → QSS 选择器匹配，setCustomStyleSheet 自动响应主题变更
-        print("[DEBUG] applying setCustomStyleSheet", flush=True)
-        setCustomStyleSheet(self,
-            "SpinBox { color: black; }",
-            "SpinBox { color: white; }")
-        print("[DEBUG] setCustomStyleSheet done", flush=True)
+        # 空壳 SpinBox 在 MRO 中 → QSS SpinBox 选择器匹配 → 主题颜色自动生效
+        FluentStyleSheet.SPIN_BOX.apply(self)
 
-        print("[DEBUG] basic style setup", flush=True)
-        try:
-            self.setFrame(False)
-            self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
-            self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
-            self.setButtonSymbols(QSpinBox.ButtonSymbols.NoButtons)
-            self.setFixedHeight(28)
-            self.setRange(self._min, self._max)
-            print("[DEBUG] basic style done", flush=True)
-        except Exception:
-            traceback.print_exc()
-            print("[DEBUG] basic style RAISED", flush=True)
-            raise
+        # ========== 基础样式 ==========
+
+        self.setFrame(False)
+        self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
+        self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
+        self.setButtonSymbols(QSpinBox.ButtonSymbols.NoButtons)
+        self.setFixedHeight(28)
+        self.setRange(self._min, self._max)
 
         # ========== 行编辑：透明 ==========
 
@@ -160,48 +144,6 @@ class CellNumberStepper(SpinBox, CellEditor):
         # ========== 信号 ==========
 
         self.valueChanged.connect(self._on_value_changed)
-
-        print("[DEBUG] CellNumberStepper.__init__ end", flush=True)
-
-    def setSymbolVisible(self, isVisible: bool):
-        """拦截 InlineSpinBoxBase 的按钮访问"""
-        print("[DEBUG] setSymbolVisible(%s) called" % isVisible, flush=True)
-        traceback.print_stack()
-        from PySide6.QtWidgets import QApplication
-        self.setProperty("symbolVisible", isVisible)
-        self.setStyle(QApplication.style())
-
-    def event(self, e):
-        print("[DEBUG] event type=%s" % e.type(), flush=True)
-        try:
-            return super().event(e)
-        except Exception:
-            traceback.print_exc()
-            print("[DEBUG] event CRASHED type=%s" % e.type(), flush=True)
-            raise
-
-    def resizeEvent(self, e):
-        print("[DEBUG] resizeEvent", flush=True)
-        try:
-            super().resizeEvent(e)
-        except Exception:
-            traceback.print_exc()
-            print("[DEBUG] resizeEvent CRASHED", flush=True)
-            raise
-
-    def paintEvent(self, e):
-        print("[DEBUG] paintEvent", flush=True)
-        try:
-            super().paintEvent(e)
-        except Exception:
-            traceback.print_exc()
-            print("[DEBUG] paintEvent CRASHED", flush=True)
-            raise
-
-    def setReadOnly(self, r):
-        print("[DEBUG] setReadOnly(%s)" % r, flush=True)
-        traceback.print_stack()
-        return QSpinBox.setReadOnly(self, r)
 
     # ========== 显示格式 ==========
 

@@ -1,5 +1,5 @@
 """
-映射微调框 — 继承 QSpinBox + CellEditor，透明背景，左减右加按钮布局
+映射微调框 — 继承 SpinBox + CellEditor，透明背景，左减右加按钮布局
 
 通过 mapping 字典实现 数字 ↔ 显示文本 的转换。
 步进时仅在 mapping 的有效 key 范围内循环。
@@ -14,7 +14,8 @@ from typing import Any, cast
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
-from qfluentwidgets import isDarkTheme, setCustomStyleSheet
+from qfluentwidgets import FluentStyleSheet, isDarkTheme
+from gui.widget.abstract.spin_box_shim import SpinBox
 
 from .cell_editor import CellEditor
 
@@ -78,7 +79,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class CellMappingStepper(QSpinBox, CellEditor):
+class CellMappingStepper(SpinBox, CellEditor):
     """映射微调框 — 透明背景，左右按钮（可选），数值居中
 
     左侧步进-（左三角）、中间数值（居中）、右侧步进+（右三角）。
@@ -106,10 +107,8 @@ class CellMappingStepper(QSpinBox, CellEditor):
         QSpinBox.__init__(self, parent)
         CellEditor.__init__(self, parent)
 
-        # 手动应用 QSS（QSpinBox 选择器 + 仅设文字颜色，其余由 lineEdit 透明化处理）
-        setCustomStyleSheet(self,
-            "QSpinBox { color: black; }",
-            "QSpinBox { color: white; }")
+        # 空壳 SpinBox 在 MRO 中 → QSS SpinBox 选择器匹配 → 主题颜色自动生效
+        FluentStyleSheet.SPIN_BOX.apply(self)
 
         # ========== 基础样式 ==========
 

@@ -49,14 +49,14 @@ class WeaponAdaptCard(CardHeader):
         _grid = QGridLayout()
         _grid.setSpacing(4)
         _grid.setHorizontalSpacing(10)
-        for i, (label, spin) in enumerate([
-            (self._air_label, self._air_spin),
-            (self._grd_label, self._grd_spin),
-            (self._wtr_label, self._wtr_spin),
-            (self._spc_label, self._spc_spin),
-        ]):
-            _grid.addWidget(label, i, 0, Qt.AlignmentFlag.AlignCenter)
-            _grid.addWidget(spin, i, 1, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._air_label, 0, 0, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._air_spin, 0, 1, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._grd_label, 1, 0, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._grd_spin, 1, 1, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._wtr_label, 2, 0, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._wtr_spin, 2, 1, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._spc_label, 3, 0, Qt.AlignmentFlag.AlignCenter)
+        _grid.addWidget(self._spc_spin, 3, 1, Qt.AlignmentFlag.AlignCenter)
         self.viewLayout.addLayout(_grid)
         self.viewLayout.addStretch()
 
@@ -79,3 +79,7 @@ class WeaponAdaptCard(CardHeader):
         setFont(self.headerLabel, 15, QFont.Weight.DemiBold)
         for label in [self._air_label, self._grd_label, self._wtr_label, self._spc_label]:
             setFont(label)
+        self._air_spin.resetUI()
+        self._grd_spin.resetUI()
+        self._wtr_spin.resetUI()
+        self._spc_spin.resetUI()

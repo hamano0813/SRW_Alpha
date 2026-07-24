@@ -138,11 +138,15 @@ class CellMappingStepper(SpinBox, CellEditor):
         le.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         if self._show_buttons:
             le.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            le.setStyleSheet("background: transparent; border: none;")
+            setCustomStyleSheet(le,
+                "background: transparent; border: none; color: #000000;",
+                "background: transparent; border: none; color: #FFFFFF;")
             le.selectionChanged.connect(lambda: le.setSelection(0, 0))
         else:
             le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-            le.setStyleSheet("background: transparent; border: none; ")
+            setCustomStyleSheet(le,
+                "background: transparent; border: none; color: #000000;",
+                "background: transparent; border: none; color: #FFFFFF;")
 
         # ========== 左右按钮（手动定位） ==========
 

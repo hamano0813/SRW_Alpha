@@ -154,8 +154,8 @@ class VerticalSpinBox(SpinBox):
 
         setCustomStyleSheet(
             self,
-            "SpinBox { padding: 0px 0px 0 10px; }",
-            "SpinBox { padding: 0px 0px 0 10px; }",
+            "SpinBox { padding: 0px; }",
+            "SpinBox { padding: 0px; }",
         )
 
     def eventFilter(self, obj, e):
@@ -200,6 +200,6 @@ class VerticalSpinBox(SpinBox):
         setFont(self.lineEdit())
         setCustomStyleSheet(
             self,
-            "SpinBox { padding: 0px 0px 0 10px; }",
-            "SpinBox { padding: 0px 0px 0 10px; }",
+            "SpinBox { padding: 0px; }",
+            "SpinBox { padding: 0px; }",
         )

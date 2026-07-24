@@ -137,10 +137,14 @@ class CellNumberStepper(SpinBox, CellEditor):
         # 有按钮时居中（与左右按钮对称），无按钮时右对齐
         if self._show_buttons:
             le.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            le.setStyleSheet("background: transparent; border: none; padding-right: 1px; ")
+            setCustomStyleSheet(le,
+                "background: transparent; border: none; padding-right: 1px; color: #000000;",
+                "background: transparent; border: none; padding-right: 1px; color: #FFFFFF;")
         else:
             le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-            le.setStyleSheet("background: transparent; border: none; ")
+            setCustomStyleSheet(le,
+                "background: transparent; border: none; color: #000000;",
+                "background: transparent; border: none; color: #FFFFFF;")
         if self._show_buttons:
             # 按钮模式（只读）：禁止文字选中
             le.selectionChanged.connect(lambda: le.setSelection(0, 0))

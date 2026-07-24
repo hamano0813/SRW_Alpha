@@ -1,29 +1,26 @@
 """
 映射微调框 - 数值与文本映射单选
 
-通过 mapping 字典实现 数值 ↔ 显示文本 的转换。
+直接继承 VerticalSpinBox，无 QWidget 壳。
+通过 mapping 字典实现 数值 ↔ 显示文本 的转换，
 步进时仅在 mapping 的有效 key 范围内循环。
-内嵌 VerticalSpinBox，纯信号槽收发。
 
 Classes:
     CommonMappingSpin: 映射微调框
 """
 
-from PySide6.QtCore import Signal
+from PySide6.QtCore import QEvent, Qt
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QVBoxLayout, QWidget
 
 from gui.widget.abstract import VerticalSpinBox
 
 
-class CommonMappingSpin(QWidget):
+class CommonMappingSpin(VerticalSpinBox):
     """映射微调框 - 数值与文本映射单选
 
-    步进仅在 mapping 的有效 key 范围内循环。
-    编辑后发射 valueChanged(int)，外部通过 set_value 控制显示。
+    直接继承 VerticalSpinBox，使用 editable=True（与 CommonNumberSpin 一致），
+    通过 eventFilter 拦截键盘输入替代 read-only，避免触发 SpinBox:read-only QSS。
     """
-
-    valueChanged = Signal(int)
 
     def __init__(self, mapping: dict[int, str] | None = None, parent=None):
         """初始化映射微调框
@@ -32,34 +29,44 @@ class CommonMappingSpin(QWidget):
             mapping: {数值: 显示文本} 字典
             parent:  父 QWidget
         """
-        super().__init__(parent)
+        super().__init__(parent, editable=True)
+
+        # 禁止用户直接输入（仅按钮步进）
+        le = self.lineEdit()
+        le.setReadOnly(True)
+        le.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        le.setCursor(Qt.CursorShape.ArrowCursor)
+        le.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
+        le.installEventFilter(self)
 
         self._map_mapping: dict[int, str] = mapping or {}
         self._sorted_keys: list[int] = sorted(self._map_mapping.keys())
         self._current_value: int = 0
 
-        # ========== 内嵌微调框 ==========
-
-        self._spin = _ProxySpin(self._map_mapping, self._sorted_keys, self)
         if self._sorted_keys:
-            self._spin.setRange(self._sorted_keys[0], self._sorted_keys[-1])
-        self._spin.valueChanged.connect(self._on_value_changed)
+            self.setRange(self._sorted_keys[0], self._sorted_keys[-1])
 
-        # ========== 布局 ==========
+        self.valueChanged.connect(self._on_value_changed)
 
-        layout = QVBoxLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._spin)
+    # ========== 键盘拦截 ==========
+
+    def eventFilter(self, obj, e):
+        """阻止键盘直接编辑，仅允许按钮步进"""
+        if obj == self.lineEdit():
+            t = e.type()
+            if t in (QEvent.Type.KeyPress, QEvent.Type.KeyRelease,
+                     QEvent.Type.InputMethod, QEvent.Type.ShortcutOverride):
+                return True
+        return super().eventFilter(obj, e)
 
     # ========== 数据接口 ==========
 
     def set_value(self, value: int) -> None:
         """设置当前值并刷新显示"""
         self._current_value = value
-        self._spin.blockSignals(True)
-        self._spin.setValue(int(value))
-        self._spin.blockSignals(False)
-        self._adjust_zero_margin()
+        self.blockSignals(True)
+        self.setValue(int(value))
+        self.blockSignals(False)
 
     def value(self) -> int:
         """获取当前值"""
@@ -77,68 +84,13 @@ class CommonMappingSpin(QWidget):
         self._map_mapping = mapping
         self._sorted_keys = sorted(self._map_mapping.keys())
         if self._sorted_keys:
-            self._spin.setRange(self._sorted_keys[0], self._sorted_keys[-1])
-        self._spin.set_mapping(mapping, self._sorted_keys)
-        # 恢复选中值
+            self.setRange(self._sorted_keys[0], self._sorted_keys[-1])
         if old_value in self._sorted_keys:
-            self._spin.blockSignals(True)
-            self._spin.setValue(old_value)
-            self._spin.blockSignals(False)
+            self.blockSignals(True)
+            self.setValue(old_value)
+            self.blockSignals(False)
 
-    # ========== 字体 ==========
-
-    def apply_font(self, font: QFont | dict) -> None:
-        """设置编辑器字体"""
-        if isinstance(font, dict):
-            qfont = QFont()
-            family = font.get("family")
-            size = font.get("size")
-            weight = font.get("weight")
-            italic = font.get("italic")
-            if family:
-                qfont.setFamily(family)
-            if size:
-                qfont.setPixelSize(size)
-            if weight:
-                qfont.setWeight(weight)
-            if italic:
-                qfont.setItalic(italic)
-            font = qfont
-        self._spin.setFont(font)
-
-    def resetUI(self) -> None:
-        """从全局配置刷新字体"""
-        self._spin.resetUI()
-
-    # ========== 内部槽 ==========
-
-    def _adjust_zero_margin(self) -> None:
-        """值为 0 时右缩进收窄 4px，使 '－' 符号视觉居中"""
-        le = self._spin.lineEdit()
-        if self._current_value == 0:
-            le.setTextMargins(0, 0, 18, 0)
-        else:
-            le.setTextMargins(0, 0, 21, 0)
-
-    def _on_value_changed(self, value: int) -> None:
-        """值改变时更新内部状态并发射信号"""
-        self._current_value = value
-        self._adjust_zero_margin()
-        self.valueChanged.emit(value)
-
-
-class _ProxySpin(VerticalSpinBox):
-    """映射步进微调框 - 代理 VerticalSpinBox 的 textFromValue / stepBy"""
-
-    def __init__(self, mapping: dict[int, str], sorted_keys: list[int], parent=None):
-        super().__init__(parent, editable=False)
-        self._map_mapping = mapping
-        self._sorted_keys = sorted_keys
-
-    def set_mapping(self, mapping: dict[int, str], sorted_keys: list[int]) -> None:
-        """更新映射表"""
-        self._map_mapping = mapping
-        self._sorted_keys = sorted_keys
+    # ========== 显示格式 ==========
 
     def textFromValue(self, value: int) -> str:
         """数值 → 显示文本"""
@@ -163,3 +115,34 @@ class _ProxySpin(VerticalSpinBox):
             idx = 0
         new_idx = max(0, min(len(self._sorted_keys) - 1, idx + steps))
         self.setValue(self._sorted_keys[new_idx])
+
+    # ========== 字体 ==========
+
+    def apply_font(self, font: QFont | dict) -> None:
+        """设置编辑器字体"""
+        if isinstance(font, dict):
+            qfont = QFont()
+            family = font.get("family")
+            size = font.get("size")
+            weight = font.get("weight")
+            italic = font.get("italic")
+            if family:
+                qfont.setFamily(family)
+            if size:
+                qfont.setPixelSize(size)
+            if weight:
+                qfont.setWeight(weight)
+            if italic:
+                qfont.setItalic(italic)
+            font = qfont
+        self.setFont(font)
+
+    def resetUI(self) -> None:
+        """从全局配置刷新字体"""
+        super().resetUI()
+
+    # ========== 内部 ==========
+
+    def _on_value_changed(self, value: int) -> None:
+        """值改变时更新内部状态"""
+        self._current_value = value

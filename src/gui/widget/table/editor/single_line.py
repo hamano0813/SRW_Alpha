@@ -12,17 +12,17 @@ Classes:
 from typing import Any
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QColor, QFont
+from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QLineEdit
-from qfluentwidgets import isDarkTheme
+from qfluentwidgets import setCustomStyleSheet
 
 from .cell_editor import CellEditor
 
 
 class CellSingleLine(QLineEdit, CellEditor):
-    """表格编辑器 — 透明背景 + 纯文字绘制 + CellEditor 数据协议
+    """表格编辑器 — 透明背景 + CellEditor 数据协议
 
-    无边框、无焦点指示线，仅通过 palette 控制文字颜色。
+    无边框、无焦点指示线，文字颜色由 setCustomStyleSheet 跟随主题切换。
     获得焦点时光标自动定位到末尾。
     """
 
@@ -38,7 +38,11 @@ class CellSingleLine(QLineEdit, CellEditor):
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
         self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
-        self.setStyleSheet("background: transparent;")
+
+        # QSS color 控制文字和光标颜色，setCustomStyleSheet 自动跟随主题
+        setCustomStyleSheet(self,
+            "background: transparent; color: #000000;",
+            "background: transparent; color: #FFFFFF;")
 
         self.textChanged.connect(self._on_text_changed)
 
@@ -50,25 +54,6 @@ class CellSingleLine(QLineEdit, CellEditor):
         """
         super().focusInEvent(e)
         self.setCursorPosition(len(self.text()))
-
-    # ========== 主题色 ==========
-
-    def _text_color(self) -> QColor:
-        """根据当前主题返回对应的文字颜色"""
-        return QColor(255, 255, 255) if isDarkTheme() else QColor(0, 0, 0)
-
-    # ========== 绘制 ==========
-
-    def paintEvent(self, e):
-        """仅设置文字颜色，由 QLineEdit 完成透明背景绘制
-
-        Args:
-            e: 绘制事件
-        """
-        palette = self.palette()
-        palette.setColor(palette.ColorRole.Text, self._text_color())
-        self.setPalette(palette)
-        QLineEdit.paintEvent(self, e)
 
     # ========== CellEditor 数据协议 ==========
 

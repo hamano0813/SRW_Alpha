@@ -1,27 +1,24 @@
 """
 数值微调框 - 在指定范围内步进
 
-内嵌 VerticalSpinBox，使用 FluentIcon 箭头直接步进，无 flyout。
-纯信号槽收发，不感知 model。
+直接继承 VerticalSpinBox，无 QWidget 壳。
+使用 FluentIcon 箭头直接步进，无 flyout。
 
 Classes:
     CommonNumberSpin: 数值微调框
 """
 
-from PySide6.QtCore import Signal
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QVBoxLayout, QWidget
 
 from gui.widget.abstract import VerticalSpinBox
 
 
-class CommonNumberSpin(QWidget):
+class CommonNumberSpin(VerticalSpinBox):
     """数值微调框 - 在 [min, max] 范围内步进
 
-    编辑后发射 valueChanged(int)，外部通过 set_value 控制显示。
+    直接继承 VerticalSpinBox，编辑后发射 valueChanged(int)，
+    外部通过 set_value 控制显示。
     """
-
-    valueChanged = Signal(int)
 
     def __init__(self, value_range: tuple[int, int] | None = None,
                  show_sign: bool = False, editable: bool = True, parent=None):
@@ -33,39 +30,38 @@ class CommonNumberSpin(QWidget):
             editable:    是否允许键盘输入
             parent:      父 QWidget
         """
-        super().__init__(parent)
+        super().__init__(parent, editable=editable)
 
         min_val, max_val = value_range or (0, 9999)
+        self._show_sign = show_sign
 
-        # ========== 内嵌微调框 ==========
-
-        self._spin = _ProxySpin(min_val, max_val, show_sign, editable, self)
-        self._spin.setRange(min_val, max_val)
-        self._spin.valueChanged.connect(self.valueChanged)
-
-        # ========== 布局 ==========
-
-        layout = QVBoxLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._spin)
+        self.setRange(min_val, max_val)
 
     # ========== 数据接口 ==========
 
     def set_value(self, value: int) -> None:
         """设置当前值并刷新显示"""
-        self._spin.blockSignals(True)
-        self._spin.setValue(int(value))
-        self._spin.blockSignals(False)
+        self.blockSignals(True)
+        self.setValue(int(value))
+        self.blockSignals(False)
 
     def value(self) -> int:
         """获取当前值"""
-        return self._spin.value()
+        return super().value()
 
     # ========== 取值范围 ==========
 
     def set_range(self, min_val: int, max_val: int) -> None:
         """更新取值范围"""
-        self._spin.setRange(min_val, max_val)
+        self.setRange(min_val, max_val)
+
+    # ========== 显示格式 ==========
+
+    def textFromValue(self, value: int) -> str:
+        """数值 → 显示文本，show_sign 时正值显示 +N"""
+        if self._show_sign and value >= 0:
+            return f"+{value}"
+        return str(value)
 
     # ========== 字体 ==========
 
@@ -86,22 +82,8 @@ class CommonNumberSpin(QWidget):
             if italic:
                 qfont.setItalic(italic)
             font = qfont
-        self._spin.setFont(font)
+        self.setFont(font)
 
     def resetUI(self) -> None:
         """从全局配置刷新字体"""
-        self._spin.resetUI()
-
-
-class _ProxySpin(VerticalSpinBox):
-    """数值步进微调框 - 代理 VerticalSpinBox，添加符号显示"""
-
-    def __init__(self, min_val: int, max_val: int, show_sign: bool, editable: bool, parent=None):
-        super().__init__(parent, editable=editable)
-        self._show_sign = show_sign
-
-    def textFromValue(self, value: int) -> str:
-        """数值 → 显示文本，show_sign 时正值显示 +N"""
-        if self._show_sign and value >= 0:
-            return f"+{value}"
-        return str(value)
+        super().resetUI()

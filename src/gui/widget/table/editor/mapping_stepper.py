@@ -13,7 +13,7 @@ from typing import Any, cast
 
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
-from PySide6.QtWidgets import QSpinBox, QToolButton
+from PySide6.QtWidgets import QApplication, QSpinBox, QToolButton
 from qfluentwidgets import FluentStyleSheet, SpinBox, isDarkTheme
 
 from .cell_editor import CellEditor
@@ -143,6 +143,13 @@ class CellMappingStepper(SpinBox, CellEditor):
         # ========== 信号 ==========
 
         self.valueChanged.connect(self._on_value_changed)
+
+    # ========== MRO 安全重写 ==========
+
+    def setSymbolVisible(self, isVisible: bool):
+        """跳过 InlineSpinBoxBase，不访问已删除的 upButton/downButton"""
+        self.setProperty("symbolVisible", isVisible)
+        self.setStyle(QApplication.style())
 
     def resizeEvent(self, e):
         """手动定位左右按钮

@@ -111,9 +111,13 @@ class CellMappingStepper(SpinBox, CellEditor):
         FluentStyleSheet.SPIN_BOX.apply(self)
         setCustomStyleSheet(self,
             "SpinBox { padding: 0px; border: none; border-radius: 0px; background: transparent; }"
-            "SpinBox:hover { background: transparent; }",
+            "SpinBox:hover { border: none; background: transparent; }"
+            "SpinBox:focus { border: none; background: transparent; }"
+            "SpinBox:focus:hover { border: none; background: transparent; }",
             "SpinBox { padding: 0px; border: none; border-radius: 0px; background: transparent; }"
-            "SpinBox:hover { background: transparent; }")
+            "SpinBox:hover { border: none; background: transparent; }"
+            "SpinBox:focus { border: none; background: transparent; }"
+            "SpinBox:focus:hover { border: none; background: transparent; }")
 
         # ========== 基础样式 ==========
 

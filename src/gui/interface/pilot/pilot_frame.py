@@ -5,12 +5,11 @@
 左侧为驾驶员列表表格，右侧为各属性编辑卡片。
 
 Classes:
-    PilotFrame: 驾驶员编辑框架（可平滑滚动）
+    PilotFrame: 驾驶员编辑框架
 """
 
-from PySide6.QtCore import Qt, QTimer
-from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QHeaderView, QSpacerItem, QSizePolicy, QVBoxLayout
-from qfluentwidgets import SmoothScrollArea
+from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QHeaderView, QSpacerItem, QSizePolicy
 
 from gui.custom import JP_FONT
 from gui.widget import (
@@ -30,8 +29,8 @@ from gui.interface.pilot.cards import (
 )
 
 
-class PilotFrame(SmoothScrollArea):
-    """驾驶员编辑框架 - 驾驶员表格 + 编辑卡片联动（可平滑滚动）"""
+class PilotFrame(ProxyFrame):
+    """驾驶员编辑框架 - 驾驶员表格 + 编辑卡片联动"""
 
     def __init__(
         self,
@@ -46,19 +45,13 @@ class PilotFrame(SmoothScrollArea):
         """
         super().__init__(parent)
         self.setObjectName("PilotFrame")
-        self.setWidgetResizable(False)
-        self.enableTransparentBackground()
 
         self._rom_data: dict | None = None
         self._current_source_row: int = -1
 
-        # ========== 容器（水平布局：驾驶员表格 | 右侧卡片） ==========
+        # ========== 水平布局：驾驶员表格 | 右侧卡片 ==========
 
-        self._container = ProxyFrame()
-        self._container.resize(800, 32)
-        self.setWidget(self._container)
-
-        layout = QHBoxLayout(self._container)
+        layout = QHBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         layout.setSpacing(0)
 
@@ -70,7 +63,8 @@ class PilotFrame(SmoothScrollArea):
 
         # ===== 右侧：编辑卡片 =====
 
-        self._right_panel = ProxyFrame(self._container)
+        self._right_panel = ProxyFrame(self)
+        self._right_panel.setFixedWidth(662)
         cards_grid = QGridLayout(self._right_panel)
         cards_grid.setSpacing(8)
         cards_grid.setContentsMargins(8, 8, 8, 8)
@@ -115,8 +109,6 @@ class PilotFrame(SmoothScrollArea):
         cards_grid.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding), 8, 5)
 
         layout.addWidget(self._right_panel)
-
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
         # ========== 卡片列表（统一 translateUI / resetUI） ==========
 
@@ -191,31 +183,6 @@ class PilotFrame(SmoothScrollArea):
         if self._pilot_view.column_widths:
             self._pilot_view.set_column_width(self._pilot_view.column_widths)
 
-    # ========== 全局定位 ==========
-
-    def _update_layout(self):
-        """根据面板可见性调整容器尺寸"""
-        vp_w = self.viewport().width()
-        vp_h = self.viewport().height()
-        if vp_w <= 0 or vp_h <= 0:
-            win = self.window()
-            if win and win.isVisible():
-                vp_w = win.width() - 100
-                vp_h = win.height() - 100
-                if vp_w <= 0:
-                    vp_w = 1000
-                if vp_h <= 0:
-                    vp_h = 600
-            else:
-                return
-
-        self._container.resize(vp_w, vp_h)
-
-    def resizeEvent(self, event):
-        """窗口缩放后刷新布局"""
-        super().resizeEvent(event)
-        QTimer.singleShot(0, self._update_layout)
-
     # ========== 行点击 ==========
 
     def _on_row_clicked(self, source_row: int, model: BaseTableModel) -> None:
@@ -268,22 +235,18 @@ class PilotFrame(SmoothScrollArea):
             self._pilot_view.selectRow(0)
             self._on_row_clicked(0, model)
 
-        self._update_layout()
-
     # ========== 主题与翻译 ==========
 
     def resetUI(self):
-        """刷新所有子控件并更新布局"""
-        self._container.resetUI()
+        """刷新所有子控件"""
+        super().resetUI()
         for card in self._cards:
             card.resetUI()
-        self._update_layout()
 
     def translateUI(self):
-        """刷新所有子控件翻译并更新布局"""
-        self._container.translateUI()
+        """刷新所有子控件翻译"""
+        super().translateUI()
         self._translate_pilot_headers()
         self._spirits_card.setTitle(self.tr("Spirit commands"))
         for card in self._cards:
             card.translateUI()
-        self._update_layout()

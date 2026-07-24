@@ -39,7 +39,7 @@ typedef struct {
     uint8_t  sp;                 /* 0x66 ＳＰ */
     uint8_t  daction;            /* 0x67 ２回行动 */
     uint16_t skls;               /* 0x68 特殊技能（位域） */
-    uint8_t  nature;             /* 0x6A 性格 */
+    uint8_t  pers;               /* 0x6A 性格 / Personality */
     uint8_t  fsg;                /* 0x6B 气力组 */
     uint8_t  air;                /* 0x6C 空适应 */
     uint8_t  grd;                /* 0x6D 陆适应 */
@@ -142,7 +142,7 @@ data = parse(raw, extra=HALF_TEXT_EXTRA, trans=my_trans)
             "hit": 168, "rxn": 158, "skl": 168,
             "sp": 70, "daction": 62,
             "skls": 4,                     # uint16 位域
-            "nature": 2, "fsg": 0,
+            "pers": 2, "fsg": 0,
             "air": 4, "grd": 4, "wtr": 2, "spc": 4,
             "spi": [18, 9, 20, 0, 19, 14],    # 精神列表（6 个）
             "spl": [1, 8, 23, 30, 39, 55],    # 习得等级（6 个）

@@ -79,18 +79,14 @@ class PilotFrame(SmoothScrollArea):
 
         self._detail_card = PilotDetailCard(self._right_panel)
         self._detail_card.set_model(_model)
+        self._detail_card.panelDataChanged.connect(self._on_panel_data_changed)
         cards_layout.addWidget(self._detail_card)
 
         self._spirits_card = SpiritsEditor(self._right_panel)
-        self._spirits_card.setTitle(self.tr("Spirits"))
+        self._spirits_card.setTitle(self.tr("Spirit commands"))
         self._spirits_card.set_model(_model)
         self._spirits_card.panelDataChanged.connect(self._on_panel_data_changed)
         cards_layout.addWidget(self._spirits_card)
-
-        self._terrain_card = TerrainCard(self._right_panel)
-        self._terrain_card.set_model(_model)
-        self._terrain_card.panelDataChanged.connect(self._on_panel_data_changed)
-        cards_layout.addWidget(self._terrain_card)
 
         # 特殊技能 + 系列 并排一行（系列在右）
         self._skills_row_layout = QHBoxLayout()
@@ -112,6 +108,11 @@ class PilotFrame(SmoothScrollArea):
         self._upgraded_card.set_model(_model)
         cards_layout.addWidget(self._upgraded_card)
 
+        self._terrain_card = TerrainCard(self._right_panel)
+        self._terrain_card.set_model(_model)
+        self._terrain_card.panelDataChanged.connect(self._on_panel_data_changed)
+        cards_layout.addWidget(self._terrain_card)
+
         cards_layout.addStretch()
 
         layout.addWidget(self._right_panel)
@@ -125,10 +126,10 @@ class PilotFrame(SmoothScrollArea):
         self._cards = [
             self._detail_card,
             self._spirits_card,
-            self._terrain_card,
             self._series_card,
             self._skills_card,
             self._upgraded_card,
+            self._terrain_card,
         ]
 
         self._pilot_view.sClicked.connect(self._on_row_clicked)
@@ -290,6 +291,7 @@ class PilotFrame(SmoothScrollArea):
         """刷新所有子控件翻译并更新布局"""
         self._container.translateUI()
         self._translate_pilot_headers()
+        self._spirits_card.setTitle(self.tr("Spirit commands"))
         for card in self._cards:
             card.translateUI()
         self._update_layout()

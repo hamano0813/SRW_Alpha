@@ -149,7 +149,7 @@ class FieldMapping(QObject):
             self.tr("SP"): "sp",  # SP / SP
             self.tr("Double action"): "daction",  # 2次行动 / 2回行動
             self.tr("Special skills"): "skls",  # 特殊技能 / 特殊技能
-            self.tr("Nature"): "nature",  # 性格 / 性格
+            self.tr("Personality"): "pers",  # 性格 / 性格
             self.tr("Friendship group"): "fsg",  # 气力组 / 気力グループ
             self.tr("Air"): "air",  # 空 / 空
             self.tr("Lnd"): "grd",  # 陆 / 陸

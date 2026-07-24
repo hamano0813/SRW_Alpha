@@ -106,6 +106,12 @@ class EnumData(QObject):
                 self.tr("Children"),  # EVA适格者 / サードチルドレン
                 self.tr("Fairy"),  # 妖精 / フェラリオ
             ],
+            "PERSONALITY": {
+                0x0: self.tr("Weak"),  # 弱气 / 弱気
+                0x1: self.tr("Normal"),  # 普通 / 普通
+                0x2: self.tr("Strong"),  # 强气 / 強気
+                0x3: self.tr("Super Strong"),  # 超强气 / 超強気
+            },
         }
         self.WEAPON = {
             "CLASS": {

@@ -84,7 +84,7 @@ typedef struct
     uint8_t sp;              /* 0x66 ＳＰ */
     uint8_t daction;         /* 0x67 ２回行动 */
     uint16_t skls;           /* 0x68 特殊技能 */
-    uint8_t nature;          /* 0x6A 性格 */
+    uint8_t pers;            /* 0x6A 性格 */
     uint8_t fsg;             /* 0x6B 气力组 */
     uint8_t air;             /* 0x6C 空适应 */
     uint8_t grd;             /* 0x6D 陆适应 */
@@ -298,7 +298,7 @@ pilot_bin_parse(PyObject *self, PyObject *args, PyObject *kwargs)
         PyDict_SetItemString(pd, "sp", PyLong_FromLong(p->sp));
         PyDict_SetItemString(pd, "daction", PyLong_FromLong(p->daction));
         PyDict_SetItemString(pd, "skls", PyLong_FromLong(p->skls));
-        PyDict_SetItemString(pd, "nature", PyLong_FromLong(p->nature));
+        PyDict_SetItemString(pd, "pers", PyLong_FromLong(p->pers));
         PyDict_SetItemString(pd, "fsg", PyLong_FromLong(p->fsg));
         PyDict_SetItemString(pd, "air", PyLong_FromLong(p->air));
         PyDict_SetItemString(pd, "grd", PyLong_FromLong(p->grd));
@@ -567,9 +567,9 @@ pilot_bin_build(PyObject *self, PyObject *args, PyObject *kwargs)
         pv = PyDict_GetItemString(pp, "skls");
         if (pv)
             p->skls = (uint16_t)PyLong_AsLong(pv);
-        pv = PyDict_GetItemString(pp, "nature");
+        pv = PyDict_GetItemString(pp, "pers");
         if (pv)
-            p->nature = (uint8_t)PyLong_AsLong(pv);
+            p->pers = (uint8_t)PyLong_AsLong(pv);
         pv = PyDict_GetItemString(pp, "fsg");
         if (pv)
             p->fsg = (uint8_t)PyLong_AsLong(pv);

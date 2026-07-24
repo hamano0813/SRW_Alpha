@@ -1,5 +1,0 @@
-PySide6
-pyqtdarktheme
-pillow
-pywin32
-pyinstaller

@@ -23,44 +23,44 @@
 ```c
 #pragma pack(1)
 typedef struct {
-    char     rname[26];          // 机体名（固定长度文本，掩码残影写入）
-    uint16_t code;               // 代码
-    uint8_t  type : 4;           // 移动类型
-    uint8_t  unknown1 : 4;
-    uint8_t  move;               // 移动力
-    uint16_t hp;
-    uint16_t en;
-    uint16_t mobility;           // 运动性
-    uint16_t armor;              // 装甲
-    uint16_t limit;              // 限界
-    uint8_t  size;               // 体积
-    uint8_t  slot;               // 芯片数
-    uint16_t series : 10;        // 换乘系
-    uint16_t unknown2 : 6;
-    uint32_t abi : 31;           // 特性
-    uint32_t unknown3 : 1;
-    uint16_t rep;                // 修理费
-    uint16_t cost;               // 资金
-    uint8_t  tgrp;               // 变形组号
-    uint8_t  tsn;                // 变形序号
-    uint8_t  cgrp;               // 合体组号
-    uint8_t  csn;                // 合体序号
-    uint16_t core;               // 核心机体
-    uint8_t  count;              // 合体数
-    uint8_t  option;             // 换装系统
-    uint8_t  bgm;                // 机体BGM
-    uint8_t  unknown4;
-    uint8_t  rcls : 1;           // bit0 单位类别：0=超级系, 1=真实系
-    uint8_t  uval : 2;           // bits1-2 单位价值：0=普通, 1=中等, 2=高
-    uint8_t  unknown5 : 5;       // bits3-7 原剩余位
-    uint8_t  u6_flag : 1;        // bit0 用途不明
-    uint8_t  tech : 2;           // bits1-2 科技分类：0=超科技, 1=工程学, 2=灵力
-    uint8_t  unknown6 : 5;       // bits3-7 剩余位
-    uint8_t  air;                // 空适应
-    uint8_t  grd;                // 陆适应
-    uint8_t  wtr;                // 海适应
-    uint8_t  spc;                // 宇适应
-    WEAPON   weapons[16];        // 武器列表
+    char     rname[26];          // 0x000 机体名（固定长度文本，掩码残影写入）
+    uint16_t code;               // 0x01A 代码
+    uint8_t  type : 4;           // 0x01C 移动类型
+    uint8_t  unknown1 : 4;       // 全部为 0，未使用
+    uint8_t  move;               // 0x01D 移动力
+    uint16_t hp;                 // 0x01E HP
+    uint16_t en;                 // 0x020 EN
+    uint16_t mobility;           // 0x022 运动性
+    uint16_t armor;              // 0x024 装甲
+    uint16_t limit;              // 0x026 限界
+    uint8_t  size;               // 0x028 体积
+    uint8_t  slot;               // 0x029 芯片数
+    uint16_t series : 10;        // 0x02A 换乘系
+    uint16_t unknown2 : 6;       // 全部为 0，未使用
+    uint32_t abi : 31;           // 0x02C 特性
+    uint32_t unknown3 : 1;       // 全部为 0，未使用
+    uint16_t rep;                // 0x030 修理费
+    uint16_t cost;               // 0x032 资金
+    uint8_t  tgrp;               // 0x034 变形组号
+    uint8_t  tsn;                // 0x035 变形序号
+    uint8_t  cgrp;               // 0x036 合体组号
+    uint8_t  csn;                // 0x037 合体序号
+    uint16_t core;               // 0x038 核心机体
+    uint8_t  count;              // 0x03A 合体数
+    uint8_t  option;             // 0x03B 换装系统
+    uint8_t  bgm;                // 0x03C 机体BGM
+    uint8_t  unknown4;           // 0x03D 全部为 0，未使用
+    uint8_t  rcls : 1;           // 0x03E bit0 单位类别：0=超级系(177台), 1=真实系(309台)
+    uint8_t  uval : 2;           // 0x03E bits1-2 单位价值：0=普通(226), 1=中等(152), 2=高(108)
+    uint8_t  unknown5 : 5;       // 0x03E bits3-7 全部为 0，未使用
+    uint8_t  u6_flag : 1;        // 0x03F bit0 用途不明（305台置位）
+    uint8_t  tech : 2;           // 0x03F bits1-2 科技分类：0=超科技(170), 1=工程学(286), 2=灵力(30)
+    uint8_t  unknown6 : 5;       // 0x03F bits3-7 全部为 0，未使用
+    uint8_t  air;                // 0x040 空适应
+    uint8_t  grd;                // 0x041 陆适应
+    uint8_t  wtr;                // 0x042 海适应
+    uint8_t  spc;                // 0x043 宇适应
+    WEAPON   weapons[16];        // 0x044 武器列表
 } ROBOT;
 #pragma pack()
 ```
@@ -70,33 +70,33 @@ typedef struct {
 ```c
 #pragma pack(1)
 typedef struct {
-    uint8_t  code : 4;
-    uint8_t  newtype : 2;
-    uint8_t  aura : 2;
-    uint8_t  morale;
-    uint8_t  custom : 2;
-    uint8_t  rngs : 2;
-    uint8_t  rngl : 4;
-    uint8_t  mcls : 2;
-    uint8_t  radius : 3;
-    uint8_t  unknown1 : 3;
-    uint16_t damage;
-    uint8_t  wclass : 1;
-    uint8_t  attr : 7;
-    uint8_t  unknown2 : 4;
-    uint8_t  bonus : 4;
-    char     wname[21];          // 武器名（固定长度文本，掩码残影写入）
-    uint8_t  mrng;               // 地图武器射程
-    uint8_t  mshow;              // 地图武器演出
-    uint8_t  encost;             // EN 消耗
-    int8_t   hitrate;            // 命中
-    int8_t   crt;                // CT
-    uint8_t  ammod;              // 初始弹数
-    uint8_t  ammom;              // 最大弹数
-    uint8_t  air;
-    uint8_t  grd;
-    uint8_t  wtr;
-    uint8_t  spc;
+    uint8_t  code : 4;           // 0x00 武器代码
+    uint8_t  newtype : 2;        // ニュータイプ等级
+    uint8_t  aura : 2;           // オーラ等级
+    uint8_t  morale;             // 0x01 必要气力
+    uint8_t  custom : 2;         // 0x02 改造区分
+    uint8_t  rngs : 2;           // 最小射程
+    uint8_t  rngl : 4;           // 最大射程
+    uint8_t  mcls : 2;           // 0x03 マップ武器类别
+    uint8_t  radius : 3;         // マップ半径
+    uint8_t  unknown1 : 3;       // 开发残留：W0=6, W2=1, W3-4=3, W5=5, W6=6
+    uint16_t damage;             // 0x04 攻击力
+    uint16_t wclass : 1;         // 0x06-0x07 bit0  武器分类
+    uint16_t attr : 8;           // bits1-8  属性（bit7=海战标记 Aqua，5件置位）
+    uint16_t unknown2 : 3;       // bits9-11  全部为 0，未使用
+    uint16_t bonus : 4;          // bits12-15  改造ボーナス
+    char     wname[21];          // 0x08 武器名（固定长度文本，掩码残影写入）
+    uint8_t  mrng;               // 0x1D 地图武器射程
+    uint8_t  mshow;              // 0x1E 地图武器演出
+    uint8_t  encost;             // 0x1F EN 消耗
+    int8_t   hitrate;            // 0x20 命中
+    int8_t   crt;                // 0x21 CT
+    uint8_t  ammod;              // 0x22 初始弹数
+    uint8_t  ammom;              // 0x23 最大弹数
+    uint8_t  air;                // 0x24 空适应
+    uint8_t  grd;                // 0x25 陆适应
+    uint8_t  wtr;                // 0x26 海适应
+    uint8_t  spc;                // 0x27 宇适应
 } WEAPON;
 #pragma pack()
 ```
@@ -224,3 +224,4 @@ python setup.py build_ext --inplace
 - CPython 开发头文件
 - [LZSS 模块](../lzss/README.md)（编译时静态链接 `lzss.c`）
 - [Codec 模块](../codec/README.md)（子模块模式 `#include "codec/codec.h"`）
+

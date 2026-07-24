@@ -46,10 +46,10 @@ typedef struct
     uint8_t radius : 3;          /* マップ半径 */
     uint8_t unknown1 : 3;
     uint16_t damage;             /* 0x04 攻击力 */
-    uint8_t wclass : 1;          /* 0x06 武器等级 */
-    uint8_t attr : 7;            /* 属性 */
-    uint8_t unknown2 : 4;        /* 0x07 */
-    uint8_t bonus : 4;           /* 改造ボーナス */
+    uint16_t wclass : 1;         /* 0x06-0x07 bit0 武器分类 */
+    uint16_t attr : 8;           /* 0x06-0x07 bits1-8 属性(含海战标记bit7) */
+    uint16_t unknown2 : 3;       /* 0x06-0x07 bits9-11 空白 */
+    uint16_t bonus : 4;          /* 0x06-0x07 bits12-15 改造ボーナス */
     char wname[WNAME_SIZE];      /* 0x08 武器名 */
     uint8_t mrng;                /* 0x1D マップ射程 */
     uint8_t mshow;               /* 0x1E マップ演出 */
@@ -866,10 +866,10 @@ robot_raf_build(PyObject *self, PyObject *args, PyObject *kwargs)
                     w->wclass = (uint8_t)PyLong_AsLong(wv);
                 wv = PyDict_GetItemString(pw, "attr");
                 if (wv)
-                    w->attr = (uint8_t)PyLong_AsLong(wv);
+                    w->attr = (uint16_t)PyLong_AsLong(wv);
                 wv = PyDict_GetItemString(pw, "unknown2");
                 if (wv)
-                    w->unknown2 = (uint8_t)PyLong_AsLong(wv);
+                    w->unknown2 = (uint16_t)(PyLong_AsLong(wv) & 7);
                 wv = PyDict_GetItemString(pw, "bonus");
                 if (wv)
                     w->bonus = (uint8_t)PyLong_AsLong(wv);

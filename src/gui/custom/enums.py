@@ -121,6 +121,7 @@ class EnumData(QObject):
                 self.tr("Bits"),  # 诱导兵器 / ビット
                 self.tr("Charge"),  # 突击 / 突貫
                 self.tr("IFF"),  # 敌我识别 / 敵味方識別
+                self.tr("Aqua"),  # 水中 / 水中
             ],
             "MCLASS": {
                 0x0: self.tr("——"),  # —— / ——

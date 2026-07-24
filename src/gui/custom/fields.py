@@ -113,7 +113,7 @@ class FieldMapping(QObject):
             self.tr("Target circle radius"): "radius",  # 着弹指定型半径 / 着弾指定型半径
             self.tr("Damage"): "damage",  # 攻击力 / 攻撃力
             self.tr("Class"): "class",  # 武器分类 / 武器分類
-            self.tr("Attribute"): "attr",  # 武器属性 / 武器属性
+            self.tr("Attribute"): "attr",  # 武器属性 / 武器属性（含海战标记bit7）
             self.tr("Custom bonus"): "bonus",  # 改造追加 / 改造ボーナス
             self.tr("Weapon name"): "wname",  # 武器名 / 武器名
             self.tr("Map weapon range"): "mrng",  # 方向指定型范围 / 方向指定型範囲

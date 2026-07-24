@@ -162,15 +162,15 @@ class FieldMapping(QObject):
         """PILOT.BIN 特殊技能数据结构字段"""
         mapping = {
             self.tr("Skill name"): "sname",  # 技能 / スキル
-            self.tr("Skill level1"): "l1",  # Lv1 / Lv1
-            self.tr("Skill level2"): "l2",  # Lv2 / Lv2
-            self.tr("Skill level3"): "l3",  # Lv3 / Lv3
-            self.tr("Skill level4"): "l4",  # Lv4 / Lv4
-            self.tr("Skill level5"): "l5",  # Lv5 / Lv5
-            self.tr("Skill level6"): "l6",  # Lv6 / Lv6
-            self.tr("Skill level7"): "l7",  # Lv7 / Lv7
-            self.tr("Skill level8"): "l8",  # Lv8 / Lv8
-            self.tr("Skill level9"): "l9",  # Lv9 / Lv9
+            self.tr("Lv1"): "l1",  # Lv1 / Lv1
+            self.tr("Lv2"): "l2",  # Lv2 / Lv2
+            self.tr("Lv3"): "l3",  # Lv3 / Lv3
+            self.tr("Lv4"): "l4",  # Lv4 / Lv4
+            self.tr("Lv5"): "l5",  # Lv5 / Lv5
+            self.tr("Lv6"): "l6",  # Lv6 / Lv6
+            self.tr("Lv7"): "l7",  # Lv7 / Lv7
+            self.tr("Lv8"): "l8",  # Lv8 / Lv8
+            self.tr("Lv9"): "l9",  # Lv9 / Lv9
         }
         return mapping
 

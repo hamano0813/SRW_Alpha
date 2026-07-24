@@ -20,7 +20,7 @@ _EMPTY_VALUE = 0xFF
 class LevelSpin(VerticalSpinBox):
     """精神等级微调框 - 范围 0~99，0 显示 "－"，数据值为 0xFF"""
 
-    valueChanged = Signal(int)
+    _valueChanged = Signal(int)  # 内部信号，避免与 QSpinBox::valueChanged 重名
 
     def __init__(self, parent=None):
         super().__init__(parent, editable=True)
@@ -57,6 +57,13 @@ class LevelSpin(VerticalSpinBox):
         v = super().value()
         return _EMPTY_VALUE if v == 0 else v
 
+    # ========== 对外信号代理 ==========
+
+    @property
+    def valueChanged(self):
+        """向外暴露内部信号（与 SpiritsEditor 等外部连接兼容）"""
+        return self._valueChanged
+
     # ========== 字体 ==========
 
     def apply_font(self, font: QFont | dict) -> None:
@@ -82,4 +89,4 @@ class LevelSpin(VerticalSpinBox):
 
     def _on_value_changed(self, spin_value: int) -> None:
         """spin 值改变时发射数据格式的 valueChanged"""
-        self.valueChanged.emit(_EMPTY_VALUE if spin_value == 0 else spin_value)
+        self._valueChanged.emit(_EMPTY_VALUE if spin_value == 0 else spin_value)

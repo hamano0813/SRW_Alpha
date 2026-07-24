@@ -32,7 +32,9 @@ class PilotDetailCard(CardHeader):
         self._fname_label.setMinimumWidth(80)
         self._fname_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self._fname_edit = QLineEdit(self)
+        self._fname_edit.setFixedHeight(33)
         setFont(self._fname_edit, 14)
+        self._fname_edit.setStyleSheet("QLineEdit { padding-left: 10px; }")
         self._fname_edit.textChanged.connect(lambda t: self._write("fname", t))
 
         self._pers_label = BodyLabel(self.tr("Personality"), self)

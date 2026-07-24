@@ -112,6 +112,15 @@ class EnumData(QObject):
                 0x2: self.tr("Strong"),  # 强气 / 強気
                 0x3: self.tr("Super Strong"),  # 超强气 / 超強気
             },
+            "USKILL": {
+                0x0: self.tr("Newtype"),  # 新人类 / 新人类
+                0x1: self.tr("Cyber-Newtype"),  # 强化人 / 強化人間
+                0x2: self.tr("Aura Battler"),  # 圣战士 / 聖戦士
+                0x3: self.tr("Psychokinesis"),  # 念动力 / 念動力
+                0x4: self.tr("Shield Defense"),  # 盾防御 / シールド防御
+                0x5: self.tr("Sword Parry"),  # 切返 / 切り払い
+                0xFF: "——", # —— / ——
+            },
         }
         self.WEAPON = {
             "CLASS": {

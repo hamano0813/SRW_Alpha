@@ -71,7 +71,6 @@ class SpiritsEditor(CardHeader):
             spi_list = row_data.get("spi", [0] * self._SPIRIT_COUNT)
             if idx < len(spi_list):
                 spi_list[idx] = value
-        self.panelDataChanged.emit("spi")
 
     def _on_level(self, idx: int, value: int) -> None:
         row_data = self._model.get_row_data(self._row) if self._model and self._row >= 0 else None
@@ -79,7 +78,6 @@ class SpiritsEditor(CardHeader):
             spl_list = row_data.get("spl", [0] * self._SPIRIT_COUNT)
             if idx < len(spl_list):
                 spl_list[idx] = value
-        self.panelDataChanged.emit("spl")
 
     # ========== 翻译与字体 ==========
 

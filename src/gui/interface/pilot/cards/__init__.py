@@ -8,7 +8,7 @@ Classes:
     TerrainCard: 地形适性卡片
     SeriesCard: 系列卡片
     SpecialSkillsCard: 特殊技能卡片（占位）
-    UpgradedSkillsCard: 等级制技能卡片（占位）
+    UpgradedSkillsCard: 等级制技能卡片
 """
 
 from .detail import PilotDetailCard

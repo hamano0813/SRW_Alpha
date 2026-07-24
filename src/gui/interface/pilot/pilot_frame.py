@@ -9,7 +9,7 @@ Classes:
 """
 
 from PySide6.QtCore import Qt, QTimer
-from PySide6.QtWidgets import QHBoxLayout, QHeaderView, QVBoxLayout
+from PySide6.QtWidgets import QGridLayout, QHBoxLayout, QHeaderView, QSpacerItem, QSizePolicy, QVBoxLayout
 from qfluentwidgets import SmoothScrollArea
 
 from gui.custom import JP_FONT
@@ -65,14 +65,15 @@ class PilotFrame(SmoothScrollArea):
         # ===== 左侧：驾驶员表格 =====
 
         self._pilot_view = self._build_pilot_table(fields)
-        layout.addWidget(self._pilot_view, 1)
+        self._pilot_view.setFixedWidth(724)
+        layout.addWidget(self._pilot_view)
 
         # ===== 右侧：编辑卡片 =====
 
         self._right_panel = ProxyFrame(self._container)
-        cards_layout = QVBoxLayout(self._right_panel)
-        cards_layout.setSpacing(8)
-        cards_layout.setContentsMargins(8, 8, 8, 8)
+        cards_grid = QGridLayout(self._right_panel)
+        cards_grid.setSpacing(8)
+        cards_grid.setContentsMargins(8, 8, 8, 8)
 
         # 模型在 FixedTableView 构造时已创建，所有卡片共享
         _model = self._pilot_view.source_model()
@@ -80,45 +81,41 @@ class PilotFrame(SmoothScrollArea):
         self._detail_card = PilotDetailCard(self._right_panel)
         self._detail_card.set_model(_model)
         self._detail_card.panelDataChanged.connect(self._on_panel_data_changed)
-        cards_layout.addWidget(self._detail_card)
+        cards_grid.addWidget(self._detail_card, 0, 0, 1, 2)
 
         self._spirits_card = SpiritsEditor(self._right_panel)
         self._spirits_card.setTitle(self.tr("Spirit commands"))
         self._spirits_card.set_model(_model)
         self._spirits_card.panelDataChanged.connect(self._on_panel_data_changed)
-        cards_layout.addWidget(self._spirits_card)
-
-        # 特殊技能 + 系列 并排一行（系列在右）
-        self._skills_row_layout = QHBoxLayout()
-        self._skills_row_layout.setSpacing(8)
+        cards_grid.addWidget(self._spirits_card, 1, 0, 1, 2)
 
         self._skills_card = SpecialSkillsCard(self._right_panel)
         self._skills_card.set_model(_model)
         self._skills_card.panelDataChanged.connect(self._on_panel_data_changed)
-        self._skills_row_layout.addWidget(self._skills_card, 1)
+        cards_grid.addWidget(self._skills_card, 2, 0)
 
         self._series_card = SeriesCard(self._right_panel)
         self._series_card.set_model(_model)
         self._series_card.panelDataChanged.connect(self._on_panel_data_changed)
-        self._skills_row_layout.addWidget(self._series_card, 1)
-
-        cards_layout.addLayout(self._skills_row_layout)
+        cards_grid.addWidget(self._series_card, 2, 1)
 
         self._upgraded_card = UpgradedSkillsCard(self._right_panel)
         self._upgraded_card.set_model(_model)
-        cards_layout.addWidget(self._upgraded_card)
+        cards_grid.addWidget(self._upgraded_card, 3, 0, 1, 2)
 
         self._terrain_card = TerrainCard(self._right_panel)
         self._terrain_card.set_model(_model)
         self._terrain_card.panelDataChanged.connect(self._on_panel_data_changed)
-        cards_layout.addWidget(self._terrain_card)
+        cards_grid.addWidget(self._terrain_card, 4, 0, 1, 2)
 
-        cards_layout.addStretch()
+        # 右下角 spacer 把内容推到左上角
+        cards_grid.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding), 5, 2)
+        cards_grid.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding), 6, 3)
+        cards_grid.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding), 7, 4)
+        cards_grid.addItem(QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding), 8, 5)
 
         layout.addWidget(self._right_panel)
 
-        # 默认隐藏右侧面板，首次点击行后显示
-        self._right_panel.setVisible(False)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
         # ========== 卡片列表（统一 translateUI / resetUI） ==========
@@ -175,7 +172,7 @@ class PilotFrame(SmoothScrollArea):
         view.set_column_width([125] + [90] * 6)
         view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
         view.verticalHeader().setFixedWidth(45)
-        view.setShowGrid(True)
+        view.setShowGrid(False)
         view._corner_button.setVisible(False)
 
         return view
@@ -229,11 +226,6 @@ class PilotFrame(SmoothScrollArea):
             model:      BaseTableModel 实例
         """
         self._current_source_row = source_row
-
-        # 首次点击时显示右侧面板
-        if not self._right_panel.isVisible():
-            self._right_panel.setVisible(True)
-            QTimer.singleShot(0, self._update_layout)
 
         for card in self._cards:
             card.set_row(source_row)

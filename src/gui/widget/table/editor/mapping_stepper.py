@@ -79,24 +79,29 @@ class _ArrowButton(QToolButton):
 
 
 class CellMappingStepper(QSpinBox, CellEditor):
-    """映射微调框 — 透明背景，左右按钮，数值居中
+    """映射微调框 — 透明背景，左右按钮（可选），数值居中
 
     左侧步进-（左三角）、中间数值（居中）、右侧步进+（右三角）。
-    禁止键盘手动输入，仅由按钮步进。
+    无按钮时可直接键盘输入文本，文本按 mapping 反查数值。
     步进仅在 mapping 的有效 key 范围内循环。
     """
 
-    def __init__(self, mapping: dict[int, str] | None = None, wrapping: bool = False, parent=None):
+    def __init__(self, mapping: dict[int, str] | None = None, wrapping: bool = False,
+                 show_buttons: bool = True, read_only: bool = True, parent=None):
         """初始化映射微调框
 
         Args:
             mapping: {数值: 显示文本} 字典，按 key 排序后确定步进顺序
             wrapping: 是否循环（最大值后回到最小值，反之亦然）
+            show_buttons: 是否显示左右微调按钮
+            read_only: 文本框是否只读（仅按钮步进），False 时可键盘输入
             parent: 父 QWidget
         """
         self._mapping: dict[int, str] = mapping or {}
         self._sorted_keys: list[int] = sorted(self._mapping.keys())
         self._wrapping = wrapping
+        self._show_buttons = show_buttons
+        self._read_only = read_only if show_buttons else False  # 无按钮时只能靠键盘输入
 
         QSpinBox.__init__(self, parent)
         CellEditor.__init__(self, parent)
@@ -112,20 +117,24 @@ class CellMappingStepper(QSpinBox, CellEditor):
         if self._sorted_keys:
             self.setRange(self._sorted_keys[0], self._sorted_keys[-1])
 
-        # ========== 行编辑：透明 + 居中 + 只读 ==========
+        # ========== 行编辑：透明 + 居中 ==========
 
         le = self.lineEdit()
-        le.setReadOnly(True)
+        le.setReadOnly(self._read_only)
         le.setFrame(False)
         le.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
-        le.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        le.setStyleSheet("background: transparent; border: none;")
-        le.selectionChanged.connect(lambda: le.setSelection(0, 0))
+        if self._show_buttons:
+            le.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            le.setStyleSheet("background: transparent; border: none;")
+            le.selectionChanged.connect(lambda: le.setSelection(0, 0))
+        else:
+            le.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+            le.setStyleSheet("background: transparent; border: none; ")
 
         # ========== 左右按钮（手动定位） ==========
 
-        self._btn_left = _ArrowButton(False, self)
-        self._btn_right = _ArrowButton(True, self)
+        self._btn_left = _ArrowButton(False, self) if self._show_buttons else None
+        self._btn_right = _ArrowButton(True, self) if self._show_buttons else None
 
         # ========== 信号 ==========
 
@@ -138,10 +147,11 @@ class CellMappingStepper(QSpinBox, CellEditor):
             e: 调整大小事件
         """
         super().resizeEvent(e)
-        bw = self._btn_left.width()
-        y = (self.height() - self._btn_left.height()) // 2
-        self._btn_left.move(2, y)
-        self._btn_right.move(self.width() - bw - 2, y)
+        if self._btn_left and self._btn_right:
+            bw = self._btn_left.width()
+            y = (self.height() - self._btn_left.height()) // 2
+            self._btn_left.move(2, y)
+            self._btn_right.move(self.width() - bw - 2, y)
 
     # ========== 映射接口 ==========
 
@@ -272,10 +282,19 @@ class CellMappingStepper(QSpinBox, CellEditor):
         Returns:
             True 为可转为整数
         """
+        # 对映射模式，接受任何能在 mapping 中找到或可转为 int 的值
+        if value is None:
+            return False
+        if isinstance(value, int):
+            return value in self._mapping
+        # 文本输入模式：尝试在 mapping 中反查
+        for k, v in self._mapping.items():
+            if v == str(value):
+                return True
         try:
             int(value)
             return True
-        except TypeError, ValueError:
+        except (TypeError, ValueError):
             return False
 
     def format_display(self, value) -> str:

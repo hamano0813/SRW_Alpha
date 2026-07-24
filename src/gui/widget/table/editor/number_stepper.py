@@ -196,6 +196,38 @@ class CellNumberStepper(SpinBox, CellEditor):
         self.setProperty("symbolVisible", isVisible)
         self.setStyle(QApplication.style())
 
+    def event(self, e):
+        print("[DEBUG] event type=%s" % e.type(), flush=True)
+        try:
+            return super().event(e)
+        except Exception:
+            traceback.print_exc()
+            print("[DEBUG] event CRASHED type=%s" % e.type(), flush=True)
+            raise
+
+    def resizeEvent(self, e):
+        print("[DEBUG] resizeEvent", flush=True)
+        try:
+            super().resizeEvent(e)
+        except Exception:
+            traceback.print_exc()
+            print("[DEBUG] resizeEvent CRASHED", flush=True)
+            raise
+
+    def paintEvent(self, e):
+        print("[DEBUG] paintEvent", flush=True)
+        try:
+            super().paintEvent(e)
+        except Exception:
+            traceback.print_exc()
+            print("[DEBUG] paintEvent CRASHED", flush=True)
+            raise
+
+    def setReadOnly(self, r):
+        print("[DEBUG] setReadOnly(%s)" % r, flush=True)
+        traceback.print_stack()
+        return QSpinBox.setReadOnly(self, r)
+
     # ========== 显示格式 ==========
 
     def textFromValue(self, value: int) -> str:

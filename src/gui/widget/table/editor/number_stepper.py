@@ -13,7 +13,7 @@ from typing import Any, cast
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
-from qfluentwidgets import FluentStyleSheet, isDarkTheme
+from qfluentwidgets import FluentStyleSheet, isDarkTheme, setCustomStyleSheet
 from gui.widget.abstract.spin_box_shim import SpinBox
 
 from .cell_editor import CellEditor
@@ -109,6 +109,9 @@ class CellNumberStepper(SpinBox, CellEditor):
 
         # 空壳 SpinBox 在 MRO 中 → QSS SpinBox 选择器匹配 → 主题颜色自动生效
         FluentStyleSheet.SPIN_BOX.apply(self)
+        setCustomStyleSheet(self,
+            "SpinBox { padding: 0px 0px 0 10px; }",
+            "SpinBox { padding: 0px 0px 0 10px; }")
 
         # ========== 基础样式 ==========
 

@@ -83,69 +83,84 @@ begin
     Result := Trim(Lines[0]);
 end;
 
+function RunBat(const BatContent, WorkDir: string): Integer;
+var
+  TmpBat: string;
+  TmpLog: string;
+  Code: Integer;
+  Lines: TArrayOfString;
+  I: Integer;
+begin
+  TmpBat := ExpandConstant('{tmp}\_step.bat');
+  TmpLog := ExpandConstant('{tmp}\_step.log');
+  SaveStringToFile(TmpBat, BatContent, False);
+  Exec('cmd.exe', '/c ""' + TmpBat + '" > "' + TmpLog + '" 2>&1"',
+    WorkDir, SW_HIDE, ewWaitUntilTerminated, Code);
+  if LoadStringsFromFile(TmpLog, Lines) then
+    for I := 0 to GetArrayLength(Lines) - 1 do
+      if Lines[I] <> '' then
+        AppendLog('  ' + Lines[I]);
+  DeleteFile(TmpBat);
+  DeleteFile(TmpLog);
+  Result := Code;
+end;
+
 procedure DoDeploy;
 var
   AppDir: string;
   PyVer: string;
-  TmpBat: string;
-  TmpLog: string;
-  ResultCode: Integer;
-  Lines: TArrayOfString;
-  I: Integer;
+  Ok: Boolean;
 begin
   AppDir := ExpandConstant('{app}');
   PyVer := GetPythonVer(AppDir);
-  TmpBat := ExpandConstant('{tmp}\_deploy.bat');
-  TmpLog := ExpandConstant('{tmp}\_deploy.log');
+  Ok := True;
 
   AppendLog('Target: ' + AppDir);
   AppendLog('Python: ' + PyVer);
   AppendLog('');
 
-  SaveStringToFile(TmpBat,
-    '@echo off' + Chr(13) + Chr(10) +
+  AppendLog('--- Installing Python ---');
+  if RunBat('@echo off' + Chr(13) + Chr(10) +
     'cd /d "' + AppDir + '"' + Chr(13) + Chr(10) +
-    'echo --- Installing Python ---' + Chr(13) + Chr(10) +
-    '"' + AppDir + '\uv.exe" python install ' + PyVer + Chr(13) + Chr(10) +
-    'echo.' + Chr(13) + Chr(10) +
-    'echo --- Installing dependencies ---' + Chr(13) + Chr(10) +
-    '"' + AppDir + '\uv.exe" sync' + Chr(13) + Chr(10) +
-    'echo.' + Chr(13) + Chr(10) +
-    'if exist "' + AppDir + '\upx.exe" (' + Chr(13) + Chr(10) +
-    '  echo --- Compressing ---' + Chr(13) + Chr(10) +
-    '  for /r "' + AppDir + '\.venv" %%f in (*.pyd) do "' + AppDir + '\upx.exe" -1qq "%%f" 2>nul' + Chr(13) + Chr(10) +
-    '  "' + AppDir + '\upx.exe" -9qq "' + AppDir + '\.venv\Scripts\python.exe" 2>nul' + Chr(13) + Chr(10) +
-    '  "' + AppDir + '\upx.exe" -9qq "' + AppDir + '\.venv\Scripts\pythonw.exe" 2>nul' + Chr(13) + Chr(10) +
-    '  echo [DONE] Compression complete.' + Chr(13) + Chr(10) +
-    ')' + Chr(13) + Chr(10) +
-    'echo [DONE] Deployment complete.' + Chr(13) + Chr(10),
-    False);
+    '"' + AppDir + '\uv.exe" python install ' + PyVer + Chr(13) + Chr(10),
+    AppDir) <> 0 then
+    AppendLog('[WARN] Python install may have issues.');
 
-  Exec('cmd.exe', '/c ""' + TmpBat + '" > "' + TmpLog + '" 2>&1"',
-    AppDir, SW_HIDE, ewWaitUntilTerminated, ResultCode);
+  AppendLog('--- Installing dependencies ---');
+  if RunBat('@echo off' + Chr(13) + Chr(10) +
+    'cd /d "' + AppDir + '"' + Chr(13) + Chr(10) +
+    '"' + AppDir + '\uv.exe" sync' + Chr(13) + Chr(10),
+    AppDir) <> 0 then
+  begin
+    AppendLog('[ERROR] Dependency install failed!');
+    Ok := False;
+  end;
 
-  if LoadStringsFromFile(TmpLog, Lines) then
-    for I := 0 to GetArrayLength(Lines) - 1 do
-      AppendLog(Lines[I]);
-
-  DeleteFile(TmpBat);
-  DeleteFile(TmpLog);
+  if Ok and FileExists(AppDir + '\upx.exe') then
+  begin
+    AppendLog('--- Compressing ---');
+    RunBat('@echo off' + Chr(13) + Chr(10) +
+      'cd /d "' + AppDir + '"' + Chr(13) + Chr(10) +
+      'for /r "' + AppDir + '\.venv" %%f in (*.pyd) do "' + AppDir + '\upx.exe" -1qq "%%f" 2>nul' + Chr(13) + Chr(10) +
+      '"' + AppDir + '\upx.exe" -9qq "' + AppDir + '\.venv\Scripts\python.exe" 2>nul' + Chr(13) + Chr(10) +
+      '"' + AppDir + '\upx.exe" -9qq "' + AppDir + '\.venv\Scripts\pythonw.exe" 2>nul' + Chr(13) + Chr(10),
+      AppDir);
+    AppendLog('[DONE] Compression complete.');
+  end;
 
   AppendLog('');
-  if ResultCode = 0 then
-    AppendLog('[INFO] Deployment complete.')
+  if Ok then
+    AppendLog('[INFO] Deployment complete. Click Next.')
   else
-    AppendLog('[ERROR] Failed (exit ' + IntToStr(ResultCode) + ').');
+    AppendLog('[ERROR] Deployment had errors. Click Next.');
+
+  WizardForm.NextButton.Enabled := True;
 end;
 
 procedure DeployPageActivate(Sender: TWizardPage);
 begin
   WizardForm.NextButton.Enabled := False;
-  try
-    DoDeploy;
-  finally
-    WizardForm.NextButton.Enabled := True;
-  end;
+  DoDeploy;
 end;
 
 procedure InitializeWizard();
@@ -195,45 +210,35 @@ end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
 var
-  ConfigLines: string;
+  Cfg: string;
 begin
   if CurStep = ssPostInstall then
   begin
-    ConfigLines :=
-      'python-install-mirror = "' + MirrorPage.Values[1] + '"' + Chr(13) + Chr(10) +
+    Cfg := 'python-install-mirror = "' + MirrorPage.Values[1] + '"' + Chr(13) + Chr(10) +
       Chr(13) + Chr(10) +
       '[[index]]' + Chr(13) + Chr(10) +
       'url = "' + MirrorPage.Values[0] + '"' + Chr(13) + Chr(10) +
       'default = true' + Chr(13) + Chr(10);
-    SaveStringToFile(ExpandConstant('{userappdata}\uv\uv.toml'), ConfigLines, False);
+    SaveStringToFile(ExpandConstant('{userappdata}\uv\uv.toml'), Cfg, False);
   end;
 end;
 
-// ======================== Uninstall ========================
-
 function InitializeUninstall(): Boolean;
 var
-  ResultCode: Integer;
-  Ps1Path: string;
+  Code: Integer;
+  Ps: string;
 begin
-  Ps1Path := ExpandConstant('{app}\uninstall_helper.ps1');
-  if not FileExists(Ps1Path) then
+  Ps := ExpandConstant('{app}\uninstall_helper.ps1');
+  if not FileExists(Ps) then
   begin
     UninstallChoice := 1;
     Result := True;
     Exit;
   end;
-
-  Exec('powershell.exe', '-NoProfile -ExecutionPolicy Bypass -File "' + Ps1Path + '"',
-    '', SW_SHOW, ewWaitUntilTerminated, ResultCode);
-
-  if ResultCode = 9 then
-  begin
-    Result := False;
-    Exit;
-  end;
-
-  UninstallChoice := ResultCode;
+  Exec('powershell.exe', '-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "' + Ps + '"',
+    '', SW_SHOW, ewWaitUntilTerminated, Code);
+  if Code = 9 then begin Result := False; Exit; end;
+  UninstallChoice := Code;
   Result := True;
 end;
 
@@ -244,20 +249,17 @@ begin
   if CurUninstallStep = usPostUninstall then
   begin
     AppDir := ExpandConstant('{app}');
-
     case UninstallChoice of
-      2:
-        if DirExists(AppDir + '\.venv') then
-          DelTree(AppDir + '\.venv', True, True, True);
-      3:
-      begin
-        if DirExists(AppDir + '\.venv') then
-          DelTree(AppDir + '\.venv', True, True, True);
-        if DirExists(AppDir + '\cache') then
-          DelTree(AppDir + '\cache', True, True, True);
-        DeleteFile(AppDir + '\config.json');
-        DeleteFile(AppDir + '\cache.xml');
-      end;
+      2: if DirExists(AppDir + '\.venv') then
+           DelTree(AppDir + '\.venv', True, True, True);
+      3: begin
+           if DirExists(AppDir + '\.venv') then
+             DelTree(AppDir + '\.venv', True, True, True);
+           if DirExists(AppDir + '\cache') then
+             DelTree(AppDir + '\cache', True, True, True);
+           DeleteFile(AppDir + '\config.json');
+           DeleteFile(AppDir + '\cache.xml');
+         end;
     end;
   end;
 end;

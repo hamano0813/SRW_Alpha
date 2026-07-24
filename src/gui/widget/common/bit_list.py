@@ -36,7 +36,7 @@ class _CheckBoxItemWidget(QWidget):
         self._check.setText(text)
 
 
-class CommonBitList(QWidget):
+class CommonBitList(ListWidget):
     """Bit 位多选列表 - 用 ListWidget + CheckBox 编辑二进制 bit 位数据
 
     显示一个带 qfluentwidgets 风格的列表，每个选项对应一个 bit 位。
@@ -57,20 +57,10 @@ class CommonBitList(QWidget):
         self._items: list[QListWidgetItem] = []
         self._value: int = 0
 
-        # ========== ListWidget ==========
+        self.setSelectionMode(ListWidget.SelectionMode.NoSelection)
+        self.setViewportMargins(0, 0, 0, 0)
 
-        self._list = ListWidget(self)
-        self._list.setSelectionMode(ListWidget.SelectionMode.NoSelection)
-        self._list.setViewportMargins(0, 0, 0, 0)
-
-        # ========== 整体布局 ==========
-
-        layout = QHBoxLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._list)
-
-        # ========== 初始构建 ==========
-
+        # 初始构建
         for i, v in enumerate(self._values):
             self._add_item(i, v)
 
@@ -98,8 +88,8 @@ class CommonBitList(QWidget):
 
         item = QListWidgetItem()
         item.setSizeHint(QSize(0, 32))
-        self._list.addItem(item)
-        self._list.setItemWidget(item, widget)
+        self.addItem(item)
+        self.setItemWidget(item, widget)
         self._items.append(item)
         return widget
 
@@ -114,13 +104,13 @@ class CommonBitList(QWidget):
 
         # 更新已有项目的 CheckBox 文字
         for i in range(min(old_n, new_n)):
-            widget = self._list.itemWidget(self._items[i])
+            widget = self.itemWidget(self._items[i])
             if isinstance(widget, _CheckBoxItemWidget):
                 widget.setText(values[i])
 
         # 移除多余项目
         for item in self._items[new_n:]:
-            self._list.takeItem(self._list.row(item))
+            self.takeItem(self.row(item))
         if old_n > new_n:
             del self._items[new_n:]
 
@@ -139,7 +129,7 @@ class CommonBitList(QWidget):
     def _refresh_checkboxes(self) -> None:
         """刷新各列表项 CheckBox 的选中状态"""
         for i, item in enumerate(self._items):
-            cb_widget = self._list.itemWidget(item)
+            cb_widget = self.itemWidget(item)
             if isinstance(cb_widget, _CheckBoxItemWidget):
                 cb_widget._check.setChecked(bool(self._value & (1 << i)))
 
@@ -156,16 +146,15 @@ class CommonBitList(QWidget):
     def apply_font(self, font: QFont) -> None:
         """设置编辑器字体，应用到所有 CheckBox"""
         for item in self._items:
-            widget = self._list.itemWidget(item)
+            widget = self.itemWidget(item)
             if isinstance(widget, _CheckBoxItemWidget):
                 widget._check.setFont(font)
 
     def resetUI(self):
         """从全局配置刷新字体"""
         setFont(self)
-        setFont(self._list)
         for item in self._items:
-            widget = self._list.itemWidget(item)
+            widget = self.itemWidget(item)
             if isinstance(widget, _CheckBoxItemWidget):
                 setFont(widget)
                 widget._check.setFont(widget.font())

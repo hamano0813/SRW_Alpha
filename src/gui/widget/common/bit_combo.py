@@ -11,7 +11,7 @@ Classes:
 
 from PySide6.QtCore import QPoint, QSize, Qt, Signal
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QHBoxLayout, QVBoxLayout, QWidget
+from PySide6.QtWidgets import QHBoxLayout, QWidget
 from qfluentwidgets import CheckBox, ComboBox, MenuAnimationType, RoundMenu, setFont
 
 
@@ -42,18 +42,6 @@ class _CheckBoxItemWidget(QWidget):
         self._check.setText(text)
 
 
-class _ComboButton(ComboBox):
-    """继承 qfluentwidgets ComboBox 完整样式，替换点击行为"""
-
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.setText("")
-
-    def mouseReleaseEvent(self, e):
-        """跳过 ComboBox._toggleComboMenu，由 CommonBitCombo._show_menu 接管"""
-        super(ComboBox, self).mouseReleaseEvent(e)
-
-
 class _StayOpenMenu(RoundMenu):
     """可多选的菜单 - 点击项目时不关闭菜单"""
 
@@ -71,7 +59,7 @@ class _StayOpenMenu(RoundMenu):
         action.trigger()
 
 
-class CommonBitCombo(QWidget):
+class CommonBitCombo(ComboBox):
     """Bit 位多选下拉框 - 用下拉复选框编辑二进制 bit 位数据
 
     显示一个下拉按钮，点击弹出带 CheckBox 控件的菜单。
@@ -95,19 +83,17 @@ class CommonBitCombo(QWidget):
         self._value: int = 0
         self._menu: _StayOpenMenu | None = None
 
-        # ========== 显示按钮 ==========
+        self.setText("")
+        self.setObjectName("bitComboBoxButton")
+        self.setFixedHeight(32)
+        self.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.clicked.connect(self._show_menu)
 
-        self._button = _ComboButton(self)
-        self._button.setObjectName("bitComboBoxButton")
-        self._button.setFixedHeight(32)
-        self._button.setCursor(Qt.CursorShape.PointingHandCursor)
-        self._button.clicked.connect(self._show_menu)
+    # ========== 鼠标事件 ==========
 
-        # ========== 布局 ==========
-
-        layout = QVBoxLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self._button)
+    def mouseReleaseEvent(self, e):
+        """跳过 ComboBox._toggleComboMenu，由 _show_menu 接管下拉行为"""
+        super(ComboBox, self).mouseReleaseEvent(e)
 
     # ========== 数据接口 ==========
 
@@ -152,7 +138,7 @@ class CommonBitCombo(QWidget):
         menu = _StayOpenMenu(self.tr(""), self)
         menu.setObjectName("bitComboBoxMenu")
         menu.hBoxLayout.setContentsMargins(0, 8, 0, 20)
-        item_w = self._button.width() - 2
+        item_w = self.width() - 2
 
         for i, v in enumerate(self._values):
             is_set = bool(self._value & (1 << i))
@@ -165,7 +151,7 @@ class CommonBitCombo(QWidget):
         menu.closedSignal.connect(lambda: self._on_menu_closed(menu))
 
         self._menu = menu
-        pos = self._button.mapToGlobal(QPoint(0, self._button.height()))
+        pos = self.mapToGlobal(QPoint(0, self.height()))
         menu.exec(pos, True, MenuAnimationType.DROP_DOWN)
 
     def _on_menu_closed(self, menu: _StayOpenMenu) -> None:
@@ -197,14 +183,14 @@ class CommonBitCombo(QWidget):
         else:
             text = ""
 
-        self._button.setText(text)
+        self.setText(text)
 
     # ========== 字体 ==========
 
     def apply_font(self, font: QFont) -> None:
-        """设置编辑器字体，应用到内部按钮"""
-        self._button.setFont(font)
+        """设置编辑器字体"""
+        self.setFont(font)
 
     def resetUI(self):
-        """从全局配置刷新主框字体"""
-        setFont(self._button)
+        """从全局配置刷新字体"""
+        setFont(self)

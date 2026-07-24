@@ -1,5 +1,5 @@
 """
-数值编辑器 — 继承 QSpinBox + CellEditor，左右按钮步进
+数值编辑器 — 继承 SpinBox + CellEditor，左右按钮步进
 
 接受取值范围 (min, max)，左减右加按钮布局，透明背景。
 与 CellMappingStepper 实现模式一致，但无映射表。
@@ -13,7 +13,7 @@ from typing import Any, cast
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
-from qfluentwidgets import isDarkTheme
+from qfluentwidgets import FluentStyleSheet, SpinBox, isDarkTheme
 
 from .cell_editor import CellEditor
 
@@ -77,7 +77,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class CellNumberStepper(QSpinBox, CellEditor):
+class CellNumberStepper(SpinBox, CellEditor):
     """数值编辑器 — 左右按钮步进，右对齐
 
     接受取值范围 (min, max)，在范围内循环。
@@ -105,6 +105,10 @@ class CellNumberStepper(QSpinBox, CellEditor):
 
         QSpinBox.__init__(self, parent)
         CellEditor.__init__(self, parent)
+
+        # 手动注册 SPIN_BOX QSS（SpinBox 在 MRO 中，选择器自动匹配）
+        FluentStyleSheet.SPIN_BOX.apply(self)
+        self.setProperty('transparent', True)
 
         # ========== 基础样式 ==========
 

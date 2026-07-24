@@ -6,7 +6,8 @@
 
 Classes:
     CommonBitCombo / CommonBitList / CommonMappingCombo /
-    CommonMappingSpin / CommonNumberSpin / CommonStretchLabel
+    CommonMappingSpin / CommonNumberSpin / CommonSingleLine /
+    CommonStretchLabel
 """
 
 from .bit_combo import CommonBitCombo
@@ -14,4 +15,5 @@ from .bit_list import CommonBitList
 from .mapping_combo import CommonMappingCombo
 from .mapping_spin import CommonMappingSpin
 from .number_spin import CommonNumberSpin
+from .single_line import CommonSingleLine
 from .stretch_label import CommonStretchLabel

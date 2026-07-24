@@ -18,6 +18,7 @@ from .common import (
     CommonMappingCombo,
     CommonMappingSpin,
     CommonNumberSpin,
+    CommonSingleLine,
     CommonStretchLabel,
 )
 from .proxy import CardHeader, ProxyFrame

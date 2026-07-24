@@ -6,11 +6,11 @@
 
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import QGridLayout, QLineEdit, QSizePolicy
+from PySide6.QtWidgets import QGridLayout, QSizePolicy
 from qfluentwidgets import BodyLabel, setFont
 
 from gui.custom import EnumData
-from gui.widget import CardHeader, CommonMappingCombo, CommonNumberSpin, LevelSpin
+from gui.widget import CardHeader, CommonMappingCombo, CommonNumberSpin, CommonSingleLine, LevelSpin
 
 
 
@@ -31,11 +31,9 @@ class PilotDetailCard(CardHeader):
         self._fname_label = BodyLabel(self.tr("Fullname"), self)
         self._fname_label.setMinimumWidth(80)
         self._fname_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._fname_edit = QLineEdit(self)
-        self._fname_edit.setFixedHeight(33)
+        self._fname_edit = CommonSingleLine(self)
         setFont(self._fname_edit, 14)
-        self._fname_edit.setStyleSheet("QLineEdit { padding-left: 10px; }")
-        self._fname_edit.textChanged.connect(lambda t: self._write("fname", t))
+        self._fname_edit.valueChanged.connect(lambda t: self._write("fname", t))
 
         self._pers_label = BodyLabel(self.tr("Personality"), self)
         self._pers_label.setMinimumWidth(80)
@@ -90,9 +88,7 @@ class PilotDetailCard(CardHeader):
     def set_row(self, row: int) -> None:
         super().set_row(row)
         fname = self._read("fname") or ""
-        self._fname_edit.blockSignals(True)
-        self._fname_edit.setText(fname)
-        self._fname_edit.blockSignals(False)
+        self._fname_edit.set_value(fname)
 
         self._pers_combo.set_value(self._read("pers") or 0)
 

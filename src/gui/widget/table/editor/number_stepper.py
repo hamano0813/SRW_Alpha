@@ -12,7 +12,7 @@ from typing import Any, cast
 
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
-from PySide6.QtWidgets import QSpinBox, QToolButton
+from PySide6.QtWidgets import QSpinBox, QToolButton, QWidget
 from qfluentwidgets import FluentStyleSheet, SpinBox, isDarkTheme
 import sys, traceback
 
@@ -125,10 +125,12 @@ class CellNumberStepper(SpinBox, CellEditor):
             raise
 
         try:
-            print("[DEBUG] removing upButton/downButton", flush=True)
+            print("[DEBUG] removing upButton/downButton + hBoxLayout", flush=True)
             assert hasattr(self, 'hBoxLayout'), "no hBoxLayout!"
             assert hasattr(self, 'upButton'), "no upButton!"
             assert hasattr(self, 'downButton'), "no downButton!"
+
+            # 先把按钮从布局移除再销毁
             self.hBoxLayout.removeWidget(self.upButton)
             self.hBoxLayout.removeWidget(self.downButton)
             self.upButton.deleteLater()
@@ -137,10 +139,14 @@ class CellNumberStepper(SpinBox, CellEditor):
             self.downButton.close()
             del self.upButton
             del self.downButton
-            self.hBoxLayout.setContentsMargins(0, 0, 0, 0)
-            self.hBoxLayout.setSpacing(0)
-            self.hBoxLayout.invalidate()
-            print("[DEBUG] button removal done", flush=True)
+
+            # 把 hBoxLayout 转移到临时 widget 上，让它不再影响 self 的渲染
+            dummy = QWidget()
+            dummy.setLayout(self.hBoxLayout)
+            dummy.deleteLater()
+            del self.hBoxLayout
+
+            print("[DEBUG] button + layout removal done", flush=True)
         except Exception:
             traceback.print_exc()
             print("[DEBUG] button removal RAISED", flush=True)

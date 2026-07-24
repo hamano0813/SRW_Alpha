@@ -11,9 +11,14 @@ Classes:
 
 from PySide6.QtCore import QEvent, QRectF, Qt
 from PySide6.QtGui import QPainter
-from PySide6.QtWidgets import QSpinBox, QToolButton, QVBoxLayout, QWidget
-from qfluentwidgets import FluentIcon, isDarkTheme, setFont
-from qfluentwidgets.components.widgets.spin_box import SpinBoxBase
+from PySide6.QtWidgets import QToolButton, QVBoxLayout, QWidget
+from qfluentwidgets import (
+    FluentIcon,
+    SpinBox,
+    isDarkTheme,
+    setCustomStyleSheet,
+    setFont,
+)
 
 
 class SpinArrowButton(QToolButton):
@@ -83,7 +88,7 @@ class SpinArrowButton(QToolButton):
                 FluentIcon.ARROW_DOWN.render(painter, QRectF(x, y, s, s), fill="#646464")
 
 
-class VerticalSpinBox(SpinBoxBase, QSpinBox):
+class VerticalSpinBox(SpinBox):
     """垂直微调框 - 右置上下箭头按钮直接步进，无 flyout
 
     Args:
@@ -105,6 +110,16 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         self.lineEdit().setTextMargins(0, 0, 21, 0)
         self.hBoxLayout.setContentsMargins(0, 0, 0, 0)
         self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
+
+        self.hBoxLayout.removeWidget(self.upButton)
+        self.hBoxLayout.removeWidget(self.downButton)
+        self.upButton.deleteLater()
+        self.downButton.deleteLater()
+        self.upButton.close()
+        self.downButton.close()
+        del self.upButton
+        del self.downButton
+        self.hBoxLayout.invalidate()
 
         # 禁用 SpinBoxBase 的右键菜单
         self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
@@ -137,6 +152,12 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
             le.setCursor(Qt.CursorShape.ArrowCursor)
             le.installEventFilter(self)
 
+        setCustomStyleSheet(
+            self,
+            "SpinBox { padding: 0px 0px 0 10px; }",
+            "SpinBox { padding: 0px 0px 0 10px; }",
+        )
+
     def eventFilter(self, obj, e):
         """监听 lineedit 事件 + 窗口鼠标点击交出焦点"""
         # 非编辑模式下拦截 lineedit 的鼠标事件
@@ -146,7 +167,7 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
                 return True
         # 窗口级鼠标点击 — 点击到 spin 范围外则交出焦点
         if e.type() == QEvent.Type.MouseButtonPress and self.hasFocus():
-            pos = e.globalPosition().toPoint() if hasattr(e, 'globalPosition') else e.globalPos()
+            pos = e.globalPosition().toPoint() if hasattr(e, "globalPosition") else e.globalPos()
             if not self.rect().contains(self.mapFromGlobal(pos)):
                 self.clearFocus()
                 return False
@@ -170,7 +191,6 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         Args:
             isVisible: True 显示上下箭头，False 隐藏
         """
-        super().setSymbolVisible(isVisible)
         self._up_btn.setVisible(isVisible)
         self._dn_btn.setVisible(isVisible)
 
@@ -178,3 +198,8 @@ class VerticalSpinBox(SpinBoxBase, QSpinBox):
         """从全局配置刷新字体"""
         setFont(self)
         setFont(self.lineEdit())
+        setCustomStyleSheet(
+            self,
+            "SpinBox { padding: 0px 0px 0 10px; }",
+            "SpinBox { padding: 0px 0px 0 10px; }",
+        )

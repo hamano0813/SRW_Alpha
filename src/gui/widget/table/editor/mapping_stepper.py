@@ -1,5 +1,5 @@
 """
-映射微调框 — 继承 SpinBox + CellEditor，透明背景，左减右加按钮布局
+映射微调框 — 继承 QSpinBox + CellEditor，透明背景，左减右加按钮布局
 
 通过 mapping 字典实现 数字 ↔ 显示文本 的转换。
 步进时仅在 mapping 的有效 key 范围内循环。
@@ -13,8 +13,8 @@ from typing import Any, cast
 
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
-from PySide6.QtWidgets import QApplication, QSpinBox, QToolButton
-from qfluentwidgets import FluentStyleSheet, SpinBox, isDarkTheme
+from PySide6.QtWidgets import QSpinBox, QToolButton
+from qfluentwidgets import isDarkTheme, setCustomStyleSheet
 
 from .cell_editor import CellEditor
 
@@ -78,7 +78,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class CellMappingStepper(SpinBox, CellEditor):
+class CellMappingStepper(QSpinBox, CellEditor):
     """映射微调框 — 透明背景，左右按钮（可选），数值居中
 
     左侧步进-（左三角）、中间数值（居中）、右侧步进+（右三角）。
@@ -106,9 +106,10 @@ class CellMappingStepper(SpinBox, CellEditor):
         QSpinBox.__init__(self, parent)
         CellEditor.__init__(self, parent)
 
-        # 手动注册 SPIN_BOX QSS（SpinBox 在 MRO 中，选择器自动匹配）
-        FluentStyleSheet.SPIN_BOX.apply(self)
-        self.setProperty('transparent', True)
+        # 手动应用 QSS（QSpinBox 选择器 + 仅设文字颜色，其余由 lineEdit 透明化处理）
+        setCustomStyleSheet(self,
+            "QSpinBox { color: black; }",
+            "QSpinBox { color: white; }")
 
         # ========== 基础样式 ==========
 
@@ -143,13 +144,6 @@ class CellMappingStepper(SpinBox, CellEditor):
         # ========== 信号 ==========
 
         self.valueChanged.connect(self._on_value_changed)
-
-    # ========== MRO 安全重写 ==========
-
-    def setSymbolVisible(self, isVisible: bool):
-        """跳过 InlineSpinBoxBase，不访问已删除的 upButton/downButton"""
-        self.setProperty("symbolVisible", isVisible)
-        self.setStyle(QApplication.style())
 
     def resizeEvent(self, e):
         """手动定位左右按钮
@@ -242,17 +236,17 @@ class CellMappingStepper(SpinBox, CellEditor):
         if not self._sorted_keys:
             return super().stepEnabled()
         if self._wrapping:
-            return SpinBox.StepEnabledFlag.StepUpEnabled | SpinBox.StepEnabledFlag.StepDownEnabled
+            return QSpinBox.StepEnabledFlag.StepUpEnabled | QSpinBox.StepEnabledFlag.StepDownEnabled
         current = self.value()
         try:
             idx = self._sorted_keys.index(current)
         except ValueError:
-            return SpinBox.StepEnabledFlag.StepUpEnabled | SpinBox.StepEnabledFlag.StepDownEnabled
-        flags = SpinBox.StepEnabledFlag(SpinBox.StepEnabledFlag.StepNone)
+            return QSpinBox.StepEnabledFlag.StepUpEnabled | QSpinBox.StepEnabledFlag.StepDownEnabled
+        flags = QSpinBox.StepEnabledFlag(QSpinBox.StepEnabledFlag.StepNone)
         if idx > 0:
-            flags |= SpinBox.StepEnabledFlag.StepDownEnabled
+            flags |= QSpinBox.StepEnabledFlag.StepDownEnabled
         if idx < len(self._sorted_keys) - 1:
-            flags |= SpinBox.StepEnabledFlag.StepUpEnabled
+            flags |= QSpinBox.StepEnabledFlag.StepUpEnabled
         return flags
 
     # ========== CellEditor 数据协议 ==========

@@ -12,8 +12,8 @@ from typing import Any, cast
 
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
-from PySide6.QtWidgets import QApplication, QSpinBox, QToolButton
-from qfluentwidgets import FluentStyleSheet, SpinBox, isDarkTheme
+from PySide6.QtWidgets import QSpinBox, QToolButton
+from qfluentwidgets import isDarkTheme, setCustomStyleSheet
 
 from .cell_editor import CellEditor
 
@@ -77,7 +77,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class CellNumberStepper(SpinBox, CellEditor):
+class CellNumberStepper(QSpinBox, CellEditor):
     """数值编辑器 — 左右按钮步进，右对齐
 
     接受取值范围 (min, max)，在范围内循环。
@@ -106,9 +106,10 @@ class CellNumberStepper(SpinBox, CellEditor):
         QSpinBox.__init__(self, parent)
         CellEditor.__init__(self, parent)
 
-        # 手动注册 SPIN_BOX QSS（SpinBox 在 MRO 中，选择器自动匹配）
-        FluentStyleSheet.SPIN_BOX.apply(self)
-        self.setProperty('transparent', True)
+        # 手动应用 QSS（QSpinBox 选择器 + 仅设文字颜色，其余由 lineEdit 透明化处理）
+        setCustomStyleSheet(self,
+            "QSpinBox { color: black; }",
+            "QSpinBox { color: white; }")
 
         # ========== 基础样式 ==========
 
@@ -144,13 +145,6 @@ class CellNumberStepper(SpinBox, CellEditor):
         # ========== 信号 ==========
 
         self.valueChanged.connect(self._on_value_changed)
-
-    # ========== MRO 安全重写 ==========
-
-    def setSymbolVisible(self, isVisible: bool):
-        """跳过 InlineSpinBoxBase，不访问已删除的 upButton/downButton"""
-        self.setProperty("symbolVisible", isVisible)
-        self.setStyle(QApplication.style())
 
     # ========== 显示格式 ==========
 

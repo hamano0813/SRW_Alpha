@@ -12,17 +12,17 @@ Classes:
 from typing import Any
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QFont
+from PySide6.QtGui import QColor, QFont
 from PySide6.QtWidgets import QLineEdit
-from qfluentwidgets import setCustomStyleSheet
+from qfluentwidgets import isDarkTheme
 
 from .cell_editor import CellEditor
 
 
 class CellSingleLine(QLineEdit, CellEditor):
-    """表格编辑器 — 透明背景 + CellEditor 数据协议
+    """表格编辑器 — 透明背景 + 纯文字绘制 + CellEditor 数据协议
 
-    无边框、无焦点指示线，文字颜色由 setCustomStyleSheet 跟随主题切换。
+    无边框、无焦点指示线，仅通过 palette 控制文字颜色。
     获得焦点时光标自动定位到末尾。
     """
 
@@ -42,21 +42,6 @@ class CellSingleLine(QLineEdit, CellEditor):
 
         self.textChanged.connect(self._on_text_changed)
 
-        self.textChanged.connect(self._on_text_changed)
-
-    # ========== 绘制 ==========
-
-    def _text_color(self):
-        from qfluentwidgets import isDarkTheme
-        from PySide6.QtGui import QColor
-        return QColor(255, 255, 255) if isDarkTheme() else QColor(0, 0, 0)
-
-    def paintEvent(self, e):
-        palette = self.palette()
-        palette.setColor(palette.ColorRole.Text, self._text_color())
-        self.setPalette(palette)
-        QLineEdit.paintEvent(self, e)
-
     def focusInEvent(self, e):
         """获得焦点时光标定位到末尾，不选中全文
 
@@ -65,6 +50,25 @@ class CellSingleLine(QLineEdit, CellEditor):
         """
         super().focusInEvent(e)
         self.setCursorPosition(len(self.text()))
+
+    # ========== 主题色 ==========
+
+    def _text_color(self) -> QColor:
+        """根据当前主题返回对应的文字颜色"""
+        return QColor(255, 255, 255) if isDarkTheme() else QColor(0, 0, 0)
+
+    # ========== 绘制 ==========
+
+    def paintEvent(self, e):
+        """仅设置文字颜色，由 QLineEdit 完成透明背景绘制
+
+        Args:
+            e: 绘制事件
+        """
+        palette = self.palette()
+        palette.setColor(palette.ColorRole.Text, self._text_color())
+        self.setPalette(palette)
+        QLineEdit.paintEvent(self, e)
 
     # ========== CellEditor 数据协议 ==========
 

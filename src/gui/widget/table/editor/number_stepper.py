@@ -12,9 +12,9 @@ from typing import Any, cast
 
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
-from PySide6.QtWidgets import QSpinBox, QToolButton, QWidget
-from qfluentwidgets import FluentStyleSheet, SpinBox, isDarkTheme
-import sys, traceback
+from PySide6.QtWidgets import QSpinBox, QToolButton
+from qfluentwidgets import SpinBox, isDarkTheme, setCustomStyleSheet
+import traceback
 
 from .cell_editor import CellEditor
 
@@ -105,52 +105,21 @@ class CellNumberStepper(SpinBox, CellEditor):
         self._show_buttons = show_buttons
         self._read_only = read_only if show_buttons else False
 
-        print("[DEBUG] before SpinBox.__init__", flush=True)
-        try:
-            SpinBox.__init__(self, parent)
-        except Exception:
-            traceback.print_exc()
-            print("[DEBUG] SpinBox.__init__ RAISED", flush=True)
-            raise
-        print("[DEBUG] after SpinBox.__init__, has hBoxLayout=%s upButton=%s downButton=%s" % (
-            hasattr(self, 'hBoxLayout'), hasattr(self, 'upButton'), hasattr(self, 'downButton')), flush=True)
+        # 走 QSpinBox.init 跳过 SpinBoxBase/InlineSpinBoxBase，避免 hBoxLayout 冲突
+        print("[DEBUG] before QSpinBox.__init__ (skip SpinBoxBase)", flush=True)
+        QSpinBox.__init__(self, parent)
+        print("[DEBUG] after QSpinBox.__init__", flush=True)
 
-        try:
-            print("[DEBUG] before CellEditor.__init__", flush=True)
-            CellEditor.__init__(self, parent)
-            print("[DEBUG] after CellEditor.__init__", flush=True)
-        except Exception:
-            traceback.print_exc()
-            print("[DEBUG] CellEditor.__init__ RAISED", flush=True)
-            raise
+        print("[DEBUG] before CellEditor.__init__", flush=True)
+        CellEditor.__init__(self, parent)
+        print("[DEBUG] after CellEditor.__init__", flush=True)
 
-        try:
-            print("[DEBUG] removing upButton/downButton + hBoxLayout", flush=True)
-            assert hasattr(self, 'hBoxLayout'), "no hBoxLayout!"
-            assert hasattr(self, 'upButton'), "no upButton!"
-            assert hasattr(self, 'downButton'), "no downButton!"
-
-            # 先把按钮从布局移除再销毁
-            self.hBoxLayout.removeWidget(self.upButton)
-            self.hBoxLayout.removeWidget(self.downButton)
-            self.upButton.deleteLater()
-            self.downButton.deleteLater()
-            self.upButton.close()
-            self.downButton.close()
-            del self.upButton
-            del self.downButton
-
-            # 把 hBoxLayout 转移到临时 widget 上，让它不再影响 self 的渲染
-            dummy = QWidget()
-            dummy.setLayout(self.hBoxLayout)
-            dummy.deleteLater()
-            del self.hBoxLayout
-
-            print("[DEBUG] button + layout removal done", flush=True)
-        except Exception:
-            traceback.print_exc()
-            print("[DEBUG] button removal RAISED", flush=True)
-            raise
+        # SpinBox 在 MRO 中 → QSS 选择器匹配，setCustomStyleSheet 自动响应主题变更
+        print("[DEBUG] applying setCustomStyleSheet", flush=True)
+        setCustomStyleSheet(self,
+            "SpinBox { color: black; }",
+            "SpinBox { color: white; }")
+        print("[DEBUG] setCustomStyleSheet done", flush=True)
 
         print("[DEBUG] basic style setup", flush=True)
         try:

@@ -1,0 +1,49 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CheckTagEmptyBody" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="W605" />
+          <option value="E302" />
+          <option value="E305" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="resource" />
+          <option value="PyQt5.QtCore.layoutAboutToBeChanged.emit" />
+          <option value="PyQt5.QtCore.layoutChanged.emit" />
+          <option value="PyQt5.QtCore.finished.connect" />
+          <option value="PySide6.QtWidgets.textEdited.connect" />
+          <option value="PySide6.QtWidgets.currentIndexChanged.connect" />
+          <option value="PySide6.QtWidgets.dateChanged.connect" />
+          <option value="PySide6.QtGui.triggered.connect" />
+          <option value="PySide6.QtWidgets.activated.connect" />
+          <option value="path_of_radiance.widgets.unit_list.UnitList.clicked" />
+          <option value="programs.unit_list.UnitList.clicked" />
+          <option value="programs.enum_data.EnumData.tr" />
+          <option value="parameter.enum_data.EnumData.tr" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

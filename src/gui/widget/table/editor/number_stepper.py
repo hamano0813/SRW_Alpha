@@ -13,7 +13,8 @@ from typing import Any, cast
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPainterPath
 from PySide6.QtWidgets import QSpinBox, QToolButton
-from qfluentwidgets import isDarkTheme, setCustomStyleSheet
+from qfluentwidgets import FluentStyleSheet, SpinBox, isDarkTheme
+import sys, traceback
 
 from .cell_editor import CellEditor
 
@@ -77,7 +78,7 @@ class _ArrowButton(QToolButton):
         painter.drawPath(path)
 
 
-class CellNumberStepper(QSpinBox, CellEditor):
+class CellNumberStepper(SpinBox, CellEditor):
     """数值编辑器 — 左右按钮步进，右对齐
 
     接受取值范围 (min, max)，在范围内循环。
@@ -94,6 +95,7 @@ class CellNumberStepper(QSpinBox, CellEditor):
             read_only: 文本框是否只读（仅按钮步进），False 时可键盘输入
             parent: 父 QWidget
         """
+        print("[DEBUG] CellNumberStepper.__init__ start", flush=True)
         self._min: int = 0
         self._max: int = 9999
         if value_range is not None:
@@ -101,24 +103,62 @@ class CellNumberStepper(QSpinBox, CellEditor):
 
         self._show_sign = show_sign
         self._show_buttons = show_buttons
-        self._read_only = read_only if show_buttons else False  # 无按钮时只能靠键盘输入
+        self._read_only = read_only if show_buttons else False
 
-        QSpinBox.__init__(self, parent)
-        CellEditor.__init__(self, parent)
+        print("[DEBUG] before SpinBox.__init__", flush=True)
+        try:
+            SpinBox.__init__(self, parent)
+        except Exception:
+            traceback.print_exc()
+            print("[DEBUG] SpinBox.__init__ RAISED", flush=True)
+            raise
+        print("[DEBUG] after SpinBox.__init__, has hBoxLayout=%s upButton=%s downButton=%s" % (
+            hasattr(self, 'hBoxLayout'), hasattr(self, 'upButton'), hasattr(self, 'downButton')), flush=True)
 
-        # 手动应用 QSS（QSpinBox 选择器 + 仅设文字颜色，其余由 lineEdit 透明化处理）
-        setCustomStyleSheet(self,
-            "QSpinBox { color: black; }",
-            "QSpinBox { color: white; }")
+        try:
+            print("[DEBUG] before CellEditor.__init__", flush=True)
+            CellEditor.__init__(self, parent)
+            print("[DEBUG] after CellEditor.__init__", flush=True)
+        except Exception:
+            traceback.print_exc()
+            print("[DEBUG] CellEditor.__init__ RAISED", flush=True)
+            raise
 
-        # ========== 基础样式 ==========
+        try:
+            print("[DEBUG] removing upButton/downButton", flush=True)
+            assert hasattr(self, 'hBoxLayout'), "no hBoxLayout!"
+            assert hasattr(self, 'upButton'), "no upButton!"
+            assert hasattr(self, 'downButton'), "no downButton!"
+            self.hBoxLayout.removeWidget(self.upButton)
+            self.hBoxLayout.removeWidget(self.downButton)
+            self.upButton.deleteLater()
+            self.downButton.deleteLater()
+            self.upButton.close()
+            self.downButton.close()
+            del self.upButton
+            del self.downButton
+            self.hBoxLayout.setContentsMargins(0, 0, 0, 0)
+            self.hBoxLayout.setSpacing(0)
+            self.hBoxLayout.invalidate()
+            print("[DEBUG] button removal done", flush=True)
+        except Exception:
+            traceback.print_exc()
+            print("[DEBUG] button removal RAISED", flush=True)
+            raise
 
-        self.setFrame(False)
-        self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
-        self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
-        self.setButtonSymbols(QSpinBox.ButtonSymbols.NoButtons)
-        self.setFixedHeight(28)
-        self.setRange(self._min, self._max)
+        print("[DEBUG] basic style setup", flush=True)
+        try:
+            self.setFrame(False)
+            self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
+            self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
+            self.setButtonSymbols(QSpinBox.ButtonSymbols.NoButtons)
+            self.setFixedHeight(28)
+            self.setRange(self._min, self._max)
+            print("[DEBUG] basic style done", flush=True)
+        except Exception:
+            traceback.print_exc()
+            print("[DEBUG] basic style RAISED", flush=True)
+            raise
 
         # ========== 行编辑：透明 ==========
 
@@ -145,6 +185,16 @@ class CellNumberStepper(QSpinBox, CellEditor):
         # ========== 信号 ==========
 
         self.valueChanged.connect(self._on_value_changed)
+
+        print("[DEBUG] CellNumberStepper.__init__ end", flush=True)
+
+    def setSymbolVisible(self, isVisible: bool):
+        """拦截 InlineSpinBoxBase 的按钮访问"""
+        print("[DEBUG] setSymbolVisible(%s) called" % isVisible, flush=True)
+        traceback.print_stack()
+        from PySide6.QtWidgets import QApplication
+        self.setProperty("symbolVisible", isVisible)
+        self.setStyle(QApplication.style())
 
     # ========== 显示格式 ==========
 

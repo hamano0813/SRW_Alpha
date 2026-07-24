@@ -110,8 +110,8 @@ class CellNumberStepper(SpinBox, CellEditor):
         # 空壳 SpinBox 在 MRO 中 → QSS SpinBox 选择器匹配 → 主题颜色自动生效
         FluentStyleSheet.SPIN_BOX.apply(self)
         setCustomStyleSheet(self,
-            "SpinBox { padding: 0px 0px 0 10px; }",
-            "SpinBox { padding: 0px 0px 0 10px; }")
+            "SpinBox { padding: 0px 0px 0 10px; border: none; border-radius: 0px; background: transparent; }",
+            "SpinBox { padding: 0px 0px 0 10px; border: none; border-radius: 0px; background: transparent; }")
 
         # ========== 基础样式 ==========
 

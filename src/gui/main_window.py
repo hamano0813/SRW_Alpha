@@ -114,6 +114,9 @@ class MainWindow(FluentWindow):
         self.resetUI()
         self._disable_features()
 
+        # 锁定窗口宽度为 splash 尺寸，阻止宽内容帧撑开窗口
+        self.setFixedWidth(self._SIZE[0])
+
         loop.exec()
 
     def init_icon(self):
@@ -214,7 +217,9 @@ class MainWindow(FluentWindow):
             if key in self.rom.data:
                 self.rom.notify(key)
         self._enable_features()
-        # 解析成功后窗口宽度固定为 1440
+        # 解锁宽度限制，扩展至编辑布局所需宽度
+        self.setMinimumWidth(0)
+        self.setMaximumWidth(16777215)
         self.resize(1440, self._SIZE[1])
 
     def build_data(self):

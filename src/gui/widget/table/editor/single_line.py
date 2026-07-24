@@ -38,13 +38,24 @@ class CellSingleLine(QLineEdit, CellEditor):
         self.setFrame(False)
         self.setAttribute(Qt.WidgetAttribute.WA_MacShowFocusRect, False)
         self.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
-
-        # QSS color 控制文字和光标颜色，setCustomStyleSheet 自动跟随主题
-        setCustomStyleSheet(self,
-            "background: transparent; color: #000000;",
-            "background: transparent; color: #FFFFFF;")
+        self.setStyleSheet("background: transparent;")
 
         self.textChanged.connect(self._on_text_changed)
+
+        self.textChanged.connect(self._on_text_changed)
+
+    # ========== 绘制 ==========
+
+    def _text_color(self):
+        from qfluentwidgets import isDarkTheme
+        from PySide6.QtGui import QColor
+        return QColor(255, 255, 255) if isDarkTheme() else QColor(0, 0, 0)
+
+    def paintEvent(self, e):
+        palette = self.palette()
+        palette.setColor(palette.ColorRole.Text, self._text_color())
+        self.setPalette(palette)
+        QLineEdit.paintEvent(self, e)
 
     def focusInEvent(self, e):
         """获得焦点时光标定位到末尾，不选中全文

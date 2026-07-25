@@ -26,6 +26,7 @@ class CommonStretchLabel(BodyLabel):
         super().__init__(text)
         if parent is not None:
             self.setParent(parent)
+        self.setFixedHeight(33)
         self.setMinimumWidth(70)
         self.setSizePolicy(
             QSizePolicy.Policy.Expanding,

@@ -19,7 +19,7 @@ _RANGE_PIX_W = 220
 _RANGE_PIX_H = 140
 _ARROW_W = 22
 _MARGIN_V = 8
-_LEFT_W = 12
+_LEFT_W = 16
 
 MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {
     0x00: ((2, 7), (3, 7), (3, 8), (4, 8), (5, 8), (5, 7)),

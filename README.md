@@ -95,7 +95,7 @@
 
 </br>
 
-![ ](res/bill.png)
+<img src="res/bill.png" width="400" alt="收款码">
 
 ---
 

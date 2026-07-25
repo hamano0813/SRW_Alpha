@@ -95,7 +95,7 @@
 
 </br>
 
-![ ](res/bill.png){width="400"}
+![ ](res/bill.png)
 
 ---
 

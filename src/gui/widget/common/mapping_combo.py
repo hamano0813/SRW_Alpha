@@ -36,7 +36,7 @@ class CommonMappingCombo(ComboBox):
         self._view_qss: str = ""
 
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
-        self.setMinimumHeight(30)
+        self.setFixedHeight(33)
         self.setMaxVisibleItems(10)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
         self.currentIndexChanged.connect(self._on_index_changed)

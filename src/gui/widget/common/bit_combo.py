@@ -85,7 +85,7 @@ class CommonBitCombo(ComboBox):
 
         self.setText("")
         self.setObjectName("bitComboBoxButton")
-        self.setFixedHeight(32)
+        self.setFixedHeight(33)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
         self.clicked.connect(self._show_menu)
 

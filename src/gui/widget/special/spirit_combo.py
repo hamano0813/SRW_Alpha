@@ -36,7 +36,7 @@ class SpiritCombo(ComboBox):
 
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         self.setMinimumWidth(130)
-        self.setFixedHeight(32)
+        self.setFixedHeight(33)
         self.setMaxVisibleItems(10)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
         self.currentIndexChanged.connect(self._on_index_changed)

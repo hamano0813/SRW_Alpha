@@ -39,6 +39,7 @@ class WeaponMapCard(CardHeader):
         self._radius_spin = CommonNumberSpin(value_range=(0, 4), parent=self)
 
         self._mrng_combo = RangeCombo(parent=self)
+        self._mrng_combo.setFixedWidth(280)
 
         self._mcls_combo.valueChanged.connect(self._on_mcls_value_changed)
         self._mshow_combo.valueChanged.connect(lambda v: self._write("mshow", v))

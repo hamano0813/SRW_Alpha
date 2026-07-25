@@ -18,7 +18,7 @@ from qfluentwidgets.components.widgets.menu import MenuAnimationManager
 _RANGE_PIX_W = 220
 _RANGE_PIX_H = 140
 _ARROW_W = 22
-_MARGIN_V = 8
+_MARGIN_V = 2
 _LEFT_W = 16
 
 MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {

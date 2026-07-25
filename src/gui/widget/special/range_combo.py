@@ -1,7 +1,7 @@
 """
 地图武器范围选择下拉框 - 带覆盖区域图标预览
 
-每项显示一个 220×140 的缩略图，用红色高亮标出武器在地图上的覆盖范围。
+每项显示一个 220x140 的缩略图，用红色高亮标出武器在地图上的覆盖范围。
 MAP_RANGE 数据写死在此模块内。纯信号槽收发。
 
 Classes:
@@ -9,9 +9,17 @@ Classes:
 """
 
 from PIL import Image, ImageDraw
-from PySide6.QtCore import QSize, Signal
-from PySide6.QtGui import QFont, QIcon
-from PySide6.QtWidgets import QComboBox
+from PySide6.QtCore import QPoint, QRectF, QSize, Qt, Signal
+from PySide6.QtGui import QFont, QIcon, QPainter, QPixmap
+from PySide6.QtWidgets import QLabel, QPushButton, QStyle
+from qfluentwidgets import ComboBox, FluentIcon, MenuAnimationType, RoundMenu, isDarkTheme, setFont
+from qfluentwidgets.components.widgets.menu import MenuAnimationManager
+
+_RANGE_PIX_W = 220
+_RANGE_PIX_H = 140
+_ARROW_W = 22
+_MARGIN_V = 8
+_LEFT_W = 12
 
 MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {
     0x00: ((2, 7), (3, 7), (3, 8), (4, 8), (5, 8), (5, 7)),
@@ -103,8 +111,15 @@ MAP_RANGE: dict[int, tuple[tuple[int, int], ...]] = {
 }
 
 
-def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None = None) -> QPixmap:
-    """将地图武器覆盖范围数据渲染为 QPixmap 图标"""
+def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None = None,
+                         text_color: str = "white") -> QPixmap:
+    """将地图武器覆盖范围数据渲染为 QPixmap 图标
+
+    Args:
+        rect_list: 覆盖范围坐标列表
+        key: 范围键值，不为 None 时在左上角绘制标签
+        text_color: 标签文字颜色（如 "white"、"black"）
+    """
     img = Image.new("RGBA", (131, 131), 0xA0804040)
     draw = ImageDraw.Draw(img)
 
@@ -130,103 +145,186 @@ def _render_range_pixmap(rect_list: tuple[tuple[int, int], ...], key: int | None
             font = ImageFont.truetype("segoeuib.ttf", 14)
         except (OSError, ImportError):
             font = ImageFont.load_default()
-        draw2.text((3, 3), label, fill="white", font=font)
+        draw2.text((3, 3), label, fill=text_color, font=font)
 
     return resized.toqpixmap()
 
 
-class RangeCombo(QComboBox):
-    """地图武器范围选择下拉框 - 带覆盖区域图标预览
+class _RangeItemWidget(QLabel):
+    """下拉菜单项 — 显示 220x140 范围预览图"""
 
-    继承 QComboBox，每项显示一个 220×140 的棋盘点阵图。
-    选中后发射 valueChanged(int)。
-    """
+    clicked = Signal(int)
+
+    def __init__(self, pixmap: QPixmap, index: int):
+        super().__init__()
+        self._idx = index
+        self.setPixmap(pixmap)
+        self.setFixedSize(_RANGE_PIX_W, _RANGE_PIX_H)
+        self.setCursor(Qt.CursorShape.PointingHandCursor)
+
+    def mousePressEvent(self, e):
+        self.clicked.emit(self._idx)
+        super().mousePressEvent(e)
+
+
+class RangeCombo(ComboBox):
+    """地图武器范围选择下拉框 - 带覆盖区域图标预览"""
 
     valueChanged = Signal(int)
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setIconSize(QSize(220, 140))
-        self.setMaxVisibleItems(5)
+        self.setMaxVisibleItems(3)
 
-        self._key_list: list[int] = []
+        tc = "white" if isDarkTheme() else "black"
         for key in sorted(MAP_RANGE):
-            self._key_list.append(key)
-            pixmap = _render_range_pixmap(MAP_RANGE[key], key)
-            self.addItem(QIcon(pixmap), "", key)
+            pixmap = _render_range_pixmap(MAP_RANGE[key], key, text_color=tc)
+            self.addItem("", QIcon(pixmap), userData=key)
 
         self.currentIndexChanged.connect(self._on_index_changed)
+
+    # ========== 尺寸 ==========
+
+    def sizeHint(self):
+        return QSize(_RANGE_PIX_W + _LEFT_W + _ARROW_W + _MARGIN_V,
+                     _RANGE_PIX_H + _MARGIN_V * 2)
 
     # ========== 数据接口 ==========
 
     def set_value(self, value: int) -> None:
-        """设置当前选中项"""
-        try:
-            idx = self._key_list.index(int(value))
-        except (ValueError, TypeError):
-            idx = -1
         self.blockSignals(True)
-        self.setCurrentIndex(idx)
+        idx = self.findData(int(value))
+        if idx >= 0:
+            self.setCurrentIndex(idx)
         self.blockSignals(False)
 
     def value(self) -> int:
-        """获取当前选中值"""
         idx = self.currentIndex()
         if idx >= 0:
-            return self._key_list[idx]
+            return self.itemData(idx)
         return -1
 
     # ========== 启用/禁用 ==========
 
     def setEnabled(self, enabled: bool) -> None:
-        """禁用时保留占位项维持高度，恢复时重新填充"""
         if enabled and self.count() <= 1:
-            self._key_list = []
             self.blockSignals(True)
             self.clear()
+            tc = "white" if isDarkTheme() else "black"
             for key in sorted(MAP_RANGE):
-                self._key_list.append(key)
-                pixmap = _render_range_pixmap(MAP_RANGE[key], key)
-                self.addItem(QIcon(pixmap), "", key)
+                pixmap = _render_range_pixmap(MAP_RANGE[key], key, text_color=tc)
+                self.addItem("", QIcon(pixmap), userData=key)
             self.blockSignals(False)
         elif not enabled and self.count() > 1:
             self.blockSignals(True)
             self.clear()
-            self._key_list = []
-            dummy = Image.new("RGBA", (220, 140), (0, 0, 0, 0))
-            self.addItem(QIcon(dummy.toqpixmap()), "")
             self.blockSignals(False)
         super().setEnabled(enabled)
 
     # ========== 字体 ==========
 
     def apply_font(self, font: QFont | dict) -> None:
-        """设置编辑器字体"""
         if isinstance(font, dict):
             qfont = QFont()
-            family = font.get("family")
-            size = font.get("size")
-            weight = font.get("weight")
-            italic = font.get("italic")
-            if family:
-                qfont.setFamily(family)
-            if size:
-                qfont.setPixelSize(size)
-            if weight:
-                qfont.setWeight(weight)
-            if italic:
-                qfont.setItalic(italic)
+            for k in ("family", "size", "weight", "italic"):
+                v = font.get(k)
+                if v:
+                    getattr(qfont, f"set{k.capitalize()}")(v)
             font = qfont
         self.setFont(font)
 
     def resetUI(self) -> None:
-        """刷新字体"""
-        self.setFont(self.font())
+        """切换主题时刷新字体 + 替换文字颜色适配的预览图"""
+        setFont(self)
+        old_val = self.value()
+        tc = "white" if isDarkTheme() else "black"
+        self.blockSignals(True)
+        self.clear()
+        for key in sorted(MAP_RANGE):
+            pixmap = _render_range_pixmap(MAP_RANGE[key], key, text_color=tc)
+            self.addItem("", QIcon(pixmap), userData=key)
+        if old_val >= 0:
+            idx = self.findData(old_val)
+            if idx >= 0:
+                self.setCurrentIndex(idx)
+        self.blockSignals(False)
+
+    # ========== 按钮绘制 ==========
+
+    def paintEvent(self, e):
+        QPushButton.paintEvent(self, e)
+        painter = QPainter(self)
+        painter.setRenderHints(
+            QPainter.RenderHint.Antialiasing | QPainter.RenderHint.SmoothPixmapTransform)
+
+        idx = self.currentIndex()
+        if 0 <= idx < len(self.items):
+            pix = self.items[idx].icon.pixmap(QSize(_RANGE_PIX_W, _RANGE_PIX_H))
+            if pix and not pix.isNull():
+                painter.drawPixmap(_LEFT_W, (self.height() - _RANGE_PIX_H) // 2,
+                                   _RANGE_PIX_W, _RANGE_PIX_H, pix)
+
+        if self.isHover:
+            painter.setOpacity(0.75)
+        elif self.isPressed:
+            painter.setOpacity(0.65)
+
+        rect = QRectF(self.width() - 22, self.height() / 2 - 5 + self.arrowAni.y, 10, 10)
+        if isDarkTheme():
+            FluentIcon.ARROW_DOWN.render(painter, rect)
+        else:
+            FluentIcon.ARROW_DOWN.render(painter, rect, fill="#646464")
+
+    # ========== 下拉菜单 ==========
+
+    def _showComboMenu(self):
+        if not self.items:
+            return
+
+        menu = RoundMenu("", self)
+        menu.view.setViewportMargins(0, 2, 0, 6)
+        menu.view.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        menu.view.setObjectName("comboListWidget")
+        menu.setMaxVisibleItems(self.maxVisibleItems())
+        menu.view.setItemHeight(140)
+        menu.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+        menu.closedSignal.connect(self._onDropMenuClosed)
+        menu.hBoxLayout.setContentsMargins(20, 4, 20, 4)
+        self.dropMenu = menu
+
+        for i, item in enumerate(self.items):
+            pix = item.icon.pixmap(QSize(_RANGE_PIX_W, _RANGE_PIX_H))
+            widget = _RangeItemWidget(pix, i)
+            widget.clicked.connect(lambda idx, m=menu: self._on_range_item_clicked(idx, m))
+            menu.addWidget(widget, selectable=True)
+
+        menu.view.adjustSize()
+        if menu.view.width() < self.width():
+            menu.view.setMinimumWidth(self.width())
+            menu.view.adjustSize()
+        menu.adjustSize()
+
+        below_pos = self.mapToGlobal(QPoint(0, self.height())) - QPoint(20, 0)
+        above_pos = self.mapToGlobal(QPoint(0, 0)) - QPoint(20, 0)
+        _, space_below = MenuAnimationManager.make(
+            menu.view, MenuAnimationType.DROP_DOWN).availableViewSize(below_pos)
+
+        if space_below >= menu.view.height():
+            menu.view.adjustSize(below_pos, MenuAnimationType.DROP_DOWN)
+            menu.adjustSize()
+            menu.move(below_pos)
+        else:
+            menu.view.adjustSize(above_pos, MenuAnimationType.PULL_UP)
+            menu.adjustSize()
+            menu.move(above_pos.x(), above_pos.y() - menu.height())
+        menu.show()
+
+    def _on_range_item_clicked(self, index: int, menu) -> None:
+        self.setCurrentIndex(index)
+        menu.close()
 
     # ========== 内部槽 ==========
 
     def _on_index_changed(self, index: int) -> None:
-        """下拉选择变更时发射 valueChanged"""
-        if index < 0:
-            return
-        self.valueChanged.emit(self._key_list[index])
+        if index >= 0:
+            self.valueChanged.emit(self.itemData(index))

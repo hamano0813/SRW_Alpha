@@ -102,6 +102,7 @@
 
 </br>
 
+<!-- markdownlint-disable-next-line MD033 -->
 <img src="res/bill.png" width="400" alt="收款码">
 
 ---
